@@ -26,7 +26,7 @@ function add_to_context($data) {
         ),
         'post_id'           => get_the_ID(),
         'home_url'          => function_exists('pll_home_url') ? pll_home_url() : get_site_url().'/',
-        'asset_version'     => '1.0.089',
+        'asset_version'     => '1.0.088',
         'footer_widget'     => Timber::get_widgets('footer_widget')
     );
 

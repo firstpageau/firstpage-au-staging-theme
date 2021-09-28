@@ -1,0 +1,473 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+    <section class="banner form-space">
+        <div class="container banner-hero ">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide text-center text-sm-left">The best agency for <br class="d-none d-lg-block">SEO in Parramatta</h1>
+                <div class="banner-img-mb d-sm-none form-hide">
+                    {# <img src="{{ site.theme.link }}/assets/img/location-brisbane-bg-mb.png" srcset="{{ site.theme.link }}/assets/img/location-brisbane-bg-mb.png, {{ site.theme.link }}/assets/img/location-brisbane-bg-mb@2x.png 2x" alt="First Page" /> #}
+                    <img src="{{ site.theme.link }}/assets/img/img_parramatta_banner_sm@2x.png" alt="First Page" />
+
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'SEO Parramatta', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-section-featured-in-news.twig" %}
+
+
+    <section class="section-paragraph">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-none d-xl-inline-block "/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png, {{ site.theme.link }}/assets/img/img-seo-traffic-lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-lg-inline-block d-xl-none seo-traffic-lg-img"/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/>
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Partner with the best and outgrow your competitors with First Page's SEO in Parramatta.</h2>
+                 <p class="text-center text-sm-left">Undoubtedly, SEO in Parramatta is the ultimate way to grow your business.</p>
+                <p class="text-center text-sm-left">Your business will not only grow online, but it will expand across the board as well.</p>
+                <p class="text-center text-sm-left">You must be wondering - why and how?</p>
+                <p class="text-center text-sm-left">The ROI of SEO in Parramatta remains unmatched amongst all digital marketing techniques. It'll lift your conversion rate and explodes your traffic and sales - sustainably, for the long term.</p>
+            </div>
+        </div>
+    </section>
+
+    {#  circle data section sm #}
+    <section class="section-paragraph d-block d-md-none pt-4">
+        <div class="row no-gutters align-items-center ">
+            <div class="col-12 text-container">
+                <p class="light-heading text-center">If you're still unsure, have a look at this</p>
+            </div>
+            
+            <div class="col-12 image-container-right mb-5">
+                <img src="{{ site.theme.link }}/assets/img/img_parramatta_data_sm.svg" class="img-fluid d-lg-none" alt="First Page"/>
+            </div>
+             
+            <div class="col-12 text-container">
+                <p class="text-center">SEO in Parramatta is a key priority to establish yourself as a business online.</p>
+                <p class="text-center">This is not a secret, and a lot of companies are already optimising for Parramatta SEO.</p>
+                <p class="text-center">While SEO in Parramatta is constantly evolving and changing, the competition has never been this tough. </p>
+                <p class="text-center">Businesses ranking on page 1 are getting immense traffic and explosive sale - on autopilot. To win this competition, you must know the game and execute it perfectly.</p>
+                <p class="text-center">That is why you must partner with the best.</p>
+                <p class="text-center">Someone like First Page - your SEO company in Parramatta.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+{#  circle data section md #}
+    <section class="section-paragraph d-none d-md-block d-lg-none circle-data-section-md">
+
+        <div class="row no-gutters ">
+            <div class="col-6 text-container circle-data-section-left-col">           
+                <p class="light-heading">If you're still unsure, have a look at this</p>
+                <p>SEO in Parramatta is a key priority to establish yourself as a business online.</p>
+                <p>This is not a secret, and a lot of companies are already optimising for Parramatta SEO.</p>
+                <p>While SEO in Parramatta is constantly evolving and changing, the competition has never been this tough. </p>
+                <p>Businesses ranking on page 1 are getting immense traffic and explosive sale - on autopilot. To win this competition, you must know the game and execute it perfectly.</p>
+                <p>That is why you must partner with the best.</p>
+                <p>Someone like First Page - your SEO company in Parramatta.</p>
+
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+
+            <div class="col-6 text-container">
+                {# <p class="light-heading">Still not convinced? <br> Have a ponder <br> about this...</p> #}
+
+            </div>
+        </div>
+
+        <div class="tab-data-img-container">
+            <img src="{{ site.theme.link }}/assets/img/img_parramatta_data_md.svg" class="" alt="First Page"/>
+        </div>
+
+
+    </section>
+    {#  circle data section lg #}
+    <section class="section-paragraph d-none d-lg-block circle-data-section">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/img_parramatta_data_lg.svg" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>                
+            </div>
+
+            <div class="col-12 col-md-6 text-container circle-data-section-left-col">
+                <p class="light-heading mt-5">If you're still unsure, have a look at this</p>            
+                <p>SEO in Parramatta is a key priority to establish yourself as a business online.</p>
+                <p>This is not a secret, and a lot of companies are already optimising for Parramatta SEO.</p>
+                <p>While SEO in Parramatta is constantly evolving and changing, the competition has never been this tough. </p>
+                <p>Businesses ranking on page 1 are getting immense traffic and explosive sale - on autopilot. To win this competition, you must know the game and execute it perfectly.</p>
+                <p>That is why you must partner with the best.</p>
+                <p>Someone like First Page - your SEO company in Parramatta.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    {#  location map sm #}
+    <section class="section-paragraph location-map-mb-section d-block d-md-none">
+        <div class="row no-gutters">
+            <div class="col">
+                <img src="{{ site.theme.link }}/assets/img/img_parramatta_map_md_sm.svg" class="location-map-img d-block mx-auto" alt="First Page"/>
+
+            </div>
+
+        </div>
+    </section>
+
+    {#  location map md#}
+    <section class="section-paragraph location-map-section d-none d-md-block">
+        <div class="row no-gutters">
+            <div class="col">
+                <img src="{{ site.theme.link }}/assets/img/img_parramatta_map_lg.svg" class="location-map-img location-map-img-lg d-none d-lg-block mx-auto" alt="First Page"/>
+                <img src="{{ site.theme.link }}/assets/img/img_parramatta_map_md_sm.svg" class="location-map-img location-map-img-md d-block d-lg-none mx-auto" alt="First Page"/>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-paragraph location-title-section">
+        <div class="row no-gutters">
+            <div class="col">
+                <h2 class="text-center">Catapult your growth with SEO <br class="d-none d-md-block">for Parramatta businesses</h2>
+                <p class="text-center location-sub-title">Despite our name, we're not only a digital agency.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    {#  office section  #}
+    <section class="section-paragraph office-img-section pt-3">
+        <div class="rwo no-gutters">
+            <img src="{{ site.theme.link }}/assets/img/location-office-sm.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-sm.png, {{ site.theme.link }}/assets/img/location-office-sm@2x.png 2x"
+                 class="img-fluid d-block d-md-none m-auto" alt="First Page"/>
+            <img src="{{ site.theme.link }}/assets/img/location-office-md.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-md.png, {{ site.theme.link }}/assets/img/location-office-md@2x.png 2x"
+                 class="img-fluid d-none d-md-block d-lg-none m-auto" alt="First Page"/>
+            <img src="{{ site.theme.link }}/assets/img/location-office-lg.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-lg.png, {{ site.theme.link }}/assets/img/location-office-lg@2x.png 2x"
+                 class="img-fluid d-none d-lg-block m-auto" alt="First Page"/>
+        </div>
+
+    </section>
+
+    <section class="section-paragraph">
+        <div class="container">
+            <h2 class="text-center text-sm-left section-title-ml">First Page is your SEO company in Parramatta. We're your key to success.</h2>
+            <div class="row no-gutters justify-content-center ">
+                <div class="col-12 col-md-6 text-container">
+                    <p class="text-center text-sm-left">Proudly Australian-owned and -operated, we specialise in digital marketing and SEO.</p>
+                    <p class="text-center text-sm-left">Our years of experience in the field have taken businesses of all sizes and shapes to the top rankings of search engines. </p>
+                    <p class="text-center text-sm-left">It doesn't matter to which industry or niche you belong to. It doesn't make a difference whether you have a <a href="{{home_url}}enterprise-seo/">Fortune 500 company vision</a> or are looking to operate locally.</p>
+                    <p class="text-center text-sm-left">Our SEO company in Parramatta has the experience and expertise to outgrow your competition and position you at the top of your industry. </p>
+                    <p class="text-center text-sm-left">Our growth plans yield real results with long-term sustainability and growth. </p>
+                </div>
+                <div class="col-12 col-md-6 text-container ">
+                    <p class="text-center text-sm-left mb-0">Our SEO services Parramatta range across content creation, link-building, keyword research and more.</p>
+                    <p class="text-center text-sm-left">We are proud to provide the right services for specific objectives and create growth plans that precisely work for your desired outcomes. Our Parramatta SEO services are tailored to fit your needs and ensure your overall business growth.</p>
+                    <p class="text-center text-sm-left">As your SEO agency in Parramatta, we're here to handle all the complex traffic-generated work for you. You grab a seat and watch the traffic increase - and the sales come in.</p>
+                    <p class="text-center text-sm-left">Start your journey with us today - the top SEO company in Parramatta. Claim your free call with one of our Digital Experts.</p>               
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "partials/en-section-free-session.twig" %}
+    {% include "partials/en-section-experience.twig" %}
+    {% include "partials/en-section-services-seo-carousel.twig" %}
+    <section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">SEO in Parramatta - FAQs</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                            {# Q1  #}
+                            <h3 itemprop="name">What makes First Page the best SEO agency in Parramatta?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Not only SEO in Parramatta, but First Page Digital is amongst the best SEO agencies in Australia. Our clients' results have earned us the reputation of being the best SEO agency for growing businesses. </p>
+                                <p>Our SEO company in Parramatta is also the fastest-growing agency in APAC!</p>
+                                <p>As well as SEO services in Parramatta, we benefit from a comprehensive network of 11 offices operating worldwide, providing the necessary support when needed.</p>
+                                <p>As your SEO company in Parramatta, we know that what you do deserves to be seen by the world - and we're here to help you make it visible. Our next-level techniques for SEO in Parramatta - plus a decade of experience - apply to all industries and all business sizes.</p>
+                                <p>We have maintained a rating of 4.9/5 on Google, plus we have generated 3.8 million in sales for our clients.</p>
+                                <p>We are so much more than just an agency for SEO services in Parramatta! We provide immense traffic to our clients' websites and take businesses, both small and large, to the first page of Google.</p>
+                                <p>Not only do we stay on top of the trends in Parramatta SEO, but we maximise our clients' profit with our innovative and success-proven strategies. The team here is always ahead of and winning the SEO game.</p>
+                                <p>We are the best SEO company in Parramatta, and we'll take your business to a level you never before thought was possible.</p>
+                                <p>But please, judge by yourself. Book a call with a Digital Strategist today and get to know what wonders we can work for your business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                            {#   Q2  #}
+                            <h3 itemprop="name">How does SEO in Parramatta work?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>SEO is an abbreviated form for Search Engine Optimisation. It is a process in which websites are tweaked to become more visible on search engines - meaning, more reachable to potential customers.</p>                              
+                                <p>In simple words, SEO in Parramatta helps to build your brand authority and strengthens the website's presence organically. It'll increase your business's online traffic and sales in the long term.</p>                              
+                                <p>One of the core components of SEO in Parramatta is determining the relevant phrases that many people in your target customers are typing - and then including these phrases into the text on your website. We especially want to target those who're searching for your type of products or services.</p>                              
+                                <p>When customers search using those relevant keywords on Google, because your website contains the same or similar phrases, the search engine bots automatically show the people your website.</p>                              
+                                <p>Sounds simple? There is more to it than that! The process of SEO in Parramatta involves much more work than incorporating keywords. Seamless and intuitive user experience is another key component of SEO.</p>                              
+                                <p>Our SEO services in Parramatta look at every part of your website - to explode your traffic and generate sales for the years to come. Contact us for <a href="{{home_url}}seo-sydney/">SEO services in Sydney</a> and Parramatta.</p>                              
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                            {# Q3 #}
+                            <h3 itemprop="name">Where do I start with SEO in Parramatta?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>There are three ways you can start with SEO in Parramatta.</p>
+                                <p class="font-weight-bold mb-1">1. Backlinks</p>
+                                <p>A backlink works just like a digital vote.</p>
+                                <p>It consists of linking your websites' pages to other websites' pages. This boosts your authority index and gets you ranking higher on search engines.</p>
+                                <p>But the thing to keep in mind is that not all backlinks have the same value. In fact, focussing on backlinks to reputable, quality sources is key to success for SEO in Parramatta.</p>
+                                <p>As a premier SEO company in Parramatta, we provide reputable sources to our clients and create valuable content to secure backlinks.</p>
+                                <p class="font-weight-bold mb-1">2. Keyword research</p>
+                                <p>This is the process of finding the search terms or phrases that your ideal customers enter into the search bar, when they're looking for information about your products or services.</p>
+                                <p>To get started with SEO for your Parramatta business:</p>
+                                <ul>
+                                    <li>List all those topics which your ideal customer usually searches for</li>
+                                    <li>List keywords for each topic or small sentences</li>
+                                    <li>Look how your competition is ranking for those specific keywords</li>
+                                    <li>Use keywords three to five times in your article's copy</li>
+                                </ul>
+
+                                <p class="font-weight-bold mb-1">1. On-page SEO</p>
+                                <p>On-page SEO makes your website better, not just for the cold and unfeeling search engine bots, but also for the lovely visitors who're browsing your site.</p>
+                                <p>To start with on-page SEO in Parramatta, follow these steps:</p>
+                                <ul>
+                                    <li>Conduct an SEO audit of the website </li>
+                                    <li>Add keywords to your meta descriptions, page titles, website copy, and URLs</li>
+                                    <li>Create a seamless on-page experience with video and visual content</li>
+                                    <li>Add both external and internal links</li>
+                                    <li>Ensure the page is <a href="{{home_url}}mobile-seo/">fit for mobile view</a></li>
+                                </ul>
+                                <p>Sounds hard, right? It's easier said than done to win at SEO in Parramatta. Save yourself the headache, and book a call with our Digital Specialist today. Let us deal with the tech stuff! </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                            {#  Q4  #}
+                            <h3 itemprop="name">Can I just do SEO in Parramatta by myself?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Yes, you can do it all by yourself, but we think that's not in your best interest.</p>
+                                <p>As a business owner, the best use of your time is to focus on what will make a critical difference for business growth. Don't get bogged down in technicalities outside of your area of expertise. Hire an SEO company in Parramatta to handle the grind for you.</p>
+                                <p>It's quicker to outsource to an SEO company in Parramatta, than to hire your own in-house team. And that's not even touching on the time investment involved if you'd been considering learning SEO first-hand.</p>
+                                <p>Let's start with hiring an in-house team. Creating your own team is quite expensive, compared to outsourcing SEO services in Parramatta.</p>
+                                <p>It's also true that hiring an agency takes an investment – but what you get in return is the tools and expertise to get real and scalable results. When working with an SEO company in Parramatta, all the SEO tools are taken care of, saving you thousands of dollars.</p>
+                                <p>On the other hand, if you hire a team, you will have to absorb the costs of all the wages, software and services - AND wait for them to be ready, before you see any progress. It takes time for teams and processes to be built up.</p>
+                                <p>An SEO company in Parramatta has all the necessary tools, and you just have to pay a single package price for their services.</p>
+                                <p>Our SEO services in Parramatta will start working on your website the moment you sign the contract. We'll implement all the necessary strategies and processes needed for your business to grow online efficiently.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse17">
+                            {#  Q5  #}
+                            <h3 itemprop="name">How much does SEO in Parramatta cost?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+
+                                <p>The cost of SEO in Parramatta depends upon several factors, such as:</p>
+                                <ol>
+                                    <li>Budget: Different budgets lead to different sets of services. At First Page, we offer tailored growth plans according to your budget and business goals.</li>
+                                    <li>Scope of work: The price tag depends on the breadth and depth of technical work needed. Your SEO in Parramatta needs to take into account the niches and targeted keywords of your business.</li>
+                                    <li>Desired outcome: Different investments drive different results! Our SEO company in Parramatta will design our plan according to your required business needs, to make sure your goals are met.</li>
+                                    <li>Experience and involvement. You'll get what you pay for, so make sure you pay for results.</li>
+                                </ol>
+                                <p>Quality SEO in Parramatta comes from a deep knowledge of the industry, market, competition and niche - combined with technical strategy implementation, including the complex rules.</p>
+                                <p>You don't get any of this with cheap SEO companies in Parramatta! Cowboys don't know the latest best practices and industry requirements. </p>
+                                <p>SEO for Parramatta businesses can have an enormous impact on your website sales. You need to be careful of those who show an already set price list for their work. SEO requirements vary from a business to another. A set strategy cannot get there.</p>
+                                <p>Partnering with the right SEO company in Parramatta is crucial.</p>
+                                <p>If you want your website to rank at the top, think First Page for all your SEO services in Parramatta.</p>
+                                <p>5. Black-hat versus White-hat SEO. The overall cost of SEO in Parramatta depends on the strategy you choose to use.</p>
+                                <p>Black-hat SEO in Parramatta is tempting. It's cheap! However, it's not ethical and has no respect for Google's guidelines. What does that mean for you? The results are quick but they won't last long.</p>
+                                <p>This is a non-sustainable tactic, and if Google notices, you are at risk of being banned from search engines. You could lose all your website traffic overnight!</p>
+                                <p>On the other hand, white-hat SEO in Parramatta is the right approach. It's a long-term strategy that follows search engine guidelines. It improves customer experience and overall satisfaction, by focussing on quality.</p>
+                                <p>It'll take longer to see results, but once you do, the results are here to stay.</p>
+                                <p>Black-hat SEO is cheaper than white-hat, but it won't take you far. When you choose your SEO company in Parramatta, make sure they provide long-lasting results at tailored strategy prices - like First Page.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse18">
+                            {#  Q6 #}
+                            <h3 itemprop="name">How are PPC and SEO in Parramatta different?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p><a href="{{home_url}}google-ads/">Pay-Per-Click</a> (PPC) is a marketing channel where your ads are displayed on the search engine results page (SERP), which is what people see when they type in a search. </p>
+                                <p>You're charged a fee each time one of your ads is clicked. In other words, you are purchasing website traffic.</p>
+                                <p>When you use PPC, you compete with other industry competitors for advert placement. Your advertising campaign will choose which keywords to bid on, and how much to spend on them.</p>
+                                <p>PPC delivers traffic and results quickly, for the duration of the campaign. However, this dries up as soon as the campaign is over. So you need an ongoing investment!</p>
+                                <p>This isn't the case with SEO in Parramatta. SEO is about tweaking your website to get it to rank higher on the SERP. You don't have to pay per visitor.</p>
+                                <p>SEO results take longer to appear, but once you're ranking on the first page, you will stay there and attract customers for a long time.</p>
+                                <p>SEO in Parramatta helps you to generate evergreen traffic, increase your sales over time, and ultimately grow your business.</p>
+                                <p>PPC and SEO in Parramatta are complementary. Together, they can supercharge your website traffic. <a href="{{home_url}}google-ads/">Click here</a> to learn more about our PPC services and see if they could be right for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse19">
+                            {#  Q7 #}
+                            <h3 itemprop="name">Can you help me recover from the loss of traffic?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Loss of traffic can happen for a variety of reasons: You may not be posting enough relevant content, the Google algorithm may have changed, or your approach to SEO in Parramatta may need to be (re)evaluated.</p>
+                                <p>SEO in Parramatta is a complicated discipline. Authenticity is essential in any effective SEO effort. If you've been using black-hat SEO techniques, you might have received a penalty from Google.</p>
+                                <p>Whatever the cause of your traffic loss, we can find it and get your traffic back up.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse20">
+                            {#   Q8  #}
+                            <h3 itemprop="name">Do you offer eCommerce SEO services in Parramatta?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Yes, we do! We offer eCommerce SEO services in Parramatta - which aims for quite different goals to local SEO.</p>
+                                <p><a href="{{home_url}}local-and-national-seo/">National SEO</a> from Parramatta targets clients in that specific geographic area. It ensures that your business is viewed by those who live nearby. It works best for local stores or businesses whose customers are primarily foor-traffic.</p>
+                                <p>eCommerce SEO for Parramatta businesses is specifically for online storefronts. In this case, you want your products to be at the top of the search results, regardless of geographically where your customer might be. </p>
+                                <p>eCommerce SEO in Parramatta focusses on your products. This means optimising your brand's headline, merchandise description, and product listings to get maximum visibility. Every tactic is about attracting new potential clients to your store, to drive sales.</p>
+                                <p>As well as the products, the customer experience is important too. We make sure your customers have a fantastic online shopping experience, from the product page right through to the checkout.</p>
+                                <p>eCommerce SEO for Parramatta businesses is very effective when combined with a Pay-per-Click (PPC) campaign. The combination of organic and paid campaigns can significantly increase your sales!</p>
+                                <p>If you're selling on <a href="{{home_url}}amazon-seo/">Amazon</a>, <a href="{{home_url}}magento-seo/">Magento</a>, <a href="{{home_url}}shopify-seo/">Shopify</a>, or <a href="{{home_url}}woocommerce-seo/">WooCommerce</a>, First Page offers specialist SEO services in Parramatta, for each platform.</p>
+                                <p>To discover more about our eCommerce SEO services in Parramatta, <a href="{{home_url}}ecommerce-seo/">click here</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse21">
+                            {# Q9  #}
+                            <h3 itemprop="name">Do you offer international SEO services in Parramatta?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Yes, we do. Are you looking to conquer the world? At First Page, we're your specialists in <a href="{{home_url}}international-seo/">international SEO</a>.</p>
+                                <p>International SEO works on a larger, more intricate scale. It's akin to geotargeting, which focusses on luring customers from specific regions, to appeal to the largest number of people possible.</p>
+                                <p>The reach you get from an international SEO campaign has no comparison. The world is the limit.</p>
+                                <p>We're your SEO company in Parramatta to open up your business to the world leader! Become a world leader in your industry with First Page.</p>
+                                <p>International SEO for Parramatta businesses is all about improving your website so that you make sales from all around the world. You can choose the locations to target and make your website relevant accordingly.</p>
+                                <p>So, what exactly are the advantages?</p>
+                                <p>International SEO in Parramatta broadens your audience so you can attract customers worldwide. It considers local requirements, including how to rank on international search engines that use different algorithms to Google.</p>
+                                <p>At the First Page SEO company in Parramatta, our team is well-versed in all aspects of website optimisation, even for foreign search engines.</p>
+                                <p>Our Parramatta SEO services can help you build a multi-regional website that attracts your target audience and expands your business beyond national lines. <a href="{{home_url}}international-seo/">Click here</a> to learn more about how we can assist you in thriving outside of Australia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse22">
+                            {#   Q10  #} 
+                            <h3 itemprop="name">Do you offer link-building as a standalone service?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Yes, we do. Not only that, but our SEO for Parramatta businesses focusses on high-quality backlinks.</p>
+                                <p>Backlinks act as proof of the relevancy of your website for search engines. One backlink from an authoritative, relevant website is worth a lot more than many low-quality backlinks.</p>
+                                <p>The more high-quality links your website has, the more trustworthy your business becomes. Backlinks help the Google algorithm to decide your website is more authoritative, and therefore deserving to be shown to online users.</p>
+                                <p>Other SEO companies in Parramatta may try to sell you a large number of backlinks from low-quality websites. However, First Page specialises in high-quality backlinks with guaranteed rankings.</p>
+                                <p>To increase your authority and sales, we develop high-quality content and position it on some of the most relevant and trustworthy websites online. <a href="{{home_url}}link-building/">Learn more</a> about our link-building SEO services in Parramatta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse23">
+                            {# Q11  #}
+                            <h3 itemprop="name">How long does SEO in Parramatta take?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+
+                                <p>SEO in Parramatta is a long-term process that yields long-term results. It has the potential to pay back ten times the initial investment. Just be patient.</p>
+                                <p>The time it takes for the initial results to appear varies, based on where we start and the initial shape of your website, among various other SEO criteria.</p>
+                                <p>When you work with First Page, you can expect to see results - because we don't get paid until you see them. We are so confident in our abilities to take your business to the first page, that we provide <a href="{{home_url}}pay-on-performance/">pay-on-performance services</a>.</p>
+                                <p>It's a risk-free and 100% satisfying experience.</p>
+                                <p>Keep in mind that the results for SEO in Parramatta improve over time. As a result, whatever outcomes you get initially will be far smaller than what you get some months after. Patience and faith in the process are essential!</p>
+                                <p>At First Page, we keep you informed every step of the way, so you can see what's going on with your Parramatta SEO campaign.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse24">
+                            {#  Q12  #}
+                            <h3 itemprop="name">What's the difference between white-hat and black-hat SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Black-hat SEO in Parramatta emphasises rapid victories while also breaking Google's restrictions. It relies on manipulating the Google algorithm to increase leads, while ignoring the experience of real users.</p>
+                                <p>Duplicating material, cramming keywords, re-directing people to another site page, and linking your website to other non-relevant information are all examples of black-hat SEO methods.</p>
+                                <p>This is a short-term strategy that will not last. The results are not designed to stay long-term, and you risk being penalised if Google discovers you're using it. Black-hat SEO might result in your website being removed entirely from search results.</p>
+                                <p>White-hat SEO in Parramatta is the proper and ethical method of optimising a website for search engines. It adheres to the norms and criteria given by search engines.</p>
+                                <p>White-hat SEO is not deceptive in any way. It focusses on giving the viewer the finest possible experience. It uses strategies such as publishing high-quality content, reducing page load times, and providing value.</p>
+                                <p>It's a long-term strategy that needs more upfront effort. While outcomes will take time, they will have a long-term,  and sustainable impact on your company.</p>
+                                <p>We didn't become the best agency to grow businesses online from black-hat SEO services in Parramatta. From Perth to <a href="{{home_url}}seo-brisbane/">Brisbane SEO</a> and everything in between, First Page delivers authenticity, compliance and immense growth. Come find out for yourself.</p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-form-popup.twig" with {'form_page': 'SEO Parramatta (Pop-up Form)'} %}
+
+{% endblock %}

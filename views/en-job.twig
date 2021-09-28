@@ -1,0 +1,50 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+<section class="pad-header"></section>
+
+<section id="details" class="section-job section-grey no-border">
+    <div class="container mob-center">
+        {# <h2><strong>{{ post.title }}</strong></h2> #}
+        <div class="div-view-all">
+            <a href="{{ home_url }}careers/#vacancies" class="view-all"><i class="fa fa-caret-left" aria-hidden="true"></i>
+                View
+                All Vacancies</a>
+        </div>
+        <div class="row">
+            <div class="col-12 col-xl-8 mb-5">
+                <div class="blog-content">
+                    <div class="post-content">
+                        {% filter shortcodes %}
+                        [job id="{{ post.id }}"]
+                        {% endfilter %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-4 mb-5">
+                <div class="related-articles other-vacancies">
+                    <h2>Other Vacancies</h2>
+                    <ul>
+                        {% if listings|length > 0 %}
+                        {% for job in listings %}
+                        <li><a href="{{ job.link }}">{{ job.title }}</a></li>
+                        {% endfor %}
+                        {% else %}
+                        <li>-</li>
+                        {% endif %}
+                    </ul>
+                    <a href="{{ home_url }}careers/" class="view-all">View All <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-background section-black">
+    <img src="{{ site.theme.link }}/assets/img/img_team_collage_fpa@2x.jpg" class="img-fluid d-none d-md-block" alt="Our Office" />
+    <img src="{{ site.theme.link }}/assets/img/img_team_collage_fpa_mob@2x.jpg" class="img-fluid d-block d-md-none" alt="Our Office" />
+</section>
+
+{% endblock %}

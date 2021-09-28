@@ -1,0 +1,20 @@
+@import "assets/scss/settings";
+
+// -- Generic Styles
+
+body {
+  overflow-x: hidden;
+  font-size: $font-size;
+  line-height: 20px;
+  font-family: $font-family;
+  color: $color-text;
+}
+
+@import "assets/scss/forms";
+@import "assets/scss/header";
+@import "assets/scss/footer";
+@import "assets/scss/banner";
+@import "assets/scss/content";
+@import "assets/scss/blog";
+@import "assets/scss/multiform";
+@import "assets/scss/roi-calculator";

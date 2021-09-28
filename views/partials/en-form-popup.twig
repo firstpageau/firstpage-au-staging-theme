@@ -1,0 +1,65 @@
+{% set form_page = (form_page is empty) ? 'General' : form_page %}
+{% set form_button = (form_button is empty) ? 'GET A FREE QUOTE' : form_button %}
+{% set form_hs = (form_hs is empty) ? 'hs_quote_form' : form_hs %}
+{% set form_thankyou = (form_thankyou is empty) ? 'thank-you' : form_thankyou %}
+
+<style>
+    .proposal-popup h1,
+    .proposal-popup h2 {
+        color: #fff;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 576px) {
+        .proposal-popup {
+            width: 440px;
+        }
+
+        .proposal-popup {
+            padding: 15px 10px;
+            max-width: 440px;
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="embed-popup-form{{ popup_suffix }}">
+    <div class="proposal-popup">
+        <!-- Free Proposal Form -->
+        <form class="fp-form" action="{{ home_url }}{{ form_thankyou }}" method="POST">
+            {% block form_heading %}
+            <h2>Enter your details</h2>
+            {% endblock %}
+            <div class="form-mid row">
+                {% block extra_field_top %}{% endblock %}
+                <div class="col-12 mb-2">
+                    <input type="text" class="form-control" name="lead_name" placeholder="First Name*" required="" />
+                </div>
+                <div class="col-12 mb-2">
+                    <input type="tel" class="form-control" name="lead_phone" placeholder="Phone*" required="" />
+                </div>
+                <div class="col-12 mb-2">
+                    <input type="email" class="form-control" name="lead_email" placeholder="Email*" data-parsley-error-message="Please enter a valid email address" data-parsley-trigger="change" required="" />
+                </div>
+
+                {% block extra_field_bottom %}
+                <div class="col-12 mb-2">
+                    <input type="text" class="form-control" name="lead_website" placeholder="Website" data-parsley-website-check />
+                </div>
+                {% endblock %}
+
+                <div class="col-12 mt-2">
+                    <input type="hidden" name="lead_formname" value="{{ form_page }}" />
+                    <input type="hidden" name="lead_language" value="en" />
+                    <input type="hidden" name="lead_formtype" value="{{ form_hs }}" />
+{#                    <button type="submit" class="form-control btn fp-btn fp-btn-orange fp-btn-shadow" onclick="ga('send','event', {'eventCategory': 'Form','eventAction': 'Click', 'eventLabel': '{{ form_page }}'});">{{form_button}}</button>#}
+                    <button type="submit" class="form-control btn fp-btn fp-btn-orange fp-btn-shadow" >{{form_button}}</button>
+                </div>
+            </div>
+        </form>
+        <!-- End of Form -->
+    </div>
+</div>

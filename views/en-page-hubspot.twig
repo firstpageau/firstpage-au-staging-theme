@@ -1,0 +1,166 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<style>
+    .my-7{
+        margin-top:50px !important;
+        margin-bottom:50px !important;
+    }
+    @media (max-width: 767px){
+        .hero-mobile {
+            margin-bottom: -98px;
+            position: absolute;
+            bottom: 0;
+            right: -15px;
+        }
+        section.banner .banner-description {
+        
+            margin-top: 97px;
+        }
+
+        section.banner h1 {
+            
+            max-width: 216px;        
+        }
+
+    }
+
+    @media (min-width: 768px){
+        section.banner .banner-hero .hero-img {
+            right: -74px;
+        }
+
+        .my-7{
+        margin-top:70px !important;
+        margin-bottom:70px !important;
+        }
+    }
+
+    @media (min-width: 992px){
+        section.banner .banner-hero .banner-hero-cont {
+            max-width: 748px;
+        }
+    }
+
+    @media (min-width: 1440px){
+        section.banner .banner-hero .hero-img {
+            right: -137px;
+        }
+    }
+
+
+</style>
+<section class="banner form-space">
+        <div class="container banner-hero">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide">Streamline your new business team and turbocharge your sales with Hubspot</h1>
+                <div class="banner-description form-hide">
+                    <div class="form-hide hero-mobile">
+                        <img src="{{ site.theme.link }}/assets/img/img_hubspot_hero_laura_sm.png"
+                             srcset="{{ site.theme.link }}/assets/img/img_hubspot_hero_laura_sm.png, {{ site.theme.link }}/assets/img/img_hubspot_hero_laura_sm@2x.png 2x"
+                             alt="First Page"/>
+                    </div>
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'Hubspot', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+            <div class="hero-img d-none d-md-block d-lg-none">
+                <img src="{{ site.theme.link }}/assets/img/img_hubspot_hero_laura_md.png"
+                     srcset="{{ site.theme.link }}/assets/img/img_hubspot_hero_laura_md.png, {{ site.theme.link }}/assets/img/img_hubspot_hero_laura_md@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+            <div class="hero-img d-none d-lg-block">
+                <img src="{{ site.theme.link }}/assets/img/img_hubspot_hero_laura_lg.png"
+                     srcset="{{ site.theme.link }}/assets/img/img_hubspot_hero_laura_lg.png, {{ site.theme.link }}/assets/img/img_hubspot_hero_laura_lg@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+        </div>
+    </section>
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+<section class="section-paragraph section-white mob-center">
+    <div class="container">
+        <div class="row mb-3 mb-md-5 flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 mt-3 mb-3">
+                <img src="{{ site.theme.link }}/assets/img/img_hubspot_logo2_lg.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/img_hubspot_logo2_md_sm.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3 text-center text-md-left">
+            <h3>What is Hubspot?</h3>
+                <p >One of the biggest players in the SAAS world, Hubspot is an all-in-one marketing system that can help your business transform into a lead-generation machine. </p>
+                <p>Hubspot provides tools that can help with most aspects of Digital Marketing, some of the most effective being…</p>
+                <ul >
+                    <li >Social media</li>
+                    <li>SEO</li>
+                    <li>Email marketing</li>
+                    <li>Landing pages</li>
+                    <li>Blogging</li>
+                    <li>Web analytics</li>
+                    <li>And much more!</li>
+                </ul>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 ">
+                <img src="{{ site.theme.link }}/assets/img/img_hubspot_automation_lg.svg"  class="img-fluid d-none d-lg-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/img_hubspot_automation_md.svg"  class="img-fluid d-none d-md-block d-lg-none" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/img_hubspot_automation_mb.svg"  class="img-fluid d-block d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3 text-center text-md-left">
+             <h2>Hubspot Marketing Automation with First Page</h2>
+                <p>When it comes to software solutions that are as effective for generating, nurturing, and converting high-quality leads - few can compare to Hubspot.</p>
+                <p>And here at First Page, we are experts with Hubspot.</p>
+                <p>Not only do we have years of experience using Hubspot to generate thousands of highly qualified leads for our own agencies, but we are now offering Hubspot services to businesses like yours who are looking to supercharge their growth. </p>
+                <p>Whether your business is trying to improve brand awareness on Social Media, remarket via Google Ads, or nurture leads with email marketing, we know how to use Hubspot’s centralized platform to optimize every aspect of your businesses’ funnel. </p>
+                <p>Ultimately, we want to help skyrocket your conversions. Contact a Digital Strategist today to see how our Hubspot services can help your business.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row my-3 my-md-5 my-7">
+            <div class="col">
+                <h2 class="text-center">Here’s What Hubspot is NOT</h2>
+                <p class="text-center">While Hubspot is a game-changer, it’s important to know  exactly what it can’t do. </p>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 ">
+                <img src="{{ site.theme.link }}/assets/img/img_hubspot_robot_lg.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/img_hubspot_robot_md_sm.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3 text-center text-md-left">
+                <h2>Hubspot CANNOT be fully automated </h2>
+                <p>In fact, quite the opposite. Hubspot is a complicated ecosystem that requires a tremendous amount of work to learn, master, and nurture.</p>
+                <p>Are the results powerful? Undeniably. But it takes time.</p>
+                <p>This is why we recommend outsourcing your Hubspot-efforts to a Hubspot-professional, like FirstPage. </p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 ">
+                <img src="{{ site.theme.link }}/assets/img/img_magnetic_lg.svg" class="img-fluid d-none d-md-inline-block"
+                     alt="First Page"/>
+                <img src="{{ site.theme.link }}/assets/img/img_magnetic_md_sm.svg" class="img-fluid d-md-none"
+                     alt="First Page"/>
+            </div>
+            <div class="col-12 col-md-6 mb-3 text-center text-md-left">
+                <h2>Hubspot itself CANNOT bring in new leads</h2>
+                <p>Hubspot is a way to analyze data so you can better nurture your leads.</p>
+                <p>But Hubspot by itself will not help you bring in more leads. </p>
+                <p>Growing your leads is best done through two strategies - paid advertising or organic content. Hubspot can absolutely help you improve and optimize your paid advertising and organic content, but it will by no means replace it. </p>
+                <p>Simply put - paid ads and organic content need to be done in addition with Hubspot. </p>
+                <p>That’s why it’s best to hire an agency to run Hubspot that also has experience with SEO, Google Ads, premium content writing, and everything in between. </p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-free-session.twig" %}
+{# {% include "assets/partials/en-section-free-session.twig" %} #}
+
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'Hubspot (Pop-up Form)'} %}
+
+{% endblock %}

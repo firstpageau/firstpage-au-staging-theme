@@ -1,0 +1,132 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<section class="pad-header"></section>
+
+<section class="section-countdown section-dgrey">
+    <div class="container">
+        <div class="countdown-cont">
+            <div class="countdown-text">HURRY! SPOTS ARE LIMITED</div>
+            <div class="countdown-meter">
+                <div class="countdown-bar animate-bar"><span style="width:90%"><span></span></span></div>
+                <div class="countdown-timer">4:30</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-multiform section-grey">
+    <div class="container">
+        <div class="mform-heading">
+            <h1 class="mb-4">Get a free website &amp; conversion health check worth {{ session_value }}!</h1>
+            <p class="mb-4">Get your no-obligation health check, worth {{ session_value }} that could easily generate upwards of $500,000 in sales for your company.</p>
+        </div>
+
+        <ul class="mform-progressbar">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <div class="mform-container">
+            <div class="mform">
+                {#
+                <!-- Start of Meetings Embed Script -->
+                <div class="meetings-iframe-container" data-src="https://app.hubspot.com/meetings/kieran-hervieu/30-min-strategy?embed=true"></div>
+                <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+                <!--  End of Meetings Embed Script -->
+                #}
+                <!-- Step 1 -->
+                <fieldset class="shown">
+                    <h3>What types of digital marketing are you currently doing?<br />Select more than one if applicable:</h3>
+                    <div class="mform-selection" data-field="lead_marketing_used">
+                        <div class="btn fp-btn fp-btn-orange mform-btn mform-select mb-4">
+                            <div class="mform-btn-icon"><img src="{{ site.theme.link }}/assets/img/icn-magnifying-glass.png" /></div>
+                            <div class="mform-btn-text mform-select-value">SEO</div>
+                        </div>
+                        <div class="btn fp-btn fp-btn-orange mform-btn mform-select mb-4">
+                            <div class="mform-btn-icon"><img src="{{ site.theme.link }}/assets/img/icn-words.png" /></div>
+                            <div class="mform-btn-text mform-select-value">Google Ads</div>
+                        </div>
+                        <div class="btn fp-btn fp-btn-orange mform-btn mform-select mb-4">
+                            <div class="mform-btn-icon"><img src="{{ site.theme.link }}/assets/img/icn-socialmedia.png" /></div>
+                            <div class="mform-btn-text mform-select-value">Social Media</div>
+                        </div>
+                        <div class="btn fp-btn fp-btn-orange mform-btn mform-select mb-4">
+                            <div class="mform-btn-icon"><img src="{{ site.theme.link }}/assets/img/icn-facebook.png" /></div>
+                            <div class="mform-btn-text mform-select-value">Facebook Ads</div>
+                        </div>
+                        <div class="btn fp-btn fp-btn-orange mform-btn mform-select mb-4">
+                            <div class="mform-btn-icon"><img src="{{ site.theme.link }}/assets/img/icn-remarketing.png" /></div>
+                            <div class="mform-btn-text mform-select-value">Display Ads</div>
+                        </div>
+                        <div class="btn fp-btn fp-btn-orange mform-btn mform-select mb-4">
+                            <div class="mform-btn-icon"><img src="{{ site.theme.link }}/assets/img/icn-website.png" /></div>
+                            <div class="mform-btn-text mform-select-value">Website</div>
+                        </div>
+                        <div class="btn fp-btn fp-btn-orange mform-btn mform-select mb-4">
+                            <div class="mform-btn-icon"><img src="{{ site.theme.link }}/assets/img/icn-video.png" /></div>
+                            <div class="mform-btn-text mform-select-value">Video</div>
+                        </div>
+                        <div class="btn fp-btn fp-btn-orange mform-btn mform-select mb-4">
+                            <div class="mform-btn-icon"><img src="{{ site.theme.link }}/assets/img/icn-other.png" /></div>
+                            <div class="mform-btn-text mform-select-value">Other</div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn fp-btn fp-btn-orange fp-btn-shadow mform-btn-nav mform-next mt-4" disabled="disabled">Next</button>
+                </fieldset>
+
+                <!-- Step 2 -->
+                <fieldset>
+                    <h3>When are you looking to start growing your business?</h3>
+                    <div class="mform-selection single-select" data-field="lead_get_started">
+                        <div class="btn fp-btn fp-btn-orange mform-checkbox mform-select mform-checkbox-long mform-next mb-3">
+                            <div class="mform-btn-text mform-select-value">Immediately</div>
+                        </div>
+                        <div class="btn fp-btn fp-btn-orange mform-checkbox mform-select mform-checkbox-long mform-next mb-3">
+                            <div class="mform-btn-text mform-select-value">2-4 weeks</div>
+                        </div>
+                        <div class="btn fp-btn fp-btn-orange mform-checkbox mform-select mform-checkbox-long mform-next mb-3">
+                            <div class="mform-btn-text mform-select-value">4 weeks+</div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Step 3 -->
+                <fieldset>
+                    <h3>Fantastic! It looks like we can DRAMATICALLY help you grow your brand using some of the latest ‘ahead- of-the-curve’ marketing strategies, simply enter your details below!</h3>
+                    <form id="new-session-form" action="{{ home_url }}thank-you" method="POST">
+                        <div class="mform-input-area mt-4">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="text" name="lead_name" id="lead_name" class="mform-input form-control mb-3" placeholder="First Name*" required="" />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="email" name="lead_email" id="lead_email" class="mform-input form-control mb-3" placeholder="Email*" data-parsley-error-message="Please enter a valid email address" data-parsley-trigger="change" required="" />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="phone" name="lead_phone" id="lead_phone" class="mform-input form-control mb-3" placeholder="Phone*" required="" />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="text" name="lead_jobtitle" id="lead_company" class="mform-input form-control mb-3" placeholder="Company Name*" required="" />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="text" name="lead_website" id="lead_website" class="mform-input form-control mb-3" placeholder="Website" />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="text" name="lead_message" id="lead_message" class="mform-input form-control mb-3" placeholder="Message" />
+                                </div>
+                            </div>
+                            <input type="hidden" name="lead_formname" id="lead_formname" value="Health Check" />
+                            <input type="hidden" name="lead_language" id="lead_language" value="en" />
+                            <input type="hidden" name="lead_formtype" id="lead_formtype" value="hs_quote_form" />
+                        </div>
+                        <button type="submit" class="btn fp-btn fp-btn-orange fp-btn-shadow mform-btn-submit mt-3">GET MY FREE HEALTH CHECK</button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,216 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+<style>
+    @media (max-width: 767px){
+        .hero-mobile {
+            margin-bottom: -98px;
+            position: absolute;
+            bottom: 0;
+            right: -13px;
+        }
+        section.banner .banner-description {
+        
+            margin-top: 97px;
+        }
+
+        section.banner h1 {
+            
+            max-width: 216px;
+           
+        }
+
+    }
+
+    @media (min-width: 768px){
+        section.banner .banner-hero .hero-img {
+            right: -244px;
+            bottom: -134px;
+        }
+    }
+    @media (min-width: 992px){
+        section.banner .banner-hero .hero-img {
+            right: -226px;
+            bottom: -80px;
+        }
+    }
+
+    @media (min-width: 1440px){
+        section.banner .banner-hero .hero-img {
+            right: -209px;
+        }
+    }
+
+
+</style>
+
+<!-- Banner -->
+<section class="banner form-space">
+        <div class="container banner-hero two-lines">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide">Grow super-fast <br class="d-none d-md-block d-lg-none"> with <br class="d-none d-md-block">smart <br class="d-none d-md-block d-lg-none"> Magento SEO</h1>
+                <div class="banner-description form-hide">
+                    <div class="form-hide hero-mobile">
+                        <img src="{{ site.theme.link }}/assets/img/nick-hero-mb.png"
+                             srcset="{{ site.theme.link }}/assets/img/nick-hero-mb.png, {{ site.theme.link }}/assets/img/nick-banner-mb@2x.png 2x"
+                             alt="First Page"/>
+                    </div>
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'Pay On Performance', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+            <div class="hero-img d-none d-md-block d-lg-none">
+                <img src="{{ site.theme.link }}/assets/img/nick-banner-hero.png"
+                     srcset="{{ site.theme.link }}/assets/img/nick-banner-hero.png, {{ site.theme.link }}/assets/img/nick-banner-hero@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+            <div class="hero-img d-none d-lg-block">
+                <img src="{{ site.theme.link }}/assets/img/nick-hero-google-ads.png"
+                     srcset="{{ site.theme.link }}/assets/img/nick-hero-google-ads.png, {{ site.theme.link }}/assets/img/nick-hero-google-ads@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+        </div>
+</section>
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+{# body 1 #}
+<section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 image-container-right">
+            <img src="{{ site.theme.link }}/assets/img/magento-growth.png" srcset="{{ site.theme.link }}/assets/img/magento-growth.png, {{ site.theme.link }}/assets/img/magento-growth@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/magento-growth-mb.png" srcset="{{ site.theme.link }}/assets/img/magento-growth-mb.png, {{ site.theme.link }}/assets/img/magento-growth-mb@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Outgrow the competition with Magento SEO</h2>
+                <p>Magento has quickly become one of the world’s leading e-commerce platforms, with its streamlined design making it easy to present your products and complete sales. However, like most areas of e-commerce, finding a way to increase visibility amongst your most valued target audience is essential to success. With First Page Australia’s tailored Magento SEO campaigns, we can develop a strategy that attracts new customers, fosters organic growth and boosts conversions. </p>
+                <p>With global e-commerce sales expected to top USD $4 trillion in 2020, the rewards can be enormous for brands that get their approach to Magento SEO spot on. But with both customer habits and Google’s algorithms constantly changing, it can be hard to get things moving in the right direction. We’ll ensure your Magento store is optimised to its maximum potential to achieve your business goals.</p>
+                <button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+            </div>
+        </div>
+</section>
+
+{# body row 2 #}
+<section class="section-paragraph">
+    <div class="row no-gutters flex-column-reverse flex-md-row ">
+
+        <div class="col-12 col-md-6 image-container-left">
+            <img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_2_left_cut.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_2_left_cut.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_2_left_cut@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mob.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mob.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+        </div>
+
+        <div class="col-12 col-md-6 text-container pl-md-5">
+            <h2 class="d-none d-lg-block">Work alongside the Magento experts</h2>
+            <p>If you’re entering the world of e-commerce for the first time, using Magento to base your online store is a great choice. The platform's highly flexible nature means that no matter how niche your products are, it’s possible to develop a winning strategy that reaches your ideal customer base and convinces them to buy. But to achieve the most benefit, a <a href="{{home_url}}seo/">carefully created SEO campaign</a> is vital.</p>
+            <p>While Magento makes it possible to implement some rudimentary <a href="{{home_url}}seo/">SEO strategies</a> on your own, having the assistance of an expert team is what’s going to take your business to the next level. We have the expertise to create research-driven product pages that outperform the rankings of your key competition. Meanwhile, we can implement a sales process that swiftly funnels customers through to the checkout page. </p>
+        </div>
+
+    </div>
+</section>
+
+{# body row 3 #}
+<section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 image-container-right">
+            <img src="{{ site.theme.link }}/assets/img/img_business_success.svg" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/img_business_success_mb.svg"  class="img-fluid d-md-none" alt="First Page" />
+            </div>
+            <div class="col-12 col-md-6 text-container"><h2>Data-driven <br class="d-none d-md-block">e-commerce solutions</h2>
+                <p>It doesn’t matter how much experience you have with the e-commerce landscape, knowing how to analyse and implement changes based on customer and competitor data is absolutely crucial. Based on a thorough <a href="{{home_url}}seo-audit/">SEO audit</a> of your website’s current performance, we can design a strategy to produce dramatic improvements across the board. From optimised page titles and high-quality images to rapid-fire loading times, we can take your Magento store to new heights.</p>
+                <p>First Page Australia’s industry-leading team has worked alongside 1,700 clients situated around the globe, ensuring we know what changes are going to lead to the greatest improvements. This allows us to provide our clients with an exceptional ROI on their campaign. As our team leads your strategy from start-to-finish, we capture the attention of customers who can’t wait to return.</p>
+                <button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+            </div>
+        </div>
+</section>
+
+{# body row 4 #}
+<section class="section-paragraph">
+    <div class="row no-gutters flex-column-reverse flex-md-row ">
+
+        <div class="col-12 col-md-6 image-container-left">
+            <img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_left_cut.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_left_cut.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_left_cut@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_2_mb.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_2_mb.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_2_mb@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+        </div>
+
+        <div class="col-12 col-md-6 text-container pl-md-5">
+            <h2 class="d-none d-lg-block">Customised SEO for Magento websites</h2>
+            <p>There’s no one size fits all approach for an effective Magento SEO campaign, as each and every client is different. We start by going over your ecommerce website with a fine-toothed comb, gaining an in-depth understanding of the products you offer, who your key demographics are and how your customers are finding and interacting with your business. This preparation ensures we choose the most promising target keywords, plan the most effective campaign and drive results as quickly as possible through both on-page and off-page strategies. Once your website starts ranking for target keywords, it’s important to continue building on this early success. SEO is an ongoing process, whether it be to ensure you stay on the first page or identify new keywords we can target to further improve your organic traffic. We’re big on keeping you in the loop, too; as we monitor progress, reassess your campaign and set bigger and better goals, you’ll receive detailed reporting so you can see exactly how your Magento SEO campaign is making a difference.</p>
+            <button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+
+        </div>
+
+    </div>
+</section>
+
+{% include "partials/en-section-free-session.twig" %}
+
+{% include "assets/partials/en-form-popup.twig" with {'form_page': 'Magento SEO (Popup)'} %}
+
+<section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                        {# 1 #}
+                            <h3 itemprop="name">What Is Magento SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The world of e-commerce is only getting bigger as customers gain access to modern technology and rapid internet. With so many different online stores competing for attention, ensuring your Magento SEO strategy is implemented to the highest standards is vital. This way, you can climb the search engine rankings, increase brand awareness and push your conversion rate off the charts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                        {# 2 #}
+                            <h3 itemprop="name">Is Magento Good For SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Magento can be hugely powerful if you’ve decided to implement a <a href="{{home_url}}seo/">tailored SEO campaign</a>. But it takes a knowledgeable team to drive the kind of success that ensures your company outperforms its competitors. As a specialised Magento SEO agency, <a href="{{home_url}}">First Page Australia</a> has spent the past decade developing optimised stores for our e-commerce clients. Backed by data-driven page titles, compelling product descriptions and extensive backlink campaigns, we deliver an eye-catching shopping experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                        {# 3 #}
+                            <h3 itemprop="name">How Much Does Magento SEO Services Cost?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Researching and executing a highly effective Magento SEO campaign doesn’t simply happen overnight. It takes careful planning to discover what approach is needed to reach your target market and overtake your rivals on the SERP. Plus, the necessary Magento SEO services can differ significantly from one company to the next. With First Page Australia, our superior team can tailor a campaign that achieves your specific goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                        {# 4 #}
+                            <h3 itemprop="name">How Do I Choose A Magento SEO Agency?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Any e-commerce store will undoubtedly struggle to survive if its ideal customers aren’t aware it exists. This is why you need complete confidence in whoever takes charge of your Magento SEO campaign. Put your e-commerce company in expert hands by <a href="{{home_url}}contact/">joining forces with First Page Australia</a>. Our talented digital marketers have led successful campaigns for hundreds of clients by implementing research-based, personalised strategies that deliver long-term growth and stability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+        </div>
+</section>
+{% endblock %}

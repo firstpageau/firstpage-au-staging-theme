@@ -1,0 +1,1585 @@
+section.pad-header {
+  padding-top: 70px;
+  background: linear-gradient(180deg, #427fe0 0%, #3b70bd 100%);
+
+  @media (min-width: $responsive-lg) {
+    padding-top: 200px;
+  }
+}
+
+section.banner {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  color: $color-white;
+  // background: linear-gradient(225deg, #427fdf 0%, #396bb1 100%);
+  background: linear-gradient(180deg, #427fe0 0%, #3b70bd 100%);
+
+  overflow: hidden;
+
+  &.overflow-visible {
+    overflow: visible;
+  }
+
+  // Hero Banner
+  .banner-hero {
+    .hero-img {
+      display: none;
+    }
+  }
+
+  h3 {
+    color: $color-white;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 10px;
+
+    &.small {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    &.narrow {
+      max-width: 540px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  p {
+    color: $color-white;
+    font-size: 18px;
+    line-height: 23px;
+    // text-align: center;
+    margin: 15px 0 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .google-premier-badge {
+    padding: 5px 0;
+    text-align: center;
+
+    .badge-image {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .text {
+      font-size: 15px;
+    }
+    .google-partner {
+      margin: 12px 0 -8px;
+    }
+  }
+
+  .testimonial {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 300;
+
+    &.wide {
+      max-width: 535px;
+    }
+
+    .stars {
+      img {
+        width: 20px;
+        height: auto;
+      }
+    }
+    .text {
+      font-style: italic;
+      line-height: 23px;
+      margin: 20px 0 10px;
+      padding: 0 30px;
+      position: relative;
+      display: inline-block;
+
+      &::before,
+      &::after {
+        content: "";
+        background: url("assets/img/icon-quote.png") no-repeat;
+        position: absolute;
+        width: 21px;
+        height: 16px;
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+          only screen and (min-device-pixel-ratio: 2) {
+          background-image: url("assets/img/icon-quote@2x.png");
+          background-size: 21px 16px;
+        }
+      }
+      &::before {
+        top: -4px;
+        left: 0;
+      }
+      &::after {
+        bottom: -8px;
+        right: 2px;
+        transform: rotate(180deg);
+      }
+    }
+
+    .person {
+      letter-spacing: 1px;
+      line-height: 22px;
+
+      .name {
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .company {
+        font-size: 12px;
+        font-style: italic;
+        line-height: 22px;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .banner-form {
+    max-width: 700px;
+    margin: 0 auto;
+
+    .btn {
+      white-space: normal;
+    }
+  }
+
+  .button-white {
+    margin-top: 30px;
+
+    .fp-btn,
+    a.fp-btn {
+      max-width: 360px;
+      width: 100%;
+
+      strong {
+        display: block;
+        font-size: 15px;
+        font-weight: 900;
+        line-height: 18px;
+        text-align: center;
+      }
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: center;
+      }
+    }
+  }
+
+  .blue-box {
+    padding: 10px 15px;
+    text-align: left;
+
+    h1,
+    h2 {
+      font-size: 32px;
+      line-height: 1.28em;
+      text-align: left;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 23px;
+      text-align: left;
+    }
+
+    .button-cont {
+      margin-top: 40px;
+      text-align: center;
+
+      .fp-btn {
+        max-width: 260px;
+        width: 100%;
+      }
+    }
+  }
+
+  .red-box {
+    padding: 10px 15px 20px;
+    text-align: left;
+
+    h1,
+    h2 {
+      font-size: 30px;
+      line-height: 34px;
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 23px;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+  }
+
+  .motto-box {
+    background: linear-gradient(224.28deg, #da3e3f 0%, #ff5254 100%);
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.25);
+    max-width: calc(100% - 30px);
+    margin-top: 0;
+    padding: 20px 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.28em;
+    position: absolute;
+    bottom: -175px;
+
+    .normal {
+      font-weight: 300;
+    }
+    .strong {
+      font-weight: 500;
+    }
+    .bold {
+      font-weight: 900;
+    }
+  }
+
+  .notification {
+    color: $color-white;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 5px;
+
+    span {
+      padding: 7.5px 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 2px;
+      color: $color-white;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 23px;
+      text-align: center;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  .mid-buttons {
+    max-width: 650px;
+    width: 100%;
+    margin: 30px auto 0;
+
+    .fp-btn {
+      width: 100%;
+    }
+
+    .mid-buttons-desc {
+      margin-top: 10px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.65);
+      line-height: 23px;
+      text-align: center;
+    }
+  }
+
+  // Responsives
+  @media (min-width: $responsive-md) {
+    .banner-hero {
+      .banner-hero-cont {
+        h1.bold-lg,
+        h2.bold-lg {
+          font-size: 42px;
+          line-height: 44px;
+          letter-spacing: normal;
+        }
+      }
+    }
+
+    h1.bold,
+    h2.bold {
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  @media (min-width: $responsive-md) {
+    .banner-hero {
+      position: relative;
+
+      .banner-hero-cont {
+        position: relative;
+        z-index: 2;
+        max-width: 490px;
+
+        h1 {
+          margin-top: 28px;
+        }
+
+        p {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+          text-align: left;
+        }
+      }
+
+      .hero-img {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: -165px;
+        bottom: -30px;
+
+        &.img-left {
+          right: -100px;
+        }
+      }
+
+      .quote-form.quote-form-mid {
+        text-align: left;
+      }
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    padding-top: 180px;
+    padding-bottom: 80px;
+
+    .banner-hero {
+      position: relative;
+
+      &.two-lines {
+        .banner-hero-cont h1 {
+          padding-top: 54px;
+        }
+      }
+
+      .banner-hero-cont {
+        position: relative;
+        z-index: 2;
+        max-width: 700px;
+
+        h1 {
+          margin-top: 28px;
+        }
+
+        p {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+          text-align: left;
+        }
+      }
+
+      .hero-img {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: -270px;
+        bottom: -80px;
+
+        &.img-left {
+          right: -100px;
+        }
+      }
+
+      .quote-form.quote-form-mid {
+        text-align: left;
+      }
+
+      .testimonial.test-left {
+        display: inline-block;
+        margin: 0 15px;
+        width: auto;
+      }
+    }
+  }
+
+  @media (min-width: $responsive-xl) {
+    .banner-hero {
+      .hero-img {
+        right: -200px;
+        bottom: -80px;
+
+        &.img-social {
+          right: -150px;
+        }
+
+        &.img-left {
+          right: 0;
+        }
+      }
+    }
+
+    .blue-box,
+    .red-box {
+      padding: 50px 80px 50px 60px;
+      margin-left: -60px;
+      margin-right: 0;
+    }
+
+    .blue-box {
+      min-height: 530px;
+    }
+
+    .red-box {
+      min-height: 520px;
+    }
+  }
+
+  @media (min-width: $responsive-qhd) {
+    .banner-hero .hero-img {
+      right: -260px;
+      bottom: -80px;
+    }
+  }
+}
+
+.overall-review {
+  .overall-review-data {
+    text-align: center;
+  }
+
+  .overall-review-stars {
+    .overall-stats {
+      margin: 10px 25px;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    .overall-review-text h2 {
+      text-align: left;
+    }
+
+    .overall-review-data {
+      text-align: right;
+    }
+
+    .overall-review-stars {
+      .col-write {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.video-box {
+  margin: 20px auto 0;
+
+  .video-box-content {
+    position: relative;
+    max-width: 697px;
+    margin: 0 auto;
+  }
+
+  .video-box-img {
+    max-width: 100%;
+  }
+
+  .video-play {
+    display: inline-block;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+
+    img {
+      position: relative;
+      top: -27px;
+      left: -30px;
+    }
+  }
+
+  .video-title {
+    background: linear-gradient(180deg, #d13e3f 0%, #e94446 100%);
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.5);
+    position: absolute;
+    font-size: 15px;
+    padding: 12px 15px;
+    text-align: center;
+    bottom: -20px;
+    right: 15px;
+  }
+
+  // Responsives
+  @media (min-width: $responsive-md) {
+    margin: 50px auto 0;
+    .video-title {
+      padding: 16px 20px;
+      width: 340px;
+      font-size: 30px;
+      line-height: 34px;
+      bottom: -25px;
+      right: 20px;
+    }
+  }
+
+  @media (min-width: $responsive-xl) {
+    margin: 50px 0 0 -55px;
+
+    .video-box-content {
+      width: 697px;
+    }
+
+    .video-box-img {
+      max-width: none;
+    }
+  }
+}
+
+// Careers Page
+
+.page-careers,
+.page-digital-marketing-jobs,
+.single-job_listing {
+  section.banner {
+    min-height: 650px;
+    background: linear-gradient(180deg, #427fe0 60%, rgba(66, 127, 224, 0) 70%),
+      url("assets/img/img_fp_au_who_we_are_mob@2x.jpg") no-repeat center bottom -110px /
+        auto 400px #427fe0;
+
+    @media (min-width: $responsive-sm) {
+      min-height: 800px;
+      background: linear-gradient(
+          #427fe0 0%,
+          #427fe0 40%,
+          rgba(66, 127, 224, 0) 60%
+        ),
+        url("assets/img/img_fp_au_who_we_are_mob@2x.jpg") no-repeat center
+          bottom/contain;
+    }
+
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 50%),
+        linear-gradient(110deg, #427fdf 50%, rgba(0, 0, 0, 0) 50%),
+        url("assets/img/img_fp_au_who_we_are_header_2@2x.jpg") no-repeat right
+          center/auto 714px $color-blue;
+
+      background-position: 59%;
+    }
+
+    h1 {
+      + p {
+        // margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      @media (min-width: $responsive-md) {
+        font-size: 40px;
+        line-height: 45px;
+        + p {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+// .page-careers,
+// .page-digital-marketing-jobs,
+// .single-job_listing {
+//   section.banner {
+//     padding-bottom: 40px;
+//     background-color: $color-light;
+//     background-image: url("assets/img/img_careers_bg_mob.png");
+//     background-size: 1600px auto;
+//     background-position: 70% -170px;
+
+//     @media (min-width: $responsive-md) {
+//       padding-bottom: 80px;
+//       background-image: url("assets/img/bg-careers@2x.jpg");
+//       background-size: auto auto;
+//       background-position: top center;
+//     }
+
+//     @media (min-width: $responsive-lg) {
+//       padding-bottom: 100px;
+//     }
+
+//     @media (min-width: $responsive-qhd) {
+//       background-size: cover;
+//       background-position: center center;
+//     }
+//   }
+// }
+
+// Careers Page
+
+// Contact Us Page
+.page-contact,
+.page-thank-you {
+  section.banner {
+    padding-bottom: 40px;
+    background-image: url("assets/img/img_contact_us_header_mob.jpg");
+    background-position: top center;
+    background-size: cover;
+
+    .fp-btn {
+      padding: 15px;
+      width: 100%;
+    }
+
+    .form-group {
+      max-width: 674px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      letter-spacing: normal;
+    }
+
+    @media (min-width: $responsive-md) {
+      padding-bottom: 85px;
+      background-image: url("assets/img/img_contact_us_header.jpg");
+
+      h1 {
+        font-size: 42px;
+        line-height: 54px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      // .banner-form {
+      //   min-height: 540px;
+
+      //   .form-thankyou {
+      //     margin-top: 100px;
+      //   }
+      // }
+
+      .fp-btn {
+        padding: 15px 30px;
+        // width: auto;
+      }
+    }
+
+    @media (min-width: $responsive-md) {
+      .quote-form {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.page-thank-you {
+  section.banner .form-thankyou {
+    display: block;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    h1 {
+      @media (min-width: $responsive-md) {
+        font-size: 52px;
+        line-height: 46px;
+        letter-spacing: normal;
+      }
+    }
+    h2 {
+      font-size: 25px;
+      line-height: 30px;
+      padding: 0 15px;
+      @media (min-width: $responsive-md) {
+        font-size: 36px;
+        line-height: 41px;
+      }
+    }
+    P {
+      font-size: 16px;
+      line-height: 20px;
+      @media (min-width: $responsive-md) {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      a {
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.home,
+.page-home-en {
+  section.section-paragraph ul.tick {
+    padding-left: 0;
+  }
+  @media (min-width: $responsive-lg) {
+    section.banner .banner-hero .banner-hero-cont h1 {
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+
+    section.banner .banner-hero .banner-hero-cont p {
+      max-width: 600px;
+    }
+
+    .quote-form.quote-form-big .input-group {
+      max-width: 700px;
+    }
+  }
+}
+
+.blog,
+.archive,
+.category {
+  h1 {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+      line-height: 50px;
+    }
+  }
+  section.section-letstalk {
+    margin-top: 0;
+  }
+}
+
+// Who We Are Page
+.page-who-we-are {
+  .subHeading {
+    font-size: 24px;
+    line-height: 31.5px;
+    margin-bottom: 55px;
+  }
+  section.banner {
+    h1 {
+      font-size: 35px;
+    }
+
+    min-height: 450px;
+    background: url("assets/img/who_we_are_banner_sm@2x.png") no-repeat center;
+    background-size: cover;
+
+    @media (min-width: $responsive-sm) {
+      background: url("assets/img/who_we_are_banner_md@2x.png") no-repeat center;
+      background-size: cover;
+    }
+
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background: url("assets/img/who_we_are_banner_bg_lg@2x.png") no-repeat
+        center;
+      background-size: cover;
+
+      // background-position: 48% 85%;
+
+      .who-we-are-h1 {
+        min-height: 353px;
+        margin-top: 21.5px;
+      }
+    }
+
+    h1 {
+      @media (min-width: $responsive-md) {
+        font-size: 48px;
+        line-height: 55px;
+      }
+    }
+  }
+  section.section-paragraph .text-container .fp-btn {
+    width: auto;
+  }
+  // responsive
+  @media (max-width: 767px) {
+    section.banner h1 {
+      padding: 0 0px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .hero-mobile {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  section.banner h1 {
+    padding: 0 15px;
+    letter-spacing: 1.73px;
+  }
+
+  section.banner .banner-description {
+    position: relative;
+  }
+
+  section.banner .banner-description p {
+    max-width: 170px;
+    margin-bottom: 0;
+    padding: 0 15px;
+    min-height: 168px;
+  }
+
+  .hero-mobile {
+    margin-bottom: -120px;
+    position: absolute;
+    bottom: 0;
+    right: -68px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .section-paragraph-home {
+    background: url("assets/img/img_grow_faster.jpg") no-repeat;
+    background-position-x: calc(50% - 480px);
+    background-position-y: bottom;
+    > .row {
+      min-height: 624px;
+    }
+  }
+  .section-paragraph-home-2 {
+    background: url("assets/img/img_sentr_dash.png") no-repeat;
+    background-position-x: calc(50% + 480px);
+    background-position-y: bottom;
+    > .row {
+      min-height: 624px;
+    }
+  }
+  .section-paragraph-who-we-are {
+    background: url("assets/img/img_build_values.jpg") no-repeat;
+    background-position-x: calc(50% + 480px);
+    background-position-y: bottom;
+    > .row {
+      min-height: 445px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .d-xxl-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.banner.extra-pad {
+    padding-top: 260px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-header.min-header .navbar-brand img {
+    display: none;
+  }
+}
+
+.page-monthly-service-activation,
+.page-payment-failed,
+.page-payment-confirmation {
+  @media (min-width: $responsive-md) {
+    h1 {
+      font-size: 48px;
+      line-height: 50px;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+}
+
+//google ads
+.google-ads-banner {
+  .banner-description p {
+    max-width: 590px;
+  }
+
+  @media (max-width: $responsive-md) {
+    .hero-mobile {
+      bottom: 60px;
+      right: -14px;
+    }
+
+    .quote-form {
+      margin-top: -30px;
+    }
+  }
+
+  @media (min-width: $responsive-md) {
+    .banner-hero .hero-img {
+      right: -275px !important;
+      bottom: -30px !important;
+    }
+    .hero-img img {
+      width: 90%;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    .hero-img img {
+      width: 100%;
+    }
+
+    .banner-hero .hero-img {
+      right: -242px !important;
+      bottom: -80px !important;
+    }
+  }
+}
+
+//google display network
+.google-display-network-banner {
+  @media (max-width: $responsive-md) {
+    .hero-mobile {
+      right: -15px !important;
+      bottom: 29px !important;
+    }
+  }
+
+  @media (min-width: $responsive-md) {
+    .hero-img img {
+      width: 90%;
+    }
+
+    .banner-hero .hero-img {
+      right: -97px !important;
+      bottom: -30px !important;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    .hero-img img {
+      width: 90%;
+    }
+    .banner-hero .hero-img {
+      right: -253px !important;
+      bottom: -81px !important;
+    }
+
+    .banner-description p {
+      max-width: 650px;
+    }
+  }
+}
+
+//google shopping
+.google-shopping-banner {
+  @media (max-width: $responsive-md) {
+    .hero-mobile {
+      bottom: 29px !important;
+      right: -15px !important;
+    }
+  }
+
+  @media (min-width: $responsive-md) {
+    .banner-hero .hero-img {
+      right: -275px !important;
+    }
+
+    .hero-img img {
+      width: 95%;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    .banner-hero-cont {
+      max-width: 726px !important;
+    }
+    .banner-description p {
+      max-width: 650px;
+    }
+
+    .banner-hero .hero-img {
+      right: -284px !important;
+    }
+  }
+}
+
+// woocommerce seo banner
+.woocommerce-seo-banner {
+  @media (max-width: $responsive-md) {
+    .hero-mobile {
+      bottom: 29px !important;
+      right: -42px !important;
+    }
+  }
+
+  @media (min-width: $responsive-md) {
+    .banner-hero .hero-img {
+      right: -305px !important;
+      bottom: -109px !important;
+    }
+
+    .hero-img img {
+      width: 95%;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    .banner-hero-cont {
+      max-width: 726px !important;
+    }
+    .banner-description p {
+      max-width: 650px;
+    }
+
+    .banner-hero .hero-img {
+      right: -284px !important;
+      bottom: -80px !important;
+    }
+  }
+}
+
+//instagram advertising banner
+.instagram-advertising-banner {
+  @media (max-width: $responsive-md) {
+    .hero-mobile {
+      bottom: 29px;
+      right: -41px;
+    }
+
+    .hero-mobile img {
+      width: 90%;
+    }
+  }
+
+  @media (min-width: $responsive-md) {
+    .banner-hero .hero-img {
+      right: -285px !important;
+    }
+
+    .hero-img img {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    .banner-description p {
+      max-width: 650px;
+    }
+
+    .banner-hero .hero-img {
+      right: -244px !important;
+    }
+
+    .hero-img img {
+      width: 87%;
+    }
+  }
+}
+
+//linkedin-advertising-banner
+.linkedin-advertising-banner {
+  @media (max-width: $responsive-md) {
+    .hero-mobile {
+      bottom: 29px;
+      right: -26px;
+    }
+  }
+
+  @media (min-width: $responsive-md) {
+    .banner-hero .hero-img {
+      right: -275px !important;
+    }
+
+    .hero-img img {
+      width: 90%;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    .banner-description p {
+      max-width: 650px;
+    }
+
+    .banner-hero .hero-img {
+      right: -244px !important;
+    }
+
+    .hero-img img {
+      width: 100%;
+    }
+  }
+}
+
+.free-proposal-thank-banner {
+  background-image: url("assets/img/img_contact_us_header.jpg") !important;
+  background-position: top center !important;
+  background-size: cover !important;
+}
+
+//Location - Perth Page
+.page-seo-perth,
+.page-seo-brisbane,
+.page-seo-gold-coast,
+.page-seo-sydney,
+.page-seo-melbourne,
+.page-seo-parramatta,
+.page-seo-adelaide,
+.page-seo-canberra,
+.page-seo-ballarat {
+  .banner-img-mb img {
+    width: 114%;
+    margin-left: -14px;
+    margin-bottom: -66px;
+    margin-top: -30px;
+  }
+  section.banner {
+    min-height: 650px;
+    @media (min-width: $responsive-sm) {
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/perth-location-banner-bg.png") no-repeat right
+          center/auto 714px $color-blue;
+      background-position: 59%;
+    }
+
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/perth-location-banner-bg.png") no-repeat right
+          center/auto 714px $color-blue;
+      background-size: cover;
+      background-position: 52%;
+    }
+
+    @media (min-width: $responsive-wq) {
+      background-position: 85%;
+    }
+
+    h1 {
+      + p {
+        // margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      @media (min-width: $responsive-md) {
+        font-size: 52px;
+        line-height: 54px;
+        + p {
+          margin-top: 20px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+//SEO Brisbane
+.page-seo-brisbane {
+  section.banner {
+    @media (min-width: $responsive-sm) {
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/seo-brisbane-banner-bg.svg") no-repeat right center/auto
+          714px $color-blue;
+      background-position: 96%;
+    }
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background-size: cover;
+      background-position: 98%;
+    }
+
+    @media (min-width: $responsive-wq) {
+      background-position: 85%;
+    }
+  }
+}
+
+// SEO Sydney
+.page-seo-sydney {
+  section.banner {
+    @media (min-width: $responsive-sm) {
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/location_sydney_bg_lg.svg") no-repeat right center/auto
+          714px $color-blue;
+      background-position: 96%;
+    }
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background-size: cover;
+      background-position: 98%;
+    }
+
+    @media (min-width: $responsive-wq) {
+      background-position: 85%;
+    }
+  }
+}
+
+// SEO Ballarat
+.page-seo-ballarat {
+  section.banner {
+    @media (min-width: $responsive-sm) {
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/img_ballarat_banner_bg_lg.png") no-repeat right
+          center/auto 714px $color-blue;
+      background-position: 96% -37%;
+    }
+
+    @media (min-width: $responsive-md) {
+      background-position: 58%;
+    }
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background-size: cover;
+      background-position: 49%;
+    }
+
+    @media (min-width: $responsive-wq) {
+      background-position: 85%;
+    }
+  }
+}
+
+// SEO Melbourne
+.page-seo-melbourne {
+  section.banner {
+    @media (min-width: $responsive-sm) {
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/mel_location_bg_lg@2x.png") no-repeat right center/auto
+          714px $color-blue;
+      background-position: 96%;
+    }
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background-size: cover;
+      background-position: 98%;
+    }
+
+    @media (min-width: $responsive-wq) {
+      background-position: 85%;
+    }
+  }
+}
+
+// SEO Canberra
+.page-seo-canberra {
+  section.banner {
+    @media (min-width: $responsive-sm) {
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/img_canberra_banner_lg.png") no-repeat right center/auto
+          714px $color-blue;
+      background-position: 96%;
+    }
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background-size: cover;
+      background-position: 98%;
+    }
+
+    @media (min-width: $responsive-wq) {
+      background-position: 85%;
+    }
+  }
+}
+// SEO Adelaide
+.page-seo-adelaide {
+  section.banner {
+    @media (min-width: $responsive-sm) {
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/img_adelaide_banner_lg.png") no-repeat right center/auto
+          714px $color-blue;
+      background-position: 96%;
+    }
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background-size: cover;
+      background-position: 98%;
+    }
+
+    @media (min-width: $responsive-wq) {
+      background-position: 85%;
+    }
+  }
+}
+
+// SEO Parramatta
+.page-seo-parramatta {
+  section.banner {
+    @media (min-width: $responsive-sm) {
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/img_parramatta_banner_lg@2x.png") no-repeat right
+          center/auto 714px $color-blue;
+      background-position: 63%;
+    }
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background-size: cover;
+      background-position: 98%;
+    }
+
+    @media (min-width: $responsive-wq) {
+      background-position: 85%;
+    }
+  }
+}
+
+// Sunshine Page Banner
+.sunshine-page-banner {
+  position: relative;
+  .banner-hero {
+    position: relative;
+    .banner-hero-cont {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  .banner-hero-image {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(75% 0, 100% 0, 100% 100%, 55% 100%);
+    }
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+  .banner-hero-image-mb {
+    margin-bottom: -60px;
+    width: 100vw;
+    margin-left: -15px;
+    img {
+      width: 100%;
+      clip-path: polygon(0 40%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+}
+
+// Landing Development Banner
+.landing-development-banner {
+  // responsive
+  @media (min-width: $responsive-md) {
+    .banner-hero .hero-img {
+      right: -141px !important;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+    .banner-hero .hero-img {
+      right: -288px !important;
+    }
+  }
+  @media (min-width: $responsive-xl) {
+    .banner-hero .hero-img {
+      right: -169px !important;
+    }
+  }
+  @media (min-width: $responsive-qhd) {
+    .banner-hero .hero-img {
+      right: -168px !important;
+      bottom: -82px;
+    }
+  }
+}
+
+// SEO Gold Coast
+.page-seo-gold-coast {
+  section.banner {
+    @media (min-width: $responsive-sm) {
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/gold-coast-banner-lg.svg") no-repeat right center/auto
+          714px $color-blue;
+      background-position: 96%;
+    }
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background-size: cover;
+      background-position: 98%;
+    }
+
+    @media (min-width: $responsive-wq) {
+      background-position: 85%;
+    }
+  }
+}
+
+// Amazon SEO
+.page-amazon-seo {
+  .amazon-seo-banner {
+    @media (max-width: 767px) {
+      .banner-description {
+        margin-top: 159px;
+        @media (max-width: 375px) {
+          margin-top: 190px;
+        }
+      }
+      .hero-mobile {
+        right: -19px;
+      }
+    }
+    @media (min-width: $responsive-md) {
+      .hero-img {
+        right: -264px;
+      }
+    }
+  }
+}
+
+// programmatic ad
+.page-programmatic-advertising,
+.page-content-removal-australia {
+  @media (max-width: 767px) {
+    section.banner h1 {
+      margin-bottom: 96px;
+    }
+    .hero-mobile {
+      margin-bottom: -120px;
+      position: absolute;
+      bottom: 22px;
+      right: -68px;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    section.banner .banner-hero .hero-img {
+      right: -230px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 834px) {
+    section.banner .banner-hero .banner-hero-cont {
+      max-width: 580px;
+    }
+    section.banner .banner-hero .hero-img {
+      right: -139px;
+    }
+  }
+}
+
+//
+.page-content-removal-australia {
+  @media only screen and (min-width: 414px) and (max-width: 425px) {
+    section.banner h1 {
+      margin-bottom: 73px !important;
+    }
+  }
+  @media (max-width: 767px) {
+    section.banner h1 {
+      margin-bottom: 48px;
+    }
+    .hero-mobile {
+      margin-bottom: -120px;
+      position: absolute;
+      bottom: 29px;
+      right: -43px;
+    }
+
+    section.banner .banner-description {
+      margin-top: -22px;
+    }
+    .hero-mobile img {
+      width: 90%;
+    }
+  }
+}
+
+// Revenue Growth Offer
+.page-revenue-growth-offer {
+  @media (max-width: 767px) {
+    .quote-form {
+      margin-top: -55px;
+    }
+
+    .hero-mobile {
+      margin-bottom: -120px;
+      position: absolute;
+      bottom: 22px;
+      right: -68px;
+    }
+  }
+
+  .banner h1 {
+    font-size: 28px;
+    line-height: 36.4px;
+  }
+  @media (min-width: $responsive-md) {
+    .banner h1 {
+      font-size: 38px;
+      line-height: 46.28px;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    .banner h1 {
+      font-size: 52px;
+      line-height: 56.58px;
+    }
+    section.banner .banner-hero .hero-img {
+      right: -230px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 834px) {
+    section.banner .banner-hero .banner-hero-cont {
+      max-width: 580px;
+    }
+    section.banner .banner-hero .hero-img {
+      right: -139px;
+    }
+  }
+}
+
+// Premium content writing
+.page-premium-content-writing {
+  @media (max-width: 767px) {
+    section.banner h1 {
+      margin-bottom: 150px;
+    }
+    .hero-mobile {
+      bottom: 37px;
+    }
+  }
+  @media (min-width: $responsive-md) {
+    section.banner .banner-hero .hero-img {
+      right: -99px;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    section.banner .banner-hero .hero-img {
+      right: -147px;
+      bottom: -96px;
+    }
+  }
+  @media (min-width: $responsive-qhd) {
+    section.banner .banner-hero .hero-img {
+      bottom: -93px;
+    }
+  }
+}
+
+// SEO offer
+.page-seo-offer {
+}

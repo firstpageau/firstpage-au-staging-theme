@@ -1,0 +1,619 @@
+.strategy-form-body {
+  background-color: #fff;
+}
+
+.strategy-form-body .col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.strategy-form-header {
+  display: flex;
+  margin-top: -32px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.strategy-form-container {
+  max-width: 1400px;
+}
+
+.strategy-form-container label {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.back-btn-holder {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+.back-btn-holder svg {
+  margin-top: -10px;
+}
+
+.strategy-form-back-btn {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+#strategyForm {
+  background-color: #ffffff;
+  margin: 30px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*custom radio btn*/
+/* Custom radio container */
+.custom-radio-container {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.custom-radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.custom-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio-container:hover input ~ .custom-radio {
+  /*background-color: #ccc;*/
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio-container input:checked ~ .custom-radio {
+  background-color: #427fe0;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.custom-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio-container input:checked ~ .custom-radio:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio-container .custom-radio:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+/*end custom radio btn*/
+
+p.strategy-form-input-holder {
+  max-width: 658px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px !important;
+  font-weight: 600;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+.strategy-form-btn-holder {
+  max-width: 570px;
+  height: 88px;
+  margin: auto;
+}
+
+.strategy-form-next-btn {
+  background-color: #ff5254;
+  width: 100%;
+  height: 70px;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 30px;
+  line-height: 37px;
+  cursor: pointer;
+  letter-spacing: 5.16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04aa6d;
+}
+
+/* css */
+.logo-holder {
+  margin: auto;
+  display: block;
+  text-align: center;
+  /*margin-top: -32px;*/
+}
+
+.sf-cross-holder {
+  display: none;
+}
+
+.sf-cross-holder a {
+  color: #427fe0;
+}
+
+.strategy-form-progress {
+  width: 77%;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 6px !important;
+}
+
+.strategy-form-progress-bar {
+  background-color: #427fe0 !important;
+  border-radius: 6px !important;
+}
+
+.strategy-form-hero-text {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #00225d;
+}
+
+.strategy-form-main-text p {
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #00225d;
+}
+
+.strategy-form-client-review {
+  padding-top: 0px;
+}
+
+.strategy-form-container input[type="text"],
+.strategy-form-container input[type="email"],
+.strategy-form-container input[type="tel"] {
+  border: none;
+  /*border-radius: 1px !important;*/
+  -webkit-appearance: none !important;
+  box-shadow: 0px 0px 14px 4px #dddddd !important;
+  -webkit-box-shadow: 0px 0px 14px 4px #dddddd !important;
+  -moz-box-shadow: 0px 0px 14px 4px #dddddd !important;
+  padding-left: 18px;
+  height: 70px;
+  border: 1px solid #d2d1d1c7;
+}
+.marketing-type-selector-container {
+  /*display: flex;*/
+  /*align-items: center;*/
+  display: block;
+}
+
+p.marketing-type-text {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.strategy-form-radio-container input {
+  width: 26px;
+  height: 100%;
+}
+
+.strategy-form-container .custom-form-check {
+  display: flex;
+  align-items: flex-end;
+}
+
+.phone-promise-input-container .custom-form-check {
+  justify-content: center;
+}
+
+.strategy-form-container .custom-form-check-label {
+  margin-left: 20px;
+}
+
+/*marketing icons*/
+.select-checkbox:checked + .select-checkbox-bg {
+  /*background-color: #e9ecef;*/
+  background-color: #272727;
+  opacity: 0.2;
+}
+
+.icon-label {
+  height: 4.3rem;
+  width: 4.3rem;
+  display: flex;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+}
+.select-icon {
+  /*z-index: 10;*/
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.select-checkbox {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.select-checkbox-bg {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.seo-checkbox,
+.google-ads-checkbox,
+.fb-checkbox,
+.print-checkbox,
+.affiliate-checkbox,
+.tv-checkbox,
+.radio-checkbox,
+.none-checkbox {
+  outline: none;
+  cursor: pointer;
+  /*display: block;*/
+  border: 0;
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  margin: auto;
+  text-align: center;
+  padding: 10px !important;
+}
+.seo-checkbox:after {
+  content: url("../img/search.svg");
+}
+
+.google-ads-checkbox:after {
+  content: url("../img/adwords.svg");
+}
+
+.fb-checkbox:after {
+  content: url("../img/facebook.svg");
+}
+
+.print-checkbox:after {
+  content: url("../img/print.svg");
+}
+
+.affiliate-checkbox:after {
+  content: url("../img/affiliate.svg");
+}
+
+.tv-checkbox:after {
+  content: url("../img/tv.svg");
+}
+
+.radio-checkbox:after {
+  content: url("../img/radio.svg");
+}
+
+.none-checkbox:after {
+  content: url("../img/none.svg");
+}
+
+.seo-checkbox:checked,
+.google-ads-checkbox:checked,
+.fb-checkbox:checked,
+.print-checkbox:checked,
+.affiliate-checkbox:checked,
+.tv-checkbox:checked,
+.radio-checkbox:checked,
+.none-checkbox:checked {
+  display: block;
+  background-color: #e9ecef;
+  color: #000;
+  width: auto;
+  height: 100%;
+  z-index: 3;
+}
+
+/*end */
+
+.tab.marketing-type-tab {
+  margin-bottom: 25px;
+}
+
+.budget-input-container,
+.when-start-input-container {
+  width: 95%;
+  margin: auto;
+}
+
+.strategy-form-client-review .carousel-control-next,
+.strategy-form-client-review .carousel-control-prev {
+  border: none;
+  background-color: transparent;
+  color: #000;
+}
+
+.sf-reviews-indicator {
+  border: none;
+  margin: 3px;
+}
+
+/*Pop up*/
+/* The Modal (background) */
+.sf-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(19, 69, 149, 0.82); /* Black w/ opacity */
+}
+
+.sf-modal h2 {
+  font-size: 24px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+/* Modal Content */
+.sf-modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+  position: absolute;
+  max-width: 400px;
+}
+
+/* The Close Button */
+.sf-pop-close-btn {
+  color: #427fe0;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.sf-pop-close-btn:hover,
+.sf-pop-close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sf-pop-no-btn {
+  height: 56px;
+  width: 90%;
+  border: none;
+  display: block;
+  margin: auto;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #ff5254;
+  box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.15);
+}
+
+.sf-pop-yes-btn {
+  height: 56px;
+  width: 90%;
+  border: none;
+  display: block;
+  margin: auto;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #d4d4d4;
+  box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.15);
+}
+
+/*end Pop up*/
+
+span.sfErrorMessage {
+  font-size: 14px;
+  text-align: left;
+  display: block;
+}
+
+@media only screen and (max-width: 1205px) {
+  #strategyForm {
+    width: 94% !important;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+}
+
+@media only screen and (max-width: 769px) {
+  .budget-input-container,
+  .when-start-input-container {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .strategy-form-main-text p {
+    font-size: 20px;
+  }
+  .strategy-form-btn-holder {
+    /*width: 300px;*/
+  }
+  #strategyForm {
+    padding: 10px;
+    width: 100% !important;
+  }
+
+  .strategy-form-hero-text {
+    font-size: 27px;
+    line-height: 33px;
+  }
+  .strategy-form-back-btn {
+    font-size: 20px;
+  }
+
+  .logo-holder {
+    /*margin-top: -36px;*/
+  }
+  .logo-holder svg {
+    width: 160px;
+  }
+
+  .strategy-form-client-review .carousel-control-next,
+  .strategy-form-client-review .carousel-control-prev {
+    display: none;
+  }
+
+  section.section-client-reviews .testimonial .text::before {
+    left: -22px;
+  }
+
+  section.section-client-reviews .testimonial .text::after {
+    right: -22px;
+  }
+
+  .strategy-form-header {
+    margin-top: -10px;
+  }
+}

@@ -1,0 +1,576 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<style>
+
+    .home-banner h1 {
+        max-width: 659px !important;
+        margin-bottom: 38px;
+    }
+    @media (max-width: 991px) {
+        .home .quote-form.quote-form-big select.form-control {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        .quote-form.quote-form-big .input-group .select-container.form-control::after {
+            top: 20px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .home .quote-form.quote-form-big {
+            width: 600px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .home .hero-mobile {
+            margin-bottom: -118px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .home-banner h1 {
+            margin-top: 70px !important;
+        }
+    }
+</style>
+
+<section class="banner form-space home-banner">
+    <div class="container banner-hero">
+        <div class="banner-hero-cont">
+            <h1 class="form-hide">A smarter, faster way to drive traffic to your website.</h1>
+            <div class="banner-description">
+                <p class="form-hide">Get an integrated digital marketing strategy from APAC's highest rated digital agency.</p>
+                <div class="form-hide hero-mobile">
+                    <img src="{{ site.theme.link }}/assets/img/img-hero-fpa-home-mobile.png" srcset="{{ site.theme.link }}/assets/img/img-hero-fpa-home-mobile.png, {{ site.theme.link }}/assets/img/img-hero-fpa-home-mobile@2x.png 2x" alt="First Page" />
+                </div>
+            </div>
+            {% embed "partials/en-form-services.twig" with {'form_page': 'Homepage', 'form_button': 'Get A Free Quote', 'website_needed': true} %}
+            {% block step_1 %}
+            <div class="input-group">
+                <div class="select-container form-control">
+                    <select class="form-control" name="lead_interest">
+                        <option value="I need more traffic to my website">I need more traffic to my website</option>
+                        <option value="I need more customers">I need more customers</option>
+                        <option value="I need more leads">I need more leads</option>
+                        <option value="I need more sales">I need more sales</option>
+                        <option value="I need help with brand awareness">I need help with brand awareness</option>
+                        <option value="All of the above">All of the above</option>
+                    </select>
+                </div>
+                <div class="input-group-btn"><button type="button" class="btn fp-btn fp-btn-orange form-continue">Get A Free Quote</button></div>
+            </div>
+            {% endblock %}
+            {% endembed %}
+            {% include "partials/en-section-awards-badges.twig" %}
+        </div>
+        <div class="hero-img d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/img-hero-fpa-home-tab.png" srcset="{{ site.theme.link }}/assets/img/img-hero-fpa-home-tab.png, {{ site.theme.link }}/assets/img/img-hero-fpa-home-tab@2x.png 2x" alt="First Page" />
+        </div>
+        <div class="hero-img d-none d-lg-block">
+            <img src="{{ site.theme.link }}/assets/img/img-hero-fpa-home.png" srcset="{{ site.theme.link }}/assets/img/img-hero-fpa-home.png, {{ site.theme.link }}/assets/img/img-hero-fpa-home@2x.png 2x" alt="First Page" />
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-experience.twig" %}
+
+<section class="section-services">
+    <div class="container">
+        <div class="section-title">
+            <h2>Are you looking to generate an insane amount of traffic?
+                <br>Then you’ve hit paydirt!
+            </h2>
+            <p class="text-left text-sm-center">Honest, 100% transparency and evidence-based decisions is how we operate. Shonky operators come and go, but First Page has been operating since 2011 with a 4.9/5 Google review rating.</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="{{ site.theme.link }}/assets/img/icn_seo.svg" width="100" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h3 class="card-title">SEO</h3>
+                        <p class="card-text min-height">Our proven SEO strategies will bury your competition and send your business high-quality traffic that actually converts.</p>
+                        <h4>Start with…</h4>
+                        <ul class="tick">
+                            <li><a href="https://firstpage.com.au/seo/"><strong>Local & National SEO</strong></a></li>
+                            <li><a href="https://firstpage.com.au/international-seo/"><strong>International SEO</strong></a></li>
+                            <li><a href="https://firstpage.com.au/ecommerce-seo/"><strong>Ecommerce SEO</strong></a></li>
+                            <li><a href="https://firstpage.com.au/enterprise-seo/"><strong>Enterprise SEO</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ home_url }}seo/">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="{{ site.theme.link }}/assets/img/icn_google_home.svg" width="110" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h3 class="card-title">Google Ads</h3>
+                        <p class="card-text min-height">Start generating leads and sales NOW with a PPC campaign run by true experts who know how to transform clicks into revenue. </p>
+                        <h4>Start with…</h4>
+                        <ul class="tick">
+                            <li><a href="https://firstpage.com.au/google-ads/"><strong>Google Ads</strong></a></li>
+                            <li><a href="https://firstpage.com.au/google-display-network/"><strong>Google Display Ads</strong></a></li>
+                            <li><a href="https://firstpage.com.au/google-shopping/"><strong>Google Shopping</strong></a></li>
+                            <li><strong>Google Remarketing</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ home_url }}google-ads/">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="{{ site.theme.link }}/assets/img/icn_social_ads.svg" width="153" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h3 class="card-title">Social Media</h3>
+                        <p class="card-text">We create hyper-targeted funnels that are designed to nurture, motivate, and inspire your core audience to purchase your products and services.</p>
+                        <h4>Start with…</h4>
+                        <ul class="tick">
+                            <li><a href="https://firstpage.com.au/facebook-advertising/"><strong>Facebook Ads</strong></a></li>
+                            <li><a href="https://firstpage.com.au/instagram-advertising/"><strong>Instagram Ads</strong></li>
+                            <li><a href="https://firstpage.com.au/linkedin-advertising/"><strong>LinkedIn Ads</strong></li>
+                            <li><a href="https://firstpage.com.au/tiktok-advertising/"><strong>TikTok Ads</strong></li>
+                            <li><a href="https://firstpage.com.au/youtube-advertising/"><strong>Youtube Ads</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ home_url }}facebook-advertising/">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="{{ site.theme.link }}/assets/img/icn_reputation.svg" width="107" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h3 class="card-title">Reputation</h3>
+                        <p class="card-text">Amplify your reviews, remove unwanted content, and take control of your online reputation with our trusted reputation management services.</p>
+                        <h4>Start with…</h4>
+                        <ul class="tick">
+                            <li><a href="https://firstpage.com.au/content-removal-australia/"><strong>Unfair Content Removal</strong></a></li>
+                            <li><strong>Generate Real Customer Reviews</strong></li>
+                            <li><a href="https://firstpage.com.au/reputation-management/"><strong>Reputation Monitoring</strong></a></li>
+                        </ul>
+
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ home_url }}reputation-management/">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-features section-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <img src="{{ site.theme.link }}/assets/img/icn_revenue.svg" width="83" height="80" alt="First Page">
+                <h5>Generated over $3.8+ billion <br class="d-none d-lg-block">
+                    in sales for our clients</h5>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="{{ site.theme.link }}/assets/img/img_google-reviews.svg" width="198" height="80" alt="First Page">
+                {# <img src="{{ site.theme.link }}/assets/img/icn_google_reviews.png" width="160" height="80" srcset="{{ site.theme.link }}/assets/img/icn_google_reviews.png, {{ site.theme.link }}/assets/img/icn_google_reviews@2x.png 2x" alt="First Page" /> #}
+                <h5>500+ Google reviews globally <br class="d-none d-lg-block">
+                    with a 4.9/5 rating</h5>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="{{ site.theme.link }}/assets/img/icn_awards.svg" width="73" height="80" alt="First Page">
+                <h5>Won 14 digital awards <br class="d-none d-lg-block">
+                    and counting</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-casestudy-british-connections.twig" %}
+
+<section class="section-paragraph section-paragraph-home">
+    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-6 image-container-left">
+            <img src="{{ site.theme.link }}/assets/img/img_grow_faster.jpg" srcset="{{ site.theme.link }}/assets/img/img_grow_faster.jpg, {{ site.theme.link }}/assets/img/img_grow_faster@2x.jpg 2x" class="img-fluid d-none d-xxl-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/img_grow_faster_mob.jpg" srcset="{{ site.theme.link }}/assets/img/img_grow_faster_mob.jpg, {{ site.theme.link }}/assets/img/img_grow_faster_mob@2x.jpg 2x" class="img-fluid d-md-none" alt="First Page" />
+        </div>
+        <div class="col-12 col-md-6 text-container">
+            <h2>When it comes to your business - we settle for nothing but the best.</h2>
+            <p class="text-center text-md-left">The truth is, Digital Marketing takes a lot of work, and the juggling act of running an in-house digital marketing team can quickly turn into a full-scale circus.</p>
+            <p class="text-center text-md-left">Let us focus on what we do best, so you can focus on what you do best.</p>
+            <p class="text-center text-md-left">Explode your traffic, skyrocket your growth, and blow your annual sales report through the roof with First Page.</p>
+            <button type="button" data-title="homepage-get-freeproposal-when" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick" >Get a free proposal</button>
+        </div>
+    </div>
+</section>
+
+<section class="section-paragraph section-paragraph-home-2">
+    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+        <div class="col-12 col-md-6 image-container-right">
+            <img src="{{ site.theme.link }}/assets/img/img_sentr_dash.png" srcset="{{ site.theme.link }}/assets/img/img_sentr_dash.png, {{ site.theme.link }}/assets/img/img_sentr_dash@2x.png 2x" class="img-fluid d-none d-xxl-inline-block" alt="First Page" />
+        </div>
+        <div class="col-12 col-md-6 text-container">
+            <h2>The First Page engine is powered by our proprietary technology - SENTR™</h2>
+            <p class="text-left">Built with you in mind, SENTR™ is the system that separates First Page from other second-rate agencies. SENTR™ will help you…</p>
+            <ul class="tick">
+                <li>Always be in the know about your campaign</li>
+                <li>Easily access and understand your results</li>
+                <li>Stay ahead of digital trends</li>
+                <li>Save time on communication</li>
+                <li>Daily competitor insights</li>
+            </ul>
+            <img style="margin-top: 10px;" src="{{ site.theme.link }}/assets/img/img_sentr_dash_mob.png" srcset="{{ site.theme.link }}/assets/img/img_sentr_dash_mob.png, {{ site.theme.link }}/assets/img/img_sentr_dash_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+            <button type="button"  data-title="homepage-get-freeproposal-the" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">Get a free proposal</button>
+        </div>
+    </div>
+</section>
+
+    <section class="section-comparison">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-center d-none d-md-block">vs.</h2>
+            </div>
+            <div class="row comparison-row">
+                <div class="col-12 col-md-6 comparison-left-col">
+                    <div class="mt-5 d-block d-md-none"></div>
+                    <h2 class="text-center mb-4">First Page</h2>
+                    <div class="comparison-content-paragraph-holder">
+                        <p class="comparison-symbol green-tick">✓</p>
+                        <p class="comparison-paragraph">Nothing outsourced overseas</p>
+                    </div>
+                    <div class="comparison-content-paragraph-holder">
+                        <p class="comparison-symbol green-tick">✓</p>
+                        <p class="comparison-paragraph">Strategy session & extensive pre-campaign research</p>
+                    </div>
+                    <div class="comparison-content-paragraph-holder">
+                        <p class="comparison-symbol green-tick">✓</p>
+                        <p class="comparison-paragraph">SENTR → Proprietary tool that brings campaign management,
+                            reporting & approvals together in one platform. Meaning we spend less time of admin and
+                            more
+                            time
+                            executing & optimising your campaigns.</p>
+                    </div>
+                    <a class="text-center d-block d-md-none mb-4" id="comparison_fp_read_more_btn">Read More</a>
+                    <div class="d-none d-md-block" id="comparison_fp_hide_content">
+                        <div class="comparison-content-paragraph-holder">
+                            <p class="comparison-symbol green-tick">✓</p>
+                            <p class="comparison-paragraph">We are a Google “Premier Partner”, which means as of June 2021 - only 3% of all
+                                global agencies will maintain this title - we are one of them.</p>
+                        </div>
+                        <div class="comparison-content-paragraph-holder">
+                            <p class="comparison-symbol green-tick">✓</p>
+                            <p class="comparison-paragraph">In depth customisation for individual client requirements - we do not operate under
+                                a “one size fits all” factory approach.</p>
+                        </div>
+                        <div class="comparison-content-paragraph-holder">
+                            <p class="comparison-symbol green-tick">✓</p>
+                            <p class="comparison-paragraph">All employees (AMs/ Sales/ Paid Media) are Black Belt Certified through Google’s
+                                Digital training program.</p>
+                        </div>
+                        <div class="comparison-content-paragraph-holder">
+                            <p class="comparison-symbol green-tick">✓</p>
+                            <p class="comparison-paragraph">Unbeatable performance milestones.</p>
+                        </div>
+                        <div class="comparison-content-paragraph-holder">
+                            <p class="comparison-symbol green-tick">✓</p>
+                            <p class="comparison-paragraph">No hidden fees. Plus all the data is yours!</p>
+                        </div>
+                    </div>
+                    <a class="text-center d-none mb-4" id="comparison_fp_read_less_btn">Read Less</a>
+                    <div class="section-title">
+                        <h2 class="text-center d-block d-md-none mb-4">vs.</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 comparison-right-col">
+                    <h2 class="text-center mb-4">Other Agencies</h2>
+                    <div class="comparison-right-col-content">
+                        <div class="comparison-content-paragraph-holder">
+                            <p class="comparison-symbol red-cross">✘</p>
+                            <p class="comparison-paragraph">Compromises on quality by outsourcing</p>
+                        </div>
+                        <div class="comparison-content-paragraph-holder">
+                            <p class="comparison-symbol red-cross">✘</p>
+                            <p class="comparison-paragraph">Standard “package” approach with little to no flexibility</p>
+                        </div>
+                        <div class="comparison-content-paragraph-holder">
+                            <p class="comparison-symbol red-cross">✘</p>
+                            <p class="comparison-paragraph">Reliance on standardised project management tools or excel</p>
+                        </div>
+                        <a class="text-center d-block d-md-none" id="comparison_other_read_more_btn">Read More</a>
+                        <div class="d-none d-md-block" id="comparison_other_hide_content">
+                            <div class="comparison-content-paragraph-holder">
+                                <p class="comparison-symbol red-cross">✘</p>
+                                <p class="comparison-paragraph">Churn & burn approach to client acquisition</p>
+                            </div>
+                            <div class="comparison-content-paragraph-holder">
+                                <p class="comparison-symbol red-cross">✘</p>
+                                <p class="comparison-paragraph">Basic template audit and implementation</p>
+                            </div>
+                            <div class="comparison-content-paragraph-holder">
+                                <p class="comparison-symbol red-cross">✘</p>
+                                <p class="comparison-paragraph">Small teams with capacity constraints</p>
+                            </div>
+                            <div class="comparison-content-paragraph-holder">
+                                <p class="comparison-symbol red-cross">✘</p>
+                                <p class="comparison-paragraph">Low quality account servicing</p>
+                            </div>
+                            <div class="comparison-content-paragraph-holder">
+                                <p class="comparison-symbol red-cross">✘</p>
+                                <p class="comparison-paragraph">No performance milestone model when it comes to SEO</p>
+                            </div>
+                            <div class="comparison-content-paragraph-holder">
+                                <p class="comparison-symbol red-cross">✘</p>
+                                <p class="comparison-paragraph">Hidden fees and holding data hostage on their own accounts</p>
+                            </div>
+                        </div>
+                        <a class="text-center d-none" id="comparison_other_read_less_btn">Read Less</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<section class="section-services">
+    <div class="container">
+        <div class="section-title">
+            <h2>We aren’t just your agency - we are your partner in growth.</h2>
+            <h3 class="font-weight-normal">Here’s what you can expect from us</h3>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="{{ site.theme.link }}/assets/img/icn_audit.svg" width="75" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h4 class="card-title">Complete Business
+                            Audit</h4>
+                        <p class="card-text">We’ll analyse your digital channels so we understand what is currently working, and where there is the most room for growth</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="{{ site.theme.link }}/assets/img/icn_analysis.svg" width="100" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h4 class="card-title">In-Depth Competitor Analysis</h4>
+                        <p class="card-text">We’ll use our powerful software to monitor your competitor’s marketing strategies, so we’ll always be one step ahead of them</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="{{ site.theme.link }}/assets/img/icn_growth.svg" width="101" height="101" alt="First Page">
+                    <div class="card-body">
+                        <h4 class="card-title">Bespoke Growth
+                            Strategy</h4>
+                        <p class="card-text">We’ll create a Digital Marketing strategy that is customised for your business, in a way that is fully optimised for conversions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="{{ site.theme.link }}/assets/img/icn_roi.svg" width="117" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h4 class="card-title">Projections<br class="d-none d-md-block"> for ROI</h4>
+                        <p class="card-text">We’ll create a detailed forecast of growth, traffic, and revenue, and highlight the KPIs that will get you there the fastest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-paragraph section-faqs">
+    <div class="container">
+        <h2 class="section-title">We have the answers.</h2>
+        <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">What does a digital marketing agency do?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Digital marketing can help your business achieve serious visibility and popularity online FAST!! A digital agency will offer a range of online tools and techniques which, if used right, can radically improve your ranking on Google’s search results - exponentially increasing your traffic, clicks and sales!!</p>
+                            <p>Search Engine Optimisation (SEO) is at the heart of digital marketing because it offers the most effective and exciting results...</p>
+                            <p>SEO is all about optimising your website so it appeals to search engines. Following Google’s best practice guidelines means your site will be more appealing to algorithms. This means that, over time, your site will rise to the top of the search results...</p>
+                            <p>And what does this mean for you and your business?
+                                <ul>
+                                <li>33% of the online traffic is gained by the site at the top of a Google search.</li>
+                                <li>75% of users never navigate beyond the first page of the search results.</li>
+                                <li>SEO delivers huge benefits to businesses in the know - if you can make it to the top of the search results!!</li>
+                            </ul>
+                            </p>
+                            <p>First Page is unlike any other digital marketing agency in Australia because we back our services with GUARANTEED results. We double down on our industry-leading SEO with PPC advertising and eCommerce expertise to offer a full suite of online solutions for Australian businesses. </p>
+                            <p>If you’re searching for a digital marketing agency that can help you achieve your business goals and deliver serious online success - then make First Page your first call! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">Do SEO agencies work?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>SEO is a PROVEN strategy to achieve serious online success. More than any other tool or technique, it delivers tangible, real-world success for your business. SEO can take you from bricks and mortar to online superstardom in just weeks!! </p>
+                            <p>A successful digital marketing agency will have a range of tools at its disposal to ensure your campaign ACTUALLY works. At First Page, we use a comprehensive selection of techniques that we’ve developed over decades in the industry. </p>
+                            <p>Our on-page SEO includes <a href="{{ home_url }}learning-centre/seo/use-these-keyword-tips-to-create-riveting-copy/">keyword research</a>,
+                                <a href="{{ home_url }}learning-centre/seo/7-search-engine-optimisation-techniques-for-beginners/">technical SEO</a> and
+                                <a href="{{ home_url }}learning-centre/seo/9-secrets-of-writing-great-copy/">premium copywriting services</a>. Our off-page SEO includes a dedicated backlink building team. </p>
+                            <p>Many digital marketing companies struggle to achieve results. They simply can’t deliver the traffic, rankings, clicks and sales your business needs to succeed. But First Page is different because we offer guaranteed SEO results. We commit to concrete traffic and rankings targets and meet with you regularly to discuss our progress. </p>
+                            <p>You can track the success of your campaign with SENTR, our online diagnostics portal that updates in real-time. And, you’ll partner with a dedicated account manager, who’ll be your personal point of contact every step of the way. </p>
+                            <p>We’re proud to be one of the most successful digital marketing agencies in Australia - because our SEO services REALLY work!! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">Why is digital marketing important?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Today, every enterprising business MUST have a digital marketing strategy. Waiting for customers to come to you is not enough. And neither are a few social media profiles and a simple website. It’s all about using the most targeted tools to reach your audience before your competition does. </p>
+                            <p>Digital marketing is all about optimising your site to gain serious visibility and unbelievable traffic. It eclipses legacy marketing methods because it has the ability to put your business on the world stage. We’re here to introduce your products and services to a global audience.</p>
+                            <p>And the result? Unrivalled <a href="{{ home_url }}seo-roi-calculator/">ROI</a> and a chance at unbelievable international sales!! </p>
+                            <p>Digital marketing has changed the game forever. But most businesses don’t realise this. That’s why choosing to work with a great digital agency could be one of the smartest decisions you ever make!</p>
+                            <p>If you’re searching for SEO, SEM and PPC services from a trusted digital marketing agency in Australia, then it’s time to contact First Page. The success of your business is at the heart of everything we do - which is why we won’t stop until you achieve the results you need!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">How can digital marketing help small businesses?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>In the wake of COVID-19, small businesses need support more than ever. Digital marketing helps SMBs because it delivers game-changing results at a bargain price. </p>
+                            <p>Our <a href="{{ home_url }}seo/">local and national SEO services</a> ensure the local community is choosing to shop with your business. We provide unrivalled insight with our keyword analysis - uncovering how, when and why your customers use Google. Then, we target “near me” and “close by” searches to gain real visibility, sales and revenue. </p>
+                            <p>We know what it’s like to be passionate about your business and build a project from the ground up.  We believe in the potential of our clients and their businesses to succeed. It's simply a question of gaining the attention you deserve.</p>
+                            <p>Luckily, First Page is the top digital marketing agency in Australia when it comes to proven traffic and ranking gains for small businesses. If you need serious online sales fast, then there’s no better choice than our dedicated young team!! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">What’s better, SEO or PPC?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>SEO is a suite of services that optimise your website to achieve search engine success. Whilst the exact way Google ranks websites are kept secret, there are many key
+                                <a href="{{ home_url }}learning-centre/seo/11-google-ranking-factors-you-need-to-know/">ranking factors</a> that consistently achieve results.</p>
+                            <p>These include keywords, copy and content, meta-data, schema code, backlinks and many other technical factors. These are used to fine-tune your site and boost your search rankings. </p>
+                            <p>PPC (pay per click) is about achieving a prime position on search engine results pages and social media sites with paid advertising. Each time a user clicks your ad, you’ll be charged a fee. The cost is fluid and depends upon the competition for your chosen keywords, location and target audience. </p>
+                            <p>When determining which digital marketing strategy is best, you should consider the aims, budget and timeframe of your business. SEO can deliver dependable mid-long term growth and visibility. This steadily increases over time whilst offering real value for money. PPC is often more pricey but can deliver a deluge of sales fast - when your business needs them the most. </p>
+                            <p>SEO vs PPC is a hot topic within the digital marketing industry. Whilst many marketing agencies will try to sell you simple, out of the box solutions, we take a different approach. </p>
+                            <p>The First Page team ACTUALLY listens to your needs before building the custom solution that’s right for you. We don’t bombard you with jargon or sell you services that don’t deliver. And this is why we’re the fastest growing digital marketing agency in APAC!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">What digital marketing services do you offer?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>We provide a full suite of digital marketing services for Australian businesses looking to make it big online. </p>
+                            <p>First Page offers SEO, SEM, Google Ads, social media marketing (including Facebook, Instagram and TikTok ads), premium content writing, eCommerce SEO, link building, online reputation management and unwanted content removal. </p>
+                            <p>We’re the most dependable digital marketing agencies in Australia because we ACTUALLY care about the success of your business. </p>
+                            <p>Our analysis and insight find the marketing services that are right for you. Then, we work hard to deliver guaranteed results, month on month, year on year.</p>
+                            <p>And if there’s ever a time when we don’t achieve our targets - you won’t pay until we do. </p>
+                            <p>Whilst many digital agencies offer SEO services, there’s no other digital marketing agency in Australia that can deliver the results that First Page is famous for. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse7">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">Who needs digital marketing services?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse7" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>To remain competitive in today’s increasingly online marketplace, every Australian business needs a digital marketing strategy. Regardless of your product or service, your target audience needs to know you exist. </p>
+                            <p>As a result of COVID-19, we’re witnessing an unprecedented shift to <a href="{{ home_url }}learning-centre/ecommerce/what-is-magento-what-all-ecommerce-hopefuls-need-to-know/">online shopping</a>. The future of Australian business is eCommerce. Getting your products seen by as many customers as possible is the name of the game. </p>
+                            <p>At First Page, our digital marketing services are helping businesses all over Australia to navigate this transition. We’re optimising websites for SEO success and launching online stores to eCommerce excellence!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse8">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">How do I choose between SEO or SEM?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse8" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>SEO and SEM are two of the most commonly used digital marketing strategies and can both provide amazing results. </p>
+                            <p>SEO delivers a steady stream of long-term organic traffic. Whilst you’ll pay for our services, the traffic you achieve is free.</p>
+                            <p>SEM provides near-instantaneous traffic - that you’ll pay for by the click. Depending on your needs, one strategy may be more appropriate than the other. But at First Page, we’re all about creating a dynamic mix of the two. </p>
+                            <p>Our digital agency excels in custom-designed campaigns that capitalise on our full suite of digital marketing services. We listen to your story and the needs of your business before designing a unique strategy that will change the future of your business. </p>
+                            <p>We’re passionate about seeing brands we love make it big online. Want to be one of them? Then contact us now!! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'Homepage (Popup)', 'form_button': 'Get a free proposal'} %}
+
+    <script>
+        //home page comparison section
+        $( document ).ready(function() {
+            $('#comparison_fp_read_more_btn').click(function(){
+                $('#comparison_fp_hide_content').removeClass('d-none');
+                $('#comparison_fp_read_more_btn').removeClass('d-block');
+                $('#comparison_fp_read_more_btn').addClass('d-none');
+                $('#comparison_fp_read_less_btn').removeClass('d-none');
+                $('#comparison_fp_read_less_btn').addClass('d-block d-md-none');
+
+            })
+
+            $('#comparison_other_read_more_btn').click(function(){
+                $('#comparison_other_hide_content').removeClass('d-none');
+                $('#comparison_other_read_more_btn').removeClass('d-block');
+                $('#comparison_other_read_more_btn').addClass('d-none');
+                $('#comparison_other_read_less_btn').removeClass('d-none');
+                $('#comparison_other_read_less_btn').addClass('d-block d-md-none');
+            })
+
+            $('#comparison_fp_read_less_btn').click(function(){
+                $('#comparison_fp_read_less_btn').removeClass('d-block');
+                $('#comparison_fp_read_less_btn').addClass('d-none');
+                $('#comparison_fp_read_more_btn').removeClass('d-none');
+                $('#comparison_fp_read_more_btn').addClass('d-block');
+                $('#comparison_fp_hide_content').removeClass('d-block');
+                $('#comparison_fp_hide_content').addClass('d-none');
+            })
+
+            $('#comparison_other_read_less_btn').click(function(){
+                $('#comparison_other_read_less_btn').removeClass('d-block');
+                $('#comparison_other_read_less_btn').addClass('d-none');
+                $('#comparison_other_read_more_btn').removeClass('d-none');
+                $('#comparison_other_read_more_btn').addClass('d-block');
+                $('#comparison_other_hide_content').removeClass('d-block');
+                $('#comparison_other_hide_content').addClass('d-none');
+            })
+        });
+    </script>
+
+
+{% endblock %}

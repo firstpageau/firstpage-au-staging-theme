@@ -1,0 +1,21 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+
+<section class="banner">
+    <div class="container text-center">
+        <h1>Monthly Service Activation</h1>
+    </div>
+</section>
+
+<section class="secure-payments">
+    <div class="container text-center">
+        <h2>Payment confirmation</h2>
+        <div>
+            {{ '[simpay_payment_receipt]'|shortcodes }}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

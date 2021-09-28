@@ -1,0 +1,270 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<!-- Banner -->
+<section class="banner contact-us">
+    <div class="container">
+        <div class="banner-form">
+            <div class="quote-form ">
+                {% if thankyou %}
+                <div class="form-thankyou d-block">
+                    <h2 class="bold wide">Yes! Welcome to more leads, sales &amp; success online.</h2>
+                    <h3 class="small">Your Digital Growth Specialist will be in touch within 48 hours. Alternatively, for an instant chat, please call <a href="tel:{{ site_phone|replace({' ':''}) }}" class="text-nowrap">{{ site_phone }}</a></h3>
+                </div>
+                {% elseif thankyou_orm %}
+                <div class="form-thankyou d-block">
+                    <h2 class="bold wide">Thanks! You’re one step closer to repairing your reputation.</h2>
+                    <h3 class="small">Your Reputation Management Specialist will be in touch within 24 hours. Alternatively, for an instant chat, please call <a href="tel:{{ site_phone|replace({' ':''}) }}" class="text-nowrap">{{ site_phone }}</a></h3>
+                </div>
+                {% elseif thankyou_pcw %}
+                <div class="form-thankyou d-block">
+                    <h2 class="bold wide">Yes! Here's to positive branding and stronger customer connections.</h2>
+                    <h3 class="small">Your Content Strategy Specialist will be in touch within 48 hours. Alternatively, for an instant chat, please call <a href="tel:{{ site_phone|replace({' ':''}) }}" class="text-nowrap">{{ site_phone }}</a></h3>
+                </div>
+                {% elseif thankyou_audit %}
+                <div class="form-thankyou d-block">
+                    <h2 class="bold wide narrow">Yes! Your website is currently being analyzed.</h2>
+                    <h3 class="small narrow mt-4">Your report is on its way - please check your email in approximately 3 minutes.</h3>
+                </div>
+                {% elseif thankyou_competitor %}
+                <div class="form-thankyou d-block">
+                    <h2 class="bold wide narrow">We're currently analyzing your competitor's website.</h2>
+                    <h3 class="small narrow mt-4">Your report is on its way - please check your email in approximately 5 minutes.</h3>
+                </div>
+                {% elseif thankyou_google_ads %}
+                <div class="form-thankyou d-block">
+                    <h2 class="bold wide narrow">Thanks for your interest in our Google Ads audit tool!</h2>
+                    <h3 class="small narrow mt-4">Your audit report will generate in:</h3>
+                    <h3 style="font-size:50px;" id="googleAdsCountdown">5</h3>
+                </div>
+                {% elseif booking %}
+                <div class="form-thankyou d-block">
+                    <div class="notification"><span>IMPORTANT</span> We'll be in touch to confirm your booking.</div>
+                    <h2 class="bold wide">Yes! Welcome to more leads, sales &amp; success online.</h2>
+                    <h3 class="small">We look forward to chatting with you!</h3>
+                </div>
+                {% else %}
+                <!-- Contact Us Form -->
+                <form class="fp-form" action="{{ home_url }}thank-you" method="POST">
+                    <div class="form-step-1 form-step">
+                        <!-- <h2 class="mb-4 bold narrow">Find out how we can grow your business.</h2> -->
+                        <h2 class="mb-4 bold">Find out how we can increase your <strong>revenue<strong> even during this pandemic</strong></strong></h2>
+                        <div class="form-group mb-0">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="text" class="form-control" name="lead_name" placeholder="First Name*" required="" />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="text" class="form-control" name="lead_phone" placeholder="Phone*" required="" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="email" class="form-control" name="lead_email" placeholder="Email*" data-parsley-error-message="Please enter a valid email address" data-parsley-trigger="change" required="" />
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <input type="text" class="form-control" name="lead_website" placeholder="Website" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-4">
+                                    <textarea class="form-control" name="lead_message" rows="6" placeholder="Message*" required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <input type="hidden" name="lead_formname" value="Contact Us" />
+                                    <input type="hidden" name="lead_language" value="en" />
+                                    <input type="hidden" name="lead_formtype" value="hs_quote_form" />
+                                    <button type="submit" class="btn fp-btn fp-btn-orange form-submit" onclick="ga('send','event', {'eventCategory': 'Form','eventAction': 'Click', 'eventLabel': 'Contact Us'});">Yes, <span class="d-none d-md-inline">I want to</span> grow my business</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-thankyou">
+                        <h2 class="bold wide">Yes! Welcome to more leads, sales &amp; success online.</h2>
+                        <h3 class="small">Your Digital Growth Specialist will be in touch within 48 hours. Alternatively, for an instant chat, please call <a href="tel:{{ site_phone|replace({' ':''}) }}" class="text-nowrap">{{ site_phone }}</a></h3>
+                    </div>
+                </form>
+                <!-- End of Form -->
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-office-hours section-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 offset-md-1 mb-5">
+                <h3 class="mb-4">Office</h3>
+                <p>{{ site_address }}</p>
+                <p>
+                    <strong>Phone</strong><br />
+                    <a href="tel:{{ site_phone|replace({' ':''}) }}">{{ site_phone }}</a>
+                </p>
+                <p>
+                    <strong>Email</strong><br />
+                    <a href="mailto:{{ site_email }}" class="blue">{{ site_email }}</a>
+                </p>
+            </div>
+
+            <div class="col-12 col-md-5 mb-5">
+                <h3 class="mb-4">Hours of Operation</h3>
+                <table class="table">
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td>09:00am - 06:00pm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tuesday</th>
+                        <td>09:00am - 06:00pm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wednesday</th>
+                        <td>09:00am - 06:00pm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Thursday</th>
+                        <td>09:00am - 06:00pm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Friday</th>
+                        <td>09:00am - 06:00pm</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if thankyou_google_ads %}
+<script>
+    $(document).ready(function () {
+        $('#googleAdsCountdown').css('fontSize', '50px');
+        var sec = 4;
+        var googleAdsCountdown = window.setInterval(function () {
+            if (sec > 0) {
+                $('#googleAdsCountdown').animate({
+                    opacity: 0.25,
+                    fontSize: '2em'
+                }, 500, function () {
+                    $('#googleAdsCountdown').css('opacity', 1);
+                    $('#googleAdsCountdown').css('font-size', '50px');
+                    $('#googleAdsCountdown').text(sec--);
+                });
+            } else {
+                $('#googleAdsCountdown').css('font-size', '20px').text('Redirecting...');
+                clearInterval(googleAdsCountdown);
+                location.href = "https://pro.adwordsrobot.com/scan/?utm_medium=referal_partner&utm_source=firstpage.hk&lang=en&fs=1";
+            }
+        }, 1000);
+    });
+</script>
+{% endif %}
+
+<!-- Map -->
+<div id="office-map"></div>
+<script>var map_location = JSON.parse('{{ map_location }}')</script>
+<script src="{{ site.theme.link }}/assets/js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key={{ map_api_key }}&callback=initMap"></script>
+
+<section class="section-worldwide-locations section-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-md-1">
+                <h3>Worldwide Locations</h3>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="location-box">
+                            <h5>Singapore</h5>
+                            <p>
+                                120 Robinson Rd,<br>
+                                #05-01<br>
+                                Singapore 068913
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="location-box">
+                            <h5>Australia</h5>
+                            <p>
+                                Lv 6, 534 Church Street,<br>
+                                Cremorne 3121,<br>
+                                Victoria,<br>
+                                Australia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="location-box">
+                            <h5>Thailand</h5>
+                            <p>
+                                8 T One Building, Floor 21, Office 2,<br>
+                                Sukhumvit 40 Alley,<br>
+                                Phra Khanong, Khlong Toei,<br>
+                                Bangkok 10110, Thailand
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="location-box">
+                            <h5>Dubai</h5>
+                            <p>
+                                2202/2203,<br>
+                                JBC1, Cluster G,<br>
+                                JLT, Dubai.<br>
+                                United Arab Emirates
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="location-box">
+                            <h5>Abu Dhabi</h5>
+                            <p>
+                                902B, Two Four 54 Building 6,<br>
+                                Sheikh Zayed Street,<br>
+                                Abu Dhabi,<br>
+                                United Arab Emirates
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="location-box">
+                            <h5>Vietnam</h5>
+                            <p>
+                                126 Nguyen Thi Minh Khai,<br>
+                                Ward 6, District 3,<br>
+                                Ho Chi Minh 70000
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="location-box">
+                            <h5>Panama</h5>
+                            <p>
+                                Calle 12 Este, Casco Viejo,<br>
+                                Panama City, Panama
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="location-box">
+                            <h5>Malaysia</h5>
+                            <p>
+                                A-03-13 Tropicana Avenue,<br>
+                                NO 12 Persiaran Tropicana<br>
+                                Tropicana Golf &amp; Country Resort PJU3<br>
+                                47410 Petaling Jaya, Selangor, Malaysia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-free-session.twig" %}
+
+{% endblock %}

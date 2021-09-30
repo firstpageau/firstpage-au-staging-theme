@@ -7927,7 +7927,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .section-location a {
     font-size: 22px; }
   .section-location .locationName {
-    font-size: 22px; }
+    font-size: 22px;
+    line-height: 21px; }
   .section-location .locationDarwin {
     left: 308px;
     top: -8px; }

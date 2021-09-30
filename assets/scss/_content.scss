@@ -6354,3 +6354,305 @@ section.secure-payments {
     }
   }
 }
+
+// clients comments section
+.section-clients-comments {
+  max-width: 1200px;
+  margin: auto;
+
+  .clientComment:before {
+    content: "";
+    background: url(assets/img/icon-quote-red.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 14px;
+    width: 34px;
+    height: 27px;
+    top: 13px;
+  }
+  .clientComment {
+    font-size: 20.5px;
+    line-height: 35px;
+    margin-top: 60px;
+  }
+
+  .clientName {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  @media (min-width: $responsive-md) {
+    .clientComment {
+      font-size: 16.37px;
+      line-height: 24.91px;
+      min-height: 184px;
+    }
+    .clientComment:before {
+      left: -14px;
+    }
+    .clientName {
+      font-size: 18px;
+      line-height: 25px;
+      min-height: 65px;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+    .clientComment:before {
+      left: -14px;
+    }
+    .clientComment {
+      font-size: 23px;
+      line-height: 35px;
+      min-height: 282px;
+    }
+    .clientName {
+      font-size: 25px;
+      line-height: 35px;
+      min-height: 110px;
+    }
+  }
+  @media (min-width: $responsive-xl) {
+    .clientComment {
+      min-height: 280px;
+    }
+    .clientName {
+      min-height: 75px;
+    }
+  }
+}
+
+// roadmap section
+.section-roadmap {
+  .roadmapDes {
+    max-width: 310px;
+    margin: auto;
+    p {
+      line-height: 24px;
+    }
+  }
+  .roadmapStep {
+    color: $color-blue2;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 45px;
+  }
+  // max-width: 1440px;
+  // margin: auto;
+  @media (min-width: $responsive-md) {
+    h2 {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+    h2 {
+      width: 100%;
+    }
+  }
+}
+
+// why choose us section
+.section-why-choose-us {
+  // max-width: 1200px;
+  // margin: auto;
+  p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  .blueTickIcon {
+    margin-top: 6px;
+    padding-right: 19px;
+  }
+
+  @media (min-width: $responsive-md) {
+    p {
+      font-size: 24px;
+      line-height: 45px;
+    }
+    .blueTickIcon {
+      margin-top: 10px;
+      padding-right: 36px;
+    }
+  }
+}
+
+// Location section
+.section-location {
+  .map-bg {
+    background-image: url("assets/img/img_location_map_sm.svg");
+    height: 260px;
+    background-repeat: no-repeat;
+  }
+  .blueTickIcon {
+    width: 18px;
+    margin-right: 20px;
+  }
+  a {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $color-text;
+    min-width: 94px;
+  }
+
+  .locationName {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 9px;
+    position: absolute;
+    min-width: auto;
+  }
+
+  .locationDarwin {
+    left: 139px;
+    top: -5px;
+  }
+
+  .locationSunshineCoast {
+    top: 97px;
+    left: 284px;
+  }
+
+  .locationBrisbane {
+    left: 294px;
+    top: 124px;
+  }
+
+  .locationGoldCoast {
+    left: 291px;
+    top: 153px;
+  }
+  .locationSydney {
+    left: 299px;
+    top: 172px;
+  }
+  .locationCanberra {
+    left: 266px;
+    top: 190px;
+  }
+
+  .locationMelbourne {
+    left: 245px;
+    top: 208px;
+  }
+
+  .locationHobart {
+    left: 259px;
+    top: 235px;
+  }
+
+  .locationParamatta {
+    left: 165px;
+    top: 152px;
+  }
+
+  .locationGeelong {
+    left: 137px;
+    top: 240px;
+  }
+
+  .locationBallarat {
+    left: 128px;
+    top: 223px;
+  }
+
+  .locationBendigo {
+    left: 112px;
+    top: 208px;
+  }
+
+  .locationAdelaide {
+    left: 89px;
+    top: 163px;
+  }
+
+  .locationPerth {
+    left: 21px;
+    top: 202px;
+  }
+
+  @media (min-width: $responsive-md) {
+    .map-bg {
+      background-image: url("assets/img/img_location_map_md_lg.svg");
+      height: 566px;
+    }
+    a {
+      font-size: 22px;
+    }
+    .locationName {
+      font-size: 22px;
+    }
+
+    .locationDarwin {
+      left: 308px;
+      top: -8px;
+    }
+
+    .locationSunshineCoast {
+      top: 212px;
+      left: 628px;
+    }
+
+    .locationBrisbane {
+      left: 651px;
+      top: 279px;
+    }
+
+    .locationGoldCoast {
+      left: 638px;
+      top: 335px;
+    }
+    .locationSydney {
+      left: 663px;
+      top: 390px;
+    }
+    .locationCanberra {
+      left: 580px;
+      top: 427px;
+    }
+
+    .locationMelbourne {
+      left: 540px;
+      top: 467px;
+    }
+
+    .locationHobart {
+      left: 567px;
+      top: 533px;
+    }
+
+    .locationParamatta {
+      left: 378px;
+      top: 343px;
+    }
+
+    .locationGeelong {
+      left: 313px;
+      top: 542px;
+    }
+
+    .locationBallarat {
+      left: 295px;
+      top: 506px;
+    }
+
+    .locationBendigo {
+      left: 261px;
+      top: 470px;
+    }
+
+    .locationAdelaide {
+      left: 200px;
+      top: 367px;
+    }
+
+    .locationPerth {
+      left: 44px;
+      top: 453px;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+  }
+}

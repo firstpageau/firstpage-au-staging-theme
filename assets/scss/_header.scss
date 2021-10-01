@@ -807,4 +807,9 @@
 
 .nav-link {
   cursor: pointer;
+  @media (max-width: $responsive-lg) {
+    &:hover {
+      color: rgba(0, 0, 0, 0.35) !important;
+    }
+  }
 }

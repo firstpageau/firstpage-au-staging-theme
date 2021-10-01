@@ -1276,6 +1276,10 @@ ul.parsley-errors-list {
 .nav-link {
   cursor: pointer; }
 
+@media (max-width: 992px) {
+  .nav-link:hover {
+    color: rgba(0, 0, 0, 0.35) !important; } }
+
 footer {
   color: #ffffff;
   background-color: #427fe0;
@@ -7356,7 +7360,7 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
 
 .section-services-carousel .card-text {
   color: #00225d;
-  height: 136px; }
+  height: 145px; }
 
 .section-services-carousel .card-footer {
   border: none;

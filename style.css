@@ -7809,6 +7809,14 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   max-width: 310px;
   margin: auto; }
 
+@media (min-width: 768px) {
+  .section-roadmap .roadmapDes h3 {
+    font-size: 30px; } }
+
+@media (min-width: 992px) {
+  .section-roadmap .roadmapDes h3 {
+    font-size: 35px; } }
+
 .section-roadmap .roadmapDes p {
   line-height: 24px; }
 

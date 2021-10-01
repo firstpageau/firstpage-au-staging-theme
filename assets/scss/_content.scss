@@ -6427,6 +6427,14 @@ section.secure-payments {
   .roadmapDes {
     max-width: 310px;
     margin: auto;
+    h3 {
+      @media (min-width: $responsive-md) {
+        font-size: 30px;
+      }
+      @media (min-width: $responsive-lg) {
+        font-size: 35px;
+      }
+    }
     p {
       line-height: 24px;
     }

@@ -6498,7 +6498,8 @@ section.secure-payments {
     width: 18px;
     margin-right: 20px;
   }
-  a {
+  a,
+  .locationText {
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
@@ -6588,7 +6589,8 @@ section.secure-payments {
       height: 566px;
       margin-left: -25px;
     }
-    a {
+    a,
+    .locationText {
       font-size: 22px;
     }
     .locationName {

@@ -7866,7 +7866,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   width: 18px;
   margin-right: 20px; }
 
-.section-location a {
+.section-location a,
+.section-location .locationText {
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
@@ -7941,7 +7942,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
     background-image: url("assets/img/img_location_map_md_lg.svg");
     height: 566px;
     margin-left: -25px; }
-  .section-location a {
+  .section-location a,
+  .section-location .locationText {
     font-size: 22px; }
   .section-location .locationName {
     font-size: 22px;

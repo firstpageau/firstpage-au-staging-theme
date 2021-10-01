@@ -1273,6 +1273,9 @@ ul.parsley-errors-list {
     width: 108px;
     padding-top: 12px; } }
 
+.nav-link {
+  cursor: pointer; }
+
 footer {
   color: #ffffff;
   background-color: #427fe0;
@@ -6429,7 +6432,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
 
 .page-seo .text-container-seo-new,
 .page-seo-offer .text-container-seo-new {
-  max-width: 588px !important; }
+  max-width: 588px !important;
+  margin: auto; }
 
 .page-seo .seo-new-case-study-content,
 .page-seo-offer .seo-new-case-study-content {
@@ -7923,7 +7927,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
 @media (min-width: 768px) {
   .section-location .map-bg {
     background-image: url("assets/img/img_location_map_md_lg.svg");
-    height: 566px; }
+    height: 566px;
+    margin-left: -25px; }
   .section-location a {
     font-size: 22px; }
   .section-location .locationName {
@@ -7971,6 +7976,10 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .section-location .locationPerth {
     left: 44px;
     top: 453px; } }
+
+@media (min-width: 992px) {
+  .section-location .map-bg {
+    margin-left: -9px; } }
 
 .section-bloglist {
   padding: 30px 0 10px; }

@@ -94,9 +94,9 @@
 			fbq('init', '209704970774476');
 			fbq('track', 'PageView');
 		</script>
-		<noscript><img height="1" width="1" style="display:none"
-					   src="https://www.facebook.com/tr?id=209704970774476&ev=PageView&noscript=1"
-			/></noscript>
+		<noscript>
+			<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=209704970774476&ev=PageView&noscript=1" />
+		</noscript>
 		<!-- End Facebook Pixel Code -->
 
 		{{ function('wp_head') }}
@@ -156,7 +156,7 @@
 							<a class="nav-link" href="{{ home_url }}seo/">SEO</a>
 						</li>
 						<li class="nav-item nav-item-main dropdown">
-							<a class="nav-link dropdown-toggle d-lg-none" href="javascript:void(0)" data-toggle="dropdown">GOOGLE
+							<a class="nav-link dropdown-toggle d-lg-none"  data-toggle="dropdown">GOOGLE
 								ADS</a>
 							<a class="nav-link dropdown-toggle d-none d-lg-block" href="{{ home_url }}google-ads/">GOOGLE
 								ADS</a>
@@ -169,7 +169,7 @@
 							</div>
 						</li>
 						<li class="nav-item nav-item-main dropdown">
-							<a class="nav-link dropdown-toggle d-lg-none" href="javascript:void(0)"
+							<a class="nav-link dropdown-toggle d-lg-none" 
 							   data-toggle="dropdown">SOCIAL</a>
 							<a class="nav-link dropdown-toggle d-none d-lg-block" href="{{ home_url }}facebook-advertising/">SOCIAL</a>
 							<div class="dropdown-menu">
@@ -183,7 +183,7 @@
 							</div>
 						</li>
 						<li class="nav-item nav-item-main dropdown">
-							<a class="nav-link dropdown-toggle d-lg-none" href="javascript:void(0)" data-toggle="dropdown">OTHER
+							<a class="nav-link dropdown-toggle d-lg-none"  data-toggle="dropdown">OTHER
 								SERVICES</a>
 							<a class="nav-link dropdown-toggle d-none d-lg-block"  href="{{ home_url }}programmatic-advertising/" >OTHER
 								SERVICES</a>
@@ -192,19 +192,16 @@
 									<a class="dropdown-item" href="{{ home_url }}programmatic-advertising/">Programmatic Advertising</a>
 									<a class="dropdown-item" href="{{ home_url }}reputation-management/">Reputation Repair</a>
 									<a class="dropdown-item" href="{{ home_url }}content-removal-australia/">Unwanted Content Removal</a>
-									<a class="dropdown-item" href="{{ home_url }}landing-page-agency/">Landing Page Developmnent</a>
-									{# <a class="dropdown-item" href="{{ home_url }}premium-content-writing/">Premium Content Writing</a>
-									<a class="dropdown-item" href="{{ home_url }}hubspot/">Hubspot</a> #}
+									<a class="dropdown-item" href="{{ home_url }}landing-page-agency/">Landing Page Development</a>
 
 								</div>
 							</div>
 						</li>
+			
 						<li class="nav-item nav-item-main seo-dropdown dropdown">
-						<li class="nav-item nav-item-main seo-dropdown dropdown">
-							<a class="nav-link dropdown-toggle d-lg-none" href="javascript:void(0)" data-toggle="dropdown">FREE
+							<a class="nav-link dropdown-toggle d-lg-none"  data-toggle="dropdown">FREE
 								TOOLS</a>
-							<a class="nav-link dropdown-toggle d-none d-lg-block" href="{{ home_url }}seo-audit/">FREE
-								TOOLS</a>
+							<a class="nav-link dropdown-toggle d-none d-lg-block" href="{{ home_url }}seo-audit/">FREE TOOLS</a>
 							<div class="dropdown-menu" aria-labelledby="ddAudits">
 								<div class="dropdown-cont">
 									<a class="dropdown-item" href="{{ home_url }}seo-audit/">Free SEO Audit</a>
@@ -216,10 +213,9 @@
 							</div>
 						</li>
 						<li class="nav-item nav-item-main dropdown">
-							<a class="nav-link dropdown-toggle d-lg-none"  href="javascript:void(0)" data-toggle="dropdown">About
+							<a class="nav-link dropdown-toggle d-lg-none"   data-toggle="dropdown">About
 								Us</a>
-							<a class="nav-link dropdown-toggle d-none d-lg-block" onclick="goToPage('/who-we-are')" href="javascript:void(0)" data-toggle="dropdown">About
-								Us</a>
+							<a class="nav-link dropdown-toggle d-none d-lg-block" href="{{ home_url }}who-we-are/">About Us</a>
 							<div class="dropdown-menu">
 								<div class="dropdown-cont">
 									<a class="dropdown-item" href="{{ home_url }}who-we-are/">Who We Are</a>
@@ -302,9 +298,7 @@ Richmond Melbourne VIC 3121">{{ site_address }}</a></p>
 
                     {# social links #}
                     <div class="podcast-holder ">
-                        <div class="podcast-info-row row ">
-                            {# <img src="{{ site.theme.link }}/assets/img/footer_nick_lisa.png" class="img-fluid"
-                                         alt=""/> #}
+						<div class="podcast-info-row row ">
                              <div class="col-6 pl-2 pr-0">
                                 <div class="lisnic-photo">
                                     <img src="{{ site.theme.link }}/assets/img/Nick&Lisa@4x.png" class="img-fluid"
@@ -314,18 +308,14 @@ Richmond Melbourne VIC 3121">{{ site_address }}</a></p>
                             <div class="col-6 podcast-info pl-0">
                                 <img src="{{ site.theme.link }}/assets/img/img_lisnic_podcast.svg" class="img-fluid"
                                      alt=""/>
-                                {# <img src="{{ site.theme.link }}/assets/img/Rectangle.png" class="img-fluid" alt=""/>
-                                <p class="podcast-des pb-3">Thought leaders & celebrities share their tactics for
-                                    success on the Lisnic podcast by
-                                    Lisa Teh & Nick Bell
-                                    (First Page Founder)</p> #}
+                               
                             </div> 
                         </div>
                         <div class="podcast-links-row row">
                             <div class="col-12">
                                 <a href="https://podcasts.apple.com/au/podcast/lisnic/id1492675735" target="_blank">
                                     <div class="single-podcast-item">
-                                        <img src="{{ site.theme.link }}/assets/img/Apple_podcast_image.png"
+                                        <img src="{{ site.theme.link }}/assets/img/icon_podcast_apple.svg"
                                              class="img-fluid" alt=""/>
                                         <p><span class="font-weight-bold">Apple</span> Podcasts</p>
                                     </div>
@@ -333,7 +323,7 @@ Richmond Melbourne VIC 3121">{{ site_address }}</a></p>
 
                                 <a href="https://open.spotify.com/show/3ZPhX0JjjnSPlQbj6OHC3v" target="_blank">
                                     <div class="single-podcast-item">
-                                        <img src="{{ site.theme.link }}/assets/img/Spotify_Icon_RGB_Green.svg"
+                                        <img src="{{ site.theme.link }}/assets/img/icon_podcast_spotify.svg"
                                              class="img-fluid" alt=""/>
                                         <p><span class="font-weight-bold">Spotify</span> Podcasts</p>
                                     </div>
@@ -342,7 +332,7 @@ Richmond Melbourne VIC 3121">{{ site_address }}</a></p>
 
                                 <a href="https://www.youtube.com/c/Lisniclearning" target="_blank">
                                     <div class="single-podcast-item">
-                                        <img src="{{ site.theme.link }}/assets/img/yt_icon_rgb.png" class="img-fluid"
+                                        <img src="{{ site.theme.link }}/assets/img/icon_channel_youtube.svg" class="img-fluid"
                                              alt=""/>
                                         <p><span class="font-weight-bold">Youtube</span> Podcasts</p>
                                     </div>
@@ -470,13 +460,13 @@ Richmond Melbourne VIC 3121">{{ site_address }}</a></p>
 	<section class="copyright">
         <div class="container">
             <div class="row align-items-center no-gutters">
-                <div class="text col-12 col-md-6 col-xl-3">
+                <div class="text col-12 col-xl-3">
                     {% block copyright %}
                     Copyright &copy; {{ "now"|date("Y") }} First Page.
                     {% endblock %}<br>
                     <a href="{{ home_url }}terms-of-business/">Terms of Business</a>
                 </div>
-                  <div class="logos col-12 col-md-6 col-xl-9">
+  				<div class="logos col-12 col-xl-9">
                     <img src="{{ site.theme.link }}/assets/img/img_new_footer_sm.png"
                          srcset="{{ site.theme.link }}/assets/img/img_new_footer_sm.png, {{ site.theme.link }}/assets/img/img_new_footer_sm@2x.png 2x"
                          class="img-fluid d-md-none" alt="We work with great brands of all sizes"/>

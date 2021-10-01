@@ -4684,6 +4684,7 @@ section.secure-payments {
 
   .text-container-seo-new {
     max-width: 588px !important;
+    margin: auto;
   }
 
   .seo-new-case-study-content {
@@ -6577,6 +6578,7 @@ section.secure-payments {
     .map-bg {
       background-image: url("assets/img/img_location_map_md_lg.svg");
       height: 566px;
+      margin-left: -25px;
     }
     a {
       font-size: 22px;
@@ -6655,5 +6657,8 @@ section.secure-payments {
     }
   }
   @media (min-width: $responsive-lg) {
+    .map-bg {
+      margin-left: -9px;
+    }
   }
 }

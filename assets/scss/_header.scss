@@ -785,9 +785,9 @@
   }
 }
 
-@media(min-width: $responsive-lg){
-  .scroll-nav-logo{
-    img{
+@media (min-width: $responsive-lg) {
+  .scroll-nav-logo {
+    img {
       display: none;
       width: 152px;
       padding-top: 6px;
@@ -796,14 +796,15 @@
   }
 }
 
-@media(width:1024px){
+@media (width: 1024px) {
   .scroll-nav-logo {
     img {
-
       width: 108px;
       padding-top: 12px;
     }
   }
 }
 
-
+.nav-link {
+  cursor: pointer;
+}

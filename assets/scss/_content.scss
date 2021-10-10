@@ -6665,6 +6665,9 @@ section.secure-payments {
       left: 44px;
       top: 453px;
     }
+    .locationText {
+      min-width: 114px;
+    }
   }
   @media (min-width: $responsive-lg) {
     .map-bg {

@@ -7989,7 +7989,9 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
     top: 367px; }
   .section-location .locationPerth {
     left: 44px;
-    top: 453px; } }
+    top: 453px; }
+  .section-location .locationText {
+    min-width: 114px; } }
 
 @media (min-width: 992px) {
   .section-location .map-bg {

@@ -2723,6 +2723,12 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-premium-content-writing section.banner .banner-hero .hero-img {
     bottom: -93px; } }
 
+.page-bing-ads .banner .hero-img-mobile img {
+  margin-bottom: -26px; }
+
+.page-bing-ads .banner .hero-img-md {
+  right: -26px !important; }
+
 /* Generic */
 *:focus {
   outline: none; }

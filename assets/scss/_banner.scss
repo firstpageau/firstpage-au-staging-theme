@@ -1580,6 +1580,16 @@ section.banner {
   }
 }
 
-// SEO offer
-.page-seo-offer {
+// Bing Ads page
+.page-bing-ads {
+  .banner {
+    .hero-img-mobile {
+      img {
+        margin-bottom: -26px;
+      }
+    }
+    .hero-img-md {
+      right: -26px !important;
+    }
+  }
 }

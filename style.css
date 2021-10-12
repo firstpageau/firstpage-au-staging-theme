@@ -2729,6 +2729,14 @@ section.banner .mid-buttons .mid-buttons-desc {
 .page-bing-ads .banner .hero-img-md {
   right: -26px !important; }
 
+@media (min-width: 992px) {
+  .page-bing-ads .banner-hero .hero-img {
+    right: -165px !important; } }
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .page-bing-ads .quote-form.quote-form-big .fp-btn {
+    padding: 0px 9px; } }
+
 /* Generic */
 *:focus {
   outline: none; }

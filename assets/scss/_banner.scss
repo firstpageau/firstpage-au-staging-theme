@@ -1592,4 +1592,15 @@ section.banner {
       right: -26px !important;
     }
   }
+
+  @media (min-width: $responsive-lg) {
+    .banner-hero .hero-img {
+      right: -165px !important;
+    }
+  }
+  @media screen and (max-width: $responsive-lg) and (min-width: $responsive-md) {
+    .quote-form.quote-form-big .fp-btn {
+      padding: 0px 9px;
+    }
+  }
 }

@@ -8,7 +8,7 @@ function add_to_context($data) {
         'site_name'         => 'firstpage',
         'site_phone'        => '1300 479 226',
         'site_email'        => 'info@firstpage.com.au',
-        'site_address'      => 'Lv 6, 534 Church Street,<br />Richmond VIC 3121',
+        'site_address'      => 'Lv 6, 534 Church Street,<br />Cremorne VIC 3121',
         'session_value'     => '$2000',
         'session_value_alt' => '$2000',
         'review_id'         => '',
@@ -21,7 +21,7 @@ function add_to_context($data) {
                 'lat'     => -37.828710,
                 'lng'     => 144.997180,
                 'name'    => 'First Page',
-                'address' => 'Lv 6, 534 Church Street, Richmond VIC 3121'
+                'address' => 'Lv 6, 534 Church Street, Cremorne VIC 3121'
             )
         ),
         'post_id'           => get_the_ID(),

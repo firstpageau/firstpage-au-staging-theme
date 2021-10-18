@@ -68,12 +68,13 @@ $(function () {
     if ($(window).scrollTop() === 0 && nav.hasClass("min-header")) {
       nav.removeClass("min-header");
       $("#scroll-nav-logo").hide();
-      $("#cache-test").hide();
+      $(".fixed-top-no-nav").addClass("fixed-top-margin");
+
       // Is not
     } else {
       nav.addClass("min-header");
       $("#scroll-nav-logo").show();
-      $("#cache-test").show();
+      $(".fixed-top-no-nav").removeClass("fixed-top-margin");
     }
   });
   if ($(window).scrollTop() > 0) {

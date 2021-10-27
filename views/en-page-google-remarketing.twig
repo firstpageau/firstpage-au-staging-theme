@@ -1,81 +1,120 @@
 {% extends "en-base.twig" %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ site.theme.link }}/views/assets/style.css" />
-<script src="{{ site.theme.link }}/views/assets/js/script.js"></script>
+<style>
+.hero-img-mobile{
+    margin-bottom:-26px;
+}
+section.banner .banner-hero .hero-img {
+    right: -27px;
+    bottom: -30px;
+ }
+
+@media(min-width:992px){
+section.banner .banner-hero .hero-img {
+    right: -203px;
+    bottom: -80px;
+}
+
+section.banner .banner-hero .banner-hero-cont {
+  
+    max-width: 757px;
+}
+
+
+}
+</style>
 <!-- Banner -->
-<section class="banner extra-pad extra-pad-shorter form-space">
+<section class="banner form-space">
     <div class="container banner-hero">
         <div class="banner-hero-cont">
-            <h1 class="form-hide bold-lg max-630"><strong>Reconnect</strong> with <strong>customers</strong> and <strong>boost conversions</strong></h1>
-            <div class="hero-img-mobile d-lg-none">
-                <img src="{{ site.theme.link }}/views/assets/img/remarketing-hero_mob.png" srcset="{{ site.theme.link }}/views/assets/img/remarketing-hero_mob.png, {{ site.theme.link }}/views/assets/img/remarketing-hero_mob@2x.png 2x" class="img-fluid" alt="First Page Digital" />
+            <h1 class="form-hide text-center text-md-left">Reconnect with customers and boost conversions</h1>
+            <div class="hero-img-mobile d-md-none form-hide">
+                <img src="{{ site.theme.link }}/assets/img/img-hero-tik-tok-mb-full.png" srcset="{{ site.theme.link }}/assets/img/img-hero-tik-tok-mb-full.png, {{ site.theme.link }}/assets/img/img-hero-tik-tok-mb-full@2x.png 2x" class="img-fluid d-block mx-auto" alt="First Page" />
             </div>
-            {% include "assets/partials/en-form-services.twig" with {'form_page': 'Google Remarketing', 'form_button': 'Get A Free Quote'} %}
-            {% include "assets/partials/en-section-awards-badges.twig" %}
+            {% include "partials/en-form-services.twig" with {'form_page': 'Google Remarketing','form_button':'GET A FREE QUOTE'} %}
+
+            {% include "partials/en-section-awards-badges.twig" %}
+        </div>
+
+        <div class="hero-img hero-img-md d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/img-hero-tik-tok-md.png" srcset="{{ site.theme.link }}/assets/img/img-hero-tik-tok-md.png, {{ site.theme.link }}/assets/img/img-hero-tik-tok-md@2x.png 2x" alt="First Page" />
         </div>
         <div class="hero-img d-none d-lg-block">
-            <img src="{{ site.theme.link }}/views/assets/img/remarketing-hero.png" srcset="{{ site.theme.link }}/views/assets/img/remarketing-hero.png, {{ site.theme.link }}/views/assets/img/remarketing-hero@2x.png 2x" class="img-fluid" alt="First Page Digital" />
+            <img src="{{ site.theme.link }}/assets/img/img-hero-tik-tok-lg.png" srcset="{{ site.theme.link }}/assets/img/img-hero-tik-tok-lg.png, {{ site.theme.link }}/assets/img/img-hero-tik-tok-lg@2x.png 2x" alt="First Page" />
         </div>
     </div>
 </section>
 
-{% include "assets/partials/en-section-free-featured-in.twig" %}
+{% include "partials/en-section-featured-in-news.twig" %}
 
 <section class="section-paragraph section-white mob-center">
     <div class="container">
         <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
             <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
                 <img src="{{ site.theme.link }}/views/assets/img/img_remarketing_cycle.png" srcset="{{ site.theme.link }}/views/assets/img/img_remarketing_cycle.png, {{ site.theme.link }}/views/assets/img/img_remarketing_cycle@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_remarketing_cycle_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_remarketing_cycle_mob.png, {{ site.theme.link }}/views/assets/img/img_remarketing_cycle_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
             </div>
             <div class="col-12 col-md-6 mb-3">
-                <h3>Don’t let customers forget about your brand</h3>
-                <p>Do you keep seeing the same ads as you browse the internet? If so, you’ve been included in a remarketing campaign that hopes to recapture your attention. With remarketing ads offering 70% higher conversions compared to standard ads, this digital marketing technique identifies customers who have browsed a particular website but failed to make a purchase. In tracking and reminding potential customers about a product’s existence, remarketing entices customers to complete their purchase.</p>
-                <p>When it comes to e-commerce, there are many reasons why a customer might choose not to purchase immediately. They could change their mind, seek out competitors or simply forget about the items they placed in their shopping cart. With the click-through rate of retargeted ads 10x higher than normal display ads, leading an effective campaign can be incredibly profitable.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+                <h2 class="text-center text-md-left">Don’t let customers forget about your brand</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_remarketing_cycle_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_remarketing_cycle_mob.png, {{ site.theme.link }}/views/assets/img/img_remarketing_cycle_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
+                <p class="text-center text-md-left">Do you keep seeing the same ads as you browse the internet? If so, you’ve been included in a remarketing campaign that hopes to recapture your attention. With remarketing ads offering 70% higher conversions compared to standard ads, this digital marketing technique identifies customers who have browsed a particular website but failed to make a purchase. In tracking and reminding potential customers about a product’s existence, remarketing entices customers to complete their purchase.</p>
+                <p class="text-center text-md-left">When it comes to e-commerce, there are many reasons why a customer might choose not to purchase immediately. They could change their mind, seek out competitors or simply forget about the items they placed in their shopping cart. With the click-through rate of retargeted ads 10x higher than normal display ads, leading an effective campaign can be incredibly profitable.</p>
+
+                <div class="button-cont text-center text-md-left"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
             </div>
+
+            
         </div>
         <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
                 <img src="{{ site.theme.link }}/views/assets/img/img_70.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_70_mob.svg" class="img-fluid d-md-none" alt="" />
             </div>
             <div class="col-12 col-md-6 mb-3">
-                <h3>Develop a powerful remarketing campaign</h3>
-                <p>The genius of remarketing is the fact that customers respond far better to ads about products they are already familiar with. By segmenting your audience based on previous interactions with your business, you can re-engage these consumers and potentially convince them to purchase. With traditional display advertising having a relatively low conversion rate, our knowledgeable team can implement a remarketing campaign that significantly boosts your chances of making a sale.</p>
-                <p>Research tells us that the average consumer needs to have up to seven interactions with a company before committing to a purchase. But remarketing provides a handy shortcut as you reconnect with people who already know about your brand and its products. With this extra information, customers are far more likely to hit checkout than a standard display advertising campaign.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+                <h2 class="text-center text-md-left">Develop a powerful remarketing campaign</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_70_mob.svg" class="img-fluid d-md-none" alt="" />
+                <p class="text-center text-md-left">The genius of remarketing is the fact that customers respond far better to ads about products they are already familiar with. By segmenting your audience based on previous interactions with your business, you can re-engage these consumers and potentially convince them to purchase. With traditional display advertising having a relatively low conversion rate, our knowledgeable team can implement a remarketing campaign that significantly boosts your chances of making a sale.</p>
+                <p class="text-center text-md-left">Research tells us that the average consumer needs to have up to seven interactions with a company before committing to a purchase. But remarketing provides a handy shortcut as you reconnect with people who already know about your brand and its products. With this extra information, customers are far more likely to hit checkout than a standard display advertising campaign.</p>
+
+                <div class="button-cont text-center text-md-left"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
             </div>
+
+
         </div>
         <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
             <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
                 <img src="{{ site.theme.link }}/views/assets/img/img_increase.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_increase_mob.svg" class="img-fluid d-md-none" alt="" />
             </div>
             <div class="col-12 col-md-6 mb-3">
-                <h3>Take a data-driven approach to display advertising</h3>
-                <p>Whether you’re using the Google Display Network, Facebook Business Manager or another platform altogether to lead your campaign, remarketing has become a first-rate digital marketing technique for savvy businesses. And with the help of a leading agency like First Page Australia, we can plan and execute a campaign that keeps your business at the forefront of your customers’ minds, pushing your website traffic and conversions to new heights.</p>
-                <p>As we lead a remarketing campaign that ensures your products and services reach the ideal customers at the perfect time, we can help create a range of specially targeted offers to encourage customers to commit to a sale. With our vast experience developing targeted remarketing campaigns that elegantly segment your audience, we can deliver great results with an outstanding ROI.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+                <h2 class="text-center text-md-left">Take a data-driven approach to display advertising</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_increase_mob.svg" class="img-fluid d-md-none" alt="" />
+                <p class="text-center text-md-left">Whether you’re using the Google Display Network, Facebook Business Manager or another platform altogether to lead your campaign, remarketing has become a first-rate digital marketing technique for savvy businesses. And with the help of a leading agency like First Page Australia, we can plan and execute a campaign that keeps your business at the forefront of your customers’ minds, pushing your website traffic and conversions to new heights.</p>
+                <p class="text-center text-md-left">As we lead a remarketing campaign that ensures your products and services reach the ideal customers at the perfect time, we can help create a range of specially targeted offers to encourage customers to commit to a sale. With our vast experience developing targeted remarketing campaigns that elegantly segment your audience, we can deliver great results with an outstanding ROI.</p>
+                <div class="button-cont text-center text-md-left"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
             </div>
+
+            
         </div>
         <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
             <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
                 <img src="{{ site.theme.link }}/views/assets/img/img_ad_money.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_ad_money_mob.svg" class="img-fluid d-md-none" alt="" />
+
             </div>
             <div class="col-12 col-md-6 mb-3">
-                <h3>Turn more website visits into sales</h3>
-                <p>If you’re ready to win over more customers, reach out to First Page Australia’s acclaimed team to find out how we can generate a highly productive remarketing campaign. By choosing to work with us, you’re gaining access to a truly professional team that’s partnered with over 1,700 clients based around the globe. Backed by our experts, it won’t take long to experience the difference our campaigns create.</p>
-                <p>Best of all, we won’t leave your business in the dark when we lead your strategy. As we get to know your products, identify your target market and implement a robust campaign, we’ll also provide detailed reports on the performance of our work. This way, you can fully understand how your budget is being used to boost the reach of your business.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+                <h2 class="text-center text-md-left">Turn more website visits <br class="d-none d-md-block">into sales</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_ad_money_mob.svg" class="img-fluid d-md-none" alt="" />
+                <p class="text-center text-md-left">If you’re ready to win over more customers, reach out to First Page Australia’s acclaimed team to find out how we can generate a highly productive remarketing campaign. By choosing to work with us, you’re gaining access to a truly professional team that’s partnered with over 1,700 clients based around the globe. Backed by our experts, it won’t take long to experience the difference our campaigns create.</p>
+                <p class="text-center text-md-left">Best of all, we won’t leave your business in the dark when we lead your strategy. As we get to know your products, identify your target market and implement a robust campaign, we’ll also provide detailed reports on the performance of our work. This way, you can fully understand how your budget is being used to boost the reach of your business.</p>
+                <div class="button-cont text-center text-md-left"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
             </div>
+            
         </div>
     </div>
 </section>
 
-{% include "assets/partials/en-section-free-session.twig" %}
-{% include "assets/partials/en-form-popup.twig" with {'form_page': 'Google Remarketing (Popup)'} %}
+{% include "partials/en-section-free-session.twig" %}
+
+
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'Google Remarketing (Popup)'} %}
 
 {% endblock %}

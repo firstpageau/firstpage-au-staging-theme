@@ -1280,6 +1280,31 @@ ul.parsley-errors-list {
   .nav-link:hover {
     color: rgba(0, 0, 0, 0.35) !important; } }
 
+.home-banner h1 {
+  max-width: 659px !important;
+  margin-bottom: 38px; }
+
+@media (max-width: 991px) {
+  .home .quote-form.quote-form-big select.form-control {
+    font-size: 16px;
+    line-height: 25px; }
+  .quote-form.quote-form-big
+.input-group
+.select-container.form-control::after {
+    top: 20px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .home .quote-form.quote-form-big {
+    width: 600px; } }
+
+@media (max-width: 767px) {
+  .home .hero-mobile {
+    margin-bottom: -118px; } }
+
+@media (min-width: 768px) {
+  .home-banner h1 {
+    margin-top: 70px !important; } }
+
 footer {
   color: #ffffff;
   background-color: #427fe0;

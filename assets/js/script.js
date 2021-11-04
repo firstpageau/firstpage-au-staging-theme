@@ -376,6 +376,14 @@ $(function () {
               eventLabel: "Submitted-" + pathname,
             });
 
+            // dataLayer - form user details
+            window.dataLayer.push({
+              event: "formUserData",
+              user_name: $("[name='lead_name']").val(),
+              user_phone: $("[name='lead_phone']").val(),
+              user_email: $("[name='lead_email']").val(),
+            });
+
             // Check Product Type
             if ($form.find("input[name=lead_producttype]").val() == "traffic") {
               var cookieName = "fp_float_form";

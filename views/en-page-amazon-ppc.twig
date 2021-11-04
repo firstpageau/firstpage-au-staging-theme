@@ -2,7 +2,12 @@
 
 {% block content %}
 
-	<style></style>
+	<style>
+		section.section-paragraph .p-0 {
+			padding: 0 !important;
+		}
+	</style>
+
 	<!-- Banner -->
 
 	<section class="banner form-space">
@@ -38,7 +43,8 @@
 				<img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-desktop.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-desktop.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 				<img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-desktop.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-tablet.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
 			</div>
-			<div class="col-12 col-md-6 text-container-seo-new">
+			<div class="col-12 col-md-6 text-container p-0 text-container-seo-new">
+
 				<h2 class="d-block d-md-none text-container d-lg-block">
 					Drive sales with a powerful
 					<br class="d-none d-lg-block"/>
@@ -148,7 +154,7 @@
 				<img src="{{ site.theme.link }}/assets/img/expert-help-desktop.png" srcset="{{ site.theme.link }}/assets/img/expert-help-desktop.png, {{ site.theme.link }}/assets/img/expert-help-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 				<img src="{{ site.theme.link }}/assets/img/expert-help-tablet.png" srcset="{{ site.theme.link }}/assets/img/expert-help-tablet.png, {{ site.theme.link }}/assets/img/expert-help-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
 			</div>
-			<div class="col-12 col-md-6 text-container-seo-new">
+			<div class="col-12 col-md-6">
 				<h2 class="d-block text-container d-md-none d-lg-block">
 					Get expert help and grow fast
 				</h2>

@@ -1,193 +1,227 @@
 {% extends "en-base.twig" %}
 
 {% block content %}
-	<link rel="stylesheet" href="{{ site.theme.link }}/views/assets/style.css"/>
-	<script src="{{ site.theme.link }}/views/assets/js/script.js"></script>
 	<!-- Banner -->
-	<section class="banner extra-pad extra-pad-shorter form-space">
-		<div class="container banner-hero">
+
+	<section class="banner form-space">
+		<div class="container banner-hero two-lines">
 			<div class="banner-hero-cont">
-				<h1 class="form-hide bold-lg">Tailored
-					<strong>Amazon PPC</strong>
-					strategies
-					<strong>convert more customers</strong>
-				</h1>
-				<div class="hero-img-mobile d-lg-none">
-					<img src="{{ site.theme.link }}/views/assets/img/img_hero_seo_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_hero_seo_mob.png, {{ site.theme.link }}/views/assets/img/img_hero_seo_mob@2x.png 2x" class="img-fluid" alt="First Page Digital"/>
+				<h1 class="form-hide">Tailored Amazon PPC strategies convert more
+					<br class="d-block d-sm-none">strategies convert more customers</h1>
+				<div class="banner-description">
+					<div class="form-hide hero-mobile">
+						<img src="{{ site.theme.link }}/assets/img/img_hero_seo_mob@2x.png" srcset="{{ site.theme.link }}/assets/img/img_hero_seo_mob@2x.png, {{ site.theme.link }}/assets/img/img_hero_seo_mob@2x.png 2x" alt="First Page"/>
+					</div>
 				</div>
-				{% include "assets/partials/en-form-services.twig" with {'form_page': 'Amazon PPC', 'form_button': 'FREE PPC QUOTE'} %}
-
-				{% include "assets/partials/en-section-awards-badges.twig" %}
+				{% include "partials/en-form-services.twig" with {'form_page': 'Amazon PPC', 'form_button': 'Get A Free Quote', 'form_website_placeholder': 'Enter your website'} %}
+				{% include "partials/en-section-awards-badges.twig" %}
 			</div>
-
+			<div class="hero-img d-none d-md-block d-lg-none">
+				<img src="{{ site.theme.link }}/assets/img/img_amazon_hero@2x.png" srcset="{{ site.theme.link }}/assets/img/img_amazon_hero@2x.png, {{ site.theme.link }}/assets/img/img_amazon_hero@2x.png 2x" alt="First Page"/>
+			</div>
 			<div class="hero-img d-none d-lg-block">
-				<img src="{{ site.theme.link }}/views/assets/img/img_hero_seo.png" srcset="{{ site.theme.link }}/views/assets/img/img_hero_seo.png, {{ site.theme.link }}/views/assets/img/img_hero_seo@2x.png 2x" class="img-fluid" alt="First Page Digital"/>
+				<img src="{{ site.theme.link }}/assets/img/img_amazon_hero@2x.png" srcset="{{ site.theme.link }}/assets/img/img_amazon_hero@2x.png, {{ site.theme.link }}/assets/img/img_amazon_hero@2x.png 2x" alt="First Page"/>
 			</div>
 		</div>
 	</section>
 
-	{% include "assets/partials/en-section-free-featured-in.twig" %}
+	{% include "partials/en-section-featured-in-news.twig" %}
 
-	<section class="section-paragraph section-white mob-center">
-		<div class="container">
-			<div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-				<div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
-					<img src="{{ site.theme.link }}/views/assets/img/img_ppc.png" srcset="{{ site.theme.link }}/views/assets/img/img_ppc.png, {{ site.theme.link }}/views/assets/img/img_ppc@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt=""/>
-					<img src="{{ site.theme.link }}/views/assets/img/img_ppc_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_ppc_mob.png, {{ site.theme.link }}/views/assets/img/img_ppc_mob@2x.png 2x" class="img-fluid d-md-none" alt=""/>
-				</div>
-				<div class="col-12 col-md-6 mb-3">
-					<h3>Drive sales with a powerful Amazon PPC campaign</h3>
-					<p>For brands that are looking to skyrocket their success on Amazon, developing a carefully targeted pay-per-click (PPC) campaign is the ideal way to deliver incredible sales and growth. Although
-						<a href="https://firstpage.com.au/amazon-seo/">Amazon SEO</a>
-						has proven to be a highly productive strategy that reaches your target market, pairing this approach with a robust Amazon PPC campaign is the sharpest way to take your brand above and beyond the competition.</p>
-					<p>With Amazon’s dominant e-commerce platform receiving millions of hits per day, a dedicated PPC campaign provides a much-needed spotlight for your brand’s products. As top sellers on Amazon continue to invest heavily in PPC advertising, if your brand is going to capture the attention of your perfect customer base, embarking on a data-driven strategy could be your winning formula.</p>
-					<div class="button-cont">
-						<button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE AMAZON PPC QUOTE</button>
-					</div>
-				</div>
+	<section class="section-paragraph">
+		<h2 class="d-none d-md-block d-lg-none ml-2">Drive sales with a powerful
+			<br>
+			Amazon PPC campaign</h2>
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-12 col-md-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-desktop.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-desktop.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-desktop.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-tablet.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
 			</div>
-			<div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-				<div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
-					<img src="{{ site.theme.link }}/views/assets/img/img_amazon_ppc.png" srcset="{{ site.theme.link }}/views/assets/img/img_amazon_ppc.png, {{ site.theme.link }}/views/assets/img/img_amazon_ppc@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt=""/>
-					<img src="{{ site.theme.link }}/views/assets/img/img_amazon_ppc_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_amazon_ppc_mob.png, {{ site.theme.link }}/views/assets/img/img_amazon_ppc_mob@2x.png 2x" class="img-fluid d-md-none" alt=""/>
-				</div>
-				<div class="col-12 col-md-6 mb-3">
-					<h3>Establish long-term success with Amazon</h3>
-					<p>Amazon is undoubtedly the world’s biggest name in e-commerce. Although it launched with modest beginnings in 1994 as an innovative online bookstore, Amazon has continued to grow on its way to becoming the world’s largest marketplace anywhere. Featuring billions of website visitors every month, Amazon shows no signs of slowing down as it now sells just about every product imaginable.</p>
-					<p>However, it’s a mistake to think you can simply list your products on Amazon and watch the conversions tick over. In fact, Amazon’s algorithm favours brands that consistently deliver sales. Therefore, finding a way to convert customers from the get-go is hugely important. Fortunately, First Page Australia’s expert team has vast experience combining PPC with
-						<a href="https://firstpage.com.au/seo/">SEO</a>
-						to deliver our clients enviable sales figures.</p>
-					<div class="button-cont">
-						<button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE AMAZON PPC QUOTE</button>
-					</div>
-				</div>
-			</div>
-			<div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-				<div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
-					<img src="{{ site.theme.link }}/views/assets/img/img_amazon_ad_types.png" srcset="{{ site.theme.link }}/views/assets/img/img_amazon_ad_types.png, {{ site.theme.link }}/views/assets/img/img_amazon_ad_types@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt=""/>
-					<img src="{{ site.theme.link }}/views/assets/img/img_amazon_ad_types_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_amazon_ad_types_mob.png, {{ site.theme.link }}/views/assets/img/img_amazon_ad_types_mob@2x.png 2x" class="img-fluid d-md-none" alt=""/>
+			<div class="col-12 col-md-6 text-container text-container-seo-new">
+				<h2 class="d-block d-md-none d-lg-block">
+					Drive sales with a powerful
+					<br class="d-none d-lg-block"/>
+					Amazon PPC campaign
+				</h2>
+				<img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource-mobile.png" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
 
-				</div>
-				<div class="col-12 col-md-6 mb-3">
-					<h3>Develop a successful Amazon PPC strategy</h3>
-					<p>When it comes to designing a highly effective Amazon PPC campaign, several crucial factors must be weighed up to achieve your business goals. Primarily, you have to decide what ad type makes the most sense for your products, with sponsored product ads, headline search ads and product display ads each having their pros and cons depending on your objective.</p>
-					<p>There are also challenging questions regarding your budget and targeting method that require nuanced solutions. Our highly experienced team will find the best solution as we get to know your products and delve into your sales data to make an informed decision. With a wealth of industry-specific tools at our disposal, we can take charge of your targeted ad spend and keyword research to drive a top-notch conversion rate.</p>
-					<div class="button-cont">
-						<button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE AMAZON PPC QUOTE</button>
-					</div>
-				</div>
-			</div>
-			<div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-				<div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
-					<img src="{{ site.theme.link }}/views/assets/img/img_why_do_amazon_ads_work.svg" class="img-fluid d-none d-md-inline-block" alt=""/>
-					<img src="{{ site.theme.link }}/views/assets/img/img_why_do_amazon_ads_work_mob.svg" class="img-fluid d-md-none" alt=""/>
-				</div>
-				<div class="col-12 col-md-6 mb-3">
-					<h3>Get expert help and grow fast</h3>
-					<p>Thanks to First Page Australia’s extensive experience leading Amazon PPC campaigns for a myriad of clients based around the globe, our manual campaigns are up to 10x more efficient than Amazon’s automatic targeting. By keeping an eye on your campaign’s progress 24/7, we can tweak your ad spend and bidding strategy in real-time to deliver the greatest amount of success for your brand.</p>
-					<p>As we look to transform your business’ status on Amazon from a middling page into one of your category’s top-sellers, it won’t take long for you to realise the positive impact our
-						<a href="https://firstpage.com.au/">renowned digital marketing agency</a>
-						has. Alongside detailed reports that reveal how our comprehensive PPC campaign boosts reach and conversions, we can ensure your company leverages the world’s largest e-commerce platform to its advantage.</p>
-					<div class="button-cont">
-						<button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE AMAZON PPC QUOTE</button>
-					</div>
-				</div>
+				<p class="text-center text-md-left">
+					For brands that are looking to skyrocket their success on Amazon, developing a carefully targeted pay-per-click (PPC) campaign is the ideal way to deliver incredible sales and growth.
+				</p>
+				<p class="text-center text-md-left">
+					Although
+					<a href="https://firstpage.com.au/amazon-seo/">Amazon SEO</a>
+					has proven to be a highly productive strategy that reaches your target market, pairing this approach with a robust Amazon PPC campaign is the sharpest way to take your brand above and beyond the competition.</p>
+				<p class="text-center text-md-left">
+					With Amazon’s dominant e-commerce platform receiving millions of hits per day, a dedicated PPC campaign provides a much-needed spotlight for your brand’s products.
+				</p>
+				<p class="text-center text-md-left">
+					As top sellers on Amazon continue to invest heavily in PPC advertising, if your brand is going to capture the attention of your perfect customer base, embarking on a data-driven strategy could be your winning formula.
+				</p>
+				<button type="button" data-title="seopage-get-freeproposal-Triple" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
 			</div>
 		</div>
 	</section>
 
-	<section class="section-letstalk section-orange">
-		<div class="container">
-			<h2 class="mb-3">
-				<strong>Change the way you do business</strong>
-			</h2>
-			<p class="mb-4">Every day you're not doing Amazon PPC is a day that you are losing to your competitors.<br>
-				Call us today to see how we can help grow your presence on Amazon.</p>
-			<button class="btn fp-btn fp-btn-white fp-btn-shadow show-popup-form">GET A FREE AMAZON PPC QUOTE</button>
+	<section class="section-paragraph">
+		<div class="row no-gutters">
+			<div class="col-md-6"></div>
+			<div class="col-md-6 align-self-end text-container">
+				<h2 class="d-none d-md-block d-lg-none">
+					Establish long-term success with Amazon
+				</h2>
+			</div>
+		</div>
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left pr-lg-5">
+				<img src="{{ site.theme.link }}/assets/img/amazon-laptop-desktop.png" srcset="{{ site.theme.link }}/assets/img/amazon-laptop-desktop.png, {{ site.theme.link }}/assets/img/amazon-laptop-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/amazon-laptop-tablet.png" srcset="{{ site.theme.link }}/assets/img/amazon-laptop-tablet.png, {{ site.theme.link }}/assets/img/amazon-laptop-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2 class="d-block d-md-none d-lg-block">
+					Establish long-term success with Amazon
+				</h2>
+				<img src="{{ site.theme.link }}/assets/img/amazon-laptop-mobile.png" srcset="{{ site.theme.link }}/assets/img/amazon-laptop-mobile.png, {{ site.theme.link }}/assets/img/amazon-laptop-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">Amazon is undoubtedly the world’s biggest name in e-commerce.</p>
+				<p class="text-center text-md-left">Although it launched with modest beginnings in 1994 as an innovative online bookstore, Amazon has continued to grow on its way to becoming the world’s largest marketplace anywhere. Featuring billions of website visitors every month, Amazon shows no signs of slowing down as it now sells just about every product imaginable.</p>
+				<p class="text-center text-md-left">However, it’s a mistake to think you can simply list your products on Amazon and watch the conversions tick over. In fact, Amazon’s algorithm favours brands that consistently deliver sales.</p>
+				<p class="text-center text-md-left">Therefore, finding a way to convert customers from the get-go is hugely important. Fortunately, First Page Australia’s expert team has vast experience combining PPC with
+					<a href="https://firstpage.com.au/seo/">SEO</a>
+					to deliver our clients enviable sales figures.</p>
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
 		</div>
 	</section>
+
+	<section class="section-paragraph">
+		<h2 class="d-none d-md-block d-lg-none ml-2">Develop a successful
+			<br>
+			Amazon PPC strategy</h2>
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-12 col-md-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/ppc-strategy-desktop.png" srcset="{{ site.theme.link }}/assets/img/ppc-strategy-desktop.png, {{ site.theme.link }}/assets/img/ppc-strategy-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/ppc-strategy-tablet.png" srcset="{{ site.theme.link }}/assets/img/ppc-strategy-tablet.png, {{ site.theme.link }}/assets/img/ppc-strategy-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container text-container-seo-new">
+				<h2 class="d-block d-md-none d-lg-block">
+					Develop a successful
+					<br class="d-none d-lg-block"/>
+					Amazon PPC strategy
+				</h2>
+				<img src="{{ site.theme.link }}/assets/img/ppc-strategy-mobile.png" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">
+					When it comes to designing a highly effective Amazon PPC campaign, several crucial factors must be weighed up to achieve your business goals.
+				</p>
+				<p class="text-center text-md-left">
+					Primarily, you have to decide what ad type makes the most sense for your products, with sponsored product ads, headline search ads and product display ads each having their pros and cons depending on your objective.</p>
+				<p class="text-center text-md-left">
+					There are also challenging questions regarding your budget and targeting method that require nuanced solutions. Our highly experienced team will find the best solution as we get to know your products and delve into your sales data to make an informed decision.
+				</p>
+				<p class="text-center text-md-left">
+					With a wealth of industry-specific tools at our disposal, we can take charge of your targeted ad spend and keyword research to drive a top-notch conversion rate.
+				</p>
+				<button type="button" data-title="seopage-get-freeproposal-Triple" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph">
+		<div class="row no-gutters">
+			<div class="col-md-6"></div>
+			<div class="col-md-6 align-self-end text-container">
+				<h2 class="d-none d-md-block d-lg-none">
+					Get expert help and grow fast
+				</h2>
+			</div>
+		</div>
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left pr-lg-5">
+				<img src="{{ site.theme.link }}/assets/img/expert-help-desktop.png" srcset="{{ site.theme.link }}/assets/img/expert-help-desktop.png, {{ site.theme.link }}/assets/img/expert-help-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/expert-help-tablet.png" srcset="{{ site.theme.link }}/assets/img/expert-help-tablet.png, {{ site.theme.link }}/assets/img/expert-help-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2 class="d-block d-md-none d-lg-block">
+					Get expert help and grow fast
+				</h2>
+				<img src="{{ site.theme.link }}/assets/img/expert-help-mobile.png" srcset="{{ site.theme.link }}/assets/img/expert-help-mobile.png, {{ site.theme.link }}/assets/img/expert-help-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">Thanks to First Page Australia’s extensive experience leading Amazon PPC campaigns for a myriad of clients based around the globe, our manual campaigns are up to 10x more efficient than Amazon’s automatic targeting.</p>
+				<p class="text-center text-md-left">By keeping an eye on your campaign’s progress 24/7, we can tweak your ad spend and bidding strategy in real-time to deliver the greatest amount of success for your brand.</p>
+				<p class="text-center text-md-left">As we look to transform your business’ status on Amazon from a middling page into one of your category’s top-sellers, it won’t take long for you to realise the positive impact our
+					<a href="https://firstpage.com.au/">renowned digital marketing agency</a>
+					has.</p>
+				<p class="text-center text-md-left">Alongside detailed reports that reveal how our comprehensive PPC campaign boosts reach and conversions, we can ensure your company leverages the world’s largest e-commerce platform to its advantage.</p>
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+
+	{% include "partials/en-section-free-session.twig" %}
 
 	{% include "assets/partials/en-form-popup.twig" with {'form_page': 'Amazon PPC (Popup)'} %}
 
-	<section class="section-paragraph section-faq section-white">
+	<section class="section-paragraph section-faqs">
 		<div class="container">
-			<h3>Frequently Asked Questions</h3>
-			<div id="accordion">
-				<div class="card">
-					<div class="card-header border-0" id="headingOne">
-						<div class="row">
-							<div class="col-10">
-								<h5 class="mb-0">
-									<span class="faq-label">🏆 What Is Amazon PPC?
-									</span>
-								</h5>
-							</div>
-							<div class="col-2 align-self-center">
-								<span class="float-right accordion-sign">+</span>
+			<h2 class="section-title">Frequently Asked Questions</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What is Amazon ppc?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Undertaking an Amazon Pay-Per-Click (PPC) campaign is the best way to guarantee that your webstore attracts attention from a targeted user base. In an ideal world, customers would simply gravitate towards your store on their own. But with so much competition existing on Amazon as the world’s largest e-commerce retailer, tailored Amazon PPC strategies ensure your products reach a highly qualified customer base that will result in a top conversion rate.</p>
 							</div>
 						</div>
-					</div>
-					<div id="collapseOne" class="collapse">
-						<div class="card-body">Undertaking an Amazon Pay-Per-Click (PPC) campaign is the best way to guarantee that your webstore attracts attention from a targeted user base. In an ideal world, customers would simply gravitate towards your store on their own. But with so much competition existing on Amazon as the world’s largest e-commerce retailer, tailored Amazon PPC strategies ensure your products reach a highly qualified customer base that will result in a top conversion rate.</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card-header" id="headingTwo">
-						<div class="row">
-							<div class="col-10">
-								<h5 class="mb-0">
-									<span class="faq-label">💡 How Does PPC Advertising on Amazon Australia Work?
-									</span>
-								</h5>
-							</div>
-							<div class="col-2 align-self-center">
-								<span class="float-right accordion-sign">+</span>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How long does it take for amazon ppc to work?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Although PPC advertising on Amazon Australia only takes a short time to start working, you need to wait a couple of weeks to understand its full impact. With an expert team like First Page Australia keeping tabs on your strategy’s performance around the clock, we can quickly assess what is and isn’t working. This way, we can finely-tune your Amazon PPC campaign to ensure your budget is being used to its maximum potential.</p>
+
 							</div>
 						</div>
-					</div>
-					<div id="collapseTwo" class="collapse">
-						<div class="card-body">PPC advertising on Amazon is not much different from any other platform when it comes to planning and executing a campaign that delivers a first-rate ROI. You need to take a data-driven outlook that responds to a range of unique factors, including your budget, customer demographics, targeting method and competitor analysis. Fortunately,
-							<a href="https://firstpage.com.au/">First Page Australia’s</a>
-							experienced team can take care of all these things for you.</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card-header" id="headingThree">
-						<div class="row">
-							<div class="col-10">
-								<h5 class="mb-0">
-									<span class="faq-label">⏱️ How Long Does It Take For Amazon PPC To Work?
-									</span>
-								</h5>
-							</div>
-							<div class="col-2 align-self-center">
-								<span class="float-right accordion-sign">+</span>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">how does ppc advertising on amazon australia work?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>PPC advertising on Amazon is not much different from any other platform when it comes to planning and executing a campaign that delivers a first-rate ROI. You need to take a data-driven outlook that responds to a range of unique factors, including your budget, customer demographics, targeting method and competitor analysis. Fortunately,
+									<a href="https://firstpage.com.au/">First Page Australia’s</a>
+									experienced team can take care of all these things for you.</p>
 							</div>
 						</div>
-					</div>
-					<div id="collapseThree" class="collapse">
-						<div class="card-body">Although PPC advertising on Amazon Australia only takes a short time to start working, you need to wait a couple of weeks to understand its full impact. With an expert team like First Page Australia keeping tabs on your strategy’s performance around the clock, we can quickly assess what is and isn’t working. This way, we can finely-tune your Amazon PPC campaign to ensure your budget is being used to its maximum potential.</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card-header" id="headingThree">
-						<div class="row">
-							<div class="col-10">
-								<h5 class="mb-0">
-									<span class="faq-label">💰 What Does Amazon PPC Services Cost?
-									</span>
-								</h5>
-							</div>
-							<div class="col-2 align-self-center">
-								<span class="float-right accordion-sign">+</span>
-							</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What does amazon ppc services cost?</h3>
 						</div>
-					</div>
-					<div id="collapseThree" class="collapse">
-						<div class="card-body">Every Amazon PPC campaign's cost will differ depending on a broad range of factors, ranging from keyword research and daily budget to bid strategy and targeting method. But with the experts at First Page Australia having led hundreds of remarkably successful campaigns, you can trust us to achieve an unbeatable ROI.
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Every Amazon PPC campaign's cost will differ depending on a broad range of factors, ranging from keyword research and daily budget to bid strategy and targeting method. But with the experts at First Page Australia having led hundreds of remarkably successful campaigns, you can trust us to achieve an unbeatable ROI.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 	{% endblock %}

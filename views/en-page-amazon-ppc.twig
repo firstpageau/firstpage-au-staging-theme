@@ -31,8 +31,10 @@
 			}
 		}
 
-		section.section-paragraph .text-container {
-			padding: 0 15px 0 34px;
+		@media(max-width: 991px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px 0 34px;
+			}
 		}
 
 		@media(max-width: 767px) {
@@ -47,12 +49,14 @@
 
 		section.section-paragraph .text-container-right .fp-btn {
 			width: 100%;
-			margin-top: 10 px;
-			margin-bottom: 30 px;
+			margin-top: 10px;
+			margin-bottom: 30px;
 		}
 
-		section.section-paragraph .text-container-right h2 {
-			text-align: center;
+		@media(max-width: 767px) {
+			.heading-center h2 {
+				text-align: center;
+			}
 		}
 
 		@media(max-width: 767px) {
@@ -143,7 +147,7 @@
 	<section class="section-paragraph">
 		<div class="row no-gutters">
 			<div class="col-md-6"></div>
-			<div class="col-md-6 align-self-end text-container-right">
+			<div class="col-md-6 align-self-end text-container">
 
 				<h2 class="d-none d-md-block d-lg-none">
 					Establish long-term success with Amazon
@@ -155,8 +159,7 @@
 				<img src="{{ site.theme.link }}/assets/img/amazon-laptop-desktop.png" srcset="{{ site.theme.link }}/assets/img/amazon-laptop-desktop.png, {{ site.theme.link }}/assets/img/amazon-laptop-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 				<img src="{{ site.theme.link }}/assets/img/amazon-laptop-tablet.png" srcset="{{ site.theme.link }}/assets/img/amazon-laptop-tablet.png, {{ site.theme.link }}/assets/img/amazon-laptop-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
 			</div>
-			<div class="col-12 col-md-6 text-container-right">
-
+			<div class="col-12 col-md-6 text-container heading-center">
 				<h2 class="d-block d-md-none d-lg-block">
 					Establish long-term success with Amazon
 				</h2>
@@ -211,7 +214,7 @@
 	<section class="section-paragraph">
 		<div class="row no-gutters">
 			<div class="col-md-6"></div>
-			<div class="col-md-6 align-self-end text-container-right">
+			<div class="col-md-6 align-self-end text-container">
 				<h2 class="d-none d-md-block d-lg-none">
 					Get expert help and grow fast
 				</h2>
@@ -222,24 +225,20 @@
 				<img src="{{ site.theme.link }}/assets/img/expert-help-desktop.png" srcset="{{ site.theme.link }}/assets/img/expert-help-desktop.png, {{ site.theme.link }}/assets/img/expert-help-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 				<img src="{{ site.theme.link }}/assets/img/expert-help-tablet.png" srcset="{{ site.theme.link }}/assets/img/expert-help-tablet.png, {{ site.theme.link }}/assets/img/expert-help-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
 			</div>
-			<div class="col-12 col-md-6">
-				<div class="text-container-right">
-					<h2 class="d-block d-md-none d-lg-block">
-						Get expert help and grow fast
-					</h2>
-				</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2 class="d-block d-md-none d-lg-block">
+					Get expert help and grow fast
+				</h2>
 				<img src="{{ site.theme.link }}/assets/img/expert-help-mobile.png" srcset="{{ site.theme.link }}/assets/img/expert-help-mobile.png, {{ site.theme.link }}/assets/img/expert-help-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
-				<p class="text-center text-container-right text-md-left">Thanks to First Page Australia’s extensive experience leading Amazon PPC campaigns for a myriad of clients based around the globe, our manual campaigns are up to 10x more efficient than Amazon’s automatic targeting.</p>
-				<p class="text-center text-container-right text-md-left">By keeping an eye on your campaign’s progress 24/7, we can tweak your ad spend and bidding strategy in real-time to deliver the greatest amount of success for your brand.</p>
-				<p class="text-center text-container-right text-md-left">As we look to transform your business’ status on Amazon from a middling page into one of your category’s top-sellers, it won’t take long for you to realise the positive impact our
+				<p class="text-center text-md-left">Thanks to First Page Australia’s extensive experience leading Amazon PPC campaigns for a myriad of clients based around the globe, our manual campaigns are up to 10x more efficient than Amazon’s automatic targeting.</p>
+				<p class="text-center text-md-left">By keeping an eye on your campaign’s progress 24/7, we can tweak your ad spend and bidding strategy in real-time to deliver the greatest amount of success for your brand.</p>
+				<p class="text-center text-md-left">As we look to transform your business’ status on Amazon from a middling page into one of your category’s top-sellers, it won’t take long for you to realise the positive impact our
 					<a href="https://firstpage.com.au/">renowned digital marketing agency</a>
 					has.</p>
-				<p class="text-center text-container-right text-md-left">Alongside detailed reports that reveal how our comprehensive PPC campaign boosts reach and conversions, we can ensure your company leverages the world’s largest e-commerce platform to its advantage.</p>
-				<div class="text-container-right">
-					<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
-						GET A FREE QUOTE
-					</button>
-				</div>
+				<p class="text-center text-md-left">Alongside detailed reports that reveal how our comprehensive PPC campaign boosts reach and conversions, we can ensure your company leverages the world’s largest e-commerce platform to its advantage.</p>
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
 			</div>
 		</div>
 	</section>

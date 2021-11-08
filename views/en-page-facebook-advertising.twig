@@ -2,382 +2,644 @@
 
 {% block content %}
 
-<style>
-    section.section-casestudy.casestudy-facebook-ads {
-        background-image: url("{{ site.theme.link }}/assets/img/img_ipad_crowne_plaza@2x.png");
-        background-size: 1464px auto;
-        background-position-x: calc(50% + 556px);
-    }
+	<style>
+		section.section-casestudy.casestudy-facebook-ads {
+			background-image: url("{{ site.theme.link }}/assets/img/img_ipad_crowne_plaza@2x.png");
+			background-size: 1464px auto;
+			background-position-x: calc(50% + 556px);
+		}
 
-    .casestudy-facebook-ads{
-        font-weight: 600;
-    }
-    .casestudy-facebook-ads-content {
-        font-size: 54px;
-        line-height: 63px;
-    }
-    @media (max-width: 767px) {
-        .page-facebook-advertising .hero-mobile {
-            bottom: 0;
-            right: -78px;
-        }
-        section.section-casestudy.casestudy-facebook-ads {
-            background-image: none;
-        }
-        .casestudy-facebook-ads-content span {
-            display: block;
-        }
-    }
-</style>
+		.casestudy-facebook-ads {
+			font-weight: 600;
+		}
+		.casestudy-facebook-ads-content {
+			font-size: 54px;
+			line-height: 63px;
+		}
+		@media(max-width: 767px) {
+			.page-facebook-advertising .hero-mobile {
+				bottom: 0;
+				right: -78px;
+			}
+			section.section-casestudy.casestudy-facebook-ads {
+				background-image: none;
+			}
+			.casestudy-facebook-ads-content span {
+				display: block;
+			}
+		}
+		@media(max-width: 991px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px 0 34px !important;
+			}
+		}
 
-<section class="banner form-space">
-    <div class="container banner-hero two-lines">
-        <div class="banner-hero-cont">
-            <h1 class="form-hide">Sell like crazy with highly-targeted Facebook ads</h1>
-            <div class="banner-description">
-                <p class="form-hide">Increase brand awareness, and blow your sales through the roof with a well-executed Facebook ads strategy from First Page</p>
-                <div class="form-hide hero-mobile">
-                    <img src="{{ site.theme.link }}/assets/img/img-hero-fpa-home-mobile.png" srcset="{{ site.theme.link }}/assets/img/img-hero-fpa-home-mobile.png, {{ site.theme.link }}/assets/img/img-hero-fpa-home-mobile@2x.png 2x" alt="First Page" />
-                </div>
-            </div>
-            {% include "partials/en-form-services.twig" with {'form_page': 'Facebook Ads', 'form_button': 'Get A Free Quote'} %}
-            {% include "partials/en-section-awards-badges.twig" %}
-        </div>
-        <div class="hero-img d-none d-md-block d-lg-none">
-            <img src="{{ site.theme.link }}/assets/img/img-hero-fpa-home-tab.png" srcset="{{ site.theme.link }}/assets/img/img-hero-fpa-home-tab.png, {{ site.theme.link }}/assets/img/img-hero-fpa-home-tab@2x.png 2x" alt="First Page" />
-        </div>
-        <div class="hero-img d-none d-lg-block">
-            <img src="{{ site.theme.link }}/assets/img/img-hero-fpa-home.png" srcset="{{ site.theme.link }}/assets/img/img-hero-fpa-home.png, {{ site.theme.link }}/assets/img/img-hero-fpa-home@2x.png 2x" alt="First Page" />
-        </div>
-    </div>
-</section>
+		@media(max-width: 767px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px !important;
+			}
+		}
+	</style>
 
-{% include "partials/en-section-enterprise-client-logos.twig" %}
+	<section class="banner form-space">
+		<div class="container banner-hero two-lines">
+			<div class="banner-hero-cont">
+				<h1 class="form-hide">Sell like crazy with highly-targeted Facebook ads</h1>
+				<div class="banner-description">
+					<p class="form-hide">Increase brand awareness, and blow your sales through the roof with a well-executed Facebook ads strategy from First Page</p>
+					<div class="form-hide hero-mobile">
+						<img src="{{ site.theme.link }}/assets/img/img-hero-fpa-home-mobile.png" srcset="{{ site.theme.link }}/assets/img/img-hero-fpa-home-mobile.png, {{ site.theme.link }}/assets/img/img-hero-fpa-home-mobile@2x.png 2x" alt="First Page"/>
+					</div>
+				</div>
+				{% include "partials/en-form-services.twig" with {'form_page': 'Facebook Ads', 'form_button': 'Get A Free Quote'} %}
+				{% include "partials/en-section-awards-badges.twig" %}
+			</div>
+			<div class="hero-img d-none d-md-block d-lg-none">
+				<img src="{{ site.theme.link }}/assets/img/img-hero-fpa-home-tab.png" srcset="{{ site.theme.link }}/assets/img/img-hero-fpa-home-tab.png, {{ site.theme.link }}/assets/img/img-hero-fpa-home-tab@2x.png 2x" alt="First Page"/>
+			</div>
+			<div class="hero-img d-none d-lg-block">
+				<img src="{{ site.theme.link }}/assets/img/img-hero-fpa-home.png" srcset="{{ site.theme.link }}/assets/img/img-hero-fpa-home.png, {{ site.theme.link }}/assets/img/img-hero-fpa-home@2x.png 2x" alt="First Page"/>
+			</div>
+		</div>
+	</section>
 
-<section class="section-paragraph">
-    <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
-        <div class="col-12 col-lg-6 image-container-right">
-            <img src="{{ site.theme.link }}/assets/img/img_facebook_ads.jpg" srcset="{{ site.theme.link }}/assets/img/img_facebook_ads.jpg, {{ site.theme.link }}/assets/img/img_facebook_ads@2x.jpg 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
-            <img src="{{ site.theme.link }}/assets/img/img_facebook_ads_mob.jpg" srcset="{{ site.theme.link }}/assets/img/img_facebook_ads_mob.jpg, {{ site.theme.link }}/assets/img/img_facebook_ads_mob@2x.jpg 2x" class="img-fluid d-md-none" alt="First Page" />
-        </div>
-        <div class="col-12 col-lg-6 text-container">
-            <h2>Get Pin-Point Precision & Serious ROAS For Your Business</h2>
-            <p>To build a successful business online, you need to find a winning formula that actively drives customers to your site. </p>
-            <p>It’s got to be engaging, eye-catching and attention-grabbing - without blowing your budget.</p>
-            <p>Enter Facebook - the platform that delivers all this and more. And luckily, our team has the skills to create the game-changing campaign you need to succeed. </p>
-            <p>Our social media strategy puts your products and services in front of the right people - users who are ACTUALLY interested and looking to purchase. </p>
-            <p>With powerful analytics, micro-targeting techniques, unbelievable reach and remarketing capabilities, the simple truth is that Facebook is the most exciting place to advertise online.</p>
-            <p>And once you crack that winning code - we scale up your ads to reach a jaw-dropping 2.8 BILLION monthly active users. Then, sit back and watch those sales roll in.</p>
-            <p>There’s no denying it. Facebook Ads are one of the most powerful ways to achieve serious growth - and blow your competition out of the water!</p>
-            <button type="button" data-title="facebookAdvertisingPage-get-freeproposal-facebook" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
-        </div>
-    </div>
-</section>
+	{% include "partials/en-section-enterprise-client-logos.twig" %}
 
-<section class="section-paragraph">
-    <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
-        <div class="col-12 col-lg-6 image-container-left">
-            <img src="{{ site.theme.link }}/assets/img/img_facebook.svg" class="img-fluid d-none d-md-inline-block" alt="First Page" />
-            <img src="{{ site.theme.link }}/assets/img/img_facebook_mob.svg" class="img-fluid d-md-none" alt="First Page" />
-        </div>
-        <div class="col-12 col-lg-6 text-container">
-            <h2>Start running Facebook ads that generate 10x’s ROI with First Page</h2>
-            <p>In the past 10 years, we have run hundreds of Facebook ads campaigns, spanning dozens of industries, and generating millions of dollars of profit for our clients.</p>
-            <p>In that time, our team of Facebook ad specialists have run countless tests and experiments. </p>
-            <p>This has given us access to powerful data that few agencies can compete with - data that we will use to fully optimise your Facebook ad campaign from day one.</p>
-            <p>No matter if you are looking for leads, clients, sales, exposure, or followers - we have the expertise and experience to deliver a Facebook ads campaign that no other agency can.</p>
-            <p>Our dedicated Facebook team is on standby, ready to start your campaign today. If you are ready to take your business to the next level with Facebook ads that actually work - click the button below for a free call with one of our Digital Strategists. </p>
-            <button type="button" data-title="facebookAdvertisingPage-get-freeproposal-start" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
-        </div>
-    </div>
-</section>
+	<section class="section-paragraph">
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-md-6"></div>
+			<div class="col-md-6 text-container">
+				<h2>Facebook ads have sniper-like precision, which means a greater ROAS for your business</h2>
+			</div>
+		</div>
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-12 col-md-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/img_facebook_ads.jpg" srcset="{{ site.theme.link }}/assets/img/img_facebook_ads.jpg, {{ site.theme.link }}/assets/img/img_facebook_ads@2x.jpg 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 
-<section class="section-client-reviews">
-    <div class="container">
-        <div class="section-title">
-            <h2>See what our clients<br class="d-sm-none"> are saying</h2>
-        </div>
-        <div class="row testimonial-cont">
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        I like First Page’s responsiveness, professionalism, and access to their trained digital marketing professionals. Angela, our Digital Strategist was professional and focused on helping me accomplish my company's marketing aims. Well done! </div>
-                    <div class="person">
-                        <div class="name">Ollie MC</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        We can't recommend First Page highly enough! The team are proactive, transparent, knowledgeable and patient - always providing great advice and actionable recommendations. We are seeing tangible results from our SEO campaign and look forward to an
-                        ongoing partnership.
-                    </div>
-                    <div class="person">
-                        <div class="name">JUSTCO AUSTRALIA</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        We have engaged First Page for their SEO services for many years. Khairul has been very helpful and patient. He answers our queries and makes sure our account is well-managed and ranks the best. Looking forward to a long-term partnership. Highly recommend! </div>
-                    <div class="person">
-                        <div class="name">TAN WHEE LENG</div>
-                    </div>
-                </div>
-            </div>
+				<img src="{{ site.theme.link }}/assets/img/img_facebook_ads.jpg" srcset="{{ site.theme.link }}/assets/img/img_facebook_ads.jpg, {{ site.theme.link }}/assets/img/img_facebook_ads@2x.jpg 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
 
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        This is our second time working with First Page! I would highly recommend them for their efficiency and effectiveness. The service they provide is very professional and responsive. We saw great improvements and results. Thank you! </div>
-                    <div class="person">
-                        <div class="name">JASMINE LOH</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        We would like to highlight the professional and dedicated SEO service provided by Carl and Bingming. It’s one thing to fulfil contractual obligations, but they supported us beyond the line of duty which deserves to be commended. </div>
-                    <div class="person">
-                        <div class="name">AA MARKETING</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        I met with Angela, who came across as very sincere and willing to share honest opinions. She followed up on our requirements very closely, showing me technical details on what can be improved I was convinced by their company's capabilities.
-                    </div>
-                    <div class="person">
-                        <div class="name">ASHTON CHONG</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<img src="{{ site.theme.link }}/assets/img/img_facebook_ads_mob.jpg" srcset="{{ site.theme.link }}/assets/img/img_facebook_ads_mob.jpg, {{ site.theme.link }}/assets/img/img_facebook_ads_mob@2x.jpg 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
 
-{% include "partials/en-section-services-social.twig" %}
+				<p class="text-center text-md-left">Once upon a time, Google was the only worthwhile platform in the digital advertising space. But then Facebook came along, and nothing was ever the same.</p>
 
-    <section class="section-casestudy casestudy-facebook-ads">
-        <div class="container">
-            <div class="content-area">
-                <div class="info">
-                    <h2>
-                        <span class="small-grey">Our Recent Work</span>
-                        <strong>Crowne Plaza</strong>
-                    </h2>
-                    {# <ul class="tag">
-                <li>SEO</li>
-            </ul> #}
-                    <p>Rather than relying on Booking.com, Crowne Plaza searched for alternative strategies to drive hotel bookings. First Page implemented an integrated marketing strategy that delivered these results;</p>
-                </div>
+				<p class="text-center text-md-left">Over the past few years, Facebook Ads have taken over as the best channel for digital marketing and one of the most effective ways to grow a business.</p>
 
-                <div class="stats">
-                    <div class="stats-container">
-                        <div class="row">
-                            <div class="col-12 ">
+				<p class="text-center text-md-left">Why?</p>
 
-                                <div class="casestudy-facebook-ads-content"><span>18X</span> return on their social marketing investment</div>
-                            </div>
+				<p class="text-center text-md-left">Because Facebook ads are highly targeted, endlessly scalable, and (if you hire the right agency), they are extremely profitable.</p>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				<p class="text-center text-md-left">This means you can get your products and services in front of the people who are interested in and will actually buy your products, and then scale those ads across 2.8 BILLION monthly active users.</p>
 
-<section class="section-paragraph section-faqs">
-    <div class="container">
-        <h2 class="section-title">Social Media Specialist FAQs</h2>
-        <div itemscope itemtype="https://schema.org/FAQPage" class="row">
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">What are Facebook Ads?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>Facebook ads can connect your business to the internet’s largest social network - precisely targeting users via demographics, ages and interests. Facebook paid ads appear on user feeds in a way that’s bold, visually engaging and highly converting!</p>
-                            <p>In 2021, Facebook ads are one of the most effective ways to advertise online. The platform currently has 2.7 billion unique users and is the world’s third most visited website, just behind Google and YouTube. </p>
-                            <p>Imagine being able to connect BILLIONS to users DIRECTLY to your products, services and online store!!</p>
-                            <p>With such a gigantic user base, coupled with the unrivalled ability to target audiences, working with a Facebook advertising agency is one of the smartest ways to invest in your business right now. </p>
-                            <p>If you’re looking to funnel traffic to your website and broadcast your products and services to bigger and better consumer groups - a Facebook advertising campaign is the perfect solution.</p>
-                            <p>The most efficient way to stretch your ad spend and achieve exponential ROI is by working with First Page. We’re the Facebook marketing agency that delivers proven SMM solutions and Facebook ads excellence to our clients.</p>
-                            <p>Have you made the decision to take social media seriously and introduce your business to billions of unique users? If so, then it’s time to contact First Page to discuss our Facebook ads services and how your business can benefit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">Why are Facebook Ads important?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>Boasting over 1 billion monthly users, Facebook advertising is an INSANELY powerful form of advertising. </p>
-                            <p>With dynamic design options and real visual impact, Facebook ads leap off the screen to really connect with your target audience. Perfectly placed between engaging content on user’s feeds, this is a unique opportunity to enhance your brand and boost your sales.   </p>
-                            <p>Another important tool is Facebook Ads Manager. It’s an intuitive online portal that provides access to analytics and campaign stats, so you can track your campaign in real-time. This data will help you understand how your ads are performing and ways to optimise them to achieve even greater success. </p>
-                            <p>Facebook paid ads are important because they empower businesses to advertise their offerings in the way that’s right for them. There’s never been a more efficient and effective way to manage your ads and achieve greater ROAS than ever before. </p>
-                            <p>This is THE way for your business to blow up in 2021!!  </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">What businesses are Facebook Ads suitable for?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>A common misconception is that Facebook advertising is only right for big businesses with revenue to burn. </p>
-                            <p>But the truth is that Facebook ads can benefit businesses of any size. They’re best suited to brands that are looking to stimulate growth and dial up their sales numbers.</p>
-                            <p>Facebook ads are revolutionary because they can micro-target audiences. In recent years, Facebook has developed the unique ability to target users based on demographics, ages, interests, behaviours, connections and locations. </p>
-                            <p>This granular level of data and optimised array of tools has drastically reduced costs - opening up Facebook ads to businesses of any size. </p>
-                            <p>Advertising was once only accessible to global businesses with mega budgets for TV commercials and billboards. But today, anyone from successful Australian brands, to your favourite local businesses, can seriously benefit from Facebook ads.</p>
-                            <p>Every day at First Page, we help smart business owners and managers identify their niche and dominate their industry in double time - and we want you to be one of them! </p>
-                            <p>If you still think that Facebook ads aren’t suitable for your business, then you MUST talk to our digital marketing specialists today. Just one conversation will show you the value of working with a Facebook advertising agency and how we can explode your sales numbers now!!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">What kind of Facebook Ads are there?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>The most popular types of Facebook advertising include dynamic ads, canvas ads, video ads, boosted page posts and multi-product carousel ads </p>
-                            <p>Each type of Facebook ad is designed with a specific purpose, giving advertisers the ability to achieve their individual objectives. </p>
-                            <p>For example, a video offers a great way to educate audiences on products and services. A carousel can list an array of features and benefits in succession. And a dynamic image post can drive users to your site with a clear message and effective CTA.</p>
-                            <p>Wherever you’re at with your business, and whatever objectives you’re seeking to achieve, there’s a carefully crafted and fully optimised Facebook ads model to suit your needs. </p>
-                            <p>To discover which Facebook ads are right for you, just speak to the digital marketing experts at First Page. We can connect you with Australia’s top account managers, media specialists and content creators. </p>
-                            <p>As a top Facebook advertising agency, We’ll collectorate to create online advertising that will perform better than anything you thought possible!! </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">Which is better, Facebook ads or Google ads?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>It’s tough to make a choice between Facebook ads and Google ads - because each is so incredibly effective in its own right!!  </p>
-                            <p>The benefits of Facebook ads include micro-targeting, insightful analytics, extraordinary reach, and a broad selection of dynamic design options. </p>
-                            <p>The advantages of Google ads are a rapid increase in traffic, amplifying brand awareness, gaining traction over your competition, and offering a smooth and simple buyers journey. </p>
-                            <p>At First Page, we believe that working with BOTH these powerful tools is the key to digital marketing mastery. </p>
-                            <p>We know how to create astoundingly eye-catching Facebook paid ads - then double down with expertly optimised Google ads that share your business with the globe. And the results are out of this world!! </p>
-                            <p>Our clients choose to work with us because there’s simply no better way to level up their businesses. To become one of them, contact our team now!!  </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">How can I get started with Facebook Ads?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>Now is the time to begin taking Facebook advertising seriously and using this incredibly powerful tool to build your business. </p>
-                            <p>Brands that wait are getting left behind. This is THE moment to get smart and partner with a serious digital marketing agency that knows how to deliver the goods. </p>
-                            <p>Working with a Facebook advertising agency is the best way for Australian businesses to start a Facebook paid ads campaign that ACTUALLY converts. </p>
-                            <p>Don’t risk wasting money on a failed campaign. First Page knows how to stretch your budget and really put your ad spend to use - delivering tangible results and serious revenue. </p>
-                            <p>Our digital marketing specialists are ready to begin a conversation about the future of your business! To start your journey towards online success, contact First Page today. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+				<p class="text-center text-md-left">There’s no denying it. Whether you are a local business or an Enterprise powerhouse, Facebook Ads are one of the most powerful ways to blow your competition out of the water.</p>
 
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse7">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">Should I work with a Facebook advertising agency?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse7" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>With their game-changing targeting and unbelievable optimisation, Facebook advertising can benefit any business. However, you still need a smart strategy and sizzling creating to make them work for you.</p>
-                            <p>We constantly see business owners make the mistake of trying to manage their own campaigns. The result is failed Facebook ads, lost revenue, and obliterated brands. </p>
-                            <p>When you’re ready to turn up your digital marketing and start generating serious sales, the best way to do so is with a Facebook advertising agency. These kinds of agencies excel at creating Facebook paid ads that generate real revenue for clients. </p>
-                            <p>And at First Page, that’s exactly what we do best. </p>
-                            <p>Make the smart choice and choose to partner with a recognised Facebook marketing agency. First Page knows how to create dazzling and dynamic ads that could begin a whole new chapter for your business!! </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+				<button type="button" data-title="seopage-get-freeproposal-Triple" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
 
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse8">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">What services does a Facebook advertising agency offer?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse8" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>When you choose to work with a Facebook marketing agency like First Page, the result is tailored Facebook advertising that introduces your business to thousands of carefully targeted customers. It’s this kind of optimised ad campaign that will deliver game-changing results for your business!!</p>
-                            <p>Because we’re a specialised Facebook advertising agency, we understand the platform better than anyone else. We’re all about creating Facebook paid ads that generate traffic, leads and conversions - whilst also presenting your brand in exciting, engaging and eye-catching ways. </p>
-                            <p>If you’re looking to stimulate growth and drive sales in a rapidly evolving digital economy, you need to partner with the experts. First Page is now available to discuss your Facebook ad campaigns.</p>
-                            <p><a href="{{ home_url }}contact/">Contact</a> our digital marketing specialists today.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+	<section class="section-paragraph">
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left"></div>
+			<div class="col-12 col-md-6 text-container">
+				<h2>Start running Facebook ads that generate 10x’s ROI with First Page</h2>
+			</div>
+		</div>
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left pr-lg-5">
+				<img src="{{ site.theme.link }}/assets/img/img_facebook.svg" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/img_facebook.svg" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
 
-{% include "partials/en-section-free-session.twig" %}
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<img src="{{ site.theme.link }}/assets/img/img_facebook_mob.svg" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
 
-{% include "partials/en-form-popup.twig" with {'form_page': 'Facebook Ads (Pop-up Form)'} %}
 
+				<p class="text-center text-md-left">In the past 10 years, we have run hundreds of Facebook ads campaigns, spanning dozens of industries, and generating millions of dollars of profit for our clients.</p>
+
+				<p class="text-center text-md-left">In that time, our team of Facebook ad specialists have run countless tests and experiments.</p>
+
+				<p class="text-center text-md-left">This has given us access to powerful data that few agencies can compete with - data that we will use to fully optimise your Facebook ad campaign from day one.</p>
+
+				<p class="text-center text-md-left">No matter if you are looking for leads, clients, sales, exposure, or followers - we have the expertise and experience to deliver a Facebook ads campaign that no other agency can.</p>
+
+				<p class="text-center text-md-left">Our dedicated Facebook team is on standby, ready to start your campaign today. If you are ready to take your business to the next level with Facebook ads that actually work - click the button below for a free call with one of our Digital Strategists.</p>
+
+			</p>
+			<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+				GET A FREE QUOTE
+			</button>
+		</div>
+
+	</section>
+	<section class="section-client-reviews">
+		<div class="container">
+			<div class="section-title">
+				<h2>See what our clients<br class="d-sm-none">
+					are saying</h2>
+			</div>
+			<div class="row testimonial-cont">
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							I like First Page’s responsiveness, professionalism, and access to their trained digital marketing professionals. Angela, our Digital Strategist was professional and focused on helping me accomplish my company's marketing aims. Well done!
+						</div>
+						<div class="person">
+							<div class="name">Ollie MC</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							We can't recommend First Page highly enough! The team are proactive, transparent, knowledgeable and patient - always providing great advice and actionable recommendations. We are seeing tangible results from our SEO campaign and look forward to an
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														                        ongoing partnership.
+						</div>
+						<div class="person">
+							<div class="name">JUSTCO AUSTRALIA</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							We have engaged First Page for their SEO services for many years. Khairul has been very helpful and patient. He answers our queries and makes sure our account is well-managed and ranks the best. Looking forward to a long-term partnership. Highly recommend!
+						</div>
+						<div class="person">
+							<div class="name">TAN WHEE LENG</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							This is our second time working with First Page! I would highly recommend them for their efficiency and effectiveness. The service they provide is very professional and responsive. We saw great improvements and results. Thank you!
+						</div>
+						<div class="person">
+							<div class="name">JASMINE LOH</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							We would like to highlight the professional and dedicated SEO service provided by Carl and Bingming. It’s one thing to fulfil contractual obligations, but they supported us beyond the line of duty which deserves to be commended.
+						</div>
+						<div class="person">
+							<div class="name">AA MARKETING</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							I met with Angela, who came across as very sincere and willing to share honest opinions. She followed up on our requirements very closely, showing me technical details on what can be improved I was convinced by their company's capabilities.
+						</div>
+						<div class="person">
+							<div class="name">ASHTON CHONG</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-paragraph">
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-md-6"></div>
+			<div class="col-md-6 text-container">
+				<h2>Attention-grabbing Facebook advertising</h2>
+			</div>
+		</div>
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-12 col-md-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/facebook-advertising-desktop.png" srcset="{{ site.theme.link }}/assets/img/facebook-advertising-desktop.png, {{ site.theme.link }}/assets/img/facebook-advertising-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/facebook-advertising-tablet.png" srcset="{{ site.theme.link }}/assets/img/facebook-advertising-tablet.png, {{ site.theme.link }}/assets/img/facebook-advertising-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<img src="{{ site.theme.link }}/assets/img/facebook-advertising-mobile.png" srcset="{{ site.theme.link }}/assets/img/facebook-advertising-mobile.png, {{ site.theme.link }}/assets/img/facebook-advertising-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">
+					Considering Facebook has a mind-boggling 2.8 billion users, it’s no surprise that this giant social media platform delivers unbelievable results for businesses looking to promote their products and services.
+				</p>
+				<p class="text-center text-md-left">But as you can be certain that almost every one of your rivals is using Facebook ads to attract their target market, making sure your approach stands out from the crowd is imperative to your success.</p>
+
+				<p class="text-center text-md-left">
+					So how do you make that happen? You need to partner with a Facebook advertising agency that knows what it takes to lead a successful campaign from start to finish. With our exceptionally talented Facebook advertising experts creating incredibly profitable campaigns day in and day out, our cutting-edge techniques ensure we can outperform your wildest dreams.
+				</p>
+				<p class="text-center text-md-left">
+					Across powerful paid ads based on a myriad of data-driven metrics, we can also produce impactful creative that resonates with your target market and holds user attention spans for longer.
+				</p>
+
+				<p class="text-center text-md-left">
+					Irrespective of the industry your business operates within, our eye-catching Facebook advertising strategies ensure your customers understand why your business is the one they need most.
+				</p>
+
+				<p class="text-center text-md-left">
+					Once we learn what’s unique about your business and develop robust audience personas, our Facebook ads will give your conversion rates a massive boost.
+				</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Triple" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+	<section class="section-paragraph">
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left"></div>
+			<div class="col-12 col-md-6 text-container">
+				<h2>Laser-focused Facebook marketing to grow your brand</h2>
+			</div>
+		</div>
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left pr-lg-5">
+				<img src="{{ site.theme.link }}/assets/img/img_business_success-desktop.png" srcset="{{ site.theme.link }}/assets/img/img_business_success-desktop.png, {{ site.theme.link }}/assets/img/img_business_success-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/img_business_success-tablet.png" srcset="{{ site.theme.link }}/assets/img/img_business_success-tablet.png, {{ site.theme.link }}/assets/img/img_business_success-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<img src="{{ site.theme.link }}/assets/img/img_business_success-mobile.png" srcset="{{ site.theme.link }}/assets/img/img_business_success-mobile.png, {{ site.theme.link }}/assets/img/img_business_success-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">If you choose to partner with the digital marketing specialists at First Page, we’ll make sure your Facebook advertising strategy is entirely focused on achieving your goals.</p>
+				<p class="text-center text-md-left">If you’re looking to rapidly expand your customer base, one of the best ways to grow your reach is using Facebook’s Lookalike Audience feature. This ensures your Facebook ads campaign reaches potential customers who share traits with your existing audience. Alongside detailed competitor analysis, we'll generate a campaign that attracts people who have a genuine interest in your products and services.
+				</p>
+				<p class="text-center text-md-left">We also make sure your business is benefiting from the Facebook Pixel. By adding this snippet of code to your website, our Facebook ad agency can track who interacts with your website and convince them to purchase.</p>
+
+				<p class="text-center text-md-left">This data can be used to identify new users to target with your Facebook ads campaign. Plus, we can level up your conversion rates as the Facebook Pixel allows us to reach people that love the products you sell.</p>
+
+				<p class="text-center text-md-left">Alongside an array of other techniques that supercharge your Facebook paid ads strategy, know that our team has delivered world-class results for thousands of businesses just like yours.</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+	<section class="section-casestudy casestudy-facebook-ads">
+		<div class="container">
+			<div class="content-area">
+				<div class="info">
+					<h2>
+						<span class="small-grey">Our Recent Work</span>
+						<strong>Crowne Plaza</strong>
+					</h2>
+					<p>Rather than relying on Booking.com, Crowne Plaza searched for alternative strategies to drive hotel bookings. First Page implemented an integrated marketing strategy that delivered these results;</p>
+				</div>
+
+				<div class="stats">
+					<div class="stats-container">
+						<div class="row">
+							<div class="col-12">
+								<div class="casestudy-facebook-ads-content">
+									<span>18X</span>
+									return on their social marketing investment</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-paragraph">
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-md-6"></div>
+			<div class="col-md-6 text-container">
+				<h2>Sell more products with Facebook advertising</h2>
+			</div>
+		</div>
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-12 col-md-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/FB-library-Business-Website-desktop.png" srcset="{{ site.theme.link }}/assets/img/FB-library-Business-Website-desktop.png, {{ site.theme.link }}/assets/img/FB-library-Business-Website-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/FB-library-Business-Website-tablet.png" srcset="{{ site.theme.link }}/assets/img/FB-library-Business-Website-tablet.png, {{ site.theme.link }}/assets/img/FB-library-Business-Website-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<img src="{{ site.theme.link }}/assets/img/FB-library-Business-Website-mobile.png" srcset="{{ site.theme.link }}/assets/img/FB-library-Business-Website-mobile.png, {{ site.theme.link }}/assets/img/FB-library-Business-Website-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">
+					A razor-sharp Facebook ads campaign has the power to transform your business into an e-commerce powerhouse.
+				</p>
+				<p class="text-center text-md-left">But if you want Facebook to form part of your high-performance marketing funnel, you need the help of an expert team that has the required expertise. Personalisation is becoming critical in almost every aspect of digital marketing as customers have more information and options at their fingertips than ever before.
+				</p>
+				<p class="text-center text-md-left">
+					We can kickstart a carefully considered Facebook dynamic ads campaign that ensures your business reaches customers who have previously shown interest in your business.
+				</p>
+				<p class="text-center text-md-left">
+					Whether that happened on your website, app or somewhere else on the internet, reaching this audience segment with your product catalogue generates outstanding sales. We make sure this type of Facebook advertising strategy is created with techniques that produce consistent results, ensuring your business benefits from a top-notch ROI.
+				</p>
+
+				<p class="text-center text-md-left">
+					By delivering paid ads that grab attention in the Facebook feed, we can put your business in a position where it steals away customers from its biggest competitors.
+				</p>
+
+				<p class="text-center text-md-left">
+					This way, your business can become the biggest player in your space. With First Page generating millions in profit for our clients, don’t wait to start your game-changing campaign.
+				</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Triple" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+	<section class="section-paragraph">
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left"></div>
+			<div class="col-12 col-md-6 text-container">
+				<h2>Generate more leads with your Facebook campaigns
+				</h2>
+			</div>
+		</div>
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left pr-lg-5">
+				<img src="{{ site.theme.link }}/assets/img/facebook-campaign-desktop.jpg" srcset="{{ site.theme.link }}/assets/img/facebook-campaign-desktop.jpg, {{ site.theme.link }}/assets/img/facebook-campaign-desktop.jpg 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/facebook-campaign-tablet.jpg" srcset="{{ site.theme.link }}/assets/img/facebook-campaign-tablet.jpg, {{ site.theme.link }}/assets/img/facebook-campaign-tablet.jpg 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<img src="{{ site.theme.link }}/assets/img/facebook-campaign-mobile.jpg" srcset="{{ site.theme.link }}/assets/img/facebook-campaign-mobile.jpg, {{ site.theme.link }}/assets/img/facebook-campaign-mobile.jpg 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">Lead ads on Facebook are designed to help your business find more prospects. Supported by a leading Facebook advertising agency like First Page, we can create a campaign that resonates with your specific target market.
+				</p>
+				<p class="text-center text-md-left">How do we make this happen for our clients? Our superior team has an unmatched understanding of carefully crafted copy. By stepping into the shoes of your target market and getting to know their pain points, we can produce a message that gets them to take action.</p>
+				<p class="text-center text-md-left">However, effective lead generation requires digital marketers to create an irresistible offer that ensures your prospects are more than happy to hand over their contact information.</p>
+				<p class="text-center text-md-left">While the nature of this offer will depend on your business and its target audience, you can achieve wonderful success by offering a discount, a free sample or an industry-specific eBook.</p>
+				<p class="text-center text-md-left">Our highly experienced team will deliver cohesive Facebook ads that convince users to click through to your website. Then, our research-driven landing page design ensures they have the highest chance of checking out.</p>
+				<p class="text-center text-md-left">Ready to get started on your campaign? Chat to the experts at First Page about how we’ll achieve your objectives for an unbeatable ROI.</p>
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+	{% include "partials/en-section-services-social.twig" %}{% include "partials/en-section-free-session.twig" %}<section class="section-paragraph section-faqs">
+		<div class="container">
+			<h2 class="section-title">Why use Facebook Ads?</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What are Facebook Ads?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Facebook ads are paid messages shared on the social media network that connect businesses with their ideal customers. With literally billions of people using Facebook every day, the beauty of the platform is that every business can attract their target market no matter how niche their products and services are. Although Facebook ads are simple enough for anyone to start using, capturing customer attention over the competition is another problem altogether.
+								</p>
+								<p>Fortunately, a highly experienced Facebook advertising agency like First Page has the skills your business needs to achieve its targets. As we launch a powerful campaign with interest-based targeting to expand your reach and attract like-minded customers, our talented digital marketers also produce compelling copy and images that secure the attention of those who matter most. Alongside comprehensive performance tracking to help us fine-tune our campaign, First Page’s dynamic Facebook ads have delivered millions in profit for our clients.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What is a Facebook pixel?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>The Facebook Pixel is a short piece of code you can add to your website to measure the success of your advertising campaign. This helps businesses ensure their Facebook ads reach the right people, including those who have previously visited your product pages or completed specific actions on your website. By tailoring your advertising strategy to these Facebook users, your business will benefit from a higher conversion rate, a much-improved ROI and superior growth over the competition.</p>
+								<p>So how does the Facebook Pixel work? It uses cookies to keep track of individual website visitors and enables you to use this data to improve your ad campaign. With the Facebook Pixel levelling up your understanding of audiences, conversions, targeting and optimisation, measuring your results is made wonderfully accessible. While it’s possible to create Facebook ads without the Pixel, you won’t have access to all the information that helps you generate the most profitable campaign.</p>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+						<h3 itemprop="name" class="h3-accordion-title-fpau">What businesses are Facebook Ads suitable for?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Facebook ads have become a core component of countless digital marketing campaigns because they are remarkably effective for businesses operating at every scale. While your campaign’s goals will have to align with the budget you have to spend, using Facebook advertising to grow your company’s reach and achieve your goals is within your grasp. No matter your audience, an expert agency like First Page can plan and execute a strategy that helps your business stand out against its competitors.</p>
+							<p>When we start working on a new campaign, we put unparalleled effort into reaching consumers at every stage of the customer journey. Whether you’re looking to raise awareness about a newly released product line or promote a flash sale that convinces customers to purchase today, we ensure your Facebook ads respond to these precise goals. Meanwhile, Facebook ads can also elevate your brand’s content marketing, helping you spread brand awareness and grow your industry reputation.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+						<h3 itemprop="name" class="h3-accordion-title-fpau">How do I measure the results of my Facebook campaign?</h3>
+
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>If your business is ready to invest in a Facebook paid ads campaign, having a way to measure your success is essential. Not only do you ensure that your money isn’t simply being flushed down the drain, but you better understand how your strategy is working towards your goals and delivering a solid return on ad spend (ROAS). Depending on the objectives you set for your campaign at the outset, some metrics may be more relevant than others.</p>
+							<p>Impressions are one of the factors that brands look towards when measuring their results. This reports how many times your ad is displayed on a screen, helping to determine whether your paid ads are reaching enough people. If not, there might be a problem with how your campaign was created. For brands wanting to convert more high-value customers, generating a value-based Lookalike Audience campaign using lifetime value data is bound to deliver remarkable returns.</p>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6">
+			<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+				<div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+					<h3 itemprop="name" class="h3-accordion-title-fpau">What are the different types of Facebook ads?</h3>
+				</div>
+				<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+					<div itemprop="text" class="card-body">
+						<p>Facebook ads have become insanely popular amongst businesses globally due to the wide variety of advertising formats available. With each one helping your business achieve a different goal – from increased brand awareness to enhanced conversions – making sure your company chooses the ideal Facebook ad format for its needs is critical to your success. Our experienced Facebook advertising agency understands the nuances of each ad format, ensuring our strategies deliver the top ROI for our clients.</p>
+
+						<p>If your business is looking to showcase the advantages of its goods, focusing your campaign around Product Ads, Slideshow Ads, and Collections Ads is an excellent choice. However, you can kickstart your lead generation campaigns with other formats such as Facebook Lead Form Ads, Dynamic Ads and Messenger Ads. For brands looking to make a big splash on the feed, you can also use Video Ads, Augmented Reality Ads and Carousel Ads to achieve your goals.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6">
+			<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+				<div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+					<h3 itemprop="name" class="h3-accordion-title-fpau">How much do Facebook ads cost?</h3>
+				</div>
+				<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+					<div itemprop="text" class="card-body">
+						<p>Every Facebook advertising campaign is unique to the business involved. While similar companies in the same industry might have overlapping goals, no singular strategy will always achieve your goals. Meanwhile, every audience is attracted to a business for different reasons, meaning you have to develop a personalised campaign to reach the most precise customer base. With Facebook using an ad auction system, the experts at First Page can help your business develop a profitable approach that delivers a top-notch ROI.</p>
+						<p>We can also help your business determine a Facebook advertising budget to suit your needs. As optimisation events like purchases and landing page visits involve varied costs, some campaigns will require more investment than others. However, our talented team can work with a super low minimum spend to ensure your business generates traffic, leads and conversions. Supported by our in-depth knowledge of Facebook ads and unrivalled flexibility, our digital marketing specialists can drive stellar growth and sales for your business.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6">
+			<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+				<div class="card-header collapsed" data-toggle="collapse" href="#collapse7">
+					<h3 itemprop="name" class="h3-accordion-title-fpau">Which is better, Facebook ads or Google ads?</h3>
+				</div>
+				<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse7" class="collapse">
+					<div itemprop="text" class="card-body">
+						<p>Facebook ads and Google ads are the two most common paid online advertising avenues for businesses operating today. While a personalised campaign for either platform will deliver outstanding results, several distinct features might leave one option more suitable than the other. For example, a detailed Lookalike Ads campaign on Facebook ensures your business reaches a vast audience of like-minded people who have a high chance of being interested in your exact products and services.</p>
+						<p>However, people conducting searches on Google are more likely further along their buyer journey and might be more ready to convert than users scrolling through their Facebook feed. This can be beneficial to brands with short-term goals. With both platforms offering first-class reach and targeting options, the experts at First Page can ensure you achieve your objectives with a carefully tailored campaign. Whether your budget is big or small, we have the power to attract your customers with a message that converts.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6">
+			<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+				<div class="card-header collapsed" data-toggle="collapse" href="#collapse8">
+					<h3 itemprop="name" class="h3-accordion-title-fpau">Do I need a Facebook account?</h3>
+				</div>
+				<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse8" class="collapse">
+					<div itemprop="text" class="card-body">
+						<p>While you can create Facebook ads without a Facebook Business Page, you must have a standard Facebook account to get started. This doesn’t mean your ads will be tied to your account, as you simply need a profile to gain access to the platform’s advertising features. However, remember that the online landscape becomes more competitive every day. Therefore, creating a Facebook Business Page will help reach your customers and generate sales when paired with a razor-sharp digital marketing strategy.</p>
+						<p>While most of your competitors will already have Facebook Business Pages, you can implement a range of optimisations to catch up quickly. Always input your full business details, including a detailed description, to ensure your customers can get in contact. Meanwhile, you should add an action button to reach your goals faster, whether that means increasing followers, generating leads or helping customers book appointments. Our Facebook advertising experts can ensure your profile is optimised to its maximum potential.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6">
+			<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+				<div class="card-header collapsed" data-toggle="collapse" href="#collapse9">
+					<h3 itemprop="name" class="h3-accordion-title-fpau">How can I get started with Facebook ads?</h3>
+				</div>
+				<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse9" class="collapse">
+					<div itemprop="text" class="card-body">
+						<p>Facebook is an unbelievably powerful advertising platform. But you want to ensure your strategy is created to the highest possible standards to ensure your budget doesn’t go to waste. The first thing to do is set realistic goals that are appropriate for your brand’s current standing. Then, create a Facebook Ad Manager account to start targeting your campaign to achieve your carefully defined objectives. From reaching more people within touching distance of your business to increasing app engagement, Facebook has helpful suggestions to guide you through the process.</p>
+						<p>The next step is particularly critical. You must select a target audience that carefully describes people who are most likely interested in your products and services. This can be done based on demographics such as age, gender, location, interests, behaviours and connections. You must also design eye-catching creative for your ad campaign, select a suitable ad type and a placement either on Facebook's desktop site or mobile app depending on your goals. Let First Page take charge of your campaign and experience unmatched success.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6">
+			<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+				<div class="card-header collapsed" data-toggle="collapse" href="#collapse10">
+					<h3 itemprop="name" class="h3-accordion-title-fpau">What makes a good Facebook ad?</h3>
+				</div>
+				<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse10" class="collapse">
+					<div itemprop="text" class="card-body">
+						<p>The design of your Facebook ad will depend on your goals and target audience. But some fundamental techniques ensure you have an advantage over your main rivals. First and foremost, you must create paid ads that feature compelling copy and engage your customers with a clear value proposition. Depending on your needs, you might also decide to manually choose the placement of your ads across Facebook, Instagram, Messenger and the Audience Network.</p>
+
+						<p>Remember that getting users to click on your ad is only half the battle. Your website must also feature a consistent landing page design that encourages customers to complete their journey. Alongside location-based imagery and ads that use colour effectively, developing a detailed mobile website design ensures you cater to how the majority of customers browse the internet. Chat to the experts at First Page to find out how we'll optimise the design of your Facebook ads.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-paragraph section-faqs py-5">
+		<div class="container">
+			<h2 class="section-title">What are the benefits of Facebook Ads?</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse11">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Why are Facebook ads important?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse11" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>The reach of Facebook is simply incredible with over 2.8 billion people around the globe having a profile. If your business can capture the attention of even a tiny fraction of this audience, you have the chance to skyrocket brand awareness, sales, website traffic and more. But as the online landscape has a high level of competition across virtually every industry, you have to undertake a detailed Facebook advertising campaign if you want to reach your targets ahead of your rivals.</p>
+								<p>This is where the digital marketing experts at First Page can make a huge difference to your campaign’s success. As we have an in-depth understanding of what it takes to create a strategy with laser-focused targeting, we can make sure your ads reach a precise target market that cares about your products and services. Alongside our comprehensive forecasting and A/B testing, your business will benefit from a tailored campaign that achieves your specific objectives.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse12">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Are Facebook ads worth it?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse12" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Facebook ads have the power to take your company to greater heights than you’ve ever imagined. With literally billions of potential customers on the platform, an extensive paid ad campaign can attract a huge audience that genuinely cares about your brand’s products and services. While competing for attention online is only becoming harder, using the global reach of Facebook ads to level the playing field is a great way to overcome your competitors.</p>
+								<p>Backed by a leading Facebook advertising agency like First Page, a data-driven strategy benefits your business in endless ways. For instance, B2B organisations looking to attract corporate decision-makers can generate exceptional leads with a carefully conceived campaign that seduces prospects with an irresistible offer. Meanwhile, businesses can dramatically increase sales by implementing eye-catching Facebook advertising that features a compelling message. To keep customers engaged with your brand, let First Page take charge of your campaign and reach your goals faster.</p>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+						<h3 itemprop="name" class="h3-accordion-title-fpau">Should I work with a Facebook advertising agency?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Many businesses attempt to lead their own Facebook ads campaign. But finding a way to stand out in the already crowded feed is a challenging prospect that has led many brands to waste their budgets on poorly conceived campaigns. Instead, partner with a leading Facebook advertising agency like First Page to benefit from the proven results we’ve delivered for clients across every industry. Considering the millions in sales our team has generated through personalised strategies, our track record speaks for itself.</p>
+							<p>If you decide to partner with First Page, we work closely with our clients to understand your goals and determine a budget that will help you reach your targets. With our talented team offering industry-leading expertise from thousands of successful campaigns, we use the latest tools and software to ensure everything we implement is based on cutting-edge optimisation techniques. Alongside regular reporting, our Facebook advertising specialists will fine-tune your campaign and improve your ROI.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+						<h3 itemprop="name" class="h3-accordion-title-fpau">How should I use A/B testing with my Facebook advertising campaign?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Many forms of digital marketing use A/B testing to experiment with different versions of their campaign, helping businesses find the right combination of factors that resonate most with their target audience. Facebook advertising is no different, with the platform featuring built-in features to change numerous variables within your campaign. The first thing you need to do is define your test with measurable targets. Next, set up a test environment where you can easily analyse how each version of your ad performs.
+							</p>
+							<p>To keep things simple, it’s a good idea to only test one variable at a time. This will help you clearly assess why one version of your advertisement performed better than another. In addition, you must define the sample size needed and the time frame required to ensure you collect enough data to draw accurate conclusions. With the help of our expert team, we ensure your Facebook advertising A/B testing maximises your budget.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+						<h3 itemprop="name" class="h3-accordion-title-fpau">What services does a Facebook advertising agency offer?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Choosing the right Facebook advertising agency for your needs is critical to your success. As many agencies specialise in specific niches or types of campaigns, it can be hard to decide who can be trusted to deliver game-changing results for your brand. However, First Page is a full-service Facebook advertising agency, meaning we provide clients with the most comprehensive service possible. Backed by a wealth of industry expertise, our specialists will put everything they have into your account management.
+							</p>
+							<p>As we get to work on planning and executing a campaign that achieves your goals, we’ll conduct thorough research on your business and its ideal target market. Then, we’ll produce powerful copywriting, graphic design and other creative media to secure attention with the customers that matter most to your success. Our digital marketing specialists can also undertake superior web development to increase conversions, alongside regular reporting to help you track how we're hitting your targets.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+						<h3 itemprop="name" class="h3-accordion-title-fpau">What is the best strategy for Facebook advertising?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>The best strategy for your Facebook advertising is one that reaches your target market and achieves your objectives. But as there are countless ways to work towards this goal, you have to implement a personalised campaign tailored to your specific needs. Start by setting reasonable goals that align with your budget. Alongside carefully created audience personas that detail your ideal customer demographics, interests, behaviours and challenges, you can develop a Facebook paid ads strategy that convinces people to take action.</p>
+							<p>In addition to compelling copywriting and high-quality imagery, using video is a great way to showcase the advantages of your products and services. If your business needs to attract local customers, geo-targeting your campaign to a specific location ensures you reach the people who matter most to your sales. Meanwhile, you need to generate systems that track sales and identify weak points in your approach, helping you become the industry’s dominant force.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% include "partials/en-form-popup.twig" with {'form_page': 'Facebook Ads (Pop-up Form)'} %}
 {% endblock %}

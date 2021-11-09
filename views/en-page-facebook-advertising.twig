@@ -50,6 +50,18 @@
 				display: -webkit-flex !important;
 			}
 		}
+
+		@media(max-width: 991px) {
+			.align-center {
+				align-items: center !important;
+			}
+			.tablet-heading {
+				max-width: 450px;
+			}
+		}
+		.pt-20 {
+			padding-top: 20px;
+		}
 	</style>
 
 	<section class="banner form-space">
@@ -77,13 +89,13 @@
 	{% include "partials/en-section-enterprise-client-logos.twig" %}
 
 	<section class="section-paragraph">
-		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+		<div class="row no-gutters d-none d-md-block d-lg-none flex-column-reverse flex-md-row flex-md-row-reverse">
 			<div class="col-md-6"></div>
 			<div class="col-md-6 text-container">
-				<h2>Facebook ads have sniper-like precision, which means a greater ROAS for your business</h2>
+				<h2 class="tablet-heading">Facebook ads have sniper-like precision, which means a greater ROAS for your business</h2>
 			</div>
 		</div>
-		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+		<div class="row no-gutters flex-column-reverse align-items-center flex-md-row flex-md-row-reverse">
 			<div class="col-12 col-md-6 image-container-right">
 				<img src="{{ site.theme.link }}/assets/img/img_facebook_ads.jpg" srcset="{{ site.theme.link }}/assets/img/img_facebook_ads.jpg, {{ site.theme.link }}/assets/img/img_facebook_ads@2x.jpg 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 
@@ -91,6 +103,8 @@
 
 			</div>
 			<div class="col-12 col-md-6 text-container">
+				<h2 class="d-block d-md-none d-lg-block">Facebook ads have sniper-like precision, which means a greater ROAS for your business</h2>
+
 				<img src="{{ site.theme.link }}/assets/img/img_facebook_ads_mob.jpg" srcset="{{ site.theme.link }}/assets/img/img_facebook_ads_mob.jpg, {{ site.theme.link }}/assets/img/img_facebook_ads_mob@2x.jpg 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
 
 				<p class="text-center text-md-left">Once upon a time, Google was the only worthwhile platform in the digital advertising space. But then Facebook came along, and nothing was ever the same.</p>
@@ -112,22 +126,16 @@
 		</div>
 	</section>
 
-	<section class="section-paragraph">
-		<div class="row no-gutters flex-column-reverse flex-md-row">
-			<div class="col-12 col-md-6 image-container-left"></div>
-			<div class="col-12 col-md-6 text-container">
-				<h2>Start running Facebook ads that generate 10x’s ROI with First Page</h2>
-			</div>
-		</div>
-		<div class="row no-gutters flex-column-reverse flex-md-row">
+	<section class="section-paragraph pt-20">
+		<div class="row no-gutters flex-column-reverse flex-md-row align-items-center">
 			<div class="col-12 col-md-6 image-container-left pr-lg-5">
 				<img src="{{ site.theme.link }}/assets/img/img_facebook.svg" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 				<img src="{{ site.theme.link }}/assets/img/img_facebook.svg" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
-
 			</div>
 			<div class="col-12 col-md-6 text-container">
-				<img src="{{ site.theme.link }}/assets/img/img_facebook_mob.svg" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<h2>Start running Facebook ads that generate 10x’s ROI with First Page</h2>
 
+				<img src="{{ site.theme.link }}/assets/img/img_facebook_mob.svg" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
 
 				<p class="text-center text-md-left">In the past 10 years, we have run hundreds of Facebook ads campaigns, spanning dozens of industries, and generating millions of dollars of profit for our clients.</p>
 
@@ -181,7 +189,7 @@
 						</div>
 						<div class="text">
 							We can't recommend First Page highly enough! The team are proactive, transparent, knowledgeable and patient - always providing great advice and actionable recommendations. We are seeing tangible results from our SEO campaign and look forward to an
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												                        ongoing partnership.
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								                        ongoing partnership.
 						</div>
 						<div class="person">
 							<div class="name">JUSTCO AUSTRALIA</div>
@@ -261,18 +269,19 @@
 		</div>
 	</section>
 	<section class="section-paragraph">
-		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse d-none d-md-block d-lg-none">
 			<div class="col-md-6"></div>
 			<div class="col-md-6 text-container">
-				<h2>Attention-grabbing Facebook advertising</h2>
+				<h2 class="tablet-heading">Attention-grabbing Facebook advertising</h2>
 			</div>
 		</div>
-		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
 			<div class="col-12 col-md-6 image-container-right">
 				<img src="{{ site.theme.link }}/assets/img/facebook-advertising-desktop.png" srcset="{{ site.theme.link }}/assets/img/facebook-advertising-desktop.png, {{ site.theme.link }}/assets/img/facebook-advertising-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 				<img src="{{ site.theme.link }}/assets/img/facebook-advertising-tablet.png" srcset="{{ site.theme.link }}/assets/img/facebook-advertising-tablet.png, {{ site.theme.link }}/assets/img/facebook-advertising-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
 			</div>
 			<div class="col-12 col-md-6 text-container">
+				<h2 class="d-block d-md-none d-lg-block">Attention-grabbing Facebook advertising</h2>
 				<img src="{{ site.theme.link }}/assets/img/facebook-advertising-mobile.png" srcset="{{ site.theme.link }}/assets/img/facebook-advertising-mobile.png, {{ site.theme.link }}/assets/img/facebook-advertising-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
 				<p class="text-center text-md-left">
 					Considering Facebook has a mind-boggling 2.8 billion users, it’s no surprise that this giant social media platform delivers unbelievable results for businesses looking to promote their products and services.
@@ -300,14 +309,14 @@
 			</div>
 		</div>
 	</section>
-	<section class="section-paragraph">
+	<section class="section-paragraph pt-20">
 		<div class="row no-gutters flex-column-reverse flex-md-row">
 			<div class="col-12 col-md-6 image-container-left"></div>
 			<div class="col-12 col-md-6 text-container">
 				<h2>Laser-focused Facebook marketing to grow your brand</h2>
 			</div>
 		</div>
-		<div class="row no-gutters flex-column-reverse flex-md-row">
+		<div class="row no-gutters flex-column-reverse flex-md-row align-center">
 			<div class="col-12 col-md-6 image-container-left pr-lg-5">
 				<img src="{{ site.theme.link }}/assets/img/img_business_success-desktop.png" srcset="{{ site.theme.link }}/assets/img/img_business_success-desktop.png, {{ site.theme.link }}/assets/img/img_business_success-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 				<img src="{{ site.theme.link }}/assets/img/img_business_success-tablet.png" srcset="{{ site.theme.link }}/assets/img/img_business_success-tablet.png, {{ site.theme.link }}/assets/img/img_business_success-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
@@ -361,7 +370,7 @@
 				<h2>Sell more products with Facebook advertising</h2>
 			</div>
 		</div>
-		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-center">
 			<div class="col-12 col-md-6 image-container-right">
 				<img src="{{ site.theme.link }}/assets/img/FB-library-Business-Website-desktop.png" srcset="{{ site.theme.link }}/assets/img/FB-library-Business-Website-desktop.png, {{ site.theme.link }}/assets/img/FB-library-Business-Website-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 				<img src="{{ site.theme.link }}/assets/img/FB-library-Business-Website-tablet.png" srcset="{{ site.theme.link }}/assets/img/FB-library-Business-Website-tablet.png, {{ site.theme.link }}/assets/img/FB-library-Business-Website-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
@@ -394,7 +403,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section-paragraph">
+	<section class="section-paragraph pt-20">
 		<div class="row no-gutters flex-column-reverse flex-md-row">
 			<div class="col-12 col-md-6 image-container-left"></div>
 			<div class="col-12 col-md-6 text-container">
@@ -402,7 +411,7 @@
 				</h2>
 			</div>
 		</div>
-		<div class="row no-gutters flex-column-reverse flex-md-row">
+		<div class="row no-gutters flex-column-reverse flex-md-row align-center">
 			<div class="col-12 col-md-6 image-container-left pr-lg-5">
 				<img src="{{ site.theme.link }}/assets/img/facebook-campaign-desktop.jpg" srcset="{{ site.theme.link }}/assets/img/facebook-campaign-desktop.jpg, {{ site.theme.link }}/assets/img/facebook-campaign-desktop.jpg 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
 				<img src="{{ site.theme.link }}/assets/img/facebook-campaign-tablet.jpg" srcset="{{ site.theme.link }}/assets/img/facebook-campaign-tablet.jpg, {{ site.theme.link }}/assets/img/facebook-campaign-tablet.jpg 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>

@@ -1,111 +1,187 @@
 {% extends "en-base.twig" %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ site.theme.link }}/views/assets/style.css" />
-<script src="{{ site.theme.link }}/views/assets/js/script.js"></script>
+<style>
+.hero-img-mobile{
+    margin-bottom:-25px;
+}
+
+section.banner .banner-hero .hero-img {
+    right: -119px;
+    bottom: -30px;
+ }
+
+@media(min-width:992px){
+section.banner .banner-hero .hero-img {
+    right: -142px;
+    bottom: -95px;
+}
+
+section.banner .banner-hero .banner-hero-cont {
+  
+    max-width: 757px;
+}
+
+
+}
+</style>
+
 <!-- Banner -->
-<section class="banner extra-pad extra-pad-shorter form-space">
+<section class="banner form-space">
     <div class="container banner-hero">
         <div class="banner-hero-cont">
-            <h1 class="form-hide bold-lg max-530"><strong>Restore lost rankings </strong>with expert help</h1>
-            <div class="hero-img-mobile d-lg-none">
-                <img src="{{ site.theme.link }}/views/assets/img/lost-rankings-hero_mob.png" srcset="{{ site.theme.link }}/views/assets/img/lost-rankings-hero_mob.png, {{ site.theme.link }}/views/assets/img/lost-rankings-hero_mob@2x.png 2x" class="img-fluid" alt="First Page Digital" />
+            <h1 class="form-hide text-center text-md-left">Restore lost rankings with expert help</h1>
+            <div class="hero-img-mobile d-md-none form-hide">
+                <img src="{{ site.theme.link }}/assets/img/img_content_writing_hero_sm.png" srcset="{{ site.theme.link }}/assets/img/img_content_writing_hero_sm.png, {{ site.theme.link }}/assets/img/img_content_writing_hero_sm@2x.png 2x" class="img-fluid d-block mx-auto" alt="First Page" />
             </div>
-            {% include "assets/partials/en-form-services.twig" with {'form_page': 'Lost Keyword Rankings'} %}
-            {% include "assets/partials/en-section-awards-badges.twig" %}
+            {% include "partials/en-form-services.twig" with {'form_page': 'Lost Keyword Ranking','form_button':'GET A FREE QUOTE'} %}
+
+            {% include "partials/en-section-awards-badges.twig" %}
         </div>
 
+        <div class="hero-img hero-img-md d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/img_content_writing_hero_md.png" srcset="{{ site.theme.link }}/assets/img/img_content_writing_hero_md.png, {{ site.theme.link }}/assets/img/img_content_writing_hero_md@2x.png 2x" class="img-fluid" alt="First Page" />
+        </div>
         <div class="hero-img d-none d-lg-block">
-            <img src="{{ site.theme.link }}/views/assets/img/lost-rankings-hero.png" srcset="{{ site.theme.link }}/views/assets/img/lost-rankings-hero.png, {{ site.theme.link }}/views/assets/img/lost-rankings-hero@2x.png 2x" class="img-fluid" alt="First Page Digital" />
+            <img src="{{ site.theme.link }}/assets/img/img_content_writing_hero_lg.png" srcset="{{ site.theme.link }}/assets/img/img_content_writing_hero_lg.png, {{ site.theme.link }}/assets/img/img_content_writing_hero_lg@2x.png 2x"  alt="First Page" />
         </div>
     </div>
 </section>
 
-{% include "assets/partials/en-section-free-featured-in.twig" %}
 
-<section class="section-paragraph section-white mob-center">
-    <div class="container">
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
-                <img src="{{ site.theme.link }}/views/assets/img/img_lost_rankings_01.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_lost_rankings_01_mob.svg" class="img-fluid d-md-none" alt="" />
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+{# row 1 #}
+<section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block "/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-sm-inline-block  d-md-none"/>
             </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Take back lost<br>keyword rankings</h3>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Take back lost<br>keyword rankings</h2>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-block mx-auto  d-sm-none"/>
+
                 <p>Noticed a sudden drop in your page rankings? This is a clear sign that your business has received a Google penalty. These problematic punishments can cause widespread issues for an online business, with customers no longer able to find your website within relevant search results. So why do companies receive these penalties? The most common explanation is when a business either deliberately or accidentally breaks Google’s search algorithm guidelines.</p>
-                <p>Fortunately, all is not lost if you’ve seen your rankings plummet overnight. First Page Australia’s highly <a href="https://firstpage.com.au/contact/">experienced SEO team</a> can put your business back on the path to success as we assess your violation and produce an actionable recovery plan. By making sure your <a href="https://firstpage.com.au/seo/">SEO strategy</a> is safe and legitimate, we can restore your website traffic and avoid any long-term issues. </p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+                <p>Fortunately, all is not lost if you’ve seen your rankings plummet overnight. First Page Australia’s highly <a href="https://wordpress-529359-2026654.cloudwaysapps.com/contact-us/">experienced SEO team</a> can put your business back on the path to success as we assess your violation and produce an actionable recovery plan. By making sure your <a href="https://wordpress-529359-2026654.cloudwaysapps.com/seo/">SEO strategy</a> is safe and legitimate, we can restore your website traffic and avoid any long-term issues. </p>
+                <button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
             </div>
         </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
-                <img src="{{ site.theme.link }}/views/assets/img/img_lost_rankings_02.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_lost_rankings_02_mob.svg" class="img-fluid d-md-none" alt="" />
+</section>
+
+{# row 2 #}
+ <section class="section-paragraph">
+        <div class="row no-gutters align-items-center">
+            <div class="col-12 col-md-6 image-container-left">
+            <img src="{{ site.theme.link }}/assets/img/woo-growth.png" srcset="{{ site.theme.link }}/assets/img/woo-growth.png, {{ site.theme.link }}/assets/img/woo-growth@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/woo-growth-mb.png" srcset="{{ site.theme.link }}/assets/img/woo-growth-mb.png, {{ site.theme.link }}/assets/img/woo-growth-mb@2x.png 2x" class="img-fluid d-none d-sm-inline-block d-md-none" alt="First Page" />
+
             </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Return to success</h3>
-                <p>If you choose to work alongside <a href="https://firstpage.com.au/">First Page Australia</a>, you’ll benefit from our talented team’s unmatched knowledge of Google’s algorithms. Whether you intended to carve out a forbidden shortcut to SEO success or not, Google’s complex system has become incredibly effective at detecting businesses that are gaining an unfair advantage. We can implement a variety of strategies to remove penalties, restore rankings and secure your ongoing search engine productivity.</p>
-                <p>To do so, our experts will conduct an <a href="https://firstpage.com.au/seo-audit/">extensive assessment of your website</a> to determine why a penalty has been applied. Then, we’ll put into place a tailored recovery plan that will return your page rankings to where they belong. By removing any prohibited SEO practices, we can ensure Google sees your website as authentic and ready to be shown to customers.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            
+            <div class="col-12 col-md-6 text-container">
+                <h2>Return to success</h2>
+                <img src="{{ site.theme.link }}/assets/img/woo-growth-mb.png" srcset="{{ site.theme.link }}/assets/img/woo-growth-mb.png, {{ site.theme.link }}/assets/img/woo-growth-mb@2x.png 2x" class="img-fluid d-block mx-auto d-sm-none" alt="First Page" />
+                <p>If you choose to work alongside <a href="https://wordpress-529359-2026654.cloudwaysapps.com/">First Page Australia</a>, you’ll benefit from our talented team’s unmatched knowledge of Google’s algorithms. Whether you intended to carve out a forbidden shortcut to SEO success or not, Google’s complex system has become incredibly effective at detecting businesses that are gaining an unfair advantage. We can implement a variety of strategies to remove penalties, restore rankings and secure your ongoing search engine productivity.</p>
+                <p>To do so, our experts will conduct an <a href="https://wordpress-529359-2026654.cloudwaysapps.com/seo-audit/">extensive assessment of your website</a> to determine why a penalty has been applied. Then, we’ll put into place a tailored recovery plan that will return your page rankings to where they belong. By removing any prohibited SEO practices, we can ensure Google sees your website as authentic and ready to be shown to customers.</p>
+                <button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+
             </div>
         </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
-                <img src="{{ site.theme.link }}/views/assets/img/img_lost_rankings_03.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_lost_rankings_03_mob.svg" class="img-fluid d-md-none" alt="" />
+</section>
+
+{# row 3 #}
+
+<section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/table_data_magnify_lg.png" srcset="{{ site.theme.link }}/assets/img/table_data_magnify_lg.png, {{ site.theme.link }}/assets/img/table_data_magnify_lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block "/>
+                <img src="{{ site.theme.link }}/assets/img/table_data_magnify_sm.png" srcset="{{ site.theme.link }}/assets/img/table_data_magnify_sm.png, {{ site.theme.link }}/assets/img/table_data_magnify_sm@2x.png 2x" alt="First Page" class="img-fluid d-none d-sm-inline-block  d-md-none"/>
             </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Avoid black hat tactics</h3>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Avoid black hat tactics</h2>
+                <img src="{{ site.theme.link }}/assets/img/table_data_magnify_sm.png" srcset="{{ site.theme.link }}/assets/img/table_data_magnify_sm.png, {{ site.theme.link }}/assets/img/table_data_magnify_sm@2x.png 2x" alt="First Page" class="img-fluid d-block mx-auto d-sm-none"/>
+
                 <p>In the world of SEO, there are two main approaches to generate growth – white hat and black hat tactics. The former is focused on using legitimate optimisation techniques that create a productive user experience, while the latter breaks a search engine’s rules to achieve short-term goals. From keyword stuffing to spam and hidden links, using black hat methods will ultimately result in a painful Google penalty.</p>
                 <p>At First Page Australia, we only use white hat techniques to deliver SEO success for our clients. Although some companies are tempted to lead an underhanded strategy, this can only damage your business in the long run. Instead, our highly respected team will produce exceptional, keyword-rich content that builds customer loyalty and respect. This way, your business will not only climb the page rankings, but also establish a solid foundation for years to come.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+                <button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
             </div>
         </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
-                <img src="{{ site.theme.link }}/views/assets/img/img_lost_rankings_04.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_lost_rankings_04_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Secure your rankings</h3>
-                <p>If your website traffic is dwindling and there’s no explanation, take action and determine whether you’ve been hit with a Google penalty. Our renowned marketers know what it takes to quickly identify these violations and create a solution that retains your page rankings. Don’t let an uninformed mistake cause your company to lose its customers and reputation.</p>
-                <p>To swiftly ascertain whether your business has been struck with an SEO infringement, First Page Australia offers a complimentary Google penalty assessment. Make the most of this limited offer and discover if there’s an explanation for your falling traffic. Once an offence has been confirmed, our expert team will unravel your ranking issues and ensure you continue to capture the attention of your target market.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
-            </div>
-        </div>
-    </div>
 </section>
 
-<section class="section-bottomquote section-grey">
+{# row 4 #}
+ <section class="section-paragraph">
+        <div class="row no-gutters align-items-center">
+            <div class="col-12 col-md-6 image-container-left">
+            <img src="{{ site.theme.link }}/assets/img/img_seo_ecomm.png" srcset="{{ site.theme.link }}/assets/img/img_seo_ecomm.png, {{ site.theme.link }}/assets/img/img_seo_ecomm@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/img_seo_ecomm_mob.png" srcset="{{ site.theme.link }}/assets/img/img_seo_ecomm_mob.png, {{ site.theme.link }}/assets/img/img_seo_ecomm_mob@2x.png 2x" class="img-fluid d-none d-sm-inline-block d-md-none" alt="First Page" />
+            </div>
+            
+            <div class="col-12 col-md-6 text-container">
+                <h2>Secure your rankings</h2>
+                <img src="{{ site.theme.link }}/assets/img/img_seo_ecomm_mob.png" srcset="{{ site.theme.link }}/assets/img/img_seo_ecomm_mob.png, {{ site.theme.link }}/assets/img/img_seo_ecomm_mob@2x.png 2x" class="img-fluid d-block mx-auto d-sm-none" alt="First Page" />
+                <p>If your website traffic is dwindling and there’s no explanation, take action and determine whether you’ve been hit with a Google penalty. Our renowned marketers know what it takes to quickly identify these violations and create a solution that retains your page rankings. Don’t let an uninformed mistake cause your company to lose its customers and reputation.</p>
+                <p>To swiftly ascertain whether your business has been struck with an SEO infringement, First Page Australia offers a complimentary Google penalty assessment. Make the most of this limited offer and discover if there’s an explanation for your falling traffic. Once an offence has been confirmed, our expert team will unravel your ranking issues and ensure you continue to capture the attention of your target market.</p>
+                <button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+
+            </div>
+        </div>
+</section>
+
+
+<section class="section-paragraph section-bottomquote pb-0 section-google-explained">
     <div class="container">
-        <h3 class="d-sm-inline-block">Google penalties explained</h3>
-        <p class="wide mb-3">With reaching the first page of Google so desirable for every kind of business, many attempt to take SEO shortcuts in an effort to get there faster. Whether this involves over-optimisation or a range of so-called ‘black hat’ tactics, Google’s algorithms are far too clever for this type of approach. In fact, to address these attempts to cheat, Google has implemented a penalty system that can see a website’s rankings crash overnight.</p>
-        <p class="wide mb-3">Although these Google penalties can be hugely detrimental to a company’s longevity, it is possible to recover lost page rankings. With the help of an expert team like First Page Australia, we can ensure your business gets back to where it belongs on the SERP. Here, we take a look at the types of penalties that Google can hand down. </p>
+
+        <h3 class="text-center">Google penalties explained</h3>
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <p class="wide mb-3">With reaching the first page of Google so desirable for every kind of business, many attempt to take SEO shortcuts in an effort to get there faster.</p>
+                <p class="wide mb-3">Whether this involves over-optimisation or a range of so-called ‘black hat’ tactics, Google’s algorithms are far too clever for this type of approach. In fact, to address these attempts to cheat, Google has implemented a penalty system that can see a website’s rankings crash overnight.</p>
+            </div>
+            <div class="col-12 col-sm-6">
+                <p class="wide mb-3">Although these Google penalties can be hugely detrimental to a company’s longevity, it is possible to recover lost page rankings. </p>
+                <p class="wide mb-3">With the help of an expert team like First Page Australia, we can ensure your business gets back to where it belongs on the SERP. </p>
+                <p class="wide mb-3">Here, we take a look at the types of penalties that Google can hand down.</p>
+
+            </div>
+        </div>
         <div class="row mt-4 mt-md-5">
             <div class="col-12 col-md-6 mb-4">
-                <div class="box-content box-red">
-                    <h4>Penguin</h4>
-                    <p>Building a solid backlink profile is a critical element of <a href="https://firstpage.com.au/seo/">high-quality SEO</a>. This involves having other websites link back to your own website and its content – a process that Google sees as a kind of verification of your authority. However, some people try to boost their website’s rankings by using unnatural links to deceive the algorithms into thinking certain content is more valuable than it truly is.</p>
+                <div class="box-content box-blue">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="{{ site.theme.link }}/assets/img/icon_penguin.svg" alt="">
+                        <h4 class="mb-0 ml-2">Penguin</h4>
+                    </div>
+                    <p>Building a solid backlink profile is a critical element of <a href="https://wordpress-529359-2026654.cloudwaysapps.com/seo/">high-quality SEO</a>. This involves having other websites link back to your own website and its content – a process that Google sees as a kind of verification of your authority. However, some people try to boost their website’s rankings by using unnatural links to deceive the algorithms into thinking certain content is more valuable than it truly is.</p>
                     <p>This is why Google created the Penguin penalty – it searches for websites that have been created only to place illegitimate links. With harsh penalties being levied against people running these websites, it takes a lot of work to fix this situation. Fortunately, we have the tools at our disposal to make it happen if a Penguin penalty has been applied to your business.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 mb-4">
-                <div class="box-content box-red">
-                    <h4>Possum</h4>
+                <div class="box-content box-blue">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="{{ site.theme.link }}/assets/img/icon_possum.svg" alt="">
+                        <h4 class="mb-0 ml-2">Possum</h4>
+                    </div>
                     <p>The goal behind the development of Possum was to significantly improve local search results. Not only did Google want these types of results to be more diversified, but they also wanted to avoid spam achieving a high rank. This update to the algorithm helped Google reward legitimate businesses that were sought after by customers in their immediate area.</p>
                     <p>However, this seismic shift in the way that Google handled local search results meant that some companies were caught in the crossfire. In fact, research found that up to 64% of local results were impacted by this update. If your business operating in a local context fails to appear in relevant search results, you may have been negatively impacted by Possum.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 mb-4">
-                <div class="box-content box-red">
-                    <h4>Panda</h4>
+                <div class="box-content box-blue">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="{{ site.theme.link }}/assets/img/icon_panda.svg" alt="">
+                        <h4 class="mb-0 ml-2">Panda</h4>
+                    </div>
                     <p>Google introduced Panda to give preference to content that it deems as high-quality, while simultaneously reducing the number of poor websites that appear in their search results. With Panda having the potential to dramatically reduce rankings, it’s important to understand what counts as low-quality content.</p>
                     <p>Perhaps the main contributor to a Panda penalty is so-called thin content. This is where a web page has very short and basic information with almost the sole intention of ranking for certain keywords. Meanwhile, Panda might also be applied to websites that lack authority and are based around content farming or rudimentary user-generated content.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 mb-4">
-                <div class="box-content box-red">
-                    <h4>Hummingbird</h4>
+                <div class="box-content box-blue">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="{{ site.theme.link }}/assets/img/icon_hummingbird.svg" alt="">
+                        <h4 class="mb-0 ml-2">Hummingbird</h4>
+                    </div>
                     <p>The Hummingbird evolution of Google’s algorithm was one of the biggest changes to the search engine that we’ve seen. The update almost fully overhauled how Google interprets a user’s query, with Hummingbird having a much more nuanced understanding of language and conversational tones.</p>
                     <p>Many digital marketers believe this change was implemented due to the rise in voice search. With the way we type compared to our speech featuring a myriad of subtle differences, Hummingbird has helped to resolve many of these issues. If you suspect that this major update to Google’s algorithm has impacted your rankings, our expert team can investigate and find the culprit.</p>
                 </div>
@@ -114,86 +190,8 @@
     </div>
 </section>
 
-<section class="section-letstalk section-orange">
-    <div class="container">
-        <h2 class="mb-4"><strong>Get Your Free Google Penalty Assessment<br class="d-none d-md-inline-block"> By Our Ethical SEO Team</strong></h2>
-        <button class="btn fp-btn fp-btn-white fp-btn-shadow show-popup-form">Restore your ranking</button>
-    </div>
-</section>
+{% include "partials/en-section-free-session.twig" %}
 
 {% include "assets/partials/en-form-popup.twig" with {'form_page': 'Lost Keyword Rankings (Popup)'} %}
-<section class="section-paragraph section-faq section-white">
-    <div class="container">
-        <h3>Frequently Asked Questions</h3>
-        <div id="accordion">
-            <div class="card">
-                <div class="card-header border-0" id="headingOne">
-                    <div class="row">
-                        <div class="col-10">
-                            <h5 class="mb-0">
-                                <span class="faq-label">❌ What Is A Google Penalty?</span>
-                            </h5>
-                        </div>
-                        <div class="col-2 align-self-center">
-                            <span class="float-right accordion-sign">+</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseOne" class="collapse">
-                    <div class="card-body">Landing a website on the first page of Google is the ultimate goal for many businesses. Unfortunately, this has seen many companies tempted into using 'black hat' digital marketing techniques to artificially improve their SERP rankings. However, Google has become incredible at detecting these methods. If a business gets caught, it will be stung by a Google penalty – a major issue that can have a hugely negative impact on rankings.</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <div class="row">
-                        <div class="col-10">
-                            <h5 class="mb-0">
-                                <span class="faq-label">💣 How Do You Know If You’ve Received A Google Penalty? </span>
-                            </h5>
-                        </div>
-                        <div class="col-2 align-self-center">
-                            <span class="float-right accordion-sign">+</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseTwo" class="collapse">
-                    <div class="card-body">There are two quick ways to figure out whether your website has been labelled with a Google penalty. The first thing to check is your Google Search Console. Here, you can see if there has been an Algorithmic Penalty or a Manual Penalty applied. Both are bad news for rankings, but Algorithmic Penalties make it even harder to solve the problem. Alternatively, review your Google Analytics to see if your website is still attracting organic traffic.</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <div class="row">
-                        <div class="col-10">
-                            <h5 class="mb-0">
-                                <span class="faq-label">👎 Why Has My Keyword Ranking Suddenly Dropped? </span>
-                            </h5>
-                        </div>
-                        <div class="col-2 align-self-center">
-                            <span class="float-right accordion-sign">+</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseThree" class="collapse">
-                    <div class="card-body">While heavily-reduced traffic might be explained by a Google algorithm update or the loss of productive backlinks, a sudden and unexplained drop in keyword rankings is often the result of a Google penalty. If this is the case, your business is definitely under threat. However, <a href="https://firstpage.com.au/">First Page Australia’s</a> Google penalty recovery service can quickly and effectively resolve your issue.</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <div class="row">
-                        <div class="col-10">
-                            <h5 class="mb-0">
-                                <span class="faq-label">🔥 How Can I Recover Lost Keyword Rankings? </span>
-                            </h5>
-                        </div>
-                        <div class="col-2 align-self-center">
-                            <span class="float-right accordion-sign">+</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseThree" class="collapse">
-                    <div class="card-body">Losing your vital keyword rankings overnight is undoubtedly a scary time. But it’s possible to get your business back to its rightful position on the SERP with the help of First Page Australia’s expert team. We will analyse your website to find the source of your lost keyword rankings and take surefire steps that overcome these alarming Google penalties.</div>
-                </div>
-            </div>
-        </div>
-</section>
+
 {% endblock %}

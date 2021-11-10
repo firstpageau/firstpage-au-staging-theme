@@ -3702,14 +3702,14 @@ section.section-terms {
   }
 }
 
-section.section-bottomquote {
+section.section-bottomquote,
+section.section-google-explained {
   padding: 40px 0;
   text-align: center;
 
   h3 {
-    color: $color-blue;
+    // color: $color-blue;
     font-weight: bold;
-    max-width: 910px;
     font-size: 32px;
     line-height: 36px;
     margin-bottom: 20px;
@@ -3752,7 +3752,7 @@ section.section-bottomquote {
   }
 
   .box-content {
-    padding: 24px;
+    padding: 30px 24px 50px;
     height: 100%;
     border-radius: 4px;
     box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.05);
@@ -3771,6 +3771,15 @@ section.section-bottomquote {
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+
+    &.box-blue {
+      background-color: $color-blue;
+      color: $color-white;
+      p,
+      a {
+        color: $color-white;
       }
     }
 
@@ -3818,7 +3827,7 @@ section.section-bottomquote {
 
       h3,
       h4 {
-        font-size: 45px;
+        font-size: 38px;
         font-weight: bold;
         line-height: 42px;
       }

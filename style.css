@@ -5663,102 +5663,143 @@ section.section-terms .paper-back ol li {
     font-size: 24px;
     margin-bottom: 40px; } }
 
-section.section-bottomquote {
+section.section-bottomquote,
+section.section-google-explained {
   padding: 40px 0;
   text-align: center; }
 
-section.section-bottomquote h3 {
-  color: #427fe0;
+section.section-bottomquote h3,
+section.section-google-explained h3 {
   font-weight: bold;
-  max-width: 910px;
   font-size: 32px;
   line-height: 36px;
   margin-bottom: 20px; }
 
 section.section-bottomquote p,
-section.section-bottomquote ul {
+section.section-bottomquote ul,
+section.section-google-explained p,
+section.section-google-explained ul {
   color: #00225d;
   margin: 0 auto;
   max-width: 750px; }
 
 section.section-bottomquote p.narrow,
-section.section-bottomquote ul.narrow {
+section.section-bottomquote ul.narrow,
+section.section-google-explained p.narrow,
+section.section-google-explained ul.narrow {
   max-width: 600px; }
 
 section.section-bottomquote p.mw-850,
-section.section-bottomquote ul.mw-850 {
+section.section-bottomquote ul.mw-850,
+section.section-google-explained p.mw-850,
+section.section-google-explained ul.mw-850 {
   max-width: 850px; }
 
 section.section-bottomquote p.wide,
-section.section-bottomquote ul.wide {
+section.section-bottomquote ul.wide,
+section.section-google-explained p.wide,
+section.section-google-explained ul.wide {
   max-width: none; }
 
 section.section-bottomquote p a,
-section.section-bottomquote ul a {
+section.section-bottomquote ul a,
+section.section-google-explained p a,
+section.section-google-explained ul a {
   color: #427fe0;
   font-weight: bold;
   text-decoration: underline; }
 
-section.section-bottomquote ul {
+section.section-bottomquote ul,
+section.section-google-explained ul {
   margin: 0 auto;
   text-align: left; }
 
-section.section-bottomquote ul.mw-470 {
+section.section-bottomquote ul.mw-470,
+section.section-google-explained ul.mw-470 {
   max-width: 470px; }
 
-section.section-bottomquote ul.mw-670 {
+section.section-bottomquote ul.mw-670,
+section.section-google-explained ul.mw-670 {
   max-width: 670px; }
 
-section.section-bottomquote .box-content {
-  padding: 24px;
+section.section-bottomquote .box-content,
+section.section-google-explained .box-content {
+  padding: 30px 24px 50px;
   height: 100%;
   border-radius: 4px;
   box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.05);
   text-align: left; }
 
 section.section-bottomquote .box-content h3,
-section.section-bottomquote .box-content h4 {
+section.section-bottomquote .box-content h4,
+section.section-google-explained .box-content h3,
+section.section-google-explained .box-content h4 {
   font-size: 32px;
   font-weight: bold;
   line-height: 36px;
   margin-bottom: 25px; }
 
-section.section-bottomquote .box-content p {
+section.section-bottomquote .box-content p,
+section.section-google-explained .box-content p {
   margin-bottom: 25px; }
 
-section.section-bottomquote .box-content p:last-child {
+section.section-bottomquote .box-content p:last-child,
+section.section-google-explained .box-content p:last-child {
   margin-bottom: 0; }
 
-section.section-bottomquote .box-content.box-red {
+section.section-bottomquote .box-content.box-blue,
+section.section-google-explained .box-content.box-blue {
+  background-color: #427fe0;
+  color: #ffffff; }
+
+section.section-bottomquote .box-content.box-blue p,
+section.section-bottomquote .box-content.box-blue a,
+section.section-google-explained .box-content.box-blue p,
+section.section-google-explained .box-content.box-blue a {
+  color: #ffffff; }
+
+section.section-bottomquote .box-content.box-red,
+section.section-google-explained .box-content.box-red {
   background-color: #fc3943;
   color: #ffffff; }
 
 section.section-bottomquote .box-content.box-red h3,
 section.section-bottomquote .box-content.box-red h4,
 section.section-bottomquote .box-content.box-red p,
-section.section-bottomquote .box-content.box-red a {
+section.section-bottomquote .box-content.box-red a,
+section.section-google-explained .box-content.box-red h3,
+section.section-google-explained .box-content.box-red h4,
+section.section-google-explained .box-content.box-red p,
+section.section-google-explained .box-content.box-red a {
   color: #ffffff; }
 
 @media (min-width: 768px) {
-  section.section-bottomquote {
+  section.section-bottomquote,
+  section.section-google-explained {
     padding: 100px 0; }
-  section.section-bottomquote h3 {
+  section.section-bottomquote h3,
+  section.section-google-explained h3 {
     font-size: 45px;
     letter-spacing: -1px;
     line-height: 42px;
     margin-bottom: 25px; }
-  section.section-bottomquote h3.max-800 {
+  section.section-bottomquote h3.max-800,
+  section.section-google-explained h3.max-800 {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto; }
-  section.section-bottomquote h3.more-lheight {
+  section.section-bottomquote h3.more-lheight,
+  section.section-google-explained h3.more-lheight {
     line-height: 60px;
     letter-spacing: normal; }
-  section.section-bottomquote .box-content {
+  section.section-bottomquote .box-content,
+  section.section-google-explained .box-content {
     padding: 32px; }
   section.section-bottomquote .box-content h3,
-  section.section-bottomquote .box-content h4 {
-    font-size: 45px;
+  section.section-bottomquote .box-content h4,
+  section.section-google-explained .box-content h3,
+  section.section-google-explained .box-content h4 {
+    font-size: 38px;
     font-weight: bold;
     line-height: 42px; } }
 

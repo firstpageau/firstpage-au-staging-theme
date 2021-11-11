@@ -1305,6 +1305,11 @@ ul.parsley-errors-list {
   .home-banner h1 {
     margin-top: 70px !important; } }
 
+.services-slick-next,
+.services-slick-prev {
+  width: 56px !important;
+  height: 56px !important; }
+
 footer {
   color: #ffffff;
   background-color: #427fe0;

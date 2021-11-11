@@ -1305,8 +1305,11 @@ ul.parsley-errors-list {
   .home-banner h1 {
     margin-top: 70px !important; } }
 
-.services-slick-next,
-.services-slick-prev {
+.section-services-carousel .slick-prev {
+  width: 56px !important;
+  height: 56px !important; }
+
+.section-services-carousel .slick-next {
   width: 56px !important;
   height: 56px !important; }
 

@@ -1305,14 +1305,6 @@ ul.parsley-errors-list {
   .home-banner h1 {
     margin-top: 70px !important; } }
 
-.section-services-carousel .slick-prev {
-  width: 56px !important;
-  height: 56px !important; }
-
-.section-services-carousel .slick-next {
-  width: 56px !important;
-  height: 56px !important; }
-
 footer {
   color: #ffffff;
   background-color: #427fe0;
@@ -7349,10 +7341,14 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   max-width: 1200px; }
 
 .section-services-carousel .slick-prev {
-  left: 0px; }
+  left: 0px;
+  width: 56px;
+  height: 56px; }
 
 .section-services-carousel .slick-next {
-  right: 0px; }
+  right: 0px;
+  width: 56px;
+  height: 56px; }
 
 .section-services-carousel .slick-next,
 .section-services-carousel .slick-prev {

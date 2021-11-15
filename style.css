@@ -1287,11 +1287,7 @@ ul.parsley-errors-list {
 @media (max-width: 991px) {
   .home .quote-form.quote-form-big select.form-control {
     font-size: 16px;
-    line-height: 25px; }
-  .quote-form.quote-form-big
-.input-group
-.select-container.form-control::after {
-    top: 20px; } }
+    line-height: 25px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .home .quote-form.quote-form-big {

@@ -29,24 +29,8 @@ section.banner .banner-hero .hero-img {
             <div class="hero-img-mobile d-md-none form-hide">
                 <img src="{{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_sm.png" srcset="{{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_sm.png, {{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_sm@2x.png 2x" class="img-fluid d-block mx-auto" alt="First Page" />
             </div>            
-            {% embed "assets/partials/en-form-services.twig" with {'form_page': 'Social Media Marketing', 'form_button': 'Get A Free Quote', 'website_needed': true} %}
-            {% block step_1 %}
-            <div class="input-group">
-                <div class="select-container form-control">
-                    <select class="form-control" name="lead_interest">
-                        <option value="Instagram advertising">Instagram advertising</option>
-                        <option value="Facebook advertising">Facebook advertising</option>
-                        <option value="YouTube advertising">YouTube advertising</option>
-                        <option value="LinkedIn advertising">LinkedIn advertising</option>
-                        <option value="Twitter advertising">Twitter advertising</option>
-                        <option value="WeChat advertising">WeChat advertising</option>
-                        <option value="I want more traffic">I want more traffic</option>
-                    </select>
-                </div>
-                <div class="input-group-btn"><button type="button" class="btn fp-btn fp-btn-orange form-continue">Get A Free Quote</button></div>
-            </div>
-            {% endblock %}
-            {% endembed %}
+            {% include "partials/en-form-services.twig" with {'form_page': 'Social Media Marketing','form_button':'GET A FREE QUOTE'} %}
+
             {% include "partials/en-section-awards-badges.twig" %}
         </div>
 

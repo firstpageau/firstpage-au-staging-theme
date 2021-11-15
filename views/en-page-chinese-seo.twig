@@ -1,178 +1,347 @@
 {% extends "en-base.twig" %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ site.theme.link }}/views/assets/style.css" />
-<script src="{{ site.theme.link }}/views/assets/js/script.js"></script>
+
+<style>
+    section.section-paragraph .p-0 {
+        padding: 0 !important;
+    }
+
+    @media(max-width: 575px) {
+        .text-center-mobile {
+            text-align: center;
+        }
+    }
+
+    @media(max-width: 575px) {
+        .hero-mobile {
+            position: unset !important;
+            margin-bottom: -35px !important;
+            text-align: center;
+        }
+    }
+
+    .container-padding {
+        padding: 0 34px;
+    }
+
+    @media(max-width: 767px) {
+        .container-padding {
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 991px) {
+        section.section-paragraph .text-container {
+            padding: 0 15px 0 34px !important;
+        }
+    }
+
+    @media(max-width: 767px) {
+        section.section-paragraph .text-container {
+            padding: 0 15px !important;
+        }
+    }
+
+    section.section-paragraph .text-container-right {
+        padding: 0 34px 0 15px;
+    }
+
+    section.section-paragraph .text-container-right .fp-btn {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    @media(max-width: 767px) {
+        .heading-center h2 {
+            text-align: center;
+        }
+    }
+
+    @media(max-width: 767px) {
+        section.section-paragraph .text-container-right {
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 991px) {
+        .input-group {
+            display: -webkit-inline-box !important;
+        }
+    }
+
+    @media(max-width: 767px) {
+        .input-group {
+            display: -webkit-flex !important;
+        }
+    }
+</style>
+
 <!-- Banner -->
-<section class="banner extra-pad extra-pad-shorter form-space">
-    <div class="container banner-hero">
+
+<section class="banner form-space">
+    <div class="container banner-hero two-lines">
         <div class="banner-hero-cont">
-            <h1 class="form-hide bold-lg"><strong>Attract</strong> the lucrative
-                <strong>chinese market</strong> with <strong>SEO</strong>
+            <h1 class="form-hide text-center-mobile">Attract the lucrative chinese market with SEO
             </h1>
-            <div class="hero-img-mobile d-lg-none">
-                <img src="{{ site.theme.link }}/views/assets/img/img_hero_seo_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_hero_seo_mob.png, {{ site.theme.link }}/views/assets/img/img_hero_seo_mob@2x.png 2x" class="img-fluid" alt="First Page Digital" />
-            </div>
-            {% include "partials/en-form-services.twig" with {'form_page': 'Chinese SEO'} %}
+            <div class="banner-description">
+                <div class="form-hide hero-mobile">
+                    <img src="{{ site.theme.link }}/assets/img/img_hero_seo_mob@2x.png"
+                        srcset="{{ site.theme.link }}/assets/img/img_hero_seo_mob@2x.png, {{ site.theme.link }}/assets/img/img_hero_seo_mob@2x.png 2x"
+                        alt="First Page" />
 
-            {% include "partials/en-section-awards-badges.twig" %}
-        </div>
-
-        <div class="hero-img d-none d-lg-block">
-            <img src="{{ site.theme.link }}/views/assets/img/img_hero_seo.png" srcset="{{ site.theme.link }}/views/assets/img/img_hero_seo.png, {{ site.theme.link }}/views/assets/img/img_hero_seo@2x.png 2x" class="img-fluid" alt="First Page Digital" />
-        </div>
-    </div>
-</section>
-
-<section class="section-featured section-grey">
-    <div class="container">
-        <div class="row align-center">
-            <div class="title col-12 col-xl-3 mb-4 align-self-center">Be Found</div>
-            <div class="col-12 col-xl-9 mb-4">
-                <img src="{{ site.theme.link }}/views/assets/img/lgrid-befound.png" class="img-fluid" alt="Be Found" />
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section-chinese-map section-blue">
-    <div class="container">
-        <div class="row align-center">
-            <div class="col-12 col-md-6 mb-4">
-                <div class="map-china"><img src="{{ site.theme.link }}/views/assets/img/map-china.png" srcset="{{ site.theme.link }}/views/assets/img/map-china@2x.png 2x" alt="Map China" /></div>
-                <div class="stats">
-                    <div class="number">730<sub> Mil</sub></div>
-                    <div class="text">Chinese users &amp; counting</div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 text-center text-md-left">
-                <h1>Are you after leads, sales and traffic? We have the secret to get you there.</h1>
-                <p>As one of the fastest growing consumer markets in the world, capturing Chinese audiences is essential for any business looking to drive rapid expansion.</p>
-                <p>The good news? We know exactly how to get you there.</p>
-                <p>With 730 million users and counting, China is the largest online market in the world. In e-commerce around a decade ago, China accounted for less than 1 percent of worldwide transaction values. Today, it sits at over 40 percent.</p>
-                <p>Our in-house SEO team are experts when it comes to tapping into the Chinese market. Whether you're local or international, we're confident that we can get you results that last.</p>
-            </div>
+            {% include "partials/en-form-services.twig" with {'form_page': 'Amazon PPC', 'form_button': 'Get A Free
+            Quote', 'form_website_placeholder': 'Enter your website'} %}
+            {% include "partials/en-section-awards-badges.twig" %}
+        </div>
+        <div class="hero-img d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/img_amazon_hero@2x.png"
+                srcset="{{ site.theme.link }}/assets/img/img_amazon_hero@2x.png, {{ site.theme.link }}/assets/img/img_amazon_hero@2x.png 2x"
+                alt="First Page" />
+        </div>
+        <div class="hero-img d-none d-lg-block">
+            <img src="{{ site.theme.link }}/assets/img/img_amazon_hero@2x.png"
+                srcset="{{ site.theme.link }}/assets/img/img_amazon_hero@2x.png, {{ site.theme.link }}/assets/img/img_amazon_hero@2x.png 2x"
+                alt="First Page" />
         </div>
     </div>
 </section>
 
-<section class="section-paragraph section-white mob-center">
-    <div class="container">
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
-                <img src="{{ site.theme.link }}/views/assets/img/img_link_building_results.png" srcset="{{ site.theme.link }}/views/assets/img/img_link_building_results.png, {{ site.theme.link }}/views/assets/img/img_link_building_results@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_link_building_results_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_link_building_results_mob.png, {{ site.theme.link }}/views/assets/img/img_link_building_results_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Dramatically improve your visibility</h3>
-                <p>For brands that truly want to dominate the globe, finding a way to reach the Chinese marketplace is hugely important. With the nation’s combined annual <a href="https://firstpage.com.au/ecommerce-seo/">e-commerce</a> sales amounting to almost USD $2 trillion – more than three times greater than the American market – it’s no wonder so many brands are focusing their <a href="https://firstpage.com.au/">digital marketing</a> efforts on this part of the world.</p>
-                <p>But for companies that are unfamiliar with the region, it can be a complicated process to establish your operation and successfully compete in this hotly contested marketplace. First Page Australia’s renowned team has a wealth of experience when it comes to reaching the Chinese market, with our targeted <a href="https://firstpage.com.au/seo/">SEO</a> campaigns helping both local and international companies reach this highly prized customer base.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
-            </div>
+{% include "partials/en-section-featured-in-news.twig" %}
+
+
+<section class="section-paragraph">
+    <div class="row no-gutters">
+        <div class="col-md-6"></div>
+        <div class="col-md-6 align-self-end text-container">
+
+            <h2 class="d-none d-md-block d-lg-none">
+                Attract your ideal target market
+            </h2>
         </div>
-        <div class="row mb-0 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-0 mb-md-3 text-center text-lg-left">
-                <img src="{{ site.theme.link }}/views/assets/img/img_location.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_location_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Dominate your local marketplace</h3>
-                <p>As Australia is home to more than 650,000 Chinese-born people, if your products and services appeal to this specific target market, <a href="https://firstpage.com.au/">First Page Australia</a> can develop a robust campaign that gains their attention. Supported by our detailed approach to SEO, our carefully researched local search phrases and location-based keywords ensure your local business climbs the search engine results pages and overtakes your key competitors.
-                <p>As part of this process, we ensure our clients benefit from a highly optimised Google My Business listing. This verification method means your customers won’t have any problem finding your business when they conduct a relevant search. Alongside your precise address and contact details, potential customers will also be presented with high-quality images and Google Reviews that highlight what makes your business special.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
-            </div>
+    </div>
+    <div class="row no-gutters flex-column-reverse flex-md-row">
+        <div
+            class="col-12 col-md-6 image-container-left pr-lg-5 d-flex flex-column justify-content-center align-items-end">
+            <img src="{{ site.theme.link }}/assets/img/img_sentr_dash@2x.png"
+                srcset="{{ site.theme.link }}/assets/img/img_sentr_dash.png, {{ site.theme.link }}/assets/img/img_sentr_dash@2x.png 2x"
+                class="img-fluid d-none d-lg-inline-block" alt="First Page" style="width:650px;" />
+            <img src="{{ site.theme.link }}/assets/img/img_sentr_dash@2x.png"
+                srcset="{{ site.theme.link }}/assets/img/img_sentr_dash@2x.png, {{ site.theme.link }}/assets/img/img_sentr_dash@2x.png 2x"
+                class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" style="width:550px;" />
         </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
-                <img src="{{ site.theme.link }}/views/assets/img/img_translate.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_translate_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Speak your
-                    customers’ language</h3>
-                <p>With Chinese customers representing over half of global e-commerce sales, your brand must communicate in a way that’s understood by this lucrative target market. As research tells us that 75% of online shoppers prefer to purchase products that have descriptions in their native language, following suit with your own product range is one way to significantly improve your market penetration and conversion rate.</p>
-                <p>Fortunately, First Page Australia has a highly experienced multilingual team that can deliver engaging campaigns across English, Mandarin and Cantonese. Whether you’re looking to produce compelling storytelling or want to communicate the nitty-gritty details of your complex products, our team members can craft a <a href="https://firstpage.com.au/seo-copywriting/">comprehensive strategy</a> that native Chinese customers will fully understand and appreciate.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
-            </div>
+        <div class="col-12 col-md-6 text-container heading-center">
+            <h2 class="d-block d-md-none d-lg-block">
+                Attract your ideal target market
+            </h2>
+            <img src="{{ site.theme.link }}/assets/img/img_sentr_dash.png"
+                srcset="{{ site.theme.link }}/assets/img/img_sentr_dash.png, {{ site.theme.link }}/assets/img/img_sentr_dash.png 2x"
+                class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page" />
+            <p class="text-center text-md-left">As one of the fastest growing consumer markets in the world, capturing
+                Chinese audiences is essential for any business looking to drive rapid expansion.</p>
+            <p class="text-center text-md-left">The good news? We know exactly how to get you there.</p>
+            <p class="text-center text-md-left">With 730 million users and counting, China is the largest online market
+                in the world. In e-commerce around a decade ago, China accounted for less than 1 percent of worldwide
+                transaction values. Today, it sits at over 40 percent.</p>
+            <p class="text-center text-md-left">Our in-house SEO team are experts when it comes to tapping into the
+                Chinese market. Whether you're local or international, we're confident that we can get you results that
+                last.</p> 
+            <button type="button" data-title="seopage-get-freeproposal-Why"
+                class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+                GET A FREE QUOTE
+            </button>
         </div>
     </div>
 </section>
+
+
+<section class="section-paragraph">
+    <h2 class="d-none d-md-block d-lg-none container-padding">Dramatically improve </br> your visibility</h2>
+    <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+        <div class="col-12 col-md-6 image-container-right d-flex flex-column justify-content-center align-items-start">
+            <img src="{{ site.theme.link }}/assets/img/img_google_search_ads@2x.png"
+                srcset="{{ site.theme.link }}/assets/img/img_google_search_ads@2x.png, {{ site.theme.link }}/assets/img/img_google_search_ads@2x.png 2x"
+                class="img-fluid d-none d-lg-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/img_google_search_ads_mob@2x.png"
+                srcset="{{ site.theme.link }}/assets/img/img_google_search_ads_mob@2x.png, {{ site.theme.link }}/assets/img/img_google_search_ads@2x.png 2x"
+                class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" />
+        </div>
+        <div class="col-12 col-md-6 p-0 text-container text-container-seo-new">
+            <h2 class="d-block d-md-none d-lg-block">
+                Dramatically improve your visibility
+            </h2>
+            <img src="{{ site.theme.link }}/assets/img/img_google_search_ads_mob@2x.png"
+                class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page" />
+                <p class="text-center text-md-left">For brands that truly want to dominate the globe, finding a way to reach the Chinese marketplace is hugely important. With the nation’s combined annual</p>
+                <p class="text-center text-md-left">e-commerce sales amounting to almost USD $2 trillion – more than three times greater than the American market – it’s no wonder so many brands are focusing their digital marketing efforts on this part of the world.</p>
+                <p class="text-center text-md-left">But for companies that are unfamiliar with the region, it can be a complicated process to establish your operation and successfully compete in this hotly contested marketplace.</p>
+                <p class="text-center text-md-left">First Page Australia’s renowned team has a wealth of experience when it comes to reaching the Chinese market, with our targeted SEO campaigns helping both local and international companies reach this highly prized customer base.</p><button type="button" data-title="seopage-get-freeproposal-Triple"
+                class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+                GET A FREE QUOTE
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-paragraph">
+    <div class="row no-gutters">
+        <div class="col-md-6"></div>
+        <div class="col-md-6 align-self-end text-container">
+
+            <h2 class="d-none d-md-block d-lg-none">
+                Dominate your local marketplace
+            </h2>
+        </div>
+    </div>
+    <div class="row no-gutters flex-column-reverse flex-md-row">
+        <div
+            class="col-12 col-md-6 image-container-left pr-lg-5 d-flex flex-column justify-content-center align-items-end">
+            <img src="{{ site.theme.link }}/assets/img/dominate-your-local-marketplace.png"
+                srcset="{{ site.theme.link }}/assets/img/dominate-your-local-marketplace.png, {{ site.theme.link }}/assets/img/dominate-your-local-marketplace.png 2x"
+                class="img-fluid d-none d-lg-inline-block" alt="First Page" style="width:750px;" />
+            <img src="{{ site.theme.link }}/assets/img/dominate-your-local-marketplace.png"
+                srcset="{{ site.theme.link }}/assets/img/dominate-your-local-marketplace.png, {{ site.theme.link }}/assets/img/dominate-your-local-marketplace.png 2x"
+                class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" style="width:320px;" />
+        </div>
+        <div class="col-12 col-md-6 text-container heading-center">
+            <h2 class="d-block d-md-none d-lg-block">
+                Dominate your local marketplace
+            </h2>
+            <img src="{{ site.theme.link }}/assets/img/dominate-your-local-marketplace.png"
+                srcset="{{ site.theme.link }}/assets/img/dominate-your-local-marketplace.png, {{ site.theme.link }}/assets/img/dominate-your-local-marketplace.png 2x"
+                class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page" />
+                <p class="text-center text-md-left">
+                    <p>As Australia is home to more than 650,000 Chinese-born people, if your products and services appeal to this specific target market, First Page Australia can develop a robust campaign that gains their attention.</p>
+                </p>
+                <p class="text-center text-md-left">
+                    <p>Supported by our detailed approach to SEO, our carefully researched local search phrases and location-based keywords ensure your local business climbs the search engine results pages and overtakes your key competitors.</p>
+                </p>
+                <p class="text-center text-md-left">
+                    <p>As part of this process, we ensure our clients benefit from a highly optimised Google My Business listing. This verification method means your customers won’t have any problem finding your business when they conduct a relevant search.</p>
+                </p>
+                <p class="text-center text-md-left">
+                    <p>Alongside your precise address and contact details, potential customers will also be presented with high-quality images and Google Reviews that highlight what makes your business special.</p>
+                </p> <button
+                type="button" data-title="seopage-get-freeproposal-Why"
+                class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+                GET A FREE QUOTE
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section-paragraph">
+    <h2 class="d-none d-md-block d-lg-none container-padding">Speak your customers’ </br> language
+    </h2>
+    <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse ">
+        <div class="col-12 col-md-6 image-container-right d-flex flex-column justify-content-center align-items-start" style="padding-left: 70px;">
+            <img src="{{ site.theme.link }}/assets/img/multi-language.svg"
+                srcset="{{ site.theme.link }}/assets/img/multi-language.svg, {{ site.theme.link }}/assets/img/multi-language.svg 2x"
+                class="img-fluid d-none d-lg-inline-block" alt="First Page" width="350px;" />
+            <img src="{{ site.theme.link }}/assets/img/multi-language.svg"
+                srcset="{{ site.theme.link }}/assets/img/multi-language.svg, {{ site.theme.link }}/assets/img/multi-language.svg 2x"
+                class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" style="width:450px;" />
+        </div>
+        <div class="col-12 col-md-6 text-container text-container-seo-new">
+            <h2 class="d-block d-md-none d-lg-block">
+                Speak your customers’ language
+            </h2>
+            <img src="{{ site.theme.link }}/assets/img/multi-language.svg"
+                srcset="{{ site.theme.link }}/assets/img/multi-language.svg, {{ site.theme.link }}/assets/img/multi-language.svg 2x"
+                class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page" />
+                <p class="text-center text-md-left">With Chinese customers representing over half of global e-commerce sales, your brand must communicate in a way that’s understood by this lucrative target market.</p>
+                <p class="text-center text-md-left">As research tells us that 75% of online shoppers prefer to purchase products that have descriptions in their native language, following suit with your own product range is one way to significantly improve your market penetration and conversion rate.</p>
+                <p class="text-center text-md-left">Fortunately, First Page Australia has a highly experienced multilingual team that can deliver engaging campaigns across English, Mandarin and Cantonese. Whether you’re looking to produce compelling storytelling or want to communicate the nitty-gritty details of your complex products, our team members can craft a comprehensive strategy that native Chinese customers will fully understand and appreciate.</p>
+            <button type="button" data-title="seopage-get-freeproposal-Triple"
+                class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+                GET A FREE QUOTE
+            </button>
+        </div>
+    </div>
+</section>
+
 
 {% include "partials/en-section-free-session.twig" %}
 
-{% include "partials/en-form-popup.twig" with {'form_page': 'Chinese SEO (Popup)'} %}
-<section class="section-paragraph section-faq section-white">
+{% include "assets/partials/en-form-popup.twig" with {'form_page': 'Amazon PPC (Popup)'} %}
+
+<section class="section-paragraph section-faqs py-5">
     <div class="container">
-        <h3>Frequently Asked Questions</h3>
-        <div id="accordion">
-            <div class="card">
-                <div class="card-header border-0" id="headingOne">
-                    <div class="row">
-                        <div class="col-10">
-                            <h5 class="mb-0">
-                                <span class="faq-label">🇨🇳 What Is Chinese SEO? </span>
-                            </h5>
-                        </div>
-                        <div class="col-2 align-self-center">
-                            <span class="float-right accordion-sign">+</span>
+        <h2 class="section-title">Baidu Marketing FAQs</h2>
+        <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">WHAT IS CHINESE SEO?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1"
+                        class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Launching overseas revenue streams is almost always going to be a profitable decision for
+                                companies based in Australia. But this is especially true if your company’s products and
+                                services can breakthrough into the Chinese marketplace. A personalised Chinese SEO
+                                campaign from <a href="https://firstpage.com.au/">First Page Australia</a> will ensure
+                                your business reaches its ideal customers and communicates effectively.</p>
                         </div>
                     </div>
-                </div>
-                <div id="collapseOne" class="collapse">
-                    <div class="card-body">Launching overseas revenue streams is almost always going to be a profitable decision for companies based in Australia. But this is especially true if your company’s products and services can breakthrough into the Chinese marketplace. A personalised Chinese SEO campaign from <a href="https://firstpage.com.au/">First Page Australia</a> will ensure your business reaches its ideal customers and communicates effectively.</div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <div class="row">
-                        <div class="col-10">
-                            <h5 class="mb-0">
-                                <span class="faq-label">💭 How Can Companies Use SEO To Reach Chinese Customers?</span>
-                            </h5>
-                        </div>
-                        <div class="col-2 align-self-center">
-                            <span class="float-right accordion-sign">+</span>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">WHAT ARE THE BENEFITS OF CHINESE SEO?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2"
+                        class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>There are no two ways about it – the Chinese market is incredibly lucrative for basically
+                                every kind of business. With the nation’s annual e-commerce sales totalling an estimated
+                                USD $2 trillion, finding a way to attract even a tiny percentage could skyrocket your
+                                company’s success. By teaming up with First Page Australia, you’ll have a highly
+                                experienced Chinese SEO agency guiding your marketing campaign.</p>
                         </div>
                     </div>
-                </div>
-                <div id="collapseTwo" class="collapse">
-                    <div class="card-body">Research has shown that converting customers is much easier when you communicate in their native language. A professional Chinese SEO agency like First Page Australia will produce precise, culturally sensitive translations of your product and service pages to ensure your company resonates with Chinese customers. Using data-driven and location-based <a href="https://firstpage.com.au/seo/">SEO techniques</a>, we specialise in reaching international consumers, as well as the 650,000 Chinese-born people living in Australia.</div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <div class="row">
-                        <div class="col-10">
-                            <h5 class="mb-0">
-                                <span class="faq-label">🐼 What Are The Benefits of Chinese SEO? </span>
-                            </h5>
-                        </div>
-                        <div class="col-2 align-self-center">
-                            <span class="float-right accordion-sign">+</span>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">HOW CAN COMPANIES USE SEO TO REACH CHINESE CUSTOMERS?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3"
+                        class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Research has shown that converting customers is much easier when you communicate in their native language. A professional Chinese SEO agency like First Page Australia will produce precise, culturally sensitive translations of your product and service pages to ensure your company resonates with Chinese customers. Using data-driven and location-based <a href="https://firstpage.com.au/seo/">SEO techniques</a>, we specialise in reaching international consumers, as well as the 650,000 Chinese-born people living in Australia.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div id="collapseThree" class="collapse">
-                    <div class="card-body">There are no two ways about it – the Chinese market is incredibly lucrative for basically every kind of business. With the nation’s annual e-commerce sales totalling an estimated USD $2 trillion, finding a way to attract even a tiny percentage could skyrocket your company’s success. By teaming up with First Page Australia, you’ll have a highly experienced Chinese SEO agency guiding your marketing campaign.</div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <div class="row">
-                        <div class="col-10">
-                            <h5 class="mb-0">
-                                <span class="faq-label">🏦 How Do I Choose A Chinese SEO Agency? </span>
-                            </h5>
-                        </div>
-                        <div class="col-2 align-self-center">
-                            <span class="float-right accordion-sign">+</span>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">HOW DO I CHOOSE A CHINESE SEO AGENCY?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4"
+                        class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Joining forces with the perfect Chinese SEO agency is incredibly important. You need a
+                                trustworthy team that’s not only exceedingly familiar with the Chinese e-commerce
+                                landscape, but also has a proven track record of leading SEO campaigns that achieve
+                                their clients’ goals. First Page Australia offers all these attributes and more as we’ve
+                                helped our clients lead remarkably successful SEO campaigns in both Mandarin and
+                                Cantonese.</p>
                         </div>
                     </div>
-                </div>
-                <div id="collapseThree" class="collapse">
-                    <div class="card-body">Joining forces with the perfect Chinese SEO agency is incredibly important. You need a trustworthy team that’s not only exceedingly familiar with the Chinese e-commerce landscape, but also has a proven track record of leading SEO campaigns that achieve their clients’ goals. First Page Australia offers all these attributes and more as we’ve helped our clients lead remarkably successful SEO campaigns in both Mandarin and Cantonese.</div>
                 </div>
             </div>
         </div>
 </section>
+
 {% endblock %}

@@ -1,0 +1,360 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+	<style>
+		section.section-paragraph .p-0 {
+			padding: 0 !important;
+		}
+
+		@media(max-width: 575px) {
+			.text-center-mobile {
+				text-align: center;
+			}
+		}
+
+		@media(max-width: 767px) {
+			.hero-mobile {
+				position: unset;
+				margin-bottom: -30px;
+				text-align: center;
+			}
+		}
+
+		.container-padding {
+			padding: 0 34px;
+		}
+
+		@media(max-width: 767px) {
+			.container-padding {
+				padding: 0 15px;
+			}
+		}
+
+		@media(max-width: 991px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px 0 34px !important;
+			}
+		}
+
+		@media(max-width: 767px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px !important;
+			}
+		}
+
+		section.section-paragraph .text-container-right {
+			padding: 0 34px 0 15px;
+		}
+
+		section.section-paragraph .text-container-right .fp-btn {
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+
+		@media(max-width: 767px) {
+			.heading-center h2 {
+				text-align: center;
+			}
+		}
+
+		@media(max-width: 767px) {
+			section.section-paragraph .text-container-right {
+				padding: 0 15px;
+			}
+		}
+
+		@media(max-width: 991px) {
+			.input-group {
+				display: -webkit-inline-box !important;
+			}
+		}
+
+		@media(max-width: 767px) {
+			.input-group {
+				display: -webkit-flex !important;
+			}
+		}
+		.pt-20 {
+			padding-top: 20px;
+		}
+		@media(max-width: 767px) {
+			section.banner .banner-description p {
+				max-width: 100% !important;
+				min-height: auto !important;
+				text-align: center !important;
+			}
+		}
+	</style>
+
+	<!-- Banner -->
+
+	<section class="banner form-space">
+		<div class="container banner-hero two-lines">
+			<div class="banner-hero-cont">
+				<h1 class="form-hide text-center-mobile">Enhance your website’s reach and conversions with high-performance WordPress SEO</h1>
+				<div class="banner-description">
+					<p class="form-hide">
+						Use the world’s most popular content management system to your company’s advantage with WordPress SEO services.
+					</p>
+					<div class="form-hide hero-mobile">
+						<img src="{{ site.theme.link }}/assets/img/Sam-wordpress-seo-mobile.png" srcset="{{ site.theme.link }}/assets/img/Sam-wordpress-seo-mobile.png, {{ site.theme.link }}/assets/img/Sam-wordpress-seo-mobile.png 2x" alt="First Page"/>
+					</div>
+				</div>
+				{% include "partials/en-form-services.twig" with {'form_page': 'Amazon PPC', 'form_button': 'Get A Free Quote', 'form_website_placeholder': 'Enter your website'} %}
+				{% include "partials/en-section-awards-badges.twig" %}
+			</div>
+			<div class="hero-img d-none d-md-block d-lg-none">
+				<img src="{{ site.theme.link }}/assets/img/Sam-wordpress-seo-tablet.png" srcset="{{ site.theme.link }}/assets/img/Sam-wordpress-seo-tablet.png, {{ site.theme.link }}/assets/img/Sam-wordpress-seo-tablet.png 2x" style="width:460px" alt="First Page"/>
+
+			</div>
+			<div class="hero-img d-none d-lg-block">
+				<img src="{{ site.theme.link }}/assets/img/Sam-wordpress-seo-desktop.png" srcset="{{ site.theme.link }}/assets/img/Sam-wordpress-seo-desktop.png, {{ site.theme.link }}/assets/img/Sam-wordpress-seo-desktop.png 2x" style="width:715px" alt="First Page"/>
+			</div>
+		</div>
+	</section>
+
+	{% include "partials/en-section-featured-in-news.twig" %}
+
+	<section class="section-paragraph">
+		<div class="row no-gutters flex-column-reverse flex-md-row align-items-center">
+			<div class="col-12 col-md-6 image-container-left pr-lg-5">
+				<img src="{{ site.theme.link }}/assets/img/wordpress-logo-desktop.png" srcset="{{ site.theme.link }}/assets/img/wordpress-logo-desktop.png, {{ site.theme.link }}/assets/img/wordpress-logo-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/wordpress-logo-tablet.png" srcset="{{ site.theme.link }}/assets/img/wordpress-logo-tablet.png, {{ site.theme.link }}/assets/img/wordpress-logo-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2>Take your WordPress SEO to the next level</h2>
+
+				<img src="{{ site.theme.link }}/assets/img/wordpress-logo-mobile.png" srcset="{{ site.theme.link }}/assets/img/wordpress-logo-mobile.png, {{ site.theme.link }}/assets/img/wordpress-logo-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+
+				<p class="text-center text-md-left">WordPress makes it remarkably simple to build an effective website and publish content that matters to your target market. Unsurprisingly, business owners and creators around the world have taken notice, with an estimated 41% of all websites based on the platform.</p>
+
+				<p class="text-center text-md-left">If you’re one of the millions of businesses that use WordPress to promote its products and services, optimising your website to its maximum potential is vital. This is where knowing the ins and outs of WordPress SEO comes in.</p>
+
+				<p class="text-center text-md-left">While most business owners are familiar with the benefits of search engine optimisation, knowing how to get the most out of your WordPress-based website is essential to your success.</p>
+
+				<p class="text-center text-md-left">As this hugely popular content management system features a range of built-in features, alongside hundreds of SEO-focused plugins, this will significantly enhance your brand's visibility. Get started today with a WordPress SEO company like
+					<a href="https://firstpage.com.au/">First Page Australia</a>
+					to attract your target market and generate more sales.</p>
+
+
+			</p>
+			<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+				GET A FREE QUOTE
+			</button>
+		</div>
+	</section>
+
+	<section class="section-paragraph">
+		<div class="row no-gutters flex-column-reverse align-items-center flex-md-row flex-md-row-reverse">
+			<div class="col-12 col-md-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/Wordpress-website-desktop.png" srcset="{{ site.theme.link }}/assets/img/Wordpress-website-desktop.png, {{ site.theme.link }}/assets/img/Wordpress-website-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+
+				<img src="{{ site.theme.link }}/assets/img/Wordpress-website-tablet.png" srcset="{{ site.theme.link }}/assets/img/Wordpress-website-tablet.png, {{ site.theme.link }}/assets/img/Wordpress-website-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2>Attract your ideal target market and outperform the competition</h2>
+
+				<img src="{{ site.theme.link }}/assets/img/Wordpress-website-mobile.png" srcset="{{ site.theme.link }}/assets/img/Wordpress-website-mobile.png, {{ site.theme.link }}/assets/img/Wordpress-website-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+
+				<p class="text-center text-md-left">High-performance WordPress SEO considers your website from every perspective. You can’t simply focus on the technical changes and hope to have the biggest impact on your customer base. It starts from the very first thing people see when they land on your homepage. This means that you have to choose a theme that’s attractive, lightning-fast and easy to navigate.</p>
+
+				<p class="text-center text-md-left">Comprehensive WordPress SEO companies will also ensure your website has the plugins it needs to achieve your goals. The basic WordPress website provides a stellar framework, but it can be improved in countless ways when you install new features that appeal to your target market and showcase your products in the best possible light.</p>
+
+				<p class="text-center text-md-left">For instance, e-commerce stores can use top-notch plugins like WooCommerce or BigCommerce to streamline their operations.</p>
+
+				<p class="text-center text-md-left">Powerful WordPress SEO also involves getting your on-page content up to the highest standards. This includes everything from attention-grabbing page headings, perfectly structured content and optimised image selection, alongside SEO-driven title tags, meta descriptions and more.</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Triple" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph pt-20">
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left"></div>
+			<div class="col-12 col-md-6 text-container">
+				<h2>Partner with the industry’s best WordPress SEO agency to surpass your goals
+				</h2>
+			</div>
+		</div>
+		<div class="row no-gutters flex-column-reverse flex-md-row align-center">
+			<div class="col-12 col-md-6 image-container-left pr-lg-5">
+				<img src="{{ site.theme.link }}/assets/img/facebook-campaign-desktop.jpg" srcset="{{ site.theme.link }}/assets/img/facebook-campaign-desktop.jpg, {{ site.theme.link }}/assets/img/facebook-campaign-desktop.jpg 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/facebook-campaign-tablet.jpg" srcset="{{ site.theme.link }}/assets/img/facebook-campaign-tablet.jpg, {{ site.theme.link }}/assets/img/facebook-campaign-tablet.jpg 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<img src="{{ site.theme.link }}/assets/img/facebook-campaign-mobile.jpg" srcset="{{ site.theme.link }}/assets/img/facebook-campaign-mobile.jpg, {{ site.theme.link }}/assets/img/facebook-campaign-mobile.jpg 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">WordPress is a hugely effective CMS for businesses operating at every level. But getting the most out of this incredible platform is far easier when you partner with a highly experienced team. First Page Australia is a leading WordPress SEO agency, managing hundreds of campaigns for companies based in Australia and overseas.</p>
+				<p class="text-center text-md-left">Whether you’re looking to launch a new WordPress site or rejuvenate an outdated one, our SEO-driven WordPress websites will achieve your objectives. By working with your company to fully understand your target market and your product’s biggest selling points, we’ll deliver a platform that outperforms your competition in every respect.</p>
+				<p class="text-center text-md-left">Supported by industry-leading analytics and our data-driven techniques, we can take huge strides from the moment we get started. Speak with our talented team to learn how our
+					<a href="https://firstpage.com.au/contact/">WordPress SEO agency</a>
+					will skyrocket your website traffic and conversion rates.</p>
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+
+
+	{% include "partials/en-section-free-session.twig" %}
+
+	{% include "assets/partials/en-form-popup.twig" with {'form_page': 'Amazon PPC (Popup)'} %}
+
+	<section class="section-paragraph section-faqs py-5">
+		<div class="container">
+			<h2 class="section-title">WordPress SEO FAQs</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What is WordPress SEO?</h3>
+
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>WordPress SEO involves making strategic choices on your WordPress-based website to deliver the most organic traffic via search engines like Google and Bing. In turn, you can take action on your business goals, ranging from dramatically improved brand awareness to skyrocketed product sales.</p>
+								<p>While WordPress comes complete with a range of handy SEO features, businesses can achieve even more when they delve into plugins that appeal to their target market. Meanwhile, WordPress SEO specialists can implement a raft of on-page and technical changes that push a website’s search engine rankings onto the first page.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How does WordPress benefit my site?
+
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Building a custom website is a complicated and costly process that can be a pain to maintain in the long term. However, many of the most common problems are overcome when you use WordPress to host your website. As everything you need to get started is included in the box, you can design and launch your website incredibly fast.</p>
+								<p>WordPress is also hugely adaptive, with thousands of high-quality themes to choose from. Meanwhile, there are helpful plugins for every purpose imaginable. Whether you’re launching an e-commerce platform or a news website, it won’t take long to start attracting a precise audience when you use WordPress SEO best practices.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Is WordPress SEO friendly?</h3>
+
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>As the world’s most popular content management system, WordPress is renowned for its SEO-friendly nature. Although some of these features are built-in to the platform's foundations, there are thousands of WordPress plugins that improve your website’s performance in every conceivable way.</p>
+								<p>Whether you need a detailed form builder, add-ons for analytics or tools to back up your data, WordPress plugins ensure your website is remarkably adaptable. Supported by this immense flexibility, your website can cater to the precise needs of your target market. WordPress SEO companies like First Page Australia ensure your website features everything required to succeed.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How to use SEO in WordPress?</h3>
+
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>The strategies included in your website’s WordPress SEO campaign will depend on your target market and goals. However, our highly experienced team will work closely alongside your business to determine the ideal approach from the get-go. No matter what, we use our data-driven and cutting-edge techniques in every project we take on.</p>
+								<p>As you might expect, we’ll dive into the backend of your WordPress website to ensure that every step has been completed to drive top-notch organic traffic. This includes using XML Sitemaps, creating high-performance permalinks and managing your security settings. Plus, our on-page changes will ensure your website is a pleasure for customers to navigate and purchase from.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Which WordPress SEO plugin is the best?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>WordPress comes with some basic SEO tools built-in. However, you can take things to the next level by installing a feature-rich SEO plugin that gives you many more options. While there is plenty to choose from, the single-most downloaded WordPress plugin is Yoast SEO. Across a wealth of beginner and advanced features, it’s undoubtedly one of the best.</p>
+								<p>If you’d prefer to explore similar plugins, All in One SEO and Premium SEO Pack are two more excellent choices. Across dedicated dashboards for optimising your content production and stellar functionalities to improve your backend performance, surpassing your competition on the SERP is entirely possible.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Do WordPress websites rank well?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Simply using WordPress as your company's website builder and content management system won't mean it ranks higher on Google. If you want to outpace your rivals and reach the first page, you have to adopt a dedicated strategy that uses the latest SEO techniques to achieve your goals.</p>
+								<p>The talented digital marketers at our WordPress SEO agency have what it takes to go above and beyond your expectations. As we design and execute a high-performance campaign, we’ll get to know your products and what makes your customers care about them. Alongside a myriad of technical changes, we’ll drive your website up the rankings in rapid time.</p>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse7">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How much does WordPress SEO cost?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse7" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>There’s no one-size-fits-all answer when it comes to leading a successful WordPress SEO campaign. Naturally, every business has different products, a unique target market and industry-specific hurdles that might require more work than others. However, you can be sure that First Page will do everything in its power to achieve your goals.</p>
+								<p>Whether you’re a budding start-up or a multinational giant, we can navigate the complexities of any campaign. As our experts deliver a personalised strategy that addresses your company's specific concerns, our data-driven tactics will complete your objectives and provide an unbeatable ROI.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse8">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How long does WordPress SEO take to work?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse8" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Every kind of
+									<a href="https://firstpage.com.au/seo/">SEO</a>
+									campaign, including WordPress SEO, takes time to improve a brand's rankings. While it might take weeks or even months to see the entire results of your campaign, we can start making improvements that can make a tangible difference immediately.</p>
+
+								<p>For instance, we can make sure your page categories and tags enhance how organic traffic navigates your website. Meanwhile, we’ll conduct stellar keyword research and start making headway on a link building campaign that delivers your ranking objectives.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse9">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How can I make my WordPress website SEO friendly?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse9" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Virtually every aspect of your WordPress website can be optimised one way or another. If you decide to work with the experts at our WordPress SEO agency, we’ll conduct a comprehensive audit to identify the areas that need the most work. Then we’ll take steps to push your website up the rankings.</p>
+								<p>Perhaps you need a fresh focus keyword to drive more relevant website traffic, or you’ve ignored the importance of meta descriptions for too long. You might have old plugins slowing down your website or blogs that are too thin to rank. Overcome all of these issues by partnering with a leading WordPress SEO company like First Page.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse10">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Why is WordPress the best CMS?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse10" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>WordPress is considered the top CMS because it provides businesses with everything needed to succeed. From the moment you get started with WordPress, you can use these low-cost websites to attract your target market and generate conversions. With highly customisable themes and robust SEO plugins, achieving your goals without huge investment is completely viable.</p>
+								<p>WordPress is also wonderfully mobile-responsive, meaning you can keep up with how most customers are browsing the internet. Alongside great tools for website cybersecurity and integration with plenty of third-party services, WordPress is a user-friendly CMS that ensures you receive an outstanding ROI on your investment.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	{% endblock %}

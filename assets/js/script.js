@@ -68,12 +68,13 @@ $(function () {
     if ($(window).scrollTop() === 0 && nav.hasClass("min-header")) {
       nav.removeClass("min-header");
       $("#scroll-nav-logo").hide();
-      $("#cache-test").hide();
+      $(".fixed-top-no-nav").addClass("fixed-top-margin");
+
       // Is not
     } else {
       nav.addClass("min-header");
       $("#scroll-nav-logo").show();
-      $("#cache-test").show();
+      $(".fixed-top-no-nav").removeClass("fixed-top-margin");
     }
   });
   if ($(window).scrollTop() > 0) {
@@ -373,6 +374,14 @@ $(function () {
               eventCategory: "Form Submission",
               eventAction: formPath,
               eventLabel: "Submitted-" + pathname,
+            });
+
+            // dataLayer - form user details
+            window.dataLayer.push({
+              event: "formUserData",
+              user_name: $("[name='lead_name']").val(),
+              user_phone: $("[name='lead_phone']").val(),
+              user_email: $("[name='lead_email']").val(),
             });
 
             // Check Product Type

@@ -1,16 +1,34 @@
 {% extends "en-base.twig" %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ site.theme.link }}/views/assets/style.css" />
-<script src="{{ site.theme.link }}/views/assets/js/script.js"></script>
+
+<style>
+.hero-img-mobile{
+    margin-bottom:-25px;
+}
+
+section.banner .banner-hero .hero-img {
+    right: -63px;
+    bottom: -66px;
+ }
+
+@media(min-width:992px){
+section.banner .banner-hero .hero-img {
+    right: -264px;
+    bottom: -117px !important;
+}
+
+}
+</style>
+
 <!-- Banner -->
 <section class="banner extra-pad extra-pad-shorter form-space">
     <div class="container banner-hero">
         <div class="banner-hero-cont">
-            <h1 class="form-hide bold-lg">Reach new heights with <strong>Social Media</strong></h1>
-            <div class="hero-img-mobile d-lg-none">
-                <img src="{{ site.theme.link }}/views/assets/img/img_social_hero_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_social_hero_mob.png, {{ site.theme.link }}/views/assets/img/img_social_hero_mob@2x.png 2x" class="img-fluid" alt="First Page Digital" />
-            </div>
+            <h1 class="form-hide text-center text-md-left">Reach new heights with <strong>Social Media</strong></h1>
+            <div class="hero-img-mobile d-md-none form-hide">
+                <img src="{{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_sm.png" srcset="{{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_sm.png, {{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_sm@2x.png 2x" class="img-fluid d-block mx-auto" alt="First Page" />
+            </div>            
             {% embed "assets/partials/en-form-services.twig" with {'form_page': 'Social Media Marketing', 'form_button': 'Get A Free Quote', 'website_needed': true} %}
             {% block step_1 %}
             <div class="input-group">
@@ -29,110 +47,157 @@
             </div>
             {% endblock %}
             {% endembed %}
-            {% include "assets/partials/en-section-awards-badges.twig" %}
+            {% include "partials/en-section-awards-badges.twig" %}
         </div>
 
+        <div class="hero-img hero-img-md d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_md.png" srcset="{{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_md.png, {{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_md@2x.png 2x" class="img-fluid" alt="First Page" />
+        </div>
         <div class="hero-img d-none d-lg-block">
-            <img src="{{ site.theme.link }}/views/assets/img/img_social_hero.png" srcset="{{ site.theme.link }}/views/assets/img/img_social_hero.png, {{ site.theme.link }}/views/assets/img/img_social_hero@2x.png 2x" class="img-fluid" alt="First Page Digital" />
+            <img src="{{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_lg.png" srcset="{{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_lg.png, {{ site.theme.link }}/assets/img/img_socail_media_marketing_hero_lg@2x.png 2x"  alt="First Page" />
         </div>
     </div>
 </section>
 
-<section class="section-featured section-grey">
-    <div class="container">
-        <div class="row align-center">
-            <div class="title text-center col-12 mb-4">BE IN THE SPOTLIGHT</div>
-            <div class="text-center col-12 mb-4">
-                <img src="{{ site.theme.link }}/views/assets/img/spotlight-icons.png" srcset="{{ site.theme.link }}/views/assets/img/spotlight-icons.png, {{ site.theme.link }}/views/assets/img/spotlight-icons@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/spotlight-icons_mob.png" srcset="{{ site.theme.link }}/views/assets/img/spotlight-icons_mob.png, {{ site.theme.link }}/views/assets/img/spotlight-icons_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
+{% include "partials/en-section-featured-in-news.twig" %}
+
+{# row 1 #}
+<section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/views/assets/img/img_instagram.svg"  alt="First Page" class="img-fluid d-none d-sm-inline-block "/>
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Capture more attention <br class="d-none d-xl-block">with Instagram</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_instagram_mob.svg"  alt="First Page" class="img-fluid d-block mx-auto  d-sm-none"/>
+                <p class="text-center text-md-left">If your business isn’t using Instagram effectively, it’s undoubtedly missing out on opportunities. With the average user spending 28 minutes per day on the platform, Instagram is a remarkable place to capture your audience’s attention and showcase the strengths of your products and services. </p>
+                <p class="text-center text-md-left">Backed by an array of useful analytics and advertising possibilities, an eye-catching <a href="{{home_url}}instagram-ads/">Instagram campaign</a> led by an expert team is one of the best ways to grow your reach and convert customers.</p>
+                <button type="button" data-title="socialMediaMarketing-get-freeproposal-Capture" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
             </div>
         </div>
-    </div>
 </section>
 
-<section class="section-paragraph section-white mob-center">
-    <div class="container">
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
-                <img src="{{ site.theme.link }}/views/assets/img/img_instagram.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_instagram_mob.svg" class="img-fluid d-md-none" alt="" />
+{# row 2 #}
+ <section class="section-paragraph">
+        <div class="row no-gutters align-items-center">
+            <div class="col-12 col-md-6 image-container-left">
+            <img src="{{ site.theme.link }}/views/assets/img/img_facebook.svg"  class="img-fluid d-none d-sm-inline-block" alt="First Page" />
+
             </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Capture more attention with Instagram</h3>
-                <p>If your business isn’t using Instagram effectively, it’s undoubtedly missing out on opportunities. With the average user spending 28 minutes per day on the platform, Instagram is a remarkable place to capture your audience’s attention and showcase the strengths of your products and services. Backed by an array of useful analytics and advertising possibilities, an eye-catching <a href="https://firstpage.com.au/instagram-advertising/">Instagram campaign</a> led by an expert team is one of the best ways to grow your reach and convert customers.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SOCIAL MEDIA QUOTE</button></div>
-            </div>
-        </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
-                <img src="{{ site.theme.link }}/views/assets/img/img_facebook.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_facebook_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Make Facebook work for your business</h3>
-                <p>Facebook’s authority as a household name means it’s ideally positioned for a carefully conceived marketing campaign. With the platform used widely amongst every demographic, there’s no better place to attract and convert a broad audience. Considering <a href="https://firstpage.com.au/facebook-advertising/">Facebook Ad</a> impressions increased by 37% in 2019, the world’s leading social media platform is bound to remain powerful for businesses long into the future.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SOCIAL MEDIA QUOTE</button></div>
+            
+            <div class="col-12 col-md-6 text-container">
+                <h2>Make Facebook work for your business</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_facebook_mob.svg" class="img-fluid d-block mx-auto d-sm-none" alt="First Page" />
+                <p class="text-center text-md-left">Facebook’s authority as a household name means it’s ideally positioned for a carefully conceived marketing campaign. </p>
+                <p class="text-center text-md-left">With the platform used widely amongst every demographic, there’s no better place to attract and convert a broad audience. Considering <a href="{{home_url}}facebook-ads/">Facebook Ad</a> impressions increased by 37% in 2019, the world’s leading social media platform is bound to remain powerful for businesses long into the future.</p>
+                <button type="button" data-title="socialMediaMarketing-get-freeproposal-Make" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+
             </div>
         </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
-                <img src="{{ site.theme.link }}/views/assets/img/img_youtube.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_youtube_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Attract YouTube’s massive audience</h3>
-                <p>As the second-largest website on the internet, YouTube’s <a href="https://firstpage.com.au/">digital marketing</a> potential is enormous. By developing a <a href="https://firstpage.com.au/youtube-advertising/">smart video advertising campaign</a> that introduces your brand and its products to a precise target market, it’s possible to skyrocket your company’s success. With 90% of shoppers reporting they’ve discovered a new business or product through YouTube, it’s clear that this hugely popular platform directly influences how people learn about and engage with modern brands.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SOCIAL MEDIA QUOTE</button></div>
-            </div>
-        </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
-                <img src="{{ site.theme.link }}/views/assets/img/img_linkedin.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_linkedin_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Smash your sales targets with LinkedIn ads</h3>
-                <p>The importance of LinkedIn is often underestimated by brands and digital marketers alike, even though the platform is only going from strength-to-strength. With 690 million active users, it’s the ideal place to reach professionals who have the spending power to engage with your B2B or B2C company. Through <a href="https://firstpage.com.au/linkedin-advertising/">targeted ad campaigns</a> and compelling thought leadership, LinkedIn is perfect for establishing brand awareness and reaching influential corporate decision-makers.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SOCIAL MEDIA QUOTE</button></div>
-            </div>
-        </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
-                <img src="{{ site.theme.link }}/views/assets/img/img_twitter.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_twitter_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Generate an engaged Twitter following</h3>
-                <p>Twitter is another world leader in social media, but the platform’s unique format requires a tailored strategy to generate significant growth. With Twitter ad engagement increasing by 23% in Q3 2019 and cost-per-engagement dropping by 12%, the platform has proven to be incredibly cost-effective compared to other social media networks. First Page Australia’s talented team can work alongside your brand to develop a robust ad campaign that gets results.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SOCIAL MEDIA QUOTE</button></div>
-            </div>
-        </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
-                <img src="{{ site.theme.link }}/views/assets/img/img_we_chat.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Engage global audiences WeChat</h3>
-              <p>Reaching the lucrative Chinese market is made easy with WeChat. Featuring over a billion users situated around the globe, Chinese consumers spend as much as one-third of their online time using WeChat. With this outstanding platform helping brands expand their reach across international borders, our expert team works with WeChat every day to deliver our clients enormous success. We can create an <a href="https://firstpage.com.au/wechat-marketing/">extensive ad campaign</a> to drive more website traffic and sales.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SOCIAL MEDIA QUOTE</button></div>
-            </div>
-        </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
-                <img src="{{ site.theme.link }}/views/assets/img/img_increase.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_increase_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Take charge of your<br>brands future</h3>
-                <p>Don’t underestimate the power of social media marketing. For the vast majority of brands looking to boost engagement amongst modern consumers, you can’t go wrong with investing your marketing budget in these platforms. With 90% of all marketers believing their social media advertising efforts significantly increase visibility for their clients, First Page Australia has the skills to reach a highly specific audience and convince them to choose your brand over the competition.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SOCIAL MEDIA QUOTE</button></div>
-            </div>
-        </div>
-    </div>
 </section>
 
-{% include "assets/partials/en-section-free-session.twig" %}
+{# row 3 #}
+ <section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 image-container-right">
+            <img src="{{ site.theme.link }}/views/assets/img/img_youtube.svg"  class="img-fluid d-none d-sm-inline-block" alt="First Page" />
+
+            </div>
+            
+            <div class="col-12 col-md-6 text-container">
+                <h2>Attract YouTube’s massive audience</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_youtube_mob.svg" class="img-fluid d-block mx-auto d-sm-none" alt="First Page" />
+                <p class="text-center text-md-left">As the second-largest website on the internet, YouTube’s <a href="{{home_url}}">digital marketing</a> potential is enormous.</p>
+                <p class="text-center text-md-left">By developing a <a href="{{home_url}}youtube-ads/">smart video advertising campaign</a> that introduces your brand and its products to a precise target market, it’s possible to skyrocket your company’s success.</p>
+                <p class="text-center text-md-left">With 90% of shoppers reporting they’ve discovered a new business or product through YouTube, it’s clear that this hugely popular platform directly influences how people learn about and engage with modern brands.</p>
+                <button type="button" data-title="socialMediaMarketing-get-freeproposal-Attract" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+
+            </div>
+        </div>
+</section>
+
+{# 4 #}
+ <section class="section-paragraph">
+        <div class="row no-gutters align-items-center">
+            <div class="col-12 col-md-6 image-container-left">
+            <img src="{{ site.theme.link }}/assets/img/img_linkedin_2.svg"  class="img-fluid d-none d-sm-inline-block" alt="First Page" />
+
+            </div>
+            
+            <div class="col-12 col-md-6 text-container">
+                <h2>Smash your sales targets with LinkedIn ads</h2>
+                <img src="{{ site.theme.link }}/assets/img/img_linkedin_2_mob.svg" class="img-fluid d-block mx-auto d-sm-none" alt="First Page" />
+                <p class="text-center text-md-left">The importance of LinkedIn is often underestimated by brands and digital marketers alike, even though the platform is only going from strength-to-strength. With 690 million active users, it’s the ideal place to reach professionals who have the spending power to engage with your B2B or B2C company.</p>
+                <p class="text-center text-md-left">Through <a href="{{home_url}}linkedin-ads/">targeted ad campaigns</a> and compelling thought leadership, LinkedIn is perfect for establishing brand awareness and reaching influential corporate decision-makers.</p>
+                <button type="button" data-title="socialMediaMarketing-get-freeproposal-Smnash" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+
+            </div>
+        </div>
+</section>
+
+{# row 5 #}
+ <section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/views/assets/img/img_twitter.svg"  class="img-fluid d-none d-sm-inline-block" alt="First Page" />
+
+            </div>
+            
+            <div class="col-12 col-md-6 text-container">
+                <h2>Generate an engaged Twitter following</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_twitter_mob.svg" class="img-fluid d-block mx-auto d-sm-none" alt="First Page" />
+                <p class="text-center text-md-left">Twitter is another world leader in social media, but the platform’s unique format requires a tailored strategy to generate significant growth. </p>
+                <p class="text-center text-md-left">With Twitter ad engagement increasing by 23% in Q3 2019 and cost-per-engagement dropping by 12%, the platform has proven to be incredibly cost-effective compared to other social media networks. </p>
+                <p class="text-center text-md-left">First Page Australia’s talented team can work alongside your brand to develop a robust ad campaign that gets results.</p>
+                <button type="button" data-title="socialMediaMarketing-get-freeproposal-Generate" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+
+            </div>
+        </div>
+</section>
+
+{# row 6 #}
+ <section class="section-paragraph">
+        <div class="row no-gutters align-items-center">
+            <div class="col-12 col-md-6 image-container-left">
+            <img src="{{ site.theme.link }}/views/assets/img/img_we_chat.svg"  class="img-fluid d-none d-sm-inline-block" alt="First Page" />
+
+            </div>
+            
+            <div class="col-12 col-md-6 text-container">
+                <h2>Engage global audiences WeChat</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_mob.svg"class="img-fluid d-block mx-auto d-sm-none" alt="First Page" />
+                <p class="text-center text-md-left">Reaching the lucrative Chinese market is made easy with WeChat. Featuring over a billion users situated around the globe, Chinese consumers spend as much as one-third of their online time using WeChat. </p>
+                <p class="text-center text-md-left">With this outstanding platform helping brands expand their reach across international borders, our expert team works with WeChat every day to deliver our clients enormous success. </p>
+                <p class="text-center text-md-left">We can create an extensive ad campaign to drive more website traffic and sales.</p>
+
+                <button type="button" data-title="socialMediaMarketing-get-freeproposal-Engage" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+
+            </div>
+        </div>
+</section>
+
+{# row 7 #}
+ <section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 image-container-right">
+            <img src="{{ site.theme.link }}/views/assets/img/img_increase.svg" class="img-fluid d-none d-sm-inline-block" alt="First Page" />
+
+            </div>
+            
+            <div class="col-12 col-md-6 text-container">
+                <h2>Take charge of your<br>brands future</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_increase_mob.svg" class="img-fluid d-block mx-auto d-sm-none mb-5" alt="First Page" />
+                <p class="text-center text-md-left">Don’t underestimate the power of social media marketing. </p>
+                <p class="text-center text-md-left">For the vast majority of brands looking to boost engagement amongst modern consumers, you can’t go wrong with investing your marketing budget in these platforms. </p>
+                <p class="text-center text-md-left">With 90% of all marketers believing their social media advertising efforts significantly increase visibility for their clients, First Page Australia has the skills to reach a highly specific audience and convince them to choose your brand over the competition.</p>
+                <button type="button" data-title="socialMediaMarketing-get-freeproposal-Take" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+
+            </div>
+        </div>
+</section>
+
+
+{% include "partials/en-section-free-session.twig" %}
 {% include "assets/partials/en-form-popup.twig" with {'form_page': 'Social Media Marketing (Popup)'} %}
 
 {% endblock %}

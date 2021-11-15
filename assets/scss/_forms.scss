@@ -805,3 +805,12 @@ ul.parsley-errors-list {
     }
   }
 }
+
+// banner select arrow
+@media (max-width: $responsive-md) {
+  .quote-form.quote-form-big
+    .input-group
+    .select-container.form-control::after {
+    top: 20px;
+  }
+}

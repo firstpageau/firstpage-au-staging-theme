@@ -686,6 +686,12 @@ ul.parsley-errors-list {
     max-width: 815px;
     width: 100%; } }
 
+@media (max-width: 768px) {
+  .quote-form.quote-form-big
+.input-group
+.select-container.form-control::after {
+    top: 20px; } }
+
 .navbar-header {
   color: #ffffff;
   min-height: 70px;

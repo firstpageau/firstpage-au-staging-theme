@@ -1,0 +1,187 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<style>
+    @media (max-width: 767px){
+        .hero-mobile {
+            margin-bottom: -98px;
+            position: absolute;
+            bottom: 0;
+            right: -13px;
+        }
+        section.banner .banner-description {
+        
+            margin-top: 97px;
+        }
+
+        section.banner h1 {
+            
+            max-width: 216px;
+           
+        }
+
+    }
+
+    @media (min-width: 768px){
+        section.banner .banner-hero .hero-img {
+            right: -97px;
+        }
+    }
+
+    @media (min-width: 1440px){
+        section.banner .banner-hero .hero-img {
+            right: -137px;
+        }
+    }
+
+
+</style>
+<section class="banner form-space">
+        <div class="container banner-hero two-lines">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide">Achieve exceptional returns with optimised video content</h1>
+                <div class="banner-description form-hide">
+                    <div class="form-hide hero-mobile">
+                        <img src="{{ site.theme.link }}/assets/img/img_hero_video_seo_sm.png"
+                             srcset="{{ site.theme.link }}/assets/img/img_hero_video_seo_sm.png, {{ site.theme.link }}/assets/img/img_hero_video_seo_sm@2x.png 2x"
+                             alt="First Page"/>
+                    </div>
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'Video SEO', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+            <div class="hero-img d-none d-md-block d-lg-none">
+                <img src="{{ site.theme.link }}/assets/img/img_hero_video_seo_md.png"
+                     srcset="{{ site.theme.link }}/assets/img/img_hero_video_seo_md.png, {{ site.theme.link }}/assets/img/img_hero_video_seo_md@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+            <div class="hero-img d-none d-lg-block">
+                <img src="{{ site.theme.link }}/assets/img/img_hero_video_seo_lg.png"
+                     srcset="{{ site.theme.link }}/assets/img/img_hero_video_seo_lg.png, {{ site.theme.link }}/assets/img/img_hero_video_seo_lg@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+        </div>
+    </section>
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+<section class="section-paragraph section-white mob-center">
+    <div class="container">
+        <div class="row mb-3 mb-md-5 flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/views/assets/img/img_video_seo.png" srcset="{{ site.theme.link }}/views/assets/img/img_video_seo@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_video_seo_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_video_seo_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Drive Growth With <br class="d-none d-md-inline-block">Video SEO</h2>
+                <p>As video remains one of the fastest-growing mediums on the internet, video SEO has proven incredibly successful at reaching a precise target market. You might be thinking, how does video help with SEO? With video content increasingly accessible and engaging for modern consumers, a <a href="{{ home_url }}seo/">detailed SEO campaign</a> will undoubtedly boost your brand’s visibility and conversion rates. Backed by our extensive knowledge of YouTube’s complex algorithms, our video SEO strategies provide our clients with a route to success.</p>
+                <p>All around the globe, we’re seeing how increased access to smartphones and high-speed internet connections has led to a dramatic increase in the popularity of online video content. In terms of digital marketing, an expert-led strategy with a creative edge can put your business in front of potentially millions of customers, leading to more growth than ever before. <a href="{{ home_url }}">First Page Australia</a> is confident we can achieve your goals.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
+                <img src="{{ site.theme.link }}/views/assets/img/img_youtube.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_youtube_mob.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Video is here to stay</h2>
+                <p>In this tech-focused age, video and related rich media formats have become the SEO method of choice for many budding companies. Nowadays, millions of people own a high-quality camera that fits into their pocket, while streamlined video-hosting websites like YouTube have made producing and sharing content remarkably easy. If there’s one thing for certain about the future of content consumption, it’s that video is here to stay.</p>
+                <p>Considering how video search results experience a 41% higher click-through rate than text-based results, adopting a comprehensive video SEO campaign is essential for forward-thinking brands with big aspirations. First Page Australia’s talented team can ensure every video uploaded reaches its ideal audience, with our in-depth understanding of optimisation pushing your content up the search rankings.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/views/assets/img/img_increase.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_increase_mob.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Video SEO boosts views</h2>
+                <p>Most people are well aware that Google is the world’s most popular search engine, but can you name what comes in second place? You might be surprised to learn that it’s actually YouTube. Having grown from humble beginnings, it now receives over a billion search queries each and every month. With so many people on the lookout for <a href="{{ home_url }}premium-content-writing/">high-quality content</a>, a successful video SEO campaign can deliver outstanding results.</p>
+                <p>However, you’re going to have to compete with a huge array of content creators for attention. With this in mind, having an extensive plan around top-notch YouTube SEO is vital to building your subscriber count and receiving the views your content deserves. Fortunately, we can ensure your videos are expertly optimised, helping them stand out against the wealth of competition that exists on YouTube.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
+                <img src="{{ site.theme.link }}/views/assets/img/img_business_success.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_business_success_mob.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Grow your reach with <br>the experts</h2>
+                <p>Although it helps to have an optimised title for your video, there’s a lot more that goes into a <a href="{{ home_url }}seo/">powerful SEO campaign</a>. First Page Australia has been working at the forefront of video SEO for years, ensuring we know what it takes to attract your target market and dramatically enhance brand awareness. Skyrocket the success of your video content with a world-class strategy developed by our expert team.</p>
+                <p>To ensure we boost your brand in all the right ways, we take the time to get to know your business inside-out. With a research-driven understanding of your ultimate objectives and industry standing, we can implement a variety of strategies to deliver unbeatable results. Contact First Page Australia to learn how our professional video SEO services will outperform your competition and generate long-term success.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-free-session.twig" %}
+    <section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                            <h3 itemprop="name">HOW DOES VIDEO SEO WORK?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>As video content has become the primary way people want to consume online media, implementing a successful video SEO campaign can skyrocket your reach. In fact, 72% of customers say they prefer watching videos to reading articles based on the same information. By creating outstanding video content supported by optimised titles, attractive thumbnail images and intelligent tags, you can spread your company's message far and wide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                            <h3 itemprop="name">HOW DOES VIDEO HELP SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The vast majority of customers in Australia have access to smartphones and rapid internet speeds. This means more people than ever are watching video content online. Despite embedded video content not directly improving SERP rankings, customers will stay on your website for longer to watch. This signals to Google that your website has more value than most.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                            <h3 itemprop="name">IS YOUTUBE GOOD FOR VIDEO SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                              <p>When we talk about video SEO, the overwhelming share of content will be hosted on YouTube. And it makes perfect sense considering YouTube receives the second-most amount of traffic of any website on the internet. While it can be a challenge to stand out on the platform, extensive keyword research, engaging descriptions and sharp tagging will dramatically boost views and channel subscriptions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                            <h3 itemprop="name">WHAT ARE THE BENEFITS OF VIDEO SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>As video marketing becomes even more imperative as access to technology improves, robust video SEO campaigns are a great way to reach new customers. But with so many other companies trying to stand out on YouTube as well, your business will likely need expert help to succeed. Fortunately, <a href="{{ home_url }}seo/">First Page Australia’s</a> razor-sharp video SEO services will increase your views, boost subscribers and establish a loyal audience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+        </div>
+    </section>
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'Video SEO (Pop-up Form)'} %}
+
+{% endblock %}

@@ -1,0 +1,1473 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+    <!-- Banner -->
+    <div itemscope itemtype="http://schema.org/LocalBusiness">
+        <section class="banner">
+            <div class="container">
+                <div class="row overall-review">
+                    <div class="col-12 col-lg-6 overall-review-text mb-3">
+                        <h1 class="review-banner-text">See what our clients<br/><strong>are saying</strong></h1>
+                    </div>
+                    <div class="col-12 col-lg-6 overall-review-stars">
+                        <div class="d-none">
+                            <div itemprop="name">First Page Ltd</div>
+                            <img itemprop="image" width="400" height="74"
+                                 src="{{ site.theme.link }}/assets/img/fp-logo@2x.png" alt="First Page">
+                            <span itemprop="address">Level 6/534 Church St, Cremorne VIC 3121</span>
+                            <span itemprop="priceRange">100</span>
+                            <span itemprop="telephone">{{ site_phone }}</span>
+                        </div>
+
+                        <div class="overall-review-data">
+                            <div class="col-rating mb-2">
+                                <div class="rating-stars overall-stars">
+                                    <img class="d-none d-md-block"
+                                         src="{{ site.theme.link }}/assets/img/img_review-stars-4.9.svg" alt="">
+                                    <img class="d-block d-md-none"
+                                         src="{{ site.theme.link }}/assets/img/img_review_stars_4.9_mob.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-write mb-3">
+                                <div class="overall-stats" itemprop="aggregateRating" itemscope
+                                     itemtype="http://schema.org/AggregateRating">
+                                    <span class="overall-rating"><strong
+                                                itemprop="ratingValue">4.9</strong> from <strong itemprop="reviewCount">55</strong> reviews</span>
+
+                                </div>
+                                <a href="https://app.gatherup.com/review/feedback/100003.0.0"
+                                   class="btn fp-btn fp-btn-orange fp-btn-shadow" target="_blank">Write A Review</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-client-reviews reviews-page-testimonial-section">
+            <div class="container">
+                {# Row 1 #}
+                <div class="row testimonial-cont">
+                    <div class="col-12 col-md-4">
+                        {# no.1 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                They smashed our business goals and a special thanks to Isaac for driving the digital
+                                campaign.
+                            </div>
+                            <div class="person">
+                                <div class="name">THE TIMELESS COMPANY</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.2 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                Big thumbs up to First Page for their professionalism and insights. They are at the top
+                                of their industry. Keep up the good work!
+                            </div>
+                            <div class="person">
+                                <div class="name">MS LO</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.3 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                Professional, Responsive, Savvy. These three words sum up my First Page experience. They
+                                completely understand our SEO & web needs.
+                            </div>
+                            <div class="person">
+                                <div class="name">ADAM ARZATE</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        {# no.4 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                First Page has been amazing! Sarah has helped me with everything from SEO, marketing
+                                ideas, networking and real inquiries! They are professional, quick to respond, in-depth
+                                in their research and most importantly - they care about my business like it's
+                                their own!
+                            </div>
+                            <div class="person">
+                                <div class="name">JAMES CAMPION</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.5 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                Our experience with First Page Digital has been amazing so far. The team have helped us
+                                save the digital marketing strategy for my company. Lars has gone above and beyond when
+                                it comes to product knowledge and attention to detail surrounding the product.
+                            </div>
+                            <div class="person">
+                                <div class="name">MICHAEL MACKENZIE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.6 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                Our relationship manager is super responsive and always provides us with constructive,
+                                data lead advice to improve our performance.
+                            </div>
+                            <div class="person">
+                                <div class="name">V&G BUSINESS CENTRE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {# Row 2 #}
+                <div class="row testimonial-cont">
+                    <div class="col-12 col-md-4">
+                        {# no.7 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                Bravo Team First Page. You're absolutely amazing to work with and the results we
+                                experienced surpassed our expectations. Thank you
+                            </div>
+                            <div class="person">
+                                <div class="name">LEY BON</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.8 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                They have been super informative and they are really changing the game. First Page is
+                                top quality.
+                            </div>
+                            <div class="person">
+                                <div class="name">LUKE ARSENAULT</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.9 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                We had a 300% increase in leads. These guys really know their stuff.
+                            </div>
+                            <div class="person">
+                                <div class="name">JOHN ROBINSON</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        {# no.10 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                They always give us a professional analysis which has seen our online sales
+                                increase. We actually smashed our record last year.
+                            </div>
+                            <div class="person">
+                                <div class="name">NIKOYO</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.11 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                First Page undoubtedly has the ability, resources and network to tailor a campaign that
+                                best suits your organisation scale and budget. They demonstrate exceptional
+                                professionalism and dedication to my SEO & SEM campaigns.
+                            </div>
+                            <div class="person">
+                                <div class="name">RAINE CHANG</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.12 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                Super professional digital marketing agency which I would always recommend. Thanks to
+                                the team for taking care of our campaigns and always designing great solutions to enhance
+                                the performance.
+                            </div>
+                            <div class="person">
+                                <div class="name">BEN RICKSON</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {# Row 3 #}
+                <div class="row testimonial-cont">
+                    <div class="col-12 col-md-4">
+                        {# no.13 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                First Page is a great partner to work with! Greatly appreciate all the efforts in
+                                working with us.
+                            </div>
+                            <div class="person">
+                                <div class="name">STEPHANIE GRACE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.14 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                Top-quality responsiveness, service and I feel the passion for what they do and want to
+                                deliver. Thank you!
+                            </div>
+                            <div class="person">
+                                <div class="name">CAROLINE LANGSTON</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.15 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                An effective and efficient SEO agency. Thanks Loree for her professional and smart
+                                recommendations on improving website traffic and leads.
+                            </div>
+                            <div class="person">
+                                <div class="name">JACKO NGAI</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        {# no.16 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                All I can say is "wow". Completely blown away by the speed and execution of First Page.
+                            </div>
+                            <div class="person">
+                                <div class="name">NICK BARLETT</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.17 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                We've seen our e-commerce sales skyrocket and enhanced global brand awareness. Big thank
+                                you to First Page
+                            </div>
+                            <div class="person">
+                                <div class="name">EDITH</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        {# no.18 #}
+                        <div class="testimonial">
+                            <div class="stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                     srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            </div>
+                            <div class="text">
+                                They have shown experience and a meticulous approach to ensure we achieve the best
+                                possible outcome with our media needs. With many companies offering this service, First
+                                Page is really at the top of the list. A well deserved 5 stars.
+                            </div>
+                            <div class="person">
+                                <div class="name">BRITISH CONNECTIONS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {# below hide on mobile #}
+                <div class="reviews-hide-on-mobile d-none d-md-block" id="reviews-hide-on-mobile">
+                    {# Row #}
+                    <div class="row testimonial-cont">
+                        <div class="col-12 col-md-4">
+                            {# no.19 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    They are extremely helpful, reply to all my questions within minutes and from day 1.
+                                    Thank u guys!
+                                </div>
+                                <div class="person">
+                                    <div class="name">DAVE MUSTE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.20 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    They are very supportive and professional.
+                                    They think in your shoes and work with you to achieve a great outcome.
+                                </div>
+                                <div class="person">
+                                    <div class="name">CHARLIE LAU</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-4">
+                            {# no.21 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    We are glad to have First Page to help with our SEO aspect. They are really
+                                    professional and reliable! They have provided us with lots of great suggestions.
+                                </div>
+                                <div class="person">
+                                    <div class="name">FREDRICK MOOMAN</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            {# no.22 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Very serious and responsive team. Always available to answer all questions and help
+                                    to understand every point of the process. I really recommend First Page.
+                                </div>
+                                <div class="person">
+                                    <div class="name">YAMAK ADèLE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.23 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Very effective and efficient digital marketing agency. Especially great photo/video production capabilities. Was very impressed by their creativeness. :)
+                                </div>
+                                <div class="person">
+                                    <div class="name">DEEPINDER DHILLON</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.24 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Enjoyable experience and overall very happy with the service and results. We have
+                                    experienced a huge increase in memberships thanks to the work of
+                                    First Page.
+                                </div>
+                                <div class="person">
+                                    <div class="name">MY FITNESS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {# Row #}
+                    <div class="row testimonial-cont">
+                        <div class="col-12 col-md-4">
+                            {# no.25 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Full of knowledgeable staff who get the job done. Any plans or projects I have given
+                                    them have a fast turnaround. If you looking for a team to manage your Ads and
+                                    execute your plans.
+                                </div>
+                                <div class="person">
+                                    <div class="name">RD CONSULTING</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.26 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    First Page has been a partner of ours for many years now, delivering solutions for
+                                    our customers with great success. I have always found them very professional in
+                                    their engagement with us and over-delivering what was asked.
+                                </div>
+                                <div class="person">
+                                    <div class="name">MARK NIC</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.27 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    A creative team of geniuses, this is your one stop shop for all things digitally
+                                    enhancing for your business.
+                                </div>
+                                <div class="person">
+                                    <div class="name">CRAIG ROBISON</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            {# no.28 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    First Page are next level. Thanks for all of
+                                    your help guys.
+                                </div>
+                                <div class="person">
+                                    <div class="name">DAVID GRANT</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.29 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    The guys at First Page are professional, friendly and great to deal with. They take the
+                                    time to intimately know your business and work passionately to get you the results
+                                    you expect.
+                                </div>
+                                <div class="person">
+                                    <div class="name">VIOLETTE CRUISE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.30 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    I am really impressed with the capability of the team. Their digital team understood
+                                    what we were trying to achieve and they added a lot of value through their
+                                    experience in this space.
+                                </div>
+                                <div class="person">
+                                    <div class="name">GENE WILLS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {# Row #}
+                    <div class="row testimonial-cont">
+                        <div class="col-12 col-md-4">
+                            {# no.31 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Great team to work with, innovative focussed and have amazing depth of talent. We
+                                    couldn't have done it without you guys
+                                </div>
+                                <div class="person">
+                                    <div class="name">JAMES ROCK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.32 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Accommodating and a pleasure to work with. We had challenges early on in the project
+                                    and the First Page team patiently worked through them with our marketing department.
+                                    Professional and experienced.
+                                </div>
+                                <div class="person">
+                                    <div class="name">CYNNIE SHAW</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.33 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    The team at First Page are fantastic. They ask the right questions, approach work
+                                    the right way and from day one get the sense they know what they are doing.
+                                </div>
+                                <div class="person">
+                                    <div class="name">PETER LOUDER</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            {# no.34 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Fantastic team, very knowledgeable, quick turnaround times, easy to communicate
+                                    with, and happy to go the extra mile to move things faster. Highly recommend.
+                                </div>
+                                <div class="person">
+                                    <div class="name">SHARON CRUX</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.35 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    The FP team are amazing! Their support and assistance are incredible. As an
+                                    external company to our business, FP do all they can to better understand your
+                                    business and its audience and don't just stop at the tasks at hand, they are always
+                                    going above and beyond to help grow your business. Thanks guys! :)
+                                </div>
+                                <div class="person">
+                                    <div class="name">LADY B</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.36 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    The response times and the results have been fantastic and we would definitely
+                                    recommend
+                                    First Page services!
+                                </div>
+                                <div class="person">
+                                    <div class="name">RICH OLIVER</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {# Row #}
+                    <div class="row testimonial-cont">
+                        <div class="col-12 col-md-4">
+                            {# no.37 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icn_grey_star.svg" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Have worked with First Page for the last 6 months, and have found the team great to
+                                    work with. Very knowledgeable and have seen fantastic results.
+                                </div>
+                                <div class="person">
+                                    <div class="name">EMMA CARRIE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.38 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Couldn’t be happier that we chose them. We started seeing results in the first few
+                                    weeks and our results have only gotten better since then. Efficient, friendly and
+                                    more importantly gets the job done. Constant communication with quick response times
+                                    to queries and explains everything in detail.
+                                </div>
+                                <div class="person">
+                                    <div class="name">SURESH VARU</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.39 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    I really appreciate that they are always willing to explain the things I don't
+                                    understand in a patient way. Nothing is ever too hard.
+                                    Great service and great results.
+                                </div>
+                                <div class="person">
+                                    <div class="name">HELEN TODE</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            {# no.40 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Collectively they have a wealth of knowledge and experience and truly made the
+                                    engagement feel like a partnership. I look forward to further working with
+                                    First Page.
+                                </div>
+                                <div class="person">
+                                    <div class="name">RICHIE W</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.41 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    First Page are a pleasure to deal with, super professional and best of all friendly
+                                    and accomodating. They literally doubled our website traffic in 3 months.
+                                </div>
+                                <div class="person">
+                                    <div class="name">MATT HOGGETT</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.42 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icn_grey_star.svg"
+                                         alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    My gosh I cannot thank these guys and gals enough, amazing to deal with.
+                                </div>
+                                <div class="person">
+                                    <div class="name">BRENDAN GERTZ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {# Row #}
+                    <div class="row testimonial-cont">
+                        <div class="col-12 col-md-4">
+                            {# no.43 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Quality of service - especially communication, transparency, value, speed,
+                                    friendliness - was all outstanding. 100% recommend working with First Page.
+                                </div>
+                                <div class="person">
+                                    <div class="name">MICHAEL GEARSON</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.44 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Highly recommend First Page. The team were extremely professional and easy to deal
+                                    with! They provided great advice and organised a solution within a very short
+                                    timeframe. Great Work!
+                                </div>
+                                <div class="person">
+                                    <div class="name">LISA FREEMAN</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.45 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Thank you! I truly appreciate your guidance and knowledge. Great communication and
+                                    great service!
+                                </div>
+                                <div class="person">
+                                    <div class="name">DES BROOKES</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            {# no.46 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    When I was investigating digital marketing strategies, First Page came recommended
+                                    to me as an agency that would be perfect for our unique needs. Upon speaking to
+                                    Byron, I was immediately impressed with not only his approach and knowledge, but
+                                    also his clear passion and enthusiasm for the work they do.
+                                </div>
+                                <div class="person">
+                                    <div class="name">CLIFF DUFF</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.47 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Absolute bunch of legends. They have been a pleasure to work with and our business
+                                    has grown 70% in 4 months since with partner with First Page.
+                                </div>
+                                <div class="person">
+                                    <div class="name">KANE SIU</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.48 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    The guys at First Page are experts at their craft. No black hat stuff, just smarts
+                                    and knowledge of their space. They have provided an outstanding service and
+                                    delivered exactly what they promised on time. An excellent investment for any
+                                    business.
+                                </div>
+                                <div class="person">
+                                    <div class="name">NORMAN A</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {# Row #}
+                    <div class="row testimonial-cont">
+                        <div class="col-12 col-md-4">
+                            {# no.49 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Team of wonderful people that really care and work hard to deliver great results. We
+                                    are proud of our partnership.
+                                </div>
+                                <div class="person">
+                                    <div class="name">TRAVIS K</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.50 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    It has been a real pleasure to work with Byron and his team at First Page over the
+                                    past year. Unlike other agencies, they do not believe in a 'one size fits all'
+                                    approach. The team is very consultative, understood our requirements from the start
+                                    and created solutions that fit our needs.
+                                </div>
+                                <div class="person">
+                                    <div class="name">QUINTIN JACOBS</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.51 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    They have done amazing work for our brand. A special mention to Nick who is the
+                                    best. He will treat your business just like his own.
+                                    Keep up the great work team.
+                                </div>
+                                <div class="person">
+                                    <div class="name">OWEN HORNE</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            {# no.52 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    They are certainly one of the biggest reasons why we have stood out in the industry.
+                                    We've become a global brand party due to the work of First Page.
+                                </div>
+                                <div class="person">
+                                    <div class="name">THE SCOTTS GROUP</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.53 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    Highly recommend them for any marketing or performance media needs. Can't imagine
+                                    working with another company!
+                                </div>
+                                <div class="person">
+                                    <div class="name">MELISSA PATERAS</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            {# no.54 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    The team at First Page have been so professional and brilliant in understanding the
+                                    vision for our brand. Highly recommend the Agency for any support required for startups or those seeking digital marketing.
+                                </div>
+                                <div class="person">
+                                    <div class="name">CHLOE HIGGINS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {# Row #}
+                    <div class="row testimonial-cont">
+                        <div class="col-12 col-md-4">
+                            {# no.55 #}
+                            <div class="testimonial">
+                                <div class="stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                    <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                         srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                                </div>
+                                <div class="text">
+                                    We engaged them to manage our lead gen and they have performed well beyond
+                                    expectation. Nick is always helpful and a pleasure to deal with. I highly recommend
+                                    engaging them for all your digital marketing needs.
+                                </div>
+                                <div class="person">
+                                    <div class="name">JUSTIN NEWBURY</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="text-center d-block d-md-none reviews-btn" id="reviews-read-more-btn">VIEW MORE REVIEWS</a>
+                <a class="text-center d-none reviews-btn" id="reviews-read-less-btn">VIEW LESS REVIEWS</a>
+            </div>
+        </section>
+    </div>
+
+    {% include "partials/en-section-free-session.twig" %}
+
+    <script>
+        $( document ).ready(function(){
+            $('#reviews-read-more-btn').click(function(){
+                $('#reviews-hide-on-mobile').removeClass('d-none');
+                $('#reviews-read-more-btn').removeClass('d-block');
+                $('#reviews-read-more-btn').addClass('d-none');
+                $('#reviews-read-less-btn').removeClass('d-none');
+                $('#reviews-read-less-btn').addClass('d-block d-md-none');
+
+            })
+
+            $('#reviews-read-less-btn').click(function(){
+                $('#reviews-read-less-btn').removeClass('d-block');
+                $('#reviews-read-less-btn').addClass('d-none');
+                $('#reviews-read-more-btn').removeClass('d-none');
+                $('#reviews-read-more-btn').addClass('d-block');
+                $('#reviews-hide-on-mobile').removeClass('d-block');
+                $('#reviews-hide-on-mobile').addClass('d-none');
+
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $("#reviews-read-more-btn").offset().top - 160
+                }, 800);
+
+            })
+        });
+    </script>
+
+{% endblock %}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="352px" height="265px" viewBox="0 0 352 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>5E8B56E0-4628-4592-B5F1-C4A9879A1D2B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-21.2%" y="-18.7%" width="142.4%" height="137.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0 0.432675679 202.942948 0.432675679 202.942948 161.377049 0 161.377049"></polygon>
+        <polygon id="path-4" points="22.7238806 168.163934 22.7238806 27.147541 179.518657 27.147541 179.518657 168.163934"></polygon>
+        <filter x="-10.2%" y="-9.9%" width="120.4%" height="122.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-6" points="0 229.245902 203 229.245902 203 0 0 0"></polygon>
+        <linearGradient x1="39.9994126%" y1="37.9798219%" x2="50%" y2="58.7219518%" id="linearGradient-8">
+            <stop stop-color="#77B6F2" offset="0%"></stop>
+            <stop stop-color="#427FE0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="33.4816776%" y1="0%" x2="50%" y2="126.87066%" id="linearGradient-9">
+            <stop stop-color="#427FDF" offset="0%"></stop>
+            <stop stop-color="#396BB1" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-21.2%" y="-18.7%" width="142.4%" height="137.4%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-11" points="0 0.432675679 202.942948 0.432675679 202.942948 161.377049 0 161.377049"></polygon>
+        <polygon id="path-13" points="22.7238806 168.163934 22.7238806 27.147541 179.518657 27.147541 179.518657 168.163934"></polygon>
+        <filter x="-10.2%" y="-9.9%" width="120.4%" height="122.7%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-15" points="0 229.245902 203 229.245902 203 0 0 0"></polygon>
+        <linearGradient x1="42.8042763%" y1="38.6043185%" x2="60.0710761%" y2="58.9971724%" id="linearGradient-17">
+            <stop stop-color="#77B6F2" offset="0%"></stop>
+            <stop stop-color="#427FE0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="26.2152778%" x2="66.5183224%" y2="110.251736%" id="linearGradient-18">
+            <stop stop-color="#427FDF" offset="0%"></stop>
+            <stop stop-color="#396BB1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="33.4816776%" y1="0%" x2="56.3071325%" y2="100%" id="linearGradient-19">
+            <stop stop-color="#427FDF" offset="0%"></stop>
+            <stop stop-color="#396BB1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Premium-Content---Mobile" transform="translate(-15.000000, -6483.000000)">
+            <g id="img_newsletters_mob" transform="translate(35.000000, 6474.000000)">
+                <g id="Group-26" filter="url(#filter-1)">
+                    <g id="Group-4" transform="translate(0.000000, 67.868852)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Clip-3"></g>
+                        <path d="M181.053444,0.432675679 L202.942948,19.9116792 L202.942948,148.21437 C202.942948,155.489565 197.037373,161.377181 189.747948,161.377181 L13.1923464,161.377181 C5.90557516,161.377181 0,155.489565 0,148.21437 L0,19.9116792 L21.8895033,2.25015163" id="Fill-2" fill="#FF5254" mask="url(#mask-3)"></path>
+                    </g>
+                    <polyline id="Fill-5" fill="#FF5254" points="181.104343 68.6229508 203 88.151645 103.718365 184.754098 0 88.151645 21.8956569 70.4450631"></polyline>
+                    <g id="Fill-7">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                    <mask id="mask-7" fill="white">
+                        <use xlink:href="#path-6"></use>
+                    </mask>
+                    <g id="Clip-10"></g>
+                    <polygon id="Fill-9" fill="#A9CFFF" mask="url(#mask-7)" points="33.3283582 42.2295082 67.4141791 42.2295082 67.4141791 39.2131148 33.3283582 39.2131148"></polygon>
+                    <polygon id="Fill-11" fill="#A9CFFF" mask="url(#mask-7)" points="33.3283582 106.327869 69.6865672 106.327869 69.6865672 103.311475 33.3283582 103.311475"></polygon>
+                    <polygon id="Fill-12" fill="#A9CFFF" mask="url(#mask-7)" points="33.3283582 115.377049 168.914179 115.377049 168.914179 112.360656 33.3283582 112.360656"></polygon>
+                    <polygon id="Fill-13" fill="#A9CFFF" mask="url(#mask-7)" points="33.3283582 123.672131 168.914179 123.672131 168.914179 120.655738 33.3283582 120.655738"></polygon>
+                    <polygon id="Fill-14" fill="#A9CFFF" mask="url(#mask-7)" points="33.3283582 132.721311 168.914179 132.721311 168.914179 129.704918 33.3283582 129.704918"></polygon>
+                    <polygon id="Fill-15" fill="#A9CFFF" mask="url(#mask-7)" points="33.3283582 141.770492 168.914179 141.770492 168.914179 138.754098 33.3283582 138.754098"></polygon>
+                    <polygon id="Fill-16" fill="#A9CFFF" mask="url(#mask-7)" points="33.3283582 149.311475 168.914179 149.311475 168.914179 146.295082 33.3283582 146.295082"></polygon>
+                    <polygon id="Fill-17" fill="#A9CFFF" mask="url(#mask-7)" points="33.3283582 158.360656 168.914179 158.360656 168.914179 155.344262 33.3283582 155.344262"></polygon>
+                    <polygon id="Fill-18" fill="#A9CFFF" mask="url(#mask-7)" points="147.705224 42.2295082 168.914179 42.2295082 168.914179 39.2131148 147.705224 39.2131148"></polygon>
+                    <polygon id="Fill-19" fill="#A9CFFF" mask="url(#mask-7)" points="120.436567 42.2295082 141.645522 42.2295082 141.645522 39.2131148 120.436567 39.2131148"></polygon>
+                    <polygon id="Fill-20" fill="#A9CFFF" mask="url(#mask-7)" points="93.1679104 42.2295082 114.376866 42.2295082 114.376866 39.2131148 93.1679104 39.2131148"></polygon>
+                    <polygon id="Fill-21" fill="#FF5254" mask="url(#mask-7)" points="33.3283582 94.2622951 170.429104 94.2622951 170.429104 53.5409836 33.3283582 53.5409836"></polygon>
+                    <polygon id="Fill-22" fill="#FD3133" mask="url(#mask-7)" points="56.0522388 94.2622951 169.671642 94.2622951 169.671642 53.5409836 123.53154 53.5409836"></polygon>
+                    <path d="M77.404453,153.081967 L0.757462687,220.777247 C2.63662564,225.714992 7.42888987,229.245902 13.0770105,229.245902 L189.920332,229.245902 C195.568452,229.245902 200.362045,225.714992 202.242537,220.777247 L125.592889,153.081967 L77.404453,153.081967 Z" id="Fill-23" fill="url(#linearGradient-8)" mask="url(#mask-7)"></path>
+                    <path d="M124.981343,153.147558 L202.094291,221.281346 C201.844347,221.945683 201.529902,222.579399 201.183206,223.187819 L201.202019,223.213115 C202.34289,221.262707 203,219.011418 203,216.599037 L203,87.4754098 L124.981343,153.147558 Z" id="Fill-24" fill="#427FE0" mask="url(#mask-7)"></path>
+                    <path d="M0.905678074,221.280015 L78.0186567,153.146226 L0,87.4754098 L0,216.597706 C0,219.010087 0.661118119,221.261376 1.79254384,223.213115 L1.82210604,223.187819 C1.46735973,222.579399 1.15695671,221.945683 0.905678074,221.280015" id="Fill-25" fill="url(#linearGradient-9)" mask="url(#mask-7)"></path>
+                </g>
+                <g id="Group-26-Copy" filter="url(#filter-10)" transform="translate(109.000000, 23.000000)">
+                    <g id="Group-4" transform="translate(0.000000, 67.868852)">
+                        <mask id="mask-12" fill="white">
+                            <use xlink:href="#path-11"></use>
+                        </mask>
+                        <g id="Clip-3"></g>
+                        <path d="M181.053444,0.432675679 L202.942948,19.9116792 L202.942948,148.21437 C202.942948,155.489565 197.037373,161.377181 189.747948,161.377181 L13.1923464,161.377181 C5.90557516,161.377181 0,155.489565 0,148.21437 L0,19.9116792 L21.8895033,2.25015163" id="Fill-2" fill="#FF5254" mask="url(#mask-12)"></path>
+                    </g>
+                    <polyline id="Fill-5" fill="#FF5254" points="181.104343 68.6229508 203 88.151645 103.718365 184.754098 0 88.151645 21.8956569 70.4450631"></polyline>
+                    <g id="Fill-7">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
+                    </g>
+                    <mask id="mask-16" fill="white">
+                        <use xlink:href="#path-15"></use>
+                    </mask>
+                    <g id="Clip-10"></g>
+                    <polygon id="Fill-9" fill="#A9CFFF" mask="url(#mask-16)" points="33.3283582 42.2295082 67.4141791 42.2295082 67.4141791 39.2131148 33.3283582 39.2131148"></polygon>
+                    <polygon id="Fill-11" fill="#A9CFFF" mask="url(#mask-16)" points="33.3283582 106.327869 69.6865672 106.327869 69.6865672 103.311475 33.3283582 103.311475"></polygon>
+                    <polygon id="Fill-12" fill="#A9CFFF" mask="url(#mask-16)" points="33.3283582 115.377049 168.914179 115.377049 168.914179 112.360656 33.3283582 112.360656"></polygon>
+                    <polygon id="Fill-13" fill="#A9CFFF" mask="url(#mask-16)" points="33.3283582 123.672131 168.914179 123.672131 168.914179 120.655738 33.3283582 120.655738"></polygon>
+                    <polygon id="Fill-14" fill="#A9CFFF" mask="url(#mask-16)" points="33.3283582 132.721311 168.914179 132.721311 168.914179 129.704918 33.3283582 129.704918"></polygon>
+                    <polygon id="Fill-15" fill="#A9CFFF" mask="url(#mask-16)" points="33.3283582 141.770492 168.914179 141.770492 168.914179 138.754098 33.3283582 138.754098"></polygon>
+                    <polygon id="Fill-16" fill="#A9CFFF" mask="url(#mask-16)" points="33.3283582 149.311475 168.914179 149.311475 168.914179 146.295082 33.3283582 146.295082"></polygon>
+                    <polygon id="Fill-17" fill="#A9CFFF" mask="url(#mask-16)" points="33.3283582 158.360656 168.914179 158.360656 168.914179 155.344262 33.3283582 155.344262"></polygon>
+                    <polygon id="Fill-18" fill="#A9CFFF" mask="url(#mask-16)" points="147.705224 42.2295082 168.914179 42.2295082 168.914179 39.2131148 147.705224 39.2131148"></polygon>
+                    <polygon id="Fill-19" fill="#A9CFFF" mask="url(#mask-16)" points="120.436567 42.2295082 141.645522 42.2295082 141.645522 39.2131148 120.436567 39.2131148"></polygon>
+                    <polygon id="Fill-20" fill="#A9CFFF" mask="url(#mask-16)" points="93.1679104 42.2295082 114.376866 42.2295082 114.376866 39.2131148 93.1679104 39.2131148"></polygon>
+                    <polygon id="Fill-21" fill="#FF5254" mask="url(#mask-16)" points="33.3283582 94.2622951 170.429104 94.2622951 170.429104 53.5409836 33.3283582 53.5409836"></polygon>
+                    <polygon id="Fill-22" fill="#FD3133" mask="url(#mask-16)" points="56.0522388 94.2622951 169.671642 94.2622951 169.671642 53.5409836 123.53154 53.5409836"></polygon>
+                    <path d="M77.404453,153.081967 L0.757462687,220.777247 C2.63662564,225.714992 7.42888987,229.245902 13.0770105,229.245902 L189.920332,229.245902 C195.568452,229.245902 200.362045,225.714992 202.242537,220.777247 L125.592889,153.081967 L77.404453,153.081967 Z" id="Fill-23" fill="url(#linearGradient-17)" mask="url(#mask-16)"></path>
+                    <path d="M124.981343,153.147558 L202.094291,221.281346 C201.844347,221.945683 201.529902,222.579399 201.183206,223.187819 L201.202019,223.213115 C202.34289,221.262707 203,219.011418 203,216.599037 L203,87.4754098 L124.981343,153.147558 Z" id="Fill-24" fill="url(#linearGradient-18)" mask="url(#mask-16)"></path>
+                    <path d="M0.905678074,221.280015 L78.0186567,153.146226 L0,87.4754098 L0,216.597706 C0,219.010087 0.661118119,221.261376 1.79254384,223.213115 L1.82210604,223.187819 C1.46735973,222.579399 1.15695671,221.945683 0.905678074,221.280015" id="Fill-25" fill="url(#linearGradient-19)" mask="url(#mask-16)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

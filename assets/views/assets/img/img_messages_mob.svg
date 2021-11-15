@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="352px" height="273px" viewBox="0 0 352 273" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>img_messages_mob</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-36.9%" y="-37.7%" width="173.9%" height="175.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0 0.166984748 156.62948 0.166984748 156.62948 153.324332 0 153.324332"></polygon>
+        <filter x="-30.1%" y="-30.5%" width="160.1%" height="161.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="18.3428908%" y1="92.5965196%" x2="94.2550152%" y2="7.12057742%" id="linearGradient-5">
+            <stop stop-color="#427FDF" offset="0%"></stop>
+            <stop stop-color="#396BB1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ecommerce-SEO---Mobile" transform="translate(-12.000000, -2650.000000)">
+            <g id="img_messages_mob" transform="translate(32.000000, 2660.000000)">
+                <g id="Group" filter="url(#filter-1)" transform="translate(155.000000, 0.000000)">
+                    <g id="Group-20">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Clip-19"></g>
+                        <polygon id="Fill-18" fill="#427FE0" mask="url(#mask-3)" points="0 0.16634659 156.62948 0.16634659 156.62948 121.735498 67.29648 121.735498 33.98736 153.324332 44.36192 121.735498 0 121.735498"></polygon>
+                    </g>
+                    <polygon id="Fill-26" fill="#FFFFFF" points="18.255814 90.9262172 135.093023 90.9262172 135.093023 83.5057721 18.255814 83.5057721"></polygon>
+                    <polygon id="Fill-27" fill="#FFFFFF" points="18.255814 70.8807094 135.093023 70.8807094 135.093023 63.4602643 18.255814 63.4602643"></polygon>
+                    <polygon id="Fill-28" fill="#FFFFFF" points="18.255814 52.3295968 135.093023 52.3295968 135.093023 44.9091517 18.255814 44.9091517"></polygon>
+                    <polygon id="Fill-29" fill="#FFFFFF" points="18.255814 33.7784842 135.093023 33.7784842 135.093023 26.3580392 18.255814 26.3580392"></polygon>
+                </g>
+                <g id="Group-2" filter="url(#filter-4)" transform="translate(0.000000, 47.000000)">
+                    <polygon id="Fill-16" fill="url(#linearGradient-5)" points="193 0.380867391 0 0.380867391 0 150.860867 110.079189 150.860867 151.122642 189.967824 138.337302 150.860867 193 150.860867"></polygon>
+                    <polygon id="Fill-21" fill="#FFFFFF" points="30.9528302 110.152087 162.04717 110.152087 162.04717 102.717304 30.9528302 102.717304"></polygon>
+                    <polygon id="Fill-23" fill="#FFFFFF" points="30.9528302 87.8477391 162.04717 87.8477391 162.04717 80.4129565 30.9528302 80.4129565"></polygon>
+                    <polygon id="Fill-24" fill="#FFFFFF" points="30.9528302 65.5433913 162.04717 65.5433913 162.04717 58.1086087 30.9528302 58.1086087"></polygon>
+                    <polygon id="Fill-25" fill="#FFFFFF" points="30.9528302 43.2390435 162.04717 43.2390435 162.04717 35.8042609 30.9528302 35.8042609"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,99 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<!-- Banner -->
+<section class="banner extra-pad extra-pad-shorter form-space">
+    <div class="container banner-hero">
+        <div class="banner-hero-cont">
+            <h1 class="form-hide text-center text-md-left">Utilise every advertising avenue with <strong>Bing ads</strong></h1>
+            <div class="hero-img-mobile d-md-none form-hide">
+                <img src="{{ site.theme.link }}/assets/img/img_banner_carrie_mb.png" srcset="{{ site.theme.link }}/assets/img/img_banner_carrie_mb.png, {{ site.theme.link }}/assets/img/img_banner_carrie_mb@2x.png 2x" class="img-fluid d-block mx-auto" alt="First Page" />
+            </div>
+            {% include "partials/en-form-services.twig" with {'form_page': 'Bing Ads','form_button':'FREE BING ADS QUOTE'} %}
+
+            {% include "partials/en-section-awards-badges.twig" %}
+        </div>
+
+        <div class="hero-img hero-img-md d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/img_banner_carrie_md.png" srcset="{{ site.theme.link }}/assets/img/img_banner_carrie_md.png, {{ site.theme.link }}/assets/img/img_banner_carrie_md@2x.png 2x" class="img-fluid" alt="First Page" />
+        </div>
+        <div class="hero-img d-none d-lg-block">
+            <img src="{{ site.theme.link }}/assets/img/img_banner_carrie_lg.png" srcset="{{ site.theme.link }}/assets/img/img_banner_carrie_lg.png, {{ site.theme.link }}/assets/img/img_banner_carrie_lg@2x.png 2x" class="img-fluid" alt="First Page" />
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+<section class="section-paragraph section-white mob-center">
+    <div class="container">
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
+                <img src="{{ site.theme.link }}/views/assets/img/img_bing_ads.png" srcset="{{ site.theme.link }}/views/assets/img/img_bing_ads.png, {{ site.theme.link }}/views/assets/img/img_bing_ads@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2 class="text-center text-md-left">Reach New Customers<br>And Grow Your Business</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_bing_ads_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_bing_ads_mob.png, {{ site.theme.link }}/views/assets/img/img_bing_ads_mob@2x.png 2x" class="img-fluid d-md-none pb-5 pt-4" alt="" />
+                <p class="text-center text-md-left">Although Google is the undisputed king when it comes to search engines, that doesn’t mean there aren’t many other valuable places to advertise. </p>
+                <p class="text-center text-md-left">For instance, Bing also offers a huge audience consisting of 133 million people and 5 billion monthly searches. Make the most of every opportunity to reach your customers by designing and executing a productive campaign for Bing Ads.</p>
+                <p class="text-center text-md-left">There are many advantages to developing a powerful pay-per-click (PPC) strategy away from the crowded Google SERP. With Bing offering savvy businesses less competition and lower cost-per-click compared to their competitors, don’t simply disregard the platform as an option. In fact, Bing continues to grow its market share every year, making it a great place to expand your customer base and generate sales.</p>
+
+                <div class="button-cont text-center text-md-left"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
+                <img src="{{ site.theme.link }}/views/assets/img/img_search_engines.png" srcset="{{ site.theme.link }}/views/assets/img/img_search_engines.png, {{ site.theme.link }}/views/assets/img/img_search_engines@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2 class="text-center text-md-left">Enhance Your Business With Omnichannel Marketing</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_search_engines_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_search_engines_mob.png, {{ site.theme.link }}/views/assets/img/img_search_engines_mob@2x.png 2x" class="img-fluid d-md-none pt-4 pb-1" alt="" />
+                <p class="text-center text-md-left">Many businesses stick with Google Ads just because they are familiar with developing a campaign on the platform. </p>
+                <p class="text-center text-md-left">But with Bing Ads planned and executed in much the same way, you won’t have to waste time learning an entirely new process. This means if you have already led a productive campaign on Google, you can swiftly set up the same campaign on Bing and start producing outstanding results.</p>
+                <p class="text-center text-md-left">Like Google, Bing Ads has a range of targeting options. Across age, gender, location, device and location, your business can look to attract and convert those who are bound to be most interested in your products and services. </p>
+                <p class="text-center text-md-left">Meanwhile, the demographics of people using Bing skew older, which might provide a natural advantage depending on your target market.</p>
+
+                <div class="button-cont text-center text-md-left"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/views/assets/img/img_ppc.png" srcset="{{ site.theme.link }}/views/assets/img/img_ppc.png, {{ site.theme.link }}/views/assets/img/img_ppc@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2 class="text-center text-md-left">Capitalise On Every Advantage</h2>
+                <img src="{{ site.theme.link }}/views/assets/img/img_ppc_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_ppc_mob.png, {{ site.theme.link }}/views/assets/img/img_ppc_mob@2x.png 2x" class="img-fluid d-md-none pt-4 pb-5" alt="" />
+
+                <p class="text-center text-md-left">Although the PPC marketing space is already so hotly contested, finding a way to gain even a slight advantage over your competition could result in a major difference in the long run. </p>
+                <p class="text-center text-md-left">With Bing offering higher click-through rates and less competition for keywords, adopting a tailored Bing Ads campaign provides a streamlined route to success. Thankfully, <a href="{{home_url}}who-we-are/">our talented team can</a> ensure your business outperforms your rivals in every respect.</p>
+                <p class="text-center text-md-left">Having a diverse range of digital marketing avenues at your disposal is never a bad thing. If your <a href="{{home_url}}google-ads/">Google Ads</a> campaign requires a rethink after dropping in performance, you can still fall back on your Bing Ads to keep delivering high-quality customers and conversions. </p>
+                <p class="text-center text-md-left">With the online landscape only becoming more competitive with each passing day, First Page Australia can initiate an effective campaign without hesitation.</p>
+
+                <div class="button-cont text-center text-md-left"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
+                <img src="{{ site.theme.link }}/assets/img/img_coins_pay_lg.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2 class="text-center text-md-left">Maximise Conversions With The Experts</h2>
+                <img src="{{ site.theme.link }}/assets/img/img_coins_pay.svg" class="img-fluid d-md-none pb-5 pt-4" alt="" />
+                <p class="text-center text-md-left">With over 1,700 companies around the globe putting their faith in First Page to lead their digital marketing campaigns, we’re confident we can deliver a successful Bing Ads strategy for your business. </p>
+                <p class="text-center text-md-left">As we get to know your products and conduct a thorough review of your ideal target market, we can implement a plan that attracts a precise customer base and encourages them to purchase.</p>
+                <p class="text-center text-md-left">Advertising on Bing isn’t just a side thought – the platform provides genuine advantages that could help your business outperform its competition. </p>
+                <p class="text-center text-md-left">Backed by plenty of fine-tuned targeting options, greater transparency and reduced competition for keyword placements, Bing is a great stellar for growing your reach in the Australian e-commerce marketplace.</p>
+                <div class="button-cont text-center text-md-left"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-free-session.twig" %}
+
+
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'Bing Ads (Popup)'} %}
+
+{% endblock %}

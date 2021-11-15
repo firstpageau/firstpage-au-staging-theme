@@ -1,0 +1,455 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+    <section class="banner form-space instagram-advertising-banner">
+        <div class="container banner-hero ">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide text-center text-sm-left">20X your business with the #1 SEO agency in Perth</h1>
+                {# <p class="form-hide text-center text-sm-left banner-text-width">Attract your ideal customers and explode your sales for <br class="d-none d-md-block"> your Perth business with next-level SEO services</p> #}
+
+                <div class="banner-img-mb d-sm-none form-hide">
+                    <img src="{{ site.theme.link }}/assets/img/location-perth-bg-mb.png" srcset="{{ site.theme.link }}/assets/img/location-perth-bg-mb.png, {{ site.theme.link }}/assets/img/location-perth-bg-mb@2x.png 2x" alt="First Page Perth" />
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'SEO Perth', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-section-featured-in-news.twig" %}
+
+
+    <section class="section-paragraph">
+        <div class="row no-gutters align-items-center  ">
+            <div class="col-12 col-md-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-none d-xl-inline-block "/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png, {{ site.theme.link }}/assets/img/img-seo-traffic-lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-lg-inline-block d-xl-none seo-traffic-lg-img"/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/>
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>To stand out in this competitive market,
+                    you need to partner with the best. </h2>
+                <p class="text-center text-sm-left">Let’s be clear. SEO in Perth can completely revolutionise your business.</p>
+                <p class="text-center text-sm-left">And we are not only talking only about being number one on search engines – we are talking about the overall growth of your business. </p>
+                <p class="text-center text-sm-left">Why?</p>
+                <p class="text-center text-sm-left">Because SEO does so much more than send a bit of traffic to your website. SEO drives leads on autopilot, increases sales significantly for the years to come, and provides the best ROI in all of digital marketing. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph d-block d-lg-none data-vertical-section">
+
+        <div class="row no-gutters align-items-center ">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/seo-perth-data-img-lg.png"
+                     srcset="{{ site.theme.link }}/assets/img/seo-perth-data-img-lg.png, {{ site.theme.link }}/assets/img/seo-perth-data-img-lg@2x.png 2x"
+                     class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+                {#                    <img src="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png"#}
+                {#                         srcset="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png, {{ site.theme.link }}/assets/img/seo-perth-data-vertical@2x.png 2x"#}
+                {#                         class="img-fluid d-lg-none data-vertical-img" alt="First Page"/>#}
+                <img src="{{ site.theme.link }}/assets/img/seo-perth-data-vertical@2x.png"
+                     srcset="{{ site.theme.link }}/assets/img/seo-perth-data-vertical@2x.png, {{ site.theme.link }}/assets/img/seo-perth-data-vertical@2x.png 2x"
+                     class="img-fluid d-lg-none data-vertical-img" alt="First Page"/>
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Still not convinced?<br>Keep reading...</h2>
+                <p>- Organic traffic from Google in Australia converts at an astonishing 17%</p>
+                <p>- Online reviews are trusted by 88% of shoppers in Australia, and are as powerful as a personal recommendation </p>
+                <p class="text-center text-sm-left">To build your authority for SEO in Perth and get rankings that bring in actual revenue, SEO via Google is THE only way to get results.</p>
+                <p class="text-center text-sm-left">But as you probably noticed yourself, it’s a battle out there. eCommerce and local SEO in Perth is getting more challenging by the day. </p>
+                <p class="text-center text-sm-left">To truly make it in this ever-changing world of search engine algorithms, you need to work with the best.</p>
+                <p class="text-center text-sm-left">Which is exactly what we are.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="section-paragraph d-none d-lg-block ">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/seo-perth-data-img-lg.png"
+                     srcset="{{ site.theme.link }}/assets/img/seo-perth-data-img-lg.png, {{ site.theme.link }}/assets/img/seo-perth-data-img-lg@2x.png 2x"
+                     class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+                <img src="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png"
+                     srcset="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png, {{ site.theme.link }}/assets/img/seo-perth-data-vertical@2x.png 2x"
+                     class="img-fluid d-lg-none" alt="First Page"/>
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Still not convinced?<br>Keep reading...</h2>
+                <p>- Organic traffic from Google in Australia converts at an astonishing 17%</p>
+                <p>- Online reviews are trusted by 88% of shoppers in Australia, and are as powerful as a personal recommendation </p>
+                <p class="text-center text-sm-left">To build your authority for SEO in Perth and get rankings that bring in actual revenue, SEO via Google is THE only way to get results.</p>
+                <p class="text-center text-sm-left">But as you probably noticed yourself, it’s a battle out there. eCommerce and local SEO in Perth is getting more challenging by the day. </p>
+                <p class="text-center text-sm-left">To truly make it in this ever-changing world of search engine algorithms, you need to work with the best.</p>
+                <p class="text-center text-sm-left">Which is exactly what we are.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    {#  location map sm #}
+    <section class="section-paragraph location-map-mb-section d-block d-md-none">
+        <div class="row no-gutters">
+            <div class="col">
+                <img src="{{ site.theme.link }}/assets/img/location-page-map-sm.svg"
+                     class="location-map-img mt-4 mx-auto d-block" alt="First Page"/>
+
+            </div>
+
+        </div>
+    </section>
+
+    {#  location map md & lg#}
+    <section class="section-paragraph location-map-section d-none d-md-block">
+        <div class="row no-gutters">
+            <div class="col">
+                <img src="{{ site.theme.link }}/assets/img/location-page-map-lg.svg" class="d-none d-lg-block location-map-img-lg mx-auto" alt="First Page"/>
+                <img src="{{ site.theme.link }}/assets/img/location-page-map-md.svg" class="d-none d-md-block d-lg-none location-map-img float-right" alt="First Page"/>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-paragraph location-title-section">
+        <div class="row no-gutters">
+            <div class="col">
+                <h2 class="text-center">Propel your<br class="d-block d-xl-none"> business to the top with <br class="d-block d-xl-none"> First Page SEO in Perth</h2>
+                <p class="text-center location-sub-title">Here at First Page, we aren’t just a <br class="d-block d-md-none"> digital agency…</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    {#  office section  #}
+    <section class="section-paragraph office-img-section">
+        <div class="rwo no-gutters">
+            <img src="{{ site.theme.link }}/assets/img/location-office-sm.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-sm.png, {{ site.theme.link }}/assets/img/location-office-sm@2x.png 2x"
+                 class="img-fluid d-block d-md-none m-auto" alt="First Page"/>
+            <img src="{{ site.theme.link }}/assets/img/location-office-md.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-md.png, {{ site.theme.link }}/assets/img/location-office-md@2x.png 2x"
+                 class="img-fluid d-none d-md-block d-lg-none m-auto" alt="First Page"/>
+            <img src="{{ site.theme.link }}/assets/img/location-office-lg.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-lg.png, {{ site.theme.link }}/assets/img/location-office-lg@2x.png 2x"
+                 class="img-fluid d-none d-lg-block m-auto" alt="First Page"/>
+        </div>
+
+    </section>
+
+   <section class="section-paragraph">
+        <div class="container">
+            <h2 class="text-center text-sm-left section-title-ml">We are your partner in growth</h2>
+            <div class="row no-gutters justify-content-center ">
+
+                <div class="col-12 col-md-6 text-container">
+                    <p class="text-center text-sm-left">We're Australian-operated and -owned. With SEO services from Melbourne to Perth, we have over a decade of experience in digital marketing and SEO. Simply put, taking businesses to the top of the search rankings is in our bones!  </p>
+                </div>
+                <div class="col-12 col-md-6 text-container ">
+                    <p class="text-center text-sm-left">Whether you're primed to dominate the global market or looking to generate more in-store foot traffic - we have the experience and tools to take you to the top of your industry's SEO in Perth.</p>
+                </div>
+            </div>
+
+            {# row two #}
+            <h2 class="text-center text-sm-left section-title-ml mt-4">Professional SEO in Perth to Bring Top-Quality Traffic</h2>
+            <div class="row no-gutters justify-content-center ">
+                <div class="col-12 col-md-6 text-container">
+                    <p class="text-center text-sm-left">Our SEO services in Perth are designed to drive high-quality traffic to your website, bringing you results that are sustainable in the long term. We perform competitor analysis, keyword research, content creation, link-building, and much more. </p>
+                    <p class="text-center text-sm-left">This means we create a tailored growth plan that takes into account your business needs, the demands of your industry, and that brings in steady traffic for the years to come.</p>
+                </div>
+                <div class="col-12 col-md-6 text-container ">
+                    <p class="text-center text-sm-left">In other words, our SEO services in Perth take care of all the tough digital, techy stuff. You sit back, relax, and watch the sales roll in.</p>
+                    <p class="text-center text-sm-left">If you are ready to catapult your business to the next level by dominating SEO in Perth, come claim your free strategy call with a Digital Strategist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "partials/en-section-free-session.twig" %}
+    {% include "partials/en-section-experience.twig" %}
+    {# <div class="d-none d-md-block d-lg-none">{% include "partials/en-section-services-seo-tablet.twig" %}</div>
+    <div class="d-block d-md-none d-lg-block">{% include "partials/en-section-services-seo-new.twig" %}</div> #}
+    {% include "partials/en-section-services-seo-carousel.twig" %}
+
+    <section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">SEO in Perth - FAQs</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                            {# Q1  #}
+                            <h3 itemprop="name">Why is First Page the best agency for SEO in Perth?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>At First Page, we believe that your business deserves to be seen by the world - and that means absolutely dominating Google for your industry. </p>
+                                <p>With optimised, tailored strategies and a decade of experience, we've got what it takes to put businesses of all sizes at the top of search engine results.</p>
+                                <p>In fact, over the past 10 years, we've generated over $3.8 billion in sales for our clients, all while maintaining a near-perfect 4.9/5 rating on Google.</p>
+                                <p>We’re the game-changing SEO agency in Perth, and the specialists in driving immense amounts of traffic to our clients' websites. </p>
+                                <p>We know how to make your business rank at the top of the and catapult your sales to the next stratosphere. That's how we earned our reputation for the best SEO services in Perth. </p>
+                                <p>But don’t just take our word for it. Book a free strategy call with a Digital Strategist, to see for yourself what we can do for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                            {# Q2  #}
+                            <h3 itemprop="name">How does SEO work?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Search engine optimisation (SEO) is the process of making a website more visible on search engines, so it can be found by people who're searching for your products online.</p>
+                                <p>In other words, SEO strengthens your website’s organic presence, without paid advertising, to get more leads and build your brand authority.</p>
+                                <p>Professional SEO in Perth determines the most relevant, high-traffic key phrases that your potential customers will be searching for, and then strategically places them throughout the text on your website. </p>
+                                <p>When people search using these keywords, search engine bots notice they're on your website, and show your website on the search engine results page (SERP).</p>
+                                <p>It sounds quite simple, but effective Google SEO in Perth involves much more than keyword research. Seamless, intuitive user experiences are also taken into account. Is your site easy to navigate? How often do you upload quality content for your visitors? </p>
+                                <p>SEO takes every facet of your website into account. Our SEO experts can improve the user experience, establish you as an authority online, and explode your traffic.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                            {#Q3#}
+                            <h3 itemprop="name">Where do I start with SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>There are 3 ways you can start with SEO:</p>
+                                <p class="font-weight-bold mb-1">Backlinks</p>
+                                <p>Backlinks are like a digital vote. It is a link from a page of your website to another. This technique consists of having your website linked to another relevant website to increase your authority online.</p>
+                                <p>With First Page SEO services in Perth, we know that not all backlinks are the same. We don't bother with low-quality links that will do nothing to lift your website's rankings.</p>
+                                <p class="font-weight-bold mb-1">Keyword research</p>
+                                <p>Keyword research is the process of finding out which words your ideal customers enter into the search bar, when they're looking for information or shopping online.</p>
+                                <p>The search engines show the websites they think best meets the user's search request. Our SEO services will provide the best  your website to rank on google.</p>
+                                <p class="mb-1"><u>To get started with keyword research:</u></p>
+                                <ul>
+                                    <li>Make a list of relevant topics that your audience is searching for</li>
+                                    <li>Look at how your competition is ranking for those keywords</li>
+                                    <li>Use these keywords 3-5 times throughout your copy</li>
+                                </ul>
+                                <p class="font-weight-bold mb-1">On-Page SEO</p>
+                                <p>On-page SEO in Perth optimises your site for both visitors and search engines bots. Using your website should be an easy, pleasant experience for the user. At the same time, front- and back-end components of the website are optimised to rank higher on search engines and bring customers.</p>
+                                <p class="mb-1"><u>To get started with on-page SEO:</u></p>
+                                <ol >
+                                    <li>Conduct an SEO audit of your website </li>
+                                    <li>Update URLs, page titles, meta descriptions and copy to includes keywords</li>
+                                    <li>Add internal and external links</li>
+                                    <li>Be clear on the value proposition for each page</li>
+                                    <li>Optimise visual content</li>
+
+                                </ol>
+                                <p>You don’t have to do it all alone. Let our SEO services in Perth take care of the techy stuff for you. Book a free strategy call with a Digital strategist today.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                            {#  Q4  #}
+                            <h3 itemprop="name"> Can I just do SEO in Perth by myself?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>You can. However, we would argue that this is not the best use of your time as a business owner. You might think that building your own team is cheaper than hiring an agency, but the opposite tends to be true. </p>
+                                <p>You could build an in-house SEO team, but the resources involved are far more expensive than SEO Perth prices. Think about it: You’ll have to recruit and look for the right people, train them, and pay for their salaries and software. After all that, you never know if they know what they're talking about, or if they will stick around long enough to long-term results.</p>
+                                <p>Yes, an agency needs to make profits, but their SEO Perth prices also take many costs on your behalf.</p>
+                                <p>For example, they take care of all the software tools it takes to manage an SEO strategy. These tools alone can cost you thousands of dollars a month.</p>
+                                <p>An agency already has all the tools it needs to get results. All you pay for is its expertise, deep market knowledge, and services.</p>
+                                <p>With our SEO services in Perth, you are working with experienced professionals who will start growing your business from day one.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse17">
+                            {# Q5  #}
+                            <h3 itemprop="name">How much does SEO cost?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>SEO Perth prices vary depending on a multitude of factors including:</p>
+                                <ul>
+                                    <li>Budget. We offer a tailored growth plan based on your goals and budget.</li>
+                                    <li>Scope of work. SEO Perth prices depend on the work that is required and the objectives you want to achieve. It takes into account the competitiveness of your niche, the difficulties of a targeted keyword, and the business growth ambition.  </li>
+                                    <li>Desired Results. Different results required different investments and strategies. Our SEO services in Perth are tailored to fit your business's needs. </li>
+                                    <li>Expertise and involvement</li>
+
+                                </ul>
+                                <p>You get what you pay for. Be careful of cheap prices for SEO in Perth. SEO is way more complex than doing the basic keyword research. It requires deep knowledge of the industry, niche, market, competition, and a well-informed and tailored strategy. </p>
+                                <p>Cheap SEO services in Perth means a low level of experience, being behind on the latest technical best practices, and only doing the bare minimum – after all, this is what you've paid for.</p>
+                                <p>Making mistakes in your SEO can have a huge impact on your website and sales. Be careful of any SEO agency in Perth that advertises a set price list or checklist. Every business’s needs are different, and what works for one might not work for another.</p>
+                                <p>SEO can be very lucrative for your business IF done right. Investing in the right partner is key to success – like First Page SEO SEO agency in Perth.</p>
+                                <p>- Black-hat vs White-hat. </p>
+                                <p>The cost of SEO varies based on which strategy you choose to go with. Black-hat SEO focuses on quick wins and relies on manipulating Google algorithms to increase traffic. This is a short-term tactic and is not sustainable. Results will dissipate over time, and you are at risk of getting a penalty if Google finds out what you are doing. </p>
+                                <p>White-hat SEO, on the contrary, is a long-term approach that follows search engines guidelines and focuses on improving your customer experience. This is a long-term approach. Results take longer to show, but they are reliable and sustainable. It involves investing in content that generates results for the years to come.</p>
+                                <p>Black-hat SEO services in Perth are cheaper than white-hat. However, you must ask yourself if it's worth risking your website to be unlisted from search results.</p>
+                                <p>Here at First Page, we are all about compliance and long-lasting results.</p>
+                                <p>The SEO Perth prices we quote you will depend on your business's own nuance and specific requirements. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse18">
+                            {#  Q6 #}
+                            <h3 itemprop="name"> How are SEO and PPC different?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p><a href="{{ home_url }}google-ads/">PPC</a>  stands for pay-per-click, a model of marketing in which you pay a fee each time one of your ads is clicked. In other words, you are buying visits to your website, each and every time.</p>
+                                <p>When using PPC, you are bidding against other competitors in the industry for ad placement in search engines when someone searches for a keyword related to your business. </p>
+                                <p>PPC will bring you traffic and results quickly for the duration of the campaign. However, you have to invest upfront and the results aren't as sustainable as SEO.</p>
+                                <p>On the other hand, SEO in Perth is based on organic search. This means you don’t have to pay for traffic. It takes longer to implement and to generate results, but once you're ranking higher, you will stay there for a very long time.</p>
+                                <p>An SEO agency in Perth can bring you evergreen traffic that will grow your business over time and boost your sales.</p>
+                                <p>SEO and PPC complement each other and work well in synergy. To know more about our PPC services and see if they could be right for you, <a href="{{ home_url }}google-ads/">click here</a>.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse19">
+                            {# Q7#}
+                            <h3 itemprop="name">Can you help me recover from loss of traffic?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Loss of traffic happens, and there are various reasons why. Maybe you are not publishing enough new content, maybe the Google algorithm changed, maybe your SEO strategy isn’t optimized or need to be reviewed.</p>
+                                <p>SEO is a complex science. What remains key in every successful SEO campaign is authenticity. Getting on the first page of search engines must be achieved through legitimate means. </p>
+                                <p>If your site’s traffic has suddenly dropped, you may have been hit by a Google penalty.</p>
+                                <p>Whatever the reason why you lost traffic, we can identify it and solve it - QUICKLY.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse20">
+                            {#                          Q8  #}
+                            <h3 itemprop="name">Do you offer eCommerce SEO services?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>We do!</p>
+                                <p>Our <a href="{{ home_url }}ecommerce-seo/">eCommerce SEO</a> services in Perth have helped over 500 of our clients explode their sales. </p>
+                                <p>It is important to note that eCommerce SEO serves other objectives than local SEO in Perth.</p>
+                                <p>Local SEO reaches customers in one specific area. It makes sure your business is seen by people who live nearby, and brings proximity between your business and local customers. It's best for physical stores or for businesses that are looking to target a specific area.</p>
+                                <p>eCommerce SEO in Perth is for people with an online shop, who want to have their products on the top shelf, independently of geographic location. For example, your Perth-based business may also need some Sydney SEO to target online customers from there.</p>
+                                <p>eCommerce SEO focuses on your products by improving your brand headline, merchandise description, and product listings for peak visibility and higher rankings on Google. </p>
+                                <p>It's all about attracting new potential customers to your online store to catapult your sales. From product page to checkout, your customers will have the best online shopping experience.</p>
+                                <p>eCommerce SEO services in Perth works well when coupled with a PPC (pay-per-click) campaign. The combination of both organic and paid methods can positively increase your revenue!</p>  
+                                <p>To know more about our eCommerce SEO services in Perth, <a href="{{ home_url }}ecommerce-seo/">click here</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse21">
+                            {# Q9  #}
+                            <h3 itemprop="name">Do you offer international SEO services?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Looking to grow your brand outside of Perth? We are experts in international SEO. Here’s how it works…</p>
+                                <p>International SEO is similar to local SEO in Perth, but on a bigger, more complex scale. It focuses on attracting customers from specific areas, optimising your website so you can make sales from anywhere in the world.</p>
+                                <p>Here at First Page, we can open up your business to a whole new world. No more clicking on the cart and realising you cannot check out because you’re in the wrong region!</p>
+                                <p>So, what are the benefits?</p>
+                                <p>International SEO expands your reach and gives you the possibility to attract customers, from all over the world.</p>
+                                <p>It takes into account local requirements as foreign search engines have different algorithms to Google or Bing. </p>
+                                <p>The First Page SEO agency in Perth is fluent in all aspects of optimising websites for higher ranks on other popular search engines.</p>
+                                <p>Our SEO services in Perth can help your multi-regional websites attract your target audience and establish a business beyond borders.</p>
+                                <p>To know more about how we can help you thrive outside of Australia, <a href="{{ home_url }}international-seo/">click here</a>.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse22">
+                            {#  Q10  #}
+                            <h3 itemprop="name">Do you offer link-building as a standalone service?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Of course we do. Even better, our SEO Perth company knows that not all backlinks are the same.  </p>
+                                <p>One backlink from a high-performing, relevant website is way more valuable than 100 low-quality backlinks. That is why our SEO Perth company only uses high-quality backlinks from reputable sources.</p>
+                                <p>Backlinks are like a digital vote, and the more high-quality backlinks you get, the more trust your website gains. It helps search engines like Google to recognise the relevance of your website, and as such, you will reap the SEO rewards from this backlink. </p>
+                                <p>So, while other agencies will try to sell you a high number of backlinks on low-quality websites, we actually focus on high-quality backlinks backed by ranking guarantees.</p>
+                                <p>We create high-quality content to gain placement on some of the most relevant and reputable websites on the internet to build your authority and boost your sales.</p>
+                                <p>Discover more about <a href="{{ home_url }}link-building/">First Page link-building services</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse23">
+                            {#  Q11  #}
+                            <h3 itemprop="name">How long does SEO take?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>eCommerce and local SEO in Perth are long-term processes that bring results in the long run. SEO can pay 10 times the investment. </p>
+                                <p>How soon the first results can be seen depends on where we are starting from, the shape of your website, and many other SEO factors.</p>
+                                <p>Remember that SEO results grow over time. Therefore, whatever results you’re seeing at 6 months should be considerably less than what you’re seeing at 12 months. </p>
+                                <p>Be patient and trust the process. Our SEO agency in Perth will keep you up-to-date along the way and send you reports, so you have visibility of everything that is happening with your campaign.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse24">
+                            {#  Q12  #}
+                            <h3 itemprop="name">What’s the difference between white hat and black hat SEO? </h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p><span class="font-weight-bold">Black hat SEO</span> focuses on quick wins and violates Google guidelines. It relies on manipulating the Google algorithm to boost traffic, while disregarding the customer experience. </p>
+                                <p>Black-hat SEO strategies include duplicating content, stuffing keywords, re-directing users to another site page, and linking your website to other non-relevant content.</p>
+                                <p>Such tactics are detrimental to the health of your website. Results are not sustainable and you are at risk of getting a penalty if Google notices that you are using it. In fact, black-hat local SEO in Perth can lead your website to be completely unlisted from search results.</p>
+                                <p><span class="font-weight-bold">White hat SEO</span> is the correct and ethical way to optimise a site with SEO. It follows search engines guidelines and the rules that have been established to do it the proper way. </p>
+                                <p>White-hat SEO is not manipulative. It provides the audience with the best experience possible. Its strategies include publishing high-quality content, improving page loads time, and giving real value to your users. </p>
+                                <p>This is a long-term approach that requires more work upfront. This means that results will take time, but they will have a lasting, positive and sustainable impact on your business. </p>
+                                <p>Here at First Page, we haven’t grown to become the number 1 fastest growing agency in APAC by doing black-hat SEO. We only produce real, and long-lasting results for our clients. Contact us today to get started. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-form-popup.twig" with {'form_page': 'SEO Perth (Pop-up Form)'} %}
+
+{% endblock %}

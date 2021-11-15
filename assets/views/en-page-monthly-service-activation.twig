@@ -1,0 +1,25 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+<section class="banner">
+    <div class="container text-center">
+        <h1>Monthly Service Activation</h1>
+    </div>
+</section>
+
+<section class="secure-payments">
+    <div class="container">
+        <div class="secure-payments-header text-center">
+            <h2>Secure Payments</h2>
+            <p>Please use the form below to make your first payment and activate your monthly service at the rate below. An invoice for the payment will be sent to you via email within 5 business days.</p>
+        </div>
+        {{ '[simpay id="13064"]'|shortcodes }}
+        <div class="secure-payments-footer text-center">
+            <img src="{{ site.theme.link }}/assets/img/cards.png" alt="" width="215" height="40">
+            <p>By making this payment, you are agreeing to initiate our services under our standard <a href="{{ home_url }}terms-of-service/" target="_blank">Terms of Business</a>.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

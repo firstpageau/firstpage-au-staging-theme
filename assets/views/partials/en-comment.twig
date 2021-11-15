@@ -1,0 +1,28 @@
+<div class="blog-comment {{comment.comment_type}}" id="blog-comment-{{comment.ID}}">
+	<div class="comment-cont">
+		<div class="comment-padding">
+			<div class="v-line"></div>
+			<div class="h-line"></div>
+		</div>
+		<div class="comment-avatar"><img src="{{ comment.author.avatar|resize(64) }}" class="img-fluid" alt="Author" /></div>
+		<div class="comment-text">
+			<div class="comment-heading">
+				<div class="comment-info"><span class="comment-author">{{ comment.author.name }}</span> <span class="comment-date"> - <strong>{{ comment.date|date("M d Y") }}</strong></span></div>
+				<div class="comment-reply btn-comment-reply">Reply</div>
+			</div>
+			<div class="comment-content">{{comment.comment_content|wpautop}}</div>
+		</div>
+	</div>
+
+	<section class="comment-box">
+		{% include "partials/en-comment-form.twig" %}
+	</section>
+
+	{% if post.comments %}
+		<div class="comment-replies">
+			{% for cmt in comment.children %}
+				{% include "partials/en-comment.twig" with {comment:cmt} %}
+			{% endfor %}
+		</div>
+	{% endif %}
+</div>

@@ -1,0 +1,352 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+    <style>
+
+        section.section-paragraph.audit-template-section {
+            padding-top: 0px;
+        }
+
+        .get-audit-btn-holder {
+            margin-bottom: 90px;
+            padding-bottom: 70px;
+        }
+
+        .audit-template-img{
+            max-width: 565px;
+            margin: auto;
+            display: block;
+        }
+
+        .get-audit-btn {
+            width: 66%;
+        }
+
+        @media (min-width: 768px){
+
+        }
+
+        @media (min-width: 992px) {
+
+            .page-competitor-audit .hero-img{
+
+                bottom:-121px !important;
+            }
+
+        }
+
+        @media (max-width: 1200px){
+            .audit-template-hero-img-lg {
+                max-height: 485px;
+                margin-right: 111px;
+            }
+
+            .page-competitor-audit .hero-img{
+                right: -368px !important;
+            }
+
+            .page-competitor-audit .quote-form{
+                /*width: 610px;*/
+            }
+
+        }
+
+        @media (max-width: 992px){
+            .page-competitor-audit .quote-form{
+                width: 610px;
+            }
+        }
+
+        @media (max-width: 769px) {
+
+            .page-google-ads section.banner .banner-description p {
+                min-height: 267px;
+            }
+
+            .page-competitor-audit .quote-form{
+                width:100% !important;
+                margin: auto;
+            }
+
+            .page-competitor-audit .banner-hero-cont{
+                max-width: 100% !important;
+            }
+
+            .page-competitor-audit .awards-badges {
+                text-align: center !important;
+
+            }
+        }
+
+        @media (max-width: 576px){
+            .audit-template-img {
+                max-width: 100%;
+            }
+            .audit-template-hero-mobile img {
+                max-width: 350px;
+                margin: auto;
+                display: block;
+            }
+
+            .audit-template-hero-mobile img {
+                max-width: 100%;
+                margin-top: 35px;
+            }
+
+            section.section-paragraph.audit-template-section {
+                padding: 15px;
+            }
+
+            .get-audit-btn {
+                width: 95%;
+            }
+        }
+
+
+    </style>
+
+    <section class="banner form-space" >
+        <div class="container banner-hero">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide">Get your FREE Competitor SEO Audit in just minutes</h1>
+                <div class="banner-description-full-width">
+                    <p class="form-hide">Get a behind-the-scenes look into the EXACT SEO strategies your competitors are using (so you can stay one step ahead of them)</p>
+                    <div class="form-hide audit-template-hero-mobile d-block d-sm-none">
+                        <img src="{{ site.theme.link }}/assets/img/img_competitor_audit_au@2x.png"  alt="First Page" />
+                    </div>
+                </div>
+                <div id="back-to-competitor-form"></div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'Competitor Audit', 'form_button': 'Get My Free Report', 'form_website_placeholder': 'Enter competitor website', 'form_hs': 'hs_competitor_audit_form', 'form_thankyou': 'thank-you-competitor'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+
+            <div class="hero-img d-none d-lg-block audit-template-hero-img">
+                <img src="{{ site.theme.link }}/assets/img/img_competitor_audit_au@2x.png"  alt="First Page" />
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph audit-template-section">
+        <div class="container">
+            <h2 class="text-center mt-4">What does your competitor SEO audit include?</h2>
+            <div class="row mt-5">
+                <div class="col-12 col-md-4 text-center">
+                    <img src="{{ site.theme.link }}/assets/img/icn_keyword_analysis_au.svg" alt="">
+                    <p class="lead font-weight-bold mt-3" style="font-size: 25px;">Keyword Analysis</p>
+                    <p>Find out which keywords your competitors are targeting and which keywords are delivering them the best results and ROI</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <img src="{{ site.theme.link }}/assets/img/icn_opportunity_analysis_au.svg" alt="">
+                    <p class="lead font-weight-bold mt-3" style="font-size: 25px;">Opportunity Analysis</p>
+                    <p>Spy on your competitors’ website, technical SEO strategies, traffic volume, and overall domain authority</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <img src="{{ site.theme.link }}/assets/img/icn_traffic_au.svg" alt="">
+                    <p class="lead font-weight-bold mt-3" style="font-size: 25px;">Traffic Analysis</p>
+                    <p>See exactly where your competitors are getting their most important traffic from - this includes both organic and paid traffic</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3"></div>
+                <div class="col-12 col-md-3 text-center">
+                    <img src="{{ site.theme.link }}/assets/img/icn_seo_analysis_au.svg" alt="">
+                    <p class="lead font-weight-bold mt-3" style="font-size: 25px;">Onsite SEO Analysis</p>
+                    <p>Find quick-growth opportunities by identifying the gaps between you and your competitors SEO strategies</p>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <img src="{{ site.theme.link }}/assets/img/icn_backlinks_au.svg" alt="">
+                    <p class="lead font-weight-bold mt-3" style="font-size: 25px;">Backlink Profile</p>
+                    <p>Discover where your competitors are getting their links, so you can create a strategy that outperforms them</p>
+                </div>
+                <div class="col-12 col-md-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph audit-template-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="img-fluid audit-template-img mb-5" src="{{ site.theme.link }}/assets/img/competitor-seo-audit-au@2x.png" alt="">
+                    <a href="#back-to-competitor-form" class="btn fp-btn fp-btn-orange d-block m-auto get-audit-btn js-anchor-link">GET MY FREE COMPETITOR AUDIT IN 5 MINUTES</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-paragraph section-client-reviews strategy-form-client-review">
+        <div class="container">
+            <h2 class="text-center">See what our clients are saying</h2>
+            <div class="row testimonial-con">
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            Great team! FPD created three blog articles for our business and their campaign management is professional and prompt… A pleasant experience to work with collaborative business partners like FPD.
+                        </div>
+                        <div class="person">
+                            <div class="name">WYATT JONES</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            Working with First Page Digital has been extremely great… very prompt and professional. Most importantly, they deliver results! Recommend and thumbs up!
+                        </div>
+                        <div class="person">
+                            <div class="name">EWAN SOLOMAN</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            FPD has been our appointed digital agency for close to a year now and the team has been very responsive, helpful in improving both on SEO and PPC ads… The team have also been very knowledgeable in improving our campaigns and improving overall SEO on our eShops.
+                        </div>
+                        <div class="person">
+                            <div class="name">Calvin Johnson</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row testimonial-con">
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            Just started working with First Page Digital for the past few months. The service they have provided has been  professional and detailed… we can see the amount of effort and time that has been put into our campaigns.
+                            Thank you team! Keep up the good work
+                        </div>
+                        <div class="person">
+                            <div class="name">THELMPRINT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            Responsive and professional! First Page delivered a great ROI for our company.
+                        </div>
+                        <div class="person">
+                            <div class="name">Timothy Tang</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            My account manager has been very helpful and I
+                            have been with First Page for about 2 years. Friendly, responsible and accountable.
+                            Thanks First Page!
+                        </div>
+                        <div class="person">
+                            <div class="name">LUCAS S</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    {% include "partials/en-section-featured-in-news.twig" %}
+
+    <div class="container mt-5 mb-5 get-audit-btn-holder">
+        <a href="#back-to-competitor-form" class="btn fp-btn fp-btn-orange d-block m-auto get-audit-btn js-anchor-link">GET MY FREE COMPETITOR AUDIT IN 5 MINUTES</a>
+    </div>
+
+    <script>
+        //back to query form anchor
+        $(function () {
+            $('.js-anchor-link').click(function(e){
+                e.preventDefault();
+
+                var target = $($(this).attr('href'));
+                if(target.length){
+                    $("html, body").animate({ scrollTop: $('#back-to-competitor-form').offset().top - 300 }, 1000);
+                }
+            });
+        });
+
+    </script>
+
+
+{% endblock %}

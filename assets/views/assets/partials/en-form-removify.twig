@@ -1,0 +1,44 @@
+{% set form_page     = (form_page is empty)     ? 'General' : form_page %}
+{% set form_button   = (form_button is empty)   ? 'Free SEO Quote' : form_button %}
+{% set form_hs       = (form_hs is empty)       ? 'hs_removify_form' : form_hs %}
+{% set form_thankyou = (form_thankyou is empty) ? 'thank-you' : form_thankyou %}
+
+<div class="quote-form quote-form-big">
+    <!-- Quote Form -->
+    <form class="fp-form" action="{{ home_url }}{{ form_thankyou }}" method="POST">
+        <div class="form-step-1 form-step">
+            {% block step_1 %}
+            {% endblock %}
+        </div>
+        <div class="form-step-2 form-step">
+            <h2>Please enter your details:</h2>
+            <div class="form-mid row">
+                <div class="col-12 col-md-6 mb-3">
+                    <input type="text" class="form-control" name="lead_name" placeholder="Full Name*" required="" />
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <input type="tel" class="form-control" name="lead_phone" placeholder="Phone*" required="" />
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <input type="email" class="form-control" name="lead_email" placeholder="Email*" data-parsley-error-message="Please enter a valid email address" data-parsley-trigger="change" required="" />
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <input type="text" class="form-control" name="lead_company" placeholder="Company name" />
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <input type="hidden" name="lead_formname" value="{{ form_page }}" />
+                    <input type="hidden" name="lead_language" value="en" />
+                    <input type="hidden" name="lead_formtype" value="{{ form_hs }}" />
+                    <button type="submit" class="form-control btn fp-btn fp-btn-orange" onclick="ga('send','event', {'eventCategory': 'Form','eventAction': 'Click', 'eventLabel': '{{ form_page }}'});">{{ form_button }}</button>
+                </div>
+            </div>
+        </div>
+        {% block step_thankyou %}
+        <div class="form-thankyou">
+            <h2 class="bold-lg">Yes! Welcome to more<br />leads, sales &amp; success online.</h2>
+            <h3 class="small">Your Digital Growth Specialist will be in touch within 48 hours. Alternatively, for an instant chat, please call <a href="tel:{{ site_phone|replace({' ':''}) }}" class="text-nowrap">{{ site_phone }}</a></h3>
+        </div>
+        {% endblock %}
+    </form>
+    <!-- End of Form -->
+</div>

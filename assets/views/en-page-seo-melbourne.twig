@@ -1,0 +1,463 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+    <section class="banner form-space">
+        <div class="container banner-hero ">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide text-center text-sm-left">The best agency for <br class="d-none d-lg-block">SEO in Melbourne</h1>
+                <div class="banner-img-mb d-sm-none form-hide">
+                    {# <img src="{{ site.theme.link }}/assets/img/location-brisbane-bg-mb.png" srcset="{{ site.theme.link }}/assets/img/location-brisbane-bg-mb.png, {{ site.theme.link }}/assets/img/location-brisbane-bg-mb@2x.png 2x" alt="First Page" /> #}
+                    <img src="{{ site.theme.link }}/assets/img/mel_location_bg_sm@2x.png" alt="First Page" />
+
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'SEO Sydney', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-section-featured-in-news.twig" %}
+
+
+    <section class="section-paragraph">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-none d-xl-inline-block "/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png, {{ site.theme.link }}/assets/img/img-seo-traffic-lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-lg-inline-block d-xl-none seo-traffic-lg-img"/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/>
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Explode your traffic and outgrow your competitors with SEO in Melbourne</h2>
+                <p class="text-center text-sm-left">Are you looking to revolutionise your business, become an authority in your niche, and generate a large number of sales on autopilot directly from your website?</p>
+                <p class="text-center text-sm-left">But despite all your efforts and investment, you're still far from getting the results you truly want?</p>
+                <p class="text-center text-sm-left">At First Page, we have the solution - next-level SEO for Melbourne websites. </p>
+                <p class="text-center text-sm-left">And there’s no better way on earth to organically grow your business.</p>
+                <p class="text-center text-sm-left">The ROI of SEO in Melbourne is unmatched - it’s like building a machine that brings you leads and sales on autopilot. </p>
+                <p class="text-center text-sm-left">With four billion people searching for answers on Google, being on the first page of search engines will drastically increase your sales and change your life forever.</p>
+            </div>
+        </div>
+    </section>
+
+    {#  circle data section sm #}
+    <section class="section-paragraph d-block d-md-none pt-4">
+        <div class="row no-gutters align-items-center ">
+            <div class="col-12 text-container">
+                <p class="light-heading text-center"> The proof is in <br>the numbers:</p>
+            </div>
+            
+            <div class="col-12 image-container-right mb-5">
+                <img src="{{ site.theme.link }}/assets/img/mel_location_data_img_sm.svg" class="img-fluid d-lg-none" alt="First Page"/>
+            </div>
+             
+            <div class="col-12 text-container">
+                <p class="text-center">In today's digital world, you must have a strong online presence in Melbourne SEO to survive. </p>
+                <p class="text-center">The competition for Melbourne SEO is tough. To win, you have to know what you're doing, with a properly executed strategy and an established online presence.</p>
+                <p class="text-center">Here at First Page, our SEO services in Melbourne has helped businesses of all sizes to catapult their sales and explode their growth.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+{#  circle data section md #}
+    <section class="section-paragraph d-none d-md-block d-lg-none circle-data-section-md">
+
+        <div class="row no-gutters ">
+            <div class="col-6 text-container circle-data-section-left-col">           
+                <p class="light-heading">The proof is in the numbers:</p>
+                <p>In today's digital world, you must have a strong online presence in Melbourne SEO to survive.</p>
+                <p>The competition for Melbourne SEO is tough. To win, you have to know what you're doing, with a properly executed strategy and an established online presence.</p>
+                <p>Here at First Page, our SEO services in Melbourne has helped businesses of all sizes to catapult their sales and explode their growth.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+
+            <div class="col-6 text-container">
+                {# <p class="light-heading">Still not convinced? <br> Have a ponder <br> about this...</p> #}
+
+            </div>
+        </div>
+
+        <div class="tab-data-img-container">
+            <img src="{{ site.theme.link }}/assets/img/mel_location_data_img_md.svg" class="" alt="First Page"/>
+        </div>
+
+
+    </section>
+    {#  circle data section lg #}
+    <section class="section-paragraph d-none d-lg-block circle-data-section">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/mel_location_data_img_lg.svg" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>                
+            </div>
+
+            <div class="col-12 col-md-6 text-container circle-data-section-left-col">
+                <p class="light-heading mt-5">The proof is in the numbers:</p>            
+                <p>In today's digital world, you must have a strong online presence in Melbourne SEO to survive.</p>
+                <p>A business without proper SEO in Melbourne is literally giving away all the traffic to its competitors.</p>
+                <p>The competition for Melbourne SEO is tough. To win, you have to know what you're doing, with a properly executed strategy and an established online presence.</p>
+                <p>Here at First Page, our SEO services in Melbourne has helped businesses of all sizes to catapult their sales and explode their growth.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    {#  location map sm #}
+    <section class="section-paragraph location-map-mb-section d-block d-md-none">
+        <div class="row no-gutters">
+            <div class="col">
+                <img src="{{ site.theme.link }}/assets/img/mel_location_map_sm.svg" class="location-map-img d-block mx-auto" alt="First Page"/>
+
+            </div>
+
+        </div>
+    </section>
+
+    {#  location map md#}
+    <section class="section-paragraph location-map-section d-none d-md-block">
+        <div class="row no-gutters">
+            <div class="col">
+                <img src="{{ site.theme.link }}/assets/img/mel_location_map_lg.svg" class="location-map-img location-map-img-lg d-none d-lg-block mx-auto" alt="First Page"/>
+                <img src="{{ site.theme.link }}/assets/img/mel_location_map_md.svg" class="location-map-img location-map-img-md d-block d-lg-none mx-auto" alt="First Page"/>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-paragraph location-title-section">
+        <div class="row no-gutters">
+            <div class="col">
+                <h2 class="text-center">Explode your traffic with <br class="d-none d-lg-block">the top-rated agency for Melbourne SEO</h2>
+                <p class="text-center location-sub-title">Here at First Page, we aren’t just a <br class="d-block d-md-none"> digital agency…</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    {#  office section  #}
+    <section class="section-paragraph office-img-section pt-3">
+        <div class="rwo no-gutters">
+            <img src="{{ site.theme.link }}/assets/img/location-office-sm.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-sm.png, {{ site.theme.link }}/assets/img/location-office-sm@2x.png 2x"
+                 class="img-fluid d-block d-md-none m-auto" alt="First Page"/>
+            <img src="{{ site.theme.link }}/assets/img/location-office-md.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-md.png, {{ site.theme.link }}/assets/img/location-office-md@2x.png 2x"
+                 class="img-fluid d-none d-md-block d-lg-none m-auto" alt="First Page"/>
+            <img src="{{ site.theme.link }}/assets/img/location-office-lg.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-lg.png, {{ site.theme.link }}/assets/img/location-office-lg@2x.png 2x"
+                 class="img-fluid d-none d-lg-block m-auto" alt="First Page"/>
+        </div>
+
+    </section>
+
+    <section class="section-paragraph">
+        <div class="container">
+            <h2 class="text-center text-sm-left section-title-ml">At First Page, we're different from all the other Melbourne SEO agencies you may have come across.</h2>
+            <div class="row no-gutters justify-content-center ">
+                <div class="col-12 col-md-6 text-container">
+                    <p class="text-center text-sm-left"> Your growth is our priority, and we pride ourselves on bringing our clients real and sustainable results for SEO in Melbourne.</p>
+                    <p class="text-center text-sm-left">While other agencies focus on traffic and quantity, we bring all our attention to your growth. In fact, we’ve generated billions of dollars in revenue for our clients. For years, our SEO services in Melbourne have been taking businesses to the first page of search engines.</p>
+                    <p class="text-center text-sm-left">Owned and operated locally, we know the specificity and challenges of growing a business in Australia. We offer different services such as keywords research, link-building, website optimisation, and more. Our Melbourne SEO strategies are tailored to your business needs. We take into account the demands of your industry, to bring you long-lasting and sustainable growth.</p>
+                </div>
+                <div class="col-12 col-md-6 text-container ">
+                    <p class="text-center text-sm-left mb-0">You may be a physical shop looking to attract foot traffic with local SEO in Melbourne, or an enterprise looking to lift your wings and expand off the continent. Either way, we have the resources and experience to transform your goals into reality.</p>
+                    <p class="text-center text-sm-left">Our SEO consultants in Melbourne are all about integrity and results. Always on top of the latest changes to search engine algorithms, we bring the edge to get one up on your competitors.</p>
+                    <p class="text-center text-sm-left">Grab a coffee, sit back, and watch the sales roll in. If you're ready to grow your business with eCommerce and local SEO in Melbourne, book a free strategy call with one of our Digital Strategists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "partials/en-section-free-session.twig" %}
+    {% include "partials/en-section-experience.twig" %}
+    {# <div class="d-none d-md-block d-lg-none">{% include "partials/en-section-services-seo-tablet.twig" %}</div>
+    <div class="d-block d-md-none d-lg-block">{% include "partials/en-section-services-seo-new.twig" %}</div> #}
+    {% include "partials/en-section-services-seo-carousel.twig" %}
+
+    <section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">SEO in Melbourne FAQs</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                            {# Q1  #}
+                            <h3 itemprop="name">What makes First Page the best Melbourne SEO agency?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Best at SEO in Melbourne?? We're the best in Australia!</p>
+                                <p>Our SEO services in Melbourne are unmatched, never delivering less than top value and tangible impact for our clients.</p>
+                                <p>With 11 offices globally we offer you support when you need it. <a href="{{home_url}}seo-sydney/">Need SEO services in Sydney</a>? Want to expand to <a href="{{home_url}}seo-adelaide">Adelaide SEO</a>, international SEO, or all of the above? Our Melbourne SEO agency knows your business deserves to serve as many customers as possible.</p>
+                                <p>The proof is in the record. The businesses that put their trust in us have generated $3.8+ billion in sales, and given us an astonishing Google rating 4.9/5 for our SEO services in Melbourne.</p>
+                                <p>No agency does eCommerce and local SEO in Melbourne the way we do.</p>
+                                <p>We're the specialist in bringing our clients immense traffic. With our SEO services in Melbourne, you'll get results, sustainability, guarantee, and satisfaction.</p>
+                                <p>Our SEO consultants in Melbourne know exactly how to put your business on the first page of Google. That's why we're the fastest-growing agency in APAC.</p>
+                                <p>But don't take our words for it. Read our clients' testimonials for our SEO services in Melbourne, and judge for yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                            {#   Q2  #}
+                            <h3 itemprop="name">How does SEO in Melbourne work?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>SEO or Search Engine Optimisation is the art and science of bringing your website in front of your target audience - consistently. SEO in Melbourne attracts more highly qualified leads to a business, to drive ROI.</p>
+                                <p>SEO puts your website on the first page of search engines, so your customers can find you.</p>
+                                <p>eCommerce and local SEO in Melbourne consist of finding the most relevant keywords that your ideal customers are searching with. We'll position your business as the perfect solution to their problems.</p>
+                                <p>Search engines have bots that read through a websites’ pages, and then rank them to determine which one is best to answer the question.</p>
+                                <p>For enterprises and small businesses, SEO in Melbourne is more complex than just keyword research and includes a lot of other techniques and parameters. Some examples are the quality of the content being displayed on the website, its overall user experience, the load time and so much more.</p>
+                                <p>Among all the digital marketing channels, SEO drives the highest ROI. When done properly, it establishes your online business and boosts your sales to a level you never dreamed possible.</p>
+                                <p>To know more about how our SEO services in Melbourne can help your business grow, book a call with a Digital Strategist.</p>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                            {# Q3 #}
+                            <h3 itemprop="name">Where do I start with SEO in Melbourne?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>We get this question a lot. Here are three ways to start with SEO in Melbourne:</p>
+                                <p class="font-weight-bold mb-1">1. Keyword research</p>
+                                <p>Keyword research is usually undertaken by SEO consultants for Melbourne businesses. They'll identify the words and phrases that your target audience is looking for at high frequency, to incorporate them into your website copy.</p>
+                                <p>If you're new to keyword research:</p>
+                                <ul>
+                                    <li>Make a list of relevant words your audience is using to search for your products.</li>
+                                    <li>Use Google trends to evaluate which ones are being searched for the most.</li>
+                                    <li>Use the most relevant ones 3 to 5 times throughout your website copy.</li>
+                                </ul>
+                                <p class="font-weight-bold mb-1">2. On-Page SEO</p>
+                                <p>On-page SEO is the process of improving a user’s experience on your website and optimising it for search engine bots.</p>
+                                <p>When doing on-page SEO in Melbourne, you want to look at the back and front end of your website to attract more customers.</p>
+                                <p>Here are our tips to start on-page SEO:</p>
+                                <ol>
+                                    <li>Look at your overall website (structure, findability, user experience).</li>
+                                    <li>Write down the objective of each page.</li>
+                                    <li>Includes keywords in URLs, page titles, and meta descriptions.</li>
+                                    <li>Optimise your visual content.</li>
+                                    <li>Add internal and external links.</li>
+                                </ol>                        
+                                <p class="font-weight-bold mb-1">3. Backlinks</p>
+                                <p>Backlinks are links to your website, from other websites. Search engines bots see them as proof of the relevance and authority of your website, and rank your website higher for it.</p>
+                                <p>To have your website link on other websites, you must have relevant content that brings value.</p>
+                                <p>Our SEO consultants in Melbourne use backlinks to build your online authority and improve your ranking.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                            {#  Q4  #}
+                            <h3 itemprop="name">Can I just do SEO in Melbourne by myself?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>You can absolutely do the SEO services for your Melbourne business yourself. With deep research and a lot of practice, you can achieve some good results. But it doesn't mean that you should.</p>
+                                <p>Think about it for a second. By the time you've learned everything you need to and had enough trial-and-error to find out what works best for you, you might be out of business.</p>
+                                <p>SEO is very complex and requires expertise, investment in specific software that costs thousands of dollars, and knowledge of the industry. The search engine algorithms are always changing, so you have to keep your understanding of SEO up-to-date.</p>
+                                <p>Yes, you could build an in-house team or work with contractor SEO consultants in Melbourne. You might even think that it will be cheaper.</p>
+                                <p>This is rarely true.</p>
+                                <p>Keep in mind that the cost of an agency includes paying for all of this on your behalf.</p>
+                                <p>They already have everything in place to generate results. They have SEO consultants in Melbourne, ready to go, with all the software tools required to manage an SEO strategy.</p>
+                                <p>Next-level SEO services in Melbourne means guaranteed results, peace of mind, and time-saving.</p>
+                                <p>Building an internal team takes your time and energy away from critical business tasks.</p>
+                                <p>With an agency of SEO consultants in Melbourne, you are partnering with knowledgeable and experienced professionals solely dedicated to your growth.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse17">
+                            {#  Q5  #}
+                            <h3 itemprop="name">How much does SEO in Melbourne cost?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+
+                                <p>The cost of SEO in Melbourne depends on various factors:</p>
+                                <ul>
+                                    <li>Budget. Different budgets allow different service combinations. We tailor your growth plan to your specific business needs. We offer affordable SEO in Melbourne that fits what you can afford.</li>
+                                    <li>Area of consideration. The cost of SEO in Melbourne depends on where you are starting from, the shape of your website, and the level of change you're looking to implement.</li>
+                                    <li>Goals. The investment differs depending on the growth ambition and the time allocated to achieve it.</li>
+                                    <li>Expertise. The Melbourne SEO consultants you choose to work with - their depth of expertise and level of involvement - is critical.</li>
+                                </ul>
+                                <p>Our SEO services in Melbourne are tailored by a deep understanding across SEO, your business niche and growth plans, competition and industry. No one business is the same, and what works for one might not work for another.</p>
+                                <p>Cheap SEO management in Melbourne means doing the bare minimum from a low level of capacity - especially solo contractors.</p>
+                                <p>SEO for Melbourne businesses can make or break, so it's key to get it right.</p>
+                                <p>A successfully implemented SEO strategy will reward you with traffic and sales on autopilot, for the years to come.</p>
+                                <p>On the other hand, making mistakes in your SEO can lead your business to be penalised and negatively impact your sales.</p>
+                                <p>Black-hat vs white-hat. Most cheap SEO consultants in Melbourne, especially if they propose an attractive fixed set of pricing, use black-hat SEO.</p>
+                                <p><span class="font-weight-bold">Black-hat</span> SEO requires less work and relies on manipulating search engines. It goes against Google's guidelines and can get you banned from search engines. It also delivers a terrible customer experience for your web users. Results are quick, but neither qualified nor sustainable.</p>
+                                <p><span class="font-weight-bold">White-hat</span> SEO respects Google's guidelines and focuses on providing value to your website visitors. It is a long-term approach that requires more work upfront. However, this work pays off, with an incredible boost to sales and a ranking on page one - for years to come.</p>
+                                <p>When looking at the cost of SEO in Melbourne, take into account the reputation and credibility of the agency in question. The SEO practices they use to bring you results have deep implications for the success of your website and business.</p>
+                                <p>First Page's SEO services in Melbourne brings our clients insane ROI. We help you become a leader in your field ethically, by following the rules.</p>
+                                <p>Our SEO consultants in Melbourne are so confident about what we do, we offer a <a href="{{home_url}}pay-on-performance/">pay-on-performance</a> plan. This means we don’t get paid until you get results.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse18">
+                            {#  Q6 #}
+                            <h3 itemprop="name">How are PPC and SEO in Melbourne different?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p><a href="{{home_url}}google-ads/">PPC</a> or Pay Per Click is a paid channel of digital advertising. You pay for your ads to be shown on top of the search engine, when a potential customer is looking with a specific keyword.</p>
+                                <p><a href="{{home_url}}google-ads/">PPC</a> brings immediate results with a highly targeted audience, but the traffic only rolls in for the duration that you're spending the dollars.</p>
+                                <p>While your website needs to be user-friendly to convert visitors, it doesn't need to be SEO-optimised to attract traffic.</p>
+                                <p>SEO services in Melbourne drive organic traffic, which is free and sustainable. While the results will take longer, once you're on the first page, you'll be there for the long term.</p>
+                                <p>When done consistently and properly, eCommerce and local SEO in Melbourne brings you customers and recurring revenue on autopilot.</p>
+                                <p>Paid and organic traffic operate together to provide an incredible opportunity to fast-track your growth. To know more about using PPC with SEO services for Melbourne business growth, <a href="{{home_url}}google-ads/">click here</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse19">
+                            {#  Q7 #}
+                            <h3 itemprop="name">Can you help me recover from loss of traffic?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>If you've suddenly lost traffic to your website, there will be an explanation. As the best SEO company in Melbourne, we can help you find it and bring your traffic back.</p>
+                                <p>Loss of traffic may be due to a change in the Google algorithm, your SEO strategy falling out of date, or maybe your competitors are up to something.</p>
+                                <p>In some cases, you might have received penalties from Google due to practices that do not follow its guidelines. If this is the case, we can help put you on the right track.</p>
+                                <p>Whatever has led you to lose traffic, our SEO specialists in Melbourne can fix it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse20">
+                            {#   Q8  #}
+                            <h3 itemprop="name">Do you offer eCommerce SEO services in Melbourne?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Yes, and we have specific services depending on where you're hosting your online shop. That's <a href="{{home_url}}amazon-seo/">Amazon</a>, <a href="{{home_url}}woocommerce-seo/">WooCommerce</a>, <a href="{{home_url}}magento-seo/">Magento</a>, and more.</p>
+                                <p>eCommerce and local SEO in Melbourne are different and suited to different business needs.</p>
+                                <p><a href="{{home_url}}local-and-national-seo/">Local SEO</a> in Melbourne specifically targets local customers, to make your business visible to them. With the granular targeting of local SEO, Melbourne businesses can bring foot traffic to their physical shops or market to the regional customer base.</p>
+                                <p><a href="{{home_url}}ecommerce-seo/">eCommerce SEO</a> is for online shops. No matter where your customers may be, eCommerce SEO makes sure your products are put in front of them, as well as creating a highly convertible website experience.</p>
+                                <p>The same SEO techniques are used as for local SEO in Melbourne. However, these are applied specifically to merchandise description and product listings, to raise the ranking of each product on search engines.</p>
+                                <p>eCommerce SEO services in Melbourne work well when coupled with a PPC campaign.</p>
+                                <p>To know more about our eCommerce SEO services in Melbourne and how they can help you grow, <a href="{{home_url}}ecommerce-seo/">click here</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse21">
+                            {# Q9  #}
+                            <h3 itemprop="name">Do you offer international SEO services in Melbourne?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Looking to attract customers on a bigger scale? We're the best SEO agency in Melbourne to make your mark overseas.</p>
+                                <p><a href="{{home_url}}international-seo/">International SEO</a> geotargeting your target audience, on a global and complex scale. It's the most effective way to build a global influence and increase your reach abroad.</p>
+                                <p>It's a complex process, because your website needs to be optimised for a variety of search engines and languages around the world.</p>
+                                <p>Now you’re wondering if it is the right SEO service for your Melbourne business. Well, do you want to make sales from anywhere in the world?</p>
+                                <p>Our SEO consultants in Melbourne know all the ins and outs of improving websites for global domination.</p>
+                                <p>We'll help you identify the best regions to target for your business, and update your website accordingly. We'll put you on the first page of international search engines.</p>
+                                <p>Never again will you have a customer stuck on the checkout page. International SEO makes the checkout process easy and practical for each of your selected regions.</p>
+                                <p>To get started with the best SEO in Melbourne for multi-regional websites, <a href="{{home_url}}international-seo/">click here</a>.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse22">
+                            {#   Q10  #} 
+                            <h3 itemprop="name">Do you offer link-building as a standalone service?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Absolutely. Link-building is in our bones and a key part of the next-level strategies in our SEO services in Melbourne.</p>
+                                <p>Quality is our priority. Put simply, forget all you’ve heard about high numbers of links and ranking success. We're not doing this here.</p>
+                                <p>Our SEO consultants in Melbourne know that one backlink does not equal another.</p>
+                                <p>A backlink is like a digital vote. The more links to your website from high-quality and reputable sources, the higher you'll rank. What matters is the authority of the websites your site is linked to.</p>
+                                <p>That's why our SEO consultants in Melbourne only focus on high-quality backlinks and content. When working with us, you get access to some of the most authoritative websites on the internet.</p>
+                                <p>To know more about our link-building services and how they can help you, <a href="{{ home_url }}link-building/">click here</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse23">
+                            {# Q11  #}
+                            <h3 itemprop="name">How long does SEO in Melbourne take?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+
+                                <p>eCommerce and local SEO in Melbourne aren't quick processes. It requires a decent amount of strategic work upfront, and it takes time for search engines to detect the changes.</p>
+                                <p>How soon you see results varies on your business, the state of your website, and other parameters. SEO drives results over time. If you're in it for the long haul, the needle will keep moving in your favour.</p>
+                                <p>As the best SEO company in Melbourne, results are guaranteed, so there's no need to worry about them not being delivered. Relax and be patient. </p>
+                                <p>Our SEO consultants in Melbourne will send you reports and keep you updated throughout the process, so you can see everything that's happening with your campaign in real-time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse24">
+                            {#  Q12  #}
+                            <h3 itemprop="name">What is white-hat and black-hat SEO in Melbourne?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p><span class="font-weight-bold">White-hat SEO</span> uses SEO tactics in line with Google's guidelines. It's the right and best way to do SEO in Melbourne. It consists of improving the user experience and delivering value for your customers.</p>
+                                <p>This is a long-term approach that brings sustainable results for your business growth. As you're gaining authority online and ranking higher on search engines, you'll start to reap the rewards in traffic and sales.</p>
+                                <p><span class="font-weight-bold">Black-hat SEO</span>, on the contrary, is the unethical way of doing SEO in Melbourne. It manipulates search engines to achieve short-term gains. </p>
+                                <p>These tactics include keyword stuffing or linking your website to many low-quality, irrelevant websites to pretend you have authority online – rather than building authority for real.</p>
+                                <p>Google is very good at detecting any form of black-hat SEO in Melbourne. It works actively to penalise the websites that use them.</p>
+                                <p>If you want your business to grow consistently without risking all that you've built, we advise you to stay away from any black-hat SEO consultants in Melbourne. Do you seriously want your business to be associated with such practices?</p>
+                                <p>Here at First Page, we're a reputable and well-known agency. And our SEO consultants in Melbourne haven't gained our reputation from black-hat SEO.</p>
+                                <p>Our work is ethical, effective, and brings our clients incredible returns on investment.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-form-popup.twig" with {'form_page': 'SEO Sydney (Pop-up Form)'} %}
+
+{% endblock %}

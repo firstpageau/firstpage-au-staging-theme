@@ -1,0 +1,290 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+    <style>
+        .get-audit-btn-holder {
+            margin-bottom: 90px;
+            padding-bottom: 70px;
+        }
+
+        .audit-template-hero-img-lg {
+            max-height: 500px;
+            margin-right: 190px;
+        }
+
+        .image-container-right img {
+            max-width: 80%;
+        }
+
+        .get-audit-btn {
+            width: 66%;
+        }
+
+        @media (max-width: 1200px){
+            .audit-template-hero-img-lg {
+                max-height: 485px;
+                margin-right: 111px;
+            }
+
+        }
+        @media (max-width: 769px) {
+
+            .page-google-ads section.banner .banner-description p {
+                min-height: 267px;
+            }
+
+            .page-seo-audit .quote-form{
+                width:100% !important;
+                margin: auto;
+            }
+
+            .page-seo-audit .banner-hero-cont{
+                max-width: 100% !important;
+            }
+
+            .page-seo-audit .awards-badges {
+                text-align: center !important;
+
+            }
+        }
+
+        @media (max-width: 576px){
+            .audit-template-hero-mobile img {
+                max-width: 350px;
+                margin: auto;
+                display: block;
+            }
+
+            .audit-template-hero-mobile img {
+                max-width: 80%;
+                margin-top: 35px;
+            }
+
+            .image-container-right img {
+                width: 90%;
+                margin-top: 35px;
+            }
+            .get-audit-btn {
+                width: 95%;
+            }
+        }
+    </style>
+
+    <section class="banner form-space">
+        <div class="container banner-hero">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide">Get your FREE SEO Audit in less than 3 minutes</h1>
+                <div class="banner-description-full-width">
+                    <p class="form-hide">Take the guesswork out of SEO and increase your traffic by up to 35% with the help of our free SEO audit tool</p>
+                    <div class="form-hide audit-template-hero-mobile d-block d-sm-none">
+                        <img src="{{ site.theme.link }}/assets/img/img_seo_audit_hero_au@2x.png"  alt="First Page" />
+                    </div>
+                </div>
+                <div id="back-to-seo-audit-form"></div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'SEO Audit', 'form_button': 'Get My Free Audit',  'form_hs': 'hs_seo_audit_form', 'form_thankyou': 'thank-you-seo-audit'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+
+            <div class="hero-img d-none d-lg-block ">
+                <img class="audit-template-hero-img-lg" src="{{ site.theme.link }}/assets/img/img_seo_audit_hero_au@2x.png"  alt="First Page" />
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+            <div class="col-12 col-lg-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/img_seo_audit_3_mins_au@2x.png"  class="img-fluid d-inline-block mt-5" alt="First Page" />
+            </div>
+            <div class="col-12 col-lg-6 text-container">
+                <h2>Here’s what your report will show you…</h2>
+                <p class="green-check-before">Your website’s overall SEO score so you can see how you stack up v.s.
+                    your competitors</p>
+                <p class="green-check-before">Powerful and bespoke recommendations for how to improve your SEO and grow
+                    your traffic - right away!</p>
+                <p class="green-check-before">The overall quality of your website’s content, as well as in-depth recommendations
+                    about page length, word counts, and other underrated SEO tactics</p>
+                <p class="green-check-before">Crucial data about keyword density in your content and where you are in danger
+                    of getting a Google penalty for keyword stuffing</p>
+                <p class="green-check-before">Internal linking recommendations to help increase your traffic by up to 12% with
+                    only a few changes</p>
+                <p class="green-check-before">Important data and suggestions for technical SEO aspects such as page speed,
+                    response times, and page sizes</p>
+                <p class="green-check-before">A score of your backlink profile so you can better understand your website’s
+                    authority, and how to improve it.</p>
+                <a href="#back-to-seo-audit-form" class="btn fp-btn fp-btn-orange d-block m-auto get-audit-btn js-anchor-link">GET MY FREE SEO AUDIT IN LESS THAN 3 MINUTES</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph section-client-reviews strategy-form-client-review">
+        <div class="container">
+            <h2 class="text-center">See what our clients are saying</h2>
+            <div class="row testimonial-con">
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            First Page Digital have done a fantastic job with our existing SEO campaign. They are great at what they do and have been thorough in ensuring that our keywords are fully optimized to yield Page-1 results. We strongly believe in their professionalism and are eager for received even better results from them in the near future.
+                        </div>
+                        <div class="person">
+                            <div class="name">Insworld Institute</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            First Page are a really great and professional company in the digital marketing field.  They are doing a good job on with our SEO, and hence our business goal has been achieved. We are looking forward to working again
+                            with First Page.
+                        </div>
+                        <div class="person">
+                            <div class="name">TIMELESS ADMIN</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            We've worked with Firstpage over the past two years and must say they deliver excellent service. They are experts in their field and always put the client first. Special thanks to Ashley who works around the clock to help us, she understands our needs and accommodates them. Would highly recommend working with her! Oh, and their office is pretty cool as well.
+                        </div>
+                        <div class="person">
+                            <div class="name">Chloe Ds</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row testimonial-con">
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            It's our first time working with First Page as our digital marketing/SEO consultants and they are definitely the experts in this field… Although the time was very limited, they provided us insights and action plans in a timely manner… Moreover, we have gained a lot of new insights from the digital campaign results analyzed and explained. We look forward to working with First Page again.
+                        </div>
+                        <div class="person">
+                            <div class="name">Candice Tom</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            We have been working with First Page on SEO and SEM campaigns for over a year and we are very pleased with the high level of expertise and knowledge they have…They often respond and act swiftly to ensure our campaigns run seamlessly and are able to achieve our expected KPIs. We look forward to continuing working with First Page.
+                        </div>
+                        <div class="person">
+                            <div class="name">RITA FONG</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png"
+                                 srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            We have been using First Page's services for a year, mainly on SEO and social media ads placement.
+                            First Page has a very professional and efficient team, especially our Digital Marketing Specialist who is extremely helpful and supportive, giving us professional advice and marketing tips throughout our project.
+                            We are amazed by the outcome!
+                        </div>
+                        <div class="person">
+                            <div class="name">BEN POND</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    {% include "partials/en-section-featured-in-news.twig" %}
+
+    <div class="container mt-5 mb-5 get-audit-btn-holder">
+        <a href="#back-to-seo-audit-form" class="btn fp-btn fp-btn-orange d-block m-auto get-audit-btn js-anchor-link">GET MY FREE SEO AUDIT IN LESS THAN 3 MINUTES</a>
+
+    </div>
+
+    <script>
+        //back to query form anchor
+        $(function () {
+            $('.js-anchor-link').click(function(e){
+                e.preventDefault();
+                var target = $($(this).attr('href'));
+                if(target.length){
+                    $("html, body").animate({ scrollTop: $('#back-to-seo-audit-form').offset().top - 300 }, 1000);
+                }
+            });
+        });
+
+    </script>
+
+{% endblock %}

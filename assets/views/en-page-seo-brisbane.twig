@@ -1,0 +1,455 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+    <section class="banner form-space">
+        <div class="container banner-hero ">
+            <div class="banner-hero-cont">
+                 <h1 class="form-hide text-center text-sm-left">To grow fast, partner with the<br class="d-none d-lg-block"> #1 SEO agency in Brisbane</h1>
+                {# <p class="form-hide text-center text-sm-left banner-text-width">Explode your traffic and sales with First Page,
+                    <br class="d-none d-md-block"> the next-level SEO Company in Brisbane</p> #}
+
+                <div class="banner-img-mb d-sm-none form-hide">
+                    <img src="{{ site.theme.link }}/assets/img/location-brisbane-bg-mb.png" srcset="{{ site.theme.link }}/assets/img/location-brisbane-bg-mb.png, {{ site.theme.link }}/assets/img/location-brisbane-bg-mb@2x.png 2x" alt="First Page" />
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'SEO Brisbane', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-section-featured-in-news.twig" %}
+
+
+    <section class="section-paragraph">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-none d-xl-inline-block "/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png, {{ site.theme.link }}/assets/img/img-seo-traffic-lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-lg-inline-block d-xl-none seo-traffic-lg-img"/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/>
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Explode your traffic and sales with First Page, the next-level SEO Company in Brisbane</h2>
+                <p class="text-center text-sm-left">SEO is the best way to grow your business. Period. And we aren’t just talking about growing your business online - we are talking about growing your business across the board.</p>
+                <p class="text-center text-sm-left">Why?</p>
+                <p class="text-center text-sm-left">Because SEO delivers an unmatched ROI. An SEO company in Brisbane can reduce your sales cycle, increase your conversion rates, and bring you leads and sales on autopilot for years to come.</p>
+                <p class="d-none d-lg-block light-heading">Still not convinced? Have a ponder about this...</p>
+            </div>
+        </div>
+    </section>
+
+    {#  circle data section sm #}
+    <section class="section-paragraph d-block d-md-none">
+        <div class="row no-gutters align-items-center ">
+            <div class="col-12 text-container">
+                <p class="light-heading text-center">Still not convinced? <br> Have a ponder <br> about this...</p>
+            </div>
+            <div class="col-12 image-container-right mb-4">
+                <img src="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png"
+                     srcset="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png, {{ site.theme.link }}/assets/img/seo-perth-data-vertical@2x.png 2x"
+                     class="img-fluid d-lg-none" alt="First Page"/>
+            </div>
+            <div class="col-12 text-container">
+                <p class="text-center">- In Australia, organic traffic from Google converts at an astonishing 17%</p>
+                <p class="text-center">- 88% of shoppers in Australia trust online reviews as much or more than a personal recommendation</p>
+                <p class="text-center">There’s no denying it. To get a REAL digital footprint in Brisbane, SEO via Google is the only path.</p>
+                <p class="text-center">But while the value of SEO in Brisbane has never been greater, the same thing can be said for the competition.</p>
+                <p class="text-center">It’s a battle out there - especially in Brisbane.</p>
+                <p class="text-center">But while it’s more competitive than ever, the businesses that rank on Google are rewarded with explosive traffic that brings in sales on autopilot.</p>
+                <p class="text-center">And to win in the game of SEO, you’ve got to partner with the best SEO company in Brisbane.</p>
+                <p class="text-center">Which is exactly what we are.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+{#                <img src="{{ site.theme.link }}/assets/img/location-brisbane-map-sm.png"#}
+{#                     srcset="{{ site.theme.link }}/assets/img/location-brisbane-map-sm.png, {{ site.theme.link }}/assets/img/location-brisbane-map-sm@2x.png 2x"#}
+{#                     class="float-left location-map-img" alt="First Page"/>#}
+            </div>
+        </div>
+    </section>
+
+{#  circle data section md #}
+    <section class="section-paragraph d-none d-md-block d-lg-none circle-data-section">
+
+        <div class="row no-gutters ">
+            <div class="col-6 text-container circle-data-section-left-col">
+                <p>- In Australia, organic traffic from Google converts at an astonishing 17%</p>
+                <p>- 88% of shoppers in Australia trust online reviews as much or more than a personal recommendation</p>
+                <p>There’s no denying it. To get a REAL digital footprint in Brisbane, SEO via Google is the only path.</p>
+                <p>But while the value of SEO in Brisbane has never been greater, the same thing can be said for the competition.</p>
+                <p>It’s a battle out there - especially in Brisbane.</p>
+                <p>But while it’s more competitive than ever, the businesses that rank on Google are rewarded with explosive traffic that brings in sales on autopilot.</p>
+                <p>And to win in the game of SEO, you’ve got to partner with the best SEO company in Brisbane.</p>
+                <p>Which is exactly what we are.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+
+            <div class="col-6 text-container">
+                <p class="light-heading">Still not convinced? <br> Have a ponder <br> about this...</p>
+
+            </div>
+        </div>
+
+        <div class="tab-data-img-container">
+            <img src="{{ site.theme.link }}/assets/img/location-circle-data-tab.svg" class="" alt="First Page"/>
+        </div>
+
+
+    </section>
+    {#  circle data section lg #}
+    <section class="section-paragraph d-none d-lg-block circle-data-section">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/seo-perth-data-img-lg.png"
+                     srcset="{{ site.theme.link }}/assets/img/seo-perth-data-img-lg.png, {{ site.theme.link }}/assets/img/seo-perth-data-img-lg@2x.png 2x"
+                     class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+                <img src="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png"
+                     srcset="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png, {{ site.theme.link }}/assets/img/seo-perth-data-vertical@2x.png 2x"
+                     class="img-fluid d-lg-none" alt="First Page"/>
+            </div>
+            <div class="col-12 col-md-6 text-container circle-data-section-left-col">
+                <p class="mt-5">- In Australia, organic traffic from Google converts at an astonishing 17%</p>
+                <p>- 88% of shoppers in Australia trust online reviews as much or more than a personal recommendation</p>
+                <p>There’s no denying it. To get a REAL digital footprint in Brisbane, SEO via Google is the only path.</p>
+                <p>But while the value of SEO in Brisbane has never been greater, the same thing can be said for the competition.</p>
+                <p>It’s a battle out there - especially in Brisbane.</p>
+                <p>But while it’s more competitive than ever, the businesses that rank on Google are rewarded with explosive traffic that brings in sales on autopilot.</p>
+                <p>And to win in the game of SEO, you’ve got to partner with the best SEO company in Brisbane.</p>
+                <p>Which is exactly what we are.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    {#  location map sm #}
+    <section class="section-paragraph location-map-mb-section d-block d-md-none">
+        <div class="row no-gutters">
+            <div class="col">
+                <img src="{{ site.theme.link }}/assets/img/location-brisbane-map-sm.svg" class="location-map-img d-block mx-auto" alt="First Page"/>
+
+            </div>
+
+        </div>
+    </section>
+
+    {#  location map md#}
+    <section class="section-paragraph location-map-section d-none d-md-block">
+        <div class="row no-gutters">
+            <div class="col">
+                <img src="{{ site.theme.link }}/assets/img/location-brisbane-map-lg.svg" class="location-map-img d-none d-lg-block mx-auto" alt="First Page"/>
+                <img src="{{ site.theme.link }}/assets/img/location-brisbane-map-md.svg" class="location-map-img d-block d-lg-none mx-auto" alt="First Page"/>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-paragraph location-title-section">
+        <div class="row no-gutters">
+            <div class="col">
+                <h2 class="text-center">Catapult your <br class="d-none d-md-block b-lg-none"> Brisbane <br class="d-block d-md-none"> business with <br class="d-none d-md-block b-lg-none">SEO from <br class="d-block d-md-none"> First Page</h2>
+                <p class="text-center location-sub-title">Here at First Page, we aren’t just a <br class="d-block d-md-none"> digital agency…</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    {#  office section  #}
+    <section class="section-paragraph office-img-section pt-3">
+        <div class="rwo no-gutters">
+            <img src="{{ site.theme.link }}/assets/img/location-office-sm.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-sm.png, {{ site.theme.link }}/assets/img/location-office-sm@2x.png 2x"
+                 class="img-fluid d-block d-md-none m-auto" alt="First Page"/>
+            <img src="{{ site.theme.link }}/assets/img/location-office-md.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-md.png, {{ site.theme.link }}/assets/img/location-office-md@2x.png 2x"
+                 class="img-fluid d-none d-md-block d-lg-none m-auto" alt="First Page"/>
+            <img src="{{ site.theme.link }}/assets/img/location-office-lg.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-lg.png, {{ site.theme.link }}/assets/img/location-office-lg@2x.png 2x"
+                 class="img-fluid d-none d-lg-block m-auto" alt="First Page"/>
+        </div>
+
+    </section>
+
+    <section class="section-paragraph">
+        <div class="container">
+            <h2 class="text-center text-sm-left section-title-ml">We are your partner in growth.</h2>
+            <div class="row no-gutters justify-content-center ">
+
+                <div class="col-12 col-md-6 text-container">
+                    <p class="text-center text-sm-left">Australian-owned and -operated, we live and breathe digital marketing. SEO marketing for Brisbane is in our bones, and we have over a decade’s experience in taking businesses to the top of the search rankings.</p>
+                    <p class="text-center text-sm-left">Whether you're a brick-and-mortar business looking for more foot traffic, or an enterprise primed for world domination, our SEO company in Brisbane has the experience and talent to win in your industry.</p>
+                    <p class="text-center text-sm-left">Our Brisbane SEO services are designed for long-term sustainability and growth. Our strategies include keyword research, competitor analysis, content creation, link-building and much more.</p>
+                </div>
+                <div class="col-12 col-md-6 text-container ">
+                    <p class="text-center text-sm-left mb-0">We pride ourselves on doing SEO in Brisbane the right way.</p>
+                    <p class="text-center text-sm-left">This means creating a bespoke growth plan that is tailored specifically for your business, in line with the demands of your industry, and in a way that impacts your bottom line.</p>
+                    <p class="text-center text-sm-left">Simply put, our Brisbane SEO agency handles all the tough digital, techy stuff. All you have to do is sit back, relax, and watch the traffic pour in.</p>
+                    <p class="text-center text-sm-left">If you are ready to supercharge your growth by partnering with an SEO company in Brisbane, book a free strategy call with a Digital Strategist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "partials/en-section-free-session.twig" %}
+    {% include "partials/en-section-experience.twig" %}
+    {# <div class="d-none d-md-block d-lg-none">{% include "partials/en-section-services-seo-tablet.twig" %}</div>
+    <div class="d-block d-md-none d-lg-block">{% include "partials/en-section-services-seo-new.twig" %}</div> #}
+    {% include "partials/en-section-services-seo-carousel.twig" %}
+
+    <section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">SEO in Brisbane FAQ’s </h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                            {# Q1  #}
+                            <h3 itemprop="name"> Why is First Page the best SEO agency in Brisbane?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p><a href="{{ home_url }}">First Page</a> is the best SEO company in Brisbane because we have years of experience. We know the right SEO techniques needed to make sure your business and website rank higher and get you traffic, leads and sales on autopilot. </p>
+                                <p>Our SEO company in Brisbane is run by Australians and we know exactly what your local needs will be. We are Australian-operated too, and we know how to add that personal, local touch! </p>
+                                <p>With SEO services in Sunshine Coast and Brisbane, we live to deliver a high ROI for your business. We provide results where your business will experience high growth and long-term sustainability. Our Brisbane SEO services include competitor analysis, link-building, content creation, and so much more!</p>
+                                <p>All our Brisbane SEO services will reflect the needs of your industry, and they will impact your earnings, net income, profit and/or EPS (earnings per share).</p>
+                                <p>Our Brisbane SEO agency has also garnered such awards as Google’s “Growing Businesses Online”, Top SEOs’ “Best in Search”, “Agency of the Year”, and eCommerce Awards’ “Best eCommerce Campaign”.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                            {#   Q2  #}
+                            <h3 itemprop="name">How does SEO in Brisbane work?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>SEO stands for “Search Engine Optimisation”. This means optimising the content on your website so that it ranks high on search engines such as Google and Bing!</p>
+                                <p>If you want content that is going to get you to the top, you’ll need to answer the questions that users are asking in search bars. This is where our Brisbane SEO experts step in. </p>
+                                <p>Search engine optimisation agencies in Brisbane look at the questions users ask, and make sure the content you provide gives them their answers. The more informative your answers and the more they match the questions, the more they will rank high in SEO, and give you the leads and sales you need! </p>
+                                <p>SEO is all about sending traffic your way through organic methods, such as careful keyword research, correct usage of backlinks, examining competitors’ organic traffic, and creating the right sort of content that catches the attention of Google and other search engines.</p>
+                                <p>Want the most traffic headed your way? Then it helps to have the right <a href="{{ home_url }}seo/">SEO company in Brisbane</a> to help you in every step towards getting to the top of Google’s SERP (Search Engine Results Page).</p>
+                                <p>There are two types of SEO Brisbane: National and international SEO, depending on whether your target audience is local or global.</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                            {# Q3#}
+                            <h3 itemprop="name">Where do I start with SEO in Brisbane?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>There are 3 important components of the <a href="{{ home_url }}seo/">SEO</a>: Backlinks, keyword research and on-page SEO. The following covers how to start on all three:</p>
+                                <p class="font-weight-bold mb-1">1. Backlinks</p>
+                                <p>Search engine optimisation agencies in Brisbane can build backlinks to expand your networks. By gaining recommendations from the sites with authority, this appeals highly to Google’s algorithm.</p>
+                                <p>In order to get backlinks, you need to connect with other sites, so that yours can be featured on them. </p>
+                                <p>You do this by providing valuable content in the form of blogs, how-tos, infographics, connecting with the right influencers, and writing content on reviews and guides that can point back at your site.</p>
+                                <p class="font-weight-bold mb-1">2. KEYWORD RESEARCH</p>
+                                <p>Keyword research is an essential part of SEO Brisbane, and is often very overlooked. If you aren’t targeting the right keywords, your site will never be as fully optimised as it could be. That’s why it’s best to talk with an SEO firm in Brisbane that can perform all the important keyword research you need for your website.</p>
+                                <p>To do keyword research, your SEO consultants in Brisbane will figure out your ‘primary’ keywords, which will vary depending on your industry and core products and services.</p>
+                                <p>Then you need to see what pops up when you type in those keywords, to see who your competitors are and create a bespoke strategy around content.</p>
+                                <p>You also have the opportunity to use keyword research tools – there are many out there! However, if you don’t have much experience in keyword research, our <a href="{{ home_url }}seo/">SEO firm in Brisbane</a> will do all the hard work for you and take your business to the top of the SERP!</p>
+                                <p class="font-weight-bold mb-1">3. On-Page SEO in Brisbane</p>
+                                <p>If you want to accelerate your SEO in Brisbane, you will need to go through all your content and make sure it appeals when Google crawls through. This will get you ranking high and get you the leads you need. As well as keywords, optimise the multimedia on your site to target image and video SEO in Brisbane.</p>
+                                <p>You need to refine your content so that it answers users’ queries. Speak to an <a href="{{ home_url }}contact/">SEO consultant in Brisbane</a> to help you. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                            {#  Q4  #}
+                            <h3 itemprop="name">Can I just do SEO in Brisbane by myself?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Taking your Brisbane SEO services in-house is rarely as cost-effective as outsourcing to a professional agency. Hiring an actual team who TRULY understand how to do SEO is costly and takes lots of time. </p>
+                                <p>However, if you outsource your SEO in Brisbane, your website will have a much higher chance of reaching the top of Google’s SERP - and in a much faster time. </p>
+                                <p>Professional SEO agencies in Brisbane much more experienced, as this is their expertise. The work they do will be highly efficient, and much more cost-effective in the long run!</p>
+                                <p>At our SEO company in Brisbane, we don’t mind spending hours per day every week on your site, dedicating our time to make your services and products known to the public. Our Brisbane SEO experts know how to rank your business high on search engines and garner a lot of traffic, so that the public takes notice.</p>
+                                <p>Organic website searches count for half of all traffic, so you need to know what you’re doing in this regard. The right SEO company in Brisbane will boost your website in ways you could never imagine!</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse17">
+                            {#  Q5  #}
+                            <h3 itemprop="name">How much does SEO in Brisbane cost?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>You ever hear "You get what you pay for"?</p>
+                                <p>Well with SEO Brisbane, this is absolutely true. </p>
+                                <p>SEO costs in Brisbane vary depending on budget, the work involved, and what you want to achieve in the end. Cheap SEO means things done incorrectly, the wrong backlinks being built, and the wrong keywords being focused on. </p>
+                                <p>The cheapest SEO consultants in Brisbane have one goal - to create a facade of growth. It's typically done in a way that creates long-term damage to your brand and website.</p>
+                                <p>The best SEO agencies in Brisbane aim for more sustainable results, by delivering healthy SEO and keeping a close, personal relationship with you, so that you feel your business is in the best hands.</p>
+                                <p>This will leave you with time to concentrate on producing or improving products and services, and taking care of your customers' needs.</p>
+                                <p>There is also black-hat and white-hat SEO. Black-hat SEO in Brisbane violate search engines’ terms of service, which can get your site penalised. The best <a href="{{ home_url }}seo/">SEO agencies in Brisbane</a> will never apply these kinds of tactics to your SEO.</p>
+                                <p>White-Hat SEO practices follow search engines’ terms and conditions, so that your site never gets penalised and always grows.</p>
+                                <p>Taking on the SEO services of a top SEO company in Brisbane can deliver an enormous ROI over time. You will see over time that taking the decision to stick with professionals is the best thing you can do for your business.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse18">
+                            {#  Q6 #}
+                            <h3 itemprop="name">How are PPC and SEO in Brisbane different?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The difference between PPC and SEO in Brisbane boils down to the fact that one is free traffic and the other one isn’t. </p>
+                                <p>SEO stands for “Search Engine Optimisation” and is an evergreen way to drive organic traffic.</p>
+                                <p>SEO in Brisbane is based on keyword research and building backlinks, among other requirements. SEO helps your brand to rank at the top of Google’s SERP (Search Engine Results Page). </p>
+                                <p>Search engine optimisation agencies in Brisbane also offer PPC. This stands for “Pay Per Click” and is more static. It always requires payment upfront, and the price can vary from small to very large amounts, depending on your brand and industry.</p>
+                                <p>For instance, you will pay more for adverts in the legal and property industry than ads for the cosmetics and health industry. Through PPC, you can drive your ad to the top of the page by outbidding competitors, if your organic results can't get there.</p>
+                                <p>Both are valid, and the execution of experienced PPC services are just as important as SEO in Brisbane. Luckily, we have expert digital marketers and strategists who focus on <a href="{{ home_url }}google-ads/">PPC services</a> and <a href="{{ home_url }}seo/">SEO services</a>, catering to your business’s exact needs.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse19">
+                            {#  Q7#}
+                            <h3 itemprop="name">Can you help me recover from the loss of SEO traffic?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Yes, our SEO company in Brisbane can help drive more traffic your way! Loss of traffic does occur, and our <a href="{{ home_url }}seo/"> SEO consultants in Brisbane</a> will help bring it back. </p>
+                                <p>Loss of traffic often occurs when digital marketers don’t use best practices for SEO in Brisbane, when working on your website.  </p>
+                                <p>New content can be published using the best methods for SEO in Brisbane, where it will be “injected” with the necessary short- and long-tail keywords to help rank it high on Google.</p>
+                                <p>Keep in mind that the slightest change in Google’s algorithm may also affect traffic. However, as a highly experienced SEO company in Brisbane, we know how to address the issue and bring back traffic your way.  </p>
+                                <p>This all takes time, but our we'll analyse your website carefully, and research all your competitors’ websites. Our SEO consultants in Brisbane will make sure that specific methods are taken to increase your amount of traffic, to attract the leads and sales you need to take your business back to the top.</p>
+                                <p>Whether you need local or international SEO in Brisbane, and want to drive traffic to an eCommerce store or a brick-and-mortar shop, our <a href="{{ home_url }}seo/"> Brisbane SEO consultants</a> have the years of experience to help you. </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse20">
+                            {#   Q8  #}
+                            <h3 itemprop="name">Do you offer eCommerce SEO in Brisbane?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Yes, we offer <a href="{{ home_url }}ecommerce-seo/">eCommerce SEO</a> in Brisbane, tailored to your eCommerce business. Usually, a well-planned SEO strategy helps increase revenue by 64%. Not only that, but almost half of all eCommerce traffic is influenced by SEO and organic traffic.</p>
+                                <p>For these reasons, it’s key that you rely on the best SEO company in Brisbane to bring their technical expertise in the field. We have a team of dedicated digital marketers with years of experience at their fingertips, ready to put your eCommerce business on the world map!</p>
+                                <p>You may be wondering at the difference is between eCommerce and local SEO in Brisbane. Well, eCommerce targets a global audience, while local SEO focuses on your Brisbane target audience specifically. If you have a local business selling goods or providing services in the local area, local SEO in Brisbane includes tactics such as connecting to Google Maps and targeting Brisbane-specific searches.</p>
+                                <p>Our eCommerce SEO in Brisbane includes thorough research into your global competitors. We will always give you reports to see how the SEO campaign is going, and we will tweak whatever we have to so that you will have the market edge!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse21">
+                            {# Q9  #}
+                            <h3 itemprop="name">Do you offer international SEO in Brisbane?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Looking to grow your brand outside of Brisbane? We are <a href="{{ home_url }}international-seo/">experts in international SEO</a> for Brisbane businesses. Here’s how it works: If you want your traffic, leads and sales exploding every month from all the different continents, then international SEO is what you need.</p>
+                                <p>It is the quickest and most cost-effective method of bringing your business and brand to the global arena. SEO optimisation for Brisbane businesses will put your products and services in front of customers from all over the world, and will help you build lasting relationships with them. Our services cover all of Australia, from Melbourne to Darwin SEO, as well as around the globe.</p>
+                                <p>We create meaningful content, for a campaign of tailored international SEO for Brisbane businesses. We bring traffic, build relationships, and drive sales.</p>
+                                <p>We have dedicated the last decade to building businesses into global powerhouses, using international SEO. Whether your brand offers SaaS products, is an eCommerce shop, or anything in between, we have the experience to place your brand on the worldwide map.</p>
+                                <p>We rely exclusively on white-hat SEO in Brisbane. These practices make sure the search engines approve of everything we do for your brand. It's doing the hard work, the right way. We have specialist software for SEO in Brisbane, and an amazing, experienced <a href="{{ home_url }}contact/">team of digital marketers</a> who offer a special touch to everything they work on. Our SEO company in Brisbane offers you the opportunity of having a “one-up” over your competitors!  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse22">
+                            {#   Q10  #} 
+                            <h3 itemprop="name">Is link-building a standalone service for SEO in Brisbane?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Yes, we do! <a href="{{ home_url }}link-building/">Backlinks are an integral part</a> of our services as an SEO company in Brisbane. However, it's essential to understand the difference between good and bad backlinks.</p>
+                                <p>Good backlinks come from sites with high authority that Google approves of. These are websites that are often leaders in the industry, and have been around for quite a few years. They provide great content, and many people view and trust their content.</p>
+                                <p>Bad backlinks are websites that don’t really provide the necessary content that your potential customers are looking for. They belong to weak websites that are not fully established and are often new.   </p>
+                                <p>As a top SEO company in Brisbane, Australia, First Page only offers the highest quality backlinks. This is what separates us from cheap SEO services that build backlinks of zero value and will linger as a threat to the health of your website for years to come. </p>
+                                <p>Our backlinking services will improve your website’s domain authority, increase exposure to your business, as well as increase brand awareness and referral traffic.</p>
+                                <p>Reach out to our team for <a href="{{ home_url }}contact/">SEO marketing in Brisbane</a>, to hear more about our premium backlink services, so you can start exploding your traffic today. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse23">
+                            {# Q11  #}
+                            <h3 itemprop="name">How long does it take for SEO in Brisbane?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Getting traction for SEO in <a href="{{ home_url }}seo/">Brisbane</a> is no easy task - there's a lot that goes into the process, and it's getting more competitive by the day. </p>
+                                <p>That's why you need to work with the best. </p>
+                                <p>For the best SEO in Brisbane, it takes time. You need to look at SEO as a marathon - not a sprint. It takes a while to create content, complete a technical overhaul of your website, and for the actual content to move up Google's rankings.</p>
+                                <p>Typically, it takes around 6 months to start gaining traction with SEO in Brisbane. Months 1 to 3 are usually a little quieter, but months 4, 5, and 6 is where the explosive growth really starts to kick into effect.</p>
+                                <p>SEO in Brisbane has changed over time. It doesn't work exclusively with selected keywords but rather a large number of searches that cover “natural language”. These searches are also often spoken on platforms such as Google Now and Siri, rather than simply words typed into a search bar. This means that SEO grows and changes rapidly, and therefore, results from an SEO campaign are not instantaneous.</p>
+                                <p>Our SEO company in Brisbane focuses on “outcomes” rather than “outputs”, where our efforts focus on generating leads and sales for your business and brand. This will all take time, months in fact, but it is well worth it! </p>
+                                <p>For this reason, the question on your mind should be, “how long will it take to generate leads and make sales?” - rather than how long will it take to rank number one on Google.</p>
+                                <p>How long this all takes depends on the length of time your website has been established, the kind of SEO that has been done on it already, the amount of content it has, and its link profile, among other criteria for SEO in Brisbane.</p>
+                                <p>But the juice is worth the squeeze! Investing in SEO in Brisbane will help you beat your competitors, and set up a sales machine that brings in hot leads and happy customers on autopilot. </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse24">
+                            {#  Q12  #}
+                            <h3 itemprop="name">What is white-hat and black-hat SEO in Brisbane?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>There are 2 different types of SEO: white-hat and black-hat.</p>
+                                <p class="font-weight-bold mb-1">1. White-Hat SEO</p>
+                                <p>White-hat SEO means safe practices have been taken, which follows the search engines’ terms and conditions. These practices include providing high-quality content, having very fast website loading times, being mobile phone-friendly, making sure your website offers smooth, easy navigation, and using meta tags that are descriptive and rich in keywords.</p>
+                                <p>The best <a href="{{ home_url }}seo/">SEO agencies in Brisbane</a> will only ever use white-hat techniques to generate traffic for your website.</p>
+                                <p class="font-weight-bold mb-1">2. Black-Hat SEO</p>
+                                <p>In the online world, the term black-hat is never a good thing, especially when it comes to SEO. </p>
+                                <p>Black-hat SEO is the process of gaming search engines in a way that might give you some short-term benefits, but will likely destroy your website in the not-so-distant future. </p>
+                                <p>This is because black-hat SEO practices include buying links and utilising deceptive cloaking techniques. Some SEO agencies in Brisbane use these techniques to lie to, deceive and hurt your website visitors - which is why search engines are against them. Google’s algorithms are trained to spot black-hat SEO techniques, and being so advanced, they usually do.</p>
+                                <p>If you use black-hat SEO techniques on your website, your site can be hit hard and penalised greatly by search engines. Believe us when we say, it is NOT worth the risk. You should never opt for an SEO firm in Brisbane that uses Black-hat SEO.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-form-popup.twig" with {'form_page': 'SEO Brisbane (Pop-up Form)'} %}
+
+{% endblock %}

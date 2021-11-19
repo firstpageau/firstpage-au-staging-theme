@@ -1,0 +1,300 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+    <style>
+        section.section-casestudy.casestudy-instagram-ads {
+            background-image: url("{{ site.theme.link }}/assets/img/img_ipad_rolls_royce@2x.png");
+            background-size: 1464px auto;
+            background-position-x: calc(50% + 556px);
+        }
+
+        .ins-case-break-line{
+            display: block;
+        }
+
+        @media (max-width: 767px) {
+
+
+            .page-instagram-advertising section.banner h1 {
+                /*padding: 0 5px;*/
+                max-width: 206px;
+                margin-bottom: 50px;
+
+            }
+
+            section.section-casestudy.casestudy-instagram-ads{
+                background-image: none;
+            }
+            .ins-case-break-line{
+                display: none;
+            }
+        }
+
+    </style>
+
+    <section class="banner form-space instagram-advertising-banner">
+        <div class="container banner-hero ">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide text-center text-sm-left">The best agency for <br> SEO in Perth</h1>
+                <p class="text-center text-sm-left banner-text-width">Attract your ideal customers and explode your sales in Perth <br class="d-none d-lg-block" /> with next-level SEO from First Page</p>
+
+                <div class="banner-img-mb d-block d-sm-none">
+                    <img src="{{ site.theme.link }}/assets/img/location-perth-bg-mb.png" srcset="{{ site.theme.link }}/assets/img/location-perth-bg-mb.png, {{ site.theme.link }}/assets/img/location-perth-bg-mb@2x.png 2x" alt="First Page Perth" />
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'Instagram Ads', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-section-featured-in-news.twig" %}
+
+
+    <section class="section-paragraph">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png, {{ site.theme.link }}/assets/img/img-seo-traffic-lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-lg-inline-block "/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/>
+            </div>
+            <div class="col-12 col-lg-6 text-container">
+                <h2>Run Instagram ads that generate 15x’s ROI with First Page</h2>
+                <p>Here at First Page, we are obsessed with one thing - exploding your sales with next-level Digital Marketing. </p>
+                <p>In the past decade, we have mastered social media marketing, and out of all platforms, we have had some of our best success with Instagram ads.</p>
+                <p>Whether you sell products or services, or are looking to advertise by video or photos, we will execute a bespoke Instagram campaign for your business that delivers explosive growth. </p>
+                <p>Our experience uniquely positions us to get results quicker than any of our competitors, meaning you can experience rapid growth and long-term sustainability. </p>
+                <p>Our dedicated team of Instagram ad ninjas are on standby. Click the button below now to speak with one of our Digital Strategists so you can learn more about how IG Ads can take your business to the top of the pack. </p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-client-reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>See what our clients<br class="d-sm-none"> are saying</h2>
+            </div>
+            <div class="row testimonial-cont">
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            I highly recommend First Page. Eugen was thorough, knowledgeable, and did a fantastic job defining our digital strategy. Shirlyn has been diligent in managing our account and kept us on track. Why would you consider anyone else? </div>
+                        <div class="person">
+                            <div class="name">Simon Faure-Field</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            I have been a client of First Page for years. They keep in constant contact with me and give me ideas about improving my website, how my keywords are doing and where I stand amongst my competitors.
+                        </div>
+                        <div class="person">
+                            <div class="name">JOANNA OWENS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            Gary was very responsible and professional. His replies are prompt and just from the on-page optimisation work, we can see the amount of effort and time that was put into our campaigns. Thank you Gary and team - keep up the good work! </div>
+                        <div class="person">
+                            <div class="name">THEMLPRINT</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            Special thanks to Nick for guiding us through the SEO process. He has been instrumental in getting our website up the Google rankings and as a result, our customer growth has been phenomenal. <br>Great work! </div>
+                        <div class="person">
+                            <div class="name">PB DOUG</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            Working with First Page has been great! Shirlyn from the FP team is very prompt and professional. Most importantly, they deliver results! Recommendations and thumbs up! </div>
+                        <div class="person">
+                            <div class="name">Ewan SIMPSON</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="testimonial">
+                        <div class="stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                            <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        </div>
+                        <div class="text">
+                            I’ve worked with First Page for about 6 months. The service is professional and I’ve seen increased sales and organic results. Shirlyn is prompt in her work and replies. She even did further research and recommendations for keywords. Thank you all.
+                        </div>
+                        <div class="person">
+                            <div class="name">Qi Xiang</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-section-services-social.twig" %}
+
+    <section class="section-casestudy casestudy-instagram-ads">
+        <div class="container">
+            <div class="content-area">
+                <div class="info">
+                    <h2>
+                        <span class="small-grey">Our Recent Work</span>
+                        <strong>Rolls-Royce</strong>
+                    </h2>
+                    {# <ul class="tag">
+            <li>SEO</li>
+        </ul> #}
+                    <p>The luxury car marker was keen to penetrate the younger, high net worth demographic by rolling out car exhibitions across Asia. First Page was engaged to drive registrations and did we ever!</p>
+                </div>
+
+                <div class="stats">
+                    <div class="stats-container">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="stat">1870</div>
+                                <div class="desc">event registrations in <br class="ins-case-break-line"/> 6 weeks</div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <div class="stat">3420<sub>%</sub></div>
+                                <div class="desc">return Facebook marketing investment</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph section-faqs">
+        <div class="container">
+            <h2 class="section-title">Social Media Specialiast FAQs</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+                            <h5 itemprop="name">What are Instagram Ads?</h5>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Instagram ads are sponsored posts or stories that a business uses to promote products or services to targeted Instagram users. They can resemble a regular Instagram post, except for the addition of a “Sponsored” tag and call-to-action option, and will appear on the targeted user’s news or story feed. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+                            <h5 itemprop="name">Why are Instagram Ads important?</h5>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Instagram reports that with 800 million active users, 60% of people discover new products, and 75% take action from seeing a post. Instagram uses Facebook’s demographic data to reach specific segments based on their interests and behaviours and can be a cost-effective tool to increase engagement and conversions. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+                            <h5 itemprop="name">What’s the difference between Instagram and Facebook Ads?</h5>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Although both platforms use Facebook’s advertising system to target users, the interactions and demographics are different and work to reach different audiences. Facebook’s user demographics are the widest out of all the social media platforms, while 55% of users are between the ages of 18-29. Depending on your business’s offerings and targeted users, both platforms can be used separately or together to reach a wider audience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+                            <h5 itemprop="name">What are the types of Instagram Ads?</h5>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Instagram’s ad formats include stories, photo, video, carousel, explore, IGTV, and Instagram Shopping ads. Each ad has different call-to-action options and caters to different business objectives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+                            <h5 itemprop="name">How can I get started with Instagram Ads?</h5>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Instagram Ads form a part of a holistic digital strategy that drives traffic and sales for your business. If you have a Facebook page for your business, you can create an Instagram Business page to get started. For help on creating your comprehensive Instagram Ad strategy, contact our digital marketing strategists today. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+                            <h5 itemprop="name">Will Instagram Ads benefit my business?</h5>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Instagram has over 500 million daily users. For almost every business, there is a considerable pool of potential customers waiting to be discovered on Instagram. With First Page behind the wheel, you can run compelling ads on one of the world’s biggest digital platforms and get your product or service in front of more eyes than ever before. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-section-free-session.twig" %}
+
+    {% include "partials/en-form-popup.twig" with {'form_page': 'Instagram Ads (Pop-up Form)'} %}
+
+{% endblock %}

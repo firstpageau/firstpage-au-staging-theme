@@ -1,0 +1,475 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+<section class="banner form-space">
+    <div class="container banner-hero two-lines">
+        <div class="banner-hero-cont">
+            <h1 class="form-hide">Win your perfect customer with <br class="d-block d-sm-none">cutting-edge programmatic advertising</h1>
+            <div class="banner-description">
+                <div class="form-hide hero-mobile">
+                        <img src="{{ site.theme.link }}/assets/img/img_hero_sam_sm.png" srcset="{{ site.theme.link }}/assets/img/img_hero_sam_sm.png, {{ site.theme.link }}/assets/img/img_hero_sam_sm@2x.png 2x" alt="First Page" />
+                </div>
+            </div>
+            {% include "partials/en-form-services.twig" with {'form_page': 'Programmatic Advertising', 'form_button': 'Get A Free Quote'} %}
+            {% include "partials/en-section-awards-badges.twig" %}
+        </div>
+        <div class="hero-img d-none d-md-block d-lg-none">
+                <img src="{{ site.theme.link }}/assets/img/img_hero_sam_md.png" srcset="{{ site.theme.link }}/assets/img/img_hero_sam_md.png, {{ site.theme.link }}/assets/img/img_hero_sam_md@2x.png 2x" alt="First Page" />
+        </div>
+        <div class="hero-img d-none d-lg-block">
+                <img src="{{ site.theme.link }}/assets/img/img_hero_sam_lg.png" srcset="{{ site.theme.link }}/assets/img/img_hero_sam_lg.png, {{ site.theme.link }}/assets/img/img_hero_sam_lg@2x.png 2x" alt="First Page" />
+        </div>
+    </div>
+</section>
+
+    
+
+    {# <section class="banner form-space programmatic-advertising-banner">
+        <div class="container banner-hero ">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide">Win your perfect customer with cutting-edge programmatic advertising</h1>
+                <div class="banner-description">
+                    <div class="form-hide hero-mobile">
+                        <img src="{{ site.theme.link }}/assets/img/img_hero_sam_sm.png" srcset="{{ site.theme.link }}/assets/img/img_hero_sam_sm.png, {{ site.theme.link }}/assets/img/img_hero_sam_sm@2x.png 2x" alt="First Page" />
+                    </div>
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'Instagram Ads', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+
+            {#            <div class="hero-img d-none d-md-block d-lg-none">#}
+            {#                <img src="{{ site.theme.link }}/assets/img/fei-banner-tab.png" srcset="{{ site.theme.link }}/assets/img/fei-banner-tab.png, {{ site.theme.link }}/assets/img/fei-banner-tab@2x.png 2x" alt="First Page" />#}
+            {#            </div>#}
+
+            {# <div class="hero-img d-none d-md-block d-lg-none">
+                <img src="{{ site.theme.link }}/assets/img/img_hero_sam_md.png" srcset="{{ site.theme.link }}/assets/img/img_hero_sam_md.png, {{ site.theme.link }}/assets/img/img_hero_sam_md@2x.png 2x" alt="First Page" />
+            </div>
+            <div class="hero-img d-none d-lg-block">
+                <img src="{{ site.theme.link }}/assets/img/img_hero_sam_lg.png" srcset="{{ site.theme.link }}/assets/img/img_hero_sam_lg.png, {{ site.theme.link }}/assets/img/img_hero_sam_lg@2x.png 2x" alt="First Page" />
+            </div>
+        </div>
+    </section>  #}
+
+    {% include "partials/en-section-featured-in-news.twig" %}
+    <section class="section-paragraph pa-smash-sales-section">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+            <div class="col-12 col-lg-6 image-container-right">
+
+                <img src="{{ site.theme.link }}/assets/img/prog-ad-infographic-desktop-crop.png" srcset="{{ site.theme.link }}/assets/img/prog-ad-infographic-desktop-crop.png, {{ site.theme.link }}/assets/img/prog-ad-infographic-desktop-crop@2x.png 2x" class="img-fluid d-none d-lg-inline-block pa-infographic-img" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/prog-ad-infographic-tablet.png" srcset="{{ site.theme.link }}/assets/img/prog-ad-infographic-tablet.png, {{ site.theme.link }}/assets/img/prog-ad-infographic-tablet@2x.png 2x" class="img-fluid d-none d-md-inline-block pa-infographic-img d-lg-none" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/prog-ad-infographic-mobile.png" srcset="{{ site.theme.link }}/assets/img/prog-ad-infographic-mobile.png, {{ site.theme.link }}/assets/img/prog-ad-infographic-mobile@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+            </div>
+            <div class="col-12 col-lg-6 text-container">
+                <h2>Smash Your Sales <br /> Targets with Powerful Programmatic Advertising</h2>
+                <p class="text-center text-sm-left">From retail to healthcare, artificial intelligence has become increasingly common across virtually every industry imaginable. So why should online advertising be any different? Programmatic advertising helps businesses achieve their marketing goals by using AI-driven methods to reach and convert customers at the optimal moment. By automating the buying and selling of advertising space online, removing the human element from this transaction means your marketing material can be displayed in a matter of moments. </p>
+                <a class="text-center d-block d-md-none mb-4" id="read-more-toggle-btn-1" onclick="readMoreToggle(1)">Read More</a>
+                <p class="d-none d-md-block text-center text-sm-left" id="toggle-content-1">Don’t be hard on yourself if you’re a little confused, but programmatic marketing isn’t so complicated once you break it down. Rather than spending hours negotiating with publications on your own, programmatic advertising uses AI and machine learning to streamline display advertising from top to bottom. Faster, cheaper and more accurate than traditional methods, adopting programmatic methods into your brand’s marketing philosophy will boost your conversions and save you plenty of time.</p>
+                <a class="text-center d-none mb-4" id="read-less-toggle-btn-1" onclick="readLessToggle(1)">Read Less</a>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/Program-Ad-image-Desktop.png" srcset="{{ site.theme.link }}/assets/img/Program-Ad-image-Desktop.png, {{ site.theme.link }}/assets/img/Program-Ad-image-Desktop@2x.png 2x" class="img-fluid d-none d-lg-inline-block pr-lg-5" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/Program-Ad-image-tablet.png" srcset="{{ site.theme.link }}/assets/img/Program-Ad-image-tablet.png, {{ site.theme.link }}/assets/img/Program-Ad-image-tablet@2x.png 2x" class="img-fluid d-none d-md-inline-block pr-lg-5 d-lg-none" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/Program-Ad-image-mobile.png" srcset="{{ site.theme.link }}/assets/img/Program-Ad-image-mobile.png, {{ site.theme.link }}/assets/img/Program-Ad-image-mobile@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+            </div>
+            <div class="col-12 col-lg-6 text-container">
+                <h2>Don’t get caught using outdated marketing methods. Use AI-driven techniques to make sure your business remains on the cutting-edge!</h2>
+                <p class="text-center text-sm-left">Artificial intelligence is amazing, but don’t leave your entire strategy to an algorithm. With an effective campaign using computers to handle basic yet time-consuming calculations, your time is freed up to decide strategic elements that aren’t so simple. If you work alongside First Page, our expert digital marketers don’t just click start on your campaign and hope for the best. Instead, we monitor your strategy 24/7, conduct A/B tests and deliver an unbeatable ROI.</p>
+                <a class="text-center d-block d-md-none mb-4" id="read-more-toggle-btn-2" onclick="readMoreToggle(2)">Read More</a>
+                <p class="d-none d-md-block text-center text-sm-left" id="toggle-content-2">With programmatic marketing helping brands target a highly accurate customer base, planning and executing a data-driven campaign will boost your metrics across the board. Backed by a campaign that displays your ads to customers who genuinely care about your products, expect a massive surge in your conversion rates. Alongside comprehensive customer analytics and eye-catching marketing, let a programmatic advertising campaign capture the attention of high-quality customers in real-time.</p>
+                <a class="text-center d-none mb-4" id="read-less-toggle-btn-2" onclick="readLessToggle(2)">Read Less</a>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph pa-image-bg-section">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+            <div class="col-12 col-lg-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-graphic-Desktop-crop.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-graphic-Desktop-crop.png, {{ site.theme.link }}/assets/img/Prog-ad-graphic-Desktop-crop@2x.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-graphic-tablet-crop.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-graphic-tablet-crop.png, {{ site.theme.link }}/assets/img/Prog-ad-graphic-tablet-crop@2x.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-graphic-mobile.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-graphic-mobile.png, {{ site.theme.link }}/assets/img/Prog-ad-graphic-mobile@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+            </div>
+            <div class="col-12 col-lg-6 text-container">
+                <h2 class="pa-custom-width">Consider the advantages of programmatic advertising and outgrow your competition’s reach and conversions.</h2>
+                <p class="text-center text-sm-left">Traditional advertising becomes more outdated by the day, with programmatic methods allowing brands to advertise faster, cheaper and more efficiently than ever before. There’s also a far greater degree of transparency, as programmatic advertising provides detailed insights that traditional methods simply can’t. For instance, brands using programmatic marketing will always know where and when their advertising is placed, plus receive extensive analytics on the customers they reach. </p>
+                <a class="text-center d-block d-md-none mb-4" id="read-more-toggle-btn-3" onclick="readMoreToggle(3)">Read More</a>
+                <p class="d-none d-md-block text-center text-sm-left"  id="toggle-content-3">In a similar vein, the ability to keep track of your strategy’s success in real-time is a massive advantage. This is because traditional outlets like magazines or billboards have strictly limited inventory that can be difficult to target accurately. Meanwhile, there’s no way to fully assess the results of your strategy until it’s run its course. Programmatic advertising overcomes these issues, as you can keep close tabs on your campaign as soon as it's set in motion.</p>
+                <a class="text-center d-none mb-4" id="read-less-toggle-btn-3" onclick="readLessToggle(3)">Read Less</a>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-Google-dis-Desktop-crop3.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-Google-dis-Desktop-crop3.png, {{ site.theme.link }}/assets/img/Prog-ad-Google-dis-Desktop-crop3@2x.png 2x" class="img-fluid d-none d-lg-inline-block mt-xl-3 google-display-img" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-Google-dis-Tablet.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-Google-dis-Tablet.png, {{ site.theme.link }}/assets/img/Prog-ad-Google-dis-Tablet@2x.png 2x" class="img-fluid d-none d-md-inline-block mt-xl-3 google-display-img d-lg-none" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-Google-dis-mobile.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-Google-dis-mobile.png, {{ site.theme.link }}/assets/img/Prog-ad-Google-dis-mobile@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+            </div>
+            <div class="col-12 col-lg-6 text-container">
+                <h2>Take charge of your campaign with Google Display & Video 360</h2>
+                <p class="text-center text-sm-left">A programmatic advertising campaign requires an appropriate ad exchange for your needs. Unsure what that is? Ad exchanges bring together numerous advertisers, agencies and publishers to ensure buying and selling occurs on a single platform. Although the details can be complex, ad exchanges are like trading floors where auctions are decided in a fraction of a second.</p>
+                <a class="text-center d-block d-md-none mb-4" id="read-more-toggle-btn-4" onclick="readMoreToggle(4)">Read More</a>
+                <div class="d-none d-md-block" id="toggle-content-4">
+                    <p class="text-center text-sm-left" >While different ad exchanges offer personalised portfolios of online advertising space, the leading programmatic advertising platform is undoubtedly Google Display & Video 360 (DV360). Generating an estimated 90 billion impressions every day, DV360 offers unmatched consumer data via Google Search, Google Shopping, Gmail, YouTube and more.</p>
+                    <p class="text-center text-sm-left">This superior service ensures you can determine the right way to capitalise on audience behaviours and achieve a stellar ROI. With some studies estimating that as much as 40% of all media spend is wasted, partner with First Page to ensure your spending delivers the maximum amount of reward.</p>
+                </div>
+                <a class="text-center d-none mb-4" id="read-less-toggle-btn-4" onclick="readLessToggle(4)">Read Less</a>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+            <div class="col-12 col-lg-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-phone-graphic-desktop.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-phone-graphic-desktop.png, {{ site.theme.link }}/assets/img/Prog-ad-phone-graphic-desktop@2x.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-phone-graphic-tablet.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-phone-graphic-tablet.png, {{ site.theme.link }}/assets/img/Prog-ad-phone-graphic-tablet@2x.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-phone-graphic-mobile.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-phone-graphic-mobile.png, {{ site.theme.link }}/assets/img/Prog-ad-phone-graphic-mobile@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+            </div>
+            <div class="col-12 col-lg-6 text-container">
+                <h2>Work alongside a talented digital marketing team who know what it takes to lead your strategy to success! </h2>
+                <p class="text-center text-sm-left">Although 88% of display advertising is expected to be programmatic by the end of 2021, you aren’t limited to showcasing your products solely through banners. However, this easily accessible format remains extremely common, as organisations can activate the headers, footers and sidebars of highly relevant websites. By bidding for this ad space via public ad exchanges like DV360 or the Microsoft Audience Network, it’s remarkably easy for businesses at any scale to get started.</p>
+                <a class="text-center d-block d-md-none mb-4" id="read-more-toggle-btn-5" onclick="readMoreToggle(5)">Read More</a>
+                <p class="d-none d-md-block text-center text-sm-left"  id="toggle-content-5">Brands can also advertise on video content using this marketing method. With around 75% of video ads created programmatically, the vast majority are generated through YouTube’s TrueView system via three separate formats. In-stream video ads run before the user watches the video, while In-display ads appear in YouTube’s recommended video sidebar or within the search results. Lastly, Outstream video ads are a mobile-only option that plays on partner sites or apps within the page’s content.</p>
+                <a class="text-center d-none mb-4" id="read-less-toggle-btn-5" onclick="readLessToggle(5)">Read Less</a>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-funnel-graphic-desktop.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-funnel-graphic-desktop.png, {{ site.theme.link }}/assets/img/Prog-ad-funnel-graphic-desktop@2x.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-funnel-graphic-tablet.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-funnel-graphic-tablet.png, {{ site.theme.link }}/assets/img/Prog-ad-funnel-graphic-tablet@2x.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/Prog-ad-funnel-graphic-mobile.png" srcset="{{ site.theme.link }}/assets/img/Prog-ad-funnel-graphic-mobile.png, {{ site.theme.link }}/assets/img/Prog-ad-funnel-graphic-mobile@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+            </div>
+            <div class="col-12 col-lg-6 text-container">
+                <h2>Set up your campaign the right way to start achieving your business objectives and overtake your competition.</h2>
+                <p class="text-center text-sm-left">A programmatic advertising campaign requires an appropriate ad exchange for your needs. Unsure what that is? Ad exchanges bring together numerous advertisers, agencies and publishers to ensure buying and selling occurs on a single platform. Although the details can be complex, ad exchanges are like trading floors where auctions are decided in a fraction of a second.</p>
+                <a class="text-center d-block d-md-none mb-4" id="read-more-toggle-btn-6" onclick="readMoreToggle(6)">Read More</a>
+                <div class="d-none d-md-block" id="toggle-content-6">
+                    <p class="text-center text-sm-left">While different ad exchanges offer personalised portfolios of online advertising space, the leading programmatic advertising platform is undoubtedly Google Display & Video 360 (DV360). Generating an estimated 90 billion impressions every day, DV360 offers unmatched consumer data via Google Search, Google Shopping, Gmail, YouTube and more.</p>
+                    <p class="text-center text-sm-left">This superior service ensures you can determine the right way to capitalise on audience behaviours and achieve a stellar ROI. With some studies estimating that as much as 40% of all media spend is wasted, partner with First Page to ensure your spending delivers the maximum amount of reward.</p>
+
+                </div>
+                <a class="text-center d-none mb-4" id="read-less-toggle-btn-6" onclick="readLessToggle(6)">Read Less</a>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-paragraph">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+            <div class="col-12 col-lg-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/pro-ad-profit-graphic-desktop.svg" class="img-fluid d-none d-lg-inline-block" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/pro-ad-profit-graphic-tablet.svg" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/pro-ad-profit-graphic-mobile.svg" class="img-fluid d-md-none" alt="First Page" />
+            </div>
+            <div class="col-12 col-lg-6 text-container">
+                <h2 class="pa-custom-width">Transform your investment into incredible results! The experts at First Page know precisely how to achieve your goals.</h2>
+                <p class="text-center text-sm-left">Programmatic advertising streamlines the process of marketing online, but this modern way of doing things definitely has a learning curve that even experienced professionals find difficult to overcome. Fortunately, the talented digital marketers at First Page have the know-how your business needs to reach your objectives.</p>
+                <a class="text-center d-block d-md-none mb-4" id="read-more-toggle-btn-7" onclick="readMoreToggle(7)">Read More</a>
+                <div class="d-none d-md-block" id="toggle-content-7">
+                    <p class="text-center text-sm-left">As we’ve led highly profitable campaigns for some of the world’s leading brands, our programmatic advertising strategies push the limits of this AI-driven technology to deliver outstanding results. No matter where your audience hangs out online, we can produce a campaign that attracts and converts the right kind of people.</p>
+                    <p class="text-center text-sm-left">Ready to put your sales into overdrive? Chat with the team at First Page to learn how our programmatic advertising strategies will boost your brand’s marketing performance and generate reliable returns that ensure your business reaches the next level.</p>
+                </div>
+                <a class="text-center d-none mb-4" id="read-less-toggle-btn-7" onclick="readLessToggle(7)">Read Less</a>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+
+    {% include "partials/en-section-free-session.twig" %}
+    {% include "partials/en-section-experience.twig" %}
+
+    <section class="section-paragraph section-faqs mb-5">
+        <div class="container">
+            <h2 class="section-title">Social Media Specialiast FAQs</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+                            {#                            1#}
+                            <h3 itemprop="name">What is programmatic advertising?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>In the past, brands looking to market their products and services via traditional advertising avenues spent hours sending requests for proposals (RFPs), conducting negotiations with humans and completing insertion orders. Programmatic advertising solves this slow process by using computers to automate how companies buy and sell advertising online. Supported by artificial intelligence and machine learning, programmatic advertising makes it possible for brands to advertise online faster, cheaper and more accurately.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+                            {#                            2#}
+                            <h3 itemprop="name">What are the benefits of programmatic advertising?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Programmatic advertising has quickly become the leading way for brands to purchase online advertising space because the benefits are simply incredible. For example, businesses can now use real-time bidding to avoid outdated human-to-human negotiations, paper agreements and plenty of unnecessary discussions.</p>
+                                <p>This streamlined process means you can capitalise on your target market at a moment’s notice, while the use of AI and machine learning means your campaigns reach consistently relevant consumers. Alongside far greater transparency in reporting and measuring the success of your strategy compared to traditional media, programmatic marketing increases conversions and reduces wasted media spend.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+                            {#                            3#}
+                            <h3 itemprop="name">Is programmatic marketing more effective than traditional advertising? </h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>While traditional advertising methods can reach a wide range of people, this isn’t always the most efficient way of leading your campaign. In fact, programmatic advertising ensures you can effectively target your brand’s specific customer base, meaning your business generates a higher percentage of conversions from your spending. For example, you can make sure your strategy reaches certain geographical areas while also targeting specific demographics like age, gender and estimated income.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+                            {#                            4#}
+                            <h3 itemprop="name">Why are traditional marketing methods now considered obsolete for online advertising?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>In the past, human marketers had to contact individual publications to negotiate a fair price to display advertising and attract their target market. While this way of buying and selling ads did deliver success, it was a slow and tedious process that didn’t always allow companies to capitalise when the market was ripe. Nowadays, programmatic marketing uses AI and machine learning to help companies advertise faster, cheaper and more accurately. This helps convert more customers for a better ROI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+                            {#                            5#}
+                            <h3 itemprop="name">What is real-time bidding?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>If you spend some time reading about programmatic advertising, you’re bound to come across the term ‘real-time bidding’ (RTB). Although RTB is definitely one of the main ways brands purchase ads using programmatic marketing, it’s not the only way. In fact, some publishers allow brands to buy ad space ahead of time for a specified price, a process often referred to as ‘programmatic guaranteed’.</p>
+                                <p>Despite the term real-time bidding regularly conflated with programmatic advertising as a whole, it’s actually the process of taking part in an automated digital auction where brands bid for ad space using CPM. In the time it takes for a web page to load, the auction is completed and the best bid is chosen to have their ad displayed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+                            {#                            6#}
+                            <h3 itemprop="name">What is an ad exchange?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>If you’re ready to get started with programmatic advertising, you need to access a marketplace. This is the entire point of an ad exchange, as it brings together publishers and advertisers looking to trade digital inventory. Whether you’re looking to reach consumers via display, native, video, mobile or in-app, you can take part in real-time auctions and secure ad space to spread your brand’s products and services. </p>
+                                <p>Once you start exploring the world of programmatic advertising, you might find that there are both public and private marketplaces. For example, Google Display & Video 360 is an example of an open marketplace, while there are closed options where publishers can strictly control who can purchase ads and what conditions are in place. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse7">
+                            {#                            7#}
+                            <h3 itemprop="name">What is a supply-side platform?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse7" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Programmatic advertising involves the use of a supply-side platform (SSP). This is a type of programmatic software that allows publishers and digital media owners to take charge of their advertising inventory. As SSPs connect publishers with numerous ad exchanges and demand-side platforms, this helps them to sell their ad space efficiently to a far greater number of buyers. Ultimately, SSPs help publishers receive higher bids on their ad space and increase the potential profit of their websites and apps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse8">
+                            {#                            8#}
+                            <h3 itemprop="name">What is a demand-side platform?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse8" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>To find ad space that benefits your brand’s products and services, you need to use a demand-side platform (DSP) to complete the media buying process. With DSPs helping advertisers bid for inventory across a range of different networks, this means you won’t have to waste hours and hours contacting individual publishers to purchase their ad space. Whether you’re buying display, video or mobile ads, a DSP enables the automatic process that makes programmatic advertising so convenient for conducting modern online marketing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse9">
+                            {#                            9#}
+                            <h3 itemprop="name">How does programmatic advertising work?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse9" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The beauty of programmatic advertising is that the transaction occurs within a fraction of a second. Once the user clicks on a website, the ad space on the page is put up for auction on the SSP. At the same time, the DSP places bids for the advertiser based on a range of factors, including budget, strategy and the size of the creative. Then, the highest bid for this kind of inventory is selected as the winner and the ad is displayed on the webpage by the time it finishes loading. With the help of a highly experienced digital marketing agency like First Page, we can ensure your business achieves an outstanding ROI from its programmatic advertising bids.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse10">
+                            {#                            10#}
+                            <h3 itemprop="name">How do I set up programmatic ads?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse10" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Although programmatic advertising involves artificial intelligence and machine learning, it still requires plenty of thought to generate a campaign that achieves your goals. Once you’ve determined the objectives of your strategy and the ad format that makes sense for your audience, you have to decide on the demand-side platform that offers the reach, inventory and reporting that delivers results. </p>
+                                <p>But with this process often too complicated for amateurs to understand, the easiest way to get started with programmatic advertising is by partnering with a leading digital marketing agency like First Page. With our talented team leading programmatic marketing campaigns for some of the world’s top brands, you can trust us to make your campaign a success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse11">
+                            {#                            11#}
+                            <h3 itemprop="name">What types of ads can be created using programmatic advertising automation?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse11" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Programmatic advertising offers a range of online marketing formats, ensuring you can reach a wide range of consumers browsing various media types across the internet. While the most common type of programmatic advertising remains banner advertisements, businesses can also develop campaigns for video ads and native ads. You can even use programmatic marketing for audio ads on podcasts and streaming services – one of the fastest-growing outlets for online advertisers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse12">
+                            {#                            12#}
+                            <h3 itemprop="name">Can programmatic marketing be used for native advertising?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse12" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Yes! It’s possible to deliver native ads through programmatic marketing methods. While native ads work similarly to display ads, the former is designed to look natural on the page instead of the hard sell approach seen with the latter. Although native advertising doesn’t usually stand out as much, it can actually have a higher click-through rate, as people tend to be more receptive to a less direct message.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                            {#                            13#}
+                            <h3 itemprop="name">What is the cost of programmatic advertising? </h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>As you might expect, the cost of programmatic advertising can change dramatically depending on a plethora of factors. But with most programmatic marketing campaigns most frequently using CPM, you can control this cost by tweaking your campaign’s reach, duration and audience. With more precise target markets usually attracting a higher CPM, brands with limited budgets have to carefully weigh up these factors to deliver a cost-effective campaign. However, the team at First Page can ensure your business achieves its marketing objectives for a price that makes sense.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                            {#                            14#}
+                            <h3 itemprop="name">How do I measure my programmatic advertising campaign?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Like any digital marketing strategy, you have to measure the right kind of metrics to determine whether your budget has been used successfully. Fortunately, programmatic advertising campaigns tend to be wonderfully transparent when it comes to finding out where your ads have appeared and how these relate to your target audience. </p>
+                                <p>Meanwhile, you can also consider the reach of your ads, the final cost of leads and return on ad spend to determine whether your campaign needs to be adjusted. If you work alongside the superior digital marketers at First Page, we’ll provide regular detailed reports that showcase how your budget is being pushed to its limits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                            {#                            15#}
+                            <h3 itemprop="name">Is programmatic advertising right for my business?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Considering more than 80% of businesses now use programmatic advertising for their online marketing needs, there’s a good chance that it’s also a great choice for your business. With programmatic marketing offering a highly convenient way to reach a precise target market for a reasonable cost, there’s plenty of incentive to start your campaign today. However, it always helps to chat with expert digital marketers about the needs of your business. Get in touch with First Page and we can help you make an informed decision about your approach to digital advertising. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                            {#                            16#}
+                            <h3 itemprop="name">Is programmatic marketing the future of online display advertising?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>As more and more businesses are spending their marketing budget on online ads instead of traditional media, the incredible convenience and cost-effective nature of programmatic advertising ensures this method isn’t going away. Considering that it’s now possible to purchase ads for TV and radio using the same AI-driven techniques, it’s safe to say that using programmatic marketing for media buying has changed the digital landscape forever.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse17">
+                            {#                            17#}
+                            <h3 itemprop="name">Why choose First Page for programmatic advertising? </h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>When businesses choose to work with First Page, they have complete confidence in their campaign because we guarantee results. In fact, our renowned digital marketing agency has delivered thousands of successful campaigns for clients across every imaginable industry. </p>
+                                <p>Backed by our incredibly talented team, First Page has what it takes to plan and execute a programmatic advertising strategy that reaches your ideal target market and achieves your goals! Whether you’re looking to skyrocket brand awareness or boost conversions, we offer an unmatched commitment to helping Australian businesses grow beyond their wildest dreams. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse18">
+                            {#                            18#}
+                            <h3 itemprop="name">Can I outgrow my rivals with programmatic advertising?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The world of online advertising is a competitive space, with both your direct rivals and every other business looking to gain attention online. Yet the programmatic marketing automation techniques our superior digital marketers use are designed to skyrocket your advertising potential into the stratosphere. From increased brand awareness to a dramatically improved conversion rate, letting our experts kickstart your AI-based marketing campaign is bound to help your brand achieve a first-rate ROI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse19">
+                            {#                            19#}
+                            <h3 itemprop="name">How will a digital marketing agency plan my programmatic marketing campaign? </h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>If you decide to use programmatic advertising, a digital marketing agency can swiftly determine the best approach for your company’s needs. From the duration of your campaign to the parameters of your audience size, a talented agency like First Page will decide the ideal CPM price to ensure you win your bids. Naturally, the approach your brand needs will change depending on a wide range of unique circumstances. But choosing to work alongside an agency that knows what it takes to achieve results is the best way to ensure your budget doesn’t go to waste. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    {% include "partials/en-form-popup.twig" with {'form_page': 'Programmatic Advertising (Pop-up Form)'} %}
+
+{% endblock %}

@@ -1,0 +1,194 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<style>
+    @media (max-width: 767px){
+        .hero-mobile {
+            margin-bottom: -98px;
+            position: absolute;
+            bottom: 0;
+            right: -23px;
+        }
+        section.banner .banner-description {
+        
+            margin-top: 97px;
+        }
+
+        section.banner h1 {
+            
+            max-width: 216px;
+           
+        }
+
+    }
+
+    @media (min-width: 768px){
+        section.banner .banner-hero .hero-img {
+            right: -97px;
+        }
+    }
+
+    @media (min-width: 1440px){
+        section.banner .banner-hero .hero-img {
+            right: -137px;
+        }
+    }
+
+
+</style>
+<section class="banner form-space">
+        <div class="container banner-hero two-lines">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide">10X your growth with <br class="d-none d-lg-block">cutting-edge mobile SEO</h1>
+                <div class="banner-description form-hide">
+                    <div class="form-hide hero-mobile">
+                        <img src="{{ site.theme.link }}/assets/img/img_hero_video_seo_sm.png"
+                             srcset="{{ site.theme.link }}/assets/img/img_hero_video_seo_sm.png, {{ site.theme.link }}/assets/img/img_hero_video_seo_sm@2x.png 2x"
+                             alt="First Page"/>
+                    </div>
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'Mobile SEO', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+            <div class="hero-img d-none d-md-block d-lg-none">
+                <img src="{{ site.theme.link }}/assets/img/img_hero_video_seo_md.png"
+                     srcset="{{ site.theme.link }}/assets/img/img_hero_video_seo_md.png, {{ site.theme.link }}/assets/img/img_hero_video_seo_md@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+            <div class="hero-img d-none d-lg-block">
+                <img src="{{ site.theme.link }}/assets/img/img_hero_video_seo_lg.png"
+                     srcset="{{ site.theme.link }}/assets/img/img_hero_video_seo_lg.png, {{ site.theme.link }}/assets/img/img_hero_video_seo_lg@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+        </div>
+    </section>
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+<section class="section-paragraph section-white mob-center">
+    <div class="container">
+        <div class="row mb-3 mb-md-5 flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/assets/img/woo-growth.png" srcset="{{ site.theme.link }}/assets/img/woo-growth@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/woo-growth-mb.png" srcset="{{ site.theme.link }}/assets/img/woo-growth-mb@2x.png 2x" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Boost Rankings With Mobile SEO</h2>
+                <p>With smartphones now the dominant medium people use to search the internet, finding a way to reach mobile customers in a variety of ways is essential to digital marketing success. In fact, 91% of Australians use a smartphone device, while 24% prefer to shop online with their mobile. This incredible shift in the way people browse the internet and purchase products means adopting a razor-sharp approach to mobile SEO is vital to growth and longevity. </p>
+                <p>First Page Australia’s veteran team can ensure your business develops a mobile marketing strategy that captures the attention of your most valued customers. With our in-depth understanding of how consumer habits change when browsing on mobile compared to desktop, we can tailor our campaign to attract and convert those who prefer to shop on the move.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
+                <img src="{{ site.theme.link }}/assets/img/mobile_seo_step_img.png" srcset="{{ site.theme.link }}/assets/img/mobile_seo_step_img@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/mobile_seo_step_img_mb.png" srcset="{{ site.theme.link }}/assets/img/mobile_seo_step_img_mb@2x.png 2x" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Mobile-First Design Matters</h2>
+                <p>Website design is already an underestimated aspect of <a href="{{ home_url }}seo/">SEO</a>, but especially when it comes to attracting mobile customers. If you want to make the most of how customers are searching in the modern age, you need a mobile-friendly presence that’s fast, clean and accessible. As the average mobile customer will bounce from a website within seconds if it doesn’t load, we know how to deliver rapid speeds that maximise conversion rates.</p>
+                <p>Alongside effective mobile website design, achieving the top rankings on the search engine results page is also predicated on having a robust mobile platform. This is because Google switched to mobile-first indexing when the number of smartphone searches overtook its desktop counterpart. With this massive change in mind, our mobile-friendly designs are the ideal way to attract a modern audience.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/assets/img/img_mobile_seo_data.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/img_mobile_seo_data_mb.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Generate More Inbound Traffic</h2>
+                <p>If your business is looking to reach local customers, you can’t overlook the power of mobile SEO. Considering 78% of location-based mobile searches result in an offline purchase, making sure your immediate target market is aware of your existence is hugely important. With a detailed mobile SEO strategy, you can ensure Google displays your business to local customers when they search for a business like yours using their smartphone.</p>
+                <p>With purchases made on mobile devices surpassing 54% of all e-commerce sales by 2021, you’re missing out on a big percentage of the market if you don’t cater to this evolution. Fortunately, a tailored mobile SEO campaign ensures you attract your most desired target market. Let our team gain the attention of your ideal audience by delivering an unbeatable mobile browsing experience.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
+                <img src="{{ site.theme.link }}/assets/img/img_services_profit_lg.svg" class="img-fluid d-none d-md-inline-block"
+                     alt="First Page"/>
+                <img src="{{ site.theme.link }}/assets/img/img_services_profit_sm.svg" class="img-fluid d-md-none"
+                     alt="First Page"/>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Skyrocket Mobile Performance</h2>
+                <p>Customers browsing via desktop are still hugely relevant to the success of your business. But if more than half of consumers shop using their smartphones, it only makes sense to provide a robust platform to nurture conversions. Through the power of mobile SEO, First Page Australia will deliver an effective campaign based on the key pillars of user experience, engaging content and top-notch performance.</p>
+                <p>Whether you’re looking to boost your page rankings or enhance your e-commerce success, taking a comprehensive approach to mobile SEO is one of the smartest ways to safeguard your business for the future. With the backing of an expert digital marketing agency like First Page Australia, you’ll stride ahead of the competition with dramatically increased metrics across the board.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-free-session.twig" %}
+{# {% include "assets/partials/en-section-free-session.twig" %} #}
+    <section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                        {# Q1 #}
+                            <h3 itemprop="name">WHAT IS MOBILE SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>In recent years, mobile phones have massively impacted how people search the internet. As Google takes this fact heavily into consideration when ranking websites, mobile SEO services help companies develop a website that's incredible to browse on smartphones. By creating punchy titles, clearly structured text and a razor-sharp user experience, mobile SEO ensures companies lead a successful online business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                        {# Q2 #}
+                            <h3 itemprop="name">Why Is Mobile SEO Important For Businesses?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Mobile SEO has quickly become a crucial factor for modern businesses because almost every customer uses their phone to search, browse and shop. With research finding that 24% of people prefer to shop via their mobile device instead of using their computer, developing a website that responds to this need is imperative to maximise conversions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                        {# Q3 #}
+                            <h3 itemprop="name">HOW CAN I IMPROVE MY MOBILE SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                              <p>Taking a mobile-first approach to your website design is the best way to keep customers reading about your products and services. For each business, this can mean vastly different things. But at the end of the day, you want to focus on establishing a fast, accessible and easy-to-navigate platform that features clear titles, an intuitive menu and avoids annoying pop-ups. Luckily, <a href="{{ home_url }}">First Page Australia’s</a> mobile SEO services will take care of all these things for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                        {# q4 next update images#}
+                            <h3 itemprop="name">WHAT ARE THE BENEFITS OF MOBILE SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>For businesses based in Melbourne and across Australia, a comprehensive mobile SEO campaign offers a wealth of advantages. First and foremost, your business will profit from Google's mobile-first indexing, which pushes mobile-friendly websites up the SERP. Plus, a detailed mobile SEO strategy means your optimisations cater to the needs of modern, everyday customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+        </div>
+    </section>
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'Mobile SEO (Pop-up Form)'} %}
+
+{% endblock %}

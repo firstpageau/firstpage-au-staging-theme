@@ -1,0 +1,443 @@
+{% extends "en-base.twig" %}
+{% block content %}
+
+<section class="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-7 col-lg-7">
+				<h1>PPC ROI Calculator</h1>
+				<p>A comprehensive digital marketing strategy should include a PPC campaign, but how much return can you really expect? Find out by using our ROI calculator.</p>
+			</div>
+			<div class="col-12 col-md-5 col-lg-5">
+				<img src="{{ site.theme.link }}/assets/seo-calculator/roi-calculator-hero-banner.png" class="img-fluid" alt="SEO ROI Calculator" />
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-white shaded-white">
+	<div class="d-flex justify-content-center" id='fp-roi-calculator' data-currency='$'>
+		<div class="ppc-roi-calculator">
+			<div id='fp-roi-calculator' data-currency='$' data-locale='en'>
+				<div class="fp-container roi-for-section">
+					<h2 class="fp-title text-center">ROI for service based businesses</h2>
+					<div class="row mx-0">
+						<div class="col-12 col-lg-7 fp-shadow-left fp-border-radius-left">
+							<div class="row fp-vertical-align fp-show-block" id="fp-cpc_services">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">What is the average cost per click for keywords relating to your business?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="cpc_services">CPC <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="You can find Cost Per Click metrics on your Google or Facebook ads dashboards. Alternatively, divide your total ad spend by your total clicks to get CPC." data-trigger="hover"></label>
+									<input data-type="showsup" id="cpc_services-range" class="fp-slider" type="range" min="0.10" max="50" step="0.10" value="1" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="cpc_services-range-val">1%</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-ad_spend_services">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">How much do you intend to spend on your ad campaign?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="ad_spend_services">Ad Spend <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="If you have no ad spend currently, test out any number. A good place to start is 10% of your total marketing budget." data-trigger="hover"></label>
+									<input data-type="wholenumber" id="ad_spend_services-range" class="fp-slider" type="range" min="1000" max="100000" step="1000" value="1000" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="ad_spend_services-range-val">$1000</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-conversation_rate_services">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">What is the conversion rate (CVR) of visitors to your website that become new leads?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="conversation_rate_services">Conversion Rate <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="E.g. if your website gets 1,000 visitors and 300 of them convert to leads, your conversion rate is (300/1000)%= 30%" data-trigger="hover"></label>
+									<input data-type="percentage" id="conversation_rate_services-range" class="fp-slider" type="range" min="0.5" max="100" step="0.5" value="20" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="conversation_rate_services-range-val">20%</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-close_rate_services">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">How many of your leads turn into customers?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="close_rate_services">Close Rate <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="E.g. if you have 100 leads and you convert 15 of them into customers, your close rate is (15/100)%= 15%" data-trigger="hover"></label>
+									<input data-type="percentage" id="close_rate_services-range" class="fp-slider" type="range" min="1" max="100" step="0.5" value="40" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="close_rate_services-range-val">40%</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-average_customer_value_services">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">On average, how much is each customer worth to your business?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="average_customer_value_services">Avg Customer Value <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="E.g. if you have $100,000 in revenue from 20 customers, your average customer value is ($100,000/20)= $5,000" data-trigger="hover"></label>
+									<input data-type="wholenumber" id="average_customer_value_services-range" class="fp-slider" type="range" min="100" max="100000" step="100" value="100" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="average_customer_value_services-range-val">$100</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-hide-block" id="fp-average_profit_margin_services">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">The percentage of each sale that is profit</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="average_profit_margin_services">Avg Profit Margin <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="Average profit margin is your profit as a percentage of cost, totalling all costs and all profits, usually over a long period of time." data-trigger="hover"></label>
+									<input data-type="percentage" id="average_profit_margin_services-range" class="fp-slider" type="range" min="1" max="99" step="1" value="1" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="average_profit_margin_services-range-val">1%</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-5 fp-shadow-right fp-border-radius-right">
+							<div class="row">
+								<div class="col-12 text-center">
+									<img class="fp-logo" src="{{ site.theme.link }}/assets/img/fp-logo-roi-calc.svg" />
+									<p class="seo-cal-based-title">Based on these numbers, here is what you could expect for return on investment*</p>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Visits
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_visits_services">0</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Leads
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_leads_services">0</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											CPL
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_cpl_services">0</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Sales
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_sales_services">0</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Revenue
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_revenue_services">0</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center fp-hide-block " id="profit_listed_service">
+											Profit
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_profit_services">0<span></span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center monthly-roi">
+											<span class="monthly-roi-label">Monthly ROI</span>
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_monthlyroi_services"></span>
+											</span>
+										</li>
+									</ul>
+									</li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="switch-container">
+						<label class="switch" for="show_profit_margin">
+							<input type="checkbox" id="show_profit_margin">
+							<span class="switch-slider round"></span>
+						</label>
+						<span class="show-pmc">Show Profit Margin Calculations</span>
+					</div>
+				</div>
+				<div class="fp-container roi-for-section">
+					<h2 class="fp-title text-center">ROI for ecommerce based businesses</h2>
+					<div class="row mx-0">
+						<div class="col-12 col-lg-7 fp-shadow-left fp-border-radius-left">
+							<div class="row fp-vertical-align fp-show-block" id="fp-cpc_ecommerce">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">What is the average cost per click for keywords relating to your business?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="cpc_ecommerce">CPC <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="You can find Cost Per Click metrics on your Google or Facebook ads dashboards. Alternatively, divide your total ad spend by your total clicks to get CPC." data-trigger="hover"></label>
+									<input data-type="showsup" id="cpc_ecommerce-range" class="fp-slider" type="range" min="0.10" max="20" step=".10" value="1" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="cpc_ecommerce-range-val">1%</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-ad_spend_ecommerce">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">How much do you intend to spend on your ad campaign?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="ad_spend_ecommerce">Ad Spend <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="If you have no ad spend currently, test out any number. A good place to start is 10% of your total marketing budget." data-trigger="hover"></label>
+									<input data-type="wholenumber" id="ad_spend_ecommerce-range" class="fp-slider" type="range" min="1000" max="100000" step="500" value="1000" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="ad_spend_ecommerce-range-val">$1000</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-conversion_rate_ecommerce">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">Conversion rate (from visitors to leads) on the page you send your leads to.</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="conversion_rate_ecommerce">Conversion Rate <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="E.g. if your website gets 1,000 visitors and 300 of them convert to leads, your conversion rate is (300/1000)%= 30%" data-trigger="hover"></label>
+									<input data-type="percentage" id="conversion_rate_ecommerce-range" class="fp-slider" type="range" min="0.1" max="100" step="0.1" value="10" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="conversion_rate_ecommerce-range-val">10%</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-avg_customer_value_ecommerce">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">On average, how much is each customer worth to your business?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="avg_customer_value_ecommerce">Avg Customer Value <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="E.g. if you have $100,000 in revenue from 20 customers, your average customer value is ($100,000/20)= $5,000" data-trigger="hover"></label>
+									<input data-type="wholenumber" id="avg_customer_value_ecommerce-range" class="fp-slider" type="range" min="5" max="2000" step="5" value="100" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="avg_customer_value_ecommerce-range-val">$100</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-hide-block" id="fp-avg_profit_value_ecommerce">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">The percentage of each sale that is profit</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="avg_profit_value_ecommerce">Avg Profit Margin <img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="Average profit margin is your profit as a percentage of cost, totalling all costs and all profits, usually over a long period of time." data-trigger="hover"></label>
+									<input data-type="percentage" id="avg_profit_value_ecommerce-range" class="fp-slider" type="range" min="1" max="99" step="1" value="70" data-orientation="vertical">
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="avg_profit_value_ecommerce-range-val">70%</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-5 fp-shadow-right fp-border-radius-right">
+							<div class="row">
+								<div class="col-12 text-center">
+									<img class="fp-logo" src="{{ site.theme.link }}/assets/img/fp-logo-roi-calc.svg" />
+									<p class="seo-cal-based-title">Based on these numbers, here is what you could expect for return on investment*</p>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Visits
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_visits_ecommerce">0</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Sales
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_sales_ecommerce">0</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Revenue
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_revenue_ecommerce">0</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center fp-hide-block " id="profit_listed_ecommerce">
+											Profit
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_profit_ecommerce">0<span></span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center monthly-roi">
+											<span class="monthly-roi-label">Monthly ROI</span>
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_monthlyroi_ecommerce"></span>
+											</span>
+										</li>
+									</ul>
+									</li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="switch-container">
+						<label class="switch" for="show_profit_margin_ecommerce">
+							<input type="checkbox" id="show_profit_margin_ecommerce">
+							<span class="switch-slider round"></span>
+						</label>
+						<span class="show-pmc">Show Profit Margin Calculations</span>
+					</div>
+					<div class="fp-calculator-footer-text">
+						<p>*The information calculated from the First Page ROI Calculator is intended for use by you as a guide ONLY. The calculations produced by the First Page ROI Calculator do not in any way represent guaranteed results, and the calculations have no legal effect on any contracts entered into by you (‘the Client’) with First Page. The figures and formulae used within the First Page ROI Calculator may change at any time without notice. First Page accepts no responsibility for any losses arising from any use or reliance upon any calculations or conclusions reached by using the First Page ROI Calculator.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-paragraph">
+	<div class="container">
+		<div class="row align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+			<div class="col-12 col-lg-6 text-center">
+				<img src="{{ site.theme.link }}/assets/img/img_roi.png" srcset="{{ site.theme.link }}/assets/img/img_roi.png, {{ site.theme.link }}/assets/img/img_roi@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+				<img src="{{ site.theme.link }}/assets/img/img_roi_mob.png" srcset="{{ site.theme.link }}/assets/img/img_roi_mob.png, {{ site.theme.link }}/assets/img/img_roi_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+			</div>
+			<div class="col-12 col-lg-6 text-container">
+				<h2>How do you calculate <br>PPC ROI?</h2>
+				<p>At First Page Digital, we are second to none when it comes to building effective PPC campaigns with maximum ROI for our clients.</p>
+				<p>We've combined our years of knowledge and expertise to build a simple-to-use ROI calculator tool that can give you instant insights in minutes. By analysing six key metrics to calculate ROI, you can see the potential value a PPC campaign can bring to your business.</p>
+				<p>Below are the metrics we use to calculate the ROI of your PPC campaign.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-services">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card">
+					<img src="{{ site.theme.link }}/assets/img/icn_cpc.svg" alt="First Page">
+					<div class="card-body">
+						<h4 class="card-title">Average Cost Per Click</h4>
+						<p class="card-text">The average Cost Per Click (CPC) is dependent on various factors such as industry, proposed ad spend, and the level of competition for your targeted keywords.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card">
+					<img src="{{ site.theme.link }}/assets/img/icn_proposed_spend.svg" alt="First Page">
+					<div class="card-body">
+						<h4 class="card-title">Proposed Spend</h4>
+						<p class="card-text">The monthly proposed budget has a significant impact on the outcome of the PPC campaign. Depending on your business size, we recommend starting with a budget of at least 1,600 AUD.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card">
+					<img src="{{ site.theme.link }}/assets/img/icn_conversion_rate.svg" alt="First Page">
+					<div class="card-body">
+						<h4 class="card-title">Conversion Rate</h4>
+						<p class="card-text">This refers to the conversion of your current website, including leads, sales, signups and more.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card">
+					<img src="{{ site.theme.link }}/assets/img/icn_close_sale.svg" alt="First Page">
+					<div class="card-body">
+						<h4 class="card-title">Close Rate</h4>
+						<p class="card-text">Any B2B or B2C businesses that provide services need to enter their close to calculate the ROI of your PPC campaign.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card">
+					<img src="{{ site.theme.link }}/assets/img/icn_avg_customer_value.svg" alt="First Page">
+					<div class="card-body">
+						<h4 class="card-title">Average Customer Value</h4>
+						<p class="card-text">Average Customer Value (AVC) refers to how much your customer is worth at a specific stage of the marketing funnel.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card">
+					<img src="{{ site.theme.link }}/assets/img/icn_profit_margin.svg" alt="First Page">
+					<div class="card-body">
+						<h4 class="card-title">Profit Margin</h4>
+						<p class="card-text">Calculate your profit margins by adding up your sales, subtracting expenses, and dividing by overall revenue.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-paragraph section-faqs">
+	<div class="container">
+		<h2 class="section-title">Frequently asked questions</h2>
+		<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+						<h5 itemprop="name">What is PPC?</h5>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Pay for Click, or PPC, is an online advertising model where advertisers run ads on a search platform (like Google) and pay a fee every time their ad is clicked on. Learn more about <a href="{{ home_url }}google-ads/">PPC</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+						<h5 itemprop="name">What is the optimum ROI for a PPC campaign?</h5>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Like most digital marketing campaigns, ROI for PPC advertising is subjective and is dependent on factors such as business industry and size. The best ROI is, of course, the one with the highest profit margins relative to the expected budget and business goals.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+						<h5 itemprop="name">What factors determine my PPC costs?</h5>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>The cost of your PPC campaign is influenced by a number of factors, including monthly ad spend, targeting of keywords and demographics, and the quality of your ads (low or high).</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+						<h5 itemprop="name">Am I guaranteed to get these ROI figures if I implement a PPC campaign?</h5>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>As our ROI calculator tool is designed to predict potential returns, these ROI numbers are by no means guaranteed. They are here as a point of reference for you to see how a PPC campaign can become an effective part of your digital marketing strategy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+						<h5 itemprop="name">Can I use this calculator to calculate SEO ROI?</h5>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>No, this calculator is specially designed for calculating PPC ROI. To calculate the potential of your SEO campaigns, please refer to our SEO ROI calculator tool here.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+						<h5 itemprop="name">How can I get started with PPC?</h5>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>An effective PPC campaign is part of a comprehensive digital marketing strategy. <a href="{{ home_url }}contact/">Contact our digital marketing specialists</a> to see how we can help grow your business today.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="{{ site.theme.link }}/assets/ppc-roi-calculator/js/script.js"></script>
+
+{% endblock %}

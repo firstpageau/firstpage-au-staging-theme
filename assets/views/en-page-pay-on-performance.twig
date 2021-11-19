@@ -1,0 +1,221 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<style>
+    @media (max-width: 375px){
+        .hero-mobile {
+            right: -33px !important;
+        }
+    }
+    @media (max-width: 767px){
+        .hero-mobile {
+            margin-bottom: -98px;
+            position: absolute;
+            bottom: 0;
+            right: -13px;
+        }
+        section.banner .banner-description {
+        
+            margin-top: 97px;
+        }
+
+        section.banner h1 {
+            
+            max-width: 216px;
+           
+        }
+
+    }
+
+    @media (min-width: 768px){
+        section.banner .banner-hero .hero-img {
+            right: -234px;
+            bottom: -111px;
+        }
+    }
+    @media (min-width: 992px){
+        section.banner .banner-hero .hero-img {
+            right: -226px;
+            bottom: -80px;
+        }
+
+    }
+
+    @media(min-width: 1200px){
+        section.banner .banner-hero .banner-hero-cont {
+   
+            max-width: 802px;
+        }
+    }
+
+    @media (min-width: 1440px){
+        section.banner .banner-hero .hero-img {
+            right: -209px;
+        }
+
+    }
+
+
+</style>
+<section class="banner form-space">
+        <div class="container banner-hero two-lines">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide">Only pay on results with <br class="d-none d-xl-block">game-changing performance SEO</h1>
+                <div class="banner-description form-hide">
+                    <div class="form-hide hero-mobile">
+                        <img src="{{ site.theme.link }}/assets/img/nick-hero-mb.png"
+                             srcset="{{ site.theme.link }}/assets/img/nick-hero-mb.png, {{ site.theme.link }}/assets/img/nick-banner-mb@2x.png 2x"
+                             alt="First Page"/>
+                    </div>
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'Pay On Performance', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+            <div class="hero-img d-none d-md-block d-lg-none">
+                <img src="{{ site.theme.link }}/assets/img/nick-banner-hero.png"
+                     srcset="{{ site.theme.link }}/assets/img/nick-banner-hero.png, {{ site.theme.link }}/assets/img/nick-banner-hero@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+            <div class="hero-img d-none d-lg-block">
+                <img src="{{ site.theme.link }}/assets/img/nick-hero-google-ads.png"
+                     srcset="{{ site.theme.link }}/assets/img/nick-hero-google-ads.png, {{ site.theme.link }}/assets/img/nick-hero-google-ads@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+        </div>
+</section>
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+<section class="section-pictext section-blue mt-5">
+    <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-2 mb-2">
+                <img src="{{ site.theme.link }}/views/assets/img/img-no_risk_graph.png" srcset="{{ site.theme.link }}/views/assets/img/img-no_risk_graph@2x.png 2x" class="img-fluid" alt="SEO with Guaranteed Results" />
+            </div>
+
+            <div class="col-12 col-md-6 mt-2 mb-2 text-center text-md-left">
+                <h2>
+                    <strong>Reach page 1 or pay nothing!</strong>
+                </h2>
+                <p>Why pay for SEO when you haven’t seen the results? First Page Australia is so confident in our skills that we offer a pay-on-performance model that means you only spend cash once we’ve delivered the goods. That’s right – you’ll benefit from our <a href="https://wordpress-529359-2026654.cloudwaysapps.com/seo/">extensive SEO services</a> until we organically land your chosen target keyword on the first page of Google. </p>
+                <p>We mean what we say – there’s no tricks, risks or hidden claims. So how do we accomplish this demanding goal? By taking an aggressive approach to SEO, delving into your analytics and conducting intensive competitor research, we can determine the best way to achieve your business objectives. All you have to do is sit back and watch as our talented team works its magic.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-paragraph section-white mob-center">
+    <div class="container">
+        <div class="row mb-3 mb-md-5 flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/assets/img/img_get_to_page_1.png" srcset="{{ site.theme.link }}/assets/img/img_get_to_page_1@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/img_get_to_page_1_mob.png" srcset="{{ site.theme.link }}/assets/img/img_get_to_page_1_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Targeted SEO delivers results</h2>
+                <p>Part of what makes our pay-on-performance model so powerful is how effective we are at identifying issues with your website’s SEO health. First Page Australia’s expert team will conduct a detailed audit of your website, helping us make a raft of recommendations that’ll improve your keyword usage, backlink strategy and overall content quality. Ultimately, this leads to dramatically improved SEO results.</p>
+                <p>Alongside our comprehensive website audit services, we can also carry out a thorough analysis of your key competitors. This ensures we have a precise understanding of your target market and how they respond to specific products, services and digital marketing strategies. Backed by this holistic approach, we’re certain we can push your business to the first page of Google.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
+                <img src="{{ site.theme.link }}/assets/img/img_end_to_end_seo.png" srcset="{{ site.theme.link }}/assets/img/img_end_to_end_seo@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/img_end_to_end_seo_mob.png" srcset="{{ site.theme.link }}/assets/img/img_end_to_end_seo_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Powerful data-driven SEO</h2>
+                <p>When it comes to implementing a productive SEO campaign, having a picture-perfect understanding of your customers’ desires is essential to success. This is one of our primary concerns as we take several steps to fully comprehend what motivates your ideal customers when they search. Through this research, we can generate a refined strategy that attracts your target market and achieves your goals.</p>
+                <p>By partnering with a leading digital marketing agency like First Page Australia, you’ll gain access to a wealth of industry-specific SEO tools that help us reach your targets. From keyword research to emerging trends, our experienced agency utilises a vast range of data to achieve outstanding results for our clients. At the end of the day, this ensures we land on the first page of Google ASAP.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/assets/img/img_attract_customers.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/img_attract_customers_mob.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Attract your target market rapidly</h2>
+                <p>Part of what makes our pay-on-performance model so powerful is how effective we are at identifying issues with your website’s SEO health. First Page Australia’s expert team will conduct a detailed audit of your website, helping us make a raft of recommendations that’ll improve your keyword usage, backlink strategy and overall content quality. Ultimately, this leads to dramatically improved SEO results.</p>
+                <p>Alongside our comprehensive website audit services, we can also carry out a thorough analysis of your key competitors. This ensures we have a precise understanding of your target market and how they respond to specific products, services and digital marketing strategies. Backed by this holistic approach, we’re certain we can push your business to the first page of Google.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% include "partials/en-section-free-session.twig" %}
+{# {% include "assets/partials/en-section-free-session.twig" %} #}
+    <section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                        {# Q1 #}
+                            <h3 itemprop="name">WHAT IS PAY-ON-PERFORMANCE SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Every business would love to reach the first page of Google without having to spend a dollar. Now you can with a payment model known as pay-on-performance SEO. At <a href="{{ home_url }}">First Page Australia</a>, this approach means our expert team will work for free until your website ranks on the first page for your chosen target keyword. Sounds pretty good, right?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                        {# Q2 #}
+                            <h3 itemprop="name">HOW IS PAY-ON-PERFORMANCE SEO DIFFERENT FROM STANDARD SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Pay-on-performance SEO differs from your <a href="{{ home_url }}seo/">average SEO campaign</a> as it hones in on a few specific keywords. This supercharged approach involves an intensive SEO audit of your current website, as well as a detailed look at how your competitors are achieving success. Backed by this research-driven method, we'll implement powerful on-page changes, expand your backlink profile and refine technical details to skyrocket your rankings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                        {# Q3 #}
+                            <h3 itemprop="name">WHAT ARE THE BENEFITS OF PAY-ON-PERFORMANCE SEO SERVICES?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The obvious benefit of using First Page Australia’s pay-on-performance SEO services is that you don’t have to stress about your investment. All you have to do is sit back and see whether First Page Australia’s team can achieve your company’s goals. With the pressure on us to perform if we want to get paid, you can bet that we’re going to give it everything we’ve got.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                        {# q4 #}
+                            <h3 itemprop="name">HOW FAST DOES PAY-ON-PERFORMANCE SEO WORK?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The time it takes to start ranking for your chosen keyword on Google’s first page depends on a wide range of factors. For instance, the productivity of your current SEO or the competitiveness of your selected keyword might help or hinder us. But no matter what, we’ll throw the full force of First Page Australia’s experienced team behind your campaign to achieve top results as quickly as possible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+        </div>
+    </section>
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'Pay On Performance (Pop-up Form)'} %}
+
+{% endblock %}

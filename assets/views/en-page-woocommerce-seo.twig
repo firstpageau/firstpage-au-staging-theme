@@ -1,0 +1,187 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<style>
+
+    @media (max-width: 767px) {
+       section.banner .banner-description p {
+            min-height: 228px;
+        }
+         .hero-mobile {
+   
+    right: -41px !important;
+}
+
+       section.banner h1 {
+            /*padding: 0 5px;*/
+            max-width: 242px;
+            margin-bottom: 45px;
+
+        }
+    }
+
+</style>
+
+<!-- Banner -->
+<section class="banner form-space woocommerce-seo-banner">
+    <div class="container banner-hero">
+        <div class="banner-hero-cont">
+            <h1 class="form-hide">Drive more conversions <br class="d-none d-md-block">with <br class="d-block d-md-none"> powerful <br class="d-none d-lg-block"> WooCommerce SEO</h1>
+            <div class="banner-description">
+                <div class="form-hide hero-mobile">
+                    <img src="{{ site.theme.link }}/assets/img/byron-banner-sm.png" srcset="{{ site.theme.link }}/assets/img/byron-banner-sm.png, {{ site.theme.link }}/assets/img/byron-banner-mb@2x.png 2x" alt="First Page" />
+                </div>
+            </div>
+            {% include "partials/en-form-services.twig" with {'form_page': 'Google Shopping', 'form_button': 'Get A Free Quote'} %}
+            {% include "partials/en-section-awards-badges.twig" %}
+        </div>
+
+        <div class="hero-img d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/byron-banner-tab.png" srcset="{{ site.theme.link }}/assets/img/byron-banner-tab.png, {{ site.theme.link }}/assets/img/byron-banner-tab@2x.png 2x" alt="First Page" />
+        </div>
+        <div class="hero-img d-none d-lg-block">
+            <img src="{{ site.theme.link }}/assets/img/hero-google-shopping.png" srcset="{{ site.theme.link }}/assets/img/hero-google-shopping.png, {{ site.theme.link }}/assets/img/byron-hero-google-shopping@2x.png 2x" alt="First Page" />
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+{# body 1 #}
+<section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 image-container-right">
+            <img src="{{ site.theme.link }}/assets/img/woo-growth.png" srcset="{{ site.theme.link }}/assets/img/woo-growth.png, {{ site.theme.link }}/assets/img/woo-growth@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/woo-growth-mb.png" srcset="{{ site.theme.link }}/assets/img/woo-growth-mb.png, {{ site.theme.link }}/assets/img/woo-growth-mb@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Surge ahead of the competition with WooCommerce</h2>
+                <p>Transform your WordPress website into a thriving e-commerce hub with the power of WooCommerce. This incredibly popular plugin has helped millions of companies establish their online store and tailor it to their precise needs. However, your e-commerce store is only as strong as the customer base it manages to attract. First Page Australia’s robust approach to WooCommerce ensures your products convert highly relevant customers browsing the internet.</p>
+                <p>If you decide to plan and execute a WooCommerce SEO campaign, our talented team can ensure it achieves every one of your business goals. With WooCommerce scaling to an unlimited number of products, our specialised techniques prove that dramatically elevated website traffic and conversions are within your grasp. Enhance the performance of your e-commerce platform today.</p>
+                <button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+            </div>
+        </div>
+</section>
+
+{# body row 2 #}
+<section class="section-paragraph">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 image-container-left">
+                <img src="{{ site.theme.link }}/views/assets/img/img_woocommerce.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_woocommerce_mob.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Let the experts guide your WooCommerce SEO</h2>
+                <p>Although WooCommerce comes complete with a few basic <a href="{{ home_url }}/seo/">SEO</a> tools, if your e-commerce business is truly going to outgrow the competition, you’re going to need something a little more solid. <a href="https://wordpress-529359-2026654.cloudwaysapps.com/contact-us/">First Page Australia’s experienced marketers</a> can design and implement a detailed optimisation strategy that generates long-term success by keeping your products and services at the forefront of your ideal customers’ minds. </p>
+                <p>Across SEO-friendly changes to page titles, categories and tags, alongside a host of other areas, our professional team will make a major difference in terms of your e-commerce growth. Don’t worry – these changes aren’t based on simple guesswork. We’ll delve into the inner workings of your business to identify your core audience and make changes that capture their attention. Expand your target market and boost sales with First Page Australia.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+</section>
+
+{# body row 3 #}
+<section class="section-paragraph">
+    <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+        <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_right_cut.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_right_cut.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_right_cut@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mb.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mb.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mb@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+        </div>
+        
+        <div class="col-12 col-md-6 text-container pr-md-5">
+            <h2>Establish an effective e-commerce platform</h2>
+                <p>WooCommerce SEO is particularly effective for brands who are unsatisfied with their current conversion rate. If you choose to partner with our award-winning agency, we’ll conduct a thorough <a href="https://wordpress-529359-2026654.cloudwaysapps.com/seo-audit/">audit of your SEO productivity</a> to determine where your strengths and weaknesses appear. We'll then lead a targeted SEO campaign to optimise your product pages and start climbing the search engine results page.</p>
+                <p>At <a href="{{ home_url }}">First Page Australia</a>, we believe data should be a defining factor in how we orientate our campaigns. With this research-driven approach, we can deliver an outstanding ROI as we hone in on the areas that need our attention most. This attention to data also means we can swiftly identify growing e-commerce trends, ensuring our clients capitalise on emerging opportunities before the competition gets up to speed.</p>
+            <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+        </div>
+    </div>
+</section>
+
+{# body row 4 #}
+<section class="section-paragraph">
+        <div class="row no-gutters align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/profit_service_lg.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/profit_service_mb.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Smash Your Sales Targets with WooCommerce</h2>
+                <p>If you plan to launch a flourishing e-commerce platform soon, WooCommerce will provide the ideal foundation. But make sure you use this wonderful plugin to its maximum potential by partnering with the experts at First Page Australia. We love to work side-by-side with our clients to ensure they get the most amount of support and satisfaction from our SEO campaigns.</p>
+                <p>In coordination with our carefully tailored strategies, we take the time to find out what makes your products unique. This dedicated approach has served us well as we drive incredible brand awareness, website traffic and conversions for our wide-range of e-commerce clients. Plus, as our campaign progresses, we provide extensive reports so you always understand how we’re utilising your budget. <a href="{{ home_url }}/contact/">Get in touch</a> today to start enhancing your WooCommerce SEO.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+</section>
+
+
+
+{% include "partials/en-section-free-session.twig" %}
+
+{% include "assets/partials/en-form-popup.twig" with {'form_page': 'WooCommerce SEO (Popup)'} %}
+
+<section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                        {# 1 #}
+                            <h3 itemprop="name">What Is WooCommerce SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Every successful e-commerce store needs to attract customers who care about their products. While the internet is a vast place, a carefully considered approach to climbing the SERP is the ideal way to stand out. This is where WooCommerce SEO services come in as companies using this hugely popular e-commerce platform can optimise their stores to generate organic traffic and dramatically improve their customers' shopping experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                        {# 2 #}
+                            <h3 itemprop="name">Is WooCommerce Good For SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>While WooCommerce has a relatively simple selection of SEO tools, the platform has incredible potential if you choose to work alongside an experienced digital marketing agency. With <a href="{{home_url}}">First Page Australia</a> serving as your dedicated WooCommerce SEO consultant, we can assess customer data, analyse your rivals and take action on the latest trends to vastly improve your keyword research, site structure and on-page performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                        {# 3 #}
+                            <h3 itemprop="name">Why Is WooCommerce SEO Important?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                              <p>How you rank on the search engine results page is critical to what kind of organic traffic your e-commerce store can expect to attract. If your business is way down the rankings, you have virtually no chance of reaching the customers required to keep your store afloat long-term. With a comprehensive WooCommerce SEO campaign led by an expert agency, you can rocket up the rankings and significantly improve your conversion rate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                        {# 4 #}
+                            <h3 itemprop="name">How Do I Choose A WooCommerce SEO Agency?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>As the digital landscape of e-commerce is always evolving, <a href="{{home_url}}contact/">partnering with a highly experienced WooCommerce SEO agency</a> ensures your online store remains on the cutting-edge. Fortunately, First Page Australia has unmatched expertise in leading campaigns for companies both big and small. Having partnered with over 1,700 international clients, our talented team knows what it takes to deliver a winning strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+        </div>
+</section>
+{% endblock %}

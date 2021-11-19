@@ -1,0 +1,26 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+
+<section class="banner">
+    <div class="container text-center">
+        <h1>Pay your deposit</h1>
+    </div>
+</section>
+
+<section class="secure-payments">
+    <div class="container text-center">
+        <div class="secure-payments-header">
+            <h2>Secure Payments</h2>
+            <p>Please use the form below to securely pay your deposit by credit card.</p>
+        </div>
+        {{ '[simpay id="13064"]'|shortcodes }}
+        <div class="secure-payments-footer">
+            <img src="{{ site.theme.link }}/assets/img/cards.png" alt="" width="215" height="40">
+            <p>By making this payment, you are agreeing to initiate our services under our standard <a href="{{ home_url }}terms-of-service/" target="_blank">Terms of Business</a>.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

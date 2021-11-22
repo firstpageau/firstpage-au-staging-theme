@@ -2,336 +2,529 @@
 
 {% block content %}
 
-<style>
-    section.section-casestudy.casestudy-google-shopping {
-        background-image: url("{{ site.theme.link }}/assets/img/img_ipad_petit_tippi@2x.png");
-        background-size: 1464px auto;
-        background-position-x: calc(50% + 556px);
-    }
-    @media (max-width: 767px) {
-        .page-google-shopping section.banner .banner-description p {
-            min-height: 228px;
-        }
+	<style>
+		section.section-casestudy.casestudy-google-shopping {
+			background-image: url("{{ site.theme.link }}/assets/img/img_ipad_petit_tippi@2x.png");
+			background-size: 1464px auto;
+			background-position-x: calc(50% + 556px);
+		}
+		@media(max-width: 767px) {
+			.page-google-shopping section.banner .banner-description p {
+				min-height: 228px;
+			}
 
-        .page-google-shopping section.banner h1 {
-            max-width: 242px;
-            margin-bottom: 45px;
-        }
+			.page-google-shopping section.banner h1 {
+				max-width: 242px;
+				margin-bottom: 45px;
+			}
 
-        section.section-casestudy.casestudy-google-shopping {
-            background-image: none;
-        }
-    }
+			section.section-casestudy.casestudy-google-shopping {
+				background-image: none;
+			}
+		}
+	</style>
 
-</style>
+	<section class="banner form-space google-shopping-banner">
+		<div class="container banner-hero">
+			<div class="banner-hero-cont">
+				<h1 class="form-hide">20X your ecommerce business in months with targeted Google Shopping Ads</h1>
+				<div class="banner-description">
+					<div class="form-hide hero-mobile">
+						<img src="{{ site.theme.link }}/assets/img/byron-banner-sm.png" srcset="{{ site.theme.link }}/assets/img/byron-banner-sm.png, {{ site.theme.link }}/assets/img/byron-banner-mb@2x.png 2x" alt="First Page"/>
+					</div>
+				</div>
+				{% include "partials/en-form-services.twig" with {'form_page': 'Google Shopping', 'form_button': 'Get A Free Quote'} %}
+				{% include "partials/en-section-awards-badges.twig" %}
+			</div>
 
-    <section class="banner form-space google-shopping-banner">
-        <div class="container banner-hero">
-            <div class="banner-hero-cont">
-                <h1 class="form-hide">20X your ecommerce business in months with targeted Google Shopping Ads</h1>
-                <div class="banner-description">
-                    <div class="form-hide hero-mobile">
-                        <img src="{{ site.theme.link }}/assets/img/byron-banner-sm.png" srcset="{{ site.theme.link }}/assets/img/byron-banner-sm.png, {{ site.theme.link }}/assets/img/byron-banner-mb@2x.png 2x" alt="First Page" />
-                    </div>
-                </div>
-                {% include "partials/en-form-services.twig" with {'form_page': 'Google Shopping', 'form_button': 'Get A Free Quote'} %}
-                {% include "partials/en-section-awards-badges.twig" %}
-            </div>
+			<div class="hero-img d-none d-md-block d-lg-none">
+				<img src="{{ site.theme.link }}/assets/img/byron-banner-tab.png" srcset="{{ site.theme.link }}/assets/img/byron-banner-tab.png, {{ site.theme.link }}/assets/img/byron-banner-tab@2x.png 2x" alt="First Page"/>
+			</div>
+			<div class="hero-img d-none d-lg-block">
+				<img src="{{ site.theme.link }}/assets/img/hero-google-shopping.png" srcset="{{ site.theme.link }}/assets/img/hero-google-shopping.png, {{ site.theme.link }}/assets/img/byron-hero-google-shopping@2x.png 2x" alt="First Page"/>
+			</div>
+		</div>
+	</section>
 
-            <div class="hero-img d-none d-md-block d-lg-none">
-                <img src="{{ site.theme.link }}/assets/img/byron-banner-tab.png" srcset="{{ site.theme.link }}/assets/img/byron-banner-tab.png, {{ site.theme.link }}/assets/img/byron-banner-tab@2x.png 2x" alt="First Page" />
-            </div>
-            <div class="hero-img d-none d-lg-block">
-                <img src="{{ site.theme.link }}/assets/img/hero-google-shopping.png" srcset="{{ site.theme.link }}/assets/img/hero-google-shopping.png, {{ site.theme.link }}/assets/img/byron-hero-google-shopping@2x.png 2x" alt="First Page" />
-            </div>
-        </div>
-    </section>
+	{% include "partials/en-section-featured-in-news.twig" %}
 
-{% include "partials/en-section-featured-in-news.twig" %}
+	<section class="section-paragraph">
+		<div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+			<div class="col-12 col-lg-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/img_shopping.png" srcset="{{ site.theme.link }}/assets/img/img_shopping.png, {{ site.theme.link }}/assets/img/img_shopping@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/img_shopping_mob.png" srcset="{{ site.theme.link }}/assets/img/img_shopping_mob.png, {{ site.theme.link }}/assets/img/img_shopping_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-lg-6 text-container">
+				<h2>Grab market-share from your competitors and get your products in front of buyers</h2>
+				<p>When people are Googling information for a specific product, they are often ready to buy - they basically have their credit card in their hand!</p>
+				<p>And that’s the precise power of Google Shopping Ads.
+				</p>
+				<p>No matter your industry, the ability to get a clickable image of your products on the top of Google Search Ads is an opportunity you can no longer ignore.
+				</p>
+				<p>Google Shopping Ads are the cornerstone of Ecommerce marketing. In fact, did you know that…</p>
+				<ul>
+					<li>Google Shopping Ads win 86% of all clicks (versus text ads)</li>
+					<li>Google is where 36% of all product searches initiate</li>
+					<li>Before making an in-store purchase, over 70% of smartphone users looked up information online</li>
+					<li>Google shopping spend grew by 41% from the prior year</li>
+				</ul>
 
-<section class="section-paragraph">
-    <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
-        <div class="col-12 col-lg-6 image-container-right">
-            <img src="{{ site.theme.link }}/assets/img/img_shopping.png" srcset="{{ site.theme.link }}/assets/img/img_shopping.png, {{ site.theme.link }}/assets/img/img_shopping@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
-            <img src="{{ site.theme.link }}/assets/img/img_shopping_mob.png" srcset="{{ site.theme.link }}/assets/img/img_shopping_mob.png, {{ site.theme.link }}/assets/img/img_shopping_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
-        </div>
-        <div class="col-12 col-lg-6 text-container">
-            <h2>Grab market-share from your competitors and get your products in front of buyers</h2>
-            <p>When people are Googling information for a specific product, they are often ready to buy - they basically have their credit card in their hand!</p>
-            <p>And that’s the precise power of Google Shopping Ads. </p>
-            <p>No matter your industry, the ability to get a clickable image of your products on the top of Google Search Ads is an opportunity you can no longer ignore. </p>
-            <p>Google Shopping Ads are the cornerstone of Ecommerce marketing. In fact, did you know that…</p>
-            <ul>
-                <li>Google Shopping Ads win 86% of all clicks (versus text ads)</li>
-                <li>Google is where 36% of all product searches initiate</li>
-                <li>Before making an in-store purchase, over 70% of smartphone users looked up information online</li>
-                <li>Google shopping spend grew by 41% from the prior year</li>
-            </ul>
+				<p>The numbers don’t lie. If your online store isn’t investing in Google Shopping Ads, then you are leaving an enormous amount of money on the table.
+				</p>
 
-            <p>The numbers don’t lie. If your online store isn’t investing in Google Shopping Ads, then you are leaving an enormous amount of money on the table. </p>
+				<p>But how do you set up your Google Shopping Ads in a way that is designed for conversions and delivers you an insane ROAS (Return On Ad Spend)?</p>
 
-            <p>But how do you set up your Google Shopping Ads in a way that is designed for conversions and delivers you an insane ROAS (Return On Ad Spend)?</p>
+				<p>Meet First Page - your partners in business and growth.</p>
 
-            <p>Meet First Page - your partners in business and growth.</p>
+				<button type="button" data-title="googleShoppingPage-get-freeproposal-grab" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+			</div>
+		</div>
+	</section>
 
-            <button type="button" data-title="googleShoppingPage-get-freeproposal-grab" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
-        </div>
-    </div>
-</section>
+	<section class="section-paragraph">
+		<div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
+			<div class="col-12 col-lg-6 image-container-left">
+				<img src="{{ site.theme.link }}/assets/img/img_shopping_2.png" srcset="{{ site.theme.link }}/assets/img/img_shopping_2.png, {{ site.theme.link }}/assets/img/img_shopping_2@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/img_shopping_2_mob.png" srcset="{{ site.theme.link }}/assets/img/img_shopping_2_mob.png, {{ site.theme.link }}/assets/img/img_shopping_2_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-lg-6 text-container">
+				<h2>Explode your online sales and dominate your market with Google Shopping Ads</h2>
+				<p>Over the past 10 years, we have helped our Ecommerce clients grow insanely fast with Google Shopping Ads.
+				</p>
+				<p>And we want to do the exact same for you.
+				</p>
+				<p>The mission is simple. We will create mouthwatering ads, optimise them for sales, get them in front of your target audience, and give you an ROI you never thought possible... and then repeat the whole process over again.</p>
+				<p>It’s a beautiful thing.</p>
+				<p>This is how the world’s top Ecommerce brands become globally dominant.
+				</p>
+				<p>And we will achieve this in a way that is fast, transparent, and within your budget.
+				</p>
+				<p>Our international team of Digital Strategists are ready to deliver you astonishing results that few other agencies can. We have the experience and proprietary technology to take you to the top.
+				</p>
+				<p>Click the button below now to set up a free call with one of our Digital Strategists so we can create a blueprint for growth for your business.</p>
+				<button type="button" data-title="googleShoppingPage-get-freeproposal-explode" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+			</div>
+		</div>
+	</section>
 
-<section class="section-paragraph">
-    <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
-        <div class="col-12 col-lg-6 image-container-left">
-            <img src="{{ site.theme.link }}/assets/img/img_shopping_2.png" srcset="{{ site.theme.link }}/assets/img/img_shopping_2.png, {{ site.theme.link }}/assets/img/img_shopping_2@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
-            <img src="{{ site.theme.link }}/assets/img/img_shopping_2_mob.png" srcset="{{ site.theme.link }}/assets/img/img_shopping_2_mob.png, {{ site.theme.link }}/assets/img/img_shopping_2_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
-        </div>
-        <div class="col-12 col-lg-6 text-container">
-            <h2>Explode your online sales and dominate your market with Google Shopping Ads</h2>
-            <p>Over the past 10 years, we have helped our Ecommerce clients grow insanely fast with Google Shopping Ads. </p>
-            <p>And we want to do the exact same for you. </p>
-            <p>The mission is simple. We will create mouthwatering ads, optimise them for sales, get them in front of your target audience, and give you an ROI you never thought possible... and then repeat the whole process over again.</p>
-            <p>It’s a beautiful thing.</p>
-            <p>This is how the world’s top Ecommerce brands become globally dominant. </p>
-            <p>And we will achieve this in a way that is fast, transparent, and within your budget. </p>
-            <p>Our international team of Digital Strategists are ready to deliver you astonishing results that few other agencies can. We have the experience and proprietary technology to take you to the top. </p>
-            <p>Click the button below now to set up a free call with one of our Digital Strategists so we can create a blueprint for growth for your business.</p>
-            <button type="button" data-title="googleShoppingPage-get-freeproposal-explode" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
-        </div>
-    </div>
-</section>
+	<section class="section-client-reviews">
+		<div class="container">
+			<div class="section-title">
+				<h2>See what our clients<br class="d-sm-none">
+					are saying</h2>
+			</div>
+			<div class="row testimonial-cont">
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							These guys know what they are doing! After engaging other SEO Agency over the past few years, First Page was much more responsive. Most importantly my website ranking did increase on a monthly basis.
+						</div>
+						<div class="person">
+							<div class="name">Esmond Lawson</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							I had been searching for an SEO agency for a while until I met Angela. She has been very patient and professional in her work. First Page has been responsive, efficient and offers excellent customer service. I would recommend them to anyone.
+						</div>
+						<div class="person">
+							<div class="name">Gerry Angelo</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							Since I first got in touch with First Page, their service standard has been top-notch. All queries were properly answered with full transparency. Sean and Asher are helping to get our entire website SEO-optimised and so far, I am very happy with their service.
+						</div>
+						<div class="person">
+							<div class="name">TERRY LAM</div>
+						</div>
+					</div>
+				</div>
 
-<section class="section-client-reviews">
-    <div class="container">
-        <div class="section-title">
-            <h2>See what our clients<br class="d-sm-none"> are saying</h2>
-        </div>
-        <div class="row testimonial-cont">
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        These guys know what they are doing! After engaging other SEO Agency over the past few years, First Page was much more responsive. Most importantly my website ranking did increase on a monthly basis. </div>
-                    <div class="person">
-                        <div class="name">Esmond Lawson</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        I had been searching for an SEO agency for a while until I met Angela. She has been very patient and professional in her work. First Page has been responsive, efficient and offers excellent customer service. I would recommend them to anyone.
-                    </div>
-                    <div class="person">
-                        <div class="name">Gerry Angelo</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        Since I first got in touch with First Page, their service standard has been top-notch. All queries were properly answered with full transparency. Sean and Asher are helping to get our entire website SEO-optimised and so far, I am very happy with their service. </div>
-                    <div class="person">
-                        <div class="name">TERRY LAM</div>
-                    </div>
-                </div>
-            </div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							Our company has been working with First Page for 3 months. Sean has been very helpful and patient. You can tell he takes pride in his work. Keep up the world-class customer service you had been providing your clients!
+						</div>
+						<div class="person">
+							<div class="name">Jun Hong Eric Chiang</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							It was the first time working with Carl and his team and the experience has been superbly wonderful! They deliver what was promised and beyond. The team was always professional and always going the extra mile with excellent customer care.
+						</div>
+						<div class="person">
+							<div class="name">VIN CE</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							The First Page Digital team has been absolutely fantastic to work with. They exceeded the outlined KPI's and have been extremely responsive. Highly recommend, A+++
+						</div>
+						<div class="person">
+							<div class="name">Bee Valerie</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        Our company has been working with First Page for 3 months. Sean has been very helpful and patient. You can tell he takes pride in his work. Keep up the world-class customer service you had been providing your clients! </div>
-                    <div class="person">
-                        <div class="name">Jun Hong Eric Chiang</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        It was the first time working with Carl and his team and the experience has been superbly wonderful! They deliver what was promised and beyond. The team was always professional and always going the extra mile with excellent customer care. </div>
-                    <div class="person">
-                        <div class="name">VIN CE</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        The First Page Digital team has been absolutely fantastic to work with. They exceeded the outlined KPI's and have been extremely responsive. Highly recommend, A+++
-                    </div>
-                    <div class="person">
-                        <div class="name">Bee Valerie</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+	{% include "partials/en-section-services-google-ads.twig" %}
 
-{% include "partials/en-section-services-google-ads.twig" %}
+	<section class="section-casestudy casestudy-google-shopping">
+		<div class="container">
+			<div class="content-area">
+				<div class="info">
+					<h2>
+						<span class="small-grey">Our Recent Work</span>
+						<strong>Petit Tippi</strong>
+					</h2>
+					{# <ul class="tag">
+					                <li>SEO</li>
+					            </ul> #}
+					<p>The natural baby products market has become saturated, so how do you stand out? With smart Google Shopping advertising.</p>
+				</div>
 
-    <section class="section-casestudy casestudy-google-shopping">
-        <div class="container">
-            <div class="content-area">
-                <div class="info">
-                    <h2>
-                        <span class="small-grey">Our Recent Work</span>
-                        <strong>Petit Tippi</strong>
-                    </h2>
-                    {# <ul class="tag">
-                <li>SEO</li>
-            </ul> #}
-                    <p>The natural baby products market has become saturated, so how do you stand out? With smart Google Shopping advertising.</p>
-                </div>
+				<div class="stats">
+					<div class="stats-container">
+						<div class="row">
+							<div class="col-12 col-md-4">
+								<div class="stat">96<sub>%</sub>
+								</div>
+								<div class="desc">increase in revenue in just
+									                                    6 months</div>
+							</div>
+							<div class="col-12 col-md-4">
+								<div class="stat">114<sub>%</sub>
+								</div>
+								<div class="desc">return on ad spend in 6 months</div>
+							</div>
+							<div class="col-12 col-md-4">
+								<div class="stat">112<sub>%</sub>
+								</div>
+								<div class="desc">increase in unique users</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                <div class="stats">
-                    <div class="stats-container">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <div class="stat">96<sub>%</sub></div>
-                                <div class="desc">increase in revenue in just
-                                    6 months</div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="stat">114<sub>%</sub></div>
-                                <div class="desc">return on ad spend in 6 months</div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="stat">112<sub>%</sub></div>
-                                <div class="desc">increase in unique users</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section class="section-paragraph section-faqs">
+		<div class="container">
+			<h2 class="section-title">What is Google Shopping?</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What is Google Shopping?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Google Shopping is a stellar way businesses can reach relevant customers looking to purchase products available in its eCommerce store. Although this hugely popular platform has some similarities to other online marketplaces like eBay and Amazon, Google Shopping is a pay-per-click advertising platform that links consumers directly to your website’s product pages. When someone searches for a product using the search engine, Google Shopping ads are displayed at the top of the search results, providing customers with a range of stores to choose from.</p>
+								<p>With a carefully conceived Google Shopping campaign, you can ensure targeted customers find and click on your ads. As these ads feature images of products that grab consumer attention, alongside plenty more information, you can optimise your approach to outperform your competition. As customers on the hunt to buy are positioned at the bottom of the marketing funnel, reaching and converting this customer segment can be highly lucrative.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How do I get on Google Shopping?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>If your eCommerce store is keen to get started on Google Shopping, it doesn’t take much effort to list your products and begin attracting consumer attention on the search engine results page. The first thing you need to do is set up a Google Merchant Centre account that contains your product data. Next, you must add wonderfully optimised product images that stand out against the competition and make your items look supremely appealing to your target market. This step can dramatically increase your conversion rate.</p>
 
-<section class="section-paragraph section-faqs">
-    <div class="container">
-        <h2 class="section-title">Digital Strategist FAQs</h2>
-        <div itemscope itemtype="https://schema.org/FAQPage" class="row">
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">What is Google Shopping?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>Google Shopping allows users to search, view and compare products from different online retailers based on their search queries. The shopping results are displayed as thumbnail images with the retailer and price. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">What’s the difference between Google Shopping and other online marketplaces?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>Online marketplaces like Amazon can only allow you to browse Amazon sellers. Google Shopping compiles all of the relevant search results from different retailers across the web - giving users a wide range of choice and flexibility in their purchase. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">Why is Google Shopping important?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>Google Shopping not only streamlines the customer’s purchase journey but also builds your business’s online presence. You can improve the quality of your leads by providing interested customers with detailed product information that will help them make an informed purchase, rather than customers who are randomly browsing. These benefits retailers because it sends potential customers back to the original website to make the purchase</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">Is Google Shopping Free?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>In April 2020, Google announced free Google Shopping listings to encourage merchants to sell their products online. Businesses can gain free exposure to millions of customers, discoverable through the Google Shopping tab.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">How do I get on Google Shopping?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>Simply set up a Google Merchant Center account to get started. To optimise your Google Shopping rankings, you need a clear plan of your product feed, campaign segmentation and ad budget. Our digital marketing specialists can help you build a comprehensive Google Shopping strategy that can drive traffic and increase conversions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">How can First Page use Google Shopping Ads to grow your online sales?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>At First Page, we specialise in crafting tailor-made campaigns for businesses of all kinds and sizes.
-                                We’ll help you set up your Google Merchant Centre account, take the time to understand your product pages, revamp them (if necessary) to make them as visible as possible for Google, and whip up the perfect ad groups for your products.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+								<p>Generating a product data feed is also vital to your success. This is where you help Google identify and display your products when users conduct a relevant search. Across basic information regarding your country and language, you must also add accurate product titles, prices and currency data that corresponds with your landing pages. Let our talented team take charge of your Google Shopping campaign to improve your reach and skyrocket your sales.</p>
 
-{% include "partials/en-section-free-session.twig" %}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What’s the difference between Google Shopping and other online marketplaces?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>There are numerous differences between Google Shopping and merchant websites like Amazon and eBay. Perhaps the biggest difference is that Google Shopping results simply link customers to businesses selling that specific product. Conversely, buyers browsing platforms like Amazon and eBay must find your specific store and purchase directly through the marketplace. Online retailers looking to decide between Google Shopping and a marketplace must also understand how the pricing models differ.</p>
+								<p>For example, it’s entirely free to list your products on Google Shopping in Australia while there’s also zero commission on sales. So how does Google Shopping make money? By advertising on the platform based on PPC, you can make sure more customers take notice of your products. However, you’ll be charged a small fee every time someone clicks on your ads. The experts at First Page can deliver a personalised Google Shopping campaign that ensures your eCommerce store achieves a first-class ROI.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What’s the difference between Smart and Standard shopping campaigns?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>When a business starts using Google Shopping, they have the choice between Standard and Smart Shopping campaigns. The former is a complex approach where your ads will only appear within the Shopping network and specific searches related to products. You can divide products into ad groups, including brands and categories, while adding negative keywords to drive maximum bid performance. For a highly optimised campaign structure, Standard Google Shopping campaigns can be outstanding.</p>
 
-{% include "partials/en-form-popup.twig" with {'form_page': 'Google Shopping (Pop-up Form)'} %}
+								<p>However, Smart Google Shopping campaigns are also an excellent choice depending on your goals and expertise. Although you won’t have as much control over your strategy as the algorithm makes significant decisions for you, these campaigns use contextual signals to reach engaged customers matching precise location, device and demographic metrics. When you partner with First Page, we take charge of your strategy to identify the ideal winners and losers. Plus, we know what incremental changes to make to achieve the best possible results.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Why is Google Shopping important?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>As Google Shopping is based on the world’s most visited website, ensuring your business captures attention is made easier. With the search engine’s algorithms outstanding at identifying sales-ready consumers looking for a specific product, listing your eCommerce store on Google Shopping means you have a better chance of converting qualified customers at the bottom of the funnel. As generating sales is the primary concern for most online retailers, using Google Shopping to your advantage is a great way to reach your goals.</p>
+
+								<p>Countless brands have generated huge success on Google Shopping due to the platform’s incredible visibility. As relevant customers will see eCommerce results at the top of the page when they search for a product you offer, a captivating product listing helps attract high-quality traffic directly to your website. Automation is also built into Google Shopping. Using structured data and sitemap information, the platform can crawl your eCommerce website to automatically update pricing and availability on Google Shopping without you lifting a finger.
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What is the purpose of Google Shopping?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>The ultimate goal behind Google Shopping is to match relevant products to motivated buyers. While it’s not a straightforward marketplace like Amazon on eBay, Google Shopping makes it easy for engaged customers to find a selection of online retailers selling a product they are ready to buy. Rather than needing to click through numerous eCommerce websites or find a trustworthy seller on a marketplace, people can catch a glimpse of several options right from the search engine results page.</p>
+								<p>If your business is debating whether Google Shopping makes sense for its needs, you must realise that this platform makes your life easier. With the algorithm recommending highly relevant customers to your store and automating several tasks like pricing and availability updates, optimising your campaign can deliver huge returns for your business. In fact, Google Shopping now accounts for an estimated 65% of all Google Ads clicks, ensuring your campaign is incredibly productive when targeted effectively.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse7">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Is Google Shopping Free?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse7" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>To make Google Shopping more attractive to online retailers, the search engine giant announced a free product listing program. This means you can get started for absolutely zero cost. Meanwhile, Google Shopping doesn’t charge any commission fees in Australia, making it an increasingly appealing platform compared to the costly fees found on Amazon and eBay. However, maximising your reach with your target market requires investment in PPC advertising, which although highly cost-effective, does mean you have to open your wallet.</p>
+
+								<p>Google Shopping also makes it remarkably easy to operate your online store alongside the leading eCommerce platforms. Whether you prefer to use Shopify, WooCommerce or BigCommerce, there are accessible integration features that ensure your products are quickly synced between both platforms. By sharing your product data across as many platforms as possible, you can level up your understanding of your audience and ensure your Google Shopping ads deliver an even better ROI.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse8">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How do I add keywords to a Google Shopping campaign?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse8" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>If your brand is exploring Google Shopping for the first time, you might be surprised to learn that it doesn’t use keywords to display results, unlike plenty of other Google services. Instead, the platform relies on product data from the information you add to the Google Merchant Centre. This information ranges from a unique product ID, title and link to your landing page. Alongside numerous other essential metrics, these details are used to attract and convert your target market.</p>
+
+								<p>While Google Shopping doesn’t rely on keywords, some aspects allow you to put your keyword research to work. For instance, you can add negative keywords to your advertising campaign to ensure that you don’t waste your budget on disinterested consumers. Meanwhile, the way you describe your product can feature attention-grabbing keywords that engaged customers are bound to notice. Partner with the team at First Page to maximise your success and boost sales.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph section-faqs">
+		<div class="container">
+			<h2 class="section-title">How Google Shopping Benefits Your Business
+			</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse9">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Where will Google Shopping ads appear?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse9" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>One of the main reasons to use Google Shopping is that your ads will appear in several high-visibility parts of the search engine. Perhaps most significantly, your ads will appear at the top of the search engine results, ensuring your store has a great chance of getting noticed by customers who are looking to make a purchase immediately. There’s also a dedicated Google Shopping tab, where users can browse a broad selection of stores that offer the products they want to buy.</p>
+
+								<p>These days, the majority of your target audience are shopping online from their mobile device. Google has responded to this change by ensuring Google Shopping ads appear at the top of Google Image results for people using their smartphones or tablets. If your business already uses a Google Partner such as Shopify, WooCommerce or BigCommerce to lead its eCommerce efforts, your products and data can be quickly shared with Google Shopping for maximum convenience.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse10">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How do you optimise my Google Shopping ads?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse10" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>A carefully optimised Google Shopping advertising campaign is one of the best tools an eCommerce retailer has at its disposal. But what steps do you need to take to ensure your strategy achieves your objectives? Although Google Shopping doesn’t use keywords to reach customers, you can exclude negative keywords that increase your campaign’s performance. For example, a store selling premium running shoes might want to exclude search terms like ‘cheap’, ‘bargain’ and ‘clearance’ to ensure you reach consumers willing to pay higher prices.</p>
+								<p>There are plenty of other optimisations to consider. You have to nail down your product title with keywords that your target market will definitely recognise when they look over the results. Meanwhile, a powerful campaign always uses high-quality images that remain simple while offering a slight variation that stands out against other online stores. By implementing these kinds of changes, you can quickly increase your CTR and boost your ROI.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse11">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Does Google Shopping integrate with my eCommerce platform?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse11" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>If your online retail store relies on an eCommerce platform – such as Shopify, WooCommerce or BigCommerce – you want to know that Google Shopping integrates fully with these services. The good news is that Google Shopping has formed productive partnerships with these eCommerce platforms and many others, meaning business owners can effortlessly submit their product information and start reaching highly relevant customers wherever they live. But why does this integration matter to your business?
+								</p>
+								<p>By sharing your product information with the Google Merchant Center, you don’t have to waste any time moving data from one online platform to another. This integration makes it so much easier to have product images, prices and availability automatically updated, while your inventory is also instantly converted to your Google Shopping account. Alongside several other advantages, integrating Google Shopping with your eCommerce platform means you connect with your target market faster than ever before.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse12">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What should my budget be for Google Shopping ads?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse12" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>There’s no single answer to what budget is required to succeed at online advertising, including Google Shopping. But the best way to approach your campaign is simply investing what you can afford. As every eCommerce store is at a different stage of its journey, some operations can naturally spend more than others. However, a highly optimised Google Shopping ads strategy designed for your company’s exact goals and target market gives you the best chance of overcoming the competition.
+								</p>
+								<p>The benchmark for Google Shopping ads changes for every industry, with the format favouring some businesses over others. For example, some studies have found that the automotive and travel industries perform particularly well due to the highly visual nature of these products combined with powerful image-based ads. With the average CPC for Google Shopping ads estimated at below $1, reaching your target market for a cost-effective price is made possible when you partner with an expert digital marketing agency like First Page.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What’s better, Google Shopping or Google Search?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Choosing between Google Shopping and Google Search advertising is a hard choice that ultimately depends on your goals and circumstances. But if you operate an eCommerce store that’s looking to get more sales-ready customers to take action, there’s a good chance that Google Shopping ads will level up your performance even further. Why? Because the focus on product images, price and reviews displayed in these ads are proven to capture loads of attention from highly engaged consumers.</p>
+
+								<p>The debate between Google Shopping and Google Search ads boils down to show vs tell. Where text-based search ads can still be wonderfully effective, you need to produce a compelling message and call-to-action to convince leads to buy. However, the informational nature of Google Shopping ads helps potential customers understand your offer and pick you when you get your optimisation spot on. Alongside First Page, your business will attract customers at the ideal stage of the user journey and maximise its conversions.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What does Google Shopping ads management cost?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Achieving a top-notch ROI on your Google Shopping ads is within your grasp when you work alongside the experts at First Page. But as every single campaign is tailored to our client’s precise needs, the final cost of Google Shopping ads management will always be different to another business. As we factor in everything from your industry’s unique attributes to the nuances of your ideal target market, our cutting-edge strategies will capture the attention of your customer base and encourage them to take action.
+								</p>
+
+								<p>In fact, our Google Shopping campaigns have delivered unmatched growth for our clients, with our highly experienced team’s targeted approach having the ability to increase your business by 20x within months. Alongside our vast experience and razor-sharp understanding of the eCommerce landscape, we get to know what makes your customers tick and produce optimised Google Shopping ads that hit the target every time. Start growing your company’s success alongside First Page today.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Are Google Shopping ads worth it?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Google Shopping ads can deliver incredible results for eCommerce brands operating across virtually every industry. By using Google Shopping ads to your advantage, you can drive qualified shoppers directly to your website, which gives you incredible opportunities to boost your bottom line. With this form of online advertising featuring high-quality images, titles, price, shop name and more, you can attract your target market and skyrocket your sales. Meanwhile, Google Shopping ads appear in several high-profile locations, helping you reach more relevant customers.</p>
+
+								<p>In addition, Google Shopping ads have proven to be supremely cost-effective, ensuring brands with a limited budget can use this method to take their operation to the next level. With several different bidding strategies available, a tailored campaign that appeals to your precise target market can deliver online retailers an exceptional ROI. With the team at First Page leading Google Shopping campaigns every day, we know how to help your business achieve its objectives.
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How can First Page use Google Shopping ads to grow your online sales?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>If you’re looking to reach your target market effectively, undertaking a personalised Google Shopping ads campaign with First Page is a great decision. With these strategies ranking on top of the Google search results, a targeted campaign that appeals to your precise customer base can lead countless qualified leads straight to your product pages. However, you need to stand out with powerful creative if you want to achieve this goal. Fortunately, our team can determine the best images and titles that capture the most amount of attention.</p>
+
+								<p>Deciding on a Google Shopping campaign structure is a challenging task without the necessary experience. If you choose to partner with First Page, we can find your highest-value customers with a value-based bidding strategy. By developing a deep understanding of your customer lifetime value, we ensure your campaign delivers a world-class ROI. Alongside our robust measurement methods, this tailored approach to Google Shopping ensures you convert your ideal customers.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	{% include "partials/en-section-free-session.twig" %}
+
+	{% include "partials/en-form-popup.twig" with {'form_page': 'Google Shopping (Pop-up Form)'} %}
 
 
 {% endblock %}

@@ -1,0 +1,180 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<style>
+    @media (max-width: 767px){
+         .hero-mobile {
+            margin-bottom: -99px !important;
+            right: -45px;
+        }
+    }
+
+    @media (min-width: 768px){
+    section.banner .banner-hero .hero-img {
+        right: -184px;
+        bottom: -94px;
+    }
+}
+
+    @media (min-width: 992px){
+    section.banner .banner-hero .hero-img {
+        right: -263px;
+        bottom: -131px;
+    }
+}
+    @media (min-width: 1440px){
+    section.banner .banner-hero .hero-img {
+        bottom: -129px;
+    }
+}
+
+</style>
+<!-- Banner -->
+<section class="banner form-space">
+        <div class="container banner-hero two-lines">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide">Grow super-fast <br class="d-block d-md-none">with exceptional <br class="d-block d-md-none">Shopify SEO</h1>
+                <div class="banner-description">
+                    <p class="form-hide"></p>
+                    <div class="form-hide hero-mobile">
+                        <img src="{{ site.theme.link }}/assets/img/img_hero_seo_mob.png"
+                             srcset="{{ site.theme.link }}/assets/img/img_hero_seo_mob.png, {{ site.theme.link }}/assets/img/img_hero_seo_mob@2x.png 2x"
+                             alt="First Page"/>
+                    </div>
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'Shopify SEO', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+            <div class="hero-img d-none d-md-block d-lg-none">
+                <img src="{{ site.theme.link }}/assets/img/img_hero_seo_tab.png"
+                     srcset="{{ site.theme.link }}/assets/img/img_hero_seo_tab.png, {{ site.theme.link }}/assets/img/img_hero_seo_tab@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+            <div class="hero-img d-none d-lg-block">
+                <img src="{{ site.theme.link }}/assets/img/img_hero_seo.png"
+                     srcset="{{ site.theme.link }}/assets/img/img_hero_seo.png, {{ site.theme.link }}/assets/img/img_hero_seo@2x.png 2x"
+                     alt="First Page"/>
+            </div>
+        </div>
+    </section>
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+<section class="section-paragraph section-white mob-center">
+    <div class="container">
+        <div class="row mb-3 mb-md-5 flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/assets/img/shopify-growth.png" srcset="{{ site.theme.link }}/assets/img/shopify-growth@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/shopify-growth-mb.png" srcset="{{ site.theme.link }}/assets/img/shopify-growth-mb@2x.png 2x" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Skyrocket traffic & sales with Shopify SEO</h2>
+                <p>Shopify has proven to be an incredible resource for budding e-commerce brands looking to attract and convert customers. Powered by a remarkably user-friendly design, it doesn’t take a lot of technical know-how to upload your products and start shipping to customers. However, it’s no use having an online store if your customers aren't aware of it. This is why a robust Shopify SEO campaign has become an essential part of running an e-commerce platform.</p>
+                <p>With more online stores popping up every day, the e-commerce world is only going to get more crowded. First Page Australia’s expert team can help your business reach its ideal audience and outgrow the competition. Partner with us and we’ll implement a range of on-page and technical <a href="{{ home_url }}seo/">SEO</a> improvements to drive more traffic to your Shopify store.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
+                <img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_pc.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_pc@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mb.png" srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mb@2x.png 2x" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Optimise your e-commerce platform</h2>
+                <p>Australia is one of Shopify’s fastest-growing regions, with 10,000 local businesses already capitalising on the platform. Much of its rapid adoption can be attributed to its highly customisable nature, with brands of all shapes and sizes managing an online store that reflects their needs. Meanwhile, Shopify’s streamlined backend comes pre-loaded with a range of basic SEO functions to assist in attracting the right customers.</p>
+                <p>But if your business is truly going to stride ahead in the growing e-commerce marketplace, you’re going to need some expert help. With global online sales expected to top USD $5 billion in 2021, planning and executing a highly optimised Shopify store could be the difference-maker between success and failure. With the help of our talented team, your brand will continue to prosper long into the future.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/assets/img/img_business_success.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/assets/img/img_business_success_mb.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h2>Surpass your sales aspirations</h2>
+                <p>Part of what makes Shopify so incredible is the platform’s built-in analytical features. This provides compelling data on customer trends, site movements and conversion rates. Yet many business owners don’t have the necessary experience to implement changes based on this information. Join hundreds of other e-commerce brands and partner with First Page Australia – we know exactly how to make sense of these figures to lead an effective SEO campaign.</p>
+                <p>While it’s possible to make do with Shopify’s straightforward SEO tools, if you’re ready to take your business to the next level, it requires an involved and highly technical approach. Through a productive backlink profile, canonical URLs, and the coordination of Shopify SEO with Google Analytics, our talented team will skyrocket your e-commerce brand’s visibility.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE SEO QUOTE</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% include "partials/en-section-free-session.twig" %}
+
+
+
+<section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                        {# Q1 #}
+                            <h3 itemprop="name">WHAT IS SHOPIFY SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>When choosing an all-in-one e-commerce platform, Shopify has to be close to the top of your list. But you’re also going to need your e-commerce store to stand out for your business to achieve long-term growth and stability. This is where Shopify SEO comes in, as you have the power to drive more traffic to your store and funnel customers towards clicking purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                        {# Q2 #}
+                            <h3 itemprop="name">Is Shopify Good For SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Shopify is great for starting an e-commerce store because it’s super easy to sell and ship your products. Plus, it offers a selection of simple built-in SEO functions that help you reach your customer base. However, it’s going to take a much more comprehensive SEO campaign to really rise above the competition and boost your sales. <a href="{{ home_url }}">First Page Australia</a> can implement a range of on-page and technical optimisation changes to deliver outstanding results.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                        {# Q3 #}
+                            <h3 itemprop="name">How Does Shopify SEO Benefit My Store?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The primary benefit of using Shopify SEO services is that your store will increasingly stand out to customers and organically encourage them to buy. With thousands of e-commerce businesses launching in Australia every year, finding a way to capture customer eyeballs and convince them to checkout is a huge challenge. But it’s made a lot easier with a data-driven Shopify SEO strategy led by our talented team.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                        {# q4 #}
+                            <h3 itemprop="name">How Do I Get More Traffic To My Shopify Store?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Shopify comes loaded with rich analytical tools. But many business owners simply aren’t able to use this information to their advantage. By partnering with First Page Australia, we can use this data to build strategies that result in exceptional growth. Backed by analytics on customer trends, site movements, keyword research and on-page SEO, we can drive more sales to your Shopify store than you could ever imagine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+        </div>
+    </section>
+
+{% include "assets/partials/en-form-popup.twig" with {'form_page': 'Shopify SEO (Popup)'} %}
+
+{% endblock %}
+

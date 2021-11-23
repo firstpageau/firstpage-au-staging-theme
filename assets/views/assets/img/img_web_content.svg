@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="540px" height="378px" viewBox="0 0 540 378" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>img_web_content</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.7%" y="-8.2%" width="111.3%" height="116.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="0%" y1="30.7372176%" x2="100%" y2="69.2627824%" id="linearGradient-2">
+            <stop stop-color="#ADDBFF" offset="0%"></stop>
+            <stop stop-color="#AAD9FF" offset="0.0642956149%"></stop>
+            <stop stop-color="#74B5FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="30.7372176%" x2="100%" y2="69.2627824%" id="linearGradient-3">
+            <stop stop-color="#ADDBFF" offset="0%"></stop>
+            <stop stop-color="#74B5FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Premium-Content" transform="translate(-814.000000, -2367.000000)">
+            <g id="img_web_content" filter="url(#filter-1)" transform="translate(824.000000, 2372.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="519" height="358" rx="13"></rect>
+                <path d="M13,0 L507,0 C514.179702,-1.31888981e-15 520,5.82029825 520,13 L520,61 L520,61 L0,61 L0,13 C-8.79259876e-16,5.82029825 5.82029825,1.31888981e-15 13,0 Z" id="Rectangle-2" fill="#FF5254"></path>
+                <polygon id="Fill-5" fill="#E9ECED" points="0 93 519 93 519 61 0 61"></polygon>
+                <path d="M92,33.5013031 C92,38.1950023 88.1950023,42 83.5013031,42 C78.8076039,42 75,38.1950023 75,33.5013031 C75,28.8076039 78.8076039,25 83.5013031,25 C88.1950023,25 92,28.8076039 92,33.5013031" id="Fill-6" fill="#FFFFFF"></path>
+                <path d="M68,33.5013031 C68,38.1950023 64.1923961,42 59.4986969,42 C54.8049977,42 51,38.1950023 51,33.5013031 C51,28.8076039 54.8049977,25 59.4986969,25 C64.1923961,25 68,28.8076039 68,33.5013031" id="Fill-7" fill="#FFFFFF"></path>
+                <path d="M45,33.5013031 C45,38.1950023 41.1950023,42 36.4986969,42 C31.8049977,42 28,38.1950023 28,33.5013031 C28,28.8076039 31.8049977,25 36.4986969,25 C41.1950023,25 45,28.8076039 45,33.5013031" id="Fill-8" fill="#FFFFFF"></path>
+                <path d="M111.5,27 L440.5,27 C441.880712,27 443,28.1192881 443,29.5 L443,33.5 C443,34.8807119 441.880712,36 440.5,36 L111.5,36 C110.119288,36 109,34.8807119 109,33.5 L109,29.5 C109,28.1192881 110.119288,27 111.5,27 Z" id="Rectangle-3" fill="#FFFFFF"></path>
+                <polygon id="Fill-10" fill="#FFFFFF" points="473.997267 21 475.88589 26.7294287 482 26.7294287 477.052955 30.2705713 478.944312 36 473.997267 32.4588573 469.052955 36 470.941578 30.2705713 466 26.7294287 472.111377 26.7294287"></polygon>
+                <g id="Group-7" transform="translate(204.000000, 136.000000)" fill="#DADFE1">
+                    <polygon id="Fill-16" points="0 64 148.252941 64 148.252941 52.8 0 52.8"></polygon>
+                    <polygon id="Fill-17" points="0 36.8 210.423529 36.8 210.423529 25.6 0 25.6"></polygon>
+                    <polygon id="Fill-18" points="0 11.2 271 11.2 271 0 0 0"></polygon>
+                </g>
+                <g id="Group-7-Copy" transform="translate(204.000000, 247.000000)" fill="#DADFE1">
+                    <polygon id="Fill-16" points="0 64 148.252941 64 148.252941 52.8 0 52.8"></polygon>
+                    <polygon id="Fill-17" points="0 36.8 210.423529 36.8 210.423529 25.6 0 25.6"></polygon>
+                    <polygon id="Fill-18" points="0 11.2 271 11.2 271 0 0 0"></polygon>
+                </g>
+                <rect id="Rectangle-4" fill="url(#linearGradient-2)" x="33" y="123" width="145" height="90"></rect>
+                <rect id="Rectangle-4-Copy" fill="url(#linearGradient-3)" x="33" y="233" width="145" height="90"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

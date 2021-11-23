@@ -564,7 +564,7 @@ section.banner {
   section.banner {
     min-height: 650px;
     background: linear-gradient(180deg, #427fe0 60%, rgba(66, 127, 224, 0) 70%),
-      url("assets/img/img_fp_au_who_we_are_mob@2x.jpg") no-repeat center bottom -110px /
+      url("assets/img/img_fp_au_who_we_are_mob@2x.jpg") no-repeat center bottom -34% /
         auto 400px #427fe0;
 
     @media (min-width: $responsive-sm) {
@@ -1580,6 +1580,27 @@ section.banner {
   }
 }
 
-// SEO offer
-.page-seo-offer {
+// Bing Ads page
+.page-bing-ads {
+  .banner {
+    .hero-img-mobile {
+      img {
+        margin-bottom: -26px;
+      }
+    }
+    .hero-img-md {
+      right: -26px !important;
+    }
+  }
+
+  @media (min-width: $responsive-lg) {
+    .banner-hero .hero-img {
+      right: -165px !important;
+    }
+  }
+  @media screen and (max-width: $responsive-lg) and (min-width: $responsive-md) {
+    .quote-form.quote-form-big .fp-btn {
+      padding: 0px 9px;
+    }
+  }
 }

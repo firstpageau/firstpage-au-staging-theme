@@ -26,6 +26,11 @@ h6 {
   margin-bottom: 20px;
 }
 
+.p-tag-h2-style {
+  font-weight: 700 !important;
+  margin-bottom: 20px !important;
+}
+
 h1 {
   font-size: 30px;
   line-height: 35px;
@@ -34,6 +39,11 @@ h1 {
 h2 {
   font-size: 28px;
   line-height: 34px;
+}
+
+.p-tag-h2-style {
+  font-size: 28px !important;
+  line-height: 34px !important;
 }
 
 h3 {
@@ -62,6 +72,11 @@ h5 {
     line-height: 50px;
   }
 
+  .p-tag-h2-style {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+
   h3 {
     font-size: 35px;
     line-height: 40px;
@@ -88,6 +103,15 @@ p {
   line-height: 20px;
   letter-spacing: 0.01rem;
   margin-bottom: 20px;
+}
+
+.pop-up-form-heading {
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
 ul.tick {
@@ -3678,14 +3702,14 @@ section.section-terms {
   }
 }
 
-section.section-bottomquote {
+section.section-bottomquote,
+section.section-google-explained {
   padding: 40px 0;
   text-align: center;
 
   h3 {
-    color: $color-blue;
+    // color: $color-blue;
     font-weight: bold;
-    max-width: 910px;
     font-size: 32px;
     line-height: 36px;
     margin-bottom: 20px;
@@ -3728,7 +3752,7 @@ section.section-bottomquote {
   }
 
   .box-content {
-    padding: 24px;
+    padding: 30px 24px 50px;
     height: 100%;
     border-radius: 4px;
     box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.05);
@@ -3747,6 +3771,15 @@ section.section-bottomquote {
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+
+    &.box-blue {
+      background-color: $color-blue;
+      color: $color-white;
+      p,
+      a {
+        color: $color-white;
       }
     }
 
@@ -3794,7 +3827,7 @@ section.section-bottomquote {
 
       h3,
       h4 {
-        font-size: 45px;
+        font-size: 38px;
         font-weight: bold;
         line-height: 42px;
       }
@@ -4660,6 +4693,7 @@ section.secure-payments {
 
   .text-container-seo-new {
     max-width: 588px !important;
+    margin: auto;
   }
 
   .seo-new-case-study-content {
@@ -5700,9 +5734,13 @@ section.secure-payments {
   }
   .slick-prev {
     left: 0px;
+    width: 56px;
+    height: 56px;
   }
   .slick-next {
     right: 0px;
+    width: 56px;
+    height: 56px;
   }
   .slick-next,
   .slick-prev {
@@ -5755,7 +5793,7 @@ section.secure-payments {
   }
   .card-text {
     color: $color-text;
-    height: 136px;
+    height: 145px;
   }
 
   .card-footer {
@@ -6327,6 +6365,326 @@ section.secure-payments {
   @media (min-width: $responsive-lg) {
     .quote-form.quote-form-big .input-group .input-group-btn .fp-btn {
       width: 294px;
+    }
+  }
+}
+
+// clients comments section
+.section-clients-comments {
+  max-width: 1200px;
+  margin: auto;
+
+  .clientComment:before {
+    content: "";
+    background: url(assets/img/icon-quote-red.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 14px;
+    width: 34px;
+    height: 27px;
+    top: 13px;
+  }
+  .clientComment {
+    font-size: 20.5px;
+    line-height: 35px;
+    margin-top: 60px;
+  }
+
+  .clientName {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  @media (min-width: $responsive-md) {
+    .clientComment {
+      font-size: 16.37px;
+      line-height: 24.91px;
+      min-height: 184px;
+    }
+    .clientComment:before {
+      left: -14px;
+    }
+    .clientName {
+      font-size: 18px;
+      line-height: 25px;
+      min-height: 65px;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+    .clientComment:before {
+      left: -14px;
+    }
+    .clientComment {
+      font-size: 23px;
+      line-height: 35px;
+      min-height: 282px;
+    }
+    .clientName {
+      font-size: 25px;
+      line-height: 35px;
+      min-height: 110px;
+    }
+  }
+  @media (min-width: $responsive-xl) {
+    .clientComment {
+      min-height: 280px;
+    }
+    .clientName {
+      min-height: 75px;
+    }
+  }
+}
+
+// roadmap section
+.section-roadmap {
+  .roadmapDes {
+    max-width: 310px;
+    margin: auto;
+    h3 {
+      @media (min-width: $responsive-md) {
+        font-size: 30px;
+      }
+      @media (min-width: $responsive-lg) {
+        font-size: 35px;
+      }
+    }
+    p {
+      line-height: 24px;
+    }
+  }
+  .roadmapStep {
+    color: $color-blue2;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 45px;
+  }
+  // max-width: 1440px;
+  // margin: auto;
+  @media (min-width: $responsive-md) {
+    h2 {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+    h2 {
+      width: 100%;
+    }
+  }
+}
+
+// why choose us section
+.section-why-choose-us {
+  // max-width: 1200px;
+  // margin: auto;
+  p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+  .blueTickIcon {
+    margin-top: 6px;
+    padding-right: 19px;
+  }
+
+  @media (min-width: $responsive-md) {
+    p {
+      font-size: 24px;
+      line-height: 45px;
+    }
+    .blueTickIcon {
+      margin-top: 10px;
+      padding-right: 36px;
+    }
+  }
+}
+
+// Location section
+.section-location {
+  .map-bg {
+    background-image: url("assets/img/img_location_map_sm.svg");
+    height: 260px;
+    background-repeat: no-repeat;
+  }
+  .blueTickIcon {
+    width: 18px;
+    margin-right: 20px;
+  }
+  a,
+  .locationText {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $color-text;
+    min-width: 94px;
+  }
+
+  .locationName {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 9px;
+    position: absolute;
+    min-width: auto;
+  }
+
+  .locationDarwin {
+    left: 139px;
+    top: -5px;
+  }
+
+  .locationSunshineCoast {
+    top: 97px;
+    left: 284px;
+  }
+
+  .locationBrisbane {
+    left: 294px;
+    top: 124px;
+  }
+
+  .locationGoldCoast {
+    left: 291px;
+    top: 153px;
+  }
+  .locationSydney {
+    left: 299px;
+    top: 172px;
+  }
+  .locationCanberra {
+    left: 266px;
+    top: 190px;
+  }
+
+  .locationMelbourne {
+    left: 245px;
+    top: 208px;
+  }
+
+  .locationHobart {
+    left: 259px;
+    top: 235px;
+  }
+
+  .locationParamatta {
+    left: 165px;
+    top: 152px;
+  }
+
+  .locationGeelong {
+    left: 137px;
+    top: 240px;
+  }
+
+  .locationBallarat {
+    left: 128px;
+    top: 223px;
+  }
+
+  .locationBendigo {
+    left: 112px;
+    top: 208px;
+  }
+
+  .locationAdelaide {
+    left: 89px;
+    top: 163px;
+  }
+
+  .locationPerth {
+    left: 21px;
+    top: 202px;
+  }
+
+  @media (min-width: $responsive-md) {
+    .map-bg {
+      background-image: url("assets/img/img_location_map_md_lg.svg");
+      height: 566px;
+      margin-left: -25px;
+    }
+    a,
+    .locationText {
+      font-size: 22px;
+    }
+    .locationName {
+      font-size: 22px;
+      line-height: 21px;
+    }
+
+    .locationDarwin {
+      left: 308px;
+      top: -8px;
+    }
+
+    .locationSunshineCoast {
+      top: 212px;
+      left: 628px;
+    }
+
+    .locationBrisbane {
+      left: 651px;
+      top: 279px;
+    }
+
+    .locationGoldCoast {
+      left: 638px;
+      top: 335px;
+    }
+    .locationSydney {
+      left: 663px;
+      top: 390px;
+    }
+    .locationCanberra {
+      left: 580px;
+      top: 427px;
+    }
+
+    .locationMelbourne {
+      left: 540px;
+      top: 467px;
+    }
+
+    .locationHobart {
+      left: 567px;
+      top: 533px;
+    }
+
+    .locationParamatta {
+      left: 378px;
+      top: 343px;
+    }
+
+    .locationGeelong {
+      left: 313px;
+      top: 542px;
+    }
+
+    .locationBallarat {
+      left: 295px;
+      top: 506px;
+    }
+
+    .locationBendigo {
+      left: 261px;
+      top: 470px;
+    }
+
+    .locationAdelaide {
+      left: 200px;
+      top: 367px;
+    }
+
+    .locationPerth {
+      left: 44px;
+      top: 453px;
+    }
+    .locationText {
+      min-width: 117px;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+    .map-bg {
+      margin-left: -9px;
     }
   }
 }

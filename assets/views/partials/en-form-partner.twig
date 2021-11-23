@@ -1,0 +1,35 @@
+{% set form_page = (form_page is empty) ? 'General' : form_page %}
+{% set form_button = (form_button is empty) ? 'Free SEO Quote' : form_button %}
+{% set form_hs = (form_hs is empty) ? 'hs_quote_form' : form_hs %}
+{% set form_thankyou = (form_thankyou is empty) ? 'thank-you' : form_thankyou %}
+{% set form_website_placeholder = (form_website_placeholder is empty) ? 'Enter your website' : form_website_placeholder %}
+
+<section class="partner-form-section">
+  
+    <div class="quote-form quote-form-big">
+        <p class="form-title">Partner with us</p>
+    <form class="fp-form" action="{{ home_url }}{{ form_thankyou }}" method="POST">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <input type="text" class="form-control" name="lead_name" placeholder="First Name*" required="" />
+            </div>
+            <div class="col-12 col-md-6">
+                <input type="tel" class="form-control" name="lead_phone" placeholder="Phone*" required="" />
+            </div>
+            <div class="col-12 col-md-6">
+                <input type="email" class="form-control" name="lead_email" placeholder="Email*" data-parsley-error-message="Please enter a valid email address" data-parsley-trigger="change" required="" />
+            </div>
+
+            <div class="col-12 col-md-6">
+                <input type="text" class="form-control" name="lead_website" placeholder="Website" data-parsley-website-check />
+            </div>
+            <div class="col-12 col-md-12">
+                <input type="hidden" name="lead_formname" value="{{ form_page }}" />
+                <input type="hidden" name="lead_language" value="en" />
+                <input type="hidden" name="lead_formtype" value="{{ form_hs }}" />
+                <button type="submit" data-title="Main Banner Get A Free Quote" class="form-control btn fp-btn fp-btn-orange buttonFormClick" >Get a free proposal</button>
+            </div>
+
+    </form>
+</div>
+</section>

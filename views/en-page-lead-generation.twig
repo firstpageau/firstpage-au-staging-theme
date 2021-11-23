@@ -1,0 +1,350 @@
+{% extends "en-base.twig" %}
+{% block content %}
+
+	<style>
+		.case-study-md-img {
+			margin-bottom: -36px;
+		}
+
+		@media(max-width: 767px) {
+			.container-padding {
+				padding: 0 15px;
+			}
+		}
+		@media(max-width: 991px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px 0 34px !important;
+			}
+		}
+
+		@media(max-width: 767px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px !important;
+			}
+		}
+		@media(min-width: 992px) {
+			section.section-paragraph .text-container {
+				max-width: 720px !important;
+			}
+		}
+		@media(max-width: 767px) {
+			.hero-mobile {
+				bottom: -75px !important;
+				right: -28px !important;
+			}
+		}
+		@media(max-width: 767px) {
+			.quote-form {
+				padding: 165px 0 15px !important;
+			}
+		}
+		@media(min-width: 1440px) {
+			section.banner .banner-hero .hero-img {
+				right: -340px !important;
+			}
+		}
+		@media(max-width: 767px) {
+			.pt-20 {
+				padding-top: 20px;
+			}
+
+			.pt1-0 {
+				padding-top: 0 !important;
+			}
+			.fp-btn-desc {
+				width: 100%;
+			}
+		}
+	</style>
+
+	<div class="page-lead-generation">
+		<section class="banner form-space">
+			<div class="container banner-hero two-lines">
+				<div class="banner-hero-cont">
+					<h1 class="form-hide">Looking for more customers? Engage our superior lead generation services and boost your sales
+
+					</h1>
+					<div class="banner-description">
+						<div class="form-hide hero-mobile">
+							<img src="{{ site.theme.link }}/assets/img/img_hero-full_prog-ad-mobile.png" srcset="{{ site.theme.link }}/assets/img/img_hero-full_prog-ad-mobile.png, {{ site.theme.link }}/assets/img/img_hero-full_prog-ad-mobile.png 2x" alt="First Page"/>
+						</div>
+					</div>
+					{% include "partials/en-form-services.twig" with {'form_page': 'SEO',
+      'form_button': 'Get A Free Quote'} %}
+					{% include "partials/en-section-awards-badges.twig" %}
+				</div>
+				<div class="hero-img d-none d-md-block d-lg-none">
+					<img src="{{ site.theme.link }}/assets/img/img_hero-full_prog-ad-tablet.png" srcset="{{ site.theme.link }}/assets/img/img_hero-full_prog-ad-tablet.png, {{ site.theme.link }}/assets/img/img_hero-full_prog-ad-tablet.png 2x" alt="First Page"/>
+
+
+				</div>
+				<div class="hero-img d-none d-lg-block">
+					<img src="{{ site.theme.link }}/assets/img/img_hero-full_prog-ad-desktop@2x.png" srcset="{{ site.theme.link }}/assets/img/img_hero-full_prog-ad-desktop@2x.png, {{ site.theme.link }}/assets/img/img_hero-full_prog-ad-desktop@2x.png 2x" alt="First Page"/>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	{% include "partials/en-section-featured-in-news.twig" %}
+
+	<div class="page-seo-perth">
+		<section class="section-paragraph">
+			<div class="container">
+				<h2 class="text-center text-sm-left">Partner with First Page to transform your online presence into a lead generation powerhouse</h2>
+
+				<div class="rwo no-gutters">
+					<img src="{{ site.theme.link }}/assets/img/location-office-sm.png" srcset="{{ site.theme.link }}/assets/img/location-office-sm.png, {{ site.theme.link }}/assets/img/location-office-sm@2x.png 2x" class="img-fluid d-block d-md-none m-auto" alt="First Page"/>
+				</div>
+
+
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-6">
+						<p class="text-center text-sm-left pt-20">As more businesses get online and compete for attention, getting the ideal customers to care about your company’s products and services is only becoming more challenging. But a supercharged lead generation campaign by the experts at First Page ensures your business benefits from a nurtured customer base that converts in their droves.</p>
+
+						<p class="text-center text-sm-left">No matter what target market your business wants to attract, expert-led lead generation services ensure your strategy uses every avenue imaginable to achieve your goals. From high-powered social media marketing to compelling email campaigns to fascinating blog posts, spreading awareness about your products and attracting high-quality prospects is made possible.</p>
+
+					</div>
+					<div class="col-12 col-md-6">
+						<p class="text-center text-sm-left">For lead generation services in Melbourne, don’t consider anyone else but First Page. Our award-winning agency has generated over $3.8 billion in sales for our clients, ensuring we have what it takes to make your campaign a success. With our proven ability to reach customers anywhere in their buyer journey with targeted content, your conversion rates are bound to go through the roof.</p>
+						<p class="text-center text-sm-left">In fact, companies with outstanding lead generation produce 50% more qualified leads at a 33% lower cost. This means you want the best in the business planning and executing your strategy. Let First Page take charge of your campaign to score more sales-ready leads at an unbeatable ROI.</p>
+
+						<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-desc fp-btn-orange show-popup-form buttonFormClick">
+
+							GET A FREE QUOTE
+						</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section-paragraph office-img-section pt1-0">
+		<div class="rwo no-gutters">
+			<img src="{{ site.theme.link }}/assets/img/location-office-md.png" srcset="{{ site.theme.link }}/assets/img/location-office-md.png, {{ site.theme.link }}/assets/img/location-office-md@2x.png 2x" class="img-fluid d-none d-md-block d-lg-none m-auto" alt="First Page"/>
+			<img src="{{ site.theme.link }}/assets/img/location-office-lg.png" srcset="{{ site.theme.link }}/assets/img/location-office-lg.png, {{ site.theme.link }}/assets/img/location-office-lg@2x.png 2x" class="img-fluid d-none d-lg-block m-auto" alt="First Page"/>
+		</div>
+
+	</section>
+
+	<section class="section-paragraph">
+
+		<div class="row no-gutters flex-column-reverse flex-md-row align-items-center">
+			<div class="col-12 col-md-6 image-container-left pr-lg-5">
+				<img src="{{ site.theme.link }}/assets/img/irresistible-offer-desktop.png" srcset="{{ site.theme.link }}/assets/img/irresistible-offer-desktop.png, {{ site.theme.link }}/assets/img/irresistible-offer-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/irresistible-offer-tablet.png" srcset="{{ site.theme.link }}/assets/img/irresistible-offer-tablet.png, {{ site.theme.link }}/assets/img/irresistible-offer-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2>
+					Create an irresistible offer that resonates with your target market
+				</h2>
+				<img src="{{ site.theme.link }}/assets/img/irresistible-offer-mobile.png" srcset="{{ site.theme.link }}/assets/img/irresistible-offer-mobile.png, {{ site.theme.link }}/assets/img/irresistible-offer-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">Although lead generation is critical to a company’s ability to drive interest in its products and services, several challenging hurdles must be overcome before you can reach your goals. For instance, some companies can’t decide on the perfect tactics, don’t have time to produce high-quality content or lack the skills to measure and document leads. However, the talented team at First Page can take charge of these concerns for you.</p>
+
+				<p class="text-center text-md-left">First, we’ll get to know your target market before implementing techniques that engage their desires and solve their problems. Whether that’s a free sample, an educational how-to guide or a special discount, our strategies drive people towards your products and compel them to hand over their contact information. Backed by irresistible offers that make perfect sense for your products and your audience, sharply increasing your conversion rate is within reach.</p>
+
+				<p class="text-center text-md-left">If your business isn’t nurturing its leads effectively, there’s a high chance your biggest rivals are outperforming you. As modern buyers are more independent than ever with brief attention spans, extensive lead generation services ensure your business stands out against the competition. Partner with our lead generation company to ensure you benefit from seductive offers and comprehensive analysis that produces even more sales.</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph">
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse align-items-center">
+			<div class="col-12 col-md-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/premium-content-services-desktop.png" srcset="{{ site.theme.link }}/assets/img/premium-content-services-desktop.png, {{ site.theme.link }}/assets/img/premium-content-services-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/premium-content-services-tablet.png" srcset="{{ site.theme.link }}/assets/img/premium-content-services-tablet.png, {{ site.theme.link }}/assets/img/premium-content-services-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2>
+					Level up your lead generation with premium content services
+				</h2>
+				<img src="{{ site.theme.link }}/assets/img/premium-content-services-mobile.png" srcset="{{ site.theme.link }}/assets/img/premium-content-services-mobile.png, {{ site.theme.link }}/assets/img/premium-content-services-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+
+				<p class="text-center text-md-left">Content marketing is widely recognised as one of the best ways to improve lead generation. With research finding that content marketing generates 3x as many leads as outbound marketing for around half the cost, virtually every online business will stride ahead with this cost-effective method.</p>
+
+
+				<p class="text-center text-md-left">However, not all content marketing plans are created equal. Your industry rivals might have a blog or social media profile, but that doesn’t mean they get the most reward from infrequent and low-quality content. By using First Page's premium content writing services, we’ll make sure your blogs, how-to guides, whitepapers and infographics explore the topics that matter most to your customers.</p>
+
+
+				<p class="text-center text-md-left">Alongside the content on your website, social media is also an incredible tool for lead generation. We can strategise a Facebook lead generation campaign that showcases your brand’s personality and highlights everything unique about its products. Plus, our LinkedIn lead generation tactics attract highly influential corporate decision-makers.</p>
+
+				<p class="text-center text-md-left">As we push these platforms to the max, our detailed content plans and stellar execution ensure your brand’s lead generation takes your organisation to the next level. Get in touch with our friendly team to kickstart your campaign and nurture a target market that grows your company's success.</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+
+	{% include "partials/en-section-free-session.twig" %}
+
+	{# faq 2 #}
+	<section class="section-paragraph section-faqs py-5">
+		<div class="container">
+			<h2 class="section-title">Lead Generation FAQs</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse21">
+							<h3 itemprop="name">Why is lead generation important to businesses?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Every business must have techniques in place that attract customers and stimulate sales. Lead generation is one of the best ways to make this happen, with a well-executed campaign increasing your ability to nurture a target market and prompt sales. Across content marketing, social media, promotional concepts and more, your business can rise above the competition.</p>
+								<p>But as the online space becomes more crowded, achieving this goal on your own is increasingly difficult. However, lead generation companies like First Page develop wonderfully effective campaigns that reach your ideal target market with a personalised message. By capturing the attention of your audience at the perfect moment, we can strengthen your conversion rate.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse22">
+							<h3 itemprop="name">How to use Facebook Messenger bots for lead generation?
+
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Almost every business owner realises Facebook is hugely productive for interacting with customers and showcasing products. But many aren’t aware they can boost their leads by using Facebook Messenger chatbots to automatically engage customers and learn about their interests.</p>
+								<p>Using AI-driven technology, brands can set up chatbots that ask simple questions and prompt preset answers. This extra information will help you provide outstanding customer service and encourage sales. Meanwhile, chatbots can be used to send promotional offers or invitations to events. Take your Facebook lead generation up a notch today.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse23">
+							<h3 itemprop="name">
+								What is the lead generation process?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>There’s no doubt that high-quality lead generation services involve a complex, ongoing process that requires an expert touch to create the most success. If you choose to partner with First Page, our highly experienced digital marketers will begin your campaign by getting to know what makes your target market tick.</p>
+								<p>Then, we’ll get to work generating a razor-sharp offer and a strong call-to-action that compels sales-ready customers to take action. As more leads submit their contact details or convert immediately into sales, we can track and analyse these prospects to drive future purchases.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse24">
+							<h3 itemprop="name">How does a chatbot help in lead generation?</h3>
+
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>In the past, lead generation required businesses to get on the phone and knock on doors. But the rise of chatbots has helped companies markedly streamline their methods. You can now use chatbots to organise surveys, promote events and ask questions that provide critical insight into what customers think about your business and its products.</p>
+								<p>Whether you create a chatbot on Facebook or set one up on your website, these tools are wonderfully efficient for collecting information on your target market. Backed by this approach, you can compile more customer data and better understand how customers perceive your products.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse25">
+							<h3 itemprop="name">How to automate lead generation?
+
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse25" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>While planning and executing a rewarding lead generation strategy can be a time-consuming process, there are numerous ways automation can streamline your approach. One of the best places to start is your landing pages. By tracking website traffic, you can develop personalised content for repeat visitors who have a higher chance of converting compared to other types of leads.</p>
+								<p>This automation can also be used in your email marketing campaigns. As you keep tabs on how customers interact with your website, you can send tailored emails that respond to their precise position in the buyer journey. Use these forward-thinking strategies to take your lead generation to even greater heights.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse26">
+							<h3 itemprop="name">How do you generate high-quality leads with LinkedIn?
+
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse26" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>LinkedIn is an incredible platform for B2B lead generation. Why? Because 80% of the platform’s 700 million users take charge of important decisions for their companies. Meanwhile, LinkedIn ads have been shown to increase purchase intent by as much as 30%.
+								</p>
+								<p>With LinkedIn Lead Generation Ads making it easy for companies to get started, our experts will maximise your performance on the platform. In addition, our LinkedIn marketing campaigns showcase your brand’s personality and highlight the benefits of your products.</p>
+								<p>Backed by our cutting-edge strategies, your business will benefit from lucrative B2B customers checking out your profile and getting in touch to learn more.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse27">
+							<h3 itemprop="name">How much do you charge for lead generation?</h3>
+
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse27" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Endless considerations go into determining the cost of a lead generation campaign. Ranging from your company’s objectives and target market to industry-specific hurdles, the strategies that overcome your rivals and drive sales must be tailored to your precise needs.
+								</p>
+								<p>Lead generation can be insanely lucrative for your business when handled correctly. Instead of wasting time, money and effort on an ineffective campaign, partner with the talented team at First Page. No matter the size of your budget, we can design a strategy that levels up your business.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse28">
+							<h3 itemprop="name">
+								How do you write content that generates leads?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse28" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Content marketing is a vital part of top-notch lead generation services. But as competition for attention increases, making sure your blogs, guides and whitepapers receive the recognition they deserve is getting harder. Fortunately, a host of techniques can be used to create exceptional content that achieves your goals.</p>
+								<p>Strive to create content that solves issues for your customers and identifies your business as an industry leader. Meanwhile, SEO-driven content helps your business climb the search engine rankings and receive more clicks. Alongside keyword research, high-quality images and an engaging call-to-action, ensure your content is a game-changer.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse29">
+							<h3 itemprop="name">How does Facebook lead generation work?
+
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse29" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Considering 1.6 billion people are connected to a small business on Facebook, using this powerful platform for lead generation is an obvious choice. But how can you ensure it delivers results for your brand? A highly effective approach is through Facebook lead ads.</p>
+								<p>With First Page's superior team leading your campaign, we'll target the ideal audience with an exceptional offer, vibrant imagery and a call-to-action that increases conversions. Alongside valuable content that rewards your customers for handing over their contact information, you’ll benefit from a wealth of qualified leads.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse30">
+							<h3 itemprop="name">
+								How can social media be used to generate leads?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse30" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>No sales funnel is complete without a robust solution for generating leads from social media. As you build your following across the most relevant platforms, your brand has the chance to develop fruitful relationships with its prized target market.
+								</p>
+								<p>This connection can be leveraged to drive sales either now or in the future. If you partner with our social media lead generation agency in Melbourne, we'll implement numerous techniques that transform more prospects into sales, including eye-catching contests and intuitive chatbots.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include "partials/en-form-popup.twig" with {'form_page': 'SEO (Pop-up Form)'}
+%}
+{% endblock %}

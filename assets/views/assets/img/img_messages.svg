@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="427px" height="331px" viewBox="0 0 427 331" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>img_messages</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-29.9%" y="-30.3%" width="159.8%" height="160.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0 0.207633607 193.54216 0.207633607 193.54216 190.647855 0 190.647855"></polygon>
+        <filter x="-24.2%" y="-24.6%" width="148.3%" height="149.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="18.3428908%" y1="92.3267218%" x2="94.2550152%" y2="7.39216705%" id="linearGradient-5">
+            <stop stop-color="#427FDF" offset="0%"></stop>
+            <stop stop-color="#396BB1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Reputation-Management" transform="translate(-176.000000, -1648.000000)">
+            <g id="CONTENT---Reputation-Management" transform="translate(0.000000, 1042.000000)">
+                <g id="CONTENT---SEO">
+                    <g id="img_messages" transform="translate(196.000000, 616.000000)">
+                        <g id="Group" filter="url(#filter-1)" transform="translate(194.000000, 0.000000)">
+                            <g id="Group-20">
+                                <mask id="mask-3" fill="white">
+                                    <use xlink:href="#path-2"></use>
+                                </mask>
+                                <g id="Clip-19"></g>
+                                <polygon id="Fill-18" fill="#427FE0" mask="url(#mask-3)" points="0 0.206840103 193.54216 0.206840103 193.54216 151.369396 83.15616 151.369396 41.99712 190.647855 54.81664 151.369396 0 151.369396"></polygon>
+                            </g>
+                            <polygon id="Fill-26" fill="#FFFFFF" points="22.5581395 113.060256 166.930233 113.060256 166.930233 103.833463 22.5581395 103.833463"></polygon>
+                            <polygon id="Fill-27" fill="#FFFFFF" points="22.5581395 88.1350992 166.930233 88.1350992 166.930233 78.9083058 22.5581395 78.9083058"></polygon>
+                            <polygon id="Fill-28" fill="#FFFFFF" points="22.5581395 65.0681158 166.930233 65.0681158 166.930233 55.8413224 22.5581395 55.8413224"></polygon>
+                            <polygon id="Fill-29" fill="#FFFFFF" points="22.5581395 42.0011323 166.930233 42.0011323 166.930233 32.774339 22.5581395 32.774339"></polygon>
+                        </g>
+                        <g id="Group-2" filter="url(#filter-4)" transform="translate(0.000000, 59.392000)">
+                            <polygon id="Fill-16" fill="url(#linearGradient-5)" points="240 0.4721152 0 0.4721152 0 187.003955 136.886038 187.003955 187.924528 235.480115 172.02566 187.003955 240 187.003955"></polygon>
+                            <polygon id="Fill-21" fill="#FFFFFF" points="38.490566 136.542208 201.509434 136.542208 201.509434 127.326208 38.490566 127.326208"></polygon>
+                            <polygon id="Fill-23" fill="#FFFFFF" points="38.490566 108.894208 201.509434 108.894208 201.509434 99.678208 38.490566 99.678208"></polygon>
+                            <polygon id="Fill-24" fill="#FFFFFF" points="38.490566 81.246208 201.509434 81.246208 201.509434 72.030208 38.490566 72.030208"></polygon>
+                            <polygon id="Fill-25" fill="#FFFFFF" points="38.490566 53.598208 201.509434 53.598208 201.509434 44.382208 38.490566 44.382208"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

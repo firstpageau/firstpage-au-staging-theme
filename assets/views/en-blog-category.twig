@@ -1,0 +1,176 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+<style>
+    .custom-control-input {
+        z-index: 1;
+        opacity: 1;
+        appearance: none;
+    }
+</style>
+
+<section class="banner pad-header">
+    <div class="container">
+        <h1 class="text-center">Learning Centre</h1>
+    </div>
+</section>
+
+<!-- Blogs Grid -->
+<section class="section-bloglist section-grey">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-md-4 offset-md-8">
+                <div class="dropdown category-filter-dropdown d-none d-lg-block">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Filter by topic
+                        <svg style="width:40px;height:40px;margin-left: auto;" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        {# <a class="dropdown-item" href="#">Sort by most recent</a>
+                        <a class="dropdown-item" href="#">Sort by author</a>
+                        <a class="dropdown-item" href="#">Sort by topic</a> #}
+                        {% for category in categories %}
+                        <a class="dropdown-item" href="{{ category.link }}">{{ category.title }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="dropdown category-filter-dropdown d-lg-none" data-toggle="modal" data-target="#select-to-filter-modal">
+                    <a class="dropdown-toggle" href="#" role="button">
+                        Filter by topic
+                        <svg style="width:40px;height:40px;margin-left: auto;" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="row" id="response">
+            {% for post in posts %}
+            <div class="blog-cont col-12 col-md-4">
+                <div class="blog-content blog-content-card">
+                    {% if post.thumbnail %}
+                    {% set video_cat = '' %}
+                    {% if 'Videos' in post.categories %}
+                    {% set video_cat = 'is-video' %}
+                    {% endif %}
+
+                    <a class="image-wrapper post-thumbnail {{ video_cat }}" href="{{ post.link }}">
+                        <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                        <span class="post-length">{{ post.meta('post_length') }}<br>minute<br>read</span>
+                    </a>
+                    {% endif %}
+
+                    <div class="post-desc">
+                        <div class="post-avatar" style="background-image: url('{{post.author.avatar}}')"></div>
+                        <div class="post-info"><span class="post-author">{{ post.author.name }}</span><br><span class="post-date">{{ post.date|date("d/m/Y") }}</span></div>
+                    </div>
+
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+                        <div class="blog-link">
+                            <a href="{{ post.link }}">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row" id="posts-pagination">
+            {% if posts.pagination.pages|length > 0 %}
+            <div class="pagination">
+                <ul class="list-pagination">
+                    {% if posts.pagination.prev %}
+                    <li><a href="{{posts.pagination.prev.link}}" class="pagi-arrow {{posts.pagination.next.class}}">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+
+                        </a></li>
+                    {% endif %}
+                    {% for page in posts.pagination.pages %}
+                    <li>
+                        {% if page.link %}
+                        <a href="{{page.link}}" class="pagi-item {{page.class}}">{{page.title}}</a>
+                        {% else %}
+                        <span class="pagi-item {{page.class}}">{{page.title}}</span>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                    {% if posts.pagination.next %}
+                    <li><a href="{{posts.pagination.next.link}}" class="pagi-arrow {{posts.pagination.next.class}}">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+
+                        </a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+        <div class="row d-lg-none">
+            <div class="col-12 col-md-6 offset-md-3">
+                {% include "partials/en-blog-sidebar-banner.twig" %}
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="select-to-filter-modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content blog-sidebar">
+            <h5 class="modal-title">SELECT TO FILTER</h5>
+            <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                    <path fill="#00225D" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+                </svg>
+            </button>
+
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-body select-to-filter" style="display: none;">
+                        {% for category in categories %}
+                        <button class="category-filter-button {{ category.id }}" style="display: none;" id="{{ category.id }}">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                            </svg>
+                            {{ category.title }}
+                        </button>
+                        {% endfor %}
+                        <button class="category-filter-button clear-all-filters">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                            </svg>
+                            Clear All Filters
+                        </button>
+                    </div>
+                    <div class="card-body topics">
+                        <h5>TOPICS</h5>
+                        <form action="{{ site.site_url~'/wp-admin/admin-ajax.php' }}" method="POST" id="filter">
+                            {% for category in categories %}
+                            <div class="custom-control custom-radio">
+                                <input class="input-category-filter {{ category.id }} custom-control-input" type="checkbox" value="{{ category.id }}" id="{{ category.slug }}" name="categoryfilter[]">
+                                <label class="custom-control-label" for="{{ category.slug }}">
+                                    {{ category.title }}
+                                </label>
+                            </div>
+                            {# <input type="checkbox" id="{{ category.slug }}" name="categoryfilter[]" value="{{ category.id }}">
+                            <label for="{{ category.slug }}"> {{ category.title }}</label> #}
+                            {% endfor %}
+                            <button id="applyFilter" hidden>Apply filter</button>
+                            <input type="hidden" name="action" value="myfilter">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

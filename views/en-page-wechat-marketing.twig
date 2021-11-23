@@ -1,121 +1,265 @@
 {% extends "en-base.twig" %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ site.theme.link }}/views/assets/style.css" />
-<script src="{{ site.theme.link }}/views/assets/js/script.js"></script>
+
+<style>
+    section.section-paragraph .p-0 {
+        padding: 0 !important;
+    }
+
+    @media(max-width: 575px) {
+        .text-center-mobile {
+            text-align: center;
+        }
+    }
+
+    @media(max-width: 575px) {
+        .hero-mobile {
+            position: unset !important;
+            margin-bottom: -35px !important;
+            text-align: center;
+        }
+    }
+
+    .container-padding {
+        padding: 0 34px;
+    }
+
+    @media(max-width: 767px) {
+        .container-padding {
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 991px) {
+        section.section-paragraph .text-container {
+            padding: 0 15px 0 34px !important;
+        }
+    }
+
+    @media(max-width: 767px) {
+        section.section-paragraph .text-container {
+            padding: 0 15px !important;
+        }
+    }
+
+    section.section-paragraph .text-container-right {
+        padding: 0 34px 0 15px;
+    }
+
+    section.section-paragraph .text-container-right .fp-btn {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    @media(max-width: 767px) {
+        .heading-center h2 {
+            text-align: center;
+        }
+    }
+
+    @media(max-width: 767px) {
+        section.section-paragraph .text-container-right {
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 991px) {
+        .input-group {
+            display: -webkit-inline-box !important;
+        }
+    }
+
+    @media(max-width: 767px) {
+        .input-group {
+            display: -webkit-flex !important;
+        }
+
+    }
+
+    @media(min-width: 767px) {
+        .quote-form.quote-form-big .fp-btn {
+            padding: 0 24px !important;
+        }
+    }
+</style>
+
 <!-- Banner -->
-<section class="banner extra-pad extra-pad-shorter form-space">
-    <div class="container banner-hero">
+
+<section class="banner form-space">
+    <div class="container banner-hero two-lines">
         <div class="banner-hero-cont">
-            <h1 class="form-hide bold-lg"><strong>Take your business global</strong> with <strong>WeChat</strong></h1>
-            <div class="hero-img-mobile d-lg-none">
-                <img src="{{ site.theme.link }}/views/assets/img/img_social_hero_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_social_hero_mob.png, {{ site.theme.link }}/views/assets/img/img_social_hero_mob@2x.png 2x" class="img-fluid" alt="First Page Digital" />
+            <h1 class="form-hide text-center-mobile">Take your business global with WeChat
+            </h1>
+            <div class="banner-description">
+                <div class="form-hide hero-mobile">
+                    <img src="{{ site.theme.link }}/assets/img/img-hero-tik-tok-mob.png" srcset="{{ site.theme.link }}/assets/img/img-hero-tik-tok-mob.png, {{ site.theme.link }}/assets/img/img-hero-tik-tok-mob@2x.png 2x" alt="First Page" />
+
+                </div>
             </div>
-            {% include "assets/partials/en-form-services.twig" with {'form_page': 'WeChat Marketing','form_button':'GET A FREE<br>WE CHAT QUOTE'} %}
-
-            {% include "assets/partials/en-section-awards-badges.twig" %}
+            {% include "partials/en-form-services.twig" with {'form_page': 'Wechat Marketing', 'form_button': 'Get A Free
+            Quote', 'form_website_placeholder': 'Enter your website'} %}
+            {% include "partials/en-section-awards-badges.twig" %}
         </div>
-
+        <div class="hero-img d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/img-hero-tik-tok-md.png" srcset="{{ site.theme.link }}/assets/img/img-hero-tik-tok-md.png, {{ site.theme.link }}/assets/img/img-hero-tik-tok-md@2x.png 2x" alt="First Page" />
+        </div>
         <div class="hero-img d-none d-lg-block">
-            <img src="{{ site.theme.link }}/views/assets/img/img_social_hero.png" srcset="{{ site.theme.link }}/views/assets/img/img_social_hero.png, {{ site.theme.link }}/views/assets/img/img_social_hero@2x.png 2x" class="img-fluid" alt="First Page Digital" />
+            <img src="{{ site.theme.link }}/assets/img/img-hero-tik-tok-lg.png" srcset="{{ site.theme.link }}/assets/img/img-hero-tik-tok-lg.png, {{ site.theme.link }}/assets/img/img-hero-tik-tok-lg@2x.png 2x" alt="First Page" />
         </div>
     </div>
 </section>
 
-{% include "assets/partials/en-section-free-featured-in.twig" %}
+{% include "partials/en-section-featured-in-news.twig" %}
 
-<section class="section-paragraph section-white mob-center pb-0">
-    <div class="container">
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
-                <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_logo.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Expand effectively into the Chinese market</h3>
-                <p>It’s no secret that the Chinese market has become incredibly valuable to international brands. But with so many companies looking to make inroads into the region, where is the best place to reach your target market? The answer is WeChat. Featuring 1.5 billion users, with approximately 50% aged 25 to 35, WeChat has rapidly grown from a relatively simple texting app into an all-encompassing <a href="https://firstpage.com.au/">digital marketing powerhouse</a>.</p>
-                <p>Across online shopping, gaming, ridesharing and municipal services, Chinese consumers spend about one-third of their online time using WeChat. This incredible statistic means the platform is the ideal place to compete for attention and showcase your products. Through a variety of WeChat ads, WeChat Mini Programs and influencer marketing, <a href="https://firstpage.com.au/">First Page Australia</a> can ensure you make the most of this superior platform.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE WECHAT QUOTE</button></div>
-            </div>
+
+<section class="section-paragraph container">
+    <h2 class="d-none d-md-block d-lg-none container-padding">Expand effectively into </br> the Chinese market</h2>
+    <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+        <div
+            class="col-12 col-lg-6 col-md-4 image-container-right d-flex flex-column justify-content-center align-items-center">
+            <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_logo.svg"
+                srcset="{{ site.theme.link }}/views/assets/img/img_we_chat_logo.svg, {{ site.theme.link }}/views/assets/img/img_we_chat_logo.svg 2x"
+                class="img-fluid d-none d-lg-inline-block" alt="First Page" style="width:450px;" />
+            <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.svg"
+                srcset="{{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.svg, {{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.svg 2x"
+                class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" style="width:450px;" />
+
+
         </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
-                <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_messages.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_messages_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Build your brand with a powerful WeChat advertising plan</h3>
-                <p>Whenever you start an advertising campaign in an unfamiliar region, it’s hugely important to reach customers in a way that makes sense to them. Fortunately, <a href="https://firstpage.com.au/who-we-are/">our international team</a> works alongside WeChat every day, so we know how to develop and implement an effective campaign that engages your ideal target market. Across high-quality images, video, audio and text, our highly experienced can generate a brand message that gets results.</p>
-                <p>Using WeChat Moments – similar to Facebook’s Feed – we can make sure your products and services stand out to the customers who matter most. Plus, with over 900-million Chinese consumers utilising WeChat Pay – a fully integrated payment solution – we can set up and manage your WeChat e-commerce store to open up new revenue streams and maximise opportunities.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE WECHAT QUOTE</button></div>
-            </div>
+        <div class="col-12 col-lg-6 col-md-8 p-0 text-container text-container-seo-new">
+            <h2 class="d-block d-md-none d-lg-block">
+                Expand effectively into the </br> Chinese market
+            </h2>
+            <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.png"
+                srcset="{{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.png, {{ site.theme.link }}/views/assets/img/img_baidu_seo_mob@2x.png 2x"
+                class="img-fluid d-block d-md-none mx-auto pb-4" alt="" />
+                <p class="text-center text-md-left">It’s no secret that the Chinese market has become incredibly valuable to international brands. But with so many companies looking to make inroads into the region, where is the best place to reach your target market?</p>
+                <p class="text-center text-md-left">The answer is WeChat. Featuring 1.5 billion users, with approximately 50% aged 25 to 35, WeChat has rapidly grown from a relatively simple texting app into an all-encompassing digital marketing powerhouse.</p>
+                <p class="text-center text-md-left">Across online shopping, gaming, ridesharing and municipal services, Chinese consumers spend about one-third of their online time using WeChat.</p>
+                <p class="text-center text-md-left">This incredible statistic means the platform is the ideal place to compete for attention and showcase your products. Through a variety of WeChat ads, WeChat Mini Programs and influencer marketing, First Page Australia can ensure you make the most of this superior platform.</p>
+                <button type="button" data-title="seopage-get-freeproposal-Triple"
+                class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+                GET A FREE QUOTE
+            </button>
         </div>
     </div>
 </section>
 
-<section class="section-paragraph section-white mob-center py-0">
+
+
+<section class="section-paragraph container pb-4 mb-4">
+    <div class="row no-gutters">
+        <div class="col-lg-6 col-md-4"></div>
+        <div class="col-lg-6 col-md-8 align-self-end text-container">
+
+            <h2 class="d-none d-md-block d-lg-none">
+                Build your brand with </br> a powerful WeChat  </br> advertising plan
+            </h2>
+        </div>
+    </div>
+    <div class="row no-gutters flex-column-reverse flex-md-row">
+        <div
+            class="col-12 col-lg-6 col-md-4 image-container-left pr-lg-5 d-flex flex-column justify-content-center align-items-center">
+                <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_messages.svg"
+                srcset="{{ site.theme.link }}/views/assets/img/img_we_chat_messages.svg, {{ site.theme.link }}/views/assets/img/img_we_chat_messages.svg 2x"
+                class="img-fluid d-none d-lg-inline-block" alt="First Page" style="width:450px;" />
+            <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_messages_mob.svg"
+                srcset="{{ site.theme.link }}/views/assets/img/img_we_chat_messages_mob.svg, {{ site.theme.link }}/views/assets/img/img_we_chat_messages_mob.svg 2x"
+                class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" style="width:450px;" />
+        </div>
+        <div class="col-12 col-lg-6 col-md-8 text-container heading-center">
+            <h2 class="d-block d-md-none d-lg-block">
+                Build your brand with </br> a powerful WeChat  </br> advertising plan
+            </h2>
+            <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_messages_mob.svg"
+                srcset="{{ site.theme.link }}/views/assets/img/img_we_chat_messages_mob.svg, {{ site.theme.link }}/views/assets/img/img_we_chat_messages_mob.svg 2x"
+                class="img-fluid d-block d-md-none mx-auto pb-4" alt="" />
+            <p class="text-center text-md-left">Whether you’re looking to expand operations on the ground in China or
+                simply want to attract international e-commerce customers, your business needs a comprehensive plan to
+                climb Baidu’s search engine results pages.</p>
+            <p class="text-center text-md-left">Featuring an estimated 200 million daily users totalling up to 80% of
+                the region’s search engine market, an eye-catching Baidu SEO campaign can deliver unparalleled results
+                for budding brands.</p>
+            <p class="text-center text-md-left">As more companies from around the globe expand into China, your business
+                is going to need professional help to stand out within Baidu’s search results.</p>
+            <p class="text-center text-md-left">First Page Australia’s award-winning team has made it our business to
+                help companies expand into China and beyond, with our multilingual team able to implement a precise
+                approach that achieves your business goals.</p>
+            <button type="button" data-title="seopage-get-freeproposal-Why"
+                class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+                GET A FREE QUOTE
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section-paragraph section-white mob-center py-4 mt-4">
     <div class="container">
         <div class="text-center">
-            <h2><strong>From interactive displays to promoted videos, Facebook ads put it all at your fingertips</strong></h2>
+            <h2><strong>From interactive displays to  </br> promoted videos, Facebook ads put </br> it all at your fingertips</strong></h2>
         </div>
     </div>
 </section>
 
 <section class="section-cards">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-sm-4 mb-3">
                 <div class="card">
                     <div class="card-image pl-md-0 pt-md-3">
-                        <img src="{{ site.theme.link }}/views/assets/img/img_comprehensive.svg" class="img-fluid" alt="" />
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Comprehensive Approach</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 mb-3">
-                <div class="card">
-                    <div class="card-image pl-md-0 pt-md-3">
-                        <img src="{{ site.theme.link }}/views/assets/img/img_turnkey_solution.svg" class="img-fluid" alt="" />
+                        <img src="{{ site.theme.link }}/views/assets/img/imhg_turnkey.svg" class="img-fluid" alt="" />
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-center">Turnkey Solution</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 mb-3">
                 <div class="card">
                     <div class="card-image pl-md-0 pt-md-3">
-                        <img src="{{ site.theme.link }}/views/assets/img/img_intelligent_strategy.svg" class="img-fluid" alt="" />
+                        <img src="{{ site.theme.link }}/views/assets/img/imhg_comprehensive.svg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Comprehensive Approach</h5>
+                        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-image pl-md-0 pt-md-3">
+                        <img src="{{ site.theme.link }}/views/assets/img/imhg_intelligent_strategy.svg" class="img-fluid" alt="" />
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-center">Intelligent Strategy</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 mb-3">
                 <div class="card">
                     <div class="card-image pl-md-0 pt-md-3">
-                        <img src="{{ site.theme.link }}/views/assets/img/icn_lightning.svg" class="img-fluid" alt="" />
+                        <img src="{{ site.theme.link }}/views/assets/img/imhg_lightning.svg" class="img-fluid" alt="" />
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-center">Powerful Impact</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 mb-3">
                 <div class="card">
                     <div class="card-image pl-md-0 pt-md-3">
-                        <img src="{{ site.theme.link }}/views/assets/img/icn_reach_beyond.svg" class="img-fluid" alt="" />
+                        <img src="{{ site.theme.link }}/views/assets/img/imhg_reach_beyond.svg" class="img-fluid" alt="" />
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-center">Real-Time Results</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
             </div>
@@ -123,36 +267,84 @@
     </div>
 </section>
 
-<section class="section-paragraph section-white mob-center">
-    <div class="container">
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
-                <img src="{{ site.theme.link }}/views/assets/img/img_kols.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_kols_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Activate engagement with mini programs and KOLs</h3>
-                <p>Thanks to WeChat’s incredibly in-depth platform, there are numerous ways to engage your precise audience. One way many businesses are generating success is through the creation of a WeChat Mini Program. These so-called ‘sub-applications’ are specially created for use inside the WeChat app, helping you offer promotions and provide useful services. For example, Tesla has a Mini Program where WeChat users can locate charging stations and book a test drive.</p>
-                <p>With Key Opinion Leaders (KOLs) being highly effective at reaching Chinese customers, our experienced team can make sure your business partners with the perfect WeChat collaborator. Like Instagram influencers, WeChat KOLs will promote your products to their fans, helping to enhance your brand awareness and conversion rate. With our help, we’ll identify a powerful KOL and ensure your business generates an exceptional ROI.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE WECHAT QUOTE</button></div>
-            </div>
+
+
+<section class="section-paragraph container">
+    <h2 class="d-none d-md-block d-lg-none container-padding">Activate engagement with  </br> mini programs </br>  and KOLs    </h2>
+    <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+        <div
+            class="col-12 col-lg-6 col-md-4 image-container-right d-flex flex-column justify-content-center align-items-center">
+            <img src="{{ site.theme.link }}/views/assets/img/imhg_increase.svg"
+                srcset="{{ site.theme.link }}/views/assets/img/imhg_increase.svg, {{ site.theme.link }}/views/assets/img/imhg_increase.svg 2x"
+                class="img-fluid d-none d-lg-inline-block" alt="First Page" style="width:450px;" />
+            <img src="{{ site.theme.link }}/views/assets/img/imhg_increase.svg"
+                srcset="{{ site.theme.link }}/views/assets/img/imhg_increase.svg, {{ site.theme.link }}/views/assets/img/imhg_increase.svg 2x"
+                class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" style="width:450px;" />
+
+
         </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
-                <img src="{{ site.theme.link }}/views/assets/img/img_global.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_global_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Achieve international success</h3>
-                <p>For brands looking to convert Chinese consumers, your business has to be using WeChat effectively to achieve its goals. Whether you’re looking to dramatically increase your brand’s visibility in the region or give your sales targets a rapid boost, our talented team can make sure your business benefits from a tailored WeChat marketing campaign. With many of our staff using the platform every day, we can deliver unmatched results.</p>
-                <p>Like <a href="https://firstpage.com.au/social-media-marketing/">most forms of digital marketing</a>, analysing and taking action from detailed data points is key to generating success. Fortunately, our agency has vast experience designing campaigns around our client’s extensive internal analytics. Backed by our team’s comprehensive understanding of WeChat and its user base, our comprehensive strategies produce a top-notch ROI.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE WECHAT QUOTE</button></div>
-            </div>
+        <div class="col-12 col-lg-6 col-md-8 p-0 text-container text-container-seo-new">
+            <h2 class="d-block d-md-none d-lg-block">
+                Activate engagement with  </br> mini programs and KOLs
+            </h2>
+            <img src="{{ site.theme.link }}/views/assets/img/imhg_increase.png"
+                srcset="{{ site.theme.link }}/views/assets/img/imhg_increase.png, {{ site.theme.link }}/views/assets/img/imhg_increase.png 2x"
+                class="img-fluid d-block d-md-none mx-auto pb-4" alt="" />
+                <p class="text-center text-md-left">Thanks to WeChat’s incredibly in-depth platform, there are numerous ways to engage your precise audience. One way many businesses are generating success is through the creation of a WeChat Mini Program.</p>
+                <p class="text-center text-md-left">These so-called ‘sub-applications’ are specially created for use inside the WeChat app, helping you offer promotions and provide useful services. For example, Tesla has a Mini Program where WeChat users can locate charging stations and book a test drive.</p>
+                <p class="text-center text-md-left">With Key Opinion Leaders (KOLs) being highly effective at reaching Chinese customers, our experienced team can make sure your business partners with the perfect WeChat collaborator. Like Instagram influencers, WeChat KOLs will promote your products to their fans, helping to enhance your brand awareness and conversion rate.</p>
+                <p class="text-center text-md-left">With our help, we’ll identify a powerful KOL and ensure your business generates an exceptional ROI.</p>
+                <button type="button" data-title="seopage-get-freeproposal-Triple"
+                class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+                GET A FREE QUOTE
+            </button>
         </div>
     </div>
 </section>
 
-{% include "assets/partials/en-section-free-session.twig" %}
+<section class="section-paragraph container pb-4 mb-4">
+    <div class="row no-gutters">
+        <div class="col-lg-6 col-md-4"></div>
+        <div class="col-lg-6 col-md-8 align-self-end text-container">
+
+            <h2 class="d-none d-md-block d-lg-none">
+                Achieve international </br> success
+            </h2>
+        </div>
+    </div>
+    <div class="row no-gutters flex-column-reverse flex-md-row">
+        <div
+            class="col-12 col-lg-6 col-md-4 image-container-left pr-lg-5 d-flex flex-column justify-content-center align-items-center">
+            <img src="{{ site.theme.link }}/assets/img/expert-help-desktop.png"
+            srcset="{{ site.theme.link }}/assets/img/expert-help-desktop.png, {{ site.theme.link }}/assets/img/expert-help-desktop.png 2x"
+            class="img-fluid d-none d-lg-inline-block" alt="First Page" width="650px;" />
+        <img src="{{ site.theme.link }}/assets/img/expert-help-tablet.png"
+            srcset="{{ site.theme.link }}/assets/img/expert-help-tablet.png, {{ site.theme.link }}/assets/img/expert-help-tablet.png 2x"
+            class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" style="width:450px;" />
+
+        </div>
+        <div class="col-12 col-lg-6 col-md-8 text-container heading-center">
+            <h2 class="d-block d-md-none d-lg-block">
+                Achieve international </br> success
+            </h2>
+            <img src="{{ site.theme.link }}/assets/img/expert-help-mobile.png"
+            srcset="{{ site.theme.link }}/assets/img/expert-help-mobile.png, {{ site.theme.link }}/assets/img/expert-help-mobile.png 2x"
+            class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page" />
+                <p class="text-center text-md-left">For brands looking to convert Chinese consumers, your business has to be using WeChat effectively to achieve its goals.</p>
+                <p class="text-center text-md-left">Whether you’re looking to dramatically increase your brand’s visibility in the region or give your sales targets a rapid boost, our talented team can make sure your business benefits from a tailored WeChat marketing campaign. With many of our staff using the platform every day, we can deliver unmatched results.</p>
+                <p class="text-center text-md-left">Like most forms of digital marketing, analysing and taking action from detailed data points is key to generating success. Fortunately, our agency has vast experience designing campaigns around our client’s extensive internal analytics.</p>
+                <p class="text-center text-md-left">Backed by our team’s comprehensive understanding of WeChat and its user base, our comprehensive strategies produce a top-notch ROI.</p>                
+            <button type="button" data-title="seopage-get-freeproposal-Why"
+                class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+                GET A FREE QUOTE
+            </button>
+        </div>
+    </div>
+</section>
+
+
+{% include "partials/en-section-free-session.twig" %}
+
 {% include "assets/partials/en-form-popup.twig" with {'form_page': 'WeChat Marketing (Popup)'} %}
 
 {% endblock %}

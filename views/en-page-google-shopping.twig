@@ -22,15 +22,25 @@
 				background-image: none;
 			}
 		}
+		@media(min-width: 1200px) {
+			.google-shopping-banner .banner-hero .hero-img {
+				right: -200px !important;
+			}
+		}
+		@media(max-width: 991px) {
+			.google-shopping-banner .banner-hero .hero-img {
+				right: -75px !important;
+			}
+		}
 	</style>
 
 	<section class="banner form-space google-shopping-banner">
 		<div class="container banner-hero">
 			<div class="banner-hero-cont">
-				<h1 class="form-hide">20X your ecommerce business in months with targeted Google Shopping Ads</h1>
+				<h1 class="form-hide" style="position:relative;z-index:1">20X your ecommerce business in months with targeted Google Shopping Ads</h1>
 				<div class="banner-description">
 					<div class="form-hide hero-mobile">
-						<img src="{{ site.theme.link }}/assets/img/byron-banner-sm.png" srcset="{{ site.theme.link }}/assets/img/byron-banner-sm.png, {{ site.theme.link }}/assets/img/byron-banner-mb@2x.png 2x" alt="First Page"/>
+						<img src="{{ site.theme.link }}/assets/img/brianna-mobile.png" srcset="{{ site.theme.link }}/assets/img/brianna-mobile.png, {{ site.theme.link }}/assets/img/brianna-mobile.png 2x" alt="First Page"/>
 					</div>
 				</div>
 				{% include "partials/en-form-services.twig" with {'form_page': 'Google Shopping', 'form_button': 'Get A Free Quote'} %}
@@ -38,10 +48,10 @@
 			</div>
 
 			<div class="hero-img d-none d-md-block d-lg-none">
-				<img src="{{ site.theme.link }}/assets/img/byron-banner-tab.png" srcset="{{ site.theme.link }}/assets/img/byron-banner-tab.png, {{ site.theme.link }}/assets/img/byron-banner-tab@2x.png 2x" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/brianna-tablet.png" srcset="{{ site.theme.link }}/assets/img/brianna-tablet.png, {{ site.theme.link }}/assets/img/brianna-tablet.png 2x" alt="First Page"/>
 			</div>
 			<div class="hero-img d-none d-lg-block">
-				<img src="{{ site.theme.link }}/assets/img/hero-google-shopping.png" srcset="{{ site.theme.link }}/assets/img/hero-google-shopping.png, {{ site.theme.link }}/assets/img/byron-hero-google-shopping@2x.png 2x" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/brianna-desktop.png" srcset="{{ site.theme.link }}/assets/img/brianna-desktop.png, {{ site.theme.link }}/assets/img/brianna-desktop.png 2x" alt="First Page"/>
 			</div>
 		</div>
 	</section>
@@ -232,8 +242,8 @@
 						<strong>Petit Tippi</strong>
 					</h2>
 					{# <ul class="tag">
-																									                <li>SEO</li>
-																									            </ul> #}
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										                <li>SEO</li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										            </ul> #}
 					<p>The natural baby products market has become saturated, so how do you stand out? With smart Google Shopping advertising.</p>
 				</div>
 
@@ -244,7 +254,7 @@
 								<div class="stat">96<sub>%</sub>
 								</div>
 								<div class="desc">increase in revenue in just
-																																													                                    6 months</div>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		                                    6 months</div>
 							</div>
 							<div class="col-12 col-md-4">
 								<div class="stat">114<sub>%</sub>
@@ -524,6 +534,4 @@
 	</section>
 
 	{% include "partials/en-form-popup.twig" with {'form_page': 'Google Shopping (Pop-up Form)'} %}
-
-
 {% endblock %}

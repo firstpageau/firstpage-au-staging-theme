@@ -83,6 +83,18 @@
             padding: 0 24px !important;
         }
     }
+
+    @media (max-width: 768px){
+        section.banner .banner-hero .hero-img {
+            right: -30px;
+            bottom: -30px;
+        }
+    }
+
+    .section-cards .card{
+        border: 1px solid rgb(0 0 0 / 30%);
+    }
+
 </style>
 
 <!-- Banner -->
@@ -94,7 +106,7 @@
             </h1>
             <div class="banner-description">
                 <div class="form-hide hero-mobile">
-                    <img src="{{ site.theme.link }}/assets/img/img-hero-tik-tok-mob.png" srcset="{{ site.theme.link }}/assets/img/img-hero-tik-tok-mob.png, {{ site.theme.link }}/assets/img/img-hero-tik-tok-mob@2x.png 2x" alt="First Page" />
+                    <img src="{{ site.theme.link }}/views/assets/img/imhg-hero-tik-tok-mob.png" srcset="{{ site.theme.link }}/assets/img/imhg-hero-tik-tok-mob.png, {{ site.theme.link }}/assets/img/imhg-hero-tik-tok-mob@2x.png 2x" alt="First Page" />
 
                 </div>
             </div>
@@ -130,11 +142,11 @@
         </div>
         <div class="col-12 col-lg-6 col-md-8 p-0 text-container text-container-seo-new">
             <h2 class="d-block d-md-none d-lg-block">
-                Expand effectively into the </br> Chinese market
+                Expand effectively into the Chinese market
             </h2>
-            <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.png"
-                srcset="{{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.png, {{ site.theme.link }}/views/assets/img/img_baidu_seo_mob@2x.png 2x"
-                class="img-fluid d-block d-md-none mx-auto pb-4" alt="" />
+            <img src="{{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.svg"
+                srcset="{{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.svgng, {{ site.theme.link }}/views/assets/img/img_we_chat_logo_mob.svg 2x"
+                class="img-fluid d-block d-md-none mx-auto pb-4" alt="" style="width:250px;" />
                 <p class="text-center text-md-left">It’s no secret that the Chinese market has become incredibly valuable to international brands. But with so many companies looking to make inroads into the region, where is the best place to reach your target market?</p>
                 <p class="text-center text-md-left">The answer is WeChat. Featuring 1.5 billion users, with approximately 50% aged 25 to 35, WeChat has rapidly grown from a relatively simple texting app into an all-encompassing digital marketing powerhouse.</p>
                 <p class="text-center text-md-left">Across online shopping, gaming, ridesharing and municipal services, Chinese consumers spend about one-third of their online time using WeChat.</p>
@@ -200,7 +212,7 @@
 <section class="section-paragraph section-white mob-center py-4 mt-4">
     <div class="container">
         <div class="text-center">
-            <h2><strong>From interactive displays to  </br> promoted videos, Facebook ads put </br> it all at your fingertips</strong></h2>
+            <h2><strong>From interactive displays to  promoted videos, Facebook ads put it all at your fingertips</strong></h2>
         </div>
     </div>
 </section>
@@ -270,10 +282,17 @@
 
 
 <section class="section-paragraph container">
-    <h2 class="d-none d-md-block d-lg-none container-padding">Activate engagement with  </br> mini programs </br>  and KOLs    </h2>
+    <div class="row no-gutters">
+        <div class="col-lg-6 col-md-8 align-self-end text-container">
+            <h2 class="d-none d-md-block d-lg-none">
+                Activate engagement </br> with mini programs </br>  and KOLs 
+            </h2>
+        </div>
+        <div class="col-lg-6 col-md-4"></div>
+    </div>
     <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
         <div
-            class="col-12 col-lg-6 col-md-4 image-container-right d-flex flex-column justify-content-center align-items-center">
+            class="col-12 col-lg-6 col-md-6 image-container-right d-flex flex-column justify-content-center align-items-center">
             <img src="{{ site.theme.link }}/views/assets/img/imhg_increase.svg"
                 srcset="{{ site.theme.link }}/views/assets/img/imhg_increase.svg, {{ site.theme.link }}/views/assets/img/imhg_increase.svg 2x"
                 class="img-fluid d-none d-lg-inline-block" alt="First Page" style="width:450px;" />
@@ -283,13 +302,13 @@
 
 
         </div>
-        <div class="col-12 col-lg-6 col-md-8 p-0 text-container text-container-seo-new">
+        <div class="col-12 col-lg-6 col-md-6 p-0 text-container text-container-seo-new">
             <h2 class="d-block d-md-none d-lg-block">
-                Activate engagement with  </br> mini programs and KOLs
+                Activate engagement with  mini programs and KOLs
             </h2>
-            <img src="{{ site.theme.link }}/views/assets/img/imhg_increase.png"
-                srcset="{{ site.theme.link }}/views/assets/img/imhg_increase.png, {{ site.theme.link }}/views/assets/img/imhg_increase.png 2x"
-                class="img-fluid d-block d-md-none mx-auto pb-4" alt="" />
+            <img src="{{ site.theme.link }}/views/assets/img/imhg_increase.svg"
+                srcset="{{ site.theme.link }}/views/assets/img/imhg_increase.svg, {{ site.theme.link }}/views/assets/img/imhg_increase.svg 2x"
+                class="img-fluid d-block d-md-none mx-auto pb-4" alt="" style="width:450px;" />
                 <p class="text-center text-md-left">Thanks to WeChat’s incredibly in-depth platform, there are numerous ways to engage your precise audience. One way many businesses are generating success is through the creation of a WeChat Mini Program.</p>
                 <p class="text-center text-md-left">These so-called ‘sub-applications’ are specially created for use inside the WeChat app, helping you offer promotions and provide useful services. For example, Tesla has a Mini Program where WeChat users can locate charging stations and book a test drive.</p>
                 <p class="text-center text-md-left">With Key Opinion Leaders (KOLs) being highly effective at reaching Chinese customers, our experienced team can make sure your business partners with the perfect WeChat collaborator. Like Instagram influencers, WeChat KOLs will promote your products to their fans, helping to enhance your brand awareness and conversion rate.</p>
@@ -304,17 +323,17 @@
 
 <section class="section-paragraph container pb-4 mb-4">
     <div class="row no-gutters">
-        <div class="col-lg-6 col-md-4"></div>
-        <div class="col-lg-6 col-md-8 align-self-end text-container">
+        <div class="col-lg-6 col-md-6"></div>
+        <div class="col-lg-6 col-md-6 align-self-end text-container">
 
             <h2 class="d-none d-md-block d-lg-none">
-                Achieve international </br> success
+                Achieve </br> international success
             </h2>
         </div>
     </div>
     <div class="row no-gutters flex-column-reverse flex-md-row">
         <div
-            class="col-12 col-lg-6 col-md-4 image-container-left pr-lg-5 d-flex flex-column justify-content-center align-items-center">
+            class="col-12 col-lg-6 col-md-6 image-container-left pr-lg-5 d-flex flex-column justify-content-center align-items-center">
             <img src="{{ site.theme.link }}/assets/img/expert-help-desktop.png"
             srcset="{{ site.theme.link }}/assets/img/expert-help-desktop.png, {{ site.theme.link }}/assets/img/expert-help-desktop.png 2x"
             class="img-fluid d-none d-lg-inline-block" alt="First Page" width="650px;" />
@@ -323,13 +342,13 @@
             class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page" style="width:450px;" />
 
         </div>
-        <div class="col-12 col-lg-6 col-md-8 text-container heading-center">
+        <div class="col-12 col-lg-6 col-md-6 text-container heading-center">
             <h2 class="d-block d-md-none d-lg-block">
                 Achieve international </br> success
             </h2>
             <img src="{{ site.theme.link }}/assets/img/expert-help-mobile.png"
             srcset="{{ site.theme.link }}/assets/img/expert-help-mobile.png, {{ site.theme.link }}/assets/img/expert-help-mobile.png 2x"
-            class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page" />
+            class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page" style="width:450px;" />
                 <p class="text-center text-md-left">For brands looking to convert Chinese consumers, your business has to be using WeChat effectively to achieve its goals.</p>
                 <p class="text-center text-md-left">Whether you’re looking to dramatically increase your brand’s visibility in the region or give your sales targets a rapid boost, our talented team can make sure your business benefits from a tailored WeChat marketing campaign. With many of our staff using the platform every day, we can deliver unmatched results.</p>
                 <p class="text-center text-md-left">Like most forms of digital marketing, analysing and taking action from detailed data points is key to generating success. Fortunately, our agency has vast experience designing campaigns around our client’s extensive internal analytics.</p>

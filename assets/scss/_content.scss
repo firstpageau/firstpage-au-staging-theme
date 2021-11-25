@@ -5744,6 +5744,11 @@ section.secure-payments {
       margin-top: 30px !important;
     }
   }
+  @media (min-width: $responsive-qhd) {
+    .location-map-img {
+      margin-top: -173px;
+    }
+  }
 }
 
 // Services Carousel

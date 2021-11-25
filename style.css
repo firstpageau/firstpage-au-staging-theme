@@ -7430,6 +7430,10 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-bendigo .circle-data-section-left-col {
     margin-top: 30px !important; } }
 
+@media (min-width: 1440px) {
+  .page-seo-bendigo .location-map-img {
+    margin-top: -173px; } }
+
 .section-services-carousel .container {
   max-width: 1200px; }
 

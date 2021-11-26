@@ -5407,7 +5407,8 @@ section.secure-payments {
 .page-seo-adelaide,
 .page-seo-canberra,
 .page-seo-parramatta,
-.page-seo-ballarat {
+.page-seo-ballarat,
+.page-seo-bendigo {
   .light-heading {
     font-weight: 400;
     font-size: 35px;
@@ -5723,6 +5724,29 @@ section.secure-payments {
   @media (min-width: 1024px) {
     .location-map-img {
       margin-top: -93px;
+    }
+  }
+}
+
+// SEO Bendigo
+.page-seo-bendigo {
+  section.section-letstalk {
+    margin-top: 65px;
+  }
+
+  @media (min-width: $responsive-md) {
+    .circle-data-section-left-col {
+      margin-top: -222px !important;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+    .circle-data-section-left-col {
+      margin-top: 30px !important;
+    }
+  }
+  @media (min-width: $responsive-qhd) {
+    .location-map-img {
+      margin-top: -173px;
     }
   }
 }

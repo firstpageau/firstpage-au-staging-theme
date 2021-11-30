@@ -379,9 +379,12 @@ $(function () {
             // dataLayer - form user details
             window.dataLayer.push({
               event: "formUserData",
-              user_name: $("[name='lead_name']").val(),
-              user_phone: $("[name='lead_phone']").val(),
-              user_email: $("[name='lead_email']").val(),
+              // user_name: $("[name='lead_name']").val(),
+              // user_phone: $("[name='lead_phone']").val(),
+              // user_email: $("[name='lead_email']").val(),
+              user_name: sha256($("[name='lead_name']").val()),
+              user_phone: sha256($("[name='lead_phone']").val()),
+              user_email: sha256($("[name='lead_email']").val()),
             });
 
             // Check Product Type

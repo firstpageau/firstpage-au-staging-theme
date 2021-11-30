@@ -376,6 +376,10 @@ $(function () {
               eventLabel: "Submitted-" + pathname,
             });
 
+            console.log(sha256($("[name='lead_name']").val()));
+            console.log(sha256($("[name='lead_phone']").val()));
+            console.log(sha256($("[name='lead_email']").val()));
+
             // dataLayer - form user details
             window.dataLayer.push({
               event: "formUserData",

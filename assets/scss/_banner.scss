@@ -1237,7 +1237,7 @@ section.banner {
   section.banner {
     @media (min-width: $responsive-sm) {
       background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
-        linear-gradient(110deg, #427fdf 59%, rgba(0, 0, 0, 0) 0%),
+        linear-gradient(110deg, #427fdf 57%, rgba(0, 0, 0, 0) 0%),
         url("assets/img/img_ballarat_banner_bg_lg.png") no-repeat right
           center/auto 714px $color-blue;
       background-position: 96% -37%;

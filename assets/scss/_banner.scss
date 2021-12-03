@@ -1461,6 +1461,28 @@ section.banner {
   }
 }
 
+// Bendigo Location
+.page-seo-bendigo {
+  section.banner {
+    @media (min-width: $responsive-sm) {
+      background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%),
+        linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%),
+        url("assets/img/img_bendigo_banner.png") no-repeat right center/auto
+          714px $color-blue;
+      background-position: 71%;
+    }
+    @media (min-width: $responsive-lg) {
+      min-height: auto;
+      background-size: cover;
+      background-position: 98%;
+    }
+
+    @media (min-width: $responsive-wq) {
+      background-position: 85%;
+    }
+  }
+}
+
 // Amazon SEO
 .page-amazon-seo {
   .amazon-seo-banner {

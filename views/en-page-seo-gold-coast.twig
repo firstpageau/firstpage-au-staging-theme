@@ -2,450 +2,527 @@
 
 {% block content %}
 
-    <section class="banner form-space instagram-advertising-banner">
-        <div class="container banner-hero ">
-            <div class="banner-hero-cont">
-                <h1 class="form-hide text-center text-sm-left">Grow insanely fast <br>  with the #1 SEO agency <br class="d-none d-lg-block"> in the Gold Coast</h1>
-                {# <h1 class="form-hide text-center text-sm-left">10X your business with the #1 SEO agency in the Gold Coast</h1> #}
+	<style>
+		@media(min-width: 992px) {
+			section.banner .banner-hero .banner-hero-cont {
+				max-width: 800px;
+			}
+		}
+	</style>
 
-                <div class="banner-img-mb d-sm-none form-hide">
-                    <img src="{{ site.theme.link }}/assets/img/gold-coast-banner-sm.png" srcset="{{ site.theme.link }}/assets/img/gold-coast-banner-sm.png, {{ site.theme.link }}/assets/img/gold-coast-banner-sm@2x.png 2x" alt="First Page" />
-                </div>
-                {% include "partials/en-form-services.twig" with {'form_page': 'SEO Gold Coast', 'form_button': 'Get A Free Quote'} %}
-                {% include "partials/en-section-awards-badges.twig" %}
-            </div>
-        </div>
-    </section>
+	<section class="banner form-space instagram-advertising-banner">
+		<div class="container banner-hero ">
+			<div class="banner-hero-cont">
+				<h1 class="form-hide text-center text-sm-left">Grow insanely fast with the
+					<br class="d-none d-lg-block">
+					#1 SEO agency in the Gold Coast
+				</h1>
+				<div class="banner-img-mb d-sm-none form-hide">
+					<img src="{{ site.theme.link }}/assets/img/gold-coast-banner-sm.png" srcset="{{ site.theme.link }}/assets/img/gold-coast-banner-sm.png, {{ site.theme.link }}/assets/img/gold-coast-banner-sm@2x.png 2x" alt="First Page"/>
+				</div>
+				{% include "partials/en-form-services.twig" with {'form_page': 'SEO Gold Coast', 'form_button': 'Get A Free Quote'} %}
+				{% include "partials/en-section-awards-badges.twig" %}
+			</div>
+		</div>
+	</section>
 
-    {% include "partials/en-section-featured-in-news.twig" %}
+	{% include "partials/en-section-featured-in-news.twig" %}
 
- <section class="section-paragraph">
-        <div class="row no-gutters ">
-            <div class="col-12 col-md-6 image-container-left">
-                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-none d-xl-inline-block "/>
-                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png, {{ site.theme.link }}/assets/img/img-seo-traffic-lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-lg-inline-block d-xl-none seo-traffic-lg-img"/>
-                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/>
-            </div>
-            <div class="col-12 col-md-6 text-container">
-                <h2>Partner with the #1 SEO agency on the Gold Coast</h2>
-                {# next update #}
-                <p class="text-center text-sm-left">There are many digital marketing platforms to choose from, but only one consistently delivers the best ROI.</p>
-                <p class="text-center text-sm-left">It’s called Search Engine Optimisation. SEO for Gold Coast businesses can drive a well-oiled machine that generates an insane amount of traffic, leads and sales. </p>
-                <p class="text-center text-sm-left">In fact, we think it’s the most effective way to grow your business online. No questions asked.</p>
-                <p class="text-center text-sm-left">Why?</p>
-                <p class="text-center text-sm-left">Because SEO builds trust and credibility like few other platforms can.</p>
-                <p class="text-center text-sm-left">Think about it… Your customers have questions that they need answers to. If you can provide answers to those questions, and build trust with them, then you will have an evergreen funnel that generates revenue on autopilot. </p>
-            </div>
-        </div>
-    </section>
+	<section class="section-paragraph">
+		<div class="row no-gutters ">
+			<div class="col-12 col-md-6 image-container-left">
+				<img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-none d-xl-inline-block "/>
+				<img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png, {{ site.theme.link }}/assets/img/img-seo-traffic-lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-lg-inline-block d-xl-none seo-traffic-lg-img"/>
+				<img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2>Partner with the #1 SEO agency on the Gold Coast</h2>
+				{# next update #}
+				<p class="text-center text-sm-left">There are many digital marketing platforms to choose from, but only one consistently delivers the best ROI.</p>
+				<p class="text-center text-sm-left">It’s called Search Engine Optimisation. SEO for Gold Coast businesses can drive a well-oiled machine that generates an insane amount of traffic, leads and sales.
+				</p>
+				<p class="text-center text-sm-left">In fact, we think it’s the most effective way to grow your business online. No questions asked.</p>
+				<p class="text-center text-sm-left">Why?</p>
+				<p class="text-center text-sm-left">Because SEO builds trust and credibility like few other platforms can.</p>
+				<p class="text-center text-sm-left">Think about it… Your customers have questions that they need answers to. If you can provide answers to those questions, and build trust with them, then you will have an evergreen funnel that generates revenue on autopilot.
+				</p>
+			</div>
+		</div>
+	</section>
 
-    {# only show on sm and md #}
-    <section class="section-paragraph d-block d-lg-none data-vertical-section">
+	{# only show on sm and md #}
+	<section class="section-paragraph d-block d-lg-none data-vertical-section">
 
-        <div class="row no-gutters align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 image-container-right">
-                <img src="{{ site.theme.link }}/assets/img/seo-gold-coast-data-vertical.svg" class="img-fluid d-lg-none data-vertical-img" alt="First Page"/>
-            </div>
+		<div class="row no-gutters align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-12 col-md-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/seo-gold-coast-data-vertical.svg" class="img-fluid d-lg-none data-vertical-img" alt="First Page"/>
+			</div>
 
-            <div class="col-12 col-md-6 text-container">
-                <h2>Still unsure about the benefits of SEO? Here's what SEO services in Gold Coast could mean for you...</h2>
-                <p class="text-center text-sm-left">- <span class="font-weight-bold">94%</span> of users focus on organic results most of the time.</p>
-                <p class="text-center text-sm-left">- Improving a website with SEO increases organic traffic by an incredible  <span class="font-weight-bold">111.3%</span>.</p>
-                <p class="text-center text-sm-left">It’s pretty clear what’s happening here - SEO for Gold Coast businesses is a complete game-changer, and the best way to grow.</p>
-                <p class="text-center text-sm-left">But let's be honest, SEO is highly competitive. If you want to reach the top, and generate insane amounts of traffic, you need to do SEO like a pro.</p>
-                <p class="text-center text-sm-left">So what should you do? Spend tens of thousands of dollars hiring and developing your own in-house team? Buy your subscriptions to all of the fancy software?</p>
-                <p class="text-center text-sm-left">This isn't recommended. In-house SEO services in Gold Coast typically end up costly and messy, and take more time than it’s worth. </p>
-                <p class="text-center text-sm-left">To really make your mark in the rankings, and to do so quickly, you need to partner with the best SEO company in the Gold Coast. </p>
-                <p class="text-center text-sm-left">That’s where we come into play. </p>
-                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
-            </div>
-        </div>
-
-
-    </section>
-
-    {#  show on lg #}
-    <section class="section-paragraph d-none d-lg-block data-tri-section">
-        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
-            <div class="col-12 col-md-6 image-container-right">
-                <img src="{{ site.theme.link }}/assets/img/seo-gold-coast-data-lg.svg" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
-            </div>
-            <div class="col-12 col-md-6 text-container">
-                <h2>Still unsure about the benefits of SEO? Here's what SEO services in Gold Coast could mean for you...</h2>
-                <p>- <span class="font-weight-bold">94%</span> of users focus on organic results most of the time.</p>
-                <p>- Improving a website with SEO increases organic traffic by an incredible  <span class="font-weight-bold">111.3%</span>.</p>
-                <p class="text-center text-sm-left">It’s pretty clear what’s happening here - SEO for Gold Coast businesses is a complete game-changer, and the best way to grow.</p>
-                <p class="text-center text-sm-left">But let's be honest, SEO is highly competitive. If you want to reach the top, and generate insane amounts of traffic, you need to do SEO like a pro.</p>
-                <p class="text-center text-sm-left">So what should you do? Spend tens of thousands of dollars hiring and developing your own in-house team? Buy your subscriptions to all of the fancy software?</p>
-                <p class="text-center text-sm-left">This isn't recommended. In-house SEO services in Gold Coast typically end up costly and messy, and take more time than it’s worth. </p>
-                <p class="text-center text-sm-left">To really make your mark in the rankings, and to do so quickly, you need to partner with the best SEO company in the Gold Coast. </p>
-                <p class="text-center text-sm-left">That’s where we come into play. </p>
-                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
-            </div>
-        </div>
-    </section>
-
-    {#  location map sm #}
-    <section class="section-paragraph location-map-mb-section d-block d-md-none">
-        <div class="row no-gutters">
-            <div class="col">
-                <img src="{{ site.theme.link }}/assets/img/gold-coast-map-sm.svg"
-                     class="location-map-img mt-4 mx-auto d-block" alt="First Page"/>
-
-            </div>
-
-        </div>
-    </section>
-
-    {#  location map md & lg#}
-    <section class="section-paragraph location-map-section d-none d-md-block">
-        <div class="row no-gutters">
-            <div class="col">
-                <img src="{{ site.theme.link }}/assets/img/gold-coast-map-lg.svg" class="d-none d-lg-block location-map-img-lg mx-auto" alt="First Page"/>
-                <img src="{{ site.theme.link }}/assets/img/gold-coast-map-md.svg" class="d-none d-md-block d-lg-none location-map-img mx-auto" alt="First Page"/>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section-paragraph location-title-section">
-        <div class="row no-gutters">
-            <div class="col">
-                <h2 class="text-center">Grow your business with<br class="">First Page SEO in the Gold Coast</h2>
-                <p class="text-center location-sub-title">Here at First Page, we aren’t just a <br class="d-block d-md-none"> digital agency…</p>
-            </div>
-        </div>
-    </section>
+			<div class="col-12 col-md-6 text-container">
+				<h2>Still unsure about the benefits of SEO? Here's what SEO services in Gold Coast could mean for you...</h2>
+				<p class="text-center text-sm-left">-
+					<span class="font-weight-bold">94%</span>
+					of users focus on organic results most of the time.</p>
+				<p class="text-center text-sm-left">- Improving a website with SEO increases organic traffic by an incredible
+					<span class="font-weight-bold">111.3%</span>.</p>
+				<p class="text-center text-sm-left">It’s pretty clear what’s happening here - SEO for Gold Coast businesses is a complete game-changer, and the best way to grow.</p>
+				<p class="text-center text-sm-left">But let's be honest, SEO is highly competitive. If you want to reach the top, and generate insane amounts of traffic, you need to do SEO like a pro.</p>
+				<p class="text-center text-sm-left">So what should you do? Spend tens of thousands of dollars hiring and developing your own in-house team? Buy your subscriptions to all of the fancy software?</p>
+				<p class="text-center text-sm-left">This isn't recommended. In-house SEO services in Gold Coast typically end up costly and messy, and take more time than it’s worth.
+				</p>
+				<p class="text-center text-sm-left">To really make your mark in the rankings, and to do so quickly, you need to partner with the best SEO company in the Gold Coast.
+				</p>
+				<p class="text-center text-sm-left">That’s where we come into play.
+				</p>
+				<button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+			</div>
+		</div>
 
 
+	</section>
 
-    {#  office section  #}
-    <section class="section-paragraph office-img-section">
-        <div class="rwo no-gutters">
-            <img src="{{ site.theme.link }}/assets/img/location-office-sm.png"
-                 srcset="{{ site.theme.link }}/assets/img/location-office-sm.png, {{ site.theme.link }}/assets/img/location-office-sm@2x.png 2x"
-                 class="img-fluid d-block d-md-none m-auto" alt="First Page"/>
-            <img src="{{ site.theme.link }}/assets/img/location-office-md.png"
-                 srcset="{{ site.theme.link }}/assets/img/location-office-md.png, {{ site.theme.link }}/assets/img/location-office-md@2x.png 2x"
-                 class="img-fluid d-none d-md-block d-lg-none m-auto" alt="First Page"/>
-            <img src="{{ site.theme.link }}/assets/img/location-office-lg.png"
-                 srcset="{{ site.theme.link }}/assets/img/location-office-lg.png, {{ site.theme.link }}/assets/img/location-office-lg@2x.png 2x"
-                 class="img-fluid d-none d-lg-block m-auto" alt="First Page"/>
-        </div>
+	{#  show on lg #}
+	<section class="section-paragraph d-none d-lg-block data-tri-section">
+		<div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+			<div class="col-12 col-md-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/seo-gold-coast-data-lg.svg" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2>Still unsure about the benefits of SEO? Here's what SEO services in Gold Coast could mean for you...</h2>
+				<p>-
+					<span class="font-weight-bold">94%</span>
+					of users focus on organic results most of the time.</p>
+				<p>- Improving a website with SEO increases organic traffic by an incredible
+					<span class="font-weight-bold">111.3%</span>.</p>
+				<p class="text-center text-sm-left">It’s pretty clear what’s happening here - SEO for Gold Coast businesses is a complete game-changer, and the best way to grow.</p>
+				<p class="text-center text-sm-left">But let's be honest, SEO is highly competitive. If you want to reach the top, and generate insane amounts of traffic, you need to do SEO like a pro.</p>
+				<p class="text-center text-sm-left">So what should you do? Spend tens of thousands of dollars hiring and developing your own in-house team? Buy your subscriptions to all of the fancy software?</p>
+				<p class="text-center text-sm-left">This isn't recommended. In-house SEO services in Gold Coast typically end up costly and messy, and take more time than it’s worth.
+				</p>
+				<p class="text-center text-sm-left">To really make your mark in the rankings, and to do so quickly, you need to partner with the best SEO company in the Gold Coast.
+				</p>
+				<p class="text-center text-sm-left">That’s where we come into play.
+				</p>
+				<button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+			</div>
+		</div>
+	</section>
 
-    </section>
+	{#  location map sm #}
+	<section class="section-paragraph location-map-mb-section d-block d-md-none">
+		<div class="row no-gutters">
+			<div class="col">
+				<img src="{{ site.theme.link }}/assets/img/gold-coast-map-sm.svg" class="location-map-img mt-4 mx-auto d-block" alt="First Page"/>
 
-    <section class="section-paragraph">
-        <div class="container">
-            <h2 class="text-center text-sm-left section-title-ml">Here at First Page, we are the fastest-growing SEO company, in Gold Coast and the APAC region.</h2>
-            <div class="row no-gutters justify-content-center ">
+			</div>
 
-                <div class="col-12 col-md-6 text-container">
-                    <p class="text-center text-sm-left">Here at First Page, we are the fastest-growing SEO company, in Gold Coast and the APAC region. We’ve ranked hundreds of thousands of keywords on the first page of Google, and have generated billions of dollars in revenue for our clients. </p>
-                    <p class="text-center text-sm-left">Australian-owned and -run, we have spent the last decade mastering SEO, in ways that few of our competitors can match. Our SEO services in Gold Coast extend far beyond. An epic network of offices and partners around the world gives us access to a powerful pool of talent and resources. </p>
-                    <p class="text-center text-sm-left">But do you know the biggest contributing factor to our success? Simply put, we don’t look at you as a "client" - we look at you as a partner in growth. </p>
-                    <p class="text-center text-sm-left">This means when we work with your business, we don’t just apply the same SEO techniques that all of your competitors are using. We take the time to understand your business model, KPIs, and industry as a whole. Then we create a bespoke strategy for search engine optimisation in the Gold Coast - one that is primed for long-term success. </p>
-                </div>
-                <div class="col-12 col-md-6 text-container ">
-                    <p class="text-center text-sm-left">This holistic approach to marketing is our special sauce, is what separates us from our competition, and is how we will help you dominate the rankings. </p>
-                    <p class="text-center text-sm-left">Our Gold Coast SEO services works for all types of businesses in any industry. Whether you work for a <a href="{{ home_url }}enterprise-seo/">Fortune 500 company</a> looking to expand, or you own a small business servicing local foot traffic - we have the tools and talent to propel your business into the next stratosphere.</p>
-                    <p class="text-center text-sm-left">If you're ready to sky-rocket your traffic and sales with our Gold Coast SEO services, book a free strategy call with one of our Digital Strategists.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    {% include "partials/en-section-free-session.twig" %}
-    {% include "partials/en-section-experience.twig" %}
-    {# <div class="d-none d-md-block d-lg-none">{% include "partials/en-section-services-seo-tablet.twig" %}</div>
-    <div class="d-block d-md-none d-lg-block">{% include "partials/en-section-services-seo-new.twig" %}</div> #}
-    {% include "partials/en-section-services-seo-carousel.twig" %}
+		</div>
+	</section>
 
-    <section class="section-paragraph section-faqs pb-5">
-        <div class="container">
-            <h2 class="section-title">SEO Gold Coast - FAQs</h2>
-            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
-                            {#  Q1  #}
-                            <h3 itemprop="name">Why is First Page the best partner for SEO in Gold Coast?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>At First Page, we're known to be the best agency to grow businesses online in Australia. We've got a proven track record for it.</p>
-                                <p>Our proven techniques have guaranteed our clients amazing results and led us to become the fastest-growing SEO company, in Gold Coast and in APAC.</p>
-                                <p>We live and breathe SEO in the Gold Coast. Our team of experts have over a decade of experience in taking businesses to the first page of search engines.</p>
-                                <p>At First Page, we know your business has the potential to become an industry leader, and we want to help you get there.</p>
-                                <p>We approach SEO in the Gold Coast with a unique mindset and deliver results unlike anything you’ve ever seen before. </p>
-                                <p>We focus on your overall growth and firmly establish your business as a leading authority in the niche you specialise in. Our SEO services in Gold Coast are designed to consistently bring you targeted leads who convert on autopilot. </p>
-                                <p>Proudly Australian-owned and -run, First Page has helped numerous clients achieve the dream of generating billions of dollars in sales.</p>
-                                <p>While other agencies may be up-to-date with the newest trends, we think one step ahead. We constantly monitor the ever-changing market for SEO in Gold Coast.</p>
-                                <p>Our SEO services in Gold Coast can get your business on page one and make sure it stays there, for years rather than days.</p>
-                                <p>We can sell our brand all day, but don’t just take our word for it. Take action instead and see how good we are, by scheduling a call with a Digital Strategist. Find out how we can help you grow in leaps and bounds.</p>
-        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
-                            {#  Q2  #}
-                            <h3 itemprop="name">How does SEO in Gold Coast work?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>SEO stands for Search Engine Optimisation. It consists of adjusting your website so it'll pop up in front of your target audience, when they are looking for information on search engines.</p>
-                                <p>By enhancing your website features, SEO services in the Gold Coast provide a pathway to improve your online presence.</p>
-                                <p>SEO also increases your reputation and influence, which brings about an influx of qualified leads.</p>
-                                <p>One key SEO practice is finding the most relevant and popular key phrases that align with your potential customers' queries, so we can include them throughout your website.</p>
-                                <p>That’s just the first step though. SEO in Gold Coast is tough to master. To be featured on the first page, your overall website experience and relevancy need to blow away all the competition.</p>
-                                <p>Websites are assessed by search engine bots, and show up first if they are deemed the most relevant to solve users’ queries. </p>
-                                <p>Our SEO services in Gold Coast take into account your website performance, the keywords used, how your competitors are faring, and how much authority you have online.</p>
-                                <p>There are a number of simple questions to ask yourself if you are unsure about your site’s SEO, such as: Is your site easy to find? Do you know what your audience is searching for? How many times has your website been featured on other websites?</p>
-                                <p>SEO in the Gold Coast takes into account your whole website and its online presence. When done according to the rules, it can bring about an immense number of sales and establish your business as a force to be reckoned with, in the industry you specialise in. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
-                            {# Q3 #}
-                            <h3 itemprop="name">Where do I start with SEO in Gold Coast?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>To get started with SEO in the Gold Coast, begin by analysing your current website and the different topics you're talking about.</p>
-                                <p><u>Once you've done that, follow through with the following:  </u></p>
-                                <p class="font-weight-bold mb-1">1. Keyword Research</p>
-                                <p>Keyword research is finding the words and phrases that your target customers use on search engines, and placing them throughout your website. This drives your website higher on the search engine results page (SERP).</p>
-                                <p>Before spending time on keyword research, you need to make sure that you know your ideal customers super well. It's more than their age or gender! You need to step into their shoes and understand why they search for specific things.</p>
-                                <p class="mb-1"><u>Here are three steps to master keyword research:</u></p>
-                                <ol>
-                                    <li>Make a list of topics related to your business.</li>
-                                    <li>Find keywords for each topic and classify them by relevance, authority and volume.</li>
-                                    <li>Use them in your website's titles, descriptions and copy.</li>
-                                </ol>
-                                <p class="font-weight-bold mb-1">2. On-Page SEO</p>
-                                <p>On-Page or on-site SEO is a key part of SEO services for Gold Coast businesses. It focuses on all the elements of the web pages, to optimise the website’s search engine ranking and generate organic traffic.</p>
-                                <p class="mb-1"><u>If you're new to on-page SEO, here's what to do:</u></p>
-                                <ol >
-                                    <li>Publish high-quality content on your website.</li>
-                                    <li>Optimise all visual and <a href="{{ home_url }}video-seo/">video</a> content.</li>
-                                    <li>Include keywords in your copy, titles and links.</li>
-                                    <li>Make sure your website is mobile-friendly.</li>
-                                    <li>Use links to your advantage.</li>
-                
-                                </ol>
-                                <p class="font-weight-bold mb-1">3. Backlinks</p>
-                                <p><a href="{{home_url}}link-building/">Backlinking</a> is an off-page SEO technique. It consists of adding a link to your website on other web pages, to build your online reputation.</p>
-                                <p>Never underestimate the importance of quality when it comes to backlinks! One link on a reputable website can earn you more traffic than 100 links on untrusted sites.</p>
-                                <p>SEO in Gold Coast is complex. To prevent irreversible mistakes from happening, you need to partner with the experts at the top of the industry. And what better SEO company in Gold Coast, than First Page! </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
-                            {# Q4  #}
-                            <h3 itemprop="name">Can’t I do SEO in Gold Coast by myself?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>You absolutely can, but this will likely only work if you already have experience in digital marketing.</p>
-                                <p>If an SEO company in Gold Coast will get you better results, the extra sales they drive will reduce your costs in the long term.</p>
-                                <p>Ask yourself, Do you have the time to get an in-depth understanding of the technicalities of SEO? </p>
-                                <p>If you're genuinely interested and it lights a fire inside you, that’s perfect. But if the reason is purely down to cost-saving, then it won't get you very far.</p>
-                                <p>If your ambition is to grow big and fast, then you truly need to consider working with a reliable, competent, results-driven agency. First Page offers all you need for SEO services in the Gold Coast.</p>
-                                <p>What does it mean to work with First Page? You'll have all the tedious technicalities taken care of by a team of experts, receive support in real-time, and benefit from having some of the best SEO experts in Gold Coast, with experience across a variety of industries.</p>
-                                <p>But if you decide to do it yourself? If you choose to hire in-house, it'll take you months to learn, develop or readjust your strategy before finally seeing the results you need. There's also the risk of potentially making mistakes and losing all your traffic.</p>
-                                <p>On the other hand, professional SEO services in Gold Coast can guarantee to do everything the right way, right off the bat.</p>
-                                <p>You’ll partner with a team of SEO specialists dedicated to catapulting your growth and exploding your sales.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse17">
-                            {# Q5 #}
-                            <h3 itemprop="name">How much does SEO in Gold Coast cost?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Costs vary for SEO in the Gold Coast. Some of the factors that affect the final price tag are:</p>
-                                <ul>
-                                    <li>Budget. Depending on how much you're willing to invest, you'll receive a different set of services. At First Page, we tailor our growth plan to fit your business needs and requirements.</li>
-                                    <li>Scope of work. The costs of SEO in the Gold Coast vary, based on your goals and where you are starting from. The bigger the ambition and complexity, the more it will cost. </li>
-                                    <li>Desired results. Different expected outcomes need different investments and methods.</li>
-                                    <li>Expertise and involvement. With SEO in the Gold Coast, you get what you pay for. The best results are achieved by the professionals at the top of the industry.</li>
-                    
-                                </ul>
-                                <p>Be careful of low-costs SEO agencies that offer a fixed set of prices. Your business is unique and needs a specific, tailor-made approach to succeed.</p>
-                                <p>SEO services in Gold Coast can make or break a business - it all depends on how it's done. The best agencies pay for themselves through the results they drive. Agencies that charge more have a proven track record of successful projects and results. </p>
-                                <p>- Black-hat vs white-hat SEO. Both are on the opposite ends of the spectrum. Black-hat SEO is cheaper than white-hat, and it risks your website being blacklisted on search engines. This means you will lose your online presence, sales and potentially go out of business.</p>
-                                <p><span class="font-weight-bold">Black-hat SEO</span> is a fast way of getting ranked, but it doesn’t adhere to Google's terms and conditions. It uses dodgy and illegal tactics. It's only a question of time before Google identifies the black-hat techniques and removes the website from the internet.</p>
-                                <p><span class="font-weight-bold">White-hat SEO</span>  is the ethical way to do SEO in the Gold Coast. It follows Google’s rules and is based on good practices, such as providing valuable content and backlinks that are helpful to your audience. It's about quality work on a consistent basis.</p>
-                                <p>Because it focuses on improving the customer experience, results take longer with white-hat SEO services in Gold Coast.</p>
-                                <p>While cost reductions are an attractive prospect, don’t be fooled by the cheap upfront price. Ask yourself what kind of values you want your business to convey.</p>
-                                <p>At First Page, we never use black-hat SEO. We offer white-hat SEO services in the Gold Coast, to deliver sustainable and incredible results to our clients.</p>
-                                <p>To partner with the best SEO company in Gold Coast, book a call with a Digital Strategist today.</p>
+	{#  location map md & lg#}
+	<section class="section-paragraph location-map-section d-none d-md-block">
+		<div class="row no-gutters">
+			<div class="col">
+				<img src="{{ site.theme.link }}/assets/img/gold-coast-map-lg.svg" class="d-none d-lg-block location-map-img-lg mx-auto" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/gold-coast-map-md.svg" class="d-none d-md-block d-lg-none location-map-img mx-auto" alt="First Page"/>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse18">
-                            {#  Q6 #}
-                            <h3 itemprop="name">What's the difference between PPC and SEO in Gold Coast?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>SEO is organic, which means you don't have to pay for website visits. If this traffic drives leads and sales, it's like they were for free.</p>
-                                <p>Results take longer than with <a href="{{ home_url }}google-ads/">Pay Per Click,</a> but it's worth the wait. Across digital marketing, the ROI on SEO for Gold Coast businesses remains unmatched, and the results you get from it increase over time.</p>
-                                <p>This means that the sales you see at 3 months are lower than the ones you'll get at 6, 12, and 24 months down the line. </p>
-                                <p>The best part about SEO in Gold Coast? It can become evergreen, and skyrocket your sales and business into the future.</p>
-                                <p><a href="{{ home_url }}google-ads/">PPC</a> is a type of paid advertising in which you need to invest upfront. It's not organic like SEO. You pay for your ad to be placed at the top of the search engine results page (SERP), for specific keywords.  </p>
-                                <p>Each time people click on your ads, you have to pay. In other words, the cost is proportional to the traffic you get. </p>
-                                <p>PPC can drive quick results and will keep delivering for the duration of your campaign. It's great for new product launches and targeting specific audience types to come to your website.</p>
-                                <p>PPC and SEO in Gold Coast work very well when combined. </p>
-                                <p>If you're curious about our PPC services and how they can put your products or services in front of the right people, <a href="{{ home_url }}google-ads/">click here</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse19">
-                            {# Q7  #}
-                            <h3 itemprop="name">Can you help me recover from a loss in traffic?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>SEO in Gold Coast is constantly changing, and you can sometimes suffer from a loss of traffic. If you're not getting as many leads as you used to, don’t worry. We can identify the reason and fix it.</p>
-                                <p>The algorithms that control which websites are shown to potential customers are regularly updated. Keeping up is key to the success of any website. If your traffic suddenly flatlines, it might be the result of your website being penalised by the latest update to the search engines.   </p>
-                                <p>Whether it is a technical issue, your website’s optimisation, or losing traffic to a competitor, First Page has got your back. We're your SEO company in Gold Coast, with the experience to send traffic your way once again. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse20">
-                            {# Q8  #}
-                            <h3 itemprop="name">Do you offer eCommerce SEO services in Gold Coast?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Yes, we do! Our <a href="{{ home_url }}ecommerce-seo/">eCommerce SEO services,</a> in Gold Coast and across APAC, have been trusted and used by over 500 businesses.</p>
-                                <p>Just note that eCommerce SEO is not the same a <a href="{{ home_url }}local-and-national-seo/">local SEO</a> in Gold Coast.</p>
-                                <p>We offer eCommerce SEO services for Gold Coast businesses with online shops. We optimise the website to give people the best shopping experience, from the product page to checkout. In a nutshell, we turn your website visitors into buying customers.</p>
-                                <p>PPC and eCommerce SEO in Gold Coast work in synergy. PPC sends a large amount of highly targeted traffic to your product page, while SEO converts them.</p>
-                                <p>Local SEO is a geographic location. It's perfect for physical shop owners who want more foot traffic, or businesses looking to target and grow in one specific area.</p>
-                                <p>To learn more about how our eCommerce SEO services in Gold Coast can explode your sales, click <a href="{{ home_url }}ecommerce-seo/">here</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+			</div>
 
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse21">
-                            {# Q9  #}
-                            <h3 itemprop="name">Do you offer international SEO services in Gold Coast?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Definitely! First Page is your go-to international SEO company in Gold Coast.</p>
-                                <p><a href="{{ home_url }}international-seo/">International SEO</a> is for anyone looking to increase their reach and grow their business globally. It targets specific audiences in different countries, to attract as many qualified leads as possible.</p>
-                                <p>It optimises your website to deliver an easy and enjoyable shopping experience, for visitors all over the world. So, how can your business benefit from it?</p>
-                                <p>Simply put, with international SEO services for Gold Coast businesses, the world is the limit. International SEO makes your website compliant with the specific algorithms of international search engines.</p>
-                                <p>You're the one choosing the locations, and the possibility of a business expansion via traffic generation is endless.</p>
-                                <p>At First Page, we can help you optimise your site internationally and place it at the summit of multiple search engines. For more about International SEO, <a href="{{ home_url }}international-seo/">click here</a>.</p>
+		</div>
+	</section>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+	<section class="section-paragraph location-title-section">
+		<div class="row no-gutters">
+			<div class="col">
+				<h2 class="text-center">Grow your business with<br class="">First Page SEO in the Gold Coast</h2>
+				<p class="text-center location-sub-title">Here at First Page, we aren’t just a
+					<br class="d-block d-md-none">
+					digital agency…</p>
+			</div>
+		</div>
+	</section>
 
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse22">
-                            {# Q10  #}
-                            <h3 itemprop="name">Do you offer link building as a standalone service?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Yes, and we can get your website links on some of the most popular sites out there.</p>
-                                <p>To be successful in <a href="{{ home_url }}link-building/">link building</a>, you must build relationships with other authorities.</p>
-                                <p>It's not as simple as random posting. Instead, you need to strategically integrate your website to external sources, to increase your reputation and credibility.</p>
-                                <p>Google's bots are analysing websites and ranking them based on the number of high-quality links they have. To rank higher than your competitors, strategic link building is key.</p>
-                                <p>Here at First Page, we have strong relationships with reputable websites and can use link building to increase your business ranking.</p>
-                                <p><a href="{{ home_url }}link-building/">Learn more</a> about First Page's link-building SEO services in the Gold Coast.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse23">
-                            {#  Q11  #}
-                            <h3 itemprop="name">How long does SEO in Gold Coast take?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>This is one of the most common questions we're asked, and the truth is that it depends. SEO for Gold Coast businesses doesn't drive results as quickly as paid media.</p>
-                                <p>Think of it as a long-term process that has the potential to bring back 10 times its investment.</p>
-                                <p>At First Page, we offer <a href="{{ home_url }}pay-on-performance/">pay on performance plans</a> for our SEO services in Gold Coast. This means we only get paid once we see results. </p>
-                                <p>Patience is a virtue when it comes to SEO and seeing the results from it. By partnering with our SEO company in Gold Coast, the good times ahead are guaranteed. We give you full visibility and keep you fully informed about your campaign while we work our magic.</p>                        
-                            </div>
-                        </div>
-                    </div>
-                </div>
+	{#  office section  #}
+	<section class="section-paragraph office-img-section">
+		<div class="rwo no-gutters">
+			<img src="{{ site.theme.link }}/assets/img/location-office-sm.png" srcset="{{ site.theme.link }}/assets/img/location-office-sm.png, {{ site.theme.link }}/assets/img/location-office-sm@2x.png 2x" class="img-fluid d-block d-md-none m-auto" alt="First Page"/>
+			<img src="{{ site.theme.link }}/assets/img/location-office-md.png" srcset="{{ site.theme.link }}/assets/img/location-office-md.png, {{ site.theme.link }}/assets/img/location-office-md@2x.png 2x" class="img-fluid d-none d-md-block d-lg-none m-auto" alt="First Page"/>
+			<img src="{{ site.theme.link }}/assets/img/location-office-lg.png" srcset="{{ site.theme.link }}/assets/img/location-office-lg.png, {{ site.theme.link }}/assets/img/location-office-lg@2x.png 2x" class="img-fluid d-none d-lg-block m-auto" alt="First Page"/>
+		</div>
 
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse24">
-                            {#  Q12  #}
-                            <h3 itemprop="name">What’s the difference between white-hat and black-hat SEO?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p><span class="font-weight-bold">Black-hat SEO</span> does not respect Google’s guidelines and uses shady techniques. It is focused on quick results and disregards the user experience.</p>
-                                <p>Some examples of black-hat SEO practices include duplicating content, page swapping, and invisible text.</p>
-                                <p>This is the wrong way of doing SEO in Gold Coast. The results are an illusion and are not sustainable. Black-hat SEO puts your business at risk, as it can lead to your website being banned from search engines.</p>
-                                <p><span class="font-weight-bold">White-hat SEO</span> respects and follows Google's guidelines, and is the correct way to increase your ranking.</p>
-                                <p>It does not use quick-win tactics, as it instead focuses on providing users with a great and valuable website experience.</p>
-                                <p>White-hat SEO uses tactics such as offering high-quality services, using descriptive keywords in the metadata, and fast page loading.</p>
-                                <p>This is a long-term approach that takes time to yield results. White-hat SEO for Gold Coast businesses means long-lasting and sustainable results.</p>
-                                <p>Here at First Page, we're on the bright side of SEO. We provide real results for our clients. Come join us today! </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	</section>
 
-    {% include "partials/en-form-popup.twig" with {'form_page': 'SEO Gold Coast (Pop-up Form)'} %}
+	<section class="section-paragraph">
+		<div class="container">
+			<h2 class="text-center section-title-ml">Here at First Page, we are the fastest-growing SEO company, in Gold Coast and the APAC region.</h2>
+			<div class="row no-gutters justify-content-center ">
+
+				<div class="col-12 col-md-6 text-container">
+					<p class="text-center text-sm-left">Here at First Page, we are the fastest-growing SEO company, in Gold Coast and the APAC region. We’ve ranked hundreds of thousands of keywords on the first page of Google, and have generated billions of dollars in revenue for our clients.
+					</p>
+					<p class="text-center text-sm-left">Australian-owned and -run, we have spent the last decade mastering SEO, in ways that few of our competitors can match. Our SEO services in Gold Coast extend far beyond. An epic network of offices and partners around the world gives us access to a powerful pool of talent and resources.
+					</p>
+					<p class="text-center text-sm-left">But do you know the biggest contributing factor to our success? Simply put, we don’t look at you as a "client" - we look at you as a partner in growth.
+					</p>
+					<p class="text-center text-sm-left">This means when we work with your business, we don’t just apply the same SEO techniques that all of your competitors are using. We take the time to understand your business model, KPIs, and industry as a whole. Then we create a bespoke strategy for search engine optimisation in the Gold Coast - one that is primed for long-term success.
+					</p>
+				</div>
+				<div class="col-12 col-md-6 text-container ">
+					<p class="text-center text-sm-left">This holistic approach to marketing is our special sauce, is what separates us from our competition, and is how we will help you dominate the rankings.
+					</p>
+					<p class="text-center text-sm-left">Our Gold Coast SEO services works for all types of businesses in any industry. Whether you work for a
+						<a href="{{ home_url }}enterprise-seo/">Fortune 500 company</a>
+						looking to expand, or you own a small business servicing local foot traffic - we have the tools and talent to propel your business into the next stratosphere.</p>
+					<p class="text-center text-sm-left">If you're ready to sky-rocket your traffic and sales with our Gold Coast SEO services, book a free strategy call with one of our Digital Strategists.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% include "partials/en-section-free-session.twig" %}
+	{% include "partials/en-section-experience.twig" %}
+	{# <div class="d-none d-md-block d-lg-none">{% include "partials/en-section-services-seo-tablet.twig" %}</div>
+								    <div class="d-block d-md-none d-lg-block">{% include "partials/en-section-services-seo-new.twig" %}</div> #}
+	{% include "partials/en-section-services-seo-carousel.twig" %}
+
+	<section class="section-paragraph section-faqs pb-5">
+		<div class="container">
+			<h2 class="section-title">SEO Gold Coast - FAQs</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+							{#  Q1  #}
+							<h3 itemprop="name">Why is First Page the best partner for SEO in Gold Coast?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>At First Page, we're known to be the best agency to grow businesses online in Australia. We've got a proven track record for it.</p>
+								<p>Our proven techniques have guaranteed our clients amazing results and led us to become the fastest-growing SEO company, in Gold Coast and in APAC.</p>
+								<p>We live and breathe SEO in the Gold Coast. Our team of experts have over a decade of experience in taking businesses to the first page of search engines.</p>
+								<p>At First Page, we know your business has the potential to become an industry leader, and we want to help you get there.</p>
+								<p>We approach SEO in the Gold Coast with a unique mindset and deliver results unlike anything you’ve ever seen before.
+								</p>
+								<p>We focus on your overall growth and firmly establish your business as a leading authority in the niche you specialise in. Our SEO services in Gold Coast are designed to consistently bring you targeted leads who convert on autopilot.
+								</p>
+								<p>Proudly Australian-owned and -run, First Page has helped numerous clients achieve the dream of generating billions of dollars in sales.</p>
+								<p>While other agencies may be up-to-date with the newest trends, we think one step ahead. We constantly monitor the ever-changing market for SEO in Gold Coast.</p>
+								<p>Our SEO services in Gold Coast can get your business on page one and make sure it stays there, for years rather than days.</p>
+								<p>We can sell our brand all day, but don’t just take our word for it. Take action instead and see how good we are, by scheduling a call with a Digital Strategist. Find out how we can help you grow in leaps and bounds.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+							{#  Q2  #}
+							<h3 itemprop="name">How does SEO in Gold Coast work?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>SEO stands for Search Engine Optimisation. It consists of adjusting your website so it'll pop up in front of your target audience, when they are looking for information on search engines.</p>
+								<p>By enhancing your website features, SEO services in the Gold Coast provide a pathway to improve your online presence.</p>
+								<p>SEO also increases your reputation and influence, which brings about an influx of qualified leads.</p>
+								<p>One key SEO practice is finding the most relevant and popular key phrases that align with your potential customers' queries, so we can include them throughout your website.</p>
+								<p>That’s just the first step though. SEO in Gold Coast is tough to master. To be featured on the first page, your overall website experience and relevancy need to blow away all the competition.</p>
+								<p>Websites are assessed by search engine bots, and show up first if they are deemed the most relevant to solve users’ queries.
+								</p>
+								<p>Our SEO services in Gold Coast take into account your website performance, the keywords used, how your competitors are faring, and how much authority you have online.</p>
+								<p>There are a number of simple questions to ask yourself if you are unsure about your site’s SEO, such as: Is your site easy to find? Do you know what your audience is searching for? How many times has your website been featured on other websites?</p>
+								<p>SEO in the Gold Coast takes into account your whole website and its online presence. When done according to the rules, it can bring about an immense number of sales and establish your business as a force to be reckoned with, in the industry you specialise in.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+							{# Q3 #}
+							<h3 itemprop="name">Where do I start with SEO in Gold Coast?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>To get started with SEO in the Gold Coast, begin by analysing your current website and the different topics you're talking about.</p>
+								<p>
+									<u>Once you've done that, follow through with the following:
+									</u>
+								</p>
+								<p class="font-weight-bold mb-1">1. Keyword Research</p>
+								<p>Keyword research is finding the words and phrases that your target customers use on search engines, and placing them throughout your website. This drives your website higher on the search engine results page (SERP).</p>
+								<p>Before spending time on keyword research, you need to make sure that you know your ideal customers super well. It's more than their age or gender! You need to step into their shoes and understand why they search for specific things.</p>
+								<p class="mb-1">
+									<u>Here are three steps to master keyword research:</u>
+								</p>
+								<ol>
+									<li>Make a list of topics related to your business.</li>
+									<li>Find keywords for each topic and classify them by relevance, authority and volume.</li>
+									<li>Use them in your website's titles, descriptions and copy.</li>
+								</ol>
+								<p class="font-weight-bold mb-1">2. On-Page SEO</p>
+								<p>On-Page or on-site SEO is a key part of SEO services for Gold Coast businesses. It focuses on all the elements of the web pages, to optimise the website’s search engine ranking and generate organic traffic.</p>
+								<p class="mb-1">
+									<u>If you're new to on-page SEO, here's what to do:</u>
+								</p>
+								<ol>
+									<li>Publish high-quality content on your website.</li>
+									<li>Optimise all visual and
+										<a href="{{ home_url }}video-seo/">video</a>
+										content.</li>
+									<li>Include keywords in your copy, titles and links.</li>
+									<li>Make sure your website is mobile-friendly.</li>
+									<li>Use links to your advantage.</li>
+
+								</ol>
+								<p class="font-weight-bold mb-1">3. Backlinks</p>
+								<p>
+									<a href="{{home_url}}link-building/">Backlinking</a>
+									is an off-page SEO technique. It consists of adding a link to your website on other web pages, to build your online reputation.</p>
+								<p>Never underestimate the importance of quality when it comes to backlinks! One link on a reputable website can earn you more traffic than 100 links on untrusted sites.</p>
+								<p>SEO in Gold Coast is complex. To prevent irreversible mistakes from happening, you need to partner with the experts at the top of the industry. And what better SEO company in Gold Coast, than First Page!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+							{# Q4  #}
+							<h3 itemprop="name">Can’t I do SEO in Gold Coast by myself?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>You absolutely can, but this will likely only work if you already have experience in digital marketing.</p>
+								<p>If an SEO company in Gold Coast will get you better results, the extra sales they drive will reduce your costs in the long term.</p>
+								<p>Ask yourself, Do you have the time to get an in-depth understanding of the technicalities of SEO?
+								</p>
+								<p>If you're genuinely interested and it lights a fire inside you, that’s perfect. But if the reason is purely down to cost-saving, then it won't get you very far.</p>
+								<p>If your ambition is to grow big and fast, then you truly need to consider working with a reliable, competent, results-driven agency. First Page offers all you need for SEO services in the Gold Coast.</p>
+								<p>What does it mean to work with First Page? You'll have all the tedious technicalities taken care of by a team of experts, receive support in real-time, and benefit from having some of the best SEO experts in Gold Coast, with experience across a variety of industries.</p>
+								<p>But if you decide to do it yourself? If you choose to hire in-house, it'll take you months to learn, develop or readjust your strategy before finally seeing the results you need. There's also the risk of potentially making mistakes and losing all your traffic.</p>
+								<p>On the other hand, professional SEO services in Gold Coast can guarantee to do everything the right way, right off the bat.</p>
+								<p>You’ll partner with a team of SEO specialists dedicated to catapulting your growth and exploding your sales.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse17">
+							{# Q5 #}
+							<h3 itemprop="name">How much does SEO in Gold Coast cost?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Costs vary for SEO in the Gold Coast. Some of the factors that affect the final price tag are:</p>
+								<ul>
+									<li>Budget. Depending on how much you're willing to invest, you'll receive a different set of services. At First Page, we tailor our growth plan to fit your business needs and requirements.</li>
+									<li>Scope of work. The costs of SEO in the Gold Coast vary, based on your goals and where you are starting from. The bigger the ambition and complexity, the more it will cost.
+									</li>
+									<li>Desired results. Different expected outcomes need different investments and methods.</li>
+									<li>Expertise and involvement. With SEO in the Gold Coast, you get what you pay for. The best results are achieved by the professionals at the top of the industry.</li>
+
+								</ul>
+								<p>Be careful of low-costs SEO agencies that offer a fixed set of prices. Your business is unique and needs a specific, tailor-made approach to succeed.</p>
+								<p>SEO services in Gold Coast can make or break a business - it all depends on how it's done. The best agencies pay for themselves through the results they drive. Agencies that charge more have a proven track record of successful projects and results.
+								</p>
+								<p>- Black-hat vs white-hat SEO. Both are on the opposite ends of the spectrum. Black-hat SEO is cheaper than white-hat, and it risks your website being blacklisted on search engines. This means you will lose your online presence, sales and potentially go out of business.</p>
+								<p>
+									<span class="font-weight-bold">Black-hat SEO</span>
+									is a fast way of getting ranked, but it doesn’t adhere to Google's terms and conditions. It uses dodgy and illegal tactics. It's only a question of time before Google identifies the black-hat techniques and removes the website from the internet.</p>
+								<p>
+									<span class="font-weight-bold">White-hat SEO</span>
+									is the ethical way to do SEO in the Gold Coast. It follows Google’s rules and is based on good practices, such as providing valuable content and backlinks that are helpful to your audience. It's about quality work on a consistent basis.</p>
+								<p>Because it focuses on improving the customer experience, results take longer with white-hat SEO services in Gold Coast.</p>
+								<p>While cost reductions are an attractive prospect, don’t be fooled by the cheap upfront price. Ask yourself what kind of values you want your business to convey.</p>
+								<p>At First Page, we never use black-hat SEO. We offer white-hat SEO services in the Gold Coast, to deliver sustainable and incredible results to our clients.</p>
+								<p>To partner with the best SEO company in Gold Coast, book a call with a Digital Strategist today.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse18">
+							{#  Q6 #}
+							<h3 itemprop="name">What's the difference between PPC and SEO in Gold Coast?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>SEO is organic, which means you don't have to pay for website visits. If this traffic drives leads and sales, it's like they were for free.</p>
+								<p>Results take longer than with
+									<a href="{{ home_url }}google-ads/">Pay Per Click,</a>
+									but it's worth the wait. Across digital marketing, the ROI on SEO for Gold Coast businesses remains unmatched, and the results you get from it increase over time.</p>
+								<p>This means that the sales you see at 3 months are lower than the ones you'll get at 6, 12, and 24 months down the line.
+								</p>
+								<p>The best part about SEO in Gold Coast? It can become evergreen, and skyrocket your sales and business into the future.</p>
+								<p>
+									<a href="{{ home_url }}google-ads/">PPC</a>
+									is a type of paid advertising in which you need to invest upfront. It's not organic like SEO. You pay for your ad to be placed at the top of the search engine results page (SERP), for specific keywords.
+								</p>
+								<p>Each time people click on your ads, you have to pay. In other words, the cost is proportional to the traffic you get.
+								</p>
+								<p>PPC can drive quick results and will keep delivering for the duration of your campaign. It's great for new product launches and targeting specific audience types to come to your website.</p>
+								<p>PPC and SEO in Gold Coast work very well when combined.
+								</p>
+								<p>If you're curious about our PPC services and how they can put your products or services in front of the right people,
+									<a href="{{ home_url }}google-ads/">click here</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse19">
+							{# Q7  #}
+							<h3 itemprop="name">Can you help me recover from a loss in traffic?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>SEO in Gold Coast is constantly changing, and you can sometimes suffer from a loss of traffic. If you're not getting as many leads as you used to, don’t worry. We can identify the reason and fix it.</p>
+								<p>The algorithms that control which websites are shown to potential customers are regularly updated. Keeping up is key to the success of any website. If your traffic suddenly flatlines, it might be the result of your website being penalised by the latest update to the search engines.
+								</p>
+								<p>Whether it is a technical issue, your website’s optimisation, or losing traffic to a competitor, First Page has got your back. We're your SEO company in Gold Coast, with the experience to send traffic your way once again.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse20">
+							{# Q8  #}
+							<h3 itemprop="name">Do you offer eCommerce SEO services in Gold Coast?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Yes, we do! Our
+									<a href="{{ home_url }}ecommerce-seo/">eCommerce SEO services,</a>
+									in Gold Coast and across APAC, have been trusted and used by over 500 businesses.</p>
+								<p>Just note that eCommerce SEO is not the same a
+									<a href="{{ home_url }}local-and-national-seo/">local SEO</a>
+									in Gold Coast.</p>
+								<p>We offer eCommerce SEO services for Gold Coast businesses with online shops. We optimise the website to give people the best shopping experience, from the product page to checkout. In a nutshell, we turn your website visitors into buying customers.</p>
+								<p>PPC and eCommerce SEO in Gold Coast work in synergy. PPC sends a large amount of highly targeted traffic to your product page, while SEO converts them.</p>
+								<p>Local SEO is a geographic location. It's perfect for physical shop owners who want more foot traffic, or businesses looking to target and grow in one specific area.</p>
+								<p>To learn more about how our eCommerce SEO services in Gold Coast can explode your sales, click
+									<a href="{{ home_url }}ecommerce-seo/">here</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse21">
+							{# Q9  #}
+							<h3 itemprop="name">Do you offer international SEO services in Gold Coast?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Definitely! First Page is your go-to international SEO company in Gold Coast.</p>
+								<p>
+									<a href="{{ home_url }}international-seo/">International SEO</a>
+									is for anyone looking to increase their reach and grow their business globally. It targets specific audiences in different countries, to attract as many qualified leads as possible.</p>
+								<p>It optimises your website to deliver an easy and enjoyable shopping experience, for visitors all over the world. So, how can your business benefit from it?</p>
+								<p>Simply put, with international SEO services for Gold Coast businesses, the world is the limit. International SEO makes your website compliant with the specific algorithms of international search engines.</p>
+								<p>You're the one choosing the locations, and the possibility of a business expansion via traffic generation is endless.</p>
+								<p>At First Page, we can help you optimise your site internationally and place it at the summit of multiple search engines. For more about International SEO,
+									<a href="{{ home_url }}international-seo/">click here</a>.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse22">
+							{# Q10  #}
+							<h3 itemprop="name">Do you offer link building as a standalone service?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Yes, and we can get your website links on some of the most popular sites out there.</p>
+								<p>To be successful in
+									<a href="{{ home_url }}link-building/">link building</a>, you must build relationships with other authorities.</p>
+								<p>It's not as simple as random posting. Instead, you need to strategically integrate your website to external sources, to increase your reputation and credibility.</p>
+								<p>Google's bots are analysing websites and ranking them based on the number of high-quality links they have. To rank higher than your competitors, strategic link building is key.</p>
+								<p>Here at First Page, we have strong relationships with reputable websites and can use link building to increase your business ranking.</p>
+								<p>
+									<a href="{{ home_url }}link-building/">Learn more</a>
+									about First Page's link-building SEO services in the Gold Coast.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse23">
+							{#  Q11  #}
+							<h3 itemprop="name">How long does SEO in Gold Coast take?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>This is one of the most common questions we're asked, and the truth is that it depends. SEO for Gold Coast businesses doesn't drive results as quickly as paid media.</p>
+								<p>Think of it as a long-term process that has the potential to bring back 10 times its investment.</p>
+								<p>At First Page, we offer
+									<a href="{{ home_url }}pay-on-performance/">pay on performance plans</a>
+									for our SEO services in Gold Coast. This means we only get paid once we see results.
+								</p>
+								<p>Patience is a virtue when it comes to SEO and seeing the results from it. By partnering with our SEO company in Gold Coast, the good times ahead are guaranteed. We give you full visibility and keep you fully informed about your campaign while we work our magic.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div
+							class="card-header collapsed" data-toggle="collapse" href="#collapse24">
+							{#  Q12  #}
+							<h3 itemprop="name">What’s the difference between white-hat and black-hat SEO?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>
+									<span class="font-weight-bold">Black-hat SEO</span>
+									does not respect Google’s guidelines and uses shady techniques. It is focused on quick results and disregards the user experience.</p>
+								<p>Some examples of black-hat SEO practices include duplicating content, page swapping, and invisible text.</p>
+								<p>This is the wrong way of doing SEO in Gold Coast. The results are an illusion and are not sustainable. Black-hat SEO puts your business at risk, as it can lead to your website being banned from search engines.</p>
+								<p>
+									<span class="font-weight-bold">White-hat SEO</span>
+									respects and follows Google's guidelines, and is the correct way to increase your ranking.</p>
+								<p>It does not use quick-win tactics, as it instead focuses on providing users with a great and valuable website experience.</p>
+								<p>White-hat SEO uses tactics such as offering high-quality services, using descriptive keywords in the metadata, and fast page loading.</p>
+								<p>This is a long-term approach that takes time to yield results. White-hat SEO for Gold Coast businesses means long-lasting and sustainable results.</p>
+								<p>Here at First Page, we're on the bright side of SEO. We provide real results for our clients. Come join us today!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include "partials/en-form-popup.twig" with {'form_page': 'SEO Gold Coast (Pop-up Form)'} %}
 
 {% endblock %}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="450px" height="492px" viewBox="0 0 450 492" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>img_remove_review</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.0%" y="-4.6%" width="110.0%" height="109.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.345674819 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="430" height="472"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Removify" transform="translate(-791.000000, -2105.000000)">
+            <g id="img_remove_review" filter="url(#filter-1)" transform="translate(801.000000, 2114.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-2"></use>
+                <g id="Group-2-Copy" mask="url(#mask-3)">
+                    <g transform="translate(-44.000000, 165.000000)">
+                        <rect id="Mask" stroke="#DDDDDD" stroke-width="1" fill="#FFFFFF" fill-rule="nonzero" x="0.5" y="0.5" width="482" height="147"></rect>
+                        <rect id="Rectangle-2" stroke="none" fill="#FF5254" fill-rule="evenodd" x="44" y="1" width="146" height="146"></rect>
+                        <path d="M131.546141,83.7081351 L126.697184,88.556996 L116.858974,78.7160157 L107.302816,88.2734027 L102.453859,83.4230799 L112.010017,73.8642311 L102.453859,64.3068441 L107.302816,59.4565213 L116.858974,69.0153702 L126.697184,59.1714662 L131.546141,64.0232508 L121.707931,73.8642311 L131.546141,83.7081351 Z M117.000731,50 C103.745745,50 93,60.7487713 93,74.0074896 C93,87.264746 103.745745,98.0135173 117.000731,98.0135173 C130.255716,98.0135173 141,87.264746 141,74.0074896 C141,60.7487713 130.255716,50 117.000731,50 L117.000731,50 Z" id="Fill-14" stroke="none" fill="#FFFFFF" fill-rule="evenodd"></path>
+                        <g id="Group-2-Copy-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(213.000000, 19.000000)">
+                            <rect id="Rectangle" fill="#666666" fill-rule="nonzero" x="40" y="5" width="128" height="10" rx="5"></rect>
+                            <text id="1-Review" font-family="Poppins-Medium, Poppins" font-size="8" font-weight="400" line-spacing="12" fill="#BBBBBB">
+                                <tspan x="42" y="25">1 Review</tspan>
+                            </text>
+                            <text id="1-Month-Ago" font-family="Poppins-Medium, Poppins" font-size="8" font-weight="400" line-spacing="12" fill="#BBBBBB">
+                                <tspan x="119" y="41">1 Month Ago</tspan>
+                            </text>
+                            <text id="Like" font-family="Poppins-Medium, Poppins" font-size="8" font-weight="400" line-spacing="12" fill="#BBBBBB">
+                                <tspan x="68" y="109">Like</tspan>
+                            </text>
+                            <rect id="Rectangle-Copy" fill="#F0F0F0" fill-rule="nonzero" x="40" y="51" width="398" height="8" rx="4"></rect>
+                            <rect id="Rectangle-Copy-2" fill="#F0F0F0" fill-rule="nonzero" x="40" y="67" width="398" height="8" rx="4"></rect>
+                            <rect id="Rectangle-Copy-3" fill="#F0F0F0" fill-rule="nonzero" x="40" y="83" width="298" height="8" rx="4"></rect>
+                            <path d="M59.6112412,106.194379 L59.5737705,106.269321 L59.6112412,106.269321 L59.6112412,107.805621 C59.6112412,108.005466 59.5737705,108.205307 59.498829,108.405152 L57.0632319,114.025761 C56.8134262,114.675257 56.3263116,115 55.6018735,115 L48.4074941,115 C47.9828243,115 47.6081195,114.837628 47.2833724,114.512881 C46.9586253,114.188133 46.7962529,113.813429 46.7962529,113.388759 L46.7962529,105.407494 C46.7962529,104.982824 46.9586253,104.608119 47.2833724,104.283372 L52.529274,99 L53.3911007,99.8618267 C53.6159251,100.086651 53.7283372,100.361436 53.7283372,100.686183 L53.7283372,100.948478 L52.941452,104.620609 L58,104.620609 C58.4246698,104.620609 58.7993747,104.776737 59.1241218,105.088994 C59.4488689,105.401249 59.6112412,105.76971 59.6112412,106.194379 Z M42,115 L42,105.407494 L45.2224824,105.407494 L45.2224824,115 L42,115 Z" id="Fill-1" fill="#F0F0F0"></path>
+                            <g id="stars-copy" transform="translate(40.000000, 33.000000)">
+                                <polygon id="Star" fill="#E6711B" points="6 9.95015528 2.29179607 12 3 7.65835921 -8.32667268e-17 4.58359214 4.14589803 3.95015528 6 0 7.85410197 3.95015528 12 4.58359214 9 7.65835921 9.70820393 12"></polygon>
+                                <polygon id="Star" fill="#F6F6F6" points="21 9.95015528 17.2917961 12 18 7.65835921 15 4.58359214 19.145898 3.95015528 21 0 22.854102 3.95015528 27 4.58359214 24 7.65835921 24.7082039 12"></polygon>
+                                <polygon id="Star" fill="#F6F6F6" points="35 9.95015528 31.2917961 12 32 7.65835921 29 4.58359214 33.145898 3.95015528 35 0 36.854102 3.95015528 41 4.58359214 38 7.65835921 38.7082039 12"></polygon>
+                                <polygon id="Star" fill="#F6F6F6" points="50 9.95015528 46.2917961 12 47 7.65835921 44 4.58359214 48.145898 3.95015528 50 0 51.854102 3.95015528 56 4.58359214 53 7.65835921 53.7082039 12"></polygon>
+                                <polygon id="Star" fill="#F6F6F6" points="65 9.95015528 61.2917961 12 62 7.65835921 59 4.58359214 63.145898 3.95015528 65 0 66.854102 3.95015528 71 4.58359214 68 7.65835921 68.7082039 12"></polygon>
+                            </g>
+                            <circle id="Oval" fill="#FF5254" fill-rule="nonzero" cx="16" cy="16" r="16"></circle>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-2" mask="url(#mask-3)">
+                    <g transform="translate(23.000000, 333.000000)">
+                        <rect id="Rectangle" fill="#666666" fill-rule="nonzero" x="40" y="5" width="128" height="10" rx="5"></rect>
+                        <text id="6-Reviews" fill="none" font-family="Poppins-Medium, Poppins" font-size="8" font-weight="400" line-spacing="12">
+                            <tspan x="42" y="25" fill="#BBBBBB">6 Reviews</tspan>
+                        </text>
+                        <text id="1-Month-Ago" fill="none" font-family="Poppins-Medium, Poppins" font-size="8" font-weight="400" line-spacing="12">
+                            <tspan x="119" y="41" fill="#BBBBBB">1 Month Ago</tspan>
+                        </text>
+                        <text id="Like" fill="none" font-family="Poppins-Medium, Poppins" font-size="8" font-weight="400" line-spacing="12">
+                            <tspan x="68" y="109" fill="#BBBBBB">Like</tspan>
+                        </text>
+                        <rect id="Rectangle-Copy" fill="#F0F0F0" fill-rule="nonzero" x="40" y="51" width="398" height="8" rx="4"></rect>
+                        <rect id="Rectangle-Copy-2" fill="#F0F0F0" fill-rule="nonzero" x="40" y="67" width="398" height="8" rx="4"></rect>
+                        <rect id="Rectangle-Copy-3" fill="#F0F0F0" fill-rule="nonzero" x="40" y="83" width="298" height="8" rx="4"></rect>
+                        <path d="M59.6112412,106.194379 L59.5737705,106.269321 L59.6112412,106.269321 L59.6112412,107.805621 C59.6112412,108.005466 59.5737705,108.205307 59.498829,108.405152 L57.0632319,114.025761 C56.8134262,114.675257 56.3263116,115 55.6018735,115 L48.4074941,115 C47.9828243,115 47.6081195,114.837628 47.2833724,114.512881 C46.9586253,114.188133 46.7962529,113.813429 46.7962529,113.388759 L46.7962529,105.407494 C46.7962529,104.982824 46.9586253,104.608119 47.2833724,104.283372 L52.529274,99 L53.3911007,99.8618267 C53.6159251,100.086651 53.7283372,100.361436 53.7283372,100.686183 L53.7283372,100.948478 L52.941452,104.620609 L58,104.620609 C58.4246698,104.620609 58.7993747,104.776737 59.1241218,105.088994 C59.4488689,105.401249 59.6112412,105.76971 59.6112412,106.194379 Z M42,115 L42,105.407494 L45.2224824,105.407494 L45.2224824,115 L42,115 Z" id="Fill-1" fill="#F0F0F0" fill-rule="evenodd"></path>
+                        <g id="stars-copy" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(40.000000, 33.000000)">
+                            <polygon id="Star" fill="#E6711B" points="6 9.95015528 2.29179607 12 3 7.65835921 -8.32667268e-17 4.58359214 4.14589803 3.95015528 6 0 7.85410197 3.95015528 12 4.58359214 9 7.65835921 9.70820393 12"></polygon>
+                            <polygon id="Star" fill="#E6711B" points="21 9.95015528 17.2917961 12 18 7.65835921 15 4.58359214 19.145898 3.95015528 21 0 22.854102 3.95015528 27 4.58359214 24 7.65835921 24.7082039 12"></polygon>
+                            <polygon id="Star" fill="#E6711B" points="35 9.95015528 31.2917961 12 32 7.65835921 29 4.58359214 33.145898 3.95015528 35 0 36.854102 3.95015528 41 4.58359214 38 7.65835921 38.7082039 12"></polygon>
+                            <polygon id="Star" fill="#E6711B" points="50 9.95015528 46.2917961 12 47 7.65835921 44 4.58359214 48.145898 3.95015528 50 0 51.854102 3.95015528 56 4.58359214 53 7.65835921 53.7082039 12"></polygon>
+                            <polygon id="Star" fill="#E6711B" points="65 9.95015528 61.2917961 12 62 7.65835921 59 4.58359214 63.145898 3.95015528 65 0 66.854102 3.95015528 71 4.58359214 68 7.65835921 68.7082039 12"></polygon>
+                        </g>
+                        <circle id="Oval" fill="#427FE0" fill-rule="nonzero" cx="16" cy="16" r="16"></circle>
+                    </g>
+                </g>
+                <g id="Group-2-Copy-2" mask="url(#mask-3)">
+                    <g transform="translate(23.000000, 29.000000)">
+                        <rect id="Rectangle" fill="#666666" fill-rule="nonzero" x="40" y="5" width="128" height="10" rx="5"></rect>
+                        <text id="4-Reviews" fill="none" font-family="Poppins-Medium, Poppins" font-size="8" font-weight="400" line-spacing="12">
+                            <tspan x="42" y="25" fill="#BBBBBB">4 Reviews</tspan>
+                        </text>
+                        <text id="1-Month-Ago" fill="none" font-family="Poppins-Medium, Poppins" font-size="8" font-weight="400" line-spacing="12">
+                            <tspan x="119" y="41" fill="#BBBBBB">1 Month Ago</tspan>
+                        </text>
+                        <text id="Like" fill="none" font-family="Poppins-Medium, Poppins" font-size="8" font-weight="400" line-spacing="12">
+                            <tspan x="68" y="109" fill="#BBBBBB">Like</tspan>
+                        </text>
+                        <rect id="Rectangle-Copy" fill="#F0F0F0" fill-rule="nonzero" x="40" y="51" width="398" height="8" rx="4"></rect>
+                        <rect id="Rectangle-Copy-2" fill="#F0F0F0" fill-rule="nonzero" x="40" y="67" width="398" height="8" rx="4"></rect>
+                        <rect id="Rectangle-Copy-3" fill="#F0F0F0" fill-rule="nonzero" x="40" y="83" width="298" height="8" rx="4"></rect>
+                        <path d="M59.6112412,106.194379 L59.5737705,106.269321 L59.6112412,106.269321 L59.6112412,107.805621 C59.6112412,108.005466 59.5737705,108.205307 59.498829,108.405152 L57.0632319,114.025761 C56.8134262,114.675257 56.3263116,115 55.6018735,115 L48.4074941,115 C47.9828243,115 47.6081195,114.837628 47.2833724,114.512881 C46.9586253,114.188133 46.7962529,113.813429 46.7962529,113.388759 L46.7962529,105.407494 C46.7962529,104.982824 46.9586253,104.608119 47.2833724,104.283372 L52.529274,99 L53.3911007,99.8618267 C53.6159251,100.086651 53.7283372,100.361436 53.7283372,100.686183 L53.7283372,100.948478 L52.941452,104.620609 L58,104.620609 C58.4246698,104.620609 58.7993747,104.776737 59.1241218,105.088994 C59.4488689,105.401249 59.6112412,105.76971 59.6112412,106.194379 Z M42,115 L42,105.407494 L45.2224824,105.407494 L45.2224824,115 L42,115 Z" id="Fill-1" fill="#F0F0F0" fill-rule="evenodd"></path>
+                        <g id="stars-copy" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(40.000000, 33.000000)">
+                            <polygon id="Star" fill="#E6711B" points="6 9.95015528 2.29179607 12 3 7.65835921 -8.32667268e-17 4.58359214 4.14589803 3.95015528 6 0 7.85410197 3.95015528 12 4.58359214 9 7.65835921 9.70820393 12"></polygon>
+                            <polygon id="Star" fill="#E6711B" points="21 9.95015528 17.2917961 12 18 7.65835921 15 4.58359214 19.145898 3.95015528 21 0 22.854102 3.95015528 27 4.58359214 24 7.65835921 24.7082039 12"></polygon>
+                            <polygon id="Star" fill="#E6711B" points="35 9.95015528 31.2917961 12 32 7.65835921 29 4.58359214 33.145898 3.95015528 35 0 36.854102 3.95015528 41 4.58359214 38 7.65835921 38.7082039 12"></polygon>
+                            <polygon id="Star" fill="#E6711B" points="50 9.95015528 46.2917961 12 47 7.65835921 44 4.58359214 48.145898 3.95015528 50 0 51.854102 3.95015528 56 4.58359214 53 7.65835921 53.7082039 12"></polygon>
+                            <polygon id="Star" fill="#E6711B" points="65 9.95015528 61.2917961 12 62 7.65835921 59 4.58359214 63.145898 3.95015528 65 0 66.854102 3.95015528 71 4.58359214 68 7.65835921 68.7082039 12"></polygon>
+                        </g>
+                        <circle id="Oval" fill="#2E60AC" fill-rule="nonzero" cx="16" cy="16" r="16"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

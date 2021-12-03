@@ -1,0 +1,200 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ site.theme.link }}/views/assets/style.css" />
+<script src="{{ site.theme.link }}/views/assets/js/script.js"></script>
+<!-- Banner -->
+<section class="banner extra-pad extra-pad-shorter form-space">
+    <div class="container banner-hero">
+        <div class="banner-hero-cont">
+            <h1 class="form-hide bold-lg"><strong>Outgrow the competiton</strong> with <strong>specialised content creation</strong></h1>
+            <div class="hero-img-mobile d-lg-none">
+                <img src="{{ site.theme.link }}/views/assets/img/img_hero_writing_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_hero_writing_mob.png, {{ site.theme.link }}/views/assets/img/img_hero_writing_mob@2x.png 2x" class="img-fluid" alt="First Page Digital" />
+            </div>
+            {% embed "assets/partials/en-form-services.twig" with {'form_page': 'Premium Content Writing', 'form_button': 'Get A Free Quote', 'website_needed': true} %}
+            {% block step_1 %}
+            <div class="input-group">
+                <div class="select-container form-control">
+                    <select class="form-control" name="lead_interest">
+                        <option value="Web Content">Web Content</option>
+                        <option value="Blogs">Blogs</option>
+                        <option value="Press Releases">Press Releases</option>
+                        <option value="Newsletters/EDMs">Newsletters/EDMs</option>
+                        <option value="Translation">Translation</option>
+                        <option value="All of the Above">All of the above</option>
+                    </select>
+                </div>
+                <div class="input-group-btn"><button type="button" class="btn fp-btn fp-btn-orange form-continue">Get A Free Quote</button></div>
+            </div>
+            {% endblock %}
+            {% endembed %}
+            {% include "assets/partials/en-section-awards-badges.twig" %}
+        </div>
+        <div class="hero-img d-none d-lg-block">
+            <img src="{{ site.theme.link }}/views/assets/img/img_hero_writing.png" srcset="{{ site.theme.link }}/views/assets/img/img_hero_writing.png, {{ site.theme.link }}/views/assets/img/img_hero_writing@2x.png 2x" class="img-fluid" alt="First Page Digital" />
+        </div>
+    </div>
+</section>
+
+{% include "assets/partials/en-section-free-featured-in.twig" %}
+
+<section class="section-paragraph section-white mob-center">
+    <div class="container">
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center">
+                <img src="{{ site.theme.link }}/views/assets/img/img_trust_the_experts.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_trust_the_experts_mob.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h3>Spot the difference with
+                    expert content writers</h3>
+                <p>In terms of growing a brand’s reach and reputation, everything from simple spelling mistakes and poor formatting to a monotonous tone might convince your customers to choose a competitor. With 72% of marketers believing high-quality content is essential to their success, having <a href="https://firstpage.com.au/seo-copywriting/">website copy that hits the mark</a> is one of the best ways to secure your long-term success.</p>
+                <p>First Page Australia’s talented in-house team knows what it takes to ensure your business benefits from its content production. Considering that every dollar spent on premium-quality content produces up to three times more leads than paid search marketing, we can ensure your blogs, newsletters and press releases significantly enhance your business.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
+                <img src="{{ site.theme.link }}/views/assets/img/img_what_is_seo.png" srcset="{{ site.theme.link }}/views/assets/img/img_what_is_seo.png, {{ site.theme.link }}/views/assets/img/img_what_is_seo@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_what_is_seo_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_what_is_seo_mob.png, {{ site.theme.link }}/views/assets/img/img_what_is_seo_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h3>Boost success with premium copywriting services</h3>
+                <p>While newspaper ads, billboards and television commercials still serve an important advertising purpose, generating inbound results from <a href="https://firstpage.com.au/">online marketing</a> is one of the most cost-effective methods to boost trade. Through multiple touchpoints like blogs, EDMs and media releases, you can elegantly showcase products and increase customer trust.</p>
+                <p>But with the average consumer exposed to hundreds of ads every day, it’s certainly a challenge to create a <a href="https://firstpage.com.au/google-ads/">memorable campaign</a>. However, with the help of our expert content creation team, we can produce a detailed strategy that highlights what makes your products special and leaves a lasting impression. Let <a href="https://firstpage.com.au/">First Page Australia</a> guide your campaign to achieve your business goals.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/views/assets/img/img_web_content.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_web_content_mob.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h3>Powerful web content</h3>
+                <p>There are two sides to getting customers to shop with your business. First, you have to make sure your content reaches them. Then, once they click on your website, you need to convince them to purchase. Fortunately, our highly experienced team knows what it takes to accomplish both these goals, with our emotionally compelling and keyword-driven content production highlighting why your business is the best choice for their needs.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
+                <img src="{{ site.theme.link }}/views/assets/img/img_content.png" srcset="{{ site.theme.link }}/views/assets/img/img_content.png, {{ site.theme.link }}/views/assets/img/img_content@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_content_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_content_mob.png, {{ site.theme.link }}/views/assets/img/img_content_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
+
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h3>Compelling blogs</h3>
+                <p>A blog that’s attractive, engaging and informative is one of the best ways to get customers to pay attention to your business. In fact, a website with an optimised blog produces 434% more search engine-indexed pages than a site without one. Considering the average consumer reads 11.4 pieces of content before purchasing, maximise your reach through carefully targeted articles that always appear in relevant search results.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-stats section-blue pt-3 pt-md-0">
+    <div class="container">
+        <div class="stats">
+            <div class="stats-container">
+                <div class="row align-items-center">
+                    <div class="stat-col col-12 col-md-6 col-xl-3">
+                        <div class="stat">8x <img src="{{ site.theme.link }}/views/assets/img/content-8x.png" srcset="{{ site.theme.link }}/views/assets/img/content-8x@2x.png 2x" class="img-fluid" alt="8x" /></div>
+                        <div class="desc">A visitor who develops a positive emotional bond with your brand is near 8 times more likely to become a customer.</div>
+                    </div>
+                    <div class="stat-col col-12 col-md-6 col-xl-3">
+                        <div class="stat">434% <img src="{{ site.theme.link }}/views/assets/img/content-434.png" srcset="{{ site.theme.link }}/views/assets/img/content-434@2x.png 2x" class="img-fluid" alt="434%" /></div>
+                        <div class="desc">A website with blogs will attain 434% more search engine-indexed pages than a website without blog content.</div>
+                    </div>
+                    <div class="stat-col col-12 col-md-6 col-xl-3">
+                        <div class="stat">11.4 <img src="{{ site.theme.link }}/views/assets/img/content-114.png" srcset="{{ site.theme.link }}/views/assets/img/content-114@2x.png 2x" class="img-fluid" alt="11.4" /></div>
+                        <div class="desc">On average, a visitor will read 11.4 pieces of content prior to purchasing a product or service.</div>
+                    </div>
+                    <div class="stat-col col-12 col-md-6 col-xl-3">
+                        <div class="stat">3x <img src="{{ site.theme.link }}/views/assets/img/content-3x.png" srcset="{{ site.theme.link }}/views/assets/img/content-3x@2x.png 2x" class="img-fluid" alt="3x" /></div>
+                        <div class="desc">For every dollar spent, premium content generates three times the amount of sales leads than paid search marketing.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-paragraph section-white mob-center">
+    <div class="container">
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/views/assets/img/img_press.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_press_mob.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h3>Engaging press releases</h3>
+                <p>To make sure your business is widely regarded as one of the industry’s leaders, producing informative press releases is a straightforward way to enhance your credibility. By sharing news about your latest products and providing detailed information about industry-specific topics, you can ensure customers regard your business as an authority on crucial developments.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
+                <img src="{{ site.theme.link }}/views/assets/img/img_newsletters.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_newsletters_mob.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h3>Informative newsletters</h3>
+                <p>E-newsletters have stood the test of time for a reason. With 80% of business professionals believing that email marketing boosts their customer retention, it’s one of the smartest strategies to stay in contact with prospects and grow interest in your products. Take up this cost-effective approach and discover how many businesses’ e-newsletter campaigns achieve 30 times ROI.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
+                <img src="{{ site.theme.link }}/views/assets/img/img_translate.svg" class="img-fluid d-none d-md-inline-block" alt="" />
+                <img src="{{ site.theme.link }}/views/assets/img/img_translate_mob.svg" class="img-fluid d-md-none" alt="" />
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <h3>Accurate translations</h3>
+                <p>As research reveals that 72% of consumers prefer to buy products with descriptions in their native language, producing accurate translations can massively impact your overall success. With First Page Australia specialising in precise translations from English to Simplified Chinese, we can make sure your international customers find your website easy to shop and checkout.</p>
+                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-bottomquote section-grey">
+    <div class="container">
+        <h3 class="d-sm-inline-block mb-4">Speak to One of Our Consultants Today</h3>
+        <div class="mb-4">
+            <p class="wide mb-3">With First Page Digital, you’ll gain greater website authority, build stronger trust in your consumers and keep your business ahead of the competition. To start your online reputation management campaign or to find out more, speak to one of our consultants today at <a href="tel:{{ site_phone|replace({' ':''}) }}" class="text-nowrap">{{ site_phone }}</a> or email us at <a href="mailto:{{ site_email }}">{{ site_email }}</a>.</p>
+        </div>
+        {% embed "assets/partials/en-form-services.twig" with {'form_page': 'Premium Content Writing', 'form_thankyou': 'thank-you-pcw', 'form_button': 'Get A Free Quote', 'form_hs': 'hs_pcw_form', 'website_needed': true} %}
+        {% block step_1 %}
+        <div class="input-group">
+            <div class="select-container form-control">
+                <select class="form-control" name="lead_interest">
+                    <option value="Web Content">Web Content</option>
+                    <option value="Blogs">Blogs</option>
+                    <option value="Press Releases">Press Releases</option>
+                    <option value="Newsletters/EDMs">Newsletters/EDMs</option>
+                    <option value="Translation">Translation</option>
+                    <option value="All of the Above">All of the above</option>
+                </select>
+            </div>
+            <div class="input-group-btn"><button type="button" class="btn fp-btn fp-btn-orange form-continue">Get A Free Quote</button></div>
+        </div>
+        {% endblock %}
+        {% endembed %}
+    </div>
+</section>
+
+{% embed "assets/partials/en-form-popup.twig" with {'form_page': 'Premium Content Writing (Popup)', 'form_hs': 'hs_pcw_form', 'form_thankyou': 'thank-you-pcw'} %}
+{% block extra_field_top %}
+<div class="col-12 mb-2">
+    <select class="form-control" name="lead_interest">
+        <option value="Web Content">Web Content</option>
+        <option value="Blogs">Blogs</option>
+        <option value="Press Releases">Press Releases</option>
+        <option value="Newsletters/EDMs">Newsletters/EDMs</option>
+        <option value="Translation">Translation</option>
+        <option value="All of the Above">All of the above</option>
+    </select>
+</div>
+{% endblock %}
+{% endembed %}
+
+{% endblock %}

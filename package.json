@@ -1,7 +1,6 @@
 {
   "name": "firstpage-au",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w ./ -o ./  --recursive"
@@ -9,6 +8,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^6.0.1"
-  }
+    "node-sass": "^6.0.1",
+    "sass": "^1.42.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstpageau/firstpage-au-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/firstpageau/firstpage-au-theme/issues"
+  },
+  "homepage": "https://github.com/firstpageau/firstpage-au-theme#readme",
+  "description": ""
 }

@@ -1,165 +1,276 @@
 {% extends "en-base.twig" %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ site.theme.link }}/views/assets/style.css" />
-<script src="{{ site.theme.link }}/views/assets/js/script.js"></script>
-<!-- Banner -->
-<section class="banner extra-pad extra-pad-shorter form-space">
-    <div class="container banner-hero">
-        <div class="banner-hero-cont">
-            <h1 class="form-hide bold-lg"><strong>Convert your target audience</strong> with <strong>SEO copywriting</strong></h1>
-            <div class="hero-img-mobile d-lg-none">
-                <img src="{{ site.theme.link }}/views/assets/img/img_hero_writing_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_hero_writing_mob.png, {{ site.theme.link }}/views/assets/img/img_hero_writing_mob@2x.png 2x" class="img-fluid" alt="First Page Digital" />
-            </div>
-            {% embed "assets/partials/en-form-services.twig" with {'form_page': 'SEO Copywriting', 'form_thankyou': 'thank-you-pcw', 'form_button': 'Get A Free Quote', 'form_hs': 'hs_pcw_form', 'website_needed': true} %}
-            {% block step_1 %}
-            <div class="input-group">
-                <div class="select-container form-control">
-                    <select class="form-control" name="lead_interest">
-                        <option value="Web Content">Web Content</option>
-                        <option value="Blogs">Blogs</option>
-                        <option value="Press Releases">Press Releases</option>
-                        <option value="Newsletters/EDMs">Newsletters/EDMs</option>
-                        <option value="Translation">Translation</option>
-                        <option value="All of the Above">All of the above</option>
-                    </select>
-                </div>
-                <div class="input-group-btn"><button type="button" class="btn fp-btn fp-btn-orange form-continue">Get A Free Quote</button></div>
-            </div>
-            {% endblock %}
-            {% endembed %}
-            {% include "assets/partials/en-section-awards-badges.twig" %}
-        </div>
-        <div class="hero-img d-none d-lg-block">
-            <img src="{{ site.theme.link }}/views/assets/img/img_hero_writing.png" srcset="{{ site.theme.link }}/views/assets/img/img_hero_writing.png, {{ site.theme.link }}/views/assets/img/img_hero_writing@2x.png 2x" class="img-fluid" alt="First Page Digital" />
-        </div>
-    </div>
-</section>
 
-{% include "assets/partials/en-section-free-featured-in.twig" %}
+	<style>
+		@media(max-width: 991px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px 0 34px !important;
+			}
+		}
 
-<section class="section-paragraph section-white mob-center">
-    <div class="container">
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
-                <img src="{{ site.theme.link }}/views/assets/img/img_content.png" srcset="{{ site.theme.link }}/views/assets/img/img_content.png, {{ site.theme.link }}/views/assets/img/img_content@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_content_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_content_mob.png, {{ site.theme.link }}/views/assets/img/img_content_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Educate and entertain with
-                    high-quality content</h3>
-                <p>Quality over quantity is the essential mindset for modern SEO copywriting. Although it may have once been possible to trick search engines into ranking your pages through underhanded optimisation techniques, these days, achieving high rankings relies on content that both educates and entertains readers. Backed by First Page Australia’s <a href="https://firstpage.com.au/premium-content-writing/">wealth of SEO copywriting experience</a>, we make sure your content reaches your ideal target market and secures conversions. </p>
-                <p>With our keyword-driven content, we can attract a precise customer base and make sure they pay attention to what your brand has to say. Through compelling product pages, blogs and how-to guides, our engaging copywriting ensures potential customers view your business as a trusted authority. Plus, our <a href="https://firstpage.com.au/seo/">proven SEO techniques</a> make sure your content climbs relevant SERPs. </p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
-            </div>
-        </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
-                <img src="{{ site.theme.link }}/views/assets/img/img_what_is_seo.png" srcset="{{ site.theme.link }}/views/assets/img/img_what_is_seo.png, {{ site.theme.link }}/views/assets/img/img_what_is_seo@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_what_is_seo_mob.png" srcset="{{ site.theme.link }}/views/assets/img/img_what_is_seo_mob.png, {{ site.theme.link }}/views/assets/img/img_what_is_seo_mob@2x.png 2x" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Grow your business with powerful SEO copywritting</h3>
-                <p>Although every online business wants to reach the top of Google’s SERP, many continue to underestimate just how influential this position truly is. In fact, 75% of consumers never click past the first page, while a whopping 25% of users simply click on the number one result. With these figures only highlighting the importance of high-quality SEO, First Page Australia has been trusted by thousands of clients to lead their copywriting campaigns.</p>
-                <p>If you choose to work alongside our talented team, we know how to obtain the most relevant keywords for your customer base. As we craft fascinating content around these terms, our landing pages, articles and guides are both elegantly written and optimised for success. Alongside <a href="https://firstpage.com.au/seo-audit/">extensive SEO audits</a> and <a href="https://firstpage.com.au/competitor-audit/">competitor analysis</a>, our proven approach drives superior website traffic and growth.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
-            </div>
-        </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-right">
-                <img src="{{ site.theme.link }}/views/assets/img/img_seo_audit.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_seo_audit_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Complete a comprehensive
-                    SEO audit</h3>
-                <p>As you plan and execute a fresh SEO copywriting strategy, there’s a crucial step that many online businesses fail to complete. This involves the completion of an extensive SEO website audit to ensure you fully understand the strengths and weaknesses of your content before investing more time and effort. Fortunately, <a href="https://firstpage.com.au/">First Page Australia</a> can conduct a free SEO audit in as fast as three minutes.</p>
-                <p>Once this rapid process is finished, we’ll send you a detailed report highlighting essential information about the performance of your website. From your overall content quality and keyword density to SEO-friendliness, our SEO audit delivers vital recommendations so you understand where you stand in relation to others. Meanwhile, our free competitor audit provides crystal-clear data about the on-page changes that might benefit your business.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
-            </div>
-        </div>
-        <div class="row mb-3 mb-md-5 align-items-center flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 mt-3 mb-3 text-center text-lg-left">
-                <img src="{{ site.theme.link }}/views/assets/img/img_increase.svg" class="img-fluid d-none d-md-inline-block" alt="" />
-                <img src="{{ site.theme.link }}/views/assets/img/img_increase_mob.svg" class="img-fluid d-md-none" alt="" />
-            </div>
-            <div class="col-12 col-md-6 mb-3">
-                <h3>Drive growth with tailored
-                    SEO copywritting</h3>
-                <p>No matter what kind of target audience your business is attempting to attract, First Page Australia’s expert team can develop a strategy that captures their attention. Through our data-driven process that not only assesses your internal analytics, but also considers how your key competitors are achieving success, we can lead a campaign that reaches the customers who matter most.</p>
-                <p>With our cutting-edge approach to SEO copywriting, we deliver website content that strikes the perfect balance between optimisation and readability. By choosing our experienced in-house team to lead your campaign, you’ll stride ahead of the competition with attention-grabbing headlines and compelling narratives. Contact our world-class agency today and find out how we’ll ensure consumers view your brand as the best in the business.</p>
-                <div class="button-cont"><button type="button" class="btn fp-btn fp-btn-orange show-popup-form">Get A Free Quote</button></div>
-            </div>
-        </div>
-    </div>
-</section>
+		@media(max-width: 767px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px !important;
+			}
+		}
+		@media(max-width: 991px) {
+			.input-group {
+				display: -webkit-inline-box !important;
+			}
+		}
 
-<section class="section-stats section-blue pt-3 pt-md-0">
-    <div class="container">
-        <div class="stats">
-            <div class="stats-container">
-                <div class="row align-items-center">
-                    <div class="stat-col col-12 col-md-6 col-xl-3">
-                        <div class="stat">8x <img src="{{ site.theme.link }}/views/assets/img/content-8x.png" srcset="{{ site.theme.link }}/views/assets/img/content-8x@2x.png 2x" class="img-fluid" alt="8x" /></div>
-                        <div class="desc">A visitor who develops a positive emotional bond with your brand is near 8 times more likely to become a customer.</div>
-                    </div>
-                    <div class="stat-col col-12 col-md-6 col-xl-3">
-                        <div class="stat">434% <img src="{{ site.theme.link }}/views/assets/img/content-434.png" srcset="{{ site.theme.link }}/views/assets/img/content-434@2x.png 2x" class="img-fluid" alt="434%" /></div>
-                        <div class="desc">A website with blogs will attain 434% more search engine-indexed pages than a website without blog content.</div>
-                    </div>
-                    <div class="stat-col col-12 col-md-6 col-xl-3">
-                        <div class="stat">11.4 <img src="{{ site.theme.link }}/views/assets/img/content-114.png" srcset="{{ site.theme.link }}/views/assets/img/content-114@2x.png 2x" class="img-fluid" alt="11.4" /></div>
-                        <div class="desc">On average, a visitor will read 11.4 pieces of content prior to purchasing a product or service.</div>
-                    </div>
-                    <div class="stat-col col-12 col-md-6 col-xl-3">
-                        <div class="stat">3x <img src="{{ site.theme.link }}/views/assets/img/content-3x.png" srcset="{{ site.theme.link }}/views/assets/img/content-3x@2x.png 2x" class="img-fluid" alt="3x" /></div>
-                        <div class="desc">For every dollar spent, premium content generates three times the amount of sales leads than paid search marketing.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+		@media(max-width: 767px) {
+			.input-group {
+				display: -webkit-flex !important;
+			}
+		}
 
-<section class="section-bottomquote section-grey">
-    <div class="container">
-        <h3 class="d-sm-inline-block mb-4">Speak to One of Our Consultants Today</h3>
-        <div class="mb-4">
-            <p class="wide mb-3">With First Page Digital, you’ll gain greater website authority, build stronger trust in your consumers and keep your business ahead of the competition. To start your online reputation management campaign or to find out more, speak to one of our consultants today at <a href="tel:{{ site_phone|replace({' ':''}) }}" class="text-nowrap">{{ site_phone }}</a> or email us at <a href="mailto:{{ site_email }}">{{ site_email }}</a>.</p>
-        </div>
-        {% embed "assets/partials/en-form-services.twig" with {'form_page': 'Premium Content Writing', 'form_thankyou': 'thank-you-pcw', 'form_button': 'Get A Free Quote', 'form_hs': 'hs_pcw_form', 'website_needed': true} %}
-        {% block step_1 %}
-        <div class="input-group">
-            <div class="select-container form-control">
-                <select class="form-control" name="lead_interest">
-                    <option value="Web Content">Web Content</option>
-                    <option value="Blogs">Blogs</option>
-                    <option value="Press Releases">Press Releases</option>
-                    <option value="Newsletters/EDMs">Newsletters/EDMs</option>
-                    <option value="Translation">Translation</option>
-                    <option value="All of the Above">All of the above</option>
-                </select>
-            </div>
-            <div class="input-group-btn"><button type="button" class="btn fp-btn fp-btn-orange form-continue">Get A Free Quote</button></div>
-        </div>
-        {% endblock %}
-        {% endembed %}
-    </div>
-</section>
+		@media(max-width: 991px) {
+			.tablet-heading {
+				max-width: 450px;
+			}
+		}
 
-{% embed "assets/partials/en-form-popup.twig" with {'form_page': 'SEO Copywriting (Popup)', 'form_hs': 'hs_pcw_form', 'form_thankyou': 'thank-you-pcw'} %}
-{% block extra_field_top %}
-<div class="col-12 mb-2">
-    <select class="form-control" name="lead_interest">
-        <option value="Web Content">Web Content</option>
-        <option value="Blogs">Blogs</option>
-        <option value="Press Releases">Press Releases</option>
-        <option value="Newsletters/EDMs">Newsletters/EDMs</option>
-        <option value="Translation">Translation</option>
-        <option value="All of the Above">All of the above</option>
-    </select>
-</div>
-{% endblock %}
-{% endembed %}
+		@media(max-width: 768px) {
+			.pt-20 {
+				padding-top: 20px !important;
+			}
+		}
+		@media(min-width: 768px) {
+			section.section-letstalk {
+				margin-top: 0 !important;
+			}
+		}
+		.mt-100 {
+			margin-top: 100px;
+		}
+		section.section-stats .stats .stat {
+			font-weight: initial !important;
+		}
+		section.section-stats .stats .desc {
+			font-weight: initial !important;
+			text-transform: inherit !important;
+			font-size: 15px !important;
+			letter-spacing: initial !important;
+		}
+		section.section-letstalk {
+			margin-top: 0 !important;
+		}
+		@media(max-width: 767px) {
+			.hero-mobile {
+				position: unset;
+				margin-bottom: -35px;
+				text-align: center;
+			}
+		}
+		.align-center-right-column {
+			align-items: center;
+		}
+		@media(max-width: 768px) {
+			.align-center-right-column {
+				align-items: normal;
+			}
+		}
+		@media(max-width: 767px) {
+			.page-premium-content-writing section.banner h1 {
+				margin-bottom: 0 !important;
+			}
+		}
+	</style>
 
+	<div class="page-premium-content-writing">
+		<section class="banner form-space">
+			<div class="container banner-hero two-lines">
+				<div class="banner-hero-cont">
+					<h1 class="form-hide">Convert your target audience with SEO copywriting</h1>
+					<div class="banner-description">
+						<div class="form-hide hero-mobile">
+							<img src="{{ site.theme.link }}/assets/img/img_content_writing_hero_sm.png" srcset="{{ site.theme.link }}/assets/img/img_content_writing_hero_sm.png, {{ site.theme.link }}/assets/img/img_content_writing_hero_sm@2x.png 2x" alt="First Page"/>
+						</div>
+					</div>
+					{% include "partials/en-form-services.twig" with {'form_page': 'Facebook Ads', 'form_button': 'Get A Free Quote'} %}
+					{% include "partials/en-section-awards-badges.twig" %}
+				</div>
+				<div class="hero-img d-none d-md-block d-lg-none">
+					<img src="{{ site.theme.link }}/assets/img/img_content_writing_hero_md.png" srcset="{{ site.theme.link }}/assets/img/img_content_writing_hero_md.png, {{ site.theme.link }}/assets/img/img_content_writing_hero_md@2x.png 2x" alt="First Page"/>
+				</div>
+				<div class="hero-img d-none d-lg-block">
+					<img src="{{ site.theme.link }}/assets/img/img_content_writing_hero_lg.png" srcset="{{ site.theme.link }}/assets/img/img_content_writing_hero_lg.png, {{ site.theme.link }}/assets/img/img_content_writing_hero_lg@2x.png 2x" alt="First Page"/>
+				</div>
+			</div>
+		</section>
+	</div>
+	{% include "partials/en-section-featured-in-news.twig" %}
+
+	<section class="section-paragraph">
+		<div class="row no-gutters d-none d-md-block d-lg-none flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-md-6"></div>
+			<div class="col-md-6 text-container">
+				<h2 class="tablet-heading">Educate and entertain with high-quality content</h2>
+			</div>
+		</div>
+		<div class="row no-gutters flex-column-reverse align-center-right-column flex-md-row flex-md-row-reverse">
+
+			<div class="col-xl-6 col-lg-6 col-md-5 image-container-right">
+
+				<img src="{{ site.theme.link }}/assets/img/high-quality-content-desktop.png" srcset="{{ site.theme.link }}/assets/img/high-quality-content-desktop.png, {{ site.theme.link }}/assets/img/high-quality-content-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/high-quality-content-tablet.png" srcset="{{ site.theme.link }}/assets/img/high-quality-content-tablet.png, {{ site.theme.link }}/assets/img/high-quality-content-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-7 text-container">
+
+				<h2 class="d-block d-md-none d-lg-block">Educate and entertain with high-quality content</h2>
+
+				<img src="{{ site.theme.link }}/assets/img/high-quality-content-mobile.png" srcset="{{ site.theme.link }}/assets/img/high-quality-content-mobile.png, {{ site.theme.link }}/assets/img/high-quality-content-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+
+				<p class="text-center text-md-left">Quality over quantity is the essential mindset for modern SEO copywriting.
+				</p>
+
+				<p class="text-center text-md-left">Although it may have once been possible to trick search engines into ranking your pages through underhanded optimisation techniques, these days, achieving high rankings relies on content that both educates and entertains readers. Backed by First Page Australia’s wealth of SEO copywriting experience, we make sure your content reaches your ideal target market and secures conversions.</p>
+
+				<p class="text-center text-md-left">With our keyword-driven content, we can attract a precise customer base and make sure they pay attention to what your brand has to say.
+				</p>
+
+				<p class="text-center text-md-left">Through compelling product pages, blogs and how-to guides, our engaging copywriting ensures potential customers view your business as a trusted authority. Plus, our proven SEO techniques make sure your content climbs relevant SERPs.</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Triple" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph pt-20">
+		<div class="row no-gutters flex-column-reverse flex-md-row align-items-center">
+
+			<div class="col-xl-6 col-lg-6 col-md-5 image-container-left pr-lg-5">
+
+				<img src="{{ site.theme.link }}/assets/img/powerful-seo-writing-desktop.png" srcset="{{ site.theme.link }}/assets/img/powerful-seo-writing-desktop.png, {{ site.theme.link }}/assets/img/powerful-seo-writing-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/powerful-seo-writing-tablet.png" srcset="{{ site.theme.link }}/assets/img/powerful-seo-writing-tablet.png, {{ site.theme.link }}/assets/img/powerful-seo-writing-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-7 text-container">
+
+				<h2>Grow your business with powerful SEO copywritting</h2>
+
+				<img src="{{ site.theme.link }}/assets/img/powerful-seo-writing-mobile.png" srcset="{{ site.theme.link }}/assets/img/powerful-seo-writing-mobile.png, {{ site.theme.link }}/assets/img/powerful-seo-writing-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+
+				<p class="text-center text-md-left">Although every online business wants to reach the top of Google’s SERP, many continue to underestimate just how influential this position truly is. In fact, 75% of consumers never click past the first page, while a whopping 25% of users simply click on the number one result.
+				</p>
+
+				<p class="text-center text-md-left">With these figures only highlighting the importance of high-quality SEO, First Page Australia has been trusted by thousands of clients to lead their copywriting campaigns.</p>
+
+				<p class="text-center text-md-left">If you choose to work alongside our talented team, we know how to obtain the most relevant keywords for your customer base. As we craft fascinating content around these terms, our landing pages, articles and guides are both elegantly written and optimised for success.
+				</p>
+
+				<p class="text-center text-md-left">Alongside extensive SEO audits and competitor analysis, our proven approach drives superior website traffic and growth.</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph pt-20">
+		<div class="row no-gutters d-none d-md-block d-lg-none flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-md-6"></div>
+			<div class="col-md-6 text-container">
+				<h2 class="tablet-heading">Complete a comprehensive SEO audit</h2>
+			</div>
+		</div>
+
+		<div class="row no-gutters flex-column-reverse flex-md-row align-center-right-column flex-md-row-reverse align-center">
+
+			<div class="col-xl-6 col-lg-6 col-md-5 image-container-right">
+
+				<img src="{{ site.theme.link }}/assets/img/seo-audit-desktop.png" srcset="{{ site.theme.link }}/assets/img/seo-audit-desktop.png, {{ site.theme.link }}/assets/img/seo-audit-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/seo-audit-tablet.png" srcset="{{ site.theme.link }}/assets/img/seo-audit-tablet.png, {{ site.theme.link }}/assets/img/seo-audit-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-7 text-container">
+
+				<h2 class="d-block d-md-none d-lg-block">Complete a comprehensive SEO audit</h2>
+
+				<img src="{{ site.theme.link }}/assets/img/seo-audit-mobile.png" srcset="{{ site.theme.link }}/assets/img/seo-audit-mobile.png, {{ site.theme.link }}/assets/img/seo-audit-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+
+				<p class="text-center text-md-left">
+					As you plan and execute a fresh SEO copywriting strategy, there’s a crucial step that many online businesses fail to complete.
+				</p>
+				<p class="text-center text-md-left">This involves the completion of an extensive SEO website audit to ensure you fully understand the strengths and weaknesses of your content before investing more time and effort. Fortunately, First Page Australia can conduct a free SEO audit in as fast as three minutes.</p>
+
+				<p class="text-center text-md-left">
+					Once this rapid process is finished, we’ll send you a detailed report highlighting essential information about the performance of your website. From your overall content quality and keyword density to SEO-friendliness, our SEO audit delivers vital recommendations so you understand where you stand in relation to others.
+				</p>
+				<p class="text-center text-md-left">
+					Meanwhile, our free competitor audit provides crystal-clear data about the on-page changes that might benefit your business.
+				</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Triple" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+	<section class="section-paragraph pt-20">
+		<div class="row no-gutters flex-column-reverse flex-md-row align-items-center">
+
+			<div class="col-xl-6 col-lg-6 col-md-5 image-container-left pr-lg-5">
+
+				<img src="{{ site.theme.link }}/assets/img/drive-growth-desktop.png" srcset="{{ site.theme.link }}/assets/img/drive-growth-desktop.png, {{ site.theme.link }}/assets/img/drive-growth-desktop.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/drive-growth-tablet.png" srcset="{{ site.theme.link }}/assets/img/drive-growth-tablet.png, {{ site.theme.link }}/assets/img/drive-growth-tablet.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-7 text-container">
+
+				<h2>Drive growth with tailored SEO copywriting
+				</h2>
+
+				<img src="{{ site.theme.link }}/assets/img/drive-growth-mobile.png" srcset="{{ site.theme.link }}/assets/img/drive-growth-mobile.png, {{ site.theme.link }}/assets/img/drive-growth-mobile.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+
+				<p class="text-center text-md-left">No matter what kind of target audience your business is attempting to attract, First Page Australia’s expert team can develop a strategy that captures their attention.</p>
+
+				<p class="text-center text-md-left">Through our data-driven process that not only assesses your internal analytics, but also considers how your key competitors are achieving success, we can lead a campaign that reaches the customers who matter most.</p>
+
+				<p class="text-center text-md-left">With our cutting-edge approach to SEO copywriting, we deliver website content that strikes the perfect balance between optimisation and readability. By choosing our experienced in-house team to lead your campaign, you’ll stride ahead of the competition with attention-grabbing headlines and compelling narratives.
+				</p>
+
+				<p class="text-center text-md-left">Contact our world-class agency today and find out how we’ll ensure consumers view your brand as the best in the business.</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+	<section class="section-stats section-blue pt-3 pt-md-0 mt-100">
+		<div class="container">
+			<div class="stats">
+				<div class="stats-container">
+					<div class="row align-items-center">
+						<div class="stat-col col-12 col-md-6 col-xl-3">
+							<div class="stat">8x
+								<img src="{{ site.theme.link }}/views/assets/img/content-8x.png" srcset="{{ site.theme.link }}/views/assets/img/content-8x@2x.png 2x" class="img-fluid" alt="8x"/></div>
+							<div class="desc">A visitor who develops a positive emotional bond with your brand is near 8 times more likely to become a customer.</div>
+						</div>
+						<div class="stat-col col-12 col-md-6 col-xl-3">
+							<div class="stat">434%
+								<img src="{{ site.theme.link }}/views/assets/img/content-434.png" srcset="{{ site.theme.link }}/views/assets/img/content-434@2x.png 2x" class="img-fluid" alt="434%"/></div>
+							<div class="desc">A website with blogs will attain 434% more search engine-indexed pages than a website without blog content.</div>
+						</div>
+						<div class="stat-col col-12 col-md-6 col-xl-3">
+							<div class="stat">11.4
+								<img src="{{ site.theme.link }}/views/assets/img/content-114.png" srcset="{{ site.theme.link }}/views/assets/img/content-114@2x.png 2x" class="img-fluid" alt="11.4"/></div>
+							<div class="desc">On average, a visitor will read 11.4 pieces of content prior to purchasing a product or service.</div>
+						</div>
+						<div class="stat-col col-12 col-md-6 col-xl-3">
+							<div class="stat">3x
+								<img src="{{ site.theme.link }}/views/assets/img/content-3x.png" srcset="{{ site.theme.link }}/views/assets/img/content-3x@2x.png 2x" class="img-fluid" alt="3x"/></div>
+							<div class="desc">For every dollar spent, premium content generates three times the amount of sales leads than paid search marketing.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include "partials/en-section-free-session.twig" %}
+	{% include "partials/en-form-popup.twig" with {'form_page': 'Facebook Ads (Pop-up Form)'} %}
 {% endblock %}

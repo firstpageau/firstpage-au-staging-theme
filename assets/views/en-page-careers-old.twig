@@ -1,0 +1,119 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+<style>
+	.page-careers section.section-what-we-value h4 {
+		margin-top: 20px;
+		line-height: 35px;
+	}
+
+	@media(max-width: 1024px) {
+		.page-careers section.section-what-we-value h4 {
+			width: calc(100% - 60px);
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+	
+</style>
+
+<section class="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 text-center text-lg-left">
+				<h1>Interested in joining a company with an unbeatable culture?</h1>
+				<p>Join a company that doesn’t take shortcuts or treat you like a number. We help each other win and that’s why we are the fastest growing digital marketing agency
+					in APAC.</p>
+				<a href="#vacancies" class="btn fp-btn fp-btn-orange show-popup-form-3">VIEW OUR OPPORTUNITIES</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-what-we-value section-why-first-page">
+	<div class="container">
+		<h2 class="text-center">Why First Page?</h2>
+		<div class="row">
+			<div class="col-12 col-md-4 text-center">
+				<img src="{{ site.theme.link }}/assets/img/icn_renumeration.svg" width="100" height="100" alt="Customers">
+				<h4>Competitive renumeration</h4>
+				<p>At First Page, we look for only the best digital marketing talent - and we understand that this means paying you generous rates. Working at First Page will offer you competitive salaries, remuneration packages, and policies that ensure you’re well looked after.</p>
+			</div>
+			<div class="col-12 col-md-4 text-center">
+				<img src="{{ site.theme.link }}/assets/img/icn_talented_team.svg" width="100" height="100" alt="Company">
+				<h4>APAC’s best digital talent</h4>
+				<p>As an agency, we understand that our employees are our most valuable asset. We spend hours upon hours scouring the market to find the best digital marketing talent and highly motivated individuals who value results and never make excuses.</p>
+			</div>
+			<div class="col-12 col-md-4 text-center">
+				<img src="{{ site.theme.link }}/assets/img/icn_positive_culture.svg" width="100" height="100" alt="Competence">
+				<h4>Positive company culture</h4>
+				<p>We are obsessed with creating an energetic, interesting, and fun, yet highly productive company culture. Our culture emphasises helping one another, completing work to be proud of, and developing your core skills (all while having a great time!).</p>
+			</div>
+			<div class="col-12 col-md-4 text-center">
+				<img src="{{ site.theme.link }}/assets/img/icn_development.svg" width="84" height="100" alt="Customers">
+				<h4>Opportunities for development</h4>
+				<p>Working at First Page doesn’t just mean being a digital marketer; it means growing both as a person and as a professional. We provide intensive training and abundant resources to guide you through your journey and develop your skills in the direction you want.</p>
+			</div>
+			<div class="col-12 col-md-4 text-center">
+				<img src="{{ site.theme.link }}/assets/img/icn_career_progression.svg" width="100" height="100" alt="Company">
+				<h4>Career progression</h4>
+				<p>Alongside our belief that all our employees should be given the chance to grow, we want to offer everyone the chance to develop their career professionally into more senior and experienced roles. We always prefer to promote from within, and we are growing FAST.</p>
+			</div>
+			<div class="col-12 col-md-4 text-center">
+				<img src="{{ site.theme.link }}/assets/img/icn_international.svg" width="100" height="100" alt="Competence">
+				<h4>Global Offices</h4>
+				<p>With offices around the world in Panama, Dubai, Thailand, Malaysia, Singapore, Hong Kong, Australia, and more, we’re one of the fastest-growing digital marketing agencies in the world, and with great growth comes great opportunity.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-what-we-value">
+	<div class="container">
+		<h2 class="text-center">What We Value</h2>
+		<div class="row">
+			<div class="col-12 col-md-4 text-center">
+				<img src="{{ site.theme.link }}/assets/img/img_customers.svg" width="100" height="100" alt="Customers">
+				<h3>Customers</h3>
+				<p>Service with integrity, empathy and flexibility</p>
+			</div>
+			<div class="col-12 col-md-4 text-center">
+				<img src="{{ site.theme.link }}/assets/img/img_company.svg" width="100" height="100" alt="Company">
+				<h3>Company</h3>
+				<p>Break barriers and unlock potential</p>
+			</div>
+			<div class="col-12 col-md-4 text-center">
+				<img src="{{ site.theme.link }}/assets/img/img_competence.svg" width="100" height="100" alt="Competence">
+				<h3>Competence</h3>
+				<p>Constantly learn and evolve</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="vacancies" class="section-vacancies">
+	<div class="container">
+		<h2>
+			<strong>Our Vacancies</strong>
+		</h2>
+		<!-- {{ '[jobadsshortcode]'|shortcodes }} -->
+		{{ '[jobs per_page="12" show_filters="false"]'|shortcodes }}
+	</div>
+</section>
+
+<section class="section-background section-global-brands">
+	<div class="container">
+		<h2 class="text-center">Our global reach</h2>
+		<p class="text-center">Our one stop solution for all things digital is making waves globally.</p>
+		<img src="{{ site.theme.link }}/assets/img/img_global_team@2x.jpg" class="img-fluid" alt="Our Office" />
+
+	</div>
+</section>
+
+<section class="section-background section-black">
+	<img src="{{ site.theme.link }}/assets/img/img_team_collage_fpa@2x.jpg" class="img-fluid d-none d-md-block" alt="Our Office" />
+	<img src="{{ site.theme.link }}/assets/img/img_team_collage_fpa_mob@2x.jpg" class="img-fluid d-block d-md-none" alt="Our Office" />
+</section>
+
+{% endblock %}

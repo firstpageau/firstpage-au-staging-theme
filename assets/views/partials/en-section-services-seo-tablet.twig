@@ -1,0 +1,122 @@
+<style>
+    .page-link-building .card-link-building,
+    .page-seo .card-local-national-seo,
+    .page-international-seo .card-international-seo,
+    .page-ecommerce-seo .card-ecommerce-seo,
+    .page-enterprise-seo .card-enterprise-seo {
+        display: none;
+    }
+
+    .section-services-five-col .container{
+        max-width: 1300px;
+    }
+
+    .seo-new-services-row .col{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .seo-new-services-row .card{
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        box-shadow: 2px 4px 10px 0 rgba(0,0,0,0.3) !important;
+    }
+
+    .seo-new-services-row .card-body{
+        /*height: 195px;*/
+    }
+
+    .seo-new-services-row .card-body{
+        padding: 15px 5px !important;
+    }
+
+    @media (max-width: 993px) {
+
+    }
+    @media (max-width: 769px) {
+        .seo-new-services-row{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .seo-new-services-row .card-body{
+            padding: 15px 15px 30px 15px !important;
+        }
+
+        .seo-new-services-row .card-body{
+            height: inherit;
+        }
+    }
+</style>
+<section class="section-services section-services-five-col">
+    <div class="container">
+        <div class="section-title">
+            <h2>Other SEO agency services offered by First Page</h2>
+            <h3 class="font-weight-normal">Proven growth strategies for your business</h3>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 card-local-national-seo">
+                <a class="card" href="{{ home_url }}local-and-national-seo/">
+                    <img src="{{ site.theme.link }}/assets/img/icn_local_seo.svg" width="76" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h4 class="card-title">Local & National SEO</h4>
+                        <p class="card-text text-center text-lg-left">Dominate your local market with insanely good SEO.</p>
+                    </div>
+                    <div class="card-footer">LEARN MORE</div>
+                </a>
+            </div>
+            <div class="col-md-4 card-international-seo">
+                <a class="card" href="{{ home_url }}international-seo/">
+                    <img src="{{ site.theme.link }}/assets/img/icn_international.svg" width="101" height="101" alt="First Page">
+                    <div class="card-body">
+                        <h4 class="card-title">International SEO</h4>
+                        <p class="card-text text-center text-lg-left">A global agency with a global reach. We’re your guys!</p>
+                    </div>
+                    <div class="card-footer">LEARN MORE</div>
+                </a>
+            </div>
+            <div class="col-md-2"></div>
+
+        </div>
+
+
+
+
+        <div class="row ">
+
+            <div class="col-md-4 card-ecommerce-seo">
+                <a class="card" href="{{ home_url }}ecommerce-seo/">
+                    <img src="{{ site.theme.link }}/assets/img/icn_ecommerce.svg" width="100" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h4 class="card-title">Ecommerce SEO</h4>
+                        <p class="card-text text-center text-lg-left">We know eCommerce better than the back of our hand.</p>
+                    </div>
+                    <div class="card-footer">LEARN MORE</div>
+                </a>
+            </div>
+            <div class="col-md-4 card-enterprise-seo">
+                <a class="card" href="{{ home_url }}enterprise-seo/">
+                    <img src="{{ site.theme.link }}/assets/img/icn_enterprise_seo.svg" width="100" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h4 class="card-title">Enterprise SEO</h4>
+                        <p class="card-text text-center text-lg-left">The largest brands in the world love us. Why? We over deliver!</p>
+                    </div>
+                    <div class="card-footer">LEARN MORE</div>
+                </a>
+            </div>
+            <div class="col-md-4 card-link-building">
+                <a class="card" href="{{ home_url }}link-building/">
+                    <img src="{{ site.theme.link }}/assets/img/icn_link_building.svg" width="100" height="100" alt="First Page">
+                    <div class="card-body">
+                        <h4 class="card-title">Link Building</h4>
+                        <p class="card-text text-center text-lg-left">The best in the business. We don’t build crappy links.</p>
+                    </div>
+                    <div class="card-footer">LEARN MORE</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,228 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+
+    <section class="banner form-space landing-development-banner">
+        <div class="container banner-hero ">
+            <div class="banner-hero-cont">
+                <h1 class="form-hide">Triple your leads & sales <br class="d-none d-lg-block"> with a high converting landing page</h1>
+                {# <p class="form-hide banner-text-width ml-3 ml-md-0">Create landing pages that get customers to <br class="d-md-block d-lg-none"> buy not bounce.</p> #}
+                <div class="form-hide d-block d-md-none">
+                    <img src="{{ site.theme.link }}/assets/img/development-page-banner-mb.png"  alt="First Page" class="landing-hero-mb form-hide"/>
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'Landing Page Agency', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+
+            {# md banner #}
+            <div class="hero-img d-none d-md-block d-lg-none">
+                <img src="{{ site.theme.link }}/assets/img/development-page-banner-tab@2x.png" srcset="{{ site.theme.link }}/assets/img/development-page-banner-tab@2x.png, {{ site.theme.link }}/assets/img/development-page-banner-tab@2x.png 2x" alt="First Page" />
+            </div>
+            {# lg banner #}
+            <div class="hero-img d-none d-lg-block">
+                <img src="{{ site.theme.link }}/assets/img/development-page-banner.png" srcset="{{ site.theme.link }}/assets/img/development-page-banner.png, {{ site.theme.link }}/assets/img/development-page-banner@2x.png 2x" alt="First Page" />
+            </div>
+
+        </div>
+    </section>
+
+
+
+    {% include "partials/en-section-featured-in-news.twig" %}
+
+    <section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/landing-page-mac-screen-sm.png" srcset="{{ site.theme.link }}/assets/img/landing-page-mac-screen-sm.png, {{ site.theme.link }}/assets/img/landing-page-mac-screen-sm@2x.png 2x" class="img-fluid d-block d-md-none " alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/landing-page-mac-screen-lg.png" srcset="{{ site.theme.link }}/assets/img/landing-page-mac-screen-lg.png, {{ site.theme.link }}/assets/img/landing-page-mac-screen-lg@2x.png 2x" class="img-fluid d-none d-md-block d-qhd-none " alt="First Page" />
+                <img src="{{ site.theme.link }}/assets/img/landing-page-mac-screen-xl.png" srcset="{{ site.theme.link }}/assets/img/landing-page-mac-screen-xl.png, {{ site.theme.link }}/assets/img/landing-page-mac-screen-xl@2x.png 2x" class="img-fluid d-none d-qhd-block " alt="First Page" />
+            </div>
+
+            <div class="col-12 col-md-6 text-container pr-md-5">
+                <h2>How do you get more results without more budget? <br class="d-none d-lg-block"> It's your landing page.</h2>
+                <p class="text-center text-sm-left">You can double or even triple the number of leads and sales from your website. All you need is a landing page that's designed to convert.</p>
+                <p class="text-center text-sm-left">A high-converting landing page is like adding another person to your sales team. Without the headaches of them taking sick leave or running late!</p>
+                <p class="text-center text-sm-left">Are you seeing a high bounce rate from your digital marketing campaign? There's no point in spending money on ads, if people just leave once they get to your website.</p>
+                <p class="text-center text-sm-left">A landing page will drive leads and sales, not just website bounces. Do your business a favour, and build a high-converting landing page.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    {# lg steps section #}
+    <section class="section-paragraph landing-steps-mb-section d-none d-md-block">
+        <div class="container">
+            <img src="{{ site.theme.link }}/assets/img/landing-step-img.png" srcset="{{ site.theme.link }}/assets/img/landing-step-img.png, {{ site.theme.link }}/assets/img/landing-step-img@2x.png 2x" class="img-fluid" alt="First Page" />
+        </div>
+    </section>
+
+    <section class="section-paragraph">
+        <div class="container">
+            <h2 class="text-center text-sm-left section-title-ml custom-heading-width custom-ml">The success of your digital marketing campaign <br class="d-none d-lg-block"> hinges on your landing pages.</h2>
+            <div class="row no-gutters justify-content-center ">
+
+                <div class="col-12 col-md-6 text-container">
+                    <p class="text-center text-sm-left">Your landing page is the webpage where people "land", after they clicked on your ad. The conversion rate on this page determines the ROI of your digital marketing campaigns.</p>
+                    <p class="text-center text-sm-left">Why do landing pages work? They greet your customers like you already know them. Because you do! After all, they clicked on your ad.</p>
+                    <p class="text-center text-sm-left">Too many ads promise a specific product and then dump the customer on a generic product page. Why lose a customer when they're already showing interest?</p>
+                </div>
+                <div class="col-12 col-md-6 text-container ">
+                    <p class="text-center text-sm-left">Instead, First Page creates bespoke landing pages. </p>
+                    <p class="text-center text-sm-left">We design a seamless transition, from ad to website to purchase. Our landing page design is laser-focussed on driving home the sale. We don't ask for a hundred things, just one: Buy.</p>
+                    <p class="text-center text-sm-left">We make sure your customer always knows where the next step is… It's a yellow brick road all the way to the purchase button.</p>
+                    <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# mb steps section #}
+    <section class="section-paragraph landing-steps-mb-section d-block d-sm-none">
+        <div class="container">
+            <p class="text-center step-text">FROM ADVERT</p>
+            <img src="{{ site.theme.link }}/assets/img/landing-step-mb-1.svg" alt="First Page" class="img-fluid d-block mx-auto">
+            <img src="{{ site.theme.link }}/assets/img/img-arror-icon.svg" alt="First Page" class="img-fluid d-block mx-auto my-3">
+            <p class="text-center step-text">TO LANDING PAGE</p>
+            <img src="{{ site.theme.link }}/assets/img/landing-step-mb-2.svg" alt="First Page" class="img-fluid d-block mx-auto">
+            <img src="{{ site.theme.link }}/assets/img/img-arror-icon.svg" alt="First Page" class="img-fluid d-block mx-auto my-3">
+            <p class="text-center step-text">TO PURCHASE</p>
+            <img src="{{ site.theme.link }}/assets/img/landing-step-mb-3.svg" alt="First Page" class="img-fluid d-block mx-auto">
+        </div>
+    </section>
+
+    {# headline on md hide on lg #}
+    <section class="section-paragraph d-none d-md-block d-lg-none text-center py-5">
+        <div class="container">
+            <h2>We know how to drive tangible improvements to your landing page design… and your ROI.</h2>
+        </div>
+    </section>
+
+
+    <section class="section-paragraph">
+        <div class="row no-gutters flex-column-reverse flex-md-row ">
+
+            <div class="col-12 col-md-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-mb.svg"  alt="First Page" class="img-fluid d-block d-md-none  "/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-tab.svg"  alt="First Page" class="img-fluid d-none d-md-block  "/>
+                {# <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png"  alt="First Page" class="img-fluid d-none d-lg-inline-block d-xl-none"/>
+            <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png"  alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/> #}
+            </div>
+
+            <div class="col-12 col-md-6 text-container pl-md-5">
+                <h2 class="d-none d-lg-block">We know how to drive tangible improvements to your landing page design… and your ROI.</h2>
+                <p class="text-center text-sm-left">Any dollar spent on getting traffic to your website, without converting, is a dollar lost. Here at First Page, there's nothing we want more than to see your business grab every single sale it can.</p>
+                <p class="text-center text-sm-left">How do we do it? We test like mad. Out of all the possible designs under the sun, testing is how we work out which one is best for you. </p>
+                <p class="text-center text-sm-left">Want conversion rate optimisation for your landing page? It's our goal. Want to personalise the landing page for each persona or ad campaign? We can make that happen for you.</p>
+                <p class="text-center text-sm-left">Double your sales or more with a data-driven testing approach to landing page design. Not every agency offers landing page design in Melbourne, but First Page are your experts.</p>
+                <p class="text-center text-sm-left">It's time to turn your visitors into customers. Maximise your ROI with a landing page that converts.</p>
+            </div>
+
+        </div>
+    </section>
+
+    {% include "partials/en-section-free-session.twig" %}
+    {% include "partials/en-section-experience.twig" %}
+
+    <section class="section-paragraph section-faqs">
+        <div class="container">
+            <h2 class="section-title">Landing Page FAQs</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+                            {# Q1 #}
+                            <h3 itemprop="name">What is a landing page?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>A landing page is a webpage created specifically for a digital marketing campaign. A tailored landing page is designed to guide your visitors to a single goal.</p>
+                                <p>Want your web visitors to become paying customers? You need a seamless transition from the ad to the website. If your ad promises a specific benefit but then "lands" on a generic page, you'll end up losing visitors.</p>
+                                <p>A landing page is tailored to the people clicking on your ads. It talks specifically to their needs and guides them to convert.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+                            {# Q2 #}
+                            <h3 itemprop="name">Do I need a landing page?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Do you want customers? A landing page is designed with a single goal in mind: To get the people who clicked on your ad to become paying customers.</p>
+                                <p>Your landing page is your best foot forward to get people to sign up or buy something. Most pages on your website cover a lot of ground, to explain your products and services. They may have many links or Call-to-Actions (CTAs) to click on.</p>
+                                <p>A landing page is streamlined and tailored to the people clicking on your ads. It's designed entirely around boosting the conversion rates of your ad campaigns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+                            {# Q3 #}
+                            <h3 itemprop="name">What makes a good landing page?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The best landing pages are clear to understand and beautiful to interact with. Your landing page should follow best-practice design principles to help people convert.</p>
+                                <p>Use features that people can't help but pay attention to. Have faces, gentle movement and high-resolution images. Get straight to the point. Your web visitors will only hang around as long as it benefits them.</p>
+                                <p>Your ad landing page should look like something your customers want to see! Optimise your landing page to boost the conversion rate and ROI of your marketing campaigns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+                            {# Q4 #}
+                            <h3 itemprop="name">Is the landing page and home page the same?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Landing pages and home pages are built for different users, and different purposes. Focus your landing pages on driving the maximum ROI from your digital marketing campaigns.</p>
+                                <p>A home page is the gateway to explore your services. It's a general overview. Meanwhile, the ad landing page is where people "land" after clicking on an ad. They have focussed messaging to get people to convert. They're designed for the sale.</p>
+                                <p>A high-converting landing page is a tailored experience for your web visitors. Your digital marketing depends on a landing page design that can compel customers to convert.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+                            {# Q6 #}
+                            <h3 itemprop="name">What is an e-commerce landing page?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>An e-commerce landing page is a webpage created for an e-commerce digital marketing campaign. It's designed to drive home the sale and get your customer buying.</p>
+                                <p>Many of the best practices of landing page design have to be tailored for e-commerce campaigns. The landing page has to specifically show the products the person was promised in the ad. The page needs to be flexible for people who want to browse, but always focus on the sale.</p>
+                                <p>It's not a product page! The success of your e-commerce campaign hinges on having landing page designs that convert.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+                            {# Q6 #}
+                            <h3 itemprop="name">How do you test a landing page?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Testing is key to make your landing page as effective as possible at driving sales. The better your landing page, the more sales it'll drive. Testing is how you get there.</p>
+                                <p>Landing page tests are experiments to find out which aspects of the landing page design drive conversion. You need data analysis experts to work out what is the best landing page design to drive the most sales for you.</p>
+                                <p>If you can boost the conversion rate of your landing page, you can make more money without spending. Landing page tests can boost conversion rates to maximise your ROI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-form-popup.twig" with {'form_page': 'Landing Page Agency (Pop-up Form)'} %}
+
+{% endblock %}

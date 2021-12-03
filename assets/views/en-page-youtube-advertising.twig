@@ -1,0 +1,281 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+<style>
+    @media (max-width: 767px) {
+        .page-youtube-advertising .hero-mobile {
+            bottom: 29px;
+        }
+
+        .page-youtube-advertising section.banner .banner-description p {
+            min-height: 168px;
+        }
+    }
+</style>
+
+<section class="banner form-space">
+    <div class="container banner-hero">
+        <div class="banner-hero-cont">
+            <h1 class="form-hide">Get in front of your target audience with targeted YouTube ads</h1>
+            <div class="banner-description">
+                <p class="form-hide">Video marketing on YouTube is your ticket to brand awareness, quality leads, and monster sales. </p>
+                <div class="form-hide hero-mobile">
+                    <img src="{{ site.theme.link }}/assets/img/img-hero-youtube-mobile.png" srcset="{{ site.theme.link }}/assets/img/img-hero-youtube-mobile.png, {{ site.theme.link }}/assets/img/img-hero-youtube-mobile@2x.png 2x" alt="First Page" />
+                </div>
+            </div>
+            {% include "partials/en-form-services.twig" with {'form_page': 'YouTube Ads', 'form_button': 'Get A Free Quote'} %}
+            {% include "partials/en-section-awards-badges.twig" %}
+        </div>
+        <div class="hero-img d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/img-hero-youtube-tab.png" srcset="{{ site.theme.link }}/assets/img/img-hero-youtube-tab.png, {{ site.theme.link }}/assets/img/img-hero-youtube-tab@2x.png 2x" alt="First Page" />
+        </div>
+        <div class="hero-img d-none d-lg-block">
+            <img src="{{ site.theme.link }}/assets/img/img-hero-youtube.png" srcset="{{ site.theme.link }}/assets/img/img-hero-youtube.png, {{ site.theme.link }}/assets/img/img-hero-youtube@2x.png 2x" alt="First Page" />
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-enterprise-client-logos.twig" %}
+
+<section class="section-paragraph">
+    <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+        <div class="col-12 col-lg-6 image-container-right">
+            <img src="{{ site.theme.link }}/assets/img/img_youtube_ad.png" srcset="{{ site.theme.link }}/assets/img/img_youtube_ad.png, {{ site.theme.link }}/assets/img/img_youtube_ad@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/img_youtube_ad_mob.png" srcset="{{ site.theme.link }}/assets/img/img_youtube_ad_mob.png, {{ site.theme.link }}/assets/img/img_youtube_ad_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+        </div>
+        <div class="col-12 col-lg-6 text-container">
+            <h2>YouTube ads are highly targeted and extremely cost-effective</h2>
+            <p>If you are looking to explode growth for your business, there are few platforms that are as cost-effective, and scalable as YouTube. </p>
+            <p>Why?</p>
+            <p>The reason is simple - YouTube is the world’s second-largest search engine, and is owned by Google, the world’s largest search engine.</p>
+            <p>This means that you can create sophisticated ads that are highly targeted, and reach your exact customer base - no matter where they are in the world.</p>
+            <p>YouTube ads allow you to target based on many things, some of which include…</p>
+            <ul>
+                <li>Demographics</li>
+                <li>Specific areas of interest</li>
+                <li>Recent life events</li>
+            </ul>
+            <p>Additionally, you can also target your ads to similar/lookalike audiences, in-market audiences, as well as remarket to users who have already seen or engaged with your ads.</p>
+            <p>These targeting features are why YouTube ads are so powerful, and one of the most underrated digital advertising platforms on the planet. </p>
+            <button type="button" data-title="youtubeAdvertisingPage-get-freeproposal-youtube" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+        </div>
+    </div>
+</section>
+
+<section class="section-paragraph">
+    <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
+        <div class="col-12 col-lg-6 image-container-left">
+            <img src="{{ site.theme.link }}/assets/img/img_youtube.svg" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/img_youtube_mob.svg" class="img-fluid d-md-none" alt="First Page" />
+        </div>
+        <div class="col-12 col-lg-6 text-container">
+            <h2>Start running YouTube Ads that deliver 8x’s ROI with First Page</h2>
+            <p>When it comes to YouTube ads, we’re kind of a big deal.</p>
+            <p>Over the past 10 years our agency has exploded our client’s business with highly targeted ads that are designed for clicks and conversions.</p>
+            <p>And we are ready to do the exact same for you.</p>
+            <p>YouTube ads are extremely powerful, but only when done the right way. Running YouTube ads without proper knowledge and experience is basically the same thing as setting your money on fire. You need an agency who has run the right experiments and has the right network to successfully start, and run, an ads campaign.</p>
+            <p>Our team of YouTube-ad-ninjas are on standby. Call us now to secure a free strategy session with one of our team members, so we can show you our plan for growth for your business. </p>
+            <button type="button" data-title="youtubeAdvertisingPage-get-freeproposal-start" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+        </div>
+    </div>
+</section>
+
+<section class="section-client-reviews">
+    <div class="container">
+        <div class="section-title">
+            <h2>See what our clients<br class="d-sm-none"> are saying</h2>
+        </div>
+        <div class="row testimonial-cont">
+            <div class="col-12 col-md-4">
+                <div class="testimonial">
+                    <div class="stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                    </div>
+                    <div class="text">
+                        After meeting different SEO agents, First Page is still our go-to agency. Their Senior Digital Strategist, Angela provided us with a lot of insights and recommendations for our company. Very satisfied with their friendly yet professional service. Highly recommend! </div>
+                    <div class="person">
+                        <div class="name">EDWARD FINCH</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="testimonial">
+                    <div class="stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                    </div>
+                    <div class="text">
+                        If you are looking for a competent SEO company, I would highly recommend First Page. Jim and Derek have been quite understanding in finding out our business's needs. Our rankings have improved significantly!
+                    </div>
+                    <div class="person">
+                        <div class="name">YS Y</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="testimonial">
+                    <div class="stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                    </div>
+                    <div class="text">
+                        Shirlyn has been very dedicated and helpful in our SEO campaign. Apart from understanding our business needs, they boosted our SEO ranking significantly. Their team was willing to go the extra mile in promoting and updating us on suggestions to further improve our online image. </div>
+                    <div class="person">
+                        <div class="name">Liew Youxun</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="testimonial">
+                    <div class="stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                    </div>
+                    <div class="text">
+                        First Page has done a fantastic job with our SEO campaign. Their team are great at what they do and have been thorough in ensuring that our keywords are fully optimised to yield Page 1 results. </div>
+                    <div class="person">
+                        <div class="name">Insworld Institute</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="testimonial">
+                    <div class="stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                    </div>
+                    <div class="text">
+                        Gary has been very helpful in our SEO campaign since day 1. He never fails to constantly update us on our progress and provide resolutions. He definitely deserves 10 stars instead of 5 stars! Good job Gary! </div>
+                    <div class="person">
+                        <div class="name">TMH</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="testimonial">
+                    <div class="stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+                    </div>
+                    <div class="text">
+                        Cherlyn has been my Digital Campaign Manager for almost 3 years. She is responsive and knowledgeable about digital strategies. Considering my industry is highly competitive online, I have seen the amount of hard work she and her team have put into improving
+                        my website traffic.
+                    </div>
+                    <div class="person">
+                        <div class="name">SAMUEL C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include "partials/en-section-services-social.twig" %}
+
+{% include "partials/en-section-casestudy-british-connections.twig" %}
+
+<section class="section-paragraph section-faqs">
+    <div class="container">
+        <h2 class="section-title">Social Media Specialiast FAQs</h2>
+        <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">What are YouTube Ads?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>YouTube ads appear on the YouTube homepage, before, after and during a video, or search results. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">How does YouTube Advertising work?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>YouTube Ads are created through Google Adwords. After you create your video and upload it to Google Adwords, you can select the targeted demographic and ad placement. You then bid to display your ad based on your budget. Once someone watches your ad, you pay. All activity and analytics can be viewed on Google Adwords.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">What are the benefits of YouTube Ads?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>With over 1 billion views per day, the first and foremost benefit of YouTube advertising is access to a vast audience. Using the Google Adwords system, YouTube ads can also allow for your audience's granular targeting based on their interests, demographics, and customer matches. In addition to being cost-effective, YouTube advertising metrics are easily measured and lets you create actionable insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">What businesses should use YouTube Ads?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>With such a broad reach of targeted customers, YouTube advertising can be an excellent method for small and enterprise businesses. The visual and engaging nature of YouTube ads can help build brand awareness and influence the customer purchase journey – a shoo-in for any B2B or B2C company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">What types of YouTube ads are there?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>The different types of YouTube ads include non-skippable in-stream ads, TrueView ads, and non-video ads such as banners and overlays. TrueView ads are divided into in-stream ads, which can appear during a video, and video discovery ads appear on the search results page. You can add call-to-action that help drive conversions for your business. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+                        <h3 itemprop="name" class="h3-accordion-title-fpau">How do I get started with YouTube ads?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>You simply need to create an account on Google Adwords and link it to your YouTube account. Once you have a video you'd like to promote, you can select your targeting options such as demographics, keywords, and upload. If you'd like some help with your YouTube ad strategy, contact our digital marketing specialists today.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-free-session.twig" %}
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'YouTube Ads (Pop-up Form)'} %}
+
+{% endblock %}

@@ -1,0 +1,186 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+<style>
+@media (max-width: 767px){
+        .hero-mobile {
+        margin-bottom: -134px;
+        bottom: 28px;
+        }
+    }
+
+    @media (min-width: 768px){
+        section.banner .banner-hero .hero-img {
+            right: -64px;          
+        }
+    }
+    @media (min-width: 992px){
+        section.banner .banner-hero .hero-img {
+            right: -207px;          
+        }
+    }
+
+</style>
+
+<section class="banner form-space amazon-seo-banner">
+    <div class="container banner-hero ">
+        <div class="banner-hero-cont">
+            <h1 class="form-hide">Become a power seller on Amazon with our <br class="d-none d-md-block">cutting-edge techniques</h1>
+            <div class="banner-description form-hide">
+                <div class="form-hide hero-mobile">
+                    <img src="{{ site.theme.link }}/assets/img/img_amazon_seo_hero_mb.png" srcset="{{ site.theme.link }}/assets/img/img_amazon_seo_hero_mb.png, {{ site.theme.link }}/assets/img/img_amazon_seo_hero_mb@2x.png 2x" alt="First Page" />
+                </div>
+            </div>
+            {% include "partials/en-form-services.twig" with {'form_page': 'Amazon SEO', 'form_button': 'Get A Free Quote'} %}
+            {% include "partials/en-section-awards-badges.twig" %}
+        </div>
+
+        <div class="hero-img d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/amazon_seo_hero_md.png" srcset="{{ site.theme.link }}/assets/img/amazon_seo_hero_md.png, {{ site.theme.link }}/assets/img/amazon_seo_hero_md@2x.png 2x" alt="First Page" />
+        </div>
+
+        <div class="hero-img d-none d-lg-block">
+            <img src="{{ site.theme.link }}/assets/img/amazon_seo_hero_lg.png" srcset="{{ site.theme.link }}/assets/img/amazon_seo_hero_lg.png, {{ site.theme.link }}/assets/img/amazon_seo_hero_lg@2x.png 2x" alt="First Page" />
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+<section class="section-paragraph">
+    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+        <div class="col-12 col-md-6 image-container-right">
+            <img src="{{ site.theme.link }}/assets/img/img_amazon_seo.png" srcset="{{ site.theme.link }}/assets/img/img_amazon_seo.png, {{ site.theme.link }}/assets/img/img_amazon_seo@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/img_amazon_seo_mb.png" srcset="{{ site.theme.link }}/assets/img/img_amazon_seo_mb.png, {{ site.theme.link }}/assets/img/img_amazon_seo_mb@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+        </div>
+
+
+
+        <div class="col-12 col-md-6 text-container">
+            <h2>Boost high-quality leads with Amazon SEO</h2>
+            <p>In the world of <a href="{{ home_url }}ecommerce-seo/">e-commerce</a>, there’s no point having an online store if your ideal target market simply isn't aware that it exists. This is especially important when it comes to standing out amid the ultra-competitive space that is Amazon, with over 50% of retailers on the platform being a third-party brand. However, a razor-sharp approach to Amazon SEO can ensure you capture the attention of your customer base and boost conversions.</p>
+            <p>Amazon is the world’s largest online retailer, featuring more than 12 million products spanning an incredible array of categories. With the help of an expert team like <a href="{{ home_url }}">First Page Australia</a>, we can make sure your product pages are optimised to the highest standards, ensuring you stand out amongst this bustling marketplace and increase your sales.</p>
+            <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE AMAZON SEO QUOTE</button>
+        </div>
+    </div>
+</section>
+
+<section class="section-paragraph">
+    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-6 image-container-left">
+            <img src="{{ site.theme.link }}/assets/img/img-competitor_seo.png" srcset="{{ site.theme.link }}/assets/img/img-competitor_seo.png, {{ site.theme.link }}/assets/img/img-competitor_seo@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/img-competitor_seo_mb.png" srcset="{{ site.theme.link }}/assets/img/img-competitor_seo_mb.png, {{ site.theme.link }}/assets/img/img-competitor_seo_mb@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+        </div>
+        <div class="col-12 col-md-6 text-container">
+            <h2>Detailed competitor analysis increases sales</h2>
+            <p>Having worked alongside over 1,700 clients from around the globe –  and assessed thousands more – our team’s unmatched experience means we know exactly how e-commerce businesses like yours approach Amazon SEO. With this comprehensive understanding of the platform’s landscape, we can implement a variety of <a href="{{ home_url }}">digital marketing techniques</a> to ensure your ideal customers choose your products over the competition.</p>
+            <p>In taking this approach to Amazon SEO, we’ll draw incredible insights from what is and isn’t working for your key competitors. This data-driven approach means we can make rapid improvements to your success as we assess and fine-tune our campaign to surpass your rivals. As we develop a complete picture of your customers’ decision-making process, we can convince them to spend their money with you.</p>
+            <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE AMAZON SEO QUOTE</button>
+        </div>
+    </div>
+</section>
+
+<section class="section-paragraph">
+    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+        <div class="col-12 col-md-6 image-container-right">
+            <img src="{{ site.theme.link }}/assets/img/amazon-growth-lg.png" srcset="{{ site.theme.link }}/assets/img/amazon-growth-lg.png, {{ site.theme.link }}/assets/img/amazon-growth-lg@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/amazon-growth-mb.png" srcset="{{ site.theme.link }}/assets/img/amazon-growth-mb.png, {{ site.theme.link }}/assets/img/amazon-growth-mb@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
+        </div>
+        <div class="col-12 col-md-6 text-container">
+            <h2>Benefit from a tailored Amazon SEO campaign</h2>
+            <p>When it comes to leading an effective Amazon SEO campaign, taking a generic approach simply won’t achieve the results you need. That’s why every campaign we lead is carefully tailored to meet the specific needs of our clients. By backing your business with a curated strategy that responds to both the strengths of your brand and the desires of your target market, you can quickly grow above and beyond expectations. </p>
+            <p>As we plan and execute a tailored strategy for your brand, we get to know what makes your products special. In doing so, we’ll delve into the data behind your online store’s performance, picking out the areas where we can make the most drastic improvement. Powered by powerful market research and data analysis, our forward-thinking approach to Amazon SEO delivers outstanding results.</p>
+            <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE AMAZON SEO QUOTE</button>
+        </div>
+    </div>
+</section>
+
+<section class="section-paragraph">
+    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-6 image-container-left">
+            <img src="{{ site.theme.link }}/assets/img/profit_growth_img_lg.svg" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            <img src="{{ site.theme.link }}/assets/img/profit_growth_img_mb.svg" class="img-fluid d-md-none" alt="First Page" />
+        </div>
+        <div class="col-12 col-md-6 text-container">
+            <h2>Skyrocket reach and secure long-term success</h2>
+            <p>If it’s time to establish or improve your Amazon store, First Page Australia has the expertise your business needs. Our top-notch understanding of all things optimation means we can pair your products with high-performance titles, descriptions and images, ensuring customers flood to your business. Plus, we can design an incredibly <a href="{{ home_url }}amazon-ppc/">productive PPC campaign</a> to ensure you're attracting the most customers possible.</p>
+            <p>Don’t worry – we won’t leave you in the dark as we implement changes to your online store. We produce detailed monthly reports that delve into our approach and reveal how we’re having a positive impact on your growth. As we make small changes to deliver even more success, your business is bound to make a splash on Amazon’s unparalleled e-commerce platform.</p>
+            <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE AMAZON SEO QUOTE</button>
+        </div>
+    </div>
+</section>
+
+
+{% include "partials/en-section-free-session.twig" %}
+{# <section class="section-letstalk section-orange">
+    <div class="container">
+        <h2 class="mb-3"><strong>Change the way you do business</strong></h2>
+        <p class="mb-4">Every day you're not doing Amazon SEO is a day that you are losing to your competitors.<br>
+            Call us today to see how we can help grow your presence on Amazon.</p>
+        <button class="btn fp-btn fp-btn-white fp-btn-shadow show-popup-form">GET A FREE AMAZON SEO QUOTE</button>
+    </div>
+</section> #}
+
+
+<section class="section-paragraph section-faqs py-5 mt-2">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+                        <h3 itemprop="name">What Is Amazon SEO?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Getting your products listed on Amazon is a good start, but you need to do more if you want to truly stand out to customers browsing this e-commerce giant. This is where Amazon SEO services become highly relevant as companies can optimise their webstore for maximum traffic and conversions. Alongside detailed Amazon SEO strategies like research-driven titles, product descriptions and images, you can attract the ideal customers and surpass your competitors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+                        <h3 itemprop="name">How Does SEO For Amazon Webstores Work? </h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Amazon SEO works much the same as any other optimisation campaign. Backed by a dedicated approach to market research, competitor analysis and <a href="{{ home_url }}seo/">SEO fundamentals</a>, you can develop a winning strategy that ensures customers take notice of your webstore. While your business can attempt this complex process alone, <a href="{{ home_url }}">First Page Australia’s</a> cost-effective Amazon SEO services have a proven track record of generating incredible results for an enormous range of clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+                        <h3 itemprop="name">Why Are Amazon SEO Services Important? </h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>As the world’s biggest e-commerce platform, Amazon offers untold potential when it comes to selling products to local and international customers. But this fundamental appeal also means thousands of other companies just like yours are trying to do the same. By undertaking a comprehensive Amazon SEO campaign, it’s possible to significantly grow your customer base as you appear in more relevant search results and strategically convince customers to click checkout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+                        <h3 itemprop="name">How Do I Get My Product Ranked Higher on Amazon? </h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Finding a way to place your products amongst Amazon’s top listings is incredibly lucrative. But this ambition won’t simply take care of itself. By embarking on an extensive Amazon SEO plan alongside a renowned agency like First Page Australia, our optimisation services will boost your rankings, increase your conversion rate and ultimately ensure your business rises above its rivals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'Amazon SEO (Pop-up Form)'} %}
+
+{% endblock %}

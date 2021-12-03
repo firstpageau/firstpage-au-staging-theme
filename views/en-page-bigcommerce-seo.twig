@@ -1,0 +1,259 @@
+{% extends "en-base.twig" %}
+
+{% block content %}
+<style>
+.hero-img-mobile{
+    margin-bottom:-26px;
+}
+section.banner .banner-hero .hero-img {
+    right: -78px;
+    bottom: -30px;
+ }
+
+@media(min-width:992px){
+section.banner .banner-hero .hero-img {
+    right: -203px;
+    bottom: -89px;
+}
+
+section.banner .banner-hero .banner-hero-cont {
+  
+    max-width: 757px;
+}
+
+}
+</style>
+
+<section class="banner form-space">
+    <div class="container banner-hero">
+        <div class="banner-hero-cont">
+            <h1 class="form-hide text-center text-md-left">Amplify your sales with <br class="d-none d-lg-block" /> data-driven BigCommerce SEO</h1>
+            <br class="d-none d-lg-block" />
+            <br class="d-none d-lg-block" />
+            <div class="banner-description">
+                 <div class="hero-img-mobile form-hide">
+                    <img class="img-fluid d-block d-md-none mx-auto pl-3" src="{{ site.theme.link }}/assets/img/img_hero_sam_2_sm.png" srcset="{{ site.theme.link }}/assets/img/img_hero_sam_2_sm.png, {{ site.theme.link }}/assets/img/img_hero_sam_2_sm@2x.png 2x" alt="First Page" />
+                </div>
+            </div>
+            {% include "partials/en-form-services.twig" with {'form_page': 'Bigcommerce SEO', 'form_button': 'Get A Free Quote'} %}
+            {% include "partials/en-section-awards-badges.twig" %}
+        </div>
+        <div class="hero-img d-none d-md-block d-lg-none">
+            <img src="{{ site.theme.link }}/assets/img/img_hero_sam_2_md.png" srcset="{{ site.theme.link }}/assets/img/img_hero_sam_2_md.png, {{ site.theme.link }}/assets/img/img_hero_sam_2_md@2x.png 2x" alt="First Page" />
+        </div>
+        <div class="hero-img d-none d-lg-block">
+            <img src="{{ site.theme.link }}/assets/img/img_hero_sam_2_lg.png" srcset="{{ site.theme.link }}/assets/img/img_hero_sam_2_lg.png, {{ site.theme.link }}/assets/img/img_hero_sam_2_lg@2x.png 2x" alt="First Page" />
+        </div>
+    </div>
+</section>
+
+{% include "partials/en-section-featured-in-news.twig" %}
+
+{# row 1 #}
+<section class="section-paragraph">
+    <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/img_bigcommerce_logo.png" srcset="{{ site.theme.link }}/assets/img/img_bigcommerce_logo.png, {{ site.theme.link }}/assets/img/img_bigcommerce_logo@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Optimise your business growth with BigCommerce SEO from the experts at <br class="d-none d-lg-block">First Page</h2>
+                <img src="{{ site.theme.link }}/assets/img/img_bigcommerce_logo_sm.png" srcset="{{ site.theme.link }}/assets/img/img_bigcommerce_logo_sm.png, {{ site.theme.link }}/assets/img/img_bigcommerce_logo_sm@2x.png 2x" class="img-fluid d-block d-md-none mx-auto mb-4" alt="First Page" />
+
+                <p class="text-center text-md-left">As the world of e-commerce becomes even more competitive over the next decade, ensuring your online store is based on the best platform will only boost your traffic and sales. BigCommerce has become the fastest-growing e-commerce solution in recent years, showcasing incredible features that maximise security, reliability and scalability.</p>
+                <p class="text-center text-md-left">So why should your business choose BigCommerce to handle your online store? Perhaps the best reason is that it comes complete with everything you need to launch your business to success. Supported by remarkably flexible design features, you can ensure your specific products and services virtually leap off the page. </p>
+                <p class="text-center text-md-left">Slow websites will lead to dramatically increased bounce rates, meaning you won’t have a chance of maximising your profit. However, BigCommerce is great for pure speed, with Google Cloud, Google AMP and Akamai Image Manager built into the service. Meanwhile, this e-commerce platform is jam-packed with exceptional SEO features to help your brand reach its target market effectively.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# row 2 #}
+<section class="section-paragraph">
+    <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/img_bigcommerce.png" srcset="{{ site.theme.link }}/assets/img/img_bigcommerce.png, {{ site.theme.link }}/assets/img/img_bigcommerce@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Reach and convert your customers with a top-notch BigCommerce SEO website</h2>
+                <img src="{{ site.theme.link }}/assets/img/img_bigcommerce_sm.png" srcset="{{ site.theme.link }}/assets/img/img_bigcommerce_sm.png, {{ site.theme.link }}/assets/img/img_bigcommerce_sm@2x.png 2x" class="img-fluid d-block d-md-none mx-auto mb-4" alt="First Page" />
+
+                <p class="text-center text-md-left">SEO is all about making your website more appealing to your specific customer base. Fortunately, BigCommerce ensures businesses can take their search engine optimisation to even greater heights with a comprehensive list of on-page and technical SEO features that achieve your objectives. Backed by the highly experienced BigCommerce SEO experts at First Page, we can push these tools to their limit.</p>
+                <p class="text-center text-md-left">As we get to know your business and its target market, we can implement a customised theme designed for maximum conversions. Plus, we can deliver a mobile-responsive version of your website that captures the attention of customers browsing on their smartphone or tablet. </p>
+                <p class="text-center text-md-left">Throughout this process, our extensive keyword research ensures your website attracts consumers that have a high chance of purchasing. With BigCommerce offering a stellar content management system, your company’s blogs and guides will skyrocket your search ranking visibility when created by our SEO team.</p>
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{# row 3 #}
+<section class="section-paragraph">
+    <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/img_work_in_office.png" srcset="{{ site.theme.link }}/assets/img/img_work_in_office.png, {{ site.theme.link }}/assets/img/img_work_in_office@2x.png 2x" class="img-fluid d-none d-md-inline-block pr-3" alt="First Page" />
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>Partner with our award-winning team and let the experts SEO your BigCommerce website </h2>
+                <img src="{{ site.theme.link }}/assets/img/img_work_in_office_sm.png" srcset="{{ site.theme.link }}/assets/img/img_work_in_office_sm.png, {{ site.theme.link }}/assets/img/img_work_in_office_sm@2x.png 2x" class="img-fluid d-block d-md-none mx-auto mb-4" alt="First Page" />
+
+                <p class="text-center text-md-left">Ready to achieve your ranking goals and smash your sales targets? The talented team at First Page know what it takes to turn dreams into reality. Backed by our data-driven strategies personalised for your precise needs, we SEO BigCommerce websites to their maximum potential.</p>
+                <p class="text-center text-md-left">BigCommerce is a beloved e-commerce platform for its user-friendly nature. However, you need to support your online operations with a tailored SEO campaign to generate life-changing results. First Page’s expert digital marketers work closely alongside our partners to deliver a unique strategy for your needs. This highly beneficial approach will make incredible inroads on your ultimate target from the moment we launch.</p>
+                <p class="text-center text-md-left">Across website traffic, conversions and brand awareness, our adaptable SEO solutions push our client’s BigCommerce websites up the search engine rankings. Plus, our detailed reports ensure you always know how we’re using your budget. <a href="{{home_url}}contact/">Get in touch</a> today to skyrocket your BigCommerce SEO success.</p>
+
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% include "partials/en-section-free-session.twig" %}
+
+<section class="section-paragraph section-faqs pb-5">
+    <div class="container">
+        <h2 class="section-title">BigCommerce SEO FAQs</h2>
+        <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+                        <h3 itemprop="name">What is BigCommerce SEO?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>BigCommerce SEO is how you can ensure your e-commerce store reaches its target market and generates sales. By optimising the BigCommerce features that matter to your success, you can attract a precise customer base that has a genuine interest in buying your products. </p>
+                            <p>This can be achieved through both on-page and technical <a href="{{home_url}}seo/">SEO</a> changes. By partnering with First Page, our expert team will conduct a thorough analysis of your website to ensure our techniques achieve your goals. Alongside keyword-driven descriptions, <a href="{{home_url}}link-building/">link building</a> strategies, content marketing and more, we'll outperform your expectations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+                        <h3 itemprop="name">Is BigCommerce SEO good for websites?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>While other e-commerce platforms like Shopify and WooCommerce have enjoyed a headstart over BigCommerce, this innovative platform has taken huge strides to become one of the most exciting in the space. With BigCommerce including a range of outstanding features for SEO, optimising your website to achieve your targets is within your grasp.</p>
+                            <p>It doesn’t matter what kind of products you’re looking to sell – engaging and converting your most desired target market is possible with a personalised strategy. The highly experienced team at First Page can SEO BigCommerce websites to the fullest extent, ensuring you generate outstanding traffic and sales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+                        <h3 itemprop="name">Why is BigCommerce SEO important?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Choosing a comprehensive e-commerce platform like BigCommerce ensures your business has all the features it needs to generate exceptional sales. However, the e-commerce landscape becomes more competitive every day as more of your industry rivals get online and fight for attention. You need to do more to avoid getting left behind.</p>
+                            <p>BigCommerce SEO is designed to help your website on the platform achieve the highest possible ranking on search engines like Google, Bing and Yahoo. By ensuring your website appeals to search engine algorithms, you can boost your visibility in search results and attract a target market that cares about your specific products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+                        <h3 itemprop="name">How to use SEO in BigCommerce Websites?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>An effective SEO campaign is tailored to a company’s specific needs. But there’s no shortage of incredibly productive methods to implement on a BigCommerce website to ensure it reaches and converts the ideal customers. By levelling up your organic reach, your business can establish a solid foundation for the future.</p>
+                            <p>Primarily, you need a detailed keyword research strategy that ensures you know the terms used by your target market. This can be used to power up your page titles, URL structure, meta descriptions, category descriptions and more. Meanwhile, we can optimise your structured data, page load speeds and mobile responsiveness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+                        <h3 itemprop="name">How to get started with BigCommerce SEO?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Whether you’re launching a brand new e-commerce website or looking to rejuvenate an existing online store that isn’t quite hitting your targets, BigCommerce SEO is best executed following a comprehensive audit. This way, BigCommerce SEO companies like First Page can plan and deliver a strategy that achieves your specific goals.</p>
+                            <p>Using this approach, we can ensure we start making huge progress on your targets immediately. Although every campaign is different, you need a site structure that your target market loves to navigate. Meanwhile, you must conduct detailed keyword research that ensures you understand how your customers search for products like yours on the internet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+                        <h3 itemprop="name">How to improve website traffic with BigCommerce SEO?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>BigCommerce SEO is an involved and potentially time-consuming process that requires a thoughtful plan to succeed. If you’re looking to reach the perfect target market, you need a strategy that considers search engine optimisation from every perspective. It starts by choosing a user-friendly theme that elegantly highlights the features of your products. </p>
+                            <p>You must also conduct detailed keyword research to enhance everything from page category titles and product descriptions to blog posts. Alongside effective changes like using HTTPS protocol, generating sitemaps and enabling breadcrumbs, you can SEO your BigCommerce website to an industry-leading standard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse7">
+                        <h3 itemprop="name">How will BigCommerce SEO improve my online store?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse7" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>SEO for BigCommerce websites is hugely powerful when planned and executed by a skilled digital marketing agency like First Page. As we get to know your business and what engages your target market, we can enact a concise campaign that takes action on your goals from the very beginning. </p>
+                            <p>For instance, we'll customise a BigCommerce theme suited to your brand voice and products. We can then apply a variety of SEO techniques that enhance your ability to rank on search engines. From optimised product pages and compelling blog posts to blazing-fast loading times, BigCommerce SEO improves your online store in countless ways.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse8">
+                        <h3 itemprop="name">What are the top features of BigCommerce?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse8" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>BigCommerce has experienced insane growth, driven by comprehensive and versatile features that allow you to scale with ease. You can quickly design an aesthetically pleasing website by customising one of the pre-built templates. Meanwhile, unlimited file storage and product listings mean you never have to worry about the size of your catalogue.</p>
+                            <p>BigCommerce also uses a single-page checkout process, which helps enhance your conversion rate as there are fewer hurdles for buyers to overcome. Alongside 99% uptime and an adaptable coupon code system, BigCommerce's built-in SEO features help your business outpace its competition on the search engine rankings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse9">
+                        <h3 itemprop="name">How much does SEO for BigCommerce websites cost?</h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse9" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Understand that every business has different needs when it comes to search engine optimisation. This means endless factors go into determining the price of any campaign – ranging from your target market and industry to your current ranking performance and your long-term goals.</p>
+                            <p>Despite this fact, know that the talented team at <a href="{{home_url}}">First Page</a> will do everything in our power to reach your objectives no matter what budget you have to spend. As we relish the opportunity to collaborate with our clients, we can help your business develop reasonable targets and maximise your campaign's ROI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse10">
+                        <h3 itemprop="name">How do I choose a BigCommerce SEO company? </h3>
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse10" class="collapse">
+                        <div itemprop="text" class="card-body">
+                            <p>Selecting a BigCommerce SEO company to lead your campaign is a critical decision that can prove costly if you get it wrong. While it’s tempting to choose the cheapest option you can find, understand that this means your campaign will likely be outsourced overseas to less-experienced workers. </p>
+                            <p>If you decide to partner with First Page, know that we're putting the most effort possible into your campaign. Backed by our wealth of expertise, having led thousands of campaigns for companies big and small, we handle every task locally to ensure our clients experience only the top results from their investment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'Bigcommerce SEO (Pop-up Form)'} %}
+
+{% endblock %}

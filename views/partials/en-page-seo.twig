@@ -1,789 +1,783 @@
 {% extends "en-base.twig" %}
-
 {% block content %}
 
-    <style>
-        section.section-casestudy.casestudy-seo-new {
-            background-image: url("{{ site.theme.link }}/assets/img/img_ipad_justlogin@2x.png");
-            background-size: 1464px auto;
-            background-position-x: calc(50% + 556px);
-        }
-    </style>
+	<style>
+		section.section-casestudy.casestudy-seo-new {
+			background-image: url("{{ site.theme.link }}/assets/img/img_ipad_amway@2x.png");
+			background-size: 1464px auto;
+			background-position-x: calc(50% + 556px);
+		}
+		.case-study-md-img {
+			margin-bottom: -36px;
+		}
+		.slick-next,
+		.slick-prev {
+			width: 56px !important;
+			height: 56px !important;
+		}
+		.container-padding {
+			padding: 0 34px;
+		}
+		@media(max-width: 767px) {
+			.container-padding {
+				padding: 0 15px;
+			}
+		}
+		@media(max-width: 991px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px 0 34px !important;
+			}
+		}
+		@media(max-width: 767px) {
+			section.section-paragraph .text-container {
+				padding: 0 15px !important;
+			}
+		}
+	</style>
 
-    <section class="banner form-space">
-        <div class="container banner-hero two-lines">
-            <div class="banner-hero-cont">
-                <h1 class="form-hide">Grow 10 times faster with exceptional SEO</h1>
-                <div class="banner-description">
-                    <p class="form-hide">Blow your competition away and absolutely dominate Google by partnering with
-                        the highest rated seo agency in APAC.</p>
-                    <div class="form-hide hero-mobile">
-                        <img src="{{ site.theme.link }}/assets/img/img_hero_seo_mob.png"
-                             srcset="{{ site.theme.link }}/assets/img/img_hero_seo_mob.png, {{ site.theme.link }}/assets/img/img_hero_seo_mob@2x.png 2x"
-                             alt="First Page"/>
-                    </div>
-                </div>
-                {% include "partials/en-form-services.twig" with {'form_page': 'SEO', 'form_button': 'Get A Free Quote'} %}
-                {% include "partials/en-section-awards-badges.twig" %}
-            </div>
-            <div class="hero-img d-none d-md-block d-lg-none">
-                <img src="{{ site.theme.link }}/assets/img/img_hero_seo_tab.png"
-                     srcset="{{ site.theme.link }}/assets/img/img_hero_seo_tab.png, {{ site.theme.link }}/assets/img/img_hero_seo_tab@2x.png 2x"
-                     alt="First Page"/>
-            </div>
-            <div class="hero-img d-none d-lg-block">
-                <img src="{{ site.theme.link }}/assets/img/img_hero_seo.png"
-                     srcset="{{ site.theme.link }}/assets/img/img_hero_seo.png, {{ site.theme.link }}/assets/img/img_hero_seo@2x.png 2x"
-                     alt="First Page"/>
-            </div>
-        </div>
-    </section>
+	<section class="banner form-space">
+		<div class="container banner-hero two-lines">
+			<div class="banner-hero-cont">
+				<h1 class="form-hide">Grow 10 times faster with exceptional SEO</h1>
+				<div class="banner-description">
+					<p class="form-hide">
+						Blow your competition away and absolutely dominate Google by partnering with the highest rated SEO agency in APAC.
+					</p>
+					<div class="form-hide hero-mobile">
+						<img src="{{ site.theme.link }}/assets/img/img_hero_seo_mob.png" srcset="{{ site.theme.link }}/assets/img/img_hero_seo_mob.png, {{ site.theme.link }}/assets/img/img_hero_seo_mob_update@2x.png 2x" alt="First Page"/>
 
-    {% include "partials/en-section-featured-in-news.twig" %}
+					</div>
+				</div>
+				{% include "partials/en-form-services.twig" with {'form_page': 'SEO',
+      'form_button': 'Get A Free Quote'} %}
+				{% include "partials/en-section-awards-badges.twig" %}
+			</div>
+			<div class="hero-img d-none d-md-block d-lg-none">
+				<img src="{{ site.theme.link }}/assets/img/img_hero_seo_tab.png" srcset="{{ site.theme.link }}/assets/img/img_hero_seo_tab.png, {{ site.theme.link }}/assets/img/img_hero_seo_tab@2x.png 2x" alt="First Page"/>
+			</div>
+			<div class="hero-img d-none d-lg-block">
+				<img src="{{ site.theme.link }}/assets/img/img_hero_seo.png" srcset="{{ site.theme.link }}/assets/img/img_hero_seo.png, {{ site.theme.link }}/assets/img/img_hero_seo@2x.png 2x" alt="First Page"/>
+			</div>
+		</div>
+	</section>
 
-    <section class="section-paragraph">
-        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
-            <div class="col-12 col-lg-6 image-container-right">
-                <img src="{{ site.theme.link }}/assets/img/img_profit.svg" class="img-fluid d-none d-md-inline-block"
-                     alt="First Page"/>
-                <img src="{{ site.theme.link }}/assets/img/img_profit_mob.svg" class="img-fluid d-md-none"
-                     alt="First Page"/>
-            </div>
-            <div class="col-12 col-lg-6 text-container text-container-seo-new">
-                <h2>Triple the size of your business by teaming up with an award-winning SEO company</h2>
-                <p>At First Page, we believe your business is a unique achievement. What you do deserves to be seen by
-                    the world - and that means absolutely dominating Google for your industry. </p>
-                <p>In today’s digital economy, you MUST build an attention-grabbing online presence that sets you apart
-                    from your competition...
-                    First Page is all about delivering the visibility you deserve! We’re the game-changing SEO agency
-                    that specialises in driving an obscene amount of traffic to your website. </p>
-                <button type="button" data-title="seopage-get-freeproposal-Triple" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-paragraph ">
-        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
-            <div class="col-12 col-lg-6 image-container-left">
-                <img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource.png"
-                     srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource@2x.png 2x"
-                     class="img-fluid d-none d-md-inline-block" alt="First Page"/>
-                <img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mob.png"
-                     srcset="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mob.png, {{ site.theme.link }}/assets/img/img_seo_we_dont_outsource_mob@2x.png 2x"
-                     class="img-fluid d-md-none" alt="First Page"/>
-            </div>
-            <div class="col-12 col-lg-6 text-container">
-                <h2>Why risk your business and livelihood by outsourcing your SEO to an agency that outsources to a
-                    developing country. </h2>
-                <p>99% of the seo companies in Australia compromise on quality by outsourcing to third world countries.
-                    We just don’t get it. We should be called the SEO agency clean-up crew, because time and time again,
-                    we are cleaning up the mess when a third party has outsourced overseas. The whole process ends up
-                    costing the business more money and time to reverse the problem. Plus think of the opportunity
-                    cost!</p>
-                <p>We take pride in keeping everything in-house and we would never jeopardise your business by cutting
-                    corners. So why risk your business, your income, your livelihood with an seo agency who cuts
-                    corners.</p>
-                <button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-casestudy casestudy-seo-new">
-        <div class="container">
-            <div class="content-area">
-                <div class="info">
-
-                    <span class="small-grey casestudy-sm-title">Our Recent Work</span>
-                    <strong class="casestudy-company">JustLogin</strong>
-                    <div class="mb-3"></div>
-
-                    <p>With the launch of their new website, they engaged First Page to take over from their existing
-                        SEO agency. We completely transformed their SEO strategy and blew their competition out of the
-                        water, here are the results:</p>
-                </div>
-
-                <div class="stats">
-                    <div class="stats-container">
-                        <div class="row">
-                            <div class="col-12 ">
-
-                                <div class="seo-new-case-study-content"><span>378</span>% <br class="d-block d-sm-none">
-                                    increase in organic
-                                    traffic in just
-                                    6 months
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-paragraph">
-        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row ">
-            <div class="col-12 col-lg-6 image-container-right">
-                <img src="{{ site.theme.link }}/assets/img/img_seo_traffic.png"
-                     srcset="{{ site.theme.link }}/assets/img/img_seo_traffic.png, {{ site.theme.link }}/assets/img/img_seo_traffic@2x.png 2x"
-                     class="img-fluid d-none d-md-inline-block" alt="First Page"/>
-                <img src="{{ site.theme.link }}/assets/img/img_seo_traffic_mob.png"
-                     srcset="{{ site.theme.link }}/assets/img/img_seo_traffic_mob.png, {{ site.theme.link }}/assets/img/img_seo_traffic_mob@2x.png 2x"
-                     class="img-fluid d-md-none" alt="First Page"/>
-            </div>
-            <div class="col-12 col-lg-6 text-container text-container-seo-new">
-                <h2>Get more leads and sales than your business can handle with insanely good SEO. </h2>
-                <div class="pt-2 d-block d-sm-none"></div>
-                <p>The details are in the data and that’s why we are obsessed with data when making decisions that
-                    directly impact your SEO strategy and your business. Just a slight tweak to your SEO strategy can
-                    dramatically impact the way of your website ranks and displays in the search results.</p>
-                <p>This is pretty crazy, but we have the ability to predict Google algorithm updates due to custom
-                    built, in-house proprietary tech - SENTR<span style="font-size: 22px">&trade;</span>. What does this
-                    mean for you? Imagine the possibilities if you could predict the future. With the huge amount of
-                    data SENTR<span style="font-size: 22px">&trade;</span> processes, we have the ability to prepare and
-                    capitalise on future algorithmic updates. We’re always one step ahead, that’s why we provide the
-                    best SEO services in Australia.</p>
-                <button type="button" data-title="seopage-get-freeproposal-Get" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-features section-grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <img src="{{ site.theme.link }}/assets/img/icn_revenue.svg" width="83" height="80" alt="First Page">
-                    <h5>Generated over $3.8+ billion <br class="d-none d-lg-block">
-                        in sales for our clients</h5>
-                </div>
-                <div class="col-12 col-md-4">
-                    <img src="{{ site.theme.link }}/assets/img/img_google-reviews.svg" width="198" height="80"
-                         alt="First Page">
-                    {# <img src="{{ site.theme.link }}/assets/img/icn_google_reviews.png" width="160" height="80" srcset="{{ site.theme.link }}/assets/img/icn_google_reviews.png, {{ site.theme.link }}/assets/img/icn_google_reviews@2x.png 2x" alt="First Page" /> #}
-                    <h5>500+ Google reviews globally <br class="d-none d-lg-block">
-                        with a 4.9/5 rating</h5>
-                </div>
-                <div class="col-12 col-md-4">
-                    <img src="{{ site.theme.link }}/assets/img/icn_awards.svg" width="73" height="80" alt="First Page">
-                    <h5>Won 14 digital awards <br class="d-none d-lg-block">
-                        and counting</h5>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-paragraph">
-        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
-            <div class="col-12 col-lg-6 image-container-right">
-                <img src="{{ site.theme.link }}/assets/img/img_google_search.svg"
-                     class="img-fluid d-none d-md-inline-block" alt="First Page"/>
-                <img src="{{ site.theme.link }}/assets/img/img_google_search_mob.svg"
-                     class="img-fluid d-md-none" alt="First Page"/>
-            </div>
-            <div class="col-12 col-lg-6 text-container">
-                <h2>Play the SEO game better than your competition, otherwise you’ll be left behind. </h2>
-                <p>The reality is, whoever doubles down on their SEO will win in the end. What do I mean by win? Well,
-                    winning is absolutely dominating Google for your industry. Extreme brand domination will drive
-                    traffic, leads & sales which directly impacts your revenue and your back pocket.</p>
-                <p>Keep this in mind, 3.5 billion Google searches are conducted every day. The top 5 organic search
-                    results receive 68% of these clicks. </p>
-                <p>The real question is - can you afford NOT to be on the first page of Google?</p>
-                <button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
-            </div>
-        </div>
-    </section>
-
-    {% include "partials/en-section-services-seo-new.twig" %}
-    {% include "partials/en-section-experience.twig" %}
-
-    <section class="section-paragraph section-faqs seo-new-faq-one">
-        <div class="container">
-            <h2 class="text-center pt-5"><img class="d-none d-sm-inline"
-                                              src="{{ site.theme.link }}/assets/img/img_cross.svg" alt=""><img
-                        style="width:65px; margin-right:-10px; margin-top:-3px;" class="d-inline d-sm-none"
-                        src="{{ site.theme.link }}/assets/img/img_cross_mob.svg" alt="">12 signs your SEO
-                <br class="d-block d-sm-none"> agency is making major mistakes</h2>
-            <p class="text-center pb-3">We’ll get straight to the point, if your current seo company isn’t meeting your
-                expectations, it could be time to jump ship. But if you’re unsure, here are 12 possible signs that your
-                current seo agency may not be right for your business.</p>
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
-                            <h3 class="pb-3">1. Your SEO agency won’t provide performance milestones
-                                (guarantees).</h3>
-                        </div>
-                        <div id="collapse1"
-                             class="collapse">
-                            <div class="card-body">
-                                <p>Is your SEO agency refusing to support their SEO services with performance
-                                    milestones? The simple reason is, if they did - they would then need to be
-                                    accountable for results. Crazy right!</p>
-                                <p>Instead, they make excuses for their poor performance. They might say “trust us” or
-                                    “please be patient” while they search for solutions. But can you really depend upon
-                                    an SEO agency that doesn’t have the confidence to back itself?</p>
-                                <p>If you run a successful business, then we doubt you're in the habit of paying for
-                                    services you're not actually receiving. KPI’s and clear targets are VITAL as they
-                                    ensure you get the level of service you deserve.</p>
-                                <p>First Page offers unbeatable performance guarantees every step of the way. We commit
-                                    to key milestones, explain our progress, and talk through our results in detail. And
-                                    if there’s ever a time we don’t deliver - you won’t pay until we do. </p>
-                                <p>There’s a reason why First Page takes this approach. We believe in the potential of
-                                    your business to succeed and our ability to deliver exponential SEO and growth for
-                                    your business. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
-                            <h3 class="pb-3">2. Your website is connected with low quality, spammy backlinks.</h3>
-                        </div>
-                        <div id="collapse2" class="collapse">
-                            <div class="card-body">
-                                <p>Google uses a simple recipe when it comes to cooking up spicy backlinks…E-A-T:
-                                    Expertise, Authoritativeness and Trustworthiness. The question is - what is your
-                                    current seo agency delivering?</p>
-                                <p>The way Google ranks websites and decides which factors to incentivise is always
-                                    changing. This information remains top secret. But some golden rules consistently
-                                    serve up great results!</p>
-                                <p>Links from expert, authoritative and trusted sources are considered a valuable
-                                    resource and help your website to rank higher.
-                                </p>
-                                <p>We see so many SEO services promising backlinks that will boost your search rankings.
-                                    But the truth is, these links aren’t what they appear...
-                                </p>
-                                <p>Look closer, and you’ll see they don’t follow the E-A-T process. They’re from spammy
-                                    websites, shady businesses, and irrelevant industries - making their contribution to
-                                    your site meaningless. </p>
-                                <p>It’s all about quality, not quantity, and at First Page - that’s exactly what we
-                                    deliver!!
-                                </p>
-                                <p>We specialise in local links from relevant industries and influential sources. We
-                                    seamlessly blend these backlinks into premium copy and long-form content that will
-                                    captivate your target audience.
-                                </p>
-                                <p>It’s a 5-star service that delivers insanely strong results!!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
-                            <h3 class="pb-3">3. Lazy keyword stuffing.</h3>
-                        </div>
-                        <div id="collapse3" class="collapse">
-                            <div class="card-body">
-                                <p>Avoid SEO agencies that use cheap, lazy tactics by stuffing keywords into existing
-                                    content. Content needs to flow! Google wants to find and rank the best, informative
-                                    websites. Why? It provides a better experience for the Googler.
-                                </p>
-                                <p>Search engine algorithms are constantly crawling for the highest quality content.
-                                    Well-crafted web pages from authoritative sources score highest and gain the most
-                                    attention.
-                                </p>
-                                <p>Blogs and websites that provide real benefit to your audience and communicate
-                                    valuable information. Your copy MUST be original, unique and authoritative!!
-                                </p>
-                                <p>Most SEO agencies DO NOT do this!! We’ve all seen terrible, keyword stuffing web copy
-                                    that has only been written to target keywords. This content is often outsourced
-                                    overseas to save money - and it shows. It’s depressing to read and damaging to your
-                                    brand.
-                                </p>
-                                <p>At First Page, we’re home to an in-house team of talented content writers. We pride
-                                    ourselves on quality copy that’s both optimised and engaging.
-                                </p>
-                                <p>We take the time to learn who you are and what you do. We then deliver personalised
-                                    content that builds on the offerings of your business. We don’t outsource - meaning
-                                    we can promise premium copywriting that really tells your story.
-                                </p>
-                                <p>Simple SEO copywriting is dead. Today, it’s about generating long-form articles and
-                                    multi-media content that achieves serious social media shares and organic traffic.
-                                    The truth is that every online business is in the content game.
-                                </p>
-                                <p>So ask yourself, is your current seo company giving you the winning formula?
-                                </p>
+	{% include "partials/en-section-featured-in-news.twig" %}
 
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
-                            <h3 class="pb-3">4. You’re not connecting with the right audience. </h3>
-                        </div>
-                        <div id="collapse4" class="collapse">
-                            <div class="card-body">
-                                <p>Whether you’re a small family business or international eCommerce platform - it’s
-                                    essential your seo agency is driving high quality traffic to your website. If your
-                                    website traffic is growing, but your sales are not, there’s a real issue.
-                                </p>
-                                <p>Driving traffic is one thing, but your seo agency must understand your objectives and
-                                    ideal buying personas to really achieve exceptional results.
-                                </p>
-                                <p>If you’re not connecting with your target audience online then it’s time to talk to
-                                    First Page. We don’t make excuses, we commit to connecting you to your desired
-                                    customer.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
-                            <h3 class="pb-3">5. Sketchy Schema Markup that's hurting your Google presence.</h3>
-                        </div>
-                        <div id="collapse5" class="collapse">
-                            <div class="card-body">
-                                <p>Second rate schema markup actively harms your site. Most seo companies provide
-                                    generic schema or substandard coding. Google simply won’t accept this, meaning you
-                                    won’t see the growth or visibility you need. </p>
-                                <p>Google actively rewards websites that are designed around SEO best practice. Schema
-                                    markup is code that tells Google exactly what your business is, in language the
-                                    algorithms can understand.
-                                </p>
-                                <p>Our technical SEO optimisation will tell Google the content of your webpage. It also
-                                    provides data that can be included in your rich snippets, such as new product
-                                    launches, new content, and upcoming events. Your snippets will pop on search pages -
-                                    and this means serious CTR!!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
-                            <h3 class="pb-3">6. A sluggish site that's boring visitors.</h3>
-                        </div>
-                        <div id="collapse6" class="collapse">
-                            <div class="card-body">
-                                <p>Run a speed test on your website. If it’s slow and you’re current seo company hasn’t
-                                    tried to fix it, immediately jump overboard and swim for your life. Real SEO gurus
-                                    will tell you that the speed of your site directly impacts your visibility on
-                                    Google.
-                                </p>
-                                <p>Just 15% of websites load at Google’s recommended speed. A loading time of even an
-                                    extra few seconds increases costs and decrease sales.
-                                </p>
-                                <p>In Feb 2021, Google updated its core website vitals, and speed has become one of the
-                                    most important ranking factors.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+	<section class="section-paragraph">
+		<h2 class="d-none d-md-block d-lg-none container-padding">Triple the size of your business by teaming up with an award-winning SEO company</h2>
 
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse7">
-                            <h3 class="pb-3">7. You’re losing potential opportunities to your competitors.</h3>
-                        </div>
-                        <div id="collapse7" class="collapse">
-                            <div class="card-body">
-                                <p>Is there a new competitor in your industry who has come from nowhere and is now
-                                    beating you on Google? You’re probably thinking, how is that possible! I’m doing
-                                    seo, I’ve been in business longer, I should be dominating.
-                                </p>
-                                <p>Remember, SEO requires work. Those who invest time and money into quality SEO will
-                                    win. So if you’re paying an SEO agency a monthly retainer and you’re seeing very
-                                    little results, I would question why. What exactly are you paying for? How are they
-                                    investing your management fee? Ask the questions and the truth will come out.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+		<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+			<div class="col-12 col-md-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/img_profit.svg" srcset="{{ site.theme.link }}/assets/img/img_profit.svg, {{ site.theme.link }}/assets/img/img_profit.svg" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/img_profit.svg" srcset="{{ site.theme.link }}/assets/img/img_profit.svg, {{ site.theme.link }}/assets/img/img_profit.svg" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2 class="d-block d-md-none d-lg-block">
+					Triple the size of your business by teaming up with an award-winning SEO company
+				</h2>
+				<img src="{{ site.theme.link }}/assets/img/img_profit_mob.svg" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">
+					SEO agencies talk a big game, but the majority actually lack real world business experience. They’ve never built a successful business outside of their agency. They’re actually recommending strategies that will fill their back pocket.
+				</p>
+				<p class="text-center text-md-left">The First Page team owns and operates companies outside of the agency industry so we know exactly how to build a profitable online business in a short amount of time. Stuff the guesswork, work with an agency who actually has real world business growth experience.
+				</p>
 
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse8">
-                            <h3 itemprop="name" class="pb-3">8. "It takes time to see results".</h3>
-                        </div>
-                        <div id="collapse8" class="collapse">
-                            <div class="card-body">
-                                <p>A good SEO campaign will usually take 2-6 months to produce their best results. But
-                                    many seo agencies will hide behind the excuse “seo is a long term strategy, you
-                                    won’t see results for 12 months”. That’s just “BS”.
-                                </p>
-                                <p>Depending on the search term, you can achieve some quick wins with in-depth Google My
-                                    Business Optimisation, long term search terms & powerful Schema Markup. Always take
-                                    advantage of the low hanging fruit!
-                                </p>
-                                <p>At First Page, you can track your campaign day or night, with our online reporting
-                                    dashboard that has all the essential stats to make informed decisions. Google never
-                                    sleeps, so we can’t either.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<p class="text-center text-md-left">
+					In today’s digital economy, you MUST build an attention-grabbing online presence that sets you apart from your competition... First Page is all about delivering the visibility you deserve! We’re the game-changing SEO agency that specialises in driving an obscene amount of traffic to your website.
+				</p>
+				<button type="button" data-title="seopage-get-freeproposal-Triple" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
 
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse9">
-                            <h3 itemprop="name" class="pb-3">9. Your SEO agency doesn’t understand your business. </h3>
-                        </div>
-                        <div id="collapse9" class="collapse">
-                            <div class="card-body">
-                                <p>Do you feel your current seo company doesn’t understand your business? No matter how
-                                    hard you try, they just don’t get it. They just don’t understand you or your vision
-                                    for the business. Does this sound familiar? Most likely they’re taking a cookie
-                                    cutter approach to SEO. </p>
-                                <p>The First Page performs a thorough onboarding session to completely understand your
-                                    business, your objectives and to ensure there is 100% goal alignment. Think of First
-                                    Page as your new in-house digital marketing team.
-                                </p>
-                                <p>Our SEO campaigns are all about delivering actual, observable benefits for your
-                                    business.
-                                    We’re here to grow your revenue!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+	<section class="section-paragraph">
+		<h2 class="d-none d-md-block d-lg-none text-container">
+			Why risk your business and livelihood by outsourcing your SEO to an agency that outsources to a developing country.
+		</h2>
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left pr-lg-5">
+				<img src="{{ site.theme.link }}/assets/img/img_seo_we_dont_outsource.png" srcset="{{ site.theme.link }}/assets/img/img_office_chat_lg@2x.png, {{ site.theme.link }}/assets/img/img_office_chat_lg@2x.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/img_office_chat_md.png" srcset="{{ site.theme.link }}/assets/img/img_office_chat_md@2x.png, {{ site.theme.link }}/assets/img/img_office_chat_md@2x.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2 class="d-block d-md-none d-lg-block">
+					Why risk your business and livelihood by outsourcing your SEO to an agency that outsources to a developing country.
+				</h2>
+				<img src="{{ site.theme.link }}/assets/img/img_office_chat_sm.png" srcset="{{ site.theme.link }}/assets/img/img_office_chat_sm.png, {{ site.theme.link }}/assets/img/img_office_chat_sm@2x.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-center text-md-left">99% of the seo companies in Australia compromise on quality by outsourcing to third world countries. We just don’t get it. We actually have a nickname “the clean-up crew”, because time and time again, we are cleaning up the mess when a third party has outsourced overseas. The whole process ends up costing the business more money and time to reverse the problem. Plus think of the opportunity cost!</p>
+				<p class="text-center text-md-left">We take pride in keeping everything in-house and we would never jeopardise your business by cutting corners. So why risk your business, your income and your livelihood with an seo agency who cuts corners.</p>
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
 
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse10">
-                            <h3 class="pb-3">10. A cookie cutter SEO strategy that lacks creativity. </h3>
-                        </div>
-                        <div id="collapse10" class="collapse">
-                            <div class="card-body">
-                                <p>In the SEO world, we’ve seen the good, the bad and the ugly. You’ll be surprised in
-                                    this day and age, how many SEO companies still deliver crappy, substandard SEO.
-                                </p>
-                                <p>Whether it’s our unique approach to SEO or exceptional social media strategy -
-                                    there’s a reason why First Page is known as one of the most creative agencies in
-                                    APAC.
-                                </p>
-                                <p>Our commitment to quality means we’re constantly innovating. We show up with energy
-                                    and commitment every day - which translates to more leads & sales than your business
-                                    can possibly handle.
-                                </p>
-                                <p>
-                                    If your current agency is bland, beige and full of jargon, then it’s time to reach
-                                    out to First Page - a creative SEO agency!!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+	{# case study md only #}
 
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse11">
-                            <h3 class="pb-3">11. Your current agency cares more about charging you, than actually
-                                helping your business win.</h3>
-                        </div>
-                        <div id="collapse11" class="collapse">
-                            <div class="card-body">
-                                <p>Do you struggle to get hold of your digital account manager? Do they take days to
-                                    respond to your emails? Sound familiar? I bet when there is an outstanding payment
-                                    they’re chasing you like a pack of wolves.
-                                </p>
-                                <p>Unfortunately many seo companies in Australia and even the world look for shortcuts
-                                    to financial success rather than playing the long game. They would rather burn a
-                                    customer for a few extra bucks now, than have that same customer on the books for
-                                    years and years. It’s stupidity at its best!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+	<section class="section-casestudy section-casestudy-md d-none d-md-block d-lg-none">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-5">
+					<div class="info">
+						<span class="small-grey casestudy-sm-title">Our Recent Work</span>
+						<strong class="casestudy-company">Amway</strong>
+						<div class="mb-3"></div>
 
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse12">
-                            <h3>12. There's no technical department to support you. </h3>
-                        </div>
-                        <div id="collapse12" class="collapse">
-                            <div class="card-body">
-                                <p>SEO is a complex process and if it’s implemented poorly, a number of things can go
-                                    wrong. We’ve seen seo agencies break websites, add content in the wrong places,
-                                    delete pages and a whole lot more. It’s crucial that if you require assistance or
-                                    advice, you get the immediate technical support, day or night.
-                                </p>
-                                <p>When you hire an SEO agency, you want to feel you’re supported every step of the way.
-                                    First Page has technical help on hand, in Australia when you need it most. </p>
-                                <p>In addition to a dedicated digital marketing SEO specialist who’ll be your regular
-                                    point of contact, our technical specialists understand SEO inside out. They’ll
-                                    provide dependable, professional support at all times.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+						<p>We developed and executed an integrated digital strategy comprising of multiple paid media channels & SEO and here are the results:</p>
+					</div>
+				</div>
 
-            </div>
-        </div>
-    </section>
+				<div class="col-7">
+					<img class="case-study-md-img img-fluid float-right" src="{{ site.theme.link }}/assets/img/img_casestudy_amway_md.png" srcset="{{ site.theme.link }}/assets/img/img_casestudy_amway_md@2x.png, {{ site.theme.link }}/assets/img/img_casestudy_amway_md@2x.png 2x" alt="First Page"/>
+				</div>
+			</div>
+		</div>
 
-    {% include "partials/en-section-free-session.twig" %}
-    <section class="section-paragraph section-faqs pb-5">
-        <div class="container">
-            <h2 class="section-title">Search Engine Optimisation (SEO) FAQ’s </h2>
-            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
-                            <h3 itemprop="name">Why should I make the switch to First Page?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>First Page is the fastest growing agency in APAC, servicing a roster of global brands
-                                    including Microsoft, Cathay Pacific and Rolls Royce. In saying that, we work with
-                                    brands of all shapes & sizes.
-                                </p>
-                                <p>First Page is built with smart, savvy and driven talent - we’re the next generation
-                                    of digital marketers and SEO specialists. </p>
-                                <p>So, what does this mean for you and your business? </p>
-                                <p>It demonstrates we have what it takes to help you succeed online. We have the PROVEN
-                                    expertise to deliver unrivalled growth and an avalanche of traffic!!</p>
-                                <p>And because we trust our abilities, we offer GUARANTEED results. If this sounds like
-                                    a rare opportunity, that’s because it is. The truth is that so few agencies in
-                                    Australia can deliver SEO at the level we do. </p>
-                                <p>If you’re starting to realise that your current agency isn’t living up to
-                                    expectations, then perhaps it’s time to speak with us. Our team of SEO gurus are
-                                    always available to
-                                    <a href="{{ home_url }}contact/">begin a conversation</a> about making the switch to
-                                    First Page. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
-                            <h3 itemprop="name">Are you experienced in eCommerce SEO?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>There’s a reason why eCommerce businesses highly recommend our SEO services... </p>
-                                <p>We’ve spent years talking to the owners of online stores and listening to their
-                                    stories. Then, we developed a suite of
-                                    <a href="{{ home_url }}ecommerce-seo/">eCommerce SEO</a> services based on this
-                                    in-depth understanding. </p>
-                                <p>We have extensive experience with Shopify, Magento, BigCOmmerce, WooCommerce and
-                                    more. We’re an seo agency with serious SEO prowess. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
-                            <h3 itemprop="name">How can I organise my FREE on-site SEO audit?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Simply reach out to our digital marketing specialists! Our FREE onsite SEO audit is
-                                    just the beginning of our relationship. We want to start with a clear understanding
-                                    of where you are now and where you could be in the future.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
-                            <h3 itemprop="name">What SEO results do you guarantee?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>We have a variety of performance milestone options with our most popular being the
-                                    traffic guarantee. </p>
-                                <p>Our traffic guarantees are tailored to your business and how many visitors we can
-                                    drive to your site. And if there’s ever a time that we don’t meet these targets -
-                                    we’ll work for free until we do. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse17">
-                            <h3 itemprop="name">When can I expect to see SEO results?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Most digital marketing agencies make the excuse that SEO takes a long time to deliver
-                                    results. The truth is that any good digital marketing agency will offer a selection
-                                    of strategies. </p>
-                                <p>If you need serious traffic fast, First Page can deliver!!</p>
-                                <p>We commit to working with targets so we’re aligned with your business goals. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse18">
-                            <h3 itemprop="name">Can you provide SEO for global businesses?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>We’re a global agency that can produce global results in multiple languages. We offer
-                                    <a href="{{ home_url }}international-seo/">International SEO</a> services designed
-                                    to introduce your business to the world stage. Using our data-driven approach, we
-                                    research your clients, competition and keywords. Then, we use this insight to create
-                                    a personalised SEO campaign and library of quality content. </p>
-                                <p>The result is exponential increases in traffic, leads, and sales. Over and over, we
-                                    watch the skyrocketing search rankings of our clients. It’s a pleasure to see
-                                    hard-working businesses make it big - and we’re proud that our International SEO
-                                    agency services can deliver this global visibility. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse19">
-                            <h3 itemprop="name">Is SEO right for my business? </h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Let's find out! SEO is not for everyone and anyone who tells you otherwise, is just
-                                    trying to sell you. Best to reach out to one of our in-house SEO specialists so we
-                                    can discuss options. It’s important that any digital strategy is aligned with your
-                                    business objectives. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse20">
-                            <h3 itemprop="name">Who creates the SEO content for my web pages?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Most SEO companies will outsource your copy to cheap writers with no experience. This
-                                    literally breaks our heart. All of the effort you’ve put into developing your brand
-                                    will be for nothing because it’s not being communicated with quality content. </p>
-                                <p>First Page is home to an in-house team of professional content creators. We
-                                    specialise in original, high-quality copywriting and content for some of the world’s
-                                    leading brands. </p>
-                                <p>We love connecting our creative team to new businesses because the results are so
-                                    exciting!! We take the time to understand your brand before amplifying your message
-                                    with sharp and snappy web copy and blogs. </p>
-                                <p>This content is built around your target keywords to further increase your rankings.
-                                    We achieve an insane amount of views, clicks and traffic!! </p>
-                                <p>It’s rare to find great content online. But it's even more special to find a team who
-                                    can actually present your brand in an interesting and entertaining way - and ALSO
-                                    boost your SEO. It’s a serious double-whammy that does wonders for our clients!!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+		<div class="row no-gutters case-study-md-stats-row">
+			<div class="stats">
+				<div class="stats-container">
+					<div class="row">
+						<div class="col-12">
+							<div class="seo-new-case-study-content pl-5">
+								<span>75X</span><br class="d-block d-sm-none"/>
+								return on marketing spend within 6 months
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse21">
-                            <h3 itemprop="name">What link building methods do you use?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Link building is the process of acquiring links from other websites to yours. It’s
-                                    one of the most effective strategies to boost your authority and explode your Google
-                                    rankings!!</p>
-                                <p>We want to establish you as an expert in your industry and position you alongside
-                                    other leaders in the community. And how do we achieve this? By ONLY using quality
-                                    backlinks. </p>
-                                <p>This can’t be said for other agencies. Time and again, we see quantity over quality.
-                                    It might look good on the surface, but peer under the hood and you’ll discover
-                                    you’re ACTUALLY receiving terrible links with zero authority. </p>
-                                <p>First Page is home to a dedicated team of link building masters. They use their
-                                    networks to connect with influential industry figures who will supply you with
-                                    quality links to your website. This is what a serious link building strategy looks
-                                    like. </p>
-                                <p>When you need an SEO agency that only uses quality backlinks and really cares about
-                                    quality, then it’s time to make the switch to First Page. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+	{# case study lg #}
+	<section class="section-casestudy casestudy-seo-new d-block d-md-none d-lg-block">
+		<div class="container">
+			<div class="content-area">
+				<div class="info">
+					<span class="small-grey casestudy-sm-title">Our Recent Work</span>
+					<strong class="casestudy-company">Amway</strong>
+					<div class="mb-3"></div>
 
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse22">
-                            <h3 itemprop="name">Do you outsource your SEO services overseas? </h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>ABSOLUTELY NOT. All seo work is performed locally in Australia. We would never risk
-                                    your business and your back pocket by outsourcing SEO. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+					<p class="pr-lg-4">
+						We developed and executed an integrated digital strategy comprising of multiple paid media channels & SEO and here are the results:
+					</p>
+				</div>
 
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse23">
-                            <h3 itemprop="name">How do you report on the progress of my SEO campaign?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Because we care about your ROI, our team closely generates a comprehensive range of
-                                    metrics. You can even track your campaign through SENTR<span
-                                            style="font-size: 22px">&trade;</span> - an online reporting platform we
-                                    created to map your progress.</p>
-                                <p>SENTR<span style="font-size: 22px">&trade;</span> is an intuitive online portal where
-                                    you’ll find all of the resources you need to monitor your campaign. We provide
-                                    access to live links and reporting which is backed by Google Analytics and Google
-                                    Search Console. All of this data is combined into one simple and easy to read
-                                    report. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<div class="stats">
+					<div class="stats-container">
+						<div class="row">
+							<div class="col-12">
+								<div class="seo-new-case-study-content">
+									<span>75X</span><br class="d-block d-sm-none"/>
+									return on marketing spend within 6 months
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                <div class="col-12 col-lg-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse24">
-                            <h3 itemprop="name">Can First Page promise to improve my performance?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>At First Page, we guarantee results. We believe there’s never been a more important
-                                    time to support Australian businesses. </p>
-                                <p>SEO will help you attract more customers than ever before. It’s all about connecting
-                                    you to your customers and communicating what you do best. It’s the most precise and
-                                    targeted way to reach your existing audience - plus new and emerging
-                                    demographics. </p>
-                                <p>Search engine success means connecting with your customers and driving major organic
-                                    traffic. This is your shot at serious sales!!</p>
-                                <p>We’re confident in our ability to boost your search results rankings and drive
-                                    traffic to your website. Not many SEO agencies offer this level of assurance. </p>
-                                <p>But because we’re backed by years of industry experience and the best young minds in
-                                    digital marketing, we’re not afraid to commit outstanding performance. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	{# roadmap section #}
+	<section class="section-roadmap container pt-md-0 pt-lg-5">
+		<h2 class="text-center mb-md-5 mt-xl-5">Our roadmap of results is easier to follow than
+			<br class="d-none d-lg-block">Leo Dicaprio’s love life</h2>
+		<div
+			class="row">
+			{# step 1 #}
+			<div class="col-12 col-md-4">
+				<img src="{{ site.theme.link }}/assets/img/icon_roadmap_1.svg" class="img-fluid d-block m-auto" alt="First Page" style="height: 84px;"/>
+				<p class="text-center roadmapStep">STEP 1</p>
+				<div class="roadmapDes">
+					<h3 class="text-center">Comprehensive digital audit</h3>
+					<p class="text-center">Utilising our proprietary tech, we'll deep-dive into your current digital marketing channels to understand what is working, as well as identify hidden opportunities for improvement.</p>
 
-    {% include "partials/en-form-popup.twig" with {'form_page': 'SEO (Pop-up Form)'} %}
+				</div>
+			</div>
+			{# step 2 #}
+			<div class="col-12 col-md-4">
+				<img src="{{ site.theme.link }}/assets/img/icon_roadmap_2.svg" class="img-fluid d-block m-auto" alt="First Page"/>
+				<p class="text-center roadmapStep">STEP 2</p>
+				<div class="roadmapDes">
+					<h3 class="text-center">No fluff, bulletproof growth strategy</h3>
+					<p class="text-center">We'll design and implement your bespoke digital strategy. This is a carefully crafted battle plan, scalable and honed to achieve your most ambitious goals</p>
 
-{% endblock %}
+				</div>
+			</div>
+			{# step 3 #}
+			<div class="col-12 col-md-4">
+				<img src="{{ site.theme.link }}/assets/img/icon_roadmap_3.svg" class="img-fluid d-block m-auto" alt="First Page"/>
+				<p class="text-center roadmapStep">STEP 3</p>
+				<div class="roadmapDes">
+					<h3 class="text-center">Judge us by our results</h3>
+					<p class="text-center">We only settle for exceptional ROI. Your growth strategy is carefully monitored and measured to ensure all KPI’s are exceeded.</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph">
+		<h2 class="d-none d-md-block d-lg-none text-container">
+			Get more leads and sales than your business can handle with insanely good SEO.
+		</h2>
+		<div class="row no-gutters flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-6 image-container-left pr-lg-5">
+				<img src="{{ site.theme.link }}/assets/img/img_seo_traffic.png" srcset="{{ site.theme.link }}/assets/img/img_seo_traffic.png, {{ site.theme.link }}/assets/img/img_seo_traffic@2x.png 2x" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/img_seo_traffic.png" srcset="{{ site.theme.link }}/assets/img/img_seo_traffic.png, {{ site.theme.link }}/assets/img/img_seo_traffic@2x.png 2x" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<h2 class="d-block d-md-none d-lg-block">
+					Get more leads and sales than your business can handle with insanely good SEO.
+				</h2>
+				<img src="{{ site.theme.link }}/assets/img/img_seo_traffic_mob.png" srcset="{{ site.theme.link }}/assets/img/img_seo_traffic_mob.png, {{ site.theme.link }}/assets/img/img_seo_traffic_mob@2x.png 2x" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+				<p class="text-cente text-md-left">The details are in the data and that’s why we are obsessed with data when making decisions that directly impact your SEO strategy and your business. Just a slight tweak to your SEO strategy can dramatically impact the way of your website ranks and displays in the search results.</p>
+
+				<p class="text-center text-md-left">This is pretty crazy, but we have the ability to predict Google algorithm updates due to custom built, in-house proprietary tech - SENTR™. What does this mean for you? Imagine the possibilities if you could predict the future. With the huge amount of data SENTR™ processes, we have the ability to prepare and capitalise on future algorithmic updates. We’re always one step ahead, that’s why we provide the best SEO services in Australia.</p>
+
+				<button type="button" data-title="seopage-get-freeproposal-Why" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+					GET A FREE QUOTE
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-features section-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<img src="{{ site.theme.link }}/assets/img/icn_revenue.svg" width="83" height="80" alt="First Page"/>
+					<h5>
+						Generated over $3.8+ billion
+						<br class="d-none d-lg-block"/>
+						in sales for our clients
+					</h5>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="{{ site.theme.link }}/assets/img/img_google-reviews.svg" width="198" height="80" alt="First Page"/>
+					<h5>
+						500+ Google reviews globally
+						<br class="d-none d-lg-block"/>
+						with a 4.9/5 rating
+					</h5>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="{{ site.theme.link }}/assets/img/icn_awards.svg" width="73" height="80" alt="First Page"/>
+					<h5>
+						Won 14 digital awards
+						<br class="d-none d-lg-block"/>
+						and counting
+					</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{# clients comments section #}
+	{% include "partials/en-section-clients-comments.twig" %}
+
+	{# why choose us section #}
+	<section class="section-why-choose-us container pt-md-0 pt-lg-5">
+		<h2 class="text-center mb-5 pb-md-3 mt-xl-5">Why we’re marriage material</h2>
+		{# row 1 #}
+		<div class="row mb-lg-4">
+			<div class="col-12 col-lg-6">
+				<div class="d-flex align-items-start">
+					<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+					<p>Transparent, in-depth online reporting with actionable insights and recommendations.</p>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div class="d-flex align-items-start">
+					<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+					<p>Your campaign builds, research and data are yours to keep.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{# row 2 #}
+	<div class="row mb-lg-4">
+		<div class="col-12 col-lg-6">
+			<div class="d-flex align-items-start">
+				<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+				<p>All members of our execution & account servicing teams are Google Black Belt Certified.</p>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6">
+			<div class="d-flex align-items-start">
+				<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+				<p>Nothing is outsourced overseas. We employ 170+ in-house performance marketers, SEO technicians, developers and social media specialists in our Melbourne office.</p>
+			</div>
+		</div>
+	</div>
+	{# row 3 #}
+	<div class="row">
+		<div class="col-12 col-lg-6">
+			<div class="d-flex align-items-start">
+				<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+				<p>We are a Google “Premier Partner”, which means as of June 2021 - only 3% of all global agencies will maintain this title - we are one of them.</p>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6">
+			<div class="d-flex align-items-start">
+				<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+				<p>Unbeatable quarterly performance milestones.</p>
+			</div>
+		</div>
+	</div>
+
+
+</section>
+
+
+<section class="section-paragraph">
+	<div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+		<h2 class="d-none d-md-block d-lg-none container-padding">
+			Play the SEO game better than your competition, otherwise you’ll be left behind.
+		</h2>
+		<div class="col-12 col-md-6 image-container-right">
+			<img src="{{ site.theme.link }}/assets/img/img_google_search.svg" class="img-fluid d-none d-md-inline-block" alt="First Page"/>
+
+		</div>
+		<div class="col-12 col-md-6 text-container">
+			<h2 class="d-block d-md-none d-lg-block">
+				Play the SEO game better than your competition, otherwise you’ll be left behind.
+			</h2>
+			<img src="{{ site.theme.link }}/assets/img/img_google_search_mob.svg" class="img-fluid d-block d-md-none mx-auto pb-4" alt="First Page"/>
+			<p>
+				The reality is, whoever doubles down on their SEO will win in the end.
+																																																																																																																																																																																																																																																																																																																																																																																																																        What do I mean by win? Well, winning is absolutely dominating Google for
+																																																																																																																																																																																																																																																																																																																																																																																																																        your industry. Extreme brand domination will drive traffic, leads &
+																																																																																																																																																																																																																																																																																																																																																																																																																        sales which directly impacts your revenue and your back pocket.
+			</p>
+			<p>
+				Keep this in mind, 3.5 billion Google searches are conducted every day.
+																																																																																																																																																																																																																																																																																																																																																																																																																        The top 5 organic search results receive 68% of these clicks.
+			</p>
+			<p>
+				The real question is - can you afford NOT to be on the first page of
+																																																																																																																																																																																																																																																																																																																																																																																																																        Google?
+			</p>
+			<button type="button" data-title="seopage-get-freeproposal-Play" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">
+				GET A FREE QUOTE
+			</button>
+		</div>
+	</div>
+</section>
+
+{% include "partials/en-section-experience-new.twig" %}
+
+{% include "partials/en-section-services-seo-carousel.twig" with {'heading': 'Alternative SEO solutions designed to grow <br class="d-none d-lg-block"/> your revenue with ease.'} %}
+
+
+{% include "partials/en-section-free-session.twig" %}
+
+<section class="section-location container">
+	<div class="row no-gutters">
+		<div class="col-12 col-lg-4">
+			<h3 class="text-center text-lg-left">We service the whole of Australia!</h3>
+			<p class="text-center text-lg-left">We also have the in-house talent & resources to market your business globally in multiple languages, such as:</p>
+			<div
+				class="row no-gutters">
+				{# other location 0  #}
+				<div class="col-6 col-md-4 col-lg-6 mb-2">
+					<div class="d-flex align-items-start justify-content-center justify-content-lg-start otherLocation">
+						<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+						<p class="locationText">English</p>
+					</div>
+				</div>
+				{# other location 1  #}
+				<div class="col-6 col-md-4 col-lg-6 mb-2">
+					<div class="d-flex align-items-start justify-content-center justify-content-lg-start otherLocation">
+						<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+						<p class="locationText">Spanish</p>
+					</div>
+				</div>
+				{# other location 2  #}
+				<div class="col-6 col-md-4 col-lg-6 mb-2">
+					<div class="d-flex align-items-start justify-content-center justify-content-lg-start otherLocation">
+						<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+						<p class="locationText">Thai</p>
+					</div>
+				</div>
+				{# other location 3  #}
+				<div class="col-6 col-md-4 col-lg-6 mb-2">
+					<div class="d-flex align-items-start justify-content-center justify-content-lg-start otherLocation">
+						<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+						<p class="locationText">Chinese</p>
+					</div>
+				</div>
+				{# other location 4  #}
+				<div class="col-6 col-md-4 col-lg-6 mb-2">
+					<div class="d-flex align-items-start justify-content-center justify-content-lg-start otherLocation">
+						<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+						<p class="locationText">Arabic</p>
+					</div>
+				</div>
+				{# other location 5  #}
+				<div class="col-6 col-md-4 col-lg-6 mb-2">
+					<div class="d-flex align-items-start justify-content-center justify-content-lg-start otherLocation">
+						<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+						<p class="locationText">Japanese</p>
+					</div>
+				</div>
+				{# other location 6  #}
+				<div class="col-6 col-md-4 col-lg-6 mb-2">
+					<div class="d-flex align-items-start justify-content-center justify-content-lg-start otherLocation">
+						<img class="blueTickIcon" src="{{ site.theme.link }}/assets/img/icon_blue_tick.svg" alt="First Page"/>
+						<p class="locationText">Portuguese</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="col-12 col-lg-8">
+			<div class="position-relative map-bg">
+				<p class="locationName locationDarwin">Darwin</p>
+				<a href="{{home_url}}seo-sunshine-coast/" class="locationName locationSunshineCoast">Sunshine Coast</a>
+				<a href="{{home_url}}seo-brisbane/" class="locationName locationBrisbane">Brisbane</a>
+				<a href="{{home_url}}seo-gold-coast/" class="locationName locationGoldCoast">Gold Coast</a>
+				<a href="{{home_url}}seo-sydney/" class="locationName locationSydney">Sydney</a>
+				<a href="{{home_url}}seo-canberra/" class="locationName locationCanberra">Canberra</a>
+				<a href="{{home_url}}seo-melbourne/" class="locationName locationMelbourne">Melbourne</a>
+				<p class="locationName locationHobart locationText">Hobart</p>
+				<a href="{{home_url}}seo-paramatta/" class="locationName locationParamatta">Parramatta</a>
+				<p class="locationName locationGeelong locationText">Geelong</p>
+				<a href="{{home_url}}seo-ballarat/" class="locationName locationBallarat">Ballarat</a>
+				<p class="locationName locationBendigo locationText">Bendigo</p>
+				<a href="{{home_url}}seo-adelaide/" class="locationName locationAdelaide">Adelaide</a>
+				<a href="{{home_url}}seo-perth/" class="locationName locationPerth">Perth</a>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<section class="section-paragraph section-faqs pb-5">
+	<div class="container">
+		<h2 class="section-title">An overview of SEO.</h2>
+		<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+						<h3 itemprop="name">What is SEO?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Search engine optimisation (SEO) is how businesses ensure their website appeals to the algorithms that underpin the most popular search engines. While no one knows the exact parameters used to rank websites – except maybe Google – we know numerous ranking factors can be leveraged to drive massive growth. Finding and optimising the ideal combination of these ranking factors is how a team of experts will achieve your business objectives.
+							</p>
+							<p>With these factors including everything from keywords and content quality to detailed link building profiles, technical changes and local listings, we have the power to push your website up the results page. By creating a website and overall online presence that appeals to your customers and resonates with search engine algorithms, Google will start giving your business more attention than your rivals. Considering 75% of users never look beyond the first page of results, placing your business near the number one spot must be a top priority.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+						<h3 itemprop="name">What is link building?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Almost every comprehensive SEO campaign includes a technique known as
+								<a href="{{home_url}}link-building/">link building</a>. This is where a business creates high-quality content around its products, services or industry to increase how many like-minded websites share this information with their own audiences. As more links to your website spread across the internet, your brand’s credibility grows, as does your customer base. Part of the reason link building is so vital to an effective SEO strategy is that Google perceives backlinks as validation of your website’s quality. With more websites linking to your content, the algorithm sees it as a signal that potential customers will find helpful information on your website.
+							</p>
+							<p>This endorsement is amazing for improving your position in the search engine rankings. Plus, it also boosts your authority amongst potential customers. Fortunately, there are many ways to start building your backlink profile. You can start a top-notch company blog, guest post on popular online publications, share infographics on social media or turn brand mentions into links to your website. With link building critical to every high-end search optimisation campaign, investing in this strategy pays incredible dividends.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+						<h3 itemprop="name">
+							How long does it take to rank a website?
+						</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>SEO sometimes requires a degree of patience when getting started. Whether you’re building a website from the ground up or breathing new life into an old one, putting the perfect systems in place is a long and continuous process that requires constant monitoring and adjustment. Meanwhile, factors such as seasonality, the age of your website and the number of referring domains can also influence the time needed. However, First Page Australia’s refined approach means we can take big strides immediately. Before we start making changes to your website, we’ll research everything there is to know about your business and its target market.
+							</p>
+							<p>As this vital information shapes our search engine optimisation strategy, getting this right from the beginning ensures we save you plenty of time, money and effort later in the process. After developing a comprehensive campaign – supported by precise keyword research, competitor analysis and fresh content – we’ll put our ideas in motion and skyrocket your website's search engine rankings. While it might take weeks or even months to see the full rewards, once our search optimisation campaign captures the attention of Google’s algorithm, this investment will become one of the driving forces behind your website’s conversions.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+						<h3 itemprop="name">What is the difference between SEO & PPC?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>While
+								<a href="{{home_url}}seo/">SEO</a>
+								and PPC (pay-per-click) are both remarkable digital marketing techniques, there are some clear distinctions about how these achieve your goals. Search engine optimisation is used to attract organic search traffic by ensuring your website appeals to search engine algorithms that push it up the rankings. While it might take some time, it’s possible to implement organic search techniques on your website for free. Alternatively,
+								<a href="{{home_url}}google-ads/">PPC</a>
+								campaigns involve paid online advertisements that appear in the search results. As it costs money to promote your business, you will need a budget that’s big enough to reach your target market and generate meaningful sales.</p>
+							<p>However, you don’t have to wait around for your work to make an impact, with PPC campaigns displaying your ads to relevant customers from the moment you launch your strategy. Depending on the nature of your goals, it might make sense to choose SEO or PPC over the other. Yet many businesses find huge success from using these methods in conjunction with each other. For instance, PPC brings in immediate leads while SEO grows your website’s presence and authority long into the future.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse17">
+						<h3 itemprop="name">How important is content for SEO?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Content is king when it comes to high-quality SEO. Across keyword-driven landing pages, educational blog posts and a myriad of other content types, knowing how to reach and convert your target market makes a massive difference to your company’s bottom line. So what does great content look like? Drawing insight from Google’s E-A-T guidelines, you want to develop a tone of voice that resonates with your target market and ensure your content is highly readable. That means clear headings, simple fonts and no annoying ads. As Google wants their search product to deliver the best results for users, they are increasingly organising results based on content quality.
+							</p>
+							<p>Although this encompasses numerous factors, many studies have found that longer blogs of around 1,000 words consistently perform the best in search results. Meanwhile, this content must be completely unique, add appropriate internal and external links, and feature keywords that respond to search intent. Our search engine ranking specialists produce outstanding content that speaks your customers’ language. From informative articles to compelling product descriptions, we’ll take your content game to the next level.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse18">
+						<h3 itemprop="name">What is your SEO process?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>A comprehensive SEO campaign ensures your business takes things to even greater heights. But you don’t want to rush into a long-term strategy without a cohesive plan designed to achieve your company’s specific goals. This is why every search engine ranking campaign at First Page Australia starts with a thorough audit of your website to ensure we understand where the biggest room for growth exists. After getting to know your target market and what attracts them to your products and services, we also take a look at how your biggest rivals are approaching their online marketing strategies.
+							</p>
+							<p>By assessing strengths and weaknesses, we inform our bespoke SEO strategies with techniques that maximise your rankings. Once our organic search tactics start delivering tangible benefits for your business, it doesn’t mean we down tools. In fact, we redouble our efforts as we analyse our results and provide continual optimisation that generates even better performance. Throughout this in-depth process, we're in constant communication with our clients, so they understand how their budget is being put to work.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse19">
+						<h3 itemprop="name">What is quality SEO?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>SEO is constantly evolving. In the past, achieving a decent rank was made possible with the cynical stuffing of keywords alone. As search engines have become far more sophisticated, there’s a far greater emphasis on high-quality content that’s unique, keyword-driven and designed to be read by real people. In fact, Google calls this ranking factor E-A-T or Expertise, Authoritativeness and Trustworthiness. By creating content that keeps users on your website for longer and provides solutions to their questions, search engine algorithms will grow to love your website.
+							</p>
+							<p>While the definition of quality is subjective, there are many ways we ensure your content production rises above and beyond the competition. A comprehensive search engine optimisation campaign focuses on user intent to attract the right target market to your website at the perfect moment. Effective search optimisation also means your website is fast and easy to navigate, while a talented specialist will analyse their results to fine-tune your campaign’s performance. This way, your website will quickly climb through the search engine ranks.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse20">
+						<h3 itemprop="name">
+							What drives a website to page 1 of Google for competitive keywords?
+						</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Landing on the first page of results is the goal for every business that understands the power of digital marketing. But what does it take to rank for super competitive keywords? After you’ve determined a clear objective for your campaign, you must identify the ideal keywords for your products and target market. Then, you must assess how the competition is performing for those keywords to create better content in every conceivable way.
+							</p>
+							<p>Alongside technical optimisations, mobile-friendly changes and a wonderfully engaging blog, you also need an organic search specialist that will constantly monitor and implement changes based on their results. After these procedures are put in place, rising from the mediocre ranks to the first page is within your grasp. However, this process is much simpler when you partner with a superior SEO agency that understands its ins and outs. Choose First Page Australia’s superior team and start ranking higher.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{# faq 2 #}
+<section class="section-paragraph section-faqs py-5">
+	<div class="container">
+		<h2 class="section-title">Why SEO is essential for business growth.</h2>
+		<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse21">
+						<h3 itemprop="name">How much does SEO cost?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>The techniques required to deliver a successful SEO campaign are different for every business. Naturally, this means the cost can vary considerably too. For instance, some niches involve a much higher cost per keyword to attract the perfect target market. In other cases, a website’s search optimisation standards only require a refresh rather than a complete overhaul to achieve the client’s goals. When our highly respected digital marketing agency is approached by a potential client, we provide a detailed quote that ensures they fully understand the costs involved.
+							</p>
+							<p>Whether that’s $500 or $5,000 per month, our search specialists conduct in-depth research into your website’s history, target market and industry complexities to ensure we only take actions that achieve your objectives. As we monitor the progress of your search engine ranking strategies and fine-tune our approach to deliver even better results, you can trust First Page Australia’s pricing models to provide your business with the biggest bang for its buck.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse22">
+						<h3 itemprop="name">What exactly does an SEO agency do?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>SEO agencies are your company’s guiding light for getting your website to reach the top of the search engine rankings. With less than 1% of Google users clicking on search results from the second page, progressing to the highest rank possible significantly improves the viability of your business. A leading search optimisation agency with a well-rounded skill set will do everything in its power to ensure your website becomes visible to your largest and most relevant customer base.
+							</p>
+							<p>Primarily, an SEO agency works closely with its clients to develop a campaign that appeals to their precise objectives and target market. Plus, they identify superior keywords, kickstart link building campaigns and make vital technical search engine optimisation changes, among dozens of other factors. With the right team by your side, it shouldn’t take long to see the positive impact of their work. No matter the size of your business and the budget you have to invest, an effective digital marketing agency will improve your search engine rankings and achieve your goals.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse23">
+						<h3 itemprop="name">
+							What businesses should use SEO?
+						</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Everyone from plumbers and lawyers to restaurateurs and real estate agents can use SEO to attract customers and generate sales. This is because almost every customer now uses a search engine to find the products that matter to them. By having a tangible influence on how prominent your website is in the results when users conduct their search, you’re giving your business the best chance of securing a sale. As search engines become more intuitive every day, implementing a cutting-edge search strategy solidifies your company's future.</p>
+							<p>You might not control what your competitors are doing to grow their presence in the industry. But taking a comprehensive approach to search optimisation means you can have the greatest impact on how relevant customers discover your business and engage with it online. It doesn’t matter who your target market is. SEO can reach everyone from teenage impulse buyers to corporate decision-makers upgrading their company’s critical software.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse24">
+						<h3 itemprop="name">Can SEO generate leads & sales?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>One of the main reasons SEO is such an appealing aspect of digital marketing is that it delivers massive leads and sales when handled by a specialist. By using high converting keywords alongside many other techniques, your website will climb the search results and see your target market flood your homepage. Yet getting people to land on your website is only half the battle. You will also need highly effective on-page strategies that factor in search intent and compelling calls to action to capture the most attention possible.</p>
+							<p>Across seamless website navigation, page categories, compelling product descriptions and high-quality imagery, you can appeal to customers at every stage of the marketing funnel. However, these strategies need to be tailored to your company’s precise goals. That’s why you must partner with a team of experts who understand how to implement a campaign that boosts your search rankings and delivers maximum conversions.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse25">
+						<h3 itemprop="name">How can SEO help my website?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse25" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Most customers will find your website via a Google search, so why not give your platform the best chance of standing out? As you plan and implement a carefully considered SEO campaign, you’re establishing trust and credibility with your customers, while also ensuring your content responds to Google’s E-A-T guidelines. With a personalised strategy reflecting the needs of your business and its customer base, reaching your ranking goals can be achieved in several different ways.
+							</p>
+							<p>An SEO agency like
+								<a href="{{home_url}}">First Page Australia</a>
+								will conduct extensive keyword research to increase visibility and local engagement with your on-page content. We’ll also focus our attention on improving the user experience of your website. If your website is slow and confusing to navigate, you’re giving up opportunities to convert traffic into sales. Alongside link building, content creation, mobile responsiveness and much more, a detailed campaign will enhance performance and help you stay ahead of the competition.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse26">
+						<h3 itemprop="name">Can I do SEO myself?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse26" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>The beauty of SEO is that everyone can learn the basics and make improvements on their own. But considering how content is king in the highly competitive online space, the help of an expert search engine rankings team will save you huge amounts of time, energy and money in the long run. Approximately 85% of people conduct online searches before making a purchase. This fact alone means the vast majority of your competitors will be using SEO to capture the most amount of attention possible.
+							</p>
+							<p>By handling your own search engine optimisation strategy, there’s a high chance your biggest rivals are running rings around your approach. Don’t let your business disappear down the rankings. Instead, a renowned agency like First Page Australia ensures you benefit from consistent blogging, competitor analysis and incredible tools for monitoring your results. This sees your business benefit from the latest optimisation techniques, driving your website up the rankings and into the minds of more customers.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse27">
+						<h3 itemprop="name">Do you work with e-commerce websites?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse27" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>The e-commerce marketplace grows more competitive each and every day. But a sharp SEO campaign is how your business can reach its target market, promote its products and boost sales. With a well-executed strategy increasing e-commerce revenue by up to 64%, a cutting-edge campaign will be life-changing for your business. You won’t find a better team than First Page Australia when connecting with your customer base. As we’ve partnered with more than 500 local and international companies on highly effective digital marketing campaigns, our search engine optimisation strategies will see your website outrank your competitors and smash your sales targets.</p>
+							<p>With an estimated 39% of global e-commerce traffic arriving on your website via a search engine, ensuring your business appears on the first page is critical to success. Fortunately, we know what it takes to lift your rankings and click-through rates higher than you’ve ever imagined. Across keyword-driven content marketing, technical optimisations and compelling product descriptions, our specialists ensure your website surpasses its biggest rivals on the SERP.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse28">
+						<h3 itemprop="name">
+							How do I know if SEO is working or not?
+						</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse28" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Game-changing SEO is an involved process, so you want to know if this work has a positive impact. While it might take some time for your business to appear on the first page of the search results, there are plenty of other signs that highlight how your website is enhancing its optimisation standards in the meantime. The easiest way to find out is by using some of the many search engine analytical tools available. Perhaps the most widely used is Google Analytics, which lets you investigate everything from organic search traffic to conversion and bounce rates.
+							</p>
+							<p>The Google Search Console is another handy resource that reveals the number of impressions your website generates, providing a clear measure of growth. Getting the full picture of your SEO success is a challenge due to regular Google algorithm updates and the impact of your competitors. However, the experts at First Page Australia have access to a myriad of industry-specific tools that allow us to keep tabs on your campaign’s performance day and night.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse29">
+						<h3 itemprop="name">What do I ask an SEO agency before I engage them?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse29" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Designing and executing a robust search optimisation campaign is an incredible way to boost your website up the results page. But if you want your strategy to have the biggest impact from the get-go, discussing a few important questions with a potential specialist ensures you trust them to achieve your goals. So what should you ask? First, you want to understand what tools and techniques they use in their day-to-day work. This reveals whether they remain on the cutting-edge of the industry.</p>
+							<p>Next, you have to discuss the budget you have to invest in your campaign. SEO is a remarkably cost-effective digital marketing technique and a talented team will help you develop realistic objectives. You also want to question an agency's past performance to ensure they have the experience to help a business like yours grow. Alongside a detailed understanding of Google's Webmaster Guidelines and recent search engine algorithm changes, a world-class digital marketing agency like First Page Australia has got you covered on every front.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse30">
+						<h3 itemprop="name">
+							Should I do SEO in-house or outsource?
+						</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse30" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Even if your business is large enough to have a fully-fledged marketing team, taking charge of your SEO strategy in-house isn’t always a straightforward decision. While these employees might be talented in other aspects of marketing, search optimisation is its own field that requires an expert touch to experience top results. Meanwhile, a high-quality strategy is simply too time-consuming for many smaller organisations to handle. By outsourcing your campaign to a dedicated digital marketing agency, you have the power to save yourself untold amounts of time, money and energy.
+							</p>
+							<p>Instead of spending hours identifying which keywords make sense for your target market and learning how to streamline your website’s backend, a top-notch specialist can take care of these tricky tasks for you. Experts also have access to the latest industry-specific tools that ensure any strategy massively outperforms what the average person might create on their own. As making your campaign achieve your objectives is an agency’s single focus, you can worry about other parts of your organisation as your SEO specialist pushes you up the search engine rankings.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse31">
+						<h3 itemprop="name">
+							How do I choose the right SEO company?
+						</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse31" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>SEO is critical to your company’s digital marketing strategy, so you want to partner with the ideal agency. The first thing you want to do is determine the ultimate objective for your campaign. This will help you decide which agency has the skills to accomplish your aspirations. Then, find out what techniques an agency will use to get your website ranking. While most agencies operate ethically, some use underhanded ‘black hat’ methods to rank faster. This sounds appealing in premise, but Google will deindex your website if they see your website cheating the system.
+							</p>
+							<p>Alongside the skills to accomplish your goals, you want to work alongside an agency that frequently measures their success. This way, you can see how your budget is being used to benefit your business. While it’s tempting to go with the cheapest option on the market, the results will almost certainly fall below your expectations. This is because these agencies often send work overseas. Considering how important search engine optimisation is to your success, make sure your campaign is being handled by local specialists only. Do your homework and you can’t go wrong.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div class="card-header collapsed" data-toggle="collapse" href="#collapse32">
+						<h3 itemprop="name">
+							How does an SEO traffic guarantee work?
+						</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse32" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>SEO is a pretty simple premise at its core. You must ensure your company's website is as appealing to search engine algorithms as possible to appear higher in the search results. However, the work involved in making this goal a reality is far more complex. With this in mind, what assurances do you have that an agency can deliver the results they promise? This is where our SEO traffic guarantee comes in.
+							</p>
+							<p>While other agencies don’t stand by their strategies, First Page Australia has the confidence to offer our clients an SEO traffic guarantee that shows we mean business. By committing to key metrics throughout your campaign, you can trust us to meet our goals. Why? Because we don’t get paid unless we come through with the goods. We tailor this guarantee to your business and how many visitors you need to reach your website. As our wallet is on the line, we’ll do everything to achieve top-notch results.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'SEO (Pop-up Form)'}
+%}{% endblock %}

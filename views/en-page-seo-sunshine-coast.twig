@@ -1,486 +1,514 @@
 {% extends "en-base.twig" %}
 
 {% block content %}
-<style>
-@media(max-width: 375px){
-    .banner-hero-cont h1{
-        font-size:28px;
-    }
-}
-</style>
+	<style>
+		@media(max-width: 375px) {
+			.banner-hero-cont h1 {
+				font-size: 28px;
+			}
+		}
+		@media(min-width: 992px) {
+			section.banner .banner-hero .banner-hero-cont {
+				max-width: 890px;
+			}
+		}
+	</style>
 
-    <div class="sunshine-page-banner"> 
-        <section class="banner form-space sunshine-hero-banner">
-            <div class="container banner-hero">
-                <div class="banner-hero-cont">
-                    <h1 class="form-hide text-center text-sm-left">10X your revenue <br>  with the #1 SEO agency <br class="d-none d-lg-block"> in the Sunshine Coast</h1>
-                    {# <p class="form-hide text-center text-sm-left banner-text-width">Attract your ideal customers and explode your sales for <br class="d-none d-md-block"> your Perth business with next-level SEO services</p> #}
-                    <div class="banner-hero-image-mb banner-img-mb d-sm-none form-hide">
-                        <img src="{{ site.theme.link }}/assets/img/sunshine-seo-banner-mb.png" srcset="{{ site.theme.link }}/assets/img/sunshine-seo-banner-mb.png, {{ site.theme.link }}/assets/img/sunshine-seo-banner-mb-2x.png 2x" alt="First Page Perth" />
-                    </div>
-                    {% include "partials/en-form-services.twig" with {'form_page': 'SEO Sunshine Coast', 'form_button': 'Get A Free Quote'} %}
-                    {% include "partials/en-section-awards-badges.twig" %}
-                </div>
-            </div>
-        </section>
-        <div class="banner-hero-image">
-            <img src="{{ site.theme.link }}/assets/img/sunshine-seo-banner.png" />
-        </div>
-    </div>
-    {% include "partials/en-section-featured-in-news.twig" %}
+	<div class="sunshine-page-banner">
+		<section class="banner form-space sunshine-hero-banner">
+			<div class="container banner-hero">
+				<div class="banner-hero-cont">
+					<h1 class="form-hide text-center text-sm-left">10X your revenue with the<br>#1 SEO agency in the Sunshine Coast</h1>
+					<div class="banner-hero-image-mb banner-img-mb d-sm-none form-hide">
+						<img src="{{ site.theme.link }}/assets/img/sunshine-seo-banner-mb.png" srcset="{{ site.theme.link }}/assets/img/sunshine-seo-banner-mb.png, {{ site.theme.link }}/assets/img/sunshine-seo-banner-mb-2x.png 2x" alt="First Page Perth"/>
+					</div>
+					{% include "partials/en-form-services.twig" with {'form_page': 'SEO Sunshine Coast', 'form_button': 'Get A Free Quote'} %}
+					{% include "partials/en-section-awards-badges.twig" %}
+				</div>
+			</div>
+		</section>
+		<div class="banner-hero-image">
+			<img src="{{ site.theme.link }}/assets/img/sunshine-seo-banner.png"/>
+		</div>
+	</div>
+	{% include "partials/en-section-featured-in-news.twig" %}
 
-        <section class="section-paragraph">
-        <div class="row no-gutters align-items-center  ">
-            <div class="col-12 col-md-6 image-container-left">
-                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-none d-xl-inline-block "/>
-                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png, {{ site.theme.link }}/assets/img/img-seo-traffic-lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-lg-inline-block d-xl-none seo-traffic-lg-img"/>
-                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/>
-            </div>
-            <div class="col-12 col-md-6 text-container pl-md-5">
-                <h2>Sunshine coast SEO is fiercely competitive. Collaboration is key to success.</h2>
-                <p class="text-center text-sm-left">Are you wondering what are the best ways to grow a business?<br>Maybe you've heard of Sunshine Coast SEO services before, but you're unsure where to start?</p>
-                <p class="text-center text-sm-left">At First Page, we believe that an organisation should not solely be focused on online growth. A company should aim for wide-scale success by growing through all channels. And there is no better way to do that than with SEO.</p>
-                <p class="text-center text-sm-left">Why is SEO the best digital marketing technique to grow your business?</p>
-                <p class="text-center text-sm-left">Simply put, SEO for Sunshine Coast businesses means a tremendous return on investment, a reduced sales cycle, and an improved conversion rate.</p>
-                <p class="text-center text-sm-left">In Sunshine Coast, SEO has the best ROI amongst all digital marketing techniques and delivers lasting and growing results over time.</p>
-            </div>
-        </div>
-    </section>
+	<section class="section-paragraph">
+		<div class="row no-gutters align-items-center  ">
+			<div class="col-12 col-md-6 image-container-left">
+				<img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-none d-xl-inline-block "/>
+				<img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png, {{ site.theme.link }}/assets/img/img-seo-traffic-lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-lg-inline-block d-xl-none seo-traffic-lg-img"/>
+				<img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/>
+			</div>
+			<div class="col-12 col-md-6 text-container pl-md-5">
+				<h2>Sunshine coast SEO is fiercely competitive. Collaboration is key to success.</h2>
+				<p class="text-center text-sm-left">Are you wondering what are the best ways to grow a business?<br>Maybe you've heard of Sunshine Coast SEO services before, but you're unsure where to start?</p>
+				<p class="text-center text-sm-left">At First Page, we believe that an organisation should not solely be focused on online growth. A company should aim for wide-scale success by growing through all channels. And there is no better way to do that than with SEO.</p>
+				<p class="text-center text-sm-left">Why is SEO the best digital marketing technique to grow your business?</p>
+				<p class="text-center text-sm-left">Simply put, SEO for Sunshine Coast businesses means a tremendous return on investment, a reduced sales cycle, and an improved conversion rate.</p>
+				<p class="text-center text-sm-left">In Sunshine Coast, SEO has the best ROI amongst all digital marketing techniques and delivers lasting and growing results over time.</p>
+			</div>
+		</div>
+	</section>
 
-        <section class="section-paragraph d-block d-lg-none data-vertical-section">
+	<section class="section-paragraph d-block d-lg-none data-vertical-section">
 
-        <div class="row no-gutters align-items-center d-flex flex-row-reverse">
-            <div class="col-12 col-md-6 image-container-right">
-                <div class="sunshine-text-section-heading sunshine-text-section-heading-lg col-12 col-md-8 text-container">
-                    <h3>Still not sure SEO is right for you? Give some serious consideration to the below...</h3>
-                </div>
-                <img src="{{ site.theme.link }}/assets/img/seo-sunshine-data-vertical.svg" class="img-fluid d-lg-inline-block" alt="First Page"/>
-            </div>
-            <div class="col-12 col-md-6 text-container">
-                <div class="sunshine-text-section-heading sunshine-text-section-heading-mb col-12 col-md-6 text-container text-center">
-                    <h3>Still not sure SEO is right for you? Give some serious consideration to the below...</h3>
-                </div>
-                <p class="text-center text-sm-left">There is no question about it. Using Google SEO in Sunshine Coast is the way to ensure that your target audience sees your business and that your digital footprint is REAL and established.</p>
-                <p class="text-center text-sm-left">With the value of local SEO for Sunshine Coast businesses, keep in mind that the competition is fiercer now than ever before.</p>
-                <p class="text-center text-sm-left">Businesses looking to leverage SEO services in Sunshine Coast are currently dealing with a challenging, saturated marketplace.</p>
-                <p class="text-center text-sm-left">Successful companies never allow their competitors to get in their way when it comes to ranking on Google; consequently, their products sell themselves.</p>
-                <p class="text-center text-sm-left">But here is the thing: Ranking to the top of Google's search results is not easy. It takes strategies and expertise.</p>
-                <p class="text-center text-sm-left">To succeed in SEO in Sunshine Coast, you need to partner with the best SEO agency.</p>
-                <p class="text-center text-sm-left">Luckily for you, this is precisely what we are.</p>
-                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
-            </div>
-            </div>
-        </div>
+		<div class="row no-gutters align-items-center d-flex flex-row-reverse">
+			<div class="col-12 col-md-6 image-container-right">
+				<div class="sunshine-text-section-heading sunshine-text-section-heading-lg col-12 col-md-8 text-container">
+					<h3>Still not sure SEO is right for you? Give some serious consideration to the below...</h3>
+				</div>
+				<img src="{{ site.theme.link }}/assets/img/seo-sunshine-data-vertical.svg" class="img-fluid d-lg-inline-block" alt="First Page"/>
+			</div>
+			<div class="col-12 col-md-6 text-container">
+				<div class="sunshine-text-section-heading sunshine-text-section-heading-mb col-12 col-md-6 text-container text-center">
+					<h3>Still not sure SEO is right for you? Give some serious consideration to the below...</h3>
+				</div>
+				<p class="text-center text-sm-left">There is no question about it. Using Google SEO in Sunshine Coast is the way to ensure that your target audience sees your business and that your digital footprint is REAL and established.</p>
+				<p class="text-center text-sm-left">With the value of local SEO for Sunshine Coast businesses, keep in mind that the competition is fiercer now than ever before.</p>
+				<p class="text-center text-sm-left">Businesses looking to leverage SEO services in Sunshine Coast are currently dealing with a challenging, saturated marketplace.</p>
+				<p class="text-center text-sm-left">Successful companies never allow their competitors to get in their way when it comes to ranking on Google; consequently, their products sell themselves.</p>
+				<p class="text-center text-sm-left">But here is the thing: Ranking to the top of Google's search results is not easy. It takes strategies and expertise.</p>
+				<p class="text-center text-sm-left">To succeed in SEO in Sunshine Coast, you need to partner with the best SEO agency.</p>
+				<p class="text-center text-sm-left">Luckily for you, this is precisely what we are.</p>
+				<button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+			</div>
+		</div>
+	</div>
 
-    </section>
+</section>
 
-        <section class="section-paragraph d-none d-lg-block">
-        <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
-            <div class="col-12 col-md-6 image-container-right">
-                <div class="sunshine-text-section-heading col-12 col-md-8 text-container -md-5">
-                    <h3>Still not sure SEO is right for you? Give some serious consideration to the below...</h3>
-                </div>
-                <img src="{{ site.theme.link }}/assets/img/seo-sunshine-data-2x.svg"
-                     srcset="{{ site.theme.link }}/assets/img/seo-sunshine-data-2x.svg, {{ site.theme.link }}/assets/img/seo-sunshine-data-2x.svg"
-                     class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
-                <img src="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png"
-                     srcset="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png, {{ site.theme.link }}/assets/img/seo-perth-data-vertical@2x.png 2x"
-                     class="img-fluid d-lg-none" alt="First Page"/>
-            </div>
-            <div class="col-12 col-md-6 text-container px-5">
-                <h2>Choose the Right Partner to Take On Your Competition</h2>
-                <p class="text-center text-sm-left">There is no question about it. Using Google SEO in Sunshine Coast is the way to ensure that your target audience sees your business and that your digital footprint is REAL and established.</p>
-                <p class="text-center text-sm-left">With the value of local SEO for Sunshine Coast businesses, keep in mind that the competition is fiercer now than ever before.</p>
-                <p class="text-center text-sm-left">Businesses looking to leverage SEO services in Sunshine Coast are currently dealing with a challenging, saturated marketplace.</p>
-                <p class="text-center text-sm-left">Successful companies never allow their competitors to get in their way when it comes to ranking on Google; consequently, their products sell themselves.</p>
-                <p class="text-center text-sm-left">But here is the thing: Ranking to the top of Google's search results is not easy. It takes strategies and expertise.</p>
-                <p class="text-center text-sm-left">To succeed in SEO in Sunshine Coast, you need to partner with the best SEO agency.</p>
-                <p class="text-center text-sm-left">Luckily for you, this is precisely what we are.</p>
-                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
-            </div>
-        </div>
-    </section>
+<section class="section-paragraph d-none d-lg-block">
+	<div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+		<div class="col-12 col-md-6 image-container-right">
+			<div class="sunshine-text-section-heading col-12 col-md-8 text-container -md-5">
+				<h3>Still not sure SEO is right for you? Give some serious consideration to the below...</h3>
+			</div>
+			<img src="{{ site.theme.link }}/assets/img/seo-sunshine-data-2x.svg" srcset="{{ site.theme.link }}/assets/img/seo-sunshine-data-2x.svg, {{ site.theme.link }}/assets/img/seo-sunshine-data-2x.svg" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>
+			<img src="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png" srcset="{{ site.theme.link }}/assets/img/seo-perth-data-vertical.png, {{ site.theme.link }}/assets/img/seo-perth-data-vertical@2x.png 2x" class="img-fluid d-lg-none" alt="First Page"/>
+		</div>
+		<div class="col-12 col-md-6 text-container px-5">
+			<h2>Choose the Right Partner to Take On Your Competition</h2>
+			<p class="text-center text-sm-left">There is no question about it. Using Google SEO in Sunshine Coast is the way to ensure that your target audience sees your business and that your digital footprint is REAL and established.</p>
+			<p class="text-center text-sm-left">With the value of local SEO for Sunshine Coast businesses, keep in mind that the competition is fiercer now than ever before.</p>
+			<p class="text-center text-sm-left">Businesses looking to leverage SEO services in Sunshine Coast are currently dealing with a challenging, saturated marketplace.</p>
+			<p class="text-center text-sm-left">Successful companies never allow their competitors to get in their way when it comes to ranking on Google; consequently, their products sell themselves.</p>
+			<p class="text-center text-sm-left">But here is the thing: Ranking to the top of Google's search results is not easy. It takes strategies and expertise.</p>
+			<p class="text-center text-sm-left">To succeed in SEO in Sunshine Coast, you need to partner with the best SEO agency.</p>
+			<p class="text-center text-sm-left">Luckily for you, this is precisely what we are.</p>
+			<button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+		</div>
+	</div>
+</section>
 
-        {#  location map md & lg#}
-    <section class="section-paragraph location-map-section my-4 p-0">
-        <div class="row no-gutters">
-            <div class="col">
-                <img src="{{ site.theme.link }}/assets/img/location-page-sunshine.svg" class="location-map-img-lg mx-auto d-flex" alt="First Page"/>
-            </div>
+{#  location map md & lg#}
+<section class="section-paragraph location-map-section my-4 p-0">
+	<div class="row no-gutters">
+		<div class="col">
+			<img src="{{ site.theme.link }}/assets/img/location-page-sunshine.svg" class="location-map-img-lg mx-auto d-flex" alt="First Page"/>
+		</div>
 
-        </div>
-    </section>
+	</div>
+</section>
 
-    <section class="section-paragraph location-title-section p-0 mb-4">
-        <div class="row no-gutters">
-            <div class="col">
-                <h2 class="text-center">Achieve your business goals <br>for SEO in Sunshine Coast <br>with First Page</h2>
-                <p class="text-center location-sub-title">At First Page, we are much more than just any SEO agency in Sunshine Coast.</p>
-            </div>
-        </div>
-    </section>
+<section class="section-paragraph location-title-section p-0 mb-4">
+	<div class="row no-gutters">
+		<div class="col">
+			<h2 class="text-center">Achieve your business goals
+				<br>for SEO in Sunshine Coast
+				<br>with First Page</h2>
+			<p class="text-center location-sub-title">At First Page, we are much more than just any SEO agency in Sunshine Coast.</p>
+		</div>
+	</div>
+</section>
 
-        {#  office section  #}
-    <section class="section-paragraph office-img-section p-0">
-        <div class="rwo no-gutters">
-            <img src="{{ site.theme.link }}/assets/img/location-office-md.png"
-                 srcset="{{ site.theme.link }}/assets/img/location-office-md.png, {{ site.theme.link }}/assets/img/location-office-md@2x.png 2x"
-                 class="img-fluid d-block d-lg-none m-auto" alt="First Page"/>
-            <img src="{{ site.theme.link }}/assets/img/location-office-lg.png"
-                 srcset="{{ site.theme.link }}/assets/img/location-office-lg.png, {{ site.theme.link }}/assets/img/location-office-lg@2x.png 2x"
-                 class="img-fluid d-none d-lg-block m-auto" alt="First Page"/>
-        </div>
+{#  office section  #}
+<section class="section-paragraph office-img-section p-0">
+	<div class="rwo no-gutters">
+		<img src="{{ site.theme.link }}/assets/img/location-office-md.png" srcset="{{ site.theme.link }}/assets/img/location-office-md.png, {{ site.theme.link }}/assets/img/location-office-md@2x.png 2x" class="img-fluid d-block d-lg-none m-auto" alt="First Page"/>
+		<img src="{{ site.theme.link }}/assets/img/location-office-lg.png" srcset="{{ site.theme.link }}/assets/img/location-office-lg.png, {{ site.theme.link }}/assets/img/location-office-lg@2x.png 2x" class="img-fluid d-none d-lg-block m-auto" alt="First Page"/>
+	</div>
 
-    </section>
+</section>
 
-    <section class="section-paragraph pt-5">
-        <div class="container">
-            {# row two #}
-            <h2 class="text-center text-sm-left section-title-ml my-4 pl-3 col-12 col-lg-8">We are committed to serving you and catapulting your growth.</h2>
-            <div class="row no-gutters justify-content-center ">
-                <div class="col-12 col-md-6 text-container">
-                    <p class="text-center text-sm-left">We are experts in Digital Marketing and SEO. Our decade of experience led us to deliver tremendous and constant results for our clients.</p>
-                    <p class="text-center text-sm-left">Proudly Australian-owned and based, our SEO experts in Sunshine Coast know what it takes to grow a Queensland business.</p>                   
-                    <p class="text-center text-sm-left">We are the only digital marketing company you need if you want to grow on the Sunshine Coast.</p>               
-                    <p class="text-center text-sm-left">We provide a variety of services to business owners and companies who want to market their business and catapult their sales.</p>
-                    <p class="text-center text-sm-left">At First Page, we’ve tailored our growth plan to meet your needs.</p>           
-                </div>
-                <div class="col-12 col-md-6 text-container ">
-                    <p class="text-center text-sm-left">Our approach is integrated and takes into account the specificity of your industry and your growth ambition.</p>
-                    <p class="text-center text-sm-left">Website optimisation, keyword research, competitor analysis, content creation, and link-building are part of the services we provide to our clients.</p>        
-                    <p class="text-center text-sm-left">Digital and SEO marketing in Sunshine Coast can be overwhelming, but we tackle them so you can focus on investing your time effectively.</p>            
-                    <p class="text-center text-sm-left">Put simply. Our SEO services in Sunshine Coast deliver outstanding results. You unwind and watch the sales come in.</p>                
-                    <p class="text-center text-sm-left">If you are ready to explode your sales and grow your business with SEO in Sunshine Coast, book a free strategy call with a Digital Strategist.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="section-paragraph pt-5">
+	<div
+		class="container">
+		{# row two #}
+		<h2 class="text-center section-title-ml my-4 pl-3 col-12 col-lg-12">We are committed to serving you and<br class="d-none d-lg-block">
 
-    {% include "partials/en-section-free-session.twig" %}
-    {% include "partials/en-section-experience.twig" %}
-    {% include "partials/en-section-services-seo-carousel.twig" %}
+			catapulting your growth.</h2>
+		<div class="row no-gutters justify-content-center ">
+			<div class="col-12 col-md-6 text-container">
+				<p class="text-center text-sm-left">We are experts in Digital Marketing and SEO. Our decade of experience led us to deliver tremendous and constant results for our clients.</p>
+				<p class="text-center text-sm-left">Proudly Australian-owned and based, our SEO experts in Sunshine Coast know what it takes to grow a Queensland business.</p>
+				<p class="text-center text-sm-left">We are the only digital marketing company you need if you want to grow on the Sunshine Coast.</p>
+				<p class="text-center text-sm-left">We provide a variety of services to business owners and companies who want to market their business and catapult their sales.</p>
+				<p class="text-center text-sm-left">At First Page, we’ve tailored our growth plan to meet your needs.</p>
+			</div>
+			<div class="col-12 col-md-6 text-container ">
+				<p class="text-center text-sm-left">Our approach is integrated and takes into account the specificity of your industry and your growth ambition.</p>
+				<p class="text-center text-sm-left">Website optimisation, keyword research, competitor analysis, content creation, and link-building are part of the services we provide to our clients.</p>
+				<p class="text-center text-sm-left">Digital and SEO marketing in Sunshine Coast can be overwhelming, but we tackle them so you can focus on investing your time effectively.</p>
+				<p class="text-center text-sm-left">Put simply. Our SEO services in Sunshine Coast deliver outstanding results. You unwind and watch the sales come in.</p>
+				<p class="text-center text-sm-left">If you are ready to explode your sales and grow your business with SEO in Sunshine Coast, book a free strategy call with a Digital Strategist.</p>
+			</div>
+		</div>
+	</div>
+</section>
 
-    <section class="section-paragraph section-faqs pb-5">
-        <div class="container">
-            <h2 class="section-title">Sunshine Coast SEO - FAQs</h2>
-            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
-                            {# Q1  #}
-                            <h3 itemprop="name">Why is our First Page agency the best for Sunshine Coast SEO?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>First Page is the best Sunshine Coast SEO agency - as well as the fastest-growing agency in APAC.</p> 
-                                <p>We benefit from a strong network and eleven offices globally, to provide you with assistance promptly when you need it. Alongside our <a href="https://firstpage.com.au/seo-brisbane">SEO services in Brisbane</a>, we bring world-class talent in Sunshine Coast SEO.</p>                              
-                                <p>Getting your business traction is important, and we think you deserve to strive and achieve as much as you can.</p>                                
-                                <p>For your business to become successful, you need to dominate Google SEO in Sunshine Coast.</p>                                
-                                <p>Our advanced search engine techniques have helped companies of all sizes reach the top of search results - and amassed over $3.8 billion in sales with a constant 4.9/5 Google rating for our clients.</p>                                
-                                <p>Even today, when the world is flooded with SEO agencies, our clients reap the benefits of our expertise for SEO in Sunshine Coast, in driving high-quality traffic to their websites.</p>                               
-                                <p>The team here at First Page is always on top of the latest SEO trends, providing you with the most effective and up-to-date strategies for Sunshine Coast SEO.</p>                               
-                                <p>We are the leading SEO agency in Sunshine Coast, and the experts in driving immense amounts of traffic to our client's websites.</p>                                
-                                <p>We have expertise in every corner of Australia, even as niche as Darwin SEO! If you choose to engage our services, your business will achieve top rankings on search engines, and your sales will flow.</p> 
-                                <p>With our SEO experts in Sunshine Coast, results are guaranteed.</p>                          
-                                <p>Let us show you what we can do for you, not just tell you about it.<br>
-                                Book a call with a Digital Strategist today.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
-                            {# Q2  #}
-                            <h3 itemprop="name">How does SEO work?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Search Engine Optimisation or SEO is the process of optimising websites to rank higher on search engines, attract more customers, and increase your sales.</p>
-                                <p>When people search for information online, search engines bots show the most relevant websites based on the request.</p>                                
-                                <p>Local SEO in Sunshine Coast brings your website in front of local customers, who are looking for your services in the area.</p>                                
-                                <p>To increase your search engine ranking with SEO, you need to apply a set of techniques, such as keyword research and link-building.</p>                                
-                                <p>Researching keywords and link-building are only a part of what makes for effective Sunshine Coast SEO. SEO is very complex. It requires expertise and knowledge of the industry.</p>                                
-                                <p>Is your website experience intuitive and relevant to your audience? How frequently do you post new content to your website? What is your conversion rate?</p>                                
-                                <p>Sunshine Coast SEO improves local websites' user experience, builds your authority online, drives more traffic to your website, and explodes your sales numbers.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
-                            {#Q3#}
-                            <h3 itemprop="name">Where do I start with SEO?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>There are 3 ways you can start with SEO:</p>
-                                
-                                <p class="font-weight-bold mb-1">1. Backlinks</p>
-                                <p>Link-building is a crucial component of Sunshine Coast SEO.</p>
-                                <p>It consists of adding a link to your website from another website to build your online authority.</p>
-                                <p>Backlinks are a huge part of the Google algorithm and are linked with the reputability of your website.</p>
-                                <p>Our focus is on reliable and reputable sources. A large number of links on low-quality and dodgy websites is useless.</p>
-                                <p>The more reputable the websites that link to your site, the higher you will rank for Sunshine Coast SEO.</p>
-                                <br>
-                                <p class="font-weight-bold mb-1">2. Keyword research</p>
-                                <p>Keyword research determines what search terms your ideal clients use to find specific information on search engines.</p>
-                                <p>The objective is to add the most relevant to your site, so search engines index your website higher.</p>
-                                <p>Here is some advice for starting keyword research for Sunshine Coast SEO:</p>
-                                    <ul>
-                                        <li>Make a list of topics that describe your audience’s problems and your products or services.</li>
-                                        <li>Investigate how your competitors are rankings for those keywords.</li>
-                                        <li>Find the ones that are the most relevant and less competitive, and use them throughout your copy.</li>
-                                    </ul>
-                                <br>
-                                <p class="font-weight-bold mb-1">3. On-page SEO</p>
-                                <p>With on-page SEO, you optimise your web pages to appeal to both search engines and visitors at the same time.</p>
-                                <p>In order to boost your website's search engine rankings and attract targeted customers, you optimise several aspects of its front and back ends.</p>
-                                <p>You can start the on-page SEO for a Sunshine Coast business by following the below steps:</p>
+{% include "partials/en-section-free-session.twig" %}
+{% include "partials/en-section-experience.twig" %}
+{% include "partials/en-section-services-seo-carousel.twig" %}
 
-                                <p>Keyword research determines what search terms your ideal clients use to find specific information on search engines.</p>
-                                <p>The objective is to add the most relevant to your site, so search engines index your website higher.</p>
-                                <p>Here is some advice for starting keyword research for Sunshine Coast SEO:</p>
-                                    <ol>
-                                        <li>Conduct a search engine optimisation analysis of your website.</li>
-                                        <li>Make sure URLs, page titles, and meta descriptions contain relevant keywords.</li>
-                                        <li>Add external and internal links.</li>
-                                        <li>Make sure the page is <a href="https://firstpage.com.au/mobile-seo/">mobile-optimised.</a></li>
-                                        <li>Embrace visual appeal and add <a href="https://firstpage.com.au/video-seo/">videos.</a></li>
-                                    </ol>
-                                <p>Taking care of all this is not something you have to do alone.</p>
-                                <p>Contact the best SEO company in Sunshine Coast with any SEO queries. You will be put in touch with one of our digital strategists immediately.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
-                            {#  Q4  #}
-                            <h3 itemprop="name"> Can I just do SEO by myself?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>It's not impossible. However, it doesn't mean this is what you should do.</p>
-                                <p>Instead, we recommend that you spend your time serving your customers, and let an agency deal with the technicalities of SEO for Sunshine Coast businesses.</p>
-                                <p>You might think that the costs of hiring an SEO company in Sunshine Coast are high. But the truth is, the results it brings will outweigh the investment.</p>
-                                <p>If you are thinking about building your team, you need to think about the time it will take you to find the right candidates and set them up for success.</p>
-                                <p>In almost all cases, hiring an agency for SEO services in Sunshine Coast will save you more money than hiring your own team.</p>                               
-                                <p>With an agency, you don't have to take care of sick leave, holidays, and wages. It also provides specialist software for Sunshine Coast SEO. If you buy these tools alone, it will cost you money.</p>                               
-                                <p>In order for an agency to get results, a new tool isn't needed. Knowledge, skills, and services are provided as part of the fee.</p>                                
-                                <p>Your team needs to be recruited and trained to begin.</p>                               
-                                <p>With an agency, you are working with SEO specialists in Sunshine Coast, who know the market and are ready to hit the ground running.</p>                               
-                                <p>To win in SEO in Sunshine Coast, you need the right partner.</p>                               
-                                <p>An agency like us will get you results.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse17">
-                            {# Q5  #}
-                            <h3 itemprop="name">How much does SEO in Sunshine Coast cost?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>The cost of SEO in Sunshine Coast is affected by a variety of factors, including:</p>
-                                <ul>
-                                    <li>Budget. Budgeting and setting goals can help you estimate the costs and type of services associated.</li>
-                                    <li>Scope of work. The more work there is to be done, the higher the cost. SEO costs depend on where you are starting and what it takes to get you where you want to go.</li>
-                                    <li>Desired Results. Investing and pursuing strategies in different ways will produce different outcomes. At First Page, we customise our services to suit your business's needs.</li>
-                                    <li>Experience and involvement in the project. A product's quality is often linked with its price.</li>
-                                </ul>
-                                <p>Don't be tricked by cheap SEO services in Sunshine Coast. Performing keyword research and implementing SEO concepts barely scratches the surface of being successful with SEO.</p> 
-                                <p>No matter what industry, niche, market, or competitor one faces, a well-informed and tailored strategy is key to success.</p>
-                                <p>With cheap SEO marketing in Sunshine Coast, you usually get what you pay for - they lack experience, aren't up-to-date on industry standards, and may provide the bare minimum.</p>                                
-                                <p>This can seriously harm your business and sales if SEO errors are made.</p>                               
-                                <p>Be extremely cautious when dealing with SEO companies advertising predetermined costs and checklists. A universal solution does not exist. What works for one business may not work for another.</p>                               
-                                <p>When used correctly, SEO results can rev up the revenue for your business.</p>
-                                <p>First Page are your SEO consultants in Sunshine Coast. Partner with us to ensure your success.</p>                                
-                                <p>Black-hat vs white-hat. These are different ways to do SEO that can affect the final cost.</p>
-                                <ul>                             
-                                    <li>Black-hat SEO techniques manipulate Google algorithms to gain quick results. Such tactics cannot stand the test of time. Google might eventually notice your usage and could penalise you.</li>                              
-                                    <li>By contrast, white-hat SEO provides customers with a better experience by adhering to search engine guidelines. White-hat SEO results are only visible over time, but they are long-lasting and reliable.</li>                              
-                                    <li>While black-hat SEO in Sunshine Coast is cheaper than white-hat SEO, it puts your website at risk of being removed from search rankings.</li>                               
-                                    <li>Our quotes are unique to your business and take into account your budget and growth objectives.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse18">
-                            {#  Q6 #}
-                            <h3 itemprop="name">How are SEO and PPC different?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p><a href="https://firstpage.com.au/google-ads/">PPC</a> or Pay-Per-Click advertising involves paying a fee for your ad to be placed at the top of search engine results pages (SERPs). Every time someone clicks on your ad, you pay a fee.</p>
-                                <p>Simply put, you are buying internet traffic.</p>                                
-                                <p>It works like an auction, where you compete with other companies in your field, for keywords relevant to your business. Everyone is competing to place their ad at the top of the SERP.</p>                                
-                                <p>PPC's main advantage is that it quickly generates traffic and results. However, the costs involved make it less attractive than SEO in Sunshine Coast.</p>
-                                <p>SEO relies on organic search, which means that you are not paying for traffic or a place on search engines. You are earning your ranking through strategised work and consistency.</p>                                
-                                <p>As a result, with local SEO in Sunshine Coast, once you are on the first page of Google, you can stay there for years to come.</p>                               
-                                <p>SEO takes more work upfront but provides consistent traffic and catapults your sales. PPC, on the contrary, is best for product promotion or to attract a very targeted audience to a specific page during a specific period.</p>                               
-                                <p>Sunshine Coast SEO and PPC campaigns are very effective together.</p>                               
-                                <p>To know more about our PPC services and how they can help you increase your traffic, <a href="https://firstpage.com.au/google-ads/">click here.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse19">
-                            {# Q7#}
-                            <h3 itemprop="name">Can you help me recover from loss of traffic?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>There may be several reasons why your traffic has declined.</p>
-                                <p>Either your Sunshine Coast SEO strategy needs to be reviewed, your website is not <a href="https://firstpage.com.au/mobile-seo/">mobile-friendly</a>, or you are not up-to-date with the new Google algorithm.</p>
-                                <p>In SEO, a variety of factors play a role, and authenticity is crucial when running a campaign.</p>                             
-                                <p>To rank high in search engine results, it is critical to take legitimate steps. Your traffic may have dropped suddenly due to a Google penalty from black-hat SEO in Sunshine Coast.</p>                                
-                                <p>Regardless of the reason why you have lost traffic, we can identify and fix the cause of any traffic problems you are experiencing.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse20">
-                            {#  Q8  #}
-                            <h3 itemprop="name">Do you offer eCommerce SEO services?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Without a doubt!</p>
-                                <p>Over 500 companies have benefited from our eCommerce SEO services.</p>
-                                <p>Search engine optimisation for eCommerce is different from <a href="https://firstpage.com.au/local-and-national-seo/">local SEO in Sunshine Coast.</a></p>
-                                <p><a href="https://firstpage.com.au/local-and-national-seo/">Local SEO</a> relies heavily on regional location factors (for example, Sunshine Coast). You can therefore expect to reach local customers.</p>
-                                <p>Physical stores or businesses that target a specific area should use this service.</p>
-                                <p>If you're an e-shop owner, the best way to rank your products on search engines regardless of your location is to use eCommerce SEO for Sunshine Coast.</p> 
-                                <p>By optimising product descriptions, brand headlines, and listings, you can significantly enhance your product visibility and Google ranking.</p>
-                                <p>Increasing revenue and attracting new customers are key objectives of eCommerce SEO.</p>
-                                <p>We will make the entire online buying experience as enjoyable and straightforward as possible.</p> 
-                                <p>Ecommerce SEO campaigns are supplemented well by pay-per-click (PPC) campaigns.</p>
-                                <p>Increasing sales with organic and paid methods together can be very effective.</p>
-                                <p><a href="https://firstpage.com.au/ecommerce-seo/">Here is more information about eCommerce SEO Sunshine Coast.</a></p>
-                                <p>And if your online shop is hosted on <a href="https://firstpage.com.au/amazon-seo/">Amazon</a>, <a href="https://firstpage.com.au/woocommerce-seo/">WooCommerce</a>, <a href="https://firstpage.com.au/magento-seo/">Magento</a>, or <a href="https://firstpage.com.au/shopify-seo/">Shopify</a>, we have specific growth plans for each one.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<section class="section-paragraph section-faqs pb-5">
+	<div class="container">
+		<h2 class="section-title">Sunshine Coast SEO - FAQs</h2>
+		<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+						{# Q1  #}
+						<h3 itemprop="name">Why is our First Page agency the best for Sunshine Coast SEO?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>First Page is the best Sunshine Coast SEO agency - as well as the fastest-growing agency in APAC.</p>
+							<p>We benefit from a strong network and eleven offices globally, to provide you with assistance promptly when you need it. Alongside our
+								<a href="https://firstpage.com.au/seo-brisbane">SEO services in Brisbane</a>, we bring world-class talent in Sunshine Coast SEO.</p>
+							<p>Getting your business traction is important, and we think you deserve to strive and achieve as much as you can.</p>
+							<p>For your business to become successful, you need to dominate Google SEO in Sunshine Coast.</p>
+							<p>Our advanced search engine techniques have helped companies of all sizes reach the top of search results - and amassed over $3.8 billion in sales with a constant 4.9/5 Google rating for our clients.</p>
+							<p>Even today, when the world is flooded with SEO agencies, our clients reap the benefits of our expertise for SEO in Sunshine Coast, in driving high-quality traffic to their websites.</p>
+							<p>The team here at First Page is always on top of the latest SEO trends, providing you with the most effective and up-to-date strategies for Sunshine Coast SEO.</p>
+							<p>We are the leading SEO agency in Sunshine Coast, and the experts in driving immense amounts of traffic to our client's websites.</p>
+							<p>We have expertise in every corner of Australia, even as niche as Darwin SEO! If you choose to engage our services, your business will achieve top rankings on search engines, and your sales will flow.</p>
+							<p>With our SEO experts in Sunshine Coast, results are guaranteed.</p>
+							<p>Let us show you what we can do for you, not just tell you about it.<br>Book a call with a Digital Strategist today.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+						{# Q2  #}
+						<h3 itemprop="name">How does SEO work?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Search Engine Optimisation or SEO is the process of optimising websites to rank higher on search engines, attract more customers, and increase your sales.</p>
+							<p>When people search for information online, search engines bots show the most relevant websites based on the request.</p>
+							<p>Local SEO in Sunshine Coast brings your website in front of local customers, who are looking for your services in the area.</p>
+							<p>To increase your search engine ranking with SEO, you need to apply a set of techniques, such as keyword research and link-building.</p>
+							<p>Researching keywords and link-building are only a part of what makes for effective Sunshine Coast SEO. SEO is very complex. It requires expertise and knowledge of the industry.</p>
+							<p>Is your website experience intuitive and relevant to your audience? How frequently do you post new content to your website? What is your conversion rate?</p>
+							<p>Sunshine Coast SEO improves local websites' user experience, builds your authority online, drives more traffic to your website, and explodes your sales numbers.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+						{#Q3#}
+						<h3 itemprop="name">Where do I start with SEO?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>There are 3 ways you can start with SEO:</p>
 
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse21">
-                            {# Q9  #}
-                            <h3 itemprop="name">Do you offer international SEO services?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Are you considering expanding beyond Sunshine Coast with your brand? <a href="https://firstpage.com.au/international-seo/">International SEO</a> is one of our areas of expertise. Here's how it works...</p>
-                                <p>International SEO includes geotargeting, as well as broader, more sophisticated objectives. A geographically targeted SEO campaign aims to generate as many visitors to a website as possible.</p>
-                                <p>International SEO allows you to sell your products and services worldwide, by optimising your website so that it is globally accessible and efficient. Our team of SEO experts in Sunshine Coast are ready to help meet the needs of your international audience.</p>                               
-                                <p>Your customers will not be informed that they are in the wrong country when they check out. The strength of International SEO  is picking up on location and optimising your website to local search engines.</p>
-                                <p>Can it be beneficial to you?</p>                                
-                                <p>Yes, with international SEO, you can attract customers worldwide and expand your reach to another level.</p>                                
-                                <p>It takes into account local requirements - since many search engines, including Google and Bing, use different algorithms to make your brand look local.</p>                                
-                                <p>Optimising websites for higher rankings on other search engines is no problem for the First Page team.</p>                                
-                                <p>You can expand your company's reach beyond national boundaries with our multi-region SEO campaigns.</p>                               
-                                <p>To take over the world with International SEO, <a href="https://firstpage.com.au/international-seo/">click here.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+							<p class="font-weight-bold mb-1">1. Backlinks</p>
+							<p>Link-building is a crucial component of Sunshine Coast SEO.</p>
+							<p>It consists of adding a link to your website from another website to build your online authority.</p>
+							<p>Backlinks are a huge part of the Google algorithm and are linked with the reputability of your website.</p>
+							<p>Our focus is on reliable and reputable sources. A large number of links on low-quality and dodgy websites is useless.</p>
+							<p>The more reputable the websites that link to your site, the higher you will rank for Sunshine Coast SEO.</p>
+							<br>
+							<p class="font-weight-bold mb-1">2. Keyword research</p>
+							<p>Keyword research determines what search terms your ideal clients use to find specific information on search engines.</p>
+							<p>The objective is to add the most relevant to your site, so search engines index your website higher.</p>
+							<p>Here is some advice for starting keyword research for Sunshine Coast SEO:</p>
+							<ul>
+								<li>Make a list of topics that describe your audience’s problems and your products or services.</li>
+								<li>Investigate how your competitors are rankings for those keywords.</li>
+								<li>Find the ones that are the most relevant and less competitive, and use them throughout your copy.</li>
+							</ul>
+							<br>
+							<p class="font-weight-bold mb-1">3. On-page SEO</p>
+							<p>With on-page SEO, you optimise your web pages to appeal to both search engines and visitors at the same time.</p>
+							<p>In order to boost your website's search engine rankings and attract targeted customers, you optimise several aspects of its front and back ends.</p>
+							<p>You can start the on-page SEO for a Sunshine Coast business by following the below steps:</p>
 
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse22">
-                            {#  Q10  #}
-                            <h3 itemprop="name">Do you offer link-building as a standalone service?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>Certainly.</p> 
-                                <p>Links are not created equal, as is well-known among our SEO experts in Sunshine Coast.</p>                               
-                                <p>Link-building consists of linking your website to external and internal sources, to increase its ranking on search engines and build your authority online.</p>                                
-                                <p>A high-quality backlink is worth much more than low-quality links from irrelevant and low-performing websites.</p>                                
-                                <p>For your SEO services in Sunshine Coast, only reputable sources are used for our clients' backlink provision.</p>                                
-                                <p>Backlinks that are of high quality help your website gain more authority and trust online. As a result, your website benefits from enhanced visibility in Sunshine Coast SEO.</p>                                
-                                <p>Our backlinks are high quality, ranking-guaranteed, unlike those provided by other SEO agencies.</p>                                
-                                <p>Your company's authority and sales will increase if you ensure placement on the most trusted and authoritative websites online. Those are our promises.</p>                                
-                                <p>To know more about First Page link-building services, <a href="https://firstpage.com.au/link-building/">click here.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+							<p>Keyword research determines what search terms your ideal clients use to find specific information on search engines.</p>
+							<p>The objective is to add the most relevant to your site, so search engines index your website higher.</p>
+							<p>Here is some advice for starting keyword research for Sunshine Coast SEO:</p>
+							<ol>
+								<li>Conduct a search engine optimisation analysis of your website.</li>
+								<li>Make sure URLs, page titles, and meta descriptions contain relevant keywords.</li>
+								<li>Add external and internal links.</li>
+								<li>Make sure the page is
+									<a href="https://firstpage.com.au/mobile-seo/">mobile-optimised.</a>
+								</li>
+								<li>Embrace visual appeal and add
+									<a href="https://firstpage.com.au/video-seo/">videos.</a>
+								</li>
+							</ol>
+							<p>Taking care of all this is not something you have to do alone.</p>
+							<p>Contact the best SEO company in Sunshine Coast with any SEO queries. You will be put in touch with one of our digital strategists immediately.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+						{#  Q4  #}
+						<h3 itemprop="name">
+							Can I just do SEO by myself?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>It's not impossible. However, it doesn't mean this is what you should do.</p>
+							<p>Instead, we recommend that you spend your time serving your customers, and let an agency deal with the technicalities of SEO for Sunshine Coast businesses.</p>
+							<p>You might think that the costs of hiring an SEO company in Sunshine Coast are high. But the truth is, the results it brings will outweigh the investment.</p>
+							<p>If you are thinking about building your team, you need to think about the time it will take you to find the right candidates and set them up for success.</p>
+							<p>In almost all cases, hiring an agency for SEO services in Sunshine Coast will save you more money than hiring your own team.</p>
+							<p>With an agency, you don't have to take care of sick leave, holidays, and wages. It also provides specialist software for Sunshine Coast SEO. If you buy these tools alone, it will cost you money.</p>
+							<p>In order for an agency to get results, a new tool isn't needed. Knowledge, skills, and services are provided as part of the fee.</p>
+							<p>Your team needs to be recruited and trained to begin.</p>
+							<p>With an agency, you are working with SEO specialists in Sunshine Coast, who know the market and are ready to hit the ground running.</p>
+							<p>To win in SEO in Sunshine Coast, you need the right partner.</p>
+							<p>An agency like us will get you results.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse17">
+						{# Q5  #}
+						<h3 itemprop="name">How much does SEO in Sunshine Coast cost?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>The cost of SEO in Sunshine Coast is affected by a variety of factors, including:</p>
+							<ul>
+								<li>Budget. Budgeting and setting goals can help you estimate the costs and type of services associated.</li>
+								<li>Scope of work. The more work there is to be done, the higher the cost. SEO costs depend on where you are starting and what it takes to get you where you want to go.</li>
+								<li>Desired Results. Investing and pursuing strategies in different ways will produce different outcomes. At First Page, we customise our services to suit your business's needs.</li>
+								<li>Experience and involvement in the project. A product's quality is often linked with its price.</li>
+							</ul>
+							<p>Don't be tricked by cheap SEO services in Sunshine Coast. Performing keyword research and implementing SEO concepts barely scratches the surface of being successful with SEO.</p>
+							<p>No matter what industry, niche, market, or competitor one faces, a well-informed and tailored strategy is key to success.</p>
+							<p>With cheap SEO marketing in Sunshine Coast, you usually get what you pay for - they lack experience, aren't up-to-date on industry standards, and may provide the bare minimum.</p>
+							<p>This can seriously harm your business and sales if SEO errors are made.</p>
+							<p>Be extremely cautious when dealing with SEO companies advertising predetermined costs and checklists. A universal solution does not exist. What works for one business may not work for another.</p>
+							<p>When used correctly, SEO results can rev up the revenue for your business.</p>
+							<p>First Page are your SEO consultants in Sunshine Coast. Partner with us to ensure your success.</p>
+							<p>Black-hat vs white-hat. These are different ways to do SEO that can affect the final cost.</p>
+							<ul>
+								<li>Black-hat SEO techniques manipulate Google algorithms to gain quick results. Such tactics cannot stand the test of time. Google might eventually notice your usage and could penalise you.</li>
+								<li>By contrast, white-hat SEO provides customers with a better experience by adhering to search engine guidelines. White-hat SEO results are only visible over time, but they are long-lasting and reliable.</li>
+								<li>While black-hat SEO in Sunshine Coast is cheaper than white-hat SEO, it puts your website at risk of being removed from search rankings.</li>
+								<li>Our quotes are unique to your business and take into account your budget and growth objectives.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse18">
+						{#  Q6 #}
+						<h3 itemprop="name">How are SEO and PPC different?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>
+								<a href="https://firstpage.com.au/google-ads/">PPC</a>
+								or Pay-Per-Click advertising involves paying a fee for your ad to be placed at the top of search engine results pages (SERPs). Every time someone clicks on your ad, you pay a fee.</p>
+							<p>Simply put, you are buying internet traffic.</p>
+							<p>It works like an auction, where you compete with other companies in your field, for keywords relevant to your business. Everyone is competing to place their ad at the top of the SERP.</p>
+							<p>PPC's main advantage is that it quickly generates traffic and results. However, the costs involved make it less attractive than SEO in Sunshine Coast.</p>
+							<p>SEO relies on organic search, which means that you are not paying for traffic or a place on search engines. You are earning your ranking through strategised work and consistency.</p>
+							<p>As a result, with local SEO in Sunshine Coast, once you are on the first page of Google, you can stay there for years to come.</p>
+							<p>SEO takes more work upfront but provides consistent traffic and catapults your sales. PPC, on the contrary, is best for product promotion or to attract a very targeted audience to a specific page during a specific period.</p>
+							<p>Sunshine Coast SEO and PPC campaigns are very effective together.</p>
+							<p>To know more about our PPC services and how they can help you increase your traffic,
+								<a href="https://firstpage.com.au/google-ads/">click here.</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse19">
+						{# Q7#}
+						<h3 itemprop="name">Can you help me recover from loss of traffic?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>There may be several reasons why your traffic has declined.</p>
+							<p>Either your Sunshine Coast SEO strategy needs to be reviewed, your website is not
+								<a href="https://firstpage.com.au/mobile-seo/">mobile-friendly</a>, or you are not up-to-date with the new Google algorithm.</p>
+							<p>In SEO, a variety of factors play a role, and authenticity is crucial when running a campaign.</p>
+							<p>To rank high in search engine results, it is critical to take legitimate steps. Your traffic may have dropped suddenly due to a Google penalty from black-hat SEO in Sunshine Coast.</p>
+							<p>Regardless of the reason why you have lost traffic, we can identify and fix the cause of any traffic problems you are experiencing.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse20">
+						{#  Q8  #}
+						<h3 itemprop="name">Do you offer eCommerce SEO services?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Without a doubt!</p>
+							<p>Over 500 companies have benefited from our eCommerce SEO services.</p>
+							<p>Search engine optimisation for eCommerce is different from
+								<a href="https://firstpage.com.au/local-and-national-seo/">local SEO in Sunshine Coast.</a>
+							</p>
+							<p>
+								<a href="https://firstpage.com.au/local-and-national-seo/">Local SEO</a>
+								relies heavily on regional location factors (for example, Sunshine Coast). You can therefore expect to reach local customers.</p>
+							<p>Physical stores or businesses that target a specific area should use this service.</p>
+							<p>If you're an e-shop owner, the best way to rank your products on search engines regardless of your location is to use eCommerce SEO for Sunshine Coast.</p>
+							<p>By optimising product descriptions, brand headlines, and listings, you can significantly enhance your product visibility and Google ranking.</p>
+							<p>Increasing revenue and attracting new customers are key objectives of eCommerce SEO.</p>
+							<p>We will make the entire online buying experience as enjoyable and straightforward as possible.</p>
+							<p>Ecommerce SEO campaigns are supplemented well by pay-per-click (PPC) campaigns.</p>
+							<p>Increasing sales with organic and paid methods together can be very effective.</p>
+							<p>
+								<a href="https://firstpage.com.au/ecommerce-seo/">Here is more information about eCommerce SEO Sunshine Coast.</a>
+							</p>
+							<p>And if your online shop is hosted on
+								<a href="https://firstpage.com.au/amazon-seo/">Amazon</a>,
+								<a href="https://firstpage.com.au/woocommerce-seo/">WooCommerce</a>,
+								<a href="https://firstpage.com.au/magento-seo/">Magento</a>, or
+								<a href="https://firstpage.com.au/shopify-seo/">Shopify</a>, we have specific growth plans for each one.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse23">
-                            {#  Q11  #}
-                            <h3 itemprop="name">How long does SEO take?</h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>There is no one answer to this question. The time it takes to see results depends on the place you are starting, your objectives, and other SEO factors.</p>                                
-                                <p>Sunshine Coast SEO produces results over time, and its ROI can be multiplied tenfold.</p>                                
-                                <p>Be patient with SEO; it takes time.</p>                                
-                                <p>When working with us, there are no risks. Results are guaranteed.</p>                                
-                                <p>We are so confident that you will succeed that we are <a href="https://firstpage.com.au/pay-on-performance/">pay on performance.</a></p>                                
-                                <p>Results from Sunshine Coast SEO take time to be visible, but they are sustainable.</p>                                
-                                <p>If you compare your second year's performance against the first, you should see a significant increase.</p>                                
-                                <p>This process will take some time, but don't worry. We keep you updated along the way and give you complete visibility.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse21">
+						{# Q9  #}
+						<h3 itemprop="name">Do you offer international SEO services?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Are you considering expanding beyond Sunshine Coast with your brand?
+								<a href="https://firstpage.com.au/international-seo/">International SEO</a>
+								is one of our areas of expertise. Here's how it works...</p>
+							<p>International SEO includes geotargeting, as well as broader, more sophisticated objectives. A geographically targeted SEO campaign aims to generate as many visitors to a website as possible.</p>
+							<p>International SEO allows you to sell your products and services worldwide, by optimising your website so that it is globally accessible and efficient. Our team of SEO experts in Sunshine Coast are ready to help meet the needs of your international audience.</p>
+							<p>Your customers will not be informed that they are in the wrong country when they check out. The strength of International SEO  is picking up on location and optimising your website to local search engines.</p>
+							<p>Can it be beneficial to you?</p>
+							<p>Yes, with international SEO, you can attract customers worldwide and expand your reach to another level.</p>
+							<p>It takes into account local requirements - since many search engines, including Google and Bing, use different algorithms to make your brand look local.</p>
+							<p>Optimising websites for higher rankings on other search engines is no problem for the First Page team.</p>
+							<p>You can expand your company's reach beyond national boundaries with our multi-region SEO campaigns.</p>
+							<p>To take over the world with International SEO,
+								<a href="https://firstpage.com.au/international-seo/">click here.</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                <div class="col-12 col-md-6">
-                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse24">
-                            {#  Q12  #}
-                            <h3 itemprop="name">What’s the difference between white hat and black hat SEO? </h3>
-                        </div>
-                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24"
-                             class="collapse">
-                            <div itemprop="text" class="card-body">
-                                <p>In black-hat practices, you violate the guidelines for Google's search engine. By manipulating the Google algorithm this way, leads are boosted regardless of users' experience.</p> 
-                                <p>In black-hat SEO, users are redirected to other pages through duplicate content and overstuffed keywords.</p>                               
-                                <p>When applied to Sunshine Coast SEO, this strategy will not serve your company's long-term interests. You may face penalties from Google if they discover you are using it.</p>                                
-                                <p>There is no guarantee of results. Using black-hat SEO campaign is not recommended and may lead to search engines rejecting your website.</p>                                
-                                <p>White-hat SEO in Sunshine Coast optimises a website with ethical and correct techniques.</p>                                
-                                <p>The search engine companies have established guidelines and rules regarding search engines rankings and reward websites that are doing it the right way.</p>                                
-                                <p>Sunshine Coast SEO that uses white-hat tactics does not manipulate the results. In addition to ensuring the best experience for the audience, it is ethical, and long-lasting results are likely to be achieved over time.</p>                               
-                                <p>SEO is part of a long-term plan. There will be a wait before the benefits of the transformation become positive, lasting, and sustainable, but the ROI will be well worth it.</p>                                
-                                <p>The team at First Page does not do black-hat SEO. Our agency has grown so fast because of our reliable values and strong work ethics.</p>                                
-                                <p>We solely provide our clients with ethical practices and astonishing results in Sunshine Coast SEO.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse22">
+						{#  Q10  #}
+						<h3 itemprop="name">Do you offer link-building as a standalone service?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>Certainly.</p>
+							<p>Links are not created equal, as is well-known among our SEO experts in Sunshine Coast.</p>
+							<p>Link-building consists of linking your website to external and internal sources, to increase its ranking on search engines and build your authority online.</p>
+							<p>A high-quality backlink is worth much more than low-quality links from irrelevant and low-performing websites.</p>
+							<p>For your SEO services in Sunshine Coast, only reputable sources are used for our clients' backlink provision.</p>
+							<p>Backlinks that are of high quality help your website gain more authority and trust online. As a result, your website benefits from enhanced visibility in Sunshine Coast SEO.</p>
+							<p>Our backlinks are high quality, ranking-guaranteed, unlike those provided by other SEO agencies.</p>
+							<p>Your company's authority and sales will increase if you ensure placement on the most trusted and authoritative websites online. Those are our promises.</p>
+							<p>To know more about First Page link-building services,
+								<a href="https://firstpage.com.au/link-building/">click here.</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse23">
+						{#  Q11  #}
+						<h3 itemprop="name">How long does SEO take?</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>There is no one answer to this question. The time it takes to see results depends on the place you are starting, your objectives, and other SEO factors.</p>
+							<p>Sunshine Coast SEO produces results over time, and its ROI can be multiplied tenfold.</p>
+							<p>Be patient with SEO; it takes time.</p>
+							<p>When working with us, there are no risks. Results are guaranteed.</p>
+							<p>We are so confident that you will succeed that we are
+								<a href="https://firstpage.com.au/pay-on-performance/">pay on performance.</a>
+							</p>
+							<p>Results from Sunshine Coast SEO take time to be visible, but they are sustainable.</p>
+							<p>If you compare your second year's performance against the first, you should see a significant increase.</p>
+							<p>This process will take some time, but don't worry. We keep you updated along the way and give you complete visibility.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    {% include "partials/en-form-popup.twig" with {'form_page': 'SEO Sunshine Coast (Pop-up Form)'} %}
+			<div class="col-12 col-md-6">
+				<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+					<div
+						class="card-header collapsed" data-toggle="collapse" href="#collapse24">
+						{#  Q12  #}
+						<h3 itemprop="name">What’s the difference between white hat and black hat SEO?
+						</h3>
+					</div>
+					<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24" class="collapse">
+						<div itemprop="text" class="card-body">
+							<p>In black-hat practices, you violate the guidelines for Google's search engine. By manipulating the Google algorithm this way, leads are boosted regardless of users' experience.</p>
+							<p>In black-hat SEO, users are redirected to other pages through duplicate content and overstuffed keywords.</p>
+							<p>When applied to Sunshine Coast SEO, this strategy will not serve your company's long-term interests. You may face penalties from Google if they discover you are using it.</p>
+							<p>There is no guarantee of results. Using black-hat SEO campaign is not recommended and may lead to search engines rejecting your website.</p>
+							<p>White-hat SEO in Sunshine Coast optimises a website with ethical and correct techniques.</p>
+							<p>The search engine companies have established guidelines and rules regarding search engines rankings and reward websites that are doing it the right way.</p>
+							<p>Sunshine Coast SEO that uses white-hat tactics does not manipulate the results. In addition to ensuring the best experience for the audience, it is ethical, and long-lasting results are likely to be achieved over time.</p>
+							<p>SEO is part of a long-term plan. There will be a wait before the benefits of the transformation become positive, lasting, and sustainable, but the ROI will be well worth it.</p>
+							<p>The team at First Page does not do black-hat SEO. Our agency has grown so fast because of our reliable values and strong work ethics.</p>
+							<p>We solely provide our clients with ethical practices and astonishing results in Sunshine Coast SEO.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-{% endblock %}
+
+{% include "partials/en-form-popup.twig" with {'form_page': 'SEO Sunshine Coast (Pop-up Form)'} %}{% endblock %}

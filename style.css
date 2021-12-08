@@ -4351,6 +4351,11 @@ section.section-paragraph .image-container-right {
   section.section-paragraph .text-container .fp-btn {
     width: auto; } }
 
+@media (max-width: 991px) {
+  section.section-paragraph .facebook-finder-content {
+    padding-top: 30px;
+    text-align: center; } }
+
 @media (min-width: 992px) {
   section.section-paragraph .text-container .fp-btn {
     margin-bottom: 0; } }

@@ -2016,6 +2016,12 @@ section.section-paragraph {
       }
     }
   }
+  @media (max-width: 991px) {
+    .facebook-finder-content {
+      padding-top: 30px;
+      text-align: center;
+    }
+  }
 
   @media (min-width: $responsive-lg) {
     .text-container {

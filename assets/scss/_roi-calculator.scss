@@ -45,6 +45,12 @@
       border-radius: 10px;
     }
   }
+  #fp-roi-calculator .facebook-box-shadow {
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #80808014;
+  }
   .fp-container.roi-for-section + .fp-container.roi-for-section {
     margin-top: 50px;
   }

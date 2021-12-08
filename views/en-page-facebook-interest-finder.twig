@@ -1,24 +1,36 @@
 {% extends "en-base.twig" %}
 {% block content %}
 
+	<style>
+		@media(min-width: 992px) {
+			.page-facebook-interest-finder section.banner h1 {
+				font-size: 52px;
+				line-height: 54px;
+			}
+		}
+	</style>
+
 	<section class="banner">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-7 col-lg-7">
-					<h1>SEO ROI Calculator</h1>
-					<p>If you have an online business, organic SEO traffic will help you generate a steady influx of customers – but exactly how much return can you expect from an SEO campaign? Use our calculator to find out…</p>
+					<h1>Facebook Hidden ad
+						<br class="d-lg-block">
+						Interest Finder</h1>
+					<p>Enhance your interest-based Facebook ads with our superior Facebook Hidden Ad Interest Finder tool.</p>
 				</div>
 				<div class="col-12 col-md-5 col-lg-5">
-					<img src="{{ site.theme.link }}/assets/seo-calculator/roi-calculator-hero-banner.png" class="img-fluid" alt="SEO ROI Calculator"/>
+					<img src="{{ site.theme.link }}/assets/seo-calculator/facebook-interest-finder-banner.png" class="img-fluid" alt="SEO ROI Calculator"/>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="section-white shaded-white">
+	<section class="section-white shaded-white" style="background:white">
 		<div class="d-flex justify-content-center" id='fp-roi-calculator' data-currency='$'>
 			<div class="seo-roi-calculator">
-				<div class="fp-container roi-for-section">
+				<div class="fp-container roi-for-section facebook-box-shadow">
+
 					<div class="row mx-0">
 						<div class="col-12 col-lg-7 fp-shadow-left fp-border-radius-left">
 							<div class="row fp-vertical-align fp-show-block" id="fp-total-search-volume">
@@ -280,5 +292,4 @@
 	</section>
 
 	<script src="{{ site.theme.link }}/assets/seo-calculator/js/script.js"></script>
-
 {% endblock %}

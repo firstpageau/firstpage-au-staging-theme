@@ -9535,6 +9535,14 @@ div.check-out-div {
 .page-seo-roi-calculator #fp-roi-calculator .fp-container.roi-for-section .row.mx-0 {
   border-radius: 10px; }
 
+.page-ppc-roi-calculator #fp-roi-calculator .facebook-box-shadow,
+.page-facebook-interest-finder #fp-roi-calculator .facebook-box-shadow,
+.page-seo-roi-calculator #fp-roi-calculator .facebook-box-shadow {
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #80808014; }
+
 .page-ppc-roi-calculator .fp-container.roi-for-section + .fp-container.roi-for-section,
 .page-facebook-interest-finder .fp-container.roi-for-section + .fp-container.roi-for-section,
 .page-seo-roi-calculator .fp-container.roi-for-section + .fp-container.roi-for-section {

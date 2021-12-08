@@ -1,0 +1,284 @@
+{% extends "en-base.twig" %}
+{% block content %}
+
+	<section class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-7 col-lg-7">
+					<h1>SEO ROI Calculator</h1>
+					<p>If you have an online business, organic SEO traffic will help you generate a steady influx of customers – but exactly how much return can you expect from an SEO campaign? Use our calculator to find out…</p>
+				</div>
+				<div class="col-12 col-md-5 col-lg-5">
+					<img src="{{ site.theme.link }}/assets/seo-calculator/roi-calculator-hero-banner.png" class="img-fluid" alt="SEO ROI Calculator"/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-white shaded-white">
+		<div class="d-flex justify-content-center" id='fp-roi-calculator' data-currency='$'>
+			<div class="seo-roi-calculator">
+				<div class="fp-container roi-for-section">
+					<div class="row mx-0">
+						<div class="col-12 col-lg-7 fp-shadow-left fp-border-radius-left">
+							<div class="row fp-vertical-align fp-show-block" id="fp-total-search-volume">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">How many searches do you get for business-relevant keywords? (per month)</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="total-search-volume">Search Volume
+										<img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="Search volume information can be found on your Google Analytics/ Google Search Console, and other online tools such as SEMrush and Moz." data-trigger="hover"></label>
+									<input data-type="integer" id="total-search-volume" class="fp-slider" type="range" min="100" max="10000" step="100" value="300" data-orientation="vertical"/>
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="total-search-volume-val">100</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-ctr">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">What percentage of the people that search for your keywords click on your website?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="ctr">CTR
+										<img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="For example- if the monthly search volume for your keyword is 1,000 and you get 200 clicks for that keyword in a month, your click through rate is (200/1000)%=  20%" data-trigger="hover"></label>
+									<input data-type="percentage" id="ctr" class="fp-slider" type="range" min="5" max="100" step="5" value="10" data-orientation="vertical"/>
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="ctr-val">$1,000</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-conversion">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">Out of the visitors to your website,what percentage convert into customers?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="conversion_rate_services">Conversion Rate
+										<img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="If your website gets 500 visitors and 50 of them convert to paying customers, your CVR is (50/500)%= 10%" data-trigger="hover"></label>
+									<input data-type="percentage" id="conversion" class="fp-slider" type="range" min="0.5" max="100" step="0.5" value="20" data-orientation="vertical"/>
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="conversion-val">20%</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-average-order-value">
+								<div class="col-12 col-md-4 border-right">
+									<p class="align-middle fp-text">What is your average
+										<br class="d-none d-md-block">order value?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="close_rate_services">Average Order Value
+										<img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="To calculate your company's average order value, simply divide total revenue by the number of orders." data-trigger="hover"></label>
+									<input data-type="wholenumber" id="average-order-value" class="fp-slider" type="range" min="100" max="10000" step="100" value="200" data-orientation="vertical"/>
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="average-order-value-val">$100</span>
+								</div>
+							</div>
+							<div class="row fp-vertical-align fp-show-block" id="fp-lifetimevalue">
+								<div class="col-12 col-md-4 border-right ">
+									<p class="align-middle fp-text">What is the average lifetime value of your customer?</p>
+								</div>
+								<div class="col-9 col-md-6">
+									<label for="lifetimevalue">Life Time Value
+										<img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="How much is one customer worth across their whole lifecycle?  If you don’t have this metric, calculate it by multiplying your customer value with your average customer lifespan." data-trigger="hover"></label>
+									<input data-type="wholenumber" id="lifetimevalue" class="fp-slider" type="range" min="100" max="10000" step="100" value="200" data-orientation="vertical"/>
+								</div>
+								<div class="col-1 col-md-2">
+									<span class="align-right fp-show-value" id="lifetimevalue-val">$100</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-5 fp-shadow-right fp-border-radius-right">
+							<div class="row">
+								<div class="col-12 text-center">
+									<img class="fp-logo" src="{{ site.theme.link }}/assets/img/fp-logo-roi-calc.svg"/>
+									<p class="seo-cal-based-title">Based on these numbers, here is what you could expect for return on investment*</p>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Visitors
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_visitor_result">1000</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Conversions
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_conversion_result">200</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											AOV
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_aov_result">$5</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Net Revenue (Monthly)
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_net_revenue_result">80</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center">
+											Total Lifetime Value
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_total_lifetime_result">$8,000</span>
+											</span>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-center monthly-roi">
+											<span class="monthly-roi-label">Monthly ROI</span>
+											<span class="badge badge-primary badge-pill">
+												<span id="fr_monthlyroi_result">700%</span>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="fp-calculator-footer-text">
+							<p>*The information calculated from the First Page ROI Calculator is intended for use by you as a guide ONLY. The calculations produced by the First Page ROI Calculator do not in any way represent guaranteed results, and the calculations have no legal effect on any contracts entered into by you (‘the Client’) with First Page. The figures and formulae used within the First Page ROI Calculator may change at any time without notice. First Page accepts no responsibility for any losses arising from any use or reliance upon any calculations or conclusions reached by using the First Page ROI Calculator.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph">
+		<div class="container">
+			<div class="row align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+				<div class="col-12 col-lg-6 text-center">
+					<img src="{{ site.theme.link }}/assets/img/img_roi.png" srcset="{{ site.theme.link }}/assets/img/img_roi.png, {{ site.theme.link }}/assets/img/img_roi@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page"/>
+					<img src="{{ site.theme.link }}/assets/img/img_roi_mob.png" srcset="{{ site.theme.link }}/assets/img/img_roi_mob.png, {{ site.theme.link }}/assets/img/img_roi_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page"/>
+				</div>
+				<div class="col-12 col-lg-6 text-container">
+					<h2>How do you calculate
+						<br>SEO ROI?</h2>
+					<p>Here at First Page, we’re fully dedicated to making sure your campaign is seamlessly integrated with company objectives. In fact, in the last 10 years, we’ve ranked over 71,000 keywords on the first page for our clients.</p>
+					<p>That’s why we’ve combined our years of knowledge and expertise to create a SEO ROI tool for measuring potential revenues for your campaign. Using five of the most important SEO metrics, our simple-to-use calculator can show you just how impactful an SEO strategy can be for your business.</p>
+					<p>Here’s some more information on our metrics.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-services">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="card">
+						<img src="{{ site.theme.link }}/assets/img/icn_magnifier.svg" alt="First Page">
+						<div class="card-body">
+							<h4 class="card-title">Monthly search volume</h4>
+							<p class="card-text">Gain insights to how much traffic you can unlock by providing the monthly search volume of your targeted keywords.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="card">
+						<img src="{{ site.theme.link }}/assets/img/icn_avg_customer_value.svg" alt="First Page">
+						<div class="card-body">
+							<h4 class="card-title">Average order value</h4>
+							<p class="card-text">Knowing how much your customers spend on average every time they make a purchase can help us more accurately determine your ROI.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="card">
+						<img src="{{ site.theme.link }}/assets/img/icn_profits.svg" alt="First Page">
+						<div class="card-body">
+							<h4 class="card-title">Lifetime value</h4>
+							<p class="card-text">A key component in determining your ROI, this figure refers to how much customers spend on average during their entire customer lifecycle.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph section-faqs">
+		<div class="container">
+			<h2 class="section-title">Frequently asked questions</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What is SEO?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>SEO, or Search Engine Optimisation involves improving search engine visibility to increase organic traffic. Find out more about
+									<a href="{{ home_url }}seo/">SEO</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What’s a good ROI for an SEO campaign?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>ROI for SEO differs depending on the type of business, and the specific niche. Of course, the best ROI will have the highest profit margins. Use our calculator to learn how a professional SEO campaign can achieve business objectives and maximise your returns.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Can I calculate PPC ROI with this calculator?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>This calculator is only designed for calculating potential SEO ROI. Use our PPC ROI calculator to predict returns of your PPC ad campaigns.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Are these ROI figures guaranteed?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>As our SEO ROI calculator tool is designed to predict potential returns, these figures only serve as a point of reference. As a leading digital marketing agency with over 10 years of experience, these figures can help you determine how an SEO campaign can fit in with your digital marketing strategy.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How can I get started with SEO?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Having a water-tight SEO strategy can generate organic traffic, drive conversions and grow your business’s online presence. If you want an effective campaign that can grant you amazing ROI,
+									<a href="{{ home_url }}contact/">reach out to a digital marketing specialist</a>
+									today.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How Can SEO ROI Benefit My Business?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Optimising your website for search engines will drive online traffic and help your business gain real visibility.</p>
+								<p>Measuring the value of our SEO services with an ROI Calculator allows for a data-driven approach - clearly demonstrating performance and benefits.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="{{ site.theme.link }}/assets/seo-calculator/js/script.js"></script>
+
+{% endblock %}

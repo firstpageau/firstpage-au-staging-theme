@@ -19,6 +19,10 @@
     max-width: 1080px;
   }
 
+  .fb-container {
+    max-width: 1080px;
+  }
+
   .switch-container {
     text-align: center;
     margin-top: 20px;
@@ -367,6 +371,10 @@
     }
     #fp-roi-calculator .fp-container.roi-for-section {
       padding: 40px 50px;
+      margin-bottom: 50px;
+    }
+    #fp-roi-calculator .fp-container.roi-for-section.facebook-box-shadow {
+      padding: 20px 20px;
       margin-bottom: 50px;
     }
     .fp-title {

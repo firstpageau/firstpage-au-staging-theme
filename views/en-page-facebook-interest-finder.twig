@@ -30,124 +30,65 @@
 		<div class="d-flex justify-content-center" id='fp-roi-calculator' data-currency='$'>
 			<div class="seo-roi-calculator">
 				<div class="fp-container roi-for-section facebook-box-shadow">
-
 					<div class="row mx-0">
-						<div class="col-12 col-lg-7 fp-shadow-left fp-border-radius-left">
+						<div class="col-12 col-lg-12">
+							<form id="search-form" class="field has-addons">
+								<p class="control is-expanded">
+									<input id="keyword" class="input form-control" type="text" placeholder="Enter your keyword..."/>
+								</p>
+								<p class="control d-none">
+									<span class="select">
+										<select id="locale">
+											<option value="en_US">English</option>
+											<option value="th_TH">Thai</option>
+											<option value="vi_VN">Vietnamese</option>
+										</select>
+									</span>
+								</p>
+								<p class="control">
+									<a id="search-form-submit" class="btn fp-btn fp-btn-orange button is-primary">
+										Get
+									</a>
+								</p>
+							</form>
+							<nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+								<ul id="keyword-history"></ul>
+							</nav>
+						</div>
+
+						<div class="col-12 col-lg-6">
 							<div class="row fp-vertical-align fp-show-block" id="fp-total-search-volume">
-								<div class="col-12 col-md-4 border-right">
-									<p class="align-middle fp-text">How many searches do you get for business-relevant keywords? (per month)</p>
-								</div>
-								<div class="col-9 col-md-6">
-									<label for="total-search-volume">Search Volume
-										<img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="Search volume information can be found on your Google Analytics/ Google Search Console, and other online tools such as SEMrush and Moz." data-trigger="hover"></label>
-									<input data-type="integer" id="total-search-volume" class="fp-slider" type="range" min="100" max="10000" step="100" value="300" data-orientation="vertical"/>
-								</div>
-								<div class="col-1 col-md-2">
-									<span class="align-right fp-show-value" id="total-search-volume-val">100</span>
-								</div>
-							</div>
-							<div class="row fp-vertical-align fp-show-block" id="fp-ctr">
-								<div class="col-12 col-md-4 border-right">
-									<p class="align-middle fp-text">What percentage of the people that search for your keywords click on your website?</p>
-								</div>
-								<div class="col-9 col-md-6">
-									<label for="ctr">CTR
-										<img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="For example- if the monthly search volume for your keyword is 1,000 and you get 200 clicks for that keyword in a month, your click through rate is (200/1000)%=  20%" data-trigger="hover"></label>
-									<input data-type="percentage" id="ctr" class="fp-slider" type="range" min="5" max="100" step="5" value="10" data-orientation="vertical"/>
-								</div>
-								<div class="col-1 col-md-2">
-									<span class="align-right fp-show-value" id="ctr-val">$1,000</span>
-								</div>
-							</div>
-							<div class="row fp-vertical-align fp-show-block" id="fp-conversion">
-								<div class="col-12 col-md-4 border-right">
-									<p class="align-middle fp-text">Out of the visitors to your website,what percentage convert into customers?</p>
-								</div>
-								<div class="col-9 col-md-6">
-									<label for="conversion_rate_services">Conversion Rate
-										<img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="If your website gets 500 visitors and 50 of them convert to paying customers, your CVR is (50/500)%= 10%" data-trigger="hover"></label>
-									<input data-type="percentage" id="conversion" class="fp-slider" type="range" min="0.5" max="100" step="0.5" value="20" data-orientation="vertical"/>
-								</div>
-								<div class="col-1 col-md-2">
-									<span class="align-right fp-show-value" id="conversion-val">20%</span>
-								</div>
-							</div>
-							<div class="row fp-vertical-align fp-show-block" id="fp-average-order-value">
-								<div class="col-12 col-md-4 border-right">
-									<p class="align-middle fp-text">What is your average
-										<br class="d-none d-md-block">order value?</p>
-								</div>
-								<div class="col-9 col-md-6">
-									<label for="close_rate_services">Average Order Value
-										<img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="To calculate your company's average order value, simply divide total revenue by the number of orders." data-trigger="hover"></label>
-									<input data-type="wholenumber" id="average-order-value" class="fp-slider" type="range" min="100" max="10000" step="100" value="200" data-orientation="vertical"/>
-								</div>
-								<div class="col-1 col-md-2">
-									<span class="align-right fp-show-value" id="average-order-value-val">$100</span>
-								</div>
-							</div>
-							<div class="row fp-vertical-align fp-show-block" id="fp-lifetimevalue">
-								<div class="col-12 col-md-4 border-right ">
-									<p class="align-middle fp-text">What is the average lifetime value of your customer?</p>
-								</div>
-								<div class="col-9 col-md-6">
-									<label for="lifetimevalue">Life Time Value
-										<img src="{{ site.theme.link }}/assets/img/icn_question.svg" data-container="body" data-toggle="popover" data-placement="right" data-content="How much is one customer worth across their whole lifecycle?  If you don’t have this metric, calculate it by multiplying your customer value with your average customer lifespan." data-trigger="hover"></label>
-									<input data-type="wholenumber" id="lifetimevalue" class="fp-slider" type="range" min="100" max="10000" step="100" value="200" data-orientation="vertical"/>
-								</div>
-								<div class="col-1 col-md-2">
-									<span class="align-right fp-show-value" id="lifetimevalue-val">$100</span>
+								<div class="col-12 col-md-12 border-right">
+									<h4 class="subtitle has-text-centered">
+										Ad Interests<span id="interest-counter"></span>
+									</h4>
+									<table class="table is-striped">
+										<thead>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Audience size</th>
+										</thead>
+										<tbody id="interest-table-body"></tbody>
+									</table>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-5 fp-shadow-right fp-border-radius-right">
-							<div class="row">
-								<div class="col-12 text-center">
-									<img class="fp-logo" src="{{ site.theme.link }}/assets/img/fp-logo-roi-calc.svg"/>
-									<p class="seo-cal-based-title">Based on these numbers, here is what you could expect for return on investment*</p>
-									<ul class="list-group list-group-flush">
-										<li class="list-group-item d-flex justify-content-between align-items-center">
-											Visitors
-											<span class="badge badge-primary badge-pill">
-												<span id="fr_visitor_result">1000</span>
-											</span>
-										</li>
-										<li class="list-group-item d-flex justify-content-between align-items-center">
-											Conversions
-											<span class="badge badge-primary badge-pill">
-												<span id="fr_conversion_result">200</span>
-											</span>
-										</li>
-										<li class="list-group-item d-flex justify-content-between align-items-center">
-											AOV
-											<span class="badge badge-primary badge-pill">
-												<span id="fr_aov_result">$5</span>
-											</span>
-										</li>
-										<li class="list-group-item d-flex justify-content-between align-items-center">
-											Net Revenue (Monthly)
-											<span class="badge badge-primary badge-pill">
-												<span id="fr_net_revenue_result">80</span>
-											</span>
-										</li>
-										<li class="list-group-item d-flex justify-content-between align-items-center">
-											Total Lifetime Value
-											<span class="badge badge-primary badge-pill">
-												<span id="fr_total_lifetime_result">$8,000</span>
-											</span>
-										</li>
-										<li class="list-group-item d-flex justify-content-between align-items-center monthly-roi">
-											<span class="monthly-roi-label">Monthly ROI</span>
-											<span class="badge badge-primary badge-pill">
-												<span id="fr_monthlyroi_result">700%</span>
-											</span>
-										</li>
-									</ul>
+						<div class="col-12 col-lg-6">
+							<div class="row fp-vertical-align fp-show-block" id="fp-total-search-volume">
+								<div class="col-12 col-md-12 border-right">
+									<h4 class="subtitle has-text-centered">
+										Ad Interest Suggestions<span id="suggestion-counter"></span>
+									</h4>
+									<table class="table is-striped">
+										<thead>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Audience size</th>
+										</thead>
+										<tbody id="suggestion-table-body"></tbody>
+									</table>
 								</div>
 							</div>
-						</div>
-						<div class="fp-calculator-footer-text">
-							<p>*The information calculated from the First Page ROI Calculator is intended for use by you as a guide ONLY. The calculations produced by the First Page ROI Calculator do not in any way represent guaranteed results, and the calculations have no legal effect on any contracts entered into by you (‘the Client’) with First Page. The figures and formulae used within the First Page ROI Calculator may change at any time without notice. First Page accepts no responsibility for any losses arising from any use or reliance upon any calculations or conclusions reached by using the First Page ROI Calculator.</p>
 						</div>
 					</div>
 				</div>
@@ -174,6 +115,24 @@
 		</div>
 	</section>
 
+	<ul>
+		<li>Adele</li>
+		<li>Agnes<span class="close">&times;</span>
+		</li>
+
+		<li>Billy<span class="close">&times;</span>
+		</li>
+		<li>Bob<span class="close">&times;</span>
+		</li>
+
+		<li>Calvin<span class="close">&times;</span>
+		</li>
+		<li>Christina<span class="close">&times;</span>
+		</li>
+		<li>Cindy</li>
+	</ul>
+
+
 	<section class="section-client-reviews pb-3">
 		<div class="container">
 			<div class="section-title">
@@ -187,5 +146,15 @@
 		</div>
 	</section>
 
-	<script src="{{ site.theme.link }}/assets/seo-calculator/js/script.js"></script>
+	<script>
+		var closebtns = document.getElementsByClassName("close");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+closebtns[i].addEventListener("click", function () {
+this.parentElement.style.display = 'none';
+});
+}
+	</script>
+
 {% endblock %}

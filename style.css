@@ -9507,6 +9507,11 @@ div.check-out-div {
 .page-seo-roi-calculator .fp-container {
   max-width: 1080px; }
 
+.page-ppc-roi-calculator .fb-container,
+.page-facebook-interest-finder .fb-container,
+.page-seo-roi-calculator .fb-container {
+  max-width: 1080px; }
+
 .page-ppc-roi-calculator .switch-container,
 .page-facebook-interest-finder .switch-container,
 .page-seo-roi-calculator .switch-container {
@@ -9914,6 +9919,11 @@ div.check-out-div {
   .page-facebook-interest-finder #fp-roi-calculator .fp-container.roi-for-section,
   .page-seo-roi-calculator #fp-roi-calculator .fp-container.roi-for-section {
     padding: 40px 50px;
+    margin-bottom: 50px; }
+  .page-ppc-roi-calculator #fp-roi-calculator .fp-container.roi-for-section.facebook-box-shadow,
+  .page-facebook-interest-finder #fp-roi-calculator .fp-container.roi-for-section.facebook-box-shadow,
+  .page-seo-roi-calculator #fp-roi-calculator .fp-container.roi-for-section.facebook-box-shadow {
+    padding: 20px 20px;
     margin-bottom: 50px; }
   .page-ppc-roi-calculator .fp-title,
   .page-facebook-interest-finder .fp-title,

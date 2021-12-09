@@ -2377,7 +2377,8 @@ section.banner .mid-buttons .mid-buttons-desc {
 .page-seo-adelaide .banner-img-mb img,
 .page-seo-canberra .banner-img-mb img,
 .page-seo-ballarat .banner-img-mb img,
-.page-seo-bendigo .banner-img-mb img {
+.page-seo-bendigo .banner-img-mb img,
+.page-seo-darwin .banner-img-mb img {
   width: 114%;
   margin-left: -14px;
   margin-bottom: -66px;
@@ -2392,7 +2393,8 @@ section.banner .mid-buttons .mid-buttons-desc {
 .page-seo-adelaide section.banner,
 .page-seo-canberra section.banner,
 .page-seo-ballarat section.banner,
-.page-seo-bendigo section.banner {
+.page-seo-bendigo section.banner,
+.page-seo-darwin section.banner {
   min-height: 650px; }
 
 @media (min-width: 576px) {
@@ -2405,7 +2407,8 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-seo-adelaide section.banner,
   .page-seo-canberra section.banner,
   .page-seo-ballarat section.banner,
-  .page-seo-bendigo section.banner {
+  .page-seo-bendigo section.banner,
+  .page-seo-darwin section.banner {
     background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%), linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%), url("assets/img/perth-location-banner-bg.png") no-repeat right center/auto 714px #427fe0;
     background-position: 59%; } }
 
@@ -2419,7 +2422,8 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-seo-adelaide section.banner,
   .page-seo-canberra section.banner,
   .page-seo-ballarat section.banner,
-  .page-seo-bendigo section.banner {
+  .page-seo-bendigo section.banner,
+  .page-seo-darwin section.banner {
     min-height: auto;
     background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%), linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%), url("assets/img/perth-location-banner-bg.png") no-repeat right center/auto 714px #427fe0;
     background-size: cover;
@@ -2435,7 +2439,8 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-seo-adelaide section.banner,
   .page-seo-canberra section.banner,
   .page-seo-ballarat section.banner,
-  .page-seo-bendigo section.banner {
+  .page-seo-bendigo section.banner,
+  .page-seo-darwin section.banner {
     background-position: 85%; } }
 
 .page-seo-perth section.banner h1 + p,
@@ -2447,7 +2452,8 @@ section.banner .mid-buttons .mid-buttons-desc {
 .page-seo-adelaide section.banner h1 + p,
 .page-seo-canberra section.banner h1 + p,
 .page-seo-ballarat section.banner h1 + p,
-.page-seo-bendigo section.banner h1 + p {
+.page-seo-bendigo section.banner h1 + p,
+.page-seo-darwin section.banner h1 + p {
   margin-bottom: 15px; }
 
 @media (min-width: 768px) {
@@ -2460,7 +2466,8 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-seo-adelaide section.banner h1,
   .page-seo-canberra section.banner h1,
   .page-seo-ballarat section.banner h1,
-  .page-seo-bendigo section.banner h1 {
+  .page-seo-bendigo section.banner h1,
+  .page-seo-darwin section.banner h1 {
     font-size: 52px;
     line-height: 54px; }
   .page-seo-perth section.banner h1 + p,
@@ -2472,7 +2479,8 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-seo-adelaide section.banner h1 + p,
   .page-seo-canberra section.banner h1 + p,
   .page-seo-ballarat section.banner h1 + p,
-  .page-seo-bendigo section.banner h1 + p {
+  .page-seo-bendigo section.banner h1 + p,
+  .page-seo-darwin section.banner h1 + p {
     margin-top: 20px;
     margin-bottom: 0px; } }
 
@@ -2672,6 +2680,21 @@ section.banner .mid-buttons .mid-buttons-desc {
 
 @media (min-width: 2560px) {
   .page-seo-bendigo section.banner {
+    background-position: 85%; } }
+
+@media (min-width: 576px) {
+  .page-seo-darwin section.banner {
+    background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%), linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%), url("assets/img/img_darwin_banner_lg@2x_2.png") no-repeat right center/auto 714px #427fe0;
+    background-position: 71%; } }
+
+@media (min-width: 992px) {
+  .page-seo-darwin section.banner {
+    min-height: auto;
+    background-size: cover;
+    background-position: 98%; } }
+
+@media (min-width: 2560px) {
+  .page-seo-darwin section.banner {
     background-position: 85%; } }
 
 @media (min-width: 576px) {
@@ -7102,7 +7125,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
 .page-seo-canberra .light-heading,
 .page-seo-parramatta .light-heading,
 .page-seo-ballarat .light-heading,
-.page-seo-bendigo .light-heading {
+.page-seo-bendigo .light-heading,
+.page-seo-darwin .light-heading {
   font-weight: 400;
   font-size: 35px;
   line-height: 1; }
@@ -7114,7 +7138,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
 .page-seo-canberra .tab-data-img-container img,
 .page-seo-parramatta .tab-data-img-container img,
 .page-seo-ballarat .tab-data-img-container img,
-.page-seo-bendigo .tab-data-img-container img {
+.page-seo-bendigo .tab-data-img-container img,
+.page-seo-darwin .tab-data-img-container img {
   margin-top: -228px;
   margin-left: 104px; }
 
@@ -7126,7 +7151,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-canberra .tab-data-img-container img,
   .page-seo-parramatta .tab-data-img-container img,
   .page-seo-ballarat .tab-data-img-container img,
-  .page-seo-bendigo .tab-data-img-container img {
+  .page-seo-bendigo .tab-data-img-container img,
+  .page-seo-darwin .tab-data-img-container img {
     margin-left: 197px; } }
 
 .page-seo-brisbane .circle-data-section,
@@ -7136,7 +7162,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
 .page-seo-canberra .circle-data-section,
 .page-seo-parramatta .circle-data-section,
 .page-seo-ballarat .circle-data-section,
-.page-seo-bendigo .circle-data-section {
+.page-seo-bendigo .circle-data-section,
+.page-seo-darwin .circle-data-section {
   padding-top: 0px; }
 
 .page-seo-brisbane .circle-data-section-left-col,
@@ -7146,7 +7173,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
 .page-seo-canberra .circle-data-section-left-col,
 .page-seo-parramatta .circle-data-section-left-col,
 .page-seo-ballarat .circle-data-section-left-col,
-.page-seo-bendigo .circle-data-section-left-col {
+.page-seo-bendigo .circle-data-section-left-col,
+.page-seo-darwin .circle-data-section-left-col {
   margin-top: -22px; }
 
 @media (min-width: 1440px) {
@@ -7157,7 +7185,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-canberra .circle-data-section-left-col,
   .page-seo-parramatta .circle-data-section-left-col,
   .page-seo-ballarat .circle-data-section-left-col,
-  .page-seo-bendigo .circle-data-section-left-col {
+  .page-seo-bendigo .circle-data-section-left-col,
+  .page-seo-darwin .circle-data-section-left-col {
     margin-top: -180px; } }
 
 .page-seo-brisbane .location-title-section,
@@ -7167,7 +7196,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
 .page-seo-canberra .location-title-section,
 .page-seo-parramatta .location-title-section,
 .page-seo-ballarat .location-title-section,
-.page-seo-bendigo .location-title-section {
+.page-seo-bendigo .location-title-section,
+.page-seo-darwin .location-title-section {
   margin-top: -35px; }
 
 .page-seo-brisbane .location-map-img,
@@ -7177,7 +7207,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
 .page-seo-canberra .location-map-img,
 .page-seo-parramatta .location-map-img,
 .page-seo-ballarat .location-map-img,
-.page-seo-bendigo .location-map-img {
+.page-seo-bendigo .location-map-img,
+.page-seo-darwin .location-map-img {
   margin-top: -24px; }
 
 @media (min-width: 992px) {
@@ -7188,7 +7219,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-canberra .location-map-img,
   .page-seo-parramatta .location-map-img,
   .page-seo-ballarat .location-map-img,
-  .page-seo-bendigo .location-map-img {
+  .page-seo-bendigo .location-map-img,
+  .page-seo-darwin .location-map-img {
     margin-top: -188px; } }
 
 @media (min-width: 1440px) {
@@ -7199,7 +7231,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-canberra .location-map-img,
   .page-seo-parramatta .location-map-img,
   .page-seo-ballarat .location-map-img,
-  .page-seo-bendigo .location-map-img {
+  .page-seo-bendigo .location-map-img,
+  .page-seo-darwin .location-map-img {
     margin-top: -298px; } }
 
 @media (min-width: 768px) {
@@ -7210,7 +7243,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-canberra .location-title-section,
   .page-seo-parramatta .location-title-section,
   .page-seo-ballarat .location-title-section,
-  .page-seo-bendigo .location-title-section {
+  .page-seo-bendigo .location-title-section,
+  .page-seo-darwin .location-title-section {
     margin-top: -108px; }
   .page-seo-brisbane .section-title-ml,
   .page-seo-sydney .section-title-ml,
@@ -7219,7 +7253,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-canberra .section-title-ml,
   .page-seo-parramatta .section-title-ml,
   .page-seo-ballarat .section-title-ml,
-  .page-seo-bendigo .section-title-ml {
+  .page-seo-bendigo .section-title-ml,
+  .page-seo-darwin .section-title-ml {
     margin-left: 14px; }
   .page-seo-brisbane .location-map-section,
   .page-seo-sydney .location-map-section,
@@ -7228,7 +7263,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-canberra .location-map-section,
   .page-seo-parramatta .location-map-section,
   .page-seo-ballarat .location-map-section,
-  .page-seo-bendigo .location-map-section {
+  .page-seo-bendigo .location-map-section,
+  .page-seo-darwin .location-map-section {
     margin-top: -65px; } }
 
 @media (min-width: 992px) {
@@ -7239,7 +7275,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-canberra .location-map-section,
   .page-seo-parramatta .location-map-section,
   .page-seo-ballarat .location-map-section,
-  .page-seo-bendigo .location-map-section {
+  .page-seo-bendigo .location-map-section,
+  .page-seo-darwin .location-map-section {
     margin-top: 44px; } }
 
 @media (min-width: 1440px) {
@@ -7250,7 +7287,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-canberra .location-map-section,
   .page-seo-parramatta .location-map-section,
   .page-seo-ballarat .location-map-section,
-  .page-seo-bendigo .location-map-section {
+  .page-seo-bendigo .location-map-section,
+  .page-seo-darwin .location-map-section {
     margin-top: 96px; } }
 
 @media (width: 1024px) {
@@ -7261,7 +7299,8 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-seo-canberra .location-map-img,
   .page-seo-parramatta .location-map-img,
   .page-seo-ballarat .location-map-img,
-  .page-seo-bendigo .location-map-img {
+  .page-seo-bendigo .location-map-img,
+  .page-seo-darwin .location-map-img {
     margin-top: -180px;
     margin-left: -31px; } }
 
@@ -7461,6 +7500,27 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
 @media (min-width: 1440px) {
   .page-seo-bendigo .location-map-img {
     margin-top: -173px; } }
+
+.page-seo-darwin section.section-letstalk {
+  margin-top: 40px; }
+
+@media (min-width: 768px) {
+  .page-seo-darwin .circle-data-section-left-col {
+    margin-top: -398px !important; } }
+
+@media (min-width: 992px) {
+  .page-seo-darwin .location-map-img {
+    margin-top: -137px; }
+  .page-seo-darwin .circle-data-section-left-col {
+    margin-top: -272px !important; } }
+
+@media (min-width: 1200px) {
+  .page-seo-darwin .circle-data-section-left-col {
+    margin-top: -91px !important; } }
+
+@media (min-width: 1440px) {
+  .page-seo-darwin .location-map-img {
+    margin-top: -127px; } }
 
 .section-services-carousel .container {
   max-width: 1200px; }

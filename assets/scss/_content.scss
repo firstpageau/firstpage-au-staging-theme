@@ -5414,7 +5414,8 @@ section.secure-payments {
 .page-seo-canberra,
 .page-seo-parramatta,
 .page-seo-ballarat,
-.page-seo-bendigo {
+.page-seo-bendigo,
+.page-seo-darwin {
   .light-heading {
     font-weight: 400;
     font-size: 35px;
@@ -5753,6 +5754,39 @@ section.secure-payments {
   @media (min-width: $responsive-qhd) {
     .location-map-img {
       margin-top: -173px;
+    }
+  }
+}
+
+// SEO Darwin
+.page-seo-darwin {
+  section.section-letstalk {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $responsive-md) {
+    .circle-data-section-left-col {
+      margin-top: -398px !important;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+    .location-map-img {
+      margin-top: -137px;
+    }
+    .circle-data-section-left-col {
+      margin-top: -272px !important;
+    }
+  }
+
+  @media (min-width: $responsive-xl) {
+    .circle-data-section-left-col {
+      margin-top: -91px !important;
+    }
+  }
+
+  @media (min-width: $responsive-qhd) {
+    .location-map-img {
+      margin-top: -127px;
     }
   }
 }

@@ -873,7 +873,8 @@ ul.parsley-errors-list {
   line-height: 17px;
   text-transform: uppercase;
   white-space: nowrap;
-  transition: opacity 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  transition: opacity 0.15s ease-in-out,
+ background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
 
 .navbar-header .navbar-collapse .menu .navbar-nav .nav-item .nav-link:hover {
   color: rgba(0, 0, 0, 0.35); }
@@ -995,7 +996,8 @@ ul.parsley-errors-list {
     max-height: 1000px;
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, max-height 0s ease-in-out; }
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
+ max-height 0s ease-in-out; }
   .navbar-header .navbar-collapse .dropdown .dropdown-menu {
     background: linear-gradient(180deg, #427fdf 0%, #396bb1 100%);
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
@@ -1005,7 +1007,8 @@ ul.parsley-errors-list {
     max-height: 0;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, max-height 0s ease-in-out 0.2s; }
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
+ max-height 0s ease-in-out 0.2s; }
   .navbar-header .navbar-collapse .dropdown .dropdown-menu.megamenu {
     margin-top: -10px; }
   .navbar-header .navbar-collapse .dropdown .dropdown-menu .dropdown-item {
@@ -1016,7 +1019,8 @@ ul.parsley-errors-list {
     max-height: 1000px;
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, max-height 0s ease-in-out; } }
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out,
+ max-height 0s ease-in-out; } }
 
 @media (min-width: 1200px) {
   .navbar-header .navbar-brand img {
@@ -2368,6 +2372,7 @@ section.banner .mid-buttons .mid-buttons-desc {
   background-position: top center !important;
   background-size: cover !important; }
 
+.page-seo-geelong .banner-img-mb img,
 .page-seo-perth .banner-img-mb img,
 .page-seo-brisbane .banner-img-mb img,
 .page-seo-gold-coast .banner-img-mb img,
@@ -2384,6 +2389,7 @@ section.banner .mid-buttons .mid-buttons-desc {
   margin-bottom: -66px;
   margin-top: -30px; }
 
+.page-seo-geelong section.banner,
 .page-seo-perth section.banner,
 .page-seo-brisbane section.banner,
 .page-seo-gold-coast section.banner,
@@ -2402,6 +2408,7 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-seo-brisbane section.banner,
   .page-seo-gold-coast section.banner,
   .page-seo-sydney section.banner,
+  .page-seo-geelong section.banner,
   .page-seo-melbourne section.banner,
   .page-seo-parramatta section.banner,
   .page-seo-adelaide section.banner,
@@ -2418,6 +2425,7 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-seo-gold-coast section.banner,
   .page-seo-sydney section.banner,
   .page-seo-melbourne section.banner,
+  .page-seo-geelong section.banner,
   .page-seo-parramatta section.banner,
   .page-seo-adelaide section.banner,
   .page-seo-canberra section.banner,
@@ -2435,6 +2443,7 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-seo-gold-coast section.banner,
   .page-seo-sydney section.banner,
   .page-seo-melbourne section.banner,
+  .page-seo-geelong section.banner,
   .page-seo-parramatta section.banner,
   .page-seo-adelaide section.banner,
   .page-seo-canberra section.banner,
@@ -2448,6 +2457,7 @@ section.banner .mid-buttons .mid-buttons-desc {
 .page-seo-gold-coast section.banner h1 + p,
 .page-seo-sydney section.banner h1 + p,
 .page-seo-melbourne section.banner h1 + p,
+.page-seo-geelong section.banner h1 + p,
 .page-seo-parramatta section.banner h1 + p,
 .page-seo-adelaide section.banner h1 + p,
 .page-seo-canberra section.banner h1 + p,
@@ -2462,6 +2472,7 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-seo-gold-coast section.banner h1,
   .page-seo-sydney section.banner h1,
   .page-seo-melbourne section.banner h1,
+  .page-seo-geelong section.banner h1,
   .page-seo-parramatta section.banner h1,
   .page-seo-adelaide section.banner h1,
   .page-seo-canberra section.banner h1,
@@ -2475,6 +2486,7 @@ section.banner .mid-buttons .mid-buttons-desc {
   .page-seo-gold-coast section.banner h1 + p,
   .page-seo-sydney section.banner h1 + p,
   .page-seo-melbourne section.banner h1 + p,
+  .page-seo-geelong section.banner h1 + p,
   .page-seo-parramatta section.banner h1 + p,
   .page-seo-adelaide section.banner h1 + p,
   .page-seo-canberra section.banner h1 + p,
@@ -2551,6 +2563,23 @@ section.banner .mid-buttons .mid-buttons-desc {
 @media (min-width: 2560px) {
   .page-seo-melbourne section.banner {
     background-position: 85%; } }
+
+
+@media (min-width: 576px) {
+  .page-seo-geelong section.banner {
+    background: linear-gradient(180deg, #394357 0%, rgba(57, 67, 87, 0) 0%), linear-gradient(110deg, #427fdf 62%, rgba(0, 0, 0, 0) 0%), url("assets/img/geelong_location_bg_@2x.png") no-repeat right center/auto 714px #427fe0;
+    background-position: 96%; } }
+
+@media (min-width: 992px) {
+  .page-seo-geelong section.banner {
+    min-height: auto;
+    background-size: cover;
+    background-position: 98%; } }
+
+@media (min-width: 2560px) {
+  .page-seo-geelong section.banner {
+    background-position: 85%; } }
+    
 
 @media (min-width: 576px) {
   .page-seo-canberra section.banner {

@@ -8,6 +8,61 @@
 				line-height: 54px;
 			}
 		}
+		tbody tr {
+			background: #e2edff;
+		}
+		.table-striped tbody tr:nth-of-type(odd) {
+			background: #f8faff !important;
+		}
+		.table th {
+			border-top: none !important;
+			border-bottom: none !important;
+			color: #666666;
+		}
+		.table td {
+			border-top: none !important;
+		}
+		td {
+			color: #00225D;
+		}
+		td a {
+			color: #ff5254 !important;
+		}
+		td a:hover {
+			cursor: pointer;
+		}
+		@media(min-width: 768px) {
+			.fp-btn {
+				padding: 15px 30px !important;
+			}
+		}
+		.keyword-form {
+			font-weight: 700;
+			font-size: 22px;
+		}
+		@media(max-width: 576px) {
+			.btn-width {
+				width: 100%;
+			}
+		}
+		.breadcrumb {
+			background-color: #ffffff;
+		}
+		#keyword-history {
+			display: flex;
+		}
+		#keyword-history li a {
+			color: #2b7bfa;
+			font-weight: 700;
+			font-size: 18px;
+			background: #E3EEFF;
+			padding: 10px 15px;
+			border-radius: 25px;
+			margin-right: 10px;
+		}
+		.close {
+			cursor: pointer;
+		}
 	</style>
 
 	<section class="banner">
@@ -29,13 +84,10 @@
 	<section class="section-white shaded-white" style="background:white">
 		<div class="d-flex justify-content-center" id='fp-roi-calculator' data-currency='$'>
 			<div class="seo-roi-calculator">
-				<div class="fp-container roi-for-section facebook-box-shadow">
+				<div class="fp-container roi-for-section facebook-box-shadow" style="background-color:#ffffff">
 					<div class="row mx-0">
 						<div class="col-12 col-lg-12">
 							<form id="search-form" class="field has-addons">
-								<p class="control is-expanded">
-									<input id="keyword" class="input form-control" type="text" placeholder="Enter your keyword..."/>
-								</p>
 								<p class="control d-none">
 									<span class="select">
 										<select id="locale">
@@ -45,24 +97,29 @@
 										</select>
 									</span>
 								</p>
-								<p class="control">
-									<a id="search-form-submit" class="btn fp-btn fp-btn-orange button is-primary">
-										Get
-									</a>
-								</p>
+								<div class="d-sm-flex">
+									<nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+										<div id="keyword-history"></div>
+									</nav>
+									<p class="control is-expanded" style="width:100%">
+										<input id="keyword" class="input form-control keyword-form" type="text" placeholder="Enter your keyword"/>
+									</p>
+									<p class="control">
+										<a id="search-form-submit" class="btn fp-btn fp-btn-orange button is-primary btn-width ">
+											Get
+										</a>
+									</p>
+								</div>
 							</form>
-							<nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
-								<ul id="keyword-history"></ul>
-							</nav>
 						</div>
 
 						<div class="col-12 col-lg-6">
 							<div class="row fp-vertical-align fp-show-block" id="fp-total-search-volume">
-								<div class="col-12 col-md-12 border-right">
+								<div class="col-12 col-md-12">
 									<h4 class="subtitle has-text-centered">
 										Ad Interests<span id="interest-counter"></span>
 									</h4>
-									<table class="table is-striped">
+									<table class="table table-striped">
 										<thead>
 											<th>ID</th>
 											<th>Name</th>
@@ -75,11 +132,11 @@
 						</div>
 						<div class="col-12 col-lg-6">
 							<div class="row fp-vertical-align fp-show-block" id="fp-total-search-volume">
-								<div class="col-12 col-md-12 border-right">
+								<div class="col-12 col-md-12">
 									<h4 class="subtitle has-text-centered">
 										Ad Interest Suggestions<span id="suggestion-counter"></span>
 									</h4>
-									<table class="table is-striped">
+									<table class="table table-striped">
 										<thead>
 											<th>ID</th>
 											<th>Name</th>
@@ -95,6 +152,7 @@
 			</div>
 		</div>
 	</section>
+
 
 	<section class="section-paragraph">
 		<div class="container">
@@ -115,24 +173,6 @@
 		</div>
 	</section>
 
-	<ul>
-		<li>Adele</li>
-		<li>Agnes<span class="close">&times;</span>
-		</li>
-
-		<li>Billy<span class="close">&times;</span>
-		</li>
-		<li>Bob<span class="close">&times;</span>
-		</li>
-
-		<li>Calvin<span class="close">&times;</span>
-		</li>
-		<li>Christina<span class="close">&times;</span>
-		</li>
-		<li>Cindy</li>
-	</ul>
-
-
 	<section class="section-client-reviews pb-3">
 		<div class="container">
 			<div class="section-title">
@@ -147,14 +187,87 @@
 	</section>
 
 	<script>
-		var closebtns = document.getElementsByClassName("close");
-var i;
+		let submitForm = (e) => {
+e.preventDefault();
 
-for (i = 0; i < closebtns.length; i++) {
-closebtns[i].addEventListener("click", function () {
-this.parentElement.style.display = 'none';
-});
+let keyword = document.getElementById("keyword").value.trim();
+submitKeyword(keyword);
+};
+
+let submitKeyword = (keyword) => {
+dataLayer.push({event: "fbt-submit-keyword", keyword: keyword});
+
+const apiPath = "/fb-interest-finder-page/backend.php";
+
+document.getElementById("keyword").value = keyword;
+
+// add to title and history
+setTitle(keyword);
+document.getElementById("keyword-history").innerHTML += `<li><a onclick="submitKeyword('${keyword}')">${keyword}</a></li>`;
+
+if ((keyword.length = 0)) 
+return false;
+
+
+
+let locale = document.getElementById("locale").value;
+
+// get interests
+axios.get(apiPath, {
+params: {
+type: "adinterest",
+kw: keyword,
+locale
 }
+}).then((a) => showAudiences(a.data.data, "interest"));
+
+// get suggestions
+axios.get(apiPath, {
+params: {
+type: "adinterestsuggestion",
+kw: keyword,
+locale
+}
+}).then((a) => showAudiences(a.data.data, "suggestion"));
+};
+
+let showAudiences = (audiences, table_id) => {
+let table = document.getElementById(table_id + "-table-body");
+let counter = document.getElementById(table_id + "-counter");
+
+counter.innerText = " (" + audiences.length + ")";
+table.innerHTML = "";
+
+audiences.forEach((audience) => {
+let row = document.createElement("tr");
+
+row.innerHTML = `<td>${
+audience.id
+}</td><td><a onclick="submitKeyword('${
+audience.name
+}')">${
+audience.name
+}</a></td><td>${
+audience.audience_size
+}</td>`;
+
+
+table.appendChild(row);
+});
+};
+
+let setTitle = (title) => {
+document.title = title.length > 0 ? title + " - Hidden Ad Interest Finder | First Page" : "Hidden Ad Interest Finder | First Page";
+};
+
+let goToKeyword = (e) => {
+e.preventDefault();
+console.log(e);
+submitKeyword(e.target.text);
+};
+
+document.getElementById("search-form").onsubmit = submitForm;
+document.getElementById("search-form-submit").onclick = submitForm;
 	</script>
 
 {% endblock %}

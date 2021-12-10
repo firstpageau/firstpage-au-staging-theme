@@ -1,0 +1,433 @@
+{# next: update faq section, add internal links #}
+{% extends "en-base.twig" %}
+
+{% block content %}
+
+    <section class="banner form-space">
+        <div class="container banner-hero ">
+            <div class="banner-hero-cont">
+
+                <h1 class="form-hide text-center text-sm-left">Top-rated agency for  <br class="d-none d-lg-block"/>SEO in Hobart</h1>
+
+                <div class="banner-img-mb d-sm-none form-hide">
+                    {# <img src="{{ site.theme.link }}/assets/img/location-brisbane-bg-mb.png" srcset="{{ site.theme.link }}/assets/img/location-brisbane-bg-mb.png, {{ site.theme.link }}/assets/img/location-brisbane-bg-mb@2x.png 2x" alt="First Page" /> #}
+                        <img src="{{ site.theme.link }}/assets/img/img_hobart_banner_sm.png" srcset="{{ site.theme.link }}/assets/img/img_hobart_banner_sm.png, {{ site.theme.link }}/assets/img/img_hobart_banner_sm@2x.png 2x" alt="First Page Hobart" />
+
+                </div>
+                {% include "partials/en-form-services.twig" with {'form_page': 'SEO Hobart', 'form_button': 'Get A Free Quote'} %}
+                {% include "partials/en-section-awards-badges.twig" %}
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-section-featured-in-news.twig" %}
+
+
+    <section class="section-paragraph">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 image-container-left">
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-xl.png, {{ site.theme.link }}/assets/img/img-seo-traffic-xl@2x.png 2x" alt="First Page" class="img-fluid d-none d-xl-inline-block "/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-lg.png, {{ site.theme.link }}/assets/img/img-seo-traffic-lg@2x.png 2x" alt="First Page" class="img-fluid d-none d-lg-inline-block d-xl-none seo-traffic-lg-img"/>
+                <img src="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png" srcset="{{ site.theme.link }}/assets/img/img-seo-traffic-md.png, {{ site.theme.link }}/assets/img/img-seo-traffic-md@2x.png 2x" alt="First Page" class="img-fluid d-none d-md-inline-block d-lg-none"/>
+            </div>
+            <div class="col-12 col-md-6 text-container">
+                <h2>There's stiff competition for SEO in Hobart; to get to the top, you need to partner with an expert.</h2>
+                <p class="text-center text-sm-left">SEO in Hobart brings in a lot of business for anyone with an online presence. Now, with First Page and our SEO services in Hobart, we don't only bring you more business, we make sure your company flourishes across the globe.</p>
+                <p class="text-center text-sm-left">How do we do that?</p>
+                <p class="text-center text-sm-left">We implement next-level SEO strategies that bring you the best return on your investments, reduce your sales process, increase your conversion rates, and generate sales for years to come.</p>
+            </div>
+        </div>
+    </section>
+
+    {#  circle data section sm #}
+    <section class="section-paragraph d-block d-md-none pt-4">
+        <div class="row no-gutters align-items-center ">
+            <div class="col-12 text-container">
+                <p class="light-heading text-center">Still unsure about it? Have a look at these stats.</p>
+            </div>
+            
+            <div class="col-12 image-container-right mb-4">
+                <img src="{{ site.theme.link }}/assets/img/img_hobart_data_vertical.svg" class="img-fluid d-lg-none" alt="First Page"/>
+            </div>
+             
+            <div class="col-12 text-container">
+                <p class="text-center text-sm-left">You cannot go past the facts presented. To get your online presence going, SEO in Hobart is the best way forward.</p>   
+                <p class="text-center text-sm-left">While SEO may seem complicated, the competition in this sector is fierce, and even more in Hobart.</p>   
+                <p class="text-center text-sm-left">Despite the above, businesses that do SEO in Hobart correctly will see an incredible return of investment, more traffic and sales that come automatically.</p>   
+                <p class="text-center text-sm-left">To get your website on the first page of search engines, you have to lean on the best SEO services in Hobart.</p>   
+                <p class="text-center text-sm-left">But lucky for you, First Page is just that.</p>   
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+
+    {#  circle data section lg #}
+    <section class="section-paragraph d-none d-md-block circle-data-section pt-5">
+        <div class="row no-gutters flex-column-reverse flex-md-row flex-md-row-reverse">
+            <div class="col-12 col-md-6 image-container-right">
+                <img src="{{ site.theme.link }}/assets/img/img_hobart_data_vertical.svg" class="img-fluid d-none d-md-inline-block d-lg-none" alt="First Page"/>                
+                <img src="{{ site.theme.link }}/assets/img/img_hobart_data.svg" class="img-fluid d-none d-lg-inline-block" alt="First Page"/>                
+            </div>
+
+            <div class="col-12 col-md-6 text-container circle-data-section-left-col">
+                <p class="light-heading mt-5">Still unsure about it? Have a look at these stats.</p>
+                <p class="text-center text-sm-left">You cannot go past the facts presented. To get your online presence going, SEO in Hobart is the best way forward.</p>   
+                <p class="text-center text-sm-left">While SEO may seem complicated, the competition in this sector is fierce, and even more in Hobart.</p>   
+                <p class="text-center text-sm-left">Despite the above, businesses that do SEO in Hobart correctly will see an incredible return of investment, more traffic and sales that come automatically.</p>   
+                <p class="text-center text-sm-left">To get your website on the first page of search engines, you have to lean on the best SEO services in Hobart.</p>   
+                <p class="text-center text-sm-left">But lucky for you, First Page is just that.</p>   
+                <button type="button" class="btn fp-btn fp-btn-orange show-popup-form">GET A FREE QUOTE</button>
+            </div>
+        </div>
+    </section>
+
+    {#  location map sm #}
+    {# <section class="section-paragraph location-map-mb-section d-block d-md-none">
+        <div class="row no-gutters">
+            <div class="col">
+                <img src="{{ site.theme.link }}/assets/img/img_bendigo_map_md.svg" class="location-map-img d-block mx-auto" alt="First Page"/>
+
+            </div>
+
+        </div>
+    </section> #}
+ 
+    {#  location map md#}
+    <section class="section-paragraph location-map-section ">
+        <div class="row no-gutters">
+            <div class="col">
+                <img src="{{ site.theme.link }}/assets/img/img_hobart_map.svg" class="img-fluid location-map-img location-map-img-lg d-none d-lg-block  mx-auto mb-4" alt="First Page"/>
+                <img src="{{ site.theme.link }}/assets/img/img_hobart_map_sm.svg" class="img-fluid location-map-img location-map-img-lg d-block d-lg-none  mx-auto mb-4" alt="First Page"/>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-paragraph location-title-section">
+        <div class="row no-gutters">
+            <div class="col">  
+                <h2 class="text-center">First Page SEO in Hobart will help <br class="d-none d-md-block"/>expand your business.</h2>
+                <p class="text-center location-sub-title">Here at First Page, we aren’t just a <br class="d-block d-sm-none">digital agency…</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    {#  office section  #}
+    <section class="section-paragraph office-img-section pt-3">
+        <div class="rwo no-gutters">
+            <img src="{{ site.theme.link }}/assets/img/location-office-sm.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-sm.png, {{ site.theme.link }}/assets/img/location-office-sm@2x.png 2x"
+                 class="img-fluid d-block d-md-none m-auto" alt="First Page"/>
+            <img src="{{ site.theme.link }}/assets/img/location-office-md.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-md.png, {{ site.theme.link }}/assets/img/location-office-md@2x.png 2x"
+                 class="img-fluid d-none d-md-block d-lg-none m-auto" alt="First Page"/>
+            <img src="{{ site.theme.link }}/assets/img/location-office-lg.png"
+                 srcset="{{ site.theme.link }}/assets/img/location-office-lg.png, {{ site.theme.link }}/assets/img/location-office-lg@2x.png 2x"
+                 class="img-fluid d-none d-lg-block m-auto" alt="First Page"/>
+        </div>
+
+    </section>
+
+    <section class="section-paragraph pt-5">
+           
+                <div class="container"> 
+                    <h2 class=" text-center ">First Page isn't just another digital agency; <br class="d-none d-lg-block" />we treat your business like family.</h2>
+                </div>
+       
+            <div class="row no-gutters justify-content-center ">
+                <div class="col-12 col-md-6 text-container">
+                    <p class="text-center text-sm-left">We're an Australian-owned and operated business that has developed, tested, and proven successful SEO strategies for over a decade.</p>
+                    <p class="text-center text-sm-left">Our SEO services in Hobart can take businesses of all shapes and sizes to the top of search engines.</p>
+                    <p class="text-center text-sm-left">Whether you are a brick-and-mortar business owner looking to attract local customers or you work for a Hobart-based <a href="{{home_url}}enterprise-seo/">enterprise</a>, our Hobart SEO will help you reach your goals and generate more traffic.</p>
+                    <p class="text-center text-sm-left">For SEO in Hobart, we design our growth plans to get your page to the first page of search engines and bring you the long-term stability and growth you deserve.</p>
+                </div>
+
+                <div class="col-12 col-md-6 text-container ">
+                    <p class="text-center text-sm-left">Our SEO services in Hobart include keyword research, competitor analysis, content creation, <a href="{{home_url}}video-seo/">video optimisation</a>, link-building, and more.</p>
+                    <p class="text-center text-sm-left">Our tactics help you understand your needs and deliver steady growth.</p>
+                    <p class="text-center text-sm-left">To make it simpler for you, we take it on ourselves to make everything work digitally, and you won't even have to lift a finger.</p>
+                    <p class="text-center text-sm-left">Your business will expand, and traffic will increase.</p>
+                    <p class="text-center text-sm-left">If you want free advice on SEO in Hobart, click the link below and book a free call with a Digital Strategist today.</p>
+                </div>
+            </div>
+    
+    </section>
+
+
+    {% include "partials/en-section-free-session.twig" %}
+    {% include "partials/en-section-experience.twig" %}
+    {% include "partials/en-section-services-seo-carousel.twig" %}
+
+    <section class="section-paragraph section-faqs pb-5">
+        <div class="container">
+            <h2 class="section-title">SEO in Hobart - FAQs </h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="row">
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+                            {# Q1  #}
+                            <h3 itemprop="name">Why is our First Page the best for SEO services in Hobart?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                               <p>Our SEO company in Hobart is the fastest-growing agency in APAC. We take pride in being Australian-owned and operated, servicing everything from Hobart to <a href="{{home_url}}seo-parramatta/">Parramatta SEO</a>. Our branches, spread across a network of 11 offices in multiple countries, allow us to provide you with the support you need whenever you need it.
+Our growth plans are in line with the fast-evolving market for SEO in Hobart. We have a decade of experience, bringing businesses of all sizes to the top.</p>
+                               <p>Our SEO experts in Hobart believe your business should be seen by the world and crush the Google search game in your desired industry.</p>
+                               <p>We’ve generated $3.8 billion worth of sales for our clients and a constant 4.9/5 Google rating. We're the SEO company in Hobart with the experience to take your business to the next level and get your company a tremendous amount of traffic. SEO companies may look all the same, but you will quickly see the difference with our expertise.
+We thrive on taking businesses to the top and getting results. Our team is on top of fast-changing SEO trends and produces results that bring your company long-term traffic and sales. Bringing such results has earned us the reputation of the best for SEO in Hobart.</p>
+                               <p>To see by yourself, book a no-obligation call with a Digital Strategist and learn more about what we can do for your success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+                            {# Q2  #}
+                            <h3 itemprop="name">How does SEO in Hobart work?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                               <p>SEO means Search Engine Optimisation. It helps to make your online presence more visible on Google so customers can find you.</p>
+                               <p>SEO in Hobart looks at your website as a whole and how it performs online. It brings in more targeted organic traffic to your website, which equals more sales and helps your brand become bigger.</p>
+                               <p>To get started with SEO in Hobart:</p>
+                               <ul>
+                                    <li>Find out what your potential customer searches for</li>
+                                    <li>Turn it into and keywords</li>
+                                    <li>Evaluate their search frequency</li>
+                                    <li>Place keywords across your entire website to get more clicks and a natural presence online.</li>
+                               </ul>
+                               <p>As a result, and if done correctly, when customers search using these keywords, search engines bots will show them your site. </p>
+                               <p>SEO in Hobart may sound simple on the face of it, but it's a lot more complicated than what you might think. It looks at every facet of your website.</p>
+                               <p>The content posted on your website has to have a seamless transition and keep website visitors on your page.</p>
+                               <p>How frequently do you keep your website updated? Will it be easy for your customers to find their desired answers?</p>
+                               <p>When performed well, SEO in Hobart will help your website grow online and bring in immense organic traffic and sales sustainably.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+                            {#Q3#}
+                            <h3 itemprop="name">Where do I start with SEO in Hobart?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>You can start with these three simple steps for SEO in Hobart:</p>
+                                
+                                <p class="font-weight-bold mb-1">1. Backlinks</p>
+                                <p>Backlinks, as the name suggests, are links to your website that are placed on other websites. It is more complex than linking your website to any website on the internet.</p>
+                                <p>Our SEO services in Hobart concentrate our efforts on finding reputable sources and creating valuable content. We know how to tackle backlinks and make your website more legitimate and strong online.</p>
+                                 
+                                 <p class="font-weight-bold mb-1">2. Keyword research</p>
+                                 <p>Keyword research is the process of finding the most relevant words that people use to search a topic on search engines. The results are all based on how relevant the search engine bots think websites are related to the query.</p>
+                                 <p>The more relevant, the higher you rank.</p>
+                                 <p>When doing your keyword research, start by listing topics that you think are relevant to your customer's searches. Then look at how your competition is ranking for those keywords. Once validated, use them in your website copy, title and URLs.</p>
+                                 <p class="font-weight-bold mb-1">3. On-Page SEO</p>
+                                 <p>On-Page SEO helps make your site more relevant to both your customer and search engines. It consists of optimising your website for both search engines and your ideal audience.</p>
+                                 <p>To start with on-page SEO:</p>
+                                 <ol>
+                                    <li>Put your website through an SEO audit.</li>
+                                    <li>Add keywords into URLs, headings, and meta descriptions.</li>
+                                    <li>Make the value proposition of each page visible and clear.</li>
+                                    <li>Include keywords in your page titles, copy, and meta descriptions.</li>
+                                    <li>Add internal and external links.</li>
+                                    <li>Improve the overall user experience on each page.</li>
+                                 </ol>
+                                 <p>Sound a little overwhelming? Let us handle your SEO in Hobart for you. Book a free strategy call with a Digital strategist today.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+                            {#  Q4  #}
+                            <h3 itemprop="name">Can I just do SEO in Hobart by myself?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Of course, you can. But do you want to spend so much time building a website? Going through intricate details and taking on all the technical work by yourself?</p>
+                                <p>You can opt for building a team for SEO in Hobart - but you'll have to hire the right people, which takes time, and you'll have to pay them, which means a separate budget. You will also have to provide wages, sick leave, holidays, provision of software and technology.</p>
+                                <p>You may think this will be cheaper, but this tends not to be true. </p>
+                                <p>Simply put: You are more likely to waste precious time and money. It will take time for your newly formed team to master the SEO process, build a strategy, and start to get things running.</p>
+                                <p>With a Hobart SEO agency, you pay for the work provided and the years of experience they have gained. This team of SEO experts in Hobart already know how SEO in Hobart works and can start working immediately.</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse17">
+                            {# Q5  #}
+                            <h3 itemprop="name">How much does SEO in Hobart cost?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse17"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The cost of SEO in Hobart depends on several factors, such as:</p>
+                                <p><b>Budget: </b>SEO costs depend on how much work is needed to bring your website to the top. Your goals, competitors, industry and keywords, are all taken into consideration. We can work around a specific budget, depending on what you require.</p>
+                                <p><b>Requested outcome: </b>The cost of SEO varies depending on what you want to achieve. Bigger impacts require more significant investments.</p>
+                                <p>Our SEO services in Hobart are tailored to match your goals and budget.</p>
+                                <p><b>Experience: </b>The level of expertise of the team working on your business is related to the costs of your campaign. Our prices are set according to the needs of your business. We make sure that everything is taken into consideration. Our SEO experts in Hobart know the industry like the backs of their hands, and they deliver.</p>
+                                <p>Be careful of cheap SEO services in Hobart. You will get results that are really not up to the mark. SEO has the best results when done right.</p>
+                                <p>If you're willing to invest in a good SEO experience, choose a result-driven and reputable partner—choose First Page as your SEO company in Hobart.</p>
+                                <p><b>Black-hat vs. white-hat: </b>Black-Hat SEO in Hobart will get you quick results, but it isn't the most legal way to go about getting them. Indeed, it manipulates the search engine's algorithm to influence the results to your liking. Don't be fooled by achieving a large amount of traffic in a short amount of time. These results won't last long and will die out after the initial excitement wears off.</p>
+                                <p>Using black-hat SEO can get you penalised by Google. It's only a question of time before your traffic goes flat.</p>
+                                <p>White-hat SEO is the ethical and best option for SEO in Hobart. It focuses on visitors' experience of your website, and creates quality and valuable content that retains and converts your audience. Unlike black-hat SEO, the results with white-hat tactics take longer to show. But once they do, you'll be amazed by the constant growth and sales it brings to your business.</p>
+                                <p>Black-hat SEO in Hobart is cheaper than white-hat. However, you need to consider if you want to put your reputation at risk while striving for a more affordable option.</p>
+                                <p>First Page's Hobart SEO will always support longer-lasting and ethical ways. We haven't become who we are with black-hat SEO. The price we quote you is based on your business-specific needs and growth ambition.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse18">
+                            {#  Q6 #}
+                            <h3 itemprop="name">How are PPC and SEO in Hobart different?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse18"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Pay-per-click (PPC) is a form of advertising which brings customers to your site through clicks from ads they see at the top of search engines. </p>
+                                <p>PPC requires investment upfront. You pay for high targeted traffic to your website's page. The more people click, the more expensive it becomes.</p>
+                                <p>Using a PPC strategy can bring a large amount of traffic to your website. It is best for specific pages or eCommerce shops. However, the results you obtain are not sustainable. Traffic will stop as soon as you decrease the investment or stop the campaign.</p>
+                                <p>Search engine optimisation, on the contrary, brings in traffic on autopilot in evergreen. Results take time to show, but once they do, they will keep growing.</p>
+                                <p>SEO in Hobart is all about organic (free) traffic and improving your website to offer the best online experience to your visitors. This process is a long one and takes more time to implement and carry out than Pay per Click - but once you reach the first page, your website will stay there for a very long period. SEO for Hobart businesses grows over time and makes your sales skyrocket.</p>
+                                <p>Both PPC and SEO in Hobart work well together and provide great results in synergy. For more information on PPC and how it can work for you, click here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse19">
+                            {# Q7#}
+                            <h3 itemprop="name">Can you help me recover from the loss of traffic?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse19"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>If you’ve lost traffic, it might be because of multiple reasons.</p>
+                                <p>Your SEO strategy might need a refresh, your content publication schedule lacks organisation, Google may have updated its algorithm or your website needs a check-up.</p>
+                                <p>To get the best out of SEO in Hobart, you need to have authentic content and follow ethical practices. Depending on the tactics you used to get your traffic in the first place, you might have been penalised by Google.</p>
+                                <p>But independently of the reason, our SEO services in Hobart can help you solve your traffic problems.</p>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse20">
+                            {#  Q8  #}
+                            <h3 itemprop="name">Do you offer eCommerce SEO services in Hobart?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse20"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+
+                                <p>Yes, we do! Our SEO services in Hobart include specific strategies for <a href="{{home_url}}amazon-seo/">Amazon, <a href="{{home_url}}woocommerce-seo/">WooCommerce</a>, <a href="{{home_url}}magento-seo/">Magento</a>, <a href="{{home_url}}shopify-seo/">Shopify</a> and <a href="{{home_url}}mobile-seo/">mobile-friendly</a> shops.</p>
+                                <p>We’ve helped more than 500 clients reach their sales targets over time.</p>
+                                <p>Keep in mind that choosing local or eCommerce SEO services in Hobart depends on your business and goals.</p>
+                                <p><a href="{{home_url}}local-and-national-seo/">Local SEO</a> helps reach customers who live within the vicinity of the business. It is ideal for local shops and physical companies looking to create proximity in one specific area.</p>
+                                <p>Ecommerce SEO is for online shops with products or services to sell. It mainly focuses on attracting a highly targeted audience to your products page and maximising conversion independently of location. This form of SEO in Hobart puts your products on the top shelf and provides an incredible buying experience for your customers. Some other examples of eCommerce SEO-specific techniques are updating the description of your products and the metadata.</p>
+                                <p>This type of SEO works well with PPC. The mix of paid and organic help your business become prominent and maximise your online shop's sales.</p>
+                                <p>For more information about eCommerce SEO services in Hobart, <a href="{{home_url}}ecommerce-seo/">click here</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse21">
+                            {# Q9  #}
+                            <h3 itemprop="name">Do you offer international SEO services in Hobart?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse21"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Absolutely! If you want to scale your business, international SEO is the way to go. We offer <a href="{{home_url}}seo-bendigo/">SEO services from Bendigo</a> to Hobart and beyond, anywhere in the world.</p>
+                                <p>International SEO brings you massive traffic from every corner of the world. It targets a defined audience across multiple countries to attract as many potential customers as possible. Our SEO services in Hobart will optimise your website to attract and provide the best experience to customers globally. You define the locations, and we ensure that the requirements of each local search engine are met.</p>
+                                <p>None of your customers will be disappointed when checking out. International SEO will grow your business on a global scale and build your brand internationally.</p>
+                                <p>With First Page's Hobart SEO, the team is thoroughly knowledgeable about all aspects of international SEO. Our tailored strategy fits your business needs in the countries or regions you want to expand in. Open your business to the world and benefit from a monumental number of sales.</p>
+                                <p>If you're ready to take on the world with International SEO, <a href="{{home_url}}international-seo/">click here</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse22">
+                            {#  Q10  #}
+                            <h3 itemprop="name">Do you offer link-building as a standalone service?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse22"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>We certainly do! 
+                                <p>At First Page, know the difference between a good backlink and a bad one. Our SEO services in Hobart provide our clients with the top-of-the-top backlinks and build their long-term online credibility.</p>
+                                <p>A backlink is a link from one website to another. Search engines, like Google, use backlinks as a ranking signal of trustworthiness and noteworthiness. The more high-quality backlinks you have, the easier it will be to get on Google's first page. Linking your website to reputable sources, valuable and relevant content is critical.</p>
+                                <p>Our SEO services in Hobart take care of it all and leverage our network to get your websites featured on reputable websites. The backlink game is cheap on some websites, and some agencies may try to trick you into buying a useless high number of low-quality backlinks.</p>
+                                <p>Don't fall for it. It will only degrade your website, not help it.</p>
+                                <p>Our SEO services in Hobart only delivers high-quality backlinks and generate spectacular traffic and ranking. Discover more about <a href="{{home_url}}link-building/">link-building</a> with First Pag's Hobart SEO.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse23">
+                            {#  Q11  #} 
+                            <h3 itemprop="name">How long does Hobart SEO take?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse23"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>The results in Hobart SEO are a little slow to show up, but they can bring you back an investment of 10x more than what you started with.</p>
+                                <p>Be patient. Hobart SEO results are guaranteed with us. We are so sure of what we do that we are <a href="{{home_url}}pay-on-performance/">paid on performance</a>. This means we don't get paid until you get results.</p>
+                                <p>It's a case-by-case scenario, and the time it takes depends on the state of your website and the scope of work at the start of the project. Be reassured that the initial results will always be lower than what you get at the end of a year or more. Traffic from SEO in Hobart grows over time.</p>
+                                <p>Trust the process. We are in this together. We help you understand what is happening with your SEO in Hobart and give you complete visibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+                        <div class="card-header collapsed" data-toggle="collapse" href="#collapse24">
+                            {#  Q12  #}
+                            <h3 itemprop="name">What's the difference between white-hat and black-hat SEO?</h3>
+                        </div>
+                        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse24"
+                             class="collapse">
+                            <div itemprop="text" class="card-body">
+                                <p>Black-hat SEO is an infamous way of manipulating Google’s algorithm. It brings websites traffic using practices that ignore Google guidelines.</p>
+                                <p>They completely ignore your brand and your audience. It is a set of practices, such as linking your website to a large number of low reputability websites, keyword stuffing or spamming. They also add links that may take the user elsewhere and will add irrelevant details to your site.</p>
+                                <p>Black-hat SEO can – and probably will – make your website receive penalties from Google and have it removed entirely from search engines.</p>
+                                <p>There is no denying it. White-hat SEO is the only right way to do SEO. It does not involve any manipulation and follows Google’s guidelines. White-hat practices consist of publishing authentic, relevant, and value-based content. The results take time to appear, but they are long-lasting and will reward your business sales for many years.</p>
+                                <p>First Page only ever uses white-hat SEO. Our SEO services in Hobart only deliver high-yielding and effective results for our clients. </p>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/en-form-popup.twig" with {'form_page': 'SEO Hobart (Pop-up Form)'} %}
+
+{% endblock %}

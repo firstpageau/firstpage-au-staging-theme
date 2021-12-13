@@ -2,292 +2,460 @@
 
 {% block content %}
 
-<style>
-    @media (max-width: 767px) {
-        .page-linkedin-advertising section.banner h1 {
-            /*padding: 0 5px;*/
-            max-width: 228px;
-            margin-bottom: 50px;
+	<style>
+		@media(max-width: 767px) {
+			.page-linkedin-advertising section.banner h1 {
+				/*padding: 0 5px;*/
+				max-width: 228px;
+				margin-bottom: 50px;
 
-        }
+			}
 
-        .page-linkedin-advertising section.banner .banner-description p {
-            min-height: 191px;
-        }
-    }
+			.page-linkedin-advertising section.banner .banner-description p {
+				min-height: 191px;
+			}
+		}
+	</style>
+
+	<section class="banner form-space linkedin-advertising-banner">
+		<div class="container banner-hero">
+			<div class="banner-hero-cont">
+				<h1 class="form-hide">Generate the best B2B leads in hours not days with LinkedIn Ads</h1>
+				<div class="banner-description">
+					<div class="form-hide hero-mobile">
+						<img src="{{ site.theme.link }}/assets/img/nick-hero-mb.png" srcset="{{ site.theme.link }}/assets/img/nick-hero-mb.png, {{ site.theme.link }}/assets/img/nick-banner-mb@2x.png 2x" alt="First Page"/>
+					</div>
+				</div>
+				{% include "partials/en-form-services.twig" with {'form_page': 'LinkedIn Ads', 'form_button': 'Get A Free Quote'} %}
+				{% include "partials/en-section-awards-badges.twig" %}
+			</div>
+			<div class="hero-img d-none d-md-block d-lg-none">
+				<img src="{{ site.theme.link }}/assets/img/nick-banner-hero.png" srcset="{{ site.theme.link }}/assets/img/nick-banner-hero.png, {{ site.theme.link }}/assets/img/nick-banner-hero@2x.png 2x" alt="First Page"/>
+			</div>
+			<div class="hero-img d-none d-lg-block">
+				<img src="{{ site.theme.link }}/assets/img/nick-hero-google-ads.png" srcset="{{ site.theme.link }}/assets/img/nick-hero-google-ads.png, {{ site.theme.link }}/assets/img/nick-hero-google-ads@2x.png 2x" alt="First Page"/>
+			</div>
+		</div>
+	</section>
+
+	{% include "partials/en-section-featured-in-news.twig" %}
+
+	<section class="section-paragraph">
+		<div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+			<div class="col-12 col-lg-6 image-container-right">
+				<img src="{{ site.theme.link }}/assets/img/img_linkedin_ads.png" srcset="{{ site.theme.link }}/assets/img/img_linkedin_ads.png, {{ site.theme.link }}/assets/img/img_linkedin_ads@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/img_linkedin_ads_mob.png" srcset="{{ site.theme.link }}/assets/img/img_linkedin_ads_mob.png, {{ site.theme.link }}/assets/img/img_linkedin_ads_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-lg-6 text-container">
+				<h2>LinkedIn ads will help your business find a whole new world of leads, sales, and brand awareness</h2>
+				<p>The truth is that most of your competitors are advertising on Google and Facebook.
+				</p>
+				<p>But very few of them are advertising on LinkedIn.</p>
+				<p>This is exactly why LinkedIn ads are so powerful.</p>
+				<p>Over the past few years, LinkedIn has grown from a small social site into the premier social media platform for business professionals who are looking to learn and to network.
+				</p>
+				<p>And now, LinkedIn ads have become incredibly sophisticated - you can target firm industry, size of company, interests, and much more.</p>
+				<p>Because of all this, LinkedIn ads have the capacity to deliver a jaw-dropping ROAS.
+				</p>
+				<p>Here’s some must-know data about LinkedIn ads and marketing…</p>
+				<ul>
+					<li>LinkedIn currently has over 700 million members</li>
+					<li>60% of LinkedIn users are between 25 and 35 years old</li>
+					<li>Ads on LinkedIn can increase purchase intent by over 30%</li>
+					<li>4 out of 5 people on LinkedIn drive important business decisions
+					</li>
+				</ul>
+				<p>In summary, LinkedIn ads are a rare opportunity, and can get your business in front of a highly-targeted (and highly-eager) group of professionals.
+				</p>
+				<button type="button" data-title="linkedinAdvertisingPage-get-freeproposal-linkedin" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph">
+		<div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
+			<div class="col-12 col-lg-6 image-container-left">
+				<img src="{{ site.theme.link }}/assets/img/img_linkedin.svg" class="img-fluid d-none d-md-inline-block" alt="First Page"/>
+				<img src="{{ site.theme.link }}/assets/img/img_linkedin_mob.svg" class="img-fluid d-md-none" alt="First Page"/>
+			</div>
+			<div class="col-12 col-lg-6 text-container">
+				<h2>We will create and execute a LinkedIn ad campaign that converts like crazy</h2>
+				<p>But do you know why so few of your competitors are actually advertising on LinkedIn?
+				</p>
+				<p>Because so few businesses and marketing agencies have enough experience to confidently run a LinkedIn marketing campaign.</p>
+				<p>That’s where we come into play.
+				</p>
+				<p>Here at First Page we have been running LinkedIn ad campaigns for years - many of which deliver 5x, or 10x ROI.
+				</p>
+				<p>Our international team of Digital Marketers have run enough experiments and A/B tests to know exactly what works, and what is a waste of time and money.</p>
+				<p>Whether you are looking for exposure, awareness, leads, or sales, we have the expertise to deliver a LinkedIn campaign that few other agencies can even dream about matching.
+				</p>
+				<p>Getting started is simple. Click the button below to schedule a completely free call with one of our Digital Marketing strategists, so we can get your LinkedIn campaign rolling.</p>
+				<button type="button" data-title="linkedinAdvertisingPage-get-freeproposal-we" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-client-reviews">
+		<div class="container">
+			<div class="section-title">
+				<h2>See what our clients<br class="d-sm-none">
+					are saying</h2>
+			</div>
+			<div class="row testimonial-cont">
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							First Page is very effective at understanding, strategising, planning and executing customers' SEO needs. I will definitely recommend them to anyone who is looking to enhance their business leads generation online.
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		                        Job well done.
+						</div>
+						<div class="person">
+							<div class="name">BERNARD SONG</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							The team at First Page has helped us understand, in detail, how SEO works for businesses. Shirlyn has been very proactive. She goes out of her way to address our questions and challenges at every step. Kudos!
+						</div>
+						<div class="person">
+							<div class="name">CLAIRE TUPAZ</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							Gary was responsible for managing my campaigns and I’m deeply impressed with his work ethic.
+							<br>The majority of our keywords were ranking on page 1 of Google at the end of the campaign. As a result, my online sales steadily increased.
+						</div>
+						<div class="person">
+							<div class="name">ROYSTON FOO</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							Anthony has been very helpful and efficient. Considering we were noobs in the area of Digital Marketing, he has been patient and addressed our concerns. We look forward to more collaboration in the future.
+						</div>
+						<div class="person">
+							<div class="name">AARON CHUA</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							We've been working with the team at First Page for just over a year. They are really friendly, professional and have guided our company to a better understanding of the importance of SEO. Shoutout to Shane (fantastic manager) and Carl! Thanks team!
+						</div>
+						<div class="person">
+							<div class="name">H. NORTH</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="testimonial">
+						<div class="stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+							<img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
+						</div>
+						<div class="text">
+							I've worked with First Page for many years. The experience and quality of work are top-notch. The people in charge are responsive and knowledgeable. Keep up the good work!
+						</div>
+						<div class="person">
+							<div class="name">GARY ADAMS</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include "partials/en-section-services-social.twig" %}
+
+	{% include "partials/en-section-casestudy-british-connections.twig" %}
+
+	{% include "partials/en-section-free-session.twig" %}
+
+	<section class="section-paragraph section-faqs">
+		<div class="container">
+			<h2 class="section-title">What are LinkedIn Ads?</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What are LinkedIn ads?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>LinkedIn ads are a paid advertising solution for the largest global professional network on the internet. With this in-depth platform giving businesses and individuals the chance to skyrocket their reach and achieve numerous goals, using targeted LinkedIn ads to your advantage can deliver insane results. Whether you’re looking to sponsor some of your brand’s outstanding content to expand its professional audience or generate leads for your company’s products, all this and more is possible with LinkedIn paid ads.
+								</p>
+								<p>Featuring over 660 million users in more than 200 countries, increasing your brand’s reach on LinkedIn has the power to level up your company. Considering the entire platform is designed around B2B interactions, attracting the right kind of attention means you have a greater chance of achieving your business-related goals. As the LinkedIn advertising platform offers a variety of formats and targeting methods, reaching and converting the perfect audience is simplified.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Where do LinkedIn ads appear?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>LinkedIn makes it easy to achieve your business goals because its advertising platform enables companies to advertise in a range of high-profile positions. For example, Job Ads appear directly in a user’s LinkedIn feed on desktop and mobile, meaning you can attract highly relevant candidates straight to your new role. You might also decide to use Spotlight Ads to send users to your website or landing page, with these ads also appearing in the main desktop feed.</p>
+								<p>Follower Ads are also a stellar option for LinkedIn as they drive more website visits and brand awareness. As these motivate users to follow your LinkedIn or Showcase Page on desktop or mobile devices, a dedicated call-to-action button helps deliver more clicks. Finally, LinkedIn Conversation Ads are a fascinating option that allows your brand to slide into the chatbox of targeted users. By using these to showcase products, generate leads and highlight success stories, your brand can enhance its visibility on the platform.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What types of businesses are suitable for LinkedIn ads?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Just because your business is more familiar with Facebook or Instagram doesn’t mean you can’t use LinkedIn paid advertising to your advantage. In fact, companies with a B2B focus can use the platform to attract corporate decision-makers and industry influencers directly to their products and services. As businesses can target users based on their job title or current company, reaching a precise audience makes achieving your goals an increasingly straightforward task. By kickstarting the conversation, you can skyrocket conversions and brand awareness.</p>
+								<p>However, LinkedIn ads aren’t just effective for already established businesses. People who operate independent professional services, such as architects, doctors, lawyers and teachers, can spotlight their expertise with a targeted strategy. By enhancing your reputation and growing your network, attracting lucrative clients via LinkedIn is a genuine reality. Finally, LinkedIn is also popular amongst young professionals looking to make a name for themselves. By sponsoring content that highlights how you’re the industry’s next big thing, LinkedIn ads might just help launch your career to success.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What are the benefits of LinkedIn ads?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>LinkedIn ads are highly beneficial for businesses with a range of objectives. However, there’s no doubt that this advertising platform is special for generating high-value leads for both professional services and B2B organisations. By using LinkedIn ads to sponsor exceptional content, you can showcase your brand’s unmatched industry knowledge. If targeted effectively, this can reach leading corporate decision-makers who have the authority to make large-scale purchases from your business. If your company needs to experience a high conversion rate, don’t underestimate the success provided by LinkedIn ads.</p>
+								<p>Outside of sales, LinkedIn ads offer plenty of benefits. For example, recruitment is a costly and time-consuming process made so much easier when the right people get in touch. If you have a niche role that needs to be filled, targeting a Job Ads campaign at specific users ensures you save time, money and effort when identifying the ideal candidates. LinkedIn ads are also great for growing your company’s network and industry reputation. By highlighting content and showcasing expertise, you can position yourself as one of the top businesses in the sector.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What are LinkedIn dynamic ads?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Dynamic Ads are automatically personalised to each LinkedIn user based on their profile information. This includes everything from their profile photo and company name to their specific job title. With these paid ads appearing in the right sidebar, it’s possible to build brand awareness and achieve your marketing objectives, as users are instantly drawn to advertisements that already feature their own personalised data. However, you still need to craft an appealing message and call-to-action that responds to your audience and campaign objectives.</p>
+								<p>If you’re ready to get started with Dynamic Ads, there are three formats to choose from: Follower Ads, Spotlight Ads and Job Ads. As these formats are designed for different goals, you’ll have to figure out how to optimise them effectively if you want to experience a top-notch ROI. By understanding your target audience and delivering a message that captures their attention, Dynamic Ads enables brands to speak to their prospects directly.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How can I get started with LinkedIn ads?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Choosing to use LinkedIn ads to grow your business is a sharp decision. But it takes work to understand how to use this advertising platform effectively. Start by creating a free account for Campaign Manager, LinkedIn’s advertising platform where you can control your entire strategy. Then, you’ll need to choose your objective, which is the action you want your audience to take when they first see your ad. These options range from brand awareness and website visits to job applicants.
+								</p>
+								<p>Next, it’s time to build your target audience. Here, you can define professional traits like job title or industry type. Alternatively, you might decide to target your campaign based on professional or personal interests. The next stage involves choosing your ad format – including single image ads, dynamic ads and video ads – before entering your bid amount and the starting budget for your campaign. Lastly, you need to design your ad creative by following the ideal ad specs and guidelines for your chosen format.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse7">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What are the different types of LinkedIn ads?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse7" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>There are several different LinkedIn ads, with the ideal option for your campaign needing to align with your target market and business objectives. There are four types of Sponsored Content ads – Single Image Ads, Video Ads, Carousel Ads and Event Ads – enabling brands to reach a highly engaged audience in the news feed. There are also two types of Sponsored Messaging ads – Conversation Ads and Message Ads – where you can drive targeted recipients to reach out and take action.
+								</p>
+								<p>Businesses promoting their operation on LinkedIn can also use Text and Dynamic Ads. As these appear in the right sidebar of the website, these formats are excellent for showcasing your products, promoting your LinkedIn page and driving consumers to your business. Alongside Lead-Gen Forms that dramatically enhance your sales funnel, achieving your business objectives is made easy with LinkedIn. To ensure you experience success, our talented team designs and executes precise advertising strategies that always hit the mark.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse8">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How does LinkedIn ad targeting work?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse8" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Leading a paid advertising campaign on LinkedIn has the power to be hugely cost-effective. But your business can only experience a big surge in performance when its strategy has been targeted accurately. Fortunately, LinkedIn ads feature 20 different audience attribute categories, including company name, member interests, skills, job title, seniority and more. If these attributes are used correctly to target your sponsored content and job ads at the right audience, you can expect outstanding results from your campaign’s very beginning.</p>
+								<p>LinkedIn ads also allow brands to reach users based on location data, ranging from cities and metropolitan areas to states and countries. Meanwhile, you can also target users depending on their company connections and followers, helping you reach the ideal audience for your message. In addition, your ads can be targeted based on user demographics, including age and gender, while job experience, interest and traits are also influential targeting attributes when used productively.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-paragraph section-faqs py-5">
+		<div class="container">
+			<h2 class="section-title">How can LinkedIn Ads help your business?</h2>
+			<div itemscope itemtype="https://schema.org/FAQPage" class="row">
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse9">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Are LinkedIn ads worth it?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse9" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Despite the rise of LinkedIn ads, they continue to be underestimated by businesses across the spectrum. Considering the platform makes it remarkably easy to reach key decision-makers at organisations with the power to influence your company’s future, attracting these quality leads with an effective strategy is definitely within your best interests. Although these B2B decision-makers undoubtedly have their own social media profiles on Facebook and Instagram, converting them with the right message comes much easier on LinkedIn.</p>
+								<p>Convincing sales-ready prospects to take action is the goal for many businesses. However, LinkedIn ads convert customers at every stage of the sales funnel. By using sponsored content to grow your reputation in the industry, you might just capture the attention of an influential member ready to invest big in your company’s products and services. Meanwhile, LinkedIn ads save your organisation time, money and energy as lead generation and recruitment can be led through specialised ad formats.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse10">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What are the benefits of working with a LinkedIn Advertising agency?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse10" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Embarking on a LinkedIn paid advertising campaign can deliver outstanding results for your business. But like most digital marketing methods, there’s a learning curve that can lead inexperienced business owners to needlessly throw away hard-earned time and money due to a poorly conceived campaign that fails to achieve their goals. However, joining forces with an experienced LinkedIn advertising agency like First Page means you benefit from our unmatched expertise acquired from leading successful campaigns for thousands of businesses.</p>
+								<p>Achieving your company’s objectives via LinkedIn advertising requires the constant optimisation of your campaign. While you might strike gold with your initial targeting, keeping pace with changing consumer behaviour and the latest trends means you have to stay on top of your campaign’s analytics. While deriving excellent insights from this data is often too complicated for the layperson, First Page’s talented team can use this information to fine-tune your approach and deliver an increased ROI.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse11">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">How much does it cost to advertise on LinkedIn?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse11" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Deciding to advertise on LinkedIn is a great step for your business. But you must know the budget required to hit your targets before you get started. Although many digital marketers consider LinkedIn ads to be some of the best-performing in the industry, the ultimate cost of your campaign will depend on the type of activity undertaken. For example, the audience you want to reach alongside your business objectives. If you’re looking to convert a business-focused audience, LinkedIn paid advertising is outstanding for increasing leads and sales.</p>
+								<p>Like most social media platforms, LinkedIn is based on an auction system that occurs within a fraction of a second. Although several factors determine which business gets their ad displayed, every campaign’s bid value and relevancy to the user decides which ads appear and in what order. Supported by an optimised bid strategy that balances visibility against expenditure, it’s possible to experience a top-notch ROI that helps your business grow. Alongside the experts at First Page, we can plan and execute a strategy perfectly tailored to your needs.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse12">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What is the average conversion rate for LinkedIn ads?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse12" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>LinkedIn has consistently proven to be one of the best options for companies looking to boost B2B sales. In fact, the average conversion rate is estimated at 6.1%, contrasting against the Google Search Ads conversion rate average of 2.5%. However, this impressive conversion rate ultimately depends on the configuration of your paid advertising campaign. Fortunately, the experts at First Page know what it takes to reach and convert your ideal target market with a wonderfully precise strategy.</p>
+								<p>By researching your audience and appreciating what makes your business different, we can design and implement an advertising campaign that surpasses your expectations. With our in-depth knowledge of LinkedIn advertising formats, we can align your objectives with the right message to ensure we capture your target market’s attention. Plus, we can deliver a range of valuable LinkedIn optimisations outside of paid ads to enhance your company's performance across the platform.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse13">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">Can I do LinkedIn ads without an agency?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse13" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Social media marketing has become such a popular choice for brands globally because everyone can get involved. This includes LinkedIn ads and its highly accessible Campaign Manager platform. However, business owners thinking about taking charge of their own strategy must understand that a significant learning curve exists that will almost certainly require plenty of trial and error to overcome. Although this is more than possible, there’s a high chance of wasting considerable time, money and energy in the beginning.</p>
+								<p>For example, business owners must determine how to set a budget for their campaign. As this requires detailed knowledge of how your audience aligns with LinkedIn’s varied ad formats, you might discover that your initial campaigns miss your target. Successful paid online advertising also requires extensive monitoring and adjustments to ensure your budget is used effectively. Partnering with the experts at First Page means every one of these complex tasks is handled on your behalf.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse14">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What is retargeting and how does it work with Linkedin advertising?</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse14" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>If you’re new to the world of LinkedIn advertising, you might be wondering why so many digital marketers advocate for retargeting. Also known as remarketing, this feature of paid advertising campaigns enables brands to reach leads who have previously engaged with your website, product pages or social media profiles, but never followed through with a purchase. As it’s a well-known fact that converting customers is far easier when they’re already aware of your products and brand reputation, retargeting campaigns have the power to skyrocket your sales rate.</p>
+								<p>So how does remarketing work with LinkedIn advertising? First, you need to install the LinkedIn Insight Pixel on your website. This small snippet of code tracks user behaviour and conversions, ensuring you build a detailed remarketing list. As these users may have visited a page on your website, opened a lead-gen form or viewed a video, targeting paid advertising to users from this sales-ready segment is hugely productive for reaching your goals.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse15">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What services does a LinkedIn advertising agency offer?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse15" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Partnering with a leading LinkedIn advertising agency means your campaign is in safe hands when it comes to reaching your ideal audience and experiencing a first-rate ROI. But if your company has never worked alongside a digital marketing agency like First Page, you might be wondering what services we offer. To streamline communication and ensure we’re achieving your targets, your campaign will have a dedicated account manager that keeps you closely informed on how work is progressing.</p>
+								<p>This often entails regular work-in-progress meetings where you're given great insight into how your brand’s budget is being used to reach and convert your valuable customers. In addition to communication benefits, agencies are also responsible for the management and optimisation of campaigns. As First Page gets to know your brand and expectations, we can deliver a strategy that reaches your goals for a great price. With our focus on transparency and frequent reporting, you’ll never be unsure about how your investment is being spent.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
+						<div class="card-header collapsed" data-toggle="collapse" href="#collapse16">
+							<h3 itemprop="name" class="h3-accordion-title-fpau">What is A/B testing in LinkedIn advertising?
+							</h3>
+						</div>
+						<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse16" class="collapse">
+							<div itemprop="text" class="card-body">
+								<p>Every business wants to plan and implement the most successful strategy from the moment they begin investing in their LinkedIn advertising campaign. While it’s possible to achieve outstanding performance from the get-go, taking a considered approach to A/B testing means you can be certain that your strategy delivers the best possible results for your expenditure. By comparing and contrasting two similar, but slightly different ad concepts, you can measure the results and determine which one provides the best way forward.</p>
+								<p>So where should you begin? As you want the resulting data from A/B testing to be easily interpretable, the best idea is to only test one variable at a time. Although this may sound like a slow process, you might be surprised by how small tweaks can deliver big performance improvements. Whether you decide to measure two different types of copy, creative or lead-gen forms, using A/B testing to your advantage is a great way to maximise your ROI.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-</style>
-
-    <section class="banner form-space linkedin-advertising-banner">
-        <div class="container banner-hero">
-            <div class="banner-hero-cont">
-                <h1 class="form-hide">Generate the best B2B leads in hours not days with LinkedIn Ads</h1>
-                <div class="banner-description">
-                    <div class="form-hide hero-mobile">
-                        <img src="{{ site.theme.link }}/assets/img/nick-hero-mb.png" srcset="{{ site.theme.link }}/assets/img/nick-hero-mb.png, {{ site.theme.link }}/assets/img/nick-banner-mb@2x.png 2x" alt="First Page" />
-                    </div>
-                </div>
-                {% include "partials/en-form-services.twig" with {'form_page': 'LinkedIn Ads', 'form_button': 'Get A Free Quote'} %}
-                {% include "partials/en-section-awards-badges.twig" %}
-            </div>
-            <div class="hero-img d-none d-md-block d-lg-none">
-                <img src="{{ site.theme.link }}/assets/img/nick-banner-hero.png" srcset="{{ site.theme.link }}/assets/img/nick-banner-hero.png, {{ site.theme.link }}/assets/img/nick-banner-hero@2x.png 2x" alt="First Page" />
-            </div>
-            <div class="hero-img d-none d-lg-block">
-                <img src="{{ site.theme.link }}/assets/img/nick-hero-google-ads.png" srcset="{{ site.theme.link }}/assets/img/nick-hero-google-ads.png, {{ site.theme.link }}/assets/img/nick-hero-google-ads@2x.png 2x" alt="First Page" />
-            </div>
-        </div>
-    </section>
-
-{% include "partials/en-section-featured-in-news.twig" %}
-
-<section class="section-paragraph">
-    <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
-        <div class="col-12 col-lg-6 image-container-right">
-            <img src="{{ site.theme.link }}/assets/img/img_linkedin_ads.png" srcset="{{ site.theme.link }}/assets/img/img_linkedin_ads.png, {{ site.theme.link }}/assets/img/img_linkedin_ads@2x.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page" />
-            <img src="{{ site.theme.link }}/assets/img/img_linkedin_ads_mob.png" srcset="{{ site.theme.link }}/assets/img/img_linkedin_ads_mob.png, {{ site.theme.link }}/assets/img/img_linkedin_ads_mob@2x.png 2x" class="img-fluid d-md-none" alt="First Page" />
-        </div>
-        <div class="col-12 col-lg-6 text-container">
-            <h2>LinkedIn ads will help your business find a whole new world of leads, sales, and brand awareness</h2>
-            <p>The truth is that most of your competitors are advertising on Google and Facebook. </p>
-            <p>But very few of them are advertising on LinkedIn.</p>
-            <p>This is exactly why LinkedIn ads are so powerful.</p>
-            <p>Over the past few years, LinkedIn has grown from a small social site into the premier social media platform for business professionals who are looking to learn and to network. </p>
-            <p>And now, LinkedIn ads have become incredibly sophisticated - you can target firm industry, size of company, interests, and much more.</p>
-            <p>Because of all this, LinkedIn ads have the capacity to deliver a jaw-dropping ROAS. </p>
-            <p>Here’s some must-know data about LinkedIn ads and marketing…</p>
-            <ul>
-                <li>LinkedIn currently has over 700 million members</li>
-                <li>60% of LinkedIn users are between 25 and 35 years old</li>
-                <li>Ads on LinkedIn can increase purchase intent by over 30%</li>
-                <li>4 out of 5 people on LinkedIn drive important business decisions </li>
-            </ul>
-            <p>In summary, LinkedIn ads are a rare opportunity, and can get your business in front of a highly-targeted (and highly-eager) group of professionals. </p>
-            <button type="button" data-title="linkedinAdvertisingPage-get-freeproposal-linkedin" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
-        </div>
-    </div>
-</section>
-
-<section class="section-paragraph">
-    <div class="row no-gutters align-items-center flex-column-reverse flex-lg-row">
-        <div class="col-12 col-lg-6 image-container-left">
-            <img src="{{ site.theme.link }}/assets/img/img_linkedin.svg" class="img-fluid d-none d-md-inline-block" alt="First Page" />
-            <img src="{{ site.theme.link }}/assets/img/img_linkedin_mob.svg" class="img-fluid d-md-none" alt="First Page" />
-        </div>
-        <div class="col-12 col-lg-6 text-container">
-            <h2>We will create and execute a LinkedIn ad campaign that converts like crazy</h2>
-            <p>But do you know why so few of your competitors are actually advertising on LinkedIn? </p>
-            <p>Because so few businesses and marketing agencies have enough experience to confidently run a LinkedIn marketing campaign.</p>
-            <p>That’s where we come into play. </p>
-            <p>Here at First Page we have been running LinkedIn ad campaigns for years - many of which deliver 5x, or 10x ROI. </p>
-            <p>Our international team of Digital Marketers have run enough experiments and A/B tests to know exactly what works, and what is a waste of time and money.</p>
-            <p>Whether you are looking for exposure, awareness, leads, or sales, we have the expertise to deliver a LinkedIn campaign that few other agencies can even dream about matching. </p>
-            <p>Getting started is simple. Click the button below to schedule a completely free call with one of our Digital Marketing strategists, so we can get your LinkedIn campaign rolling.</p>
-            <button type="button" data-title="linkedinAdvertisingPage-get-freeproposal-we" class="btn fp-btn fp-btn-orange show-popup-form buttonFormClick">GET A FREE QUOTE</button>
-        </div>
-    </div>
-</section>
-
-<section class="section-client-reviews">
-    <div class="container">
-        <div class="section-title">
-            <h2>See what our clients<br class="d-sm-none"> are saying</h2>
-        </div>
-        <div class="row testimonial-cont">
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        First Page is very effective at understanding, strategising, planning and executing customers' SEO needs. I will definitely recommend them to anyone who is looking to enhance their business leads generation online.
-                        Job well done.
-                    </div>
-                    <div class="person">
-                        <div class="name">BERNARD SONG</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        The team at First Page has helped us understand, in detail, how SEO works for businesses. Shirlyn has been very proactive. She goes out of her way to address our questions and challenges at every step. Kudos!
-                    </div>
-                    <div class="person">
-                        <div class="name">CLAIRE TUPAZ</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        Gary was responsible for managing my campaigns and I’m deeply impressed with his work ethic.
-                        <br>The majority of our keywords were ranking on page 1 of Google at the end of the campaign. As a result, my online sales steadily increased.
-                    </div>
-                    <div class="person">
-                        <div class="name">ROYSTON FOO</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        Anthony has been very helpful and efficient. Considering we were noobs in the area of Digital Marketing, he has been patient and addressed our concerns. We look forward to more collaboration in the future. </div>
-                    <div class="person">
-                        <div class="name">AARON CHUA</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        We've been working with the team at First Page for just over a year. They are really friendly, professional and have guided our company to a better understanding of the importance of SEO. Shoutout to Shane (fantastic manager) and Carl! Thanks team! </div>
-                    <div class="person">
-                        <div class="name">H. NORTH</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-                <div class="testimonial">
-                    <div class="stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                        <img src="{{ site.theme.link }}/assets/img/icon-star.png" srcset="{{ site.theme.link }}/assets/img/icon-star@2x.png 2x" alt="Five Stars">
-                    </div>
-                    <div class="text">
-                        I've worked with First Page for many years. The experience and quality of work are top-notch. The people in charge are responsive and knowledgeable. Keep up the good work!
-                    </div>
-                    <div class="person">
-                        <div class="name">GARY ADAMS</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-{% include "partials/en-section-services-social.twig" %}
-
-{% include "partials/en-section-casestudy-british-connections.twig" %}
-
-<section class="section-paragraph section-faqs">
-    <div class="container">
-        <h2 class="section-title">Social Media Specialiast FAQs</h2>
-        <div itemscope itemtype="https://schema.org/FAQPage" class="row">
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse1">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">What are LinkedIn Ads?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse1" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>LinkedIn Ads is a form of paid advertisement that gives you access to LinkedIn's social network through sponsored posts. These ads offer businesses a way to generate leads, create online recognition, share content and more.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse2">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">Where do LinkedIn Ads appear?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse2" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>Sponsored LinkedIn ads appear in your target audience members' homepage feed, available on desktop and most mobile and tablet formats.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse3">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">What types of businesses are suitable for LinkedIn Ads?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse3" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>B2B companies can benefit significantly from using LinkedIn as an advertising platform to build connections, gain high-quality leads and increase sales. B2C companies can also use the platform to share job listings, industry content, and product offerings. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse4">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">What are the benefits of LinkedIn Ads?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse4" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>Asides from generating leads by promoting to LinkedIn's user base, LinkedIn ads also provide excellent networking opportunities for businesses to connect with industry professionals and those with a specific interest in their field. With the support of various formats, including video to text, LinkedIn provides high-quality leads regardless of the advertising campaign's goal and is a powerful conversion platform.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse5">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">What are LinkedIn dynamic ads?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse5" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>LinkedIn offers a variety of different ad formats, including sponsored, dynamic, text, and lead gen forms. Dynamic ads are personalised ads that are displayed based on the user's LinkedIn profile information. This allows you to engage with targeted users and drive leads because of their ability to customise the ad creative. You can utilise three different types of dynamic ads to boost company follower count, promote your product/service, or drive content downloads.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="card">
-                    <div class="card-header collapsed" data-toggle="collapse" href="#collapse6">
-                        <h3 itemprop="name" class="h3-accordion-title-fpau">How can I get started with LinkedIn ads?</h3>
-                    </div>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="collapse6" class="collapse">
-                        <div itemprop="text" class="card-body">
-                            <p>Running LinkedIn ads can be an excellent option for B2B or B2C businesses looking to generate high-quality leads and grow industry connections. Contact our digital marketing specialists to see how we can optimise your LinkedIn ad strategy today.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-{% include "partials/en-section-free-session.twig" %}
-
-{% include "partials/en-form-popup.twig" with {'form_page': 'LinkedIn Ads (Pop-up Form)'} %}
-
+	{% include "partials/en-form-popup.twig" with {'form_page': 'LinkedIn Ads (Pop-up Form)'} %}
 {% endblock %}

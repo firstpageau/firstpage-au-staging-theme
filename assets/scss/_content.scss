@@ -5416,7 +5416,8 @@ section.secure-payments {
 .page-seo-parramatta,
 .page-seo-ballarat,
 .page-seo-bendigo,
-.page-seo-darwin {
+.page-seo-darwin,
+.page-seo-hobart {
   .light-heading {
     font-weight: 400;
     font-size: 35px;
@@ -5782,6 +5783,39 @@ section.secure-payments {
   @media (min-width: $responsive-xl) {
     .circle-data-section-left-col {
       margin-top: -91px !important;
+    }
+  }
+
+  @media (min-width: $responsive-qhd) {
+    .location-map-img {
+      margin-top: -127px;
+    }
+  }
+}
+
+// SEO Hobart
+.page-seo-hobart {
+  section.section-letstalk {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $responsive-md) {
+    .circle-data-section-left-col {
+      margin-top: -294px !important;
+    }
+  }
+  @media (min-width: $responsive-lg) {
+    .location-map-img {
+      margin-top: -137px;
+    }
+    .circle-data-section-left-col {
+      margin-top: -52px !important;
+    }
+  }
+
+  @media (min-width: $responsive-xl) {
+    .circle-data-section-left-col {
+      margin-top: -55px !important;
     }
   }
 

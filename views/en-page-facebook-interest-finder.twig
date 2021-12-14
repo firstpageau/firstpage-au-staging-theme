@@ -367,7 +367,7 @@ let showAudiences = (audiences, table_id) => {
 let table = document.getElementById(table_id + "-table-body");
 let counter = document.getElementById(table_id + "-counter");
 
-counter.innerText = " (" + audiences.length + ")";
+counter.innerText = " " + audiences.length + "";
 table.innerHTML = "";
 
 audiences.forEach((audience) => {

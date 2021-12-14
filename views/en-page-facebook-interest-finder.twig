@@ -190,75 +190,120 @@
 												<th>Name</th>
 												<th>Audience size</th>
 											</thead>
-											<tbody id="interest-table-body"></tbody>
-										</table>
-									</div>
+											<tbody id="interest-table-body">
+												{% if 'id="interest-counter"' == 0 %}
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+												{% endif %}
+											</tbody>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-6">
-							<div class="row fp-vertical-align fp-show-block no-gutters" id="fp-total-search-volume">
-								<div class="col-12 col-md-12">
-									<h4 class="subtitle has-text-centered">
-										Ad Interest Suggestions<span id="suggestion-counter"></span>
-									</h4>
-									<div class="table-responsive">
-										<table class="table table-striped">
-											<thead>
-												<th class="d-none d-md-block">ID</th>
-												<th>Name</th>
-												<th>Audience size</th>
-											</thead>
-											<tbody id="suggestion-table-body"></tbody>
-										</table>
-									</div>
-								</div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="row fp-vertical-align fp-show-block no-gutters" id="fp-total-search-volume">
+							<div class="col-12 col-md-12">
+								<h4 class="subtitle has-text-centered">
+									Ad Interest Suggestions<span id="suggestion-counter"></span>
+								</h4>
+								<div class="table-responsive">
+									<table class="table table-striped">
+										<thead>
+											<th class="d-none d-md-block">ID</th>
+											<th>Name</th>
+											<th>Audience size</th>
+										</thead>
+										<tbody id="suggestion-table-body">
+											{% if 'id="suggestion-counter"' == 0 %}
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td></td>
+												</tr>
+											{% endif %}
+										</tbody>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-
-
-	<section class="section-paragraph">
-		<div class="container">
-			<div class="row align-items-center flex-lg-row flex-md-row-reverse no-gutters">
-				<div class="col-12 col-lg-6 text-center">
-					<img src="{{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png" srcset="{{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png, {{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page"/>
-					<img src="{{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png" srcset="{{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png, {{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png 2x" class="img-fluid d-md-none" alt="First Page"/>
-				</div>
-				<div class="col-12 col-lg-6 text-container facebook-finder-content">
-					<p>If you target your strategy using Facebook Ads Manager, only 25 interests are automatically suggested when entering terms. However, we know this is only a fraction of the interests available for targeting on the platform.</p>
-
-					<p>This insightful tool identifies thousands of targetable but hidden Facebook interests, helping your brand optimise its campaign for the best ROI. While our marketing specialists use this tool to deliver massive profit for our clients, we’re providing this resource 100% free to the public.</p>
-
-					<p>Rather than targeting the same interests as every other brand on Facebook, use this exceptional tool to increase your advertising campaign’s performance and surpass your goals.</p>
-
-				</div>
-			</div>
+	</div>
+</div></section><section class="section-paragraph">
+<div class="container">
+	<div class="row align-items-center flex-lg-row flex-md-row-reverse no-gutters">
+		<div class="col-12 col-lg-6 text-center">
+			<img src="{{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png" srcset="{{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png, {{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png 2x" class="img-fluid d-none d-md-inline-block" alt="First Page"/>
+			<img src="{{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png" srcset="{{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png, {{ site.theme.link }}/assets/img/facebook-interest-finder-content-image.png 2x" class="img-fluid d-md-none" alt="First Page"/>
 		</div>
-	</section>
+		<div class="col-12 col-lg-6 text-container facebook-finder-content">
+			<p>If you target your strategy using Facebook Ads Manager, only 25 interests are automatically suggested when entering terms. However, we know this is only a fraction of the interests available for targeting on the platform.</p>
 
-	<section class="section-client-reviews pb-3">
-		<div class="container">
-			<div class="section-title">
-				<h2>To learn how your business can benefit from this
-					<br class="d-none d-lg-block">
-					unique Facebook tool, just ask our team.</h2>
-			</div>
-			<div class="container mt-5 mb-5 text-center">
-				<a href="/contact" class="btn fp-btn fp-btn-orange">CONTACT US NOW</a>
-			</div>
+			<p>This insightful tool identifies thousands of targetable but hidden Facebook interests, helping your brand optimise its campaign for the best ROI. While our marketing specialists use this tool to deliver massive profit for our clients, we’re providing this resource 100% free to the public.</p>
+
+			<p>Rather than targeting the same interests as every other brand on Facebook, use this exceptional tool to increase your advertising campaign’s performance and surpass your goals.</p>
+
 		</div>
-	</section>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
-
-
-	<script>
-		let submitForm = (e) => {
+	</div>
+</div></section><section class="section-client-reviews pb-3">
+<div class="container">
+	<div class="section-title">
+		<h2>To learn how your business can benefit from this
+			<br class="d-none d-lg-block">
+			unique Facebook tool, just ask our team.</h2>
+	</div>
+	<div class="container mt-5 mb-5 text-center">
+		<a href="/contact" class="btn fp-btn fp-btn-orange">CONTACT US NOW</a>
+	</div>
+</div></section><script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script><script>
+let submitForm = (e) => {
 e.preventDefault();
 
 let keyword = document.getElementById("keyword").value.trim();
@@ -343,7 +388,4 @@ submitKeyword(e.target.text);
 };
 
 document.getElementById("search-form").onsubmit = submitForm;
-document.getElementById("search-form-submit").onclick = submitForm;
-	</script>
-
-{% endblock %}
+document.getElementById("search-form-submit").onclick = submitForm;</script>{% endblock %}

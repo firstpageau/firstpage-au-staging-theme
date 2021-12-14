@@ -2,103 +2,109 @@
 
 {% block content %}
 
-<style>
-    .section-job .blog-content .post-content {
-        padding: 50px 20px;
-    }
+	<style>
+		.section-job .blog-content .post-content {
+			padding: 50px 20px;
+		}
 
-    .single_job_listing h1 {
-        margin-bottom: 20px;
-        font-style: normal;
-    }
+		.single_job_listing h1 {
+			margin-bottom: 20px;
+			font-style: normal;
+		}
 
-    .job_description {
-        line-height: 20px;
-        font-size: 15px;
-    }
+		.job_description {
+			line-height: 20px;
+			font-size: 15px;
+		}
 
-    .job_description strong {
-        display: block;
-        margin-top: 20px;
-    }
+		.job_description strong {
+			display: block;
+			margin-top: 20px;
+		}
 
-    .job_description ul {
-        font-size: 16px;
-        line-height: 23px;
-    }
+		.job_description ul {
+			font-size: 16px;
+			line-height: 23px;
+		}
 
-    .section-job .single_job_listing .application {
-        margin-top: 30px !important;
-    }
+		.section-job .single_job_listing .application {
+			margin-top: 30px !important;
+		}
 
-    .job_application a {
-        border: 0;
-        border-radius: 4px;
-        -webkit-box-shadow: 0 12px 18px 0 rgb(0 0 0 / 15%);
-        box-shadow: 0 12px 18px 0 rgb(0 0 0 / 15%);
-        padding: 20px;
-        color: #fff;
-        background-color: #ff5254;
-        font-size: 15px;
-        font-weight: 700;
-        letter-spacing: 2px;
-        line-height: 18px;
-        text-align: center;
-        text-transform: uppercase;
-        cursor: pointer;
-        max-width: 260px;
-        width: 100%;
-        display: inline-block;
-    }
+		.job_application a {
+			border: 0;
+			border-radius: 4px;
+			-webkit-box-shadow: 0 12px 18px 0 rgb(0 0 0 / 15%);
+			box-shadow: 0 12px 18px 0 rgb(0 0 0 / 15%);
+			padding: 20px;
+			color: #fff;
+			background-color: #ff5254;
+			font-size: 15px;
+			font-weight: 700;
+			letter-spacing: 2px;
+			line-height: 18px;
+			text-align: center;
+			text-transform: uppercase;
+			cursor: pointer;
+			max-width: 260px;
+			width: 100%;
+			display: inline-block;
+		}
 
-    .job_application.application a:hover {
-        text-decoration: none;
-    }
-</style>
+		.job_application.application a:hover {
+			text-decoration: none;
+		}
+	</style>
 
-<section class="pad-header"></section>
+	<section class="pad-header"></section>
 
-<section id="details" class="section-job section-grey no-border">
-    <div class="container mob-center">
-        {# <h2><strong>{{ post.title }}</strong></h2> #}
-        <div class="div-view-all">
-            <a href="{{ home_url }}careers/#vacancies" class="view-all"><i class="fa fa-caret-left" aria-hidden="true"></i>
-                View
-                All Vacancies</a>
-        </div>
-        <div class="row">
-            <div class="col-12 col-xl-8 mb-5">
-                <div class="blog-content">
-                   <div class="post-content" {{ post.id }}>
-                        {% filter shortcodes %}
-                            [jobads id="{{ postid }}"]
-                        {% endfilter %}
-                    </div>
-                </div>
-            </div>
+	<section id="details" class="section-job section-grey no-border">
+		<div
+			class="container mob-center">
+			{# <h2><strong>{{ post.title }}</strong></h2> #}
+			<div class="div-view-all">
+				<a href="{{ home_url }}careers/#vacancies" class="view-all">
+					<i class="fa fa-caret-left" aria-hidden="true"></i>
+					View
+					                All Vacancies</a>
+			</div>
+			<div class="row">
+				<div class="col-12 col-xl-8 mb-5">
+					<div class="blog-content">
+						<div class="post-content" {{ post.id }}>
+							{% filter shortcodes %}
+								[jobads id="{{ postid }}"]
+							{% endfilter %}
+						</div>
+					</div>
+				</div>
 
-            <div class="col-12 col-xl-4 mb-5">
-                <div class="related-articles other-vacancies">
-                    <h2>Other Vacancies</h2>
-                    <ul>
-                        {% if listings|length > 0 %}
-                        {% for job in listings %}
-                        <li><a href="{{ job.link }}">{{ job.title }}</a></li>
-                        {% endfor %}
-                        {% else %}
-                        <li>-</li>
-                        {% endif %}
-                    </ul>
-                    <a href="{{ home_url }}careers/" class="view-all">View All <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+				<div class="col-12 col-xl-4 mb-5">
+					<div class="related-articles other-vacancies">
+						<h2>Other Vacancies</h2>
+						<ul>
+							{% if listings|length > 0 %}
+								{% for job in listings %}
+									<li>
+										<a href="{{ job.link }}">{{ job.title }}</a>
+									</li>
+								{% endfor %}
+							{% else %}
+								<li>-</li>
+							{% endif %}
+						</ul>
+						<a href="{{ home_url }}careers/" class="view-all">View All
+							<i class="fa fa-caret-right" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<section class="section-background section-black">
-    <img src="{{ site.theme.link }}/assets/img/img_team_collage_fpa@2x.jpg" class="img-fluid d-none d-md-block" alt="Our Office" />
-    <img src="{{ site.theme.link }}/assets/img/img_team_collage_fpa_mob@2x.jpg" class="img-fluid d-block d-md-none" alt="Our Office" />
-</section>
+	<section class="section-background section-black">
+		<img src="{{ site.theme.link }}/assets/img/img_team_collage_fpa@2x.jpg" class="img-fluid d-none d-md-block" alt="Our Office"/>
+		<img src="{{ site.theme.link }}/assets/img/img_team_collage_fpa_mob@2x.jpg" class="img-fluid d-block d-md-none" alt="Our Office"/>
+	</section>
 
 {% endblock %}

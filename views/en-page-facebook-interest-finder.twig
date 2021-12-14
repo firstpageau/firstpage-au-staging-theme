@@ -127,6 +127,16 @@
 			z-index: -1;
 			bottom: 0;
 		}
+
+		.result_section {
+			margin-left: 40px;
+			font-size: 20px;
+			font-weight: 700;
+			color: #B3B4B5;
+			background: #E9EBEF;
+			padding: 5px 15px;
+			border-radius: 50px;
+		}
 	</style>
 
 	<section class="banner">
@@ -181,10 +191,19 @@
 						<div class="col-12 col-lg-6">
 							<div class="row fp-vertical-align fp-show-block no-gutters" id="fp-total-search-volume">
 								<div class="col-12 col-md-12">
-									<h4 class="subtitle has-text-centered">
-										Ad Interests
-									</h4>
-									<span id="interest-counter"></span>
+									<div class="d-sm-flex align-items-baseline">
+										<h4 class="subtitle has-text-centered">
+											Ad Interests
+										</h4>
+										<div id="interest-section" class="result_section d-none">
+											<span>
+												No results</span>
+										</div>
+										<div id="interest-result-section" class="result_section d-none">
+											<span id="interest-counter">
+												0</span>
+										</div>
+									</div>
 									<div class="table-responsive">
 										<table class="table table-striped">
 											<thead>
@@ -235,9 +254,18 @@
 					<div class="col-12 col-lg-6">
 						<div class="row fp-vertical-align fp-show-block no-gutters" id="fp-total-search-volume">
 							<div class="col-12 col-md-12">
-								<h4 class="subtitle has-text-centered">
-									Ad Interest Suggestions<span id="suggestion-counter"></span>
-								</h4>
+								<div class="d-sm-flex align-items-baseline">
+									<h4 class="subtitle has-text-centered">
+										Ad Interest Suggestions
+									</h4>
+									<div id="suggestion-section" class="result_section d-none">
+										<span>
+											No results</span>
+									</div>
+									<div id="suggestion-result-section" class="result_section d-none">
+										<span id="suggestion-counter">0</span>
+									</div>
+								</div>
 								<div class="table-responsive">
 									<table class="table table-striped">
 										<thead>
@@ -330,12 +358,20 @@ const apiPath = "/fb-interest-finder-page/backend.php";
 document.getElementById("keyword").value = keyword;
 
 if ((keyword.length == 0)) {
+document.getElementById("interest-section").classList.remove('d-none');
+document.getElementById("suggestion-section").classList.remove('d-none');
 return false;
 
 } else { // add to title and history
 setTitle(keyword);
+document.getElementById("interest-section").classList.add('d-none');
+document.getElementById("suggestion-section").classList.add('d-none');
+document.getElementById("suggestion-result-section").classList.remove('d-none');
+document.getElementById("interest-result-section").classList.remove('d-none');
 // document.getElementById("keyword-history").innerHTML += `<li class="blue-bubble"><a class="pointer-none" onclick="submitKeyword('${keyword}')">${keyword}</a><span class="closeButton">X</span></li>`;
 document.getElementById("keyword-history").innerHTML += `<li class="blue-bubble"><a class="pointer-none" onclick="submitKeyword('${keyword}')">${keyword}</a></li>`;
+$(".result_section").css("background", "#E3EEFF");
+$(".result_section").css("color", "#00225d");
 }
 
 // Use live to bind click event to each li and remove it
@@ -368,8 +404,12 @@ let showAudiences = (audiences, table_id) => {
 let table = document.getElementById(table_id + "-table-body");
 let counter = document.getElementById(table_id + "-counter");
 
+if (audiences.length == 0) {
+counter.innerText = " No results";
+} else {
 counter.innerText = " " + audiences.length + "";
-table.innerHTML = "";
+
+} table.innerHTML = "";
 
 audiences.forEach((audience) => {
 let row = document.createElement("tr");

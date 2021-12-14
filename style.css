@@ -9687,7 +9687,7 @@ div.check-out-div {
   position: relative;
   z-index: 1;
   border-radius: 5px;
-  box-shadow: 10px 10px 5px #80808014; }
+  box-shadow: 0px 0px 10px 20px #80808014; }
 
 .page-ppc-roi-calculator .fp-container.roi-for-section + .fp-container.roi-for-section,
 .page-facebook-interest-finder .fp-container.roi-for-section + .fp-container.roi-for-section,

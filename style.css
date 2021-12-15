@@ -9689,6 +9689,12 @@ div.check-out-div {
   border-radius: 5px;
   box-shadow: 0px 0px 10px 20px #80808014; }
 
+@media (max-width: 767px) {
+  .page-ppc-roi-calculator #fp-roi-calculator .facebook-box-shadow,
+  .page-facebook-interest-finder #fp-roi-calculator .facebook-box-shadow,
+  .page-seo-roi-calculator #fp-roi-calculator .facebook-box-shadow {
+    box-shadow: none; } }
+
 .page-ppc-roi-calculator .fp-container.roi-for-section + .fp-container.roi-for-section,
 .page-facebook-interest-finder .fp-container.roi-for-section + .fp-container.roi-for-section,
 .page-seo-roi-calculator .fp-container.roi-for-section + .fp-container.roi-for-section {

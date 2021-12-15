@@ -18,6 +18,7 @@
 			border-top: none !important;
 			border-bottom: none !important;
 			color: #666666;
+			height: 44px;
 		}
 		@media(max-width: 575px) {
 			.table td,
@@ -28,9 +29,12 @@
 		.table td {
 			border-top: none !important;
 			height: 44px;
-		}
-		td {
 			color: #00225D;
+		}
+		@media(max-width: 768px) {
+			.table td {
+				width: 200px;
+			}
 		}
 		td a {
 			color: #ff5254 !important;
@@ -137,6 +141,17 @@
 			padding: 5px 15px;
 			border-radius: 50px;
 		}
+		@media(max-width: 575px) {
+			.result_section {
+				margin-left: 0;
+				display: inline-block;
+			}
+		}
+		@media(min-width: 768px) {
+			.w-200 {
+				width: 200px;
+			}
+		}
 	</style>
 
 	<section class="banner">
@@ -159,7 +174,7 @@
 	<section class="section-white shaded-white" style="background:white">
 		<div class="d-sm-flex justify-content-center" id='fp-roi-calculator' data-currency='$'>
 			<div class="seo-roi-calculator">
-				<div class="fp-container roi-for-section facebook-box-shadow" style="background-color:#ffffff">
+				<div class="container fp-container roi-for-section facebook-box-shadow" style="background-color:#ffffff">
 					<div class="row mx-0">
 						<div class="col-12 col-lg-12">
 							<form id="search-form" class="field has-addons">
@@ -186,29 +201,25 @@
 									</p>
 								</div>
 							</form>
+							<p id="desc" style="color:#ff5254" class="d-none">Please add a keyword</p>
 						</div>
 
 						<div class="col-12 col-lg-6">
 							<div class="row fp-vertical-align fp-show-block no-gutters" id="fp-total-search-volume">
 								<div class="col-12 col-md-12">
-									<div class="d-sm-flex align-items-baseline">
+									<div class="d-sm-flex d-inline-block align-items-baseline">
 										<h4 class="subtitle has-text-centered">
 											Ad Interests
 										</h4>
-										<div id="interest-section" class="result_section d-none">
-											<span>
-												No results</span>
-										</div>
 										<div id="interest-result-section" class="result_section d-none">
-											<span id="interest-counter">
-												0</span>
+											<span id="interest-counter"></span>
 										</div>
 									</div>
 									<div class="table-responsive">
 										<table class="table table-striped">
 											<thead>
 												<th class="d-none d-md-block">ID</th>
-												<th>Name</th>
+												<th class="w-200">Name</th>
 												<th>Audience size</th>
 											</thead>
 											<tbody id="interest-table-body">
@@ -254,23 +265,19 @@
 					<div class="col-12 col-lg-6">
 						<div class="row fp-vertical-align fp-show-block no-gutters" id="fp-total-search-volume">
 							<div class="col-12 col-md-12">
-								<div class="d-sm-flex align-items-baseline">
+								<div class="d-sm-flex d-inline-block align-items-baseline">
 									<h4 class="subtitle has-text-centered">
 										Ad Interest Suggestions
 									</h4>
-									<div id="suggestion-section" class="result_section d-none">
-										<span>
-											No results</span>
-									</div>
 									<div id="suggestion-result-section" class="result_section d-none">
-										<span id="suggestion-counter">0</span>
+										<span id="suggestion-counter"></span>
 									</div>
 								</div>
 								<div class="table-responsive">
 									<table class="table table-striped">
 										<thead>
 											<th class="d-none d-md-block">ID</th>
-											<th>Name</th>
+											<th class="w-200">Name</th>
 											<th>Audience size</th>
 										</thead>
 										<tbody id="suggestion-table-body">
@@ -358,16 +365,19 @@ const apiPath = "/fb-interest-finder-page/backend.php";
 document.getElementById("keyword").value = keyword;
 
 if ((keyword.length == 0)) {
-document.getElementById("interest-section").classList.remove('d-none');
-document.getElementById("suggestion-section").classList.remove('d-none');
-return false;
-
-} else { // add to title and history
-setTitle(keyword);
-document.getElementById("interest-section").classList.add('d-none');
-document.getElementById("suggestion-section").classList.add('d-none');
+document.getElementById("desc").classList.remove('d-none');
+$('#interest-counter').text("No results");
+$('#suggestion-counter').text("No results");
 document.getElementById("suggestion-result-section").classList.remove('d-none');
 document.getElementById("interest-result-section").classList.remove('d-none');
+
+return false;
+} else { // add to title and history
+setTitle(keyword);
+document.getElementById("suggestion-result-section").classList.remove('d-none');
+document.getElementById("interest-result-section").classList.remove('d-none');
+document.getElementById("desc").classList.add('d-none');
+
 // document.getElementById("keyword-history").innerHTML += `<li class="blue-bubble"><a class="pointer-none" onclick="submitKeyword('${keyword}')">${keyword}</a><span class="closeButton">X</span></li>`;
 document.getElementById("keyword-history").innerHTML += `<li class="blue-bubble"><a class="pointer-none" onclick="submitKeyword('${keyword}')">${keyword}</a></li>`;
 $(".result_section").css("background", "#E3EEFF");
@@ -403,12 +413,14 @@ locale
 let showAudiences = (audiences, table_id) => {
 let table = document.getElementById(table_id + "-table-body");
 let counter = document.getElementById(table_id + "-counter");
+let desc = document.getElementById("desc");
 
 if (audiences.length == 0) {
 counter.innerText = " No results";
+desc.classList.remove('d-none');
 } else {
+desc.classList.add('d-none');
 counter.innerText = " " + audiences.length + "";
-
 } table.innerHTML = "";
 
 audiences.forEach((audience) => {

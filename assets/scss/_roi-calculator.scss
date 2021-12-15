@@ -54,6 +54,9 @@
     z-index: 1;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 20px #80808014;
+    @media (max-width: 767px) {
+      box-shadow: none;
+    }
   }
   .fp-container.roi-for-section + .fp-container.roi-for-section {
     margin-top: 50px;

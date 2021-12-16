@@ -20,12 +20,6 @@
 			color: #666666;
 			height: 44px;
 		}
-		@media(max-width: 575px) {
-			.table td,
-			.table th {
-				padding: 2px !important;
-			}
-		}
 		.table td {
 			border-top: none !important;
 			height: 44px;
@@ -357,7 +351,7 @@
 </div></section><script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script><script>
 let submitForm = (e) => {
 e.preventDefault();
-
+i = 0;
 let keyword = document.getElementById("keyword").value.trim();
 submitKeyword(keyword);
 };
@@ -415,14 +409,19 @@ locale
 }).then((a) => showAudiences(a.data.data, "suggestion"));
 };
 
+let i = 0;
+
 let showAudiences = (audiences, table_id) => {
 let table = document.getElementById(table_id + "-table-body");
 let counter = document.getElementById(table_id + "-counter");
 let desc = document.getElementById("desc");
 
 if (audiences.length == 0) {
+i++;
 counter.innerText = " No results";
+if (i == 2) {
 desc.classList.remove('d-none');
+}
 } else {
 desc.classList.add('d-none');
 counter.innerText = " " + audiences.length + "";
@@ -440,7 +439,6 @@ audience.name
 }</a></td><td>${
 audience.audience_size
 }</td>`;
-
 
 table.appendChild(row);
 });

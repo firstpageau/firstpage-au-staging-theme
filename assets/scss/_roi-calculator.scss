@@ -40,6 +40,10 @@
     p {
       font-size: 22px;
       line-height: 25px;
+      @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 23px;
+      }
     }
   }
   #fp-roi-calculator .fp-container.roi-for-section {

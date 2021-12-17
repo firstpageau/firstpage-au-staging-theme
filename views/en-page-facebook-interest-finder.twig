@@ -4,8 +4,8 @@
 	<style>
 		@media(min-width: 992px) {
 			.page-facebook-interest-finder section.banner h1 {
-				font-size: 52px;
-				line-height: 54px;
+				font-size: 52px !important;
+				line-height: 54px !important;
 			}
 		}
 		tbody tr {
@@ -145,11 +145,16 @@
 				box-shadow: none !important;
 			}
 		}
+		@media(max-width: 991px) {
+			.align-item-center {
+				align-items: center !important;
+			}
+		}
 	</style>
 
 	<section class="banner">
 		<div class="container">
-			<div class="row no-gutters">
+			<div class="row no-gutters align-item-center">
 				<div class="col-12 col-md-7 col-lg-7 description-section">
 					<h1>Facebook Hidden ad
 						<br class="d-lg-block">

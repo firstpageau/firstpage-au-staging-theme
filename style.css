@@ -6605,6 +6605,29 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
     margin-left: -120px;
     margin-top: 9px; } }
 
+.page-seo .section-paragraph .container-padding {
+  padding: 0 34px; }
+
+@media (max-width: 767px) {
+  .page-seo .section-paragraph .container-padding {
+    padding: 0 15px; } }
+
+.page-seo .case-study-md-img {
+  margin-bottom: -36px; }
+
+.page-seo .services-slick-next,
+.page-seo .services-slick-prev {
+  width: 56px !important;
+  height: 56px !important; }
+
+@media (max-width: 991px) {
+  .page-seo section.section-paragraph .text-container {
+    padding: 0 15px 0 34px !important; } }
+
+@media (max-width: 767px) {
+  .page-seo section.section-paragraph .text-container {
+    padding: 0 15px !important; } }
+
 .page-seo .card-local-national-seo,
 .page-seo-offer .card-local-national-seo {
   display: block !important; }
@@ -6657,6 +6680,12 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.page-seo section.section-casestudy.casestudy-seo-new,
+.page-seo-offer section.section-casestudy.casestudy-seo-new {
+  background-image: url("assets/img/img_ipad_amway@2x.png");
+  background-size: 1464px auto;
+  background-position-x: calc(50% + 556px); }
 
 @media (max-width: 425px) {
   .page-seo .seo-new-faq-one,

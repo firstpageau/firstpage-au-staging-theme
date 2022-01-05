@@ -5048,6 +5048,51 @@ section.secure-payments {
   //  end responsive
 }
 
+//Google Ads
+.page-google-ads {
+  section.section-casestudy.casestudy-google-ads {
+    background-image: url("assets/img/img_ipad_hertz@2x.png");
+    background-size: 1464px auto;
+    background-position-x: calc(50% + 556px);
+  }
+
+  @media (max-width: 767px) {
+    .page-google-ads section.banner .banner-description p {
+      min-height: 267px;
+      max-width: 189px;
+    }
+
+    section.section-casestudy.casestudy-google-ads {
+      background-image: none;
+    }
+  }
+}
+
+//Google Display Network
+.page-google-display-network {
+  section.section-casestudy.casestudy-google-display-network {
+    background-image: url("assets/img/img_ipad_honestbee@2x.png");
+    background-size: 1464px auto;
+    background-position-x: calc(50% + 556px);
+  }
+  @media (max-width: 767px) {
+    section.banner h1 {
+      padding: 0 5px;
+      max-width: 216px;
+      margin-bottom: 45px;
+    }
+    section.banner .banner-description p {
+      padding: 0 5px;
+      max-width: 150px;
+      min-height: 238px;
+    }
+
+    section.section-casestudy.casestudy-google-display-network {
+      background-image: none;
+    }
+  }
+}
+
 //Google Ads Audit Page
 .page-google-ads-audit {
   .bottom-get-audit-btn-holder {

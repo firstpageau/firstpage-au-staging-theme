@@ -4686,6 +4686,39 @@ section.secure-payments {
   }
 }
 
+.page-seo {
+  .section-paragraph {
+    .container-padding {
+      padding: 0 34px;
+    }
+    @media (max-width: 767px) {
+      .container-padding {
+        padding: 0 15px;
+      }
+    }
+  }
+  .case-study-md-img {
+    margin-bottom: -36px;
+  }
+  .services-slick-next,
+  .services-slick-prev {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  @media (max-width: 991px) {
+    section.section-paragraph .text-container {
+      padding: 0 15px 0 34px !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    section.section-paragraph .text-container {
+      padding: 0 15px !important;
+    }
+  }
+}
+
 //new seo page
 .page-seo,
 .page-seo-offer {
@@ -4741,6 +4774,12 @@ section.secure-payments {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  section.section-casestudy.casestudy-seo-new {
+    background-image: url("assets/img/img_ipad_amway@2x.png");
+    background-size: 1464px auto;
+    background-position-x: calc(50% + 556px);
   }
 
   @media (max-width: 425px) {

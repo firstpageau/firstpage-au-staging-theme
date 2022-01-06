@@ -6866,6 +6866,15 @@ section.secure-payments .simpay-form-wrap .simpay-checkout-form {
   .page-google-ads section.section-casestudy.casestudy-google-ads {
     background-image: none; } }
 
+@media (max-width: 767px) {
+  .page-google-ads .quote-form.quote-form-big .input-group .select-container.form-control,
+  .page-google-ads .quote-form.quote-form-big .input-group input.form-control {
+    margin-top: 80px !important; } }
+
+@media (max-width: 767px) {
+  .page-google-ads .google-ads-banner .hero-mobile {
+    bottom: -25px !important; } }
+
 .page-google-display-network section.section-casestudy.casestudy-google-display-network {
   background-image: url("assets/img/img_ipad_honestbee@2x.png");
   background-size: 1464px auto;

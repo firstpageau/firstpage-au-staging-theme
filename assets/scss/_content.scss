@@ -5066,6 +5066,17 @@ section.secure-payments {
       background-image: none;
     }
   }
+  @media (max-width: 767px) {
+    .quote-form.quote-form-big .input-group .select-container.form-control,
+    .quote-form.quote-form-big .input-group input.form-control {
+      margin-top: 80px !important;
+    }
+  }
+  @media (max-width: 767px) {
+    .google-ads-banner .hero-mobile {
+      bottom: -25px !important;
+    }
+  }
 }
 
 //Google Display Network

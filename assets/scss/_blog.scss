@@ -897,12 +897,12 @@
   }
 }
 
-.toc-style{
+.toc-style {
   font-size: 28px;
   font-weight: 600;
   line-height: 50px;
 
-  @media(min-width: $responsive-md){
+  @media (min-width: $responsive-md) {
     font-size: 40px;
   }
 }

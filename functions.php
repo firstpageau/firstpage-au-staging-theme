@@ -174,16 +174,44 @@ add_action('do_feed_atom_comments', 'itsme_disable_feed', 1);
 remove_action( 'wp_head', 'feed_links_extra', 3 );
 remove_action( 'wp_head', 'feed_links', 2 );
 
-
-// // Remove the REST API endpoint.
-// remove_action( 'rest_api_init', 'wp_oembed_register_route' );
-// // Turn off oEmbed auto discovery.
-// add_filter( 'embed_oembed_discover', '__return_false' );
-// // Don't filter oEmbed results.
-// remove_filter( 'oembed_dataparse', 'wp_filter_oembed_result', 10 );
-// // Remove oEmbed discovery links.
-// remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
-// // Remove oEmbed-specific JavaScript from the front-end and back-end.
-// remove_action( 'wp_head', 'wp_oembed_add_host_js' );
-// // Remove all embeds rewrite rules.
-// add_filter( 'rewrite_rules_array', 'disable_embeds_rewrites' );
+add_action('wp_head', 'get_the_POSTID', 1);
+function get_the_POSTID() {
+    $post = get_post();
+    $blog_id = $post->ID;
+    $author = $post->post_author;
+    $author_name = get_the_author_meta( 'display_name' , $author );
+    $date = $post->post_date;
+    $author_image = get_field('post_author',$post->ID);
+    $attimages = get_attached_media('image', $post->ID);
+    $content = get_post_meta($blog_id, '_yoast_wpseo_metadesc', true);
+?>
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+  "mainEntityOfPage": [{
+    "@type": "WebPage",
+    "@id": "<?php echo get_permalink(); ?>"
+  }],
+      "headline": "<?php echo get_the_title( $blog_id ); ?>",
+      "description": "<?php echo $content; ?>",
+      "image": [
+        <?php
+        foreach ($attimages as $image) 
+        {
+        echo '"' .wp_get_attachment_url($image->ID). '",'; 
+        }
+        ?>
+    }
+       ],
+      "datePublished": "<?php echo $date; ?>",
+      "author": [{
+          "@type": "Person",
+          "name": "<?php echo $author_name; ?>",
+          "url": "<?php echo $author_image; ?>"
+        }]
+    }
+    </script>
+<?php
+    return ! empty( $post ) ? $post->ID : false;
+}

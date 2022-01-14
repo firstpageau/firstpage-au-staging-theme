@@ -2,144 +2,146 @@
 {% extends "en-base.twig" %}
 
 {% block content %}
-<section class="pad-header"></section>
+	<section class="pad-header"></section>
 
-<section class="section-blog section-grey">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-8 mb-5">
-                <div class="d-lg-none blog-content-mobile">
-                    <a class="post-back" href="{{ home_url }}learning-centre/">
-                        <i class="fa fa-caret-left" aria-hidden="true"></i>
-                        <span>Back</span>
-                    </a>
-                    <span class="post-length">{{ post.meta('post_length') }} minute read</span>
-                </div>
-                <div class="blog-content">
-                    {% if post.thumbnail %}
-                    {% set video_cat = '' %}
-                    {% if 'Videos' in post.categories %}
-                    {% set video_cat = 'is-video' %}
-                    {% endif %}
+	<section class="section-blog section-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-8 mb-5">
+					<div class="d-lg-none blog-content-mobile">
+						<a class="post-back" href="{{ home_url }}learning-centre/">
+							<i class="fa fa-caret-left" aria-hidden="true"></i>
+							<span>Back</span>
+						</a>
+						<span class="post-length">{{ post.meta('post_length') }}
+							minute read</span>
+					</div>
+					<div class="blog-content">
+						{% if post.thumbnail %}
+							{% set video_cat = '' %}
+							{% if 'Videos' in post.categories %}
+								{% set video_cat = 'is-video' %}
+							{% endif %}
 
-                    <a class="image-wrapper post-thumbnail {{ video_cat }}" href="{{ post.link }}" style="padding-bottom: 56.25%;">
-                        <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
-                        <span class="post-length d-none d-lg-flex">{{ post.meta('post_length') }}<br>minute<br>read</span>
-                    </a>
-                    {% endif %}
+							<a class="image-wrapper post-thumbnail {{ video_cat }}" href="{{ post.link }}" style="padding-bottom: 56.25%;">
+								<img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+								<span class="post-length d-none d-lg-flex">{{ post.meta('post_length') }}<br>minute<br>read</span>
+							</a>
+						{% endif %}
 
-                    <div class="post-desc">
-                        <div class="post-avatar" style="background-image: url('{{post.author.avatar}}')"></div>
-                        <div class="post-info"><span class="post-author">{{ post.author.name }}</span><br><span class="post-date">{{ post.date|date("d/m/Y") }}</span></div>
-                    </div>
+						<div class="post-desc">
+							<div class="post-avatar" style="background-image: url('{{post.author.avatar}}')"></div>
+							<div class="post-info">
+								<span class="post-author">{{ post.author.name }}</span><br><span class="post-date">{{ post.date|date("d/m/Y") }}</span>
+							</div>
+						</div>
 
-                    <div class="post-content">
-                        <h1>{{ post.title }}</h1>
+						<div class="post-content">
+							<h1>{{ post.title }}</h1>
 
-                        {{ post.content }}
-                    </div>
+							{{ post.content }}
+						</div>
 
-                    <div class="post-social-share">
-                        <div class="post-social-links">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ post.link|url_encode }}" target="_blank" title="Share on Facebook"><img src="{{ site.theme.link }}/assets/img/icn_share_facebook.png" /></a>
-                            <a href="https://twitter.com/intent/tweet?text={{ post.title|url_encode }}+{{ post.link|url_encode }}" target="_blank" title="Share on Twitter"><img src="{{ site.theme.link }}/assets/img/icn_share_twitter.png" /></a>
-                            <a href="https://www.linkedin.com/sharing/share-offsite?mini=true&url={{ post.link|url_encode }}&title={{ post.title|url_encode }}&summary={{ post.title|url_encode }}" target="_blank" title="Share on LinkedIn"><img src="{{ site.theme.link }}/assets/img/icn_share_linkedin.png" /></a>
-                            <a href="mailto:?body={{ post.link|url_encode }}&subject={{ post.title }}" title="Share via Email"><img src="{{ site.theme.link }}/assets/img/icn_share_email.png" /></a>
-                        </div>
-                    </div>
-                </div>
+						<div class="post-social-share">
+							<div class="post-social-links">
+								<a href="https://www.facebook.com/sharer/sharer.php?u={{ post.link|url_encode }}" target="_blank" title="Share on Facebook"><img src="{{ site.theme.link }}/assets/img/icn_share_facebook.png"/></a>
+								<a href="https://twitter.com/intent/tweet?text={{ post.title|url_encode }}+{{ post.link|url_encode }}" target="_blank" title="Share on Twitter"><img src="{{ site.theme.link }}/assets/img/icn_share_twitter.png"/></a>
+								<a href="https://www.linkedin.com/sharing/share-offsite?mini=true&url={{ post.link|url_encode }}&title={{ post.title|url_encode }}&summary={{ post.title|url_encode }}" target="_blank" title="Share on LinkedIn"><img src="{{ site.theme.link }}/assets/img/icn_share_linkedin.png"/></a>
+								<a href="mailto:?body={{ post.link|url_encode }}&subject={{ post.title }}" title="Share via Email"><img src="{{ site.theme.link }}/assets/img/icn_share_email.png"/></a>
+							</div>
+						</div>
+					</div>
 
-                <div class="blog-post-author">
-                    <div class="row align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
-                        <div class="col-12 col-lg-6 text-center">
-                            <div class="author-avatar">
-                                <img src="{{ post.meta('post_author') }}" srcset="{{ post.meta('post_author') }}, {{ post.meta('post_author_2x') }} 2x" class="img-fluid d-none d-md-inline-block" alt="{{ post.author.name }}" />
-                                <img src="{{ post.meta('post_author_mobile') }}" srcset="{{ post.meta('post_author_mobile') }}, {{ post.meta('post_author_mobile_2x') }} 2x" class="img-fluid d-md-none" alt="{{ post.author.name }}" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 about-the-author">
-                            <h2>About the author</h2>
-                            <h3>{{ post.author.name }}</h3>
-                            <p>
-                                {{ post.author.meta('description') }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+					<div class="blog-post-author">
+						<div class="row align-items-center flex-column-reverse flex-lg-row flex-lg-row-reverse">
+							<div class="col-12 col-lg-6 text-center">
+								<div class="author-avatar">
+									<img src="{{ post.meta('post_author') }}" srcset="{{ post.meta('post_author') }}, {{ post.meta('post_author_2x') }} 2x" class="img-fluid d-none d-md-inline-block" alt="{{ post.author.name }}"/>
+									<img src="{{ post.meta('post_author_mobile') }}" srcset="{{ post.meta('post_author_mobile') }}, {{ post.meta('post_author_mobile_2x') }} 2x" class="img-fluid d-md-none" alt="{{ post.author.name }}"/>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 about-the-author">
+								<h2>About the author</h2>
+								<h3>{{ post.author.name }}</h3>
+								<p>
+									{{ post.author.meta('description') }}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-            <!-- Sidebar -->
-            <div class="col-12 col-lg-4 mb-5 blog-post-sidebar">
-                <a href="{{ home_url }}learning-centre/" class="d-none d-lg-block btn btn-block fp-btn fp-btn-orange fp-btn-shadow">RETURN TO<br>LEARNING CENTRE</a>
-                <div class="related-articles">
-                    <h2>Related articles</h2>
-                    <div>
-                        {% for more in recent %}
-                        <a href="{{ more.link }}">
-                            <span class="related-post-thumbnail" style="background-image: url('{{more.thumbnail.src}}')"></span>
-                            <span class="related-post-title">{{ more.title }}</span>
-                        </a>
-                        {% endfor %}
-                    </div>
-{#                    <div class="sidebar-view-all-holder">#}
-{#                        <a class="post-side-bar-view-all-btn" href="{{ home_url }}learning-centre/">View all articles <i class="fa fa-caret-right" aria-hidden="true"></i></a>#}
-{#                    </div>#}
-                </div>
-                <!-- Navigation -->
-                <div class="blog-navigations d-lg-none">
-                    <div class="">
-                        <a href="{{ home_url }}learning-centre/" class="btn fp-btn fp-btn-orange fp-btn-shadow btn-block">RETURN TO<br>
-                            LEARNING CENTRE</a>
-                    </div>
-                    <div class="">
-                        {% if post.prev %}
-                        <a class="blog-nav blog-nav-left" href="{{ post.prev.link }}">
-                            <i class="fa fa-caret-left" aria-hidden="true"></i>
-                            <span class="blog-nav-text blog-prev">{{ post.prev.title }}</span>
-                        </a>
-                        {% endif %}
-                    </div>
-                    <div class="">
-                        {% if post.next %}
-                        <a class="blog-nav blog-nav-right" href="{{ post.next.link }}">
-                            <span class="blog-nav-text blog-next">{{ post.next.title }}</span>
-                            <i class="fa fa-caret-right" aria-hidden="true"></i>
-                        </a>
-                        {% endif %}
-                    </div>
-                </div>
-                {% include "partials/en-blog-sidebar-banner.twig" %}
-            </div>
+				<!-- Sidebar -->
+				<div class="col-12 col-lg-4 mb-5 blog-post-sidebar">
+					<a href="{{ home_url }}learning-centre/" class="d-none d-lg-block btn btn-block fp-btn fp-btn-orange fp-btn-shadow">RETURN TO<br>LEARNING CENTRE</a>
+					<div class="related-articles">
+						<h2>Related articles</h2>
+						<div>
+							{% for more in recent %}
+								<a href="{{ more.link }}">
+									<span class="related-post-thumbnail" style="background-image: url('{{more.thumbnail.src}}')"></span>
+									<span class="related-post-title">{{ more.title }}</span>
+								</a>
+							{% endfor %}
+						</div>
+						{#                    <div class="sidebar-view-all-holder">#}
+					{#                        <a class="post-side-bar-view-all-btn" href="{{ home_url }}learning-centre/">View all articles <i class="fa fa-caret-right" aria-hidden="true"></i></a>#}
+						{#                    </div>#}
+					</div>
+					<!-- Navigation -->
+					<div class="blog-navigations d-lg-none">
+						<div class="">
+							<a href="{{ home_url }}learning-centre/" class="btn fp-btn fp-btn-orange fp-btn-shadow btn-block">RETURN TO<br>
+								LEARNING CENTRE</a>
+						</div>
+						<div class="">
+							{% if post.prev %}
+								<a class="blog-nav blog-nav-left" href="{{ post.prev.link }}">
+									<i class="fa fa-caret-left" aria-hidden="true"></i>
+									<span class="blog-nav-text blog-prev">{{ post.prev.title }}</span>
+								</a>
+							{% endif %}
+						</div>
+						<div class="">
+							{% if post.next %}
+								<a class="blog-nav blog-nav-right" href="{{ post.next.link }}">
+									<span class="blog-nav-text blog-next">{{ post.next.title }}</span>
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+								</a>
+							{% endif %}
+						</div>
+					</div>
+					{% include "partials/en-blog-sidebar-banner.twig" %}
+				</div>
 
-        </div>
-        <!-- Navigation -->
-        <div class="row blog-navigations d-none d-lg-flex">
-            <div class="col-12 col-md-4">
-                {% if post.prev %}
-                <a class="blog-nav blog-nav-left" href="{{ post.prev.link }}">
-                    <i class="fa fa-caret-left" aria-hidden="true"></i>
-                    <span class="blog-nav-text blog-prev">{{ post.prev.title }}</span>
-                </a>
-                {% endif %}
-            </div>
-            <div class="col-12 col-md-4">
-                <a href="{{ home_url }}learning-centre/" class="btn fp-btn fp-btn-orange fp-btn-shadow btn-block">RETURN TO<br>
-                    LEARNING CENTRE</a>
-            </div>
-            <div class="col-12 col-md-4">
-                {% if post.next %}
-                <a class="blog-nav blog-nav-right" href="{{ post.next.link }}">
-                    <span class="blog-nav-text blog-next">{{ post.next.title }}</span>
-                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                </a>
-                {% endif %}
-            </div>
-        </div>
+			</div>
+			<!-- Navigation -->
+			<div class="row blog-navigations d-none d-lg-flex">
+				<div class="col-12 col-md-4">
+					{% if post.prev %}
+						<a class="blog-nav blog-nav-left" href="{{ post.prev.link }}">
+							<i class="fa fa-caret-left" aria-hidden="true"></i>
+							<span class="blog-nav-text blog-prev">{{ post.prev.title }}</span>
+						</a>
+					{% endif %}
+				</div>
+				<div class="col-12 col-md-4">
+					<a href="{{ home_url }}learning-centre/" class="btn fp-btn fp-btn-orange fp-btn-shadow btn-block">RETURN TO<br>
+						LEARNING CENTRE</a>
+				</div>
+				<div class="col-12 col-md-4">
+					{% if post.next %}
+						<a class="blog-nav blog-nav-right" href="{{ post.next.link }}">
+							<span class="blog-nav-text blog-next">{{ post.next.title }}</span>
+							<i class="fa fa-caret-right" aria-hidden="true"></i>
+						</a>
+					{% endif %}
+				</div>
+			</div>
 
-    </div>
+		</div>
 
-</section>
-
+	</section>
 
 
 {% endblock %}

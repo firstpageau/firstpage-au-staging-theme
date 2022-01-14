@@ -202,7 +202,6 @@ function get_the_POSTID() {
         echo '"' .wp_get_attachment_url($image->ID). '",'; 
         }
         ?>
-    }
        ],
       "datePublished": "<?php echo $date; ?>",
       "author": [{

@@ -173,3 +173,39 @@ add_action('do_feed_atom_comments', 'itsme_disable_feed', 1);
 
 remove_action( 'wp_head', 'feed_links_extra', 3 );
 remove_action( 'wp_head', 'feed_links', 2 );
+
+add_action('wp_head', 'get_the_POSTID', 1);
+function get_the_POSTID() {
+    $post = get_post();
+    $blog_id = $post->ID;
+    $author = $post->post_author;
+    $author_name = get_the_author_meta( 'display_name' , $author );
+    $date = $post->post_date;
+    $author_image = get_field('post_author',$post->ID);
+    $feature_image = get_post_thumbnail_id( $post->ID );
+    $feature_image_url = wp_get_attachment_url( $feature_image );
+?>
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+  "mainEntityOfPage": [{
+    "@type": "WebPage",
+    "@id": "<?php echo get_permalink(); ?>"
+  }],
+      "headline": "<?php echo get_the_title( $blog_id ); ?>",
+      "description": "<?php echo $content; ?>",
+      "image": [
+        <?php echo '"' .$feature_image_url. '"' ; ?>
+       ],
+      "datePublished": "<?php echo $date; ?>",
+      "author": [{
+          "@type": "Person",
+          "name": "<?php echo $author_name; ?>",
+          "url": "<?php echo $author_image; ?>"
+        }]
+    }
+    </script>
+<?php
+    return ! empty( $post ) ? $post->ID : false;
+}

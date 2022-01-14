@@ -198,11 +198,8 @@ function get_the_POSTID() {
       "image": [
         <?php
         foreach ($attimages as $image) 
-        {
-        echo '"' .wp_get_attachment_url($image->ID). '",'; 
-        }
+        echo '"' .wp_get_attachment_url($image->ID). '"';
         ?>
-    }
        ],
       "datePublished": "<?php echo $date; ?>",
       "author": [{
